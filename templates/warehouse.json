@@ -1,0 +1,1 @@
+{"id":"warehouse","title":"仓储出货","size":[9,6],"slots":{"workstation":[4.5,2.95,0],"checking-operator":[2.39,2.66,0],"dock-operator":[6.59,3.14,0],"delivery-document":[3.51,2.55,0],"unchecked-box":[4.48,2.56,0],"checked-box":[5.47,3.18,0],"rack":[7.4,1.24,0],"pallet":[2.5,4.55,0],"cart":[7.2,4.6,0]}}

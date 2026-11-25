@@ -1,0 +1,48 @@
+{
+  "ok": 7,
+  "failed": 0,
+  "jobs": [
+    {
+      "input": "examples/p1/service.json",
+      "status": "ok",
+      "scenes": 3,
+      "output": "outputs/p1/customer-service-journey.html"
+    },
+    {
+      "input": "examples/p1/procurement.json",
+      "status": "ok",
+      "scenes": 3,
+      "output": "outputs/p1/procurement-ai-opportunity.html"
+    },
+    {
+      "input": "examples/p1/medical.json",
+      "status": "ok",
+      "scenes": 1,
+      "output": "outputs/p1/medical-intake.html"
+    },
+    {
+      "input": "examples/p1/warehouse.json",
+      "status": "ok",
+      "scenes": 1,
+      "output": "outputs/p1/shipping-verification.html"
+    },
+    {
+      "input": "examples/information-technology/atlas.json",
+      "status": "ok",
+      "scenes": 9,
+      "output": "outputs/p1/information-technology-atlas.html"
+    },
+    {
+      "input": "examples/manufacturing-atlas/atlas.json",
+      "status": "ok",
+      "scenes": 9,
+      "output": "outputs/p1/manufacturing-atlas.html"
+    },
+    {
+      "input": "examples/pmc-role/atlas.json",
+      "status": "ok",
+      "scenes": 2,
+      "output": "outputs/p1/pmc-role.html"
+    }
+  ]
+}

@@ -1,0 +1,766 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "logistics",
+  "id": "logistics-journey",
+  "type": "process_journey",
+  "title": "交通物流 · 库存账实差异归因",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "校验盘点资料",
+      "description": "仓储运营核对库存台账、流水与盘点表是否齐全，形成可勾对资料。画面包含仓储区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓储运营",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对库存台账、流水与盘点表是否齐全",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "库存台账、流水、盘点表",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "可勾对资料",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:75",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "roles": "运营",
+            "description": "账面 500 件、实盘仅 460 件，差的 40 件是哪票、谁的责任，从未有人归因",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            },
+            "label": "库存台账、流水、盘点表",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "可勾对资料",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "logistics.equipment.container",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "集装箱",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-971cf9b05128f1a0"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "账实比对",
+      "description": "仓储运营按 SKU 核对账面和实盘数量，形成盘盈盘亏清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓储运营",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按 SKU 核对账面和实盘数量",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "可勾对资料",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "盘盈盘亏清单",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:75",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "roles": "运营",
+            "description": "账面 500 件、实盘仅 460 件，差的 40 件是哪票、谁的责任，从未有人归因",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "warehouse",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            },
+            "label": "可勾对资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "盘盈盘亏清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "rack",
+            "asset_id": "manufacturing.equipment.rack",
+            "position": [
+              7.28,
+              1.28,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "pallet",
+            "asset_id": "universal.material.pallet",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cargo",
+            "asset_id": "universal.material.carton",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0,
+            "support": "pallet"
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              7.33,
+              4.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-971cf9b05128f1a0"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "回溯出入库",
+      "description": "仓储运营依据流水追查差异涉及的票据和环节，形成票据与归因证据。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓储运营",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "依据流水追查差异涉及的票据和环节",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "盘盈盘亏清单",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "票据与归因证据",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:75",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "roles": "运营",
+            "description": "账面 500 件、实盘仅 460 件，差的 40 件是哪票、谁的责任，从未有人归因",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            },
+            "label": "盘盈盘亏清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "票据与归因证据",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-971cf9b05128f1a0"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "整理归因报告",
+      "description": "仓储运营汇总差异、证据与待签批事项，形成差异归因报告。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓储运营",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总差异、证据与待签批事项",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "票据与归因证据",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "差异归因报告",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:75",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "roles": "运营",
+            "description": "账面 500 件、实盘仅 460 件，差的 40 件是哪票、谁的责任，从未有人归因",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            },
+            "label": "票据与归因证据",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "差异归因报告",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-971cf9b05128f1a0"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "可勾对资料",
+      "source_refs": [
+        "source-catalog-971cf9b05128f1a0"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "盘盈盘亏清单",
+      "source_refs": [
+        "source-catalog-971cf9b05128f1a0"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "票据与归因证据",
+      "source_refs": [
+        "source-catalog-971cf9b05128f1a0"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-971cf9b05128f1a0"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-971cf9b05128f1a0",
+      "title": "库存账实差异归因",
+      "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:75",
+      "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "库存账实差异归因",
+      "source_refs": [
+        "source-catalog-971cf9b05128f1a0"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "校验盘点资料",
+              "participant": "仓储运营",
+              "description": "接收库存台账、流水、盘点表，核对库存台账、流水与盘点表是否齐全。交付可勾对资料。"
+            },
+            {
+              "label": "账实比对",
+              "participant": "仓储运营",
+              "description": "接收可勾对资料，按 SKU 核对账面和实盘数量。交付盘盈盘亏清单。"
+            },
+            {
+              "label": "回溯出入库",
+              "participant": "仓储运营",
+              "description": "接收盘盈盘亏清单，依据流水追查差异涉及的票据和环节。交付票据与归因证据。"
+            },
+            {
+              "label": "整理归因报告",
+              "participant": "仓储运营",
+              "description": "接收票据与归因证据，汇总差异、证据与待签批事项。交付差异归因报告。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

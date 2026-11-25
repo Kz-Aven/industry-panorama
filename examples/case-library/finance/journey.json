@@ -1,0 +1,761 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "finance",
+  "id": "finance-journey",
+  "type": "process_journey",
+  "title": "金融 · 理赔材料一次性告知清单",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "finance",
+      "type": "scenario_diorama",
+      "title": "确认报案情形",
+      "description": "理赔受理岗核对报案、保单责任和据此需要的材料，形成材料类别。画面包含业务柜台区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "理赔受理岗",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对报案、保单责任和据此需要的材料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "报案信息和保单",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "材料类别",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "locator": "【金融·客服】理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规/理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规.md:75",
+            "uri": "%E3%80%90%E9%87%91%E8%9E%8D%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84/%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "roles": "客服",
+            "description": "客户跑多趟，监管记一笔，不是服务态度问题，而是违反《保险法》第 22 条",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b99c24a18488dcf2"
+              ]
+            },
+            "label": "报案信息和保单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "材料类别",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "finance.equipment.service-desk",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "银行业务受理台",
+            "interaction": {
+              "case_ids": [
+                "catalog-b99c24a18488dcf2"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b99c24a18488dcf2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "finance",
+      "type": "scenario_diorama",
+      "title": "整理材料与路径",
+      "description": "理赔受理岗记录材料用途、取得途径与可复核的替代路径，形成材料清单草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "理赔受理岗",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "记录材料用途、取得途径与可复核的替代路径",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "材料类别",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "材料清单草稿",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "locator": "【金融·客服】理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规/理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规.md:75",
+            "uri": "%E3%80%90%E9%87%91%E8%9E%8D%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84/%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "roles": "客服",
+            "description": "客户跑多趟，监管记一笔，不是服务态度问题，而是违反《保险法》第 22 条",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b99c24a18488dcf2"
+              ]
+            },
+            "label": "材料类别",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "材料清单草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b99c24a18488dcf2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "finance",
+      "type": "scenario_diorama",
+      "title": "核对已提交材料",
+      "description": "理赔受理岗对照已有影像及资料，确认剩余缺项，形成待补材料清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "理赔受理岗",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照已有影像及资料，确认剩余缺项",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "材料清单草稿",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待补材料清单",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "locator": "【金融·客服】理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规/理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规.md:75",
+            "uri": "%E3%80%90%E9%87%91%E8%9E%8D%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84/%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "roles": "客服",
+            "description": "客户跑多趟，监管记一笔，不是服务态度问题，而是违反《保险法》第 22 条",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b99c24a18488dcf2"
+              ]
+            },
+            "label": "材料清单草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待补材料清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b99c24a18488dcf2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "finance",
+      "type": "scenario_diorama",
+      "title": "告知及归档",
+      "description": "理赔受理岗确认一次性告知单并登记签发和送达记录，形成告知单与送达留痕。画面包含业务柜台区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "理赔受理岗",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "确认一次性告知单并登记签发和送达记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "待补材料清单",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "告知单与送达留痕",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "locator": "【金融·客服】理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规/理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规.md:75",
+            "uri": "%E3%80%90%E9%87%91%E8%9E%8D%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84/%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b99c24a18488dcf2",
+            "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+            "roles": "客服",
+            "description": "客户跑多趟，监管记一笔，不是服务态度问题，而是违反《保险法》第 22 条",
+            "source_refs": [
+              "source-catalog-b99c24a18488dcf2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b99c24a18488dcf2"
+              ]
+            },
+            "label": "待补材料清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "告知单与送达留痕",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "finance.equipment.service-desk",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "银行业务受理台",
+            "interaction": {
+              "case_ids": [
+                "catalog-b99c24a18488dcf2"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b99c24a18488dcf2"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "材料类别",
+      "source_refs": [
+        "source-catalog-b99c24a18488dcf2"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "材料清单草稿",
+      "source_refs": [
+        "source-catalog-b99c24a18488dcf2"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "待补材料清单",
+      "source_refs": [
+        "source-catalog-b99c24a18488dcf2"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-b99c24a18488dcf2"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-b99c24a18488dcf2",
+      "title": "理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规",
+      "locator": "【金融·客服】理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规/理赔材料一次性告知清单 —— 分次要材料这件事本身就是违规.md:75",
+      "uri": "%E3%80%90%E9%87%91%E8%9E%8D%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84/%E7%90%86%E8%B5%94%E6%9D%90%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%88%86%E6%AC%A1%E8%A6%81%E6%9D%90%E6%96%99%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E8%BF%9D%E8%A7%84.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "理赔材料一次性告知清单",
+      "source_refs": [
+        "source-catalog-b99c24a18488dcf2"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "确认报案情形",
+              "participant": "理赔受理岗",
+              "description": "接收报案信息和保单，核对报案、保单责任和据此需要的材料。交付材料类别。"
+            },
+            {
+              "label": "整理材料与路径",
+              "participant": "理赔受理岗",
+              "description": "接收材料类别，记录材料用途、取得途径与可复核的替代路径。交付材料清单草稿。"
+            },
+            {
+              "label": "核对已提交材料",
+              "participant": "理赔受理岗",
+              "description": "接收材料清单草稿，对照已有影像及资料，确认剩余缺项。交付待补材料清单。"
+            },
+            {
+              "label": "告知及归档",
+              "participant": "理赔受理岗",
+              "description": "接收待补材料清单，确认一次性告知单并登记签发和送达记录。交付告知单与送达留痕。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

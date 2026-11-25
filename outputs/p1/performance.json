@@ -1,0 +1,31 @@
+{
+  "browser": "158.0.8127.37",
+  "scenes": 54,
+  "unique_media": 40,
+  "old_bytes": 93200985,
+  "new_bytes": 7154036,
+  "desktop": {
+    "baseline": {
+      "first_ms": 691,
+      "loaded": 54,
+      "zoom_ms": 24
+    },
+    "optimized": {
+      "first_ms": 85,
+      "loaded": 9,
+      "zoom_ms": 24
+    }
+  },
+  "mobile": {
+    "baseline": {
+      "first_ms": 423,
+      "loaded": 54,
+      "zoom_ms": 24
+    },
+    "optimized": {
+      "first_ms": 85,
+      "loaded": 2,
+      "zoom_ms": 22
+    }
+  }
+}

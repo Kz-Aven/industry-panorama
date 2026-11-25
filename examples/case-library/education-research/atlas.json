@@ -1,0 +1,1317 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "education-research",
+  "id": "education-research-atlas",
+  "type": "industry_atlas",
+  "title": "教育科研场景全景图",
+  "description": "案例库 · 22 个案例，按工作场景归入 6 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "research",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "科研申报与论文管理",
+      "description": "研发核对申报材料与提交要求，形成待复核项。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "研发",
+            "source_refs": [
+              "source-catalog-a489d77ad801e5b2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对申报材料与提交要求",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a489d77ad801e5b2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "申报书与申报清单",
+            "source_refs": [
+              "source-catalog-a489d77ad801e5b2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待复核项",
+            "source_refs": [
+              "source-catalog-a489d77ad801e5b2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-280de53f3ed36684",
+            "title": "毕业论文材料链自查 —— 开题、中期、答辩、归档四段材料逐人核对，抽检通报来之前先自己过一遍",
+            "locator": "【教育科研·行政】毕业论文材料链自查 —— 开题、中期、答辩、归档四段材料逐人核对，抽检通报来之前先自己过一遍/毕业论文材料链自查 —— 开题、中期、答辩、归档四段材料逐人核对，抽检通报来之前先自己过一遍.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E6%9D%90%E6%96%99%E9%93%BE%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E5%BC%80%E9%A2%98%E3%80%81%E4%B8%AD%E6%9C%9F%E3%80%81%E7%AD%94%E8%BE%A9%E3%80%81%E5%BD%92%E6%A1%A3%E5%9B%9B%E6%AE%B5%E6%9D%90%E6%96%99%E9%80%90%E4%BA%BA%E6%A0%B8%E5%AF%B9%EF%BC%8C%E6%8A%BD%E6%A3%80%E9%80%9A%E6%8A%A5%E6%9D%A5%E4%B9%8B%E5%89%8D%E5%85%88%E8%87%AA%E5%B7%B1%E8%BF%87%E4%B8%80%E9%81%8D/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E6%9D%90%E6%96%99%E9%93%BE%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E5%BC%80%E9%A2%98%E3%80%81%E4%B8%AD%E6%9C%9F%E3%80%81%E7%AD%94%E8%BE%A9%E3%80%81%E5%BD%92%E6%A1%A3%E5%9B%9B%E6%AE%B5%E6%9D%90%E6%96%99%E9%80%90%E4%BA%BA%E6%A0%B8%E5%AF%B9%EF%BC%8C%E6%8A%BD%E6%A3%80%E9%80%9A%E6%8A%A5%E6%9D%A5%E4%B9%8B%E5%89%8D%E5%85%88%E8%87%AA%E5%B7%B1%E8%BF%87%E4%B8%80%E9%81%8D.md"
+          },
+          {
+            "id": "source-catalog-a489d77ad801e5b2",
+            "title": "基金申报书合规自查 —— 活页匿名纪律、限项规定、预算勾稽与「AI 味」风险提示，落笔之前先过一遍",
+            "locator": "【教育科研·研发】基金申报书合规自查 —— 活页匿名纪律、限项规定、预算勾稽与「AI 味」风险提示，落笔之前先过一遍/基金申报书合规自查 —— 活页匿名纪律、限项规定、预算勾稽与「AI 味」风险提示，落笔之前先过一遍.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E5%9F%BA%E9%87%91%E7%94%B3%E6%8A%A5%E4%B9%A6%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E6%B4%BB%E9%A1%B5%E5%8C%BF%E5%90%8D%E7%BA%AA%E5%BE%8B%E3%80%81%E9%99%90%E9%A1%B9%E8%A7%84%E5%AE%9A%E3%80%81%E9%A2%84%E7%AE%97%E5%8B%BE%E7%A8%BD%E4%B8%8E%E3%80%8CAI%20%E5%91%B3%E3%80%8D%E9%A3%8E%E9%99%A9%E6%8F%90%E7%A4%BA%EF%BC%8C%E8%90%BD%E7%AC%94%E4%B9%8B%E5%89%8D%E5%85%88%E8%BF%87%E4%B8%80%E9%81%8D/%E5%9F%BA%E9%87%91%E7%94%B3%E6%8A%A5%E4%B9%A6%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E6%B4%BB%E9%A1%B5%E5%8C%BF%E5%90%8D%E7%BA%AA%E5%BE%8B%E3%80%81%E9%99%90%E9%A1%B9%E8%A7%84%E5%AE%9A%E3%80%81%E9%A2%84%E7%AE%97%E5%8B%BE%E7%A8%BD%E4%B8%8E%E3%80%8CAI%20%E5%91%B3%E3%80%8D%E9%A3%8E%E9%99%A9%E6%8F%90%E7%A4%BA%EF%BC%8C%E8%90%BD%E7%AC%94%E4%B9%8B%E5%89%8D%E5%85%88%E8%BF%87%E4%B8%80%E9%81%8D.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-280de53f3ed36684",
+            "title": "毕业论文材料链自查 —— 开题、中期、答辩、归档四段材料逐人核对，抽检通报来之前先自己过一遍",
+            "roles": "行政",
+            "description": "抽检 2% 听起来是小事，一旦抽中「存在问题论文」，后果链是撤销学位→追责导师→核减招生→撤销学位点",
+            "source_refs": [
+              "source-catalog-280de53f3ed36684"
+            ]
+          },
+          {
+            "id": "catalog-a489d77ad801e5b2",
+            "title": "基金申报书合规自查 —— 活页匿名纪律、限项规定、预算勾稽与「AI 味」风险提示，落笔之前先过一遍",
+            "roles": "研发",
+            "description": "活页里出现一个「我院」即取消参评资格，「AI 写的本子一眼假」已成函评出局红线",
+            "source_refs": [
+              "source-catalog-a489d77ad801e5b2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a489d77ad801e5b2"
+              ]
+            },
+            "label": "申报书与申报清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待复核项",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-280de53f3ed36684",
+          "catalog-a489d77ad801e5b2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "evaluation",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "教学评价与试卷分析",
+      "description": "教师、行政汇总答卷结果并定位薄弱知识点，形成试卷分析报告。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "教师、行政",
+            "source_refs": [
+              "source-catalog-e8d0fbde71195022"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总答卷结果并定位薄弱知识点",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-e8d0fbde71195022"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "试卷和成绩记录",
+            "source_refs": [
+              "source-catalog-e8d0fbde71195022"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "试卷分析报告",
+            "source_refs": [
+              "source-catalog-e8d0fbde71195022"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e8d0fbde71195022",
+            "title": "期末试卷分析报告批量生成 —— 全院 47 门课的成绩分布、知识点达成度与三级签字栏，一门都不能拖到下学期",
+            "locator": "【教育科研·教师·行政】期末试卷分析报告批量生成 —— 全院 47 门课的成绩分布、知识点达成度与三级签字栏，一门都不能拖到下学期/期末试卷分析报告批量生成 —— 全院 47 门课的成绩分布、知识点达成度与三级签字栏，一门都不能拖到下学期.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E5%85%A8%E9%99%A2%2047%20%E9%97%A8%E8%AF%BE%E7%9A%84%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83%E3%80%81%E7%9F%A5%E8%AF%86%E7%82%B9%E8%BE%BE%E6%88%90%E5%BA%A6%E4%B8%8E%E4%B8%89%E7%BA%A7%E7%AD%BE%E5%AD%97%E6%A0%8F%EF%BC%8C%E4%B8%80%E9%97%A8%E9%83%BD%E4%B8%8D%E8%83%BD%E6%8B%96%E5%88%B0%E4%B8%8B%E5%AD%A6%E6%9C%9F/%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E5%85%A8%E9%99%A2%2047%20%E9%97%A8%E8%AF%BE%E7%9A%84%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83%E3%80%81%E7%9F%A5%E8%AF%86%E7%82%B9%E8%BE%BE%E6%88%90%E5%BA%A6%E4%B8%8E%E4%B8%89%E7%BA%A7%E7%AD%BE%E5%AD%97%E6%A0%8F%EF%BC%8C%E4%B8%80%E9%97%A8%E9%83%BD%E4%B8%8D%E8%83%BD%E6%8B%96%E5%88%B0%E4%B8%8B%E5%AD%A6%E6%9C%9F.md"
+          },
+          {
+            "id": "source-catalog-e8a2973c9ecf2979",
+            "title": "课程目标达成度分析 —— 试卷小分拆到课程目标，CO-2 达成度 0.61 不只算出来，还要讲清为什么",
+            "locator": "【教育科研·教师】课程目标达成度分析 —— 试卷小分拆到课程目标，CO-2 达成度 0.61 不只算出来，还要讲清为什么/课程目标达成度分析 —— 试卷小分拆到课程目标，CO-2 达成度 0.61 不只算出来，还要讲清为什么.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E8%AF%BE%E7%A8%8B%E7%9B%AE%E6%A0%87%E8%BE%BE%E6%88%90%E5%BA%A6%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E8%AF%95%E5%8D%B7%E5%B0%8F%E5%88%86%E6%8B%86%E5%88%B0%E8%AF%BE%E7%A8%8B%E7%9B%AE%E6%A0%87%EF%BC%8CCO-2%20%E8%BE%BE%E6%88%90%E5%BA%A6%200.61%20%E4%B8%8D%E5%8F%AA%E7%AE%97%E5%87%BA%E6%9D%A5%EF%BC%8C%E8%BF%98%E8%A6%81%E8%AE%B2%E6%B8%85%E4%B8%BA%E4%BB%80%E4%B9%88/%E8%AF%BE%E7%A8%8B%E7%9B%AE%E6%A0%87%E8%BE%BE%E6%88%90%E5%BA%A6%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E8%AF%95%E5%8D%B7%E5%B0%8F%E5%88%86%E6%8B%86%E5%88%B0%E8%AF%BE%E7%A8%8B%E7%9B%AE%E6%A0%87%EF%BC%8CCO-2%20%E8%BE%BE%E6%88%90%E5%BA%A6%200.61%20%E4%B8%8D%E5%8F%AA%E7%AE%97%E5%87%BA%E6%9D%A5%EF%BC%8C%E8%BF%98%E8%A6%81%E8%AE%B2%E6%B8%85%E4%B8%BA%E4%BB%80%E4%B9%88.md"
+          },
+          {
+            "id": "source-catalog-5c8f53e7251dfb85",
+            "title": "课评个性化生成 —— 把「上课认真」换成这个孩子这节课做过的事",
+            "locator": "【教育科研·教师】课评个性化生成 —— 把「上课认真」换成这个孩子这节课做过的事/课评个性化生成 —— 把「上课认真」换成这个孩子这节课做过的事.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E8%AF%BE%E8%AF%84%E4%B8%AA%E6%80%A7%E5%8C%96%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E6%8A%8A%E3%80%8C%E4%B8%8A%E8%AF%BE%E8%AE%A4%E7%9C%9F%E3%80%8D%E6%8D%A2%E6%88%90%E8%BF%99%E4%B8%AA%E5%AD%A9%E5%AD%90%E8%BF%99%E8%8A%82%E8%AF%BE%E5%81%9A%E8%BF%87%E7%9A%84%E4%BA%8B/%E8%AF%BE%E8%AF%84%E4%B8%AA%E6%80%A7%E5%8C%96%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E6%8A%8A%E3%80%8C%E4%B8%8A%E8%AF%BE%E8%AE%A4%E7%9C%9F%E3%80%8D%E6%8D%A2%E6%88%90%E8%BF%99%E4%B8%AA%E5%AD%A9%E5%AD%90%E8%BF%99%E8%8A%82%E8%AF%BE%E5%81%9A%E8%BF%87%E7%9A%84%E4%BA%8B.md"
+          },
+          {
+            "id": "source-catalog-83e0d66b9a4f59a2",
+            "title": "学生评教开放意见归纳 —— 412 条没人读完的评语，按主题聚类，再和试卷达成度对一次",
+            "locator": "【教育科研·教师】学生评教开放意见归纳 —— 412 条没人读完的评语，按主题聚类，再和试卷达成度对一次/学生评教开放意见归纳 —— 412 条没人读完的评语，按主题聚类，再和试卷达成度对一次.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E5%AD%A6%E7%94%9F%E8%AF%84%E6%95%99%E5%BC%80%E6%94%BE%E6%84%8F%E8%A7%81%E5%BD%92%E7%BA%B3%20%E2%80%94%E2%80%94%20412%20%E6%9D%A1%E6%B2%A1%E4%BA%BA%E8%AF%BB%E5%AE%8C%E7%9A%84%E8%AF%84%E8%AF%AD%EF%BC%8C%E6%8C%89%E4%B8%BB%E9%A2%98%E8%81%9A%E7%B1%BB%EF%BC%8C%E5%86%8D%E5%92%8C%E8%AF%95%E5%8D%B7%E8%BE%BE%E6%88%90%E5%BA%A6%E5%AF%B9%E4%B8%80%E6%AC%A1/%E5%AD%A6%E7%94%9F%E8%AF%84%E6%95%99%E5%BC%80%E6%94%BE%E6%84%8F%E8%A7%81%E5%BD%92%E7%BA%B3%20%E2%80%94%E2%80%94%20412%20%E6%9D%A1%E6%B2%A1%E4%BA%BA%E8%AF%BB%E5%AE%8C%E7%9A%84%E8%AF%84%E8%AF%AD%EF%BC%8C%E6%8C%89%E4%B8%BB%E9%A2%98%E8%81%9A%E7%B1%BB%EF%BC%8C%E5%86%8D%E5%92%8C%E8%AF%95%E5%8D%B7%E8%BE%BE%E6%88%90%E5%BA%A6%E5%AF%B9%E4%B8%80%E6%AC%A1.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e8d0fbde71195022",
+            "title": "期末试卷分析报告批量生成 —— 全院 47 门课的成绩分布、知识点达成度与三级签字栏，一门都不能拖到下学期",
+            "roles": "教师 · 行政",
+            "description": "每门考试课每学期必交试卷分析，交回来的多数是套话和「学生基础差」",
+            "source_refs": [
+              "source-catalog-e8d0fbde71195022"
+            ]
+          },
+          {
+            "id": "catalog-e8a2973c9ecf2979",
+            "title": "课程目标达成度分析 —— 试卷小分拆到课程目标，CO-2 达成度 0.61 不只算出来，还要讲清为什么",
+            "roles": "教师",
+            "description": "认证要求每门课计算达成度，交回来的多数是记分册成绩的翻版",
+            "source_refs": [
+              "source-catalog-e8a2973c9ecf2979"
+            ]
+          },
+          {
+            "id": "catalog-5c8f53e7251dfb85",
+            "title": "课评个性化生成 —— 把「上课认真」换成这个孩子这节课做过的事",
+            "roles": "教师",
+            "description": "家长并非不想看课评，而是「上课认真、有进步」这类套话没有可看的内容",
+            "source_refs": [
+              "source-catalog-5c8f53e7251dfb85"
+            ]
+          },
+          {
+            "id": "catalog-83e0d66b9a4f59a2",
+            "title": "学生评教开放意见归纳 —— 412 条没人读完的评语，按主题聚类，再和试卷达成度对一次",
+            "roles": "教师",
+            "description": "每学期数千条评教开放意见，生成报告后长期留存于教务处导出文件里无人读",
+            "source_refs": [
+              "source-catalog-83e0d66b9a4f59a2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-e8d0fbde71195022"
+              ]
+            },
+            "label": "试卷和成绩记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "试卷分析报告",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e8d0fbde71195022",
+          "catalog-e8a2973c9ecf2979",
+          "catalog-5c8f53e7251dfb85",
+          "catalog-83e0d66b9a4f59a2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "teaching",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "备课与课堂记录",
+      "description": "教师对照教研资料与班级学情备课，形成教案课件草稿。画面包含教学区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "教师",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照教研资料与班级学情备课",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "教研资料与课堂记录",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "教案课件草稿",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-be2c2806e9d7e07c",
+            "title": "老师离职交接包 —— 学员、家长与承诺，一件不落",
+            "locator": "【教育科研·教师·HR】老师离职交接包 —— 学员、家长与承诺，一件不落/老师离职交接包 —— 学员、家长与承诺，一件不落.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%C2%B7HR%E3%80%91%E8%80%81%E5%B8%88%E7%A6%BB%E8%81%8C%E4%BA%A4%E6%8E%A5%E5%8C%85%20%E2%80%94%E2%80%94%20%E5%AD%A6%E5%91%98%E3%80%81%E5%AE%B6%E9%95%BF%E4%B8%8E%E6%89%BF%E8%AF%BA%EF%BC%8C%E4%B8%80%E4%BB%B6%E4%B8%8D%E8%90%BD/%E8%80%81%E5%B8%88%E7%A6%BB%E8%81%8C%E4%BA%A4%E6%8E%A5%E5%8C%85%20%E2%80%94%E2%80%94%20%E5%AD%A6%E5%91%98%E3%80%81%E5%AE%B6%E9%95%BF%E4%B8%8E%E6%89%BF%E8%AF%BA%EF%BC%8C%E4%B8%80%E4%BB%B6%E4%B8%8D%E8%90%BD.md"
+          },
+          {
+            "id": "source-catalog-081c4b7aaba42afa",
+            "title": "基于历届教案与本班学情的教案初稿 —— 通用工具写的是哪所学校都能用的教案，这份用的是本课程三年讲义和上学期失分点",
+            "locator": "【教育科研·教师】基于历届教案与本班学情的教案初稿 —— 通用工具写的是哪所学校都能用的教案，这份用的是本课程三年讲义和上学期失分点/基于历届教案与本班学情的教案初稿 —— 通用工具写的是哪所学校都能用的教案，这份用的是本课程三年讲义和上学期失分点.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E5%9F%BA%E4%BA%8E%E5%8E%86%E5%B1%8A%E6%95%99%E6%A1%88%E4%B8%8E%E6%9C%AC%E7%8F%AD%E5%AD%A6%E6%83%85%E7%9A%84%E6%95%99%E6%A1%88%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E9%80%9A%E7%94%A8%E5%B7%A5%E5%85%B7%E5%86%99%E7%9A%84%E6%98%AF%E5%93%AA%E6%89%80%E5%AD%A6%E6%A0%A1%E9%83%BD%E8%83%BD%E7%94%A8%E7%9A%84%E6%95%99%E6%A1%88%EF%BC%8C%E8%BF%99%E4%BB%BD%E7%94%A8%E7%9A%84%E6%98%AF%E6%9C%AC%E8%AF%BE%E7%A8%8B%E4%B8%89%E5%B9%B4%E8%AE%B2%E4%B9%89%E5%92%8C%E4%B8%8A%E5%AD%A6%E6%9C%9F%E5%A4%B1%E5%88%86%E7%82%B9/%E5%9F%BA%E4%BA%8E%E5%8E%86%E5%B1%8A%E6%95%99%E6%A1%88%E4%B8%8E%E6%9C%AC%E7%8F%AD%E5%AD%A6%E6%83%85%E7%9A%84%E6%95%99%E6%A1%88%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E9%80%9A%E7%94%A8%E5%B7%A5%E5%85%B7%E5%86%99%E7%9A%84%E6%98%AF%E5%93%AA%E6%89%80%E5%AD%A6%E6%A0%A1%E9%83%BD%E8%83%BD%E7%94%A8%E7%9A%84%E6%95%99%E6%A1%88%EF%BC%8C%E8%BF%99%E4%BB%BD%E7%94%A8%E7%9A%84%E6%98%AF%E6%9C%AC%E8%AF%BE%E7%A8%8B%E4%B8%89%E5%B9%B4%E8%AE%B2%E4%B9%89%E5%92%8C%E4%B8%8A%E5%AD%A6%E6%9C%9F%E5%A4%B1%E5%88%86%E7%82%B9.md"
+          },
+          {
+            "id": "source-catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+          },
+          {
+            "id": "source-catalog-f629a98bfa94bb2f",
+            "title": "教研知识库沉淀 —— 老师可以走，课和经验要留下",
+            "locator": "【教育科研·教师】教研知识库沉淀 —— 老师可以走，课和经验要留下/教研知识库沉淀 —— 老师可以走，课和经验要留下.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E7%A0%94%E7%9F%A5%E8%AF%86%E5%BA%93%E6%B2%89%E6%B7%80%20%E2%80%94%E2%80%94%20%E8%80%81%E5%B8%88%E5%8F%AF%E4%BB%A5%E8%B5%B0%EF%BC%8C%E8%AF%BE%E5%92%8C%E7%BB%8F%E9%AA%8C%E8%A6%81%E7%95%99%E4%B8%8B/%E6%95%99%E7%A0%94%E7%9F%A5%E8%AF%86%E5%BA%93%E6%B2%89%E6%B7%80%20%E2%80%94%E2%80%94%20%E8%80%81%E5%B8%88%E5%8F%AF%E4%BB%A5%E8%B5%B0%EF%BC%8C%E8%AF%BE%E5%92%8C%E7%BB%8F%E9%AA%8C%E8%A6%81%E7%95%99%E4%B8%8B.md"
+          },
+          {
+            "id": "source-catalog-ef9f359b3ef3afc1",
+            "title": "课堂表现随手记 —— 下课前说的一句话，胜过课后补十条",
+            "locator": "【教育科研·教师】课堂表现随手记 —— 下课前说的一句话，胜过课后补十条/课堂表现随手记 —— 下课前说的一句话，胜过课后补十条.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E8%AF%BE%E5%A0%82%E8%A1%A8%E7%8E%B0%E9%9A%8F%E6%89%8B%E8%AE%B0%20%E2%80%94%E2%80%94%20%E4%B8%8B%E8%AF%BE%E5%89%8D%E8%AF%B4%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%EF%BC%8C%E8%83%9C%E8%BF%87%E8%AF%BE%E5%90%8E%E8%A1%A5%E5%8D%81%E6%9D%A1/%E8%AF%BE%E5%A0%82%E8%A1%A8%E7%8E%B0%E9%9A%8F%E6%89%8B%E8%AE%B0%20%E2%80%94%E2%80%94%20%E4%B8%8B%E8%AF%BE%E5%89%8D%E8%AF%B4%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%EF%BC%8C%E8%83%9C%E8%BF%87%E8%AF%BE%E5%90%8E%E8%A1%A5%E5%8D%81%E6%9D%A1.md"
+          },
+          {
+            "id": "source-catalog-4058ecc8877ec824",
+            "title": "试听课定制备课 —— 同一节体验课，对不同孩子用不同上法",
+            "locator": "【教育科研·教师】试听课定制备课 —— 同一节体验课，对不同孩子用不同上法/试听课定制备课 —— 同一节体验课，对不同孩子用不同上法.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E8%AF%95%E5%90%AC%E8%AF%BE%E5%AE%9A%E5%88%B6%E5%A4%87%E8%AF%BE%20%E2%80%94%E2%80%94%20%E5%90%8C%E4%B8%80%E8%8A%82%E4%BD%93%E9%AA%8C%E8%AF%BE%EF%BC%8C%E5%AF%B9%E4%B8%8D%E5%90%8C%E5%AD%A9%E5%AD%90%E7%94%A8%E4%B8%8D%E5%90%8C%E4%B8%8A%E6%B3%95/%E8%AF%95%E5%90%AC%E8%AF%BE%E5%AE%9A%E5%88%B6%E5%A4%87%E8%AF%BE%20%E2%80%94%E2%80%94%20%E5%90%8C%E4%B8%80%E8%8A%82%E4%BD%93%E9%AA%8C%E8%AF%BE%EF%BC%8C%E5%AF%B9%E4%B8%8D%E5%90%8C%E5%AD%A9%E5%AD%90%E7%94%A8%E4%B8%8D%E5%90%8C%E4%B8%8A%E6%B3%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-be2c2806e9d7e07c",
+            "title": "老师离职交接包 —— 学员、家长与承诺，一件不落",
+            "roles": "教师 · HR",
+            "description": "离职交接基本靠面谈两小时，三个月后家长提起口头承诺，已无人能认领",
+            "source_refs": [
+              "source-catalog-be2c2806e9d7e07c"
+            ]
+          },
+          {
+            "id": "catalog-081c4b7aaba42afa",
+            "title": "基于历届教案与本班学情的教案初稿 —— 通用工具写的是哪所学校都能用的教案，这份用的是本课程三年讲义和上学期失分点",
+            "roles": "教师",
+            "description": "「AI 备课」是国家平台已上线的免费功能，但通用教案与本课程、本班的学情没有关系",
+            "source_refs": [
+              "source-catalog-081c4b7aaba42afa"
+            ]
+          },
+          {
+            "id": "catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "roles": "教师",
+            "description": "老师问 AI 能否帮忙写教案，答案是能，前提是它基于本机构自己的教研数据",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          },
+          {
+            "id": "catalog-f629a98bfa94bb2f",
+            "title": "教研知识库沉淀 —— 老师可以走，课和经验要留下",
+            "roles": "教师",
+            "description": "机构最值钱的教研资产在老师脑中与手机里，老师一离职，课程体系便回到起点",
+            "source_refs": [
+              "source-catalog-f629a98bfa94bb2f"
+            ]
+          },
+          {
+            "id": "catalog-ef9f359b3ef3afc1",
+            "title": "课堂表现随手记 —— 下课前说的一句话，胜过课后补十条",
+            "roles": "教师",
+            "description": "成长档案缺的从来不是展示模板，缺的是无人记录的原始素材",
+            "source_refs": [
+              "source-catalog-ef9f359b3ef3afc1"
+            ]
+          },
+          {
+            "id": "catalog-4058ecc8877ec824",
+            "title": "试听课定制备课 —— 同一节体验课，对不同孩子用不同上法",
+            "roles": "教师",
+            "description": "试听是整个招生漏斗中成本最高的一环，多数机构对所有孩子上同一节模板课",
+            "source_refs": [
+              "source-catalog-4058ecc8877ec824"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            },
+            "label": "教研资料与课堂记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "教案课件草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "education-research.furniture.teaching-board",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "移动教学白板",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-be2c2806e9d7e07c",
+          "catalog-081c4b7aaba42afa",
+          "catalog-a08398380b6f6d45",
+          "catalog-f629a98bfa94bb2f",
+          "catalog-ef9f359b3ef3afc1",
+          "catalog-4058ecc8877ec824"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "learner",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "学员档案与跟进",
+      "description": "运营按学员整理学习表现，形成月度学情报告。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-423a06080c47afe2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按学员整理学习表现",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-423a06080c47afe2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "阶段学习记录",
+            "source_refs": [
+              "source-catalog-423a06080c47afe2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "月度学情报告",
+            "source_refs": [
+              "source-catalog-423a06080c47afe2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4c027d0f60ec6837",
+            "title": "试听后跟进摘要 —— 出校门 48 小时，是成单还是流失的分水岭",
+            "locator": "【教育科研·销售】试听后跟进摘要 —— 出校门 48 小时，是成单还是流失的分水岭/试听后跟进摘要 —— 出校门 48 小时，是成单还是流失的分水岭.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%AF%95%E5%90%AC%E5%90%8E%E8%B7%9F%E8%BF%9B%E6%91%98%E8%A6%81%20%E2%80%94%E2%80%94%20%E5%87%BA%E6%A0%A1%E9%97%A8%2048%20%E5%B0%8F%E6%97%B6%EF%BC%8C%E6%98%AF%E6%88%90%E5%8D%95%E8%BF%98%E6%98%AF%E6%B5%81%E5%A4%B1%E7%9A%84%E5%88%86%E6%B0%B4%E5%B2%AD/%E8%AF%95%E5%90%AC%E5%90%8E%E8%B7%9F%E8%BF%9B%E6%91%98%E8%A6%81%20%E2%80%94%E2%80%94%20%E5%87%BA%E6%A0%A1%E9%97%A8%2048%20%E5%B0%8F%E6%97%B6%EF%BC%8C%E6%98%AF%E6%88%90%E5%8D%95%E8%BF%98%E6%98%AF%E6%B5%81%E5%A4%B1%E7%9A%84%E5%88%86%E6%B0%B4%E5%B2%AD.md"
+          },
+          {
+            "id": "source-catalog-e4edeb9b166b8db7",
+            "title": "续费作战卡 —— 谈钱之前，先把这一个孩子的情况凑齐",
+            "locator": "【教育科研·销售】续费作战卡 —— 谈钱之前，先把这一个孩子的情况凑齐/续费作战卡 —— 谈钱之前，先把这一个孩子的情况凑齐.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%BB%AD%E8%B4%B9%E4%BD%9C%E6%88%98%E5%8D%A1%20%E2%80%94%E2%80%94%20%E8%B0%88%E9%92%B1%E4%B9%8B%E5%89%8D%EF%BC%8C%E5%85%88%E6%8A%8A%E8%BF%99%E4%B8%80%E4%B8%AA%E5%AD%A9%E5%AD%90%E7%9A%84%E6%83%85%E5%86%B5%E5%87%91%E9%BD%90/%E7%BB%AD%E8%B4%B9%E4%BD%9C%E6%88%98%E5%8D%A1%20%E2%80%94%E2%80%94%20%E8%B0%88%E9%92%B1%E4%B9%8B%E5%89%8D%EF%BC%8C%E5%85%88%E6%8A%8A%E8%BF%99%E4%B8%80%E4%B8%AA%E5%AD%A9%E5%AD%90%E7%9A%84%E6%83%85%E5%86%B5%E5%87%91%E9%BD%90.md"
+          },
+          {
+            "id": "source-catalog-411b2c5d6f810d76",
+            "title": "学员成长档案汇编 —— 让家长看见变化，比任何话术都有说服力",
+            "locator": "【教育科研·运营】学员成长档案汇编 —— 让家长看见变化，比任何话术都有说服力/学员成长档案汇编 —— 让家长看见变化，比任何话术都有说服力.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%AD%A6%E5%91%98%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88%E6%B1%87%E7%BC%96%20%E2%80%94%E2%80%94%20%E8%AE%A9%E5%AE%B6%E9%95%BF%E7%9C%8B%E8%A7%81%E5%8F%98%E5%8C%96%EF%BC%8C%E6%AF%94%E4%BB%BB%E4%BD%95%E8%AF%9D%E6%9C%AF%E9%83%BD%E6%9C%89%E8%AF%B4%E6%9C%8D%E5%8A%9B/%E5%AD%A6%E5%91%98%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88%E6%B1%87%E7%BC%96%20%E2%80%94%E2%80%94%20%E8%AE%A9%E5%AE%B6%E9%95%BF%E7%9C%8B%E8%A7%81%E5%8F%98%E5%8C%96%EF%BC%8C%E6%AF%94%E4%BB%BB%E4%BD%95%E8%AF%9D%E6%9C%AF%E9%83%BD%E6%9C%89%E8%AF%B4%E6%9C%8D%E5%8A%9B.md"
+          },
+          {
+            "id": "source-catalog-423a06080c47afe2",
+            "title": "月度学情报告 —— 名义上是教学文档，实质上是续费前置",
+            "locator": "【教育科研·运营】月度学情报告 —— 名义上是教学文档，实质上是续费前置/月度学情报告 —— 名义上是教学文档，实质上是续费前置.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%9C%88%E5%BA%A6%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E5%90%8D%E4%B9%89%E4%B8%8A%E6%98%AF%E6%95%99%E5%AD%A6%E6%96%87%E6%A1%A3%EF%BC%8C%E5%AE%9E%E8%B4%A8%E4%B8%8A%E6%98%AF%E7%BB%AD%E8%B4%B9%E5%89%8D%E7%BD%AE/%E6%9C%88%E5%BA%A6%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E5%90%8D%E4%B9%89%E4%B8%8A%E6%98%AF%E6%95%99%E5%AD%A6%E6%96%87%E6%A1%A3%EF%BC%8C%E5%AE%9E%E8%B4%A8%E4%B8%8A%E6%98%AF%E7%BB%AD%E8%B4%B9%E5%89%8D%E7%BD%AE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4c027d0f60ec6837",
+            "title": "试听后跟进摘要 —— 出校门 48 小时，是成单还是流失的分水岭",
+            "roles": "销售",
+            "description": "台账里写满了「已联系」，却无人知道联系之后究竟谈了什么",
+            "source_refs": [
+              "source-catalog-4c027d0f60ec6837"
+            ]
+          },
+          {
+            "id": "catalog-e4edeb9b166b8db7",
+            "title": "续费作战卡 —— 谈钱之前，先把这一个孩子的情况凑齐",
+            "roles": "销售",
+            "description": "100 个到期学员只有 32 个被真正提醒到，其余 68 个并非没意向，而是没人把话讲清楚",
+            "source_refs": [
+              "source-catalog-e4edeb9b166b8db7"
+            ]
+          },
+          {
+            "id": "catalog-411b2c5d6f810d76",
+            "title": "学员成长档案汇编 —— 让家长看见变化，比任何话术都有说服力",
+            "roles": "运营",
+            "description": "孩子学了一年编程究竟什么水平，家长说不清、机构也说不清，说不清就难以收费",
+            "source_refs": [
+              "source-catalog-411b2c5d6f810d76"
+            ]
+          },
+          {
+            "id": "catalog-423a06080c47afe2",
+            "title": "月度学情报告 —— 名义上是教学文档，实质上是续费前置",
+            "roles": "运营",
+            "description": "月报被行业方法论定义为「续费的核心武器」，多数机构只在家长会前临时拼凑一份",
+            "source_refs": [
+              "source-catalog-423a06080c47afe2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-423a06080c47afe2"
+              ]
+            },
+            "label": "阶段学习记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "月度学情报告",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4c027d0f60ec6837",
+          "catalog-e4edeb9b166b8db7",
+          "catalog-411b2c5d6f810d76",
+          "catalog-423a06080c47afe2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "admissions",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "招生与毕业去向",
+      "description": "市场核对招生表述与审核要求，形成待审核物料。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "市场",
+            "source_refs": [
+              "source-catalog-a9fcfe0d017c8cc2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对招生表述与审核要求",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a9fcfe0d017c8cc2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "招生资料及要求",
+            "source_refs": [
+              "source-catalog-a9fcfe0d017c8cc2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待审核物料",
+            "source_refs": [
+              "source-catalog-a9fcfe0d017c8cc2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a9fcfe0d017c8cc2",
+            "title": "招生物料合规生成 —— 用自己学员的真实故事，过广告法这一关",
+            "locator": "【教育科研·市场】招生物料合规生成 —— 用自己学员的真实故事，过广告法这一关/招生物料合规生成 —— 用自己学员的真实故事，过广告法这一关.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%8B%9B%E7%94%9F%E7%89%A9%E6%96%99%E5%90%88%E8%A7%84%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AD%A6%E5%91%98%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%EF%BC%8C%E8%BF%87%E5%B9%BF%E5%91%8A%E6%B3%95%E8%BF%99%E4%B8%80%E5%85%B3/%E6%8B%9B%E7%94%9F%E7%89%A9%E6%96%99%E5%90%88%E8%A7%84%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AD%A6%E5%91%98%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%EF%BC%8C%E8%BF%87%E5%B9%BF%E5%91%8A%E6%B3%95%E8%BF%99%E4%B8%80%E5%85%B3.md"
+          },
+          {
+            "id": "source-catalog-1e976e8f67339bf1",
+            "title": "毕业去向登记佐证核验 —— 逐人对照去向类型界定核验佐证材料，只做真实性与完整性检查，不碰落实率本身",
+            "locator": "【教育科研·行政】毕业去向登记佐证核验 —— 逐人对照去向类型界定核验佐证材料，只做真实性与完整性检查，不碰落实率本身/毕业去向登记佐证核验 —— 逐人对照去向类型界定核验佐证材料，只做真实性与完整性检查，不碰落实率本身.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91%E7%99%BB%E8%AE%B0%E4%BD%90%E8%AF%81%E6%A0%B8%E9%AA%8C%20%E2%80%94%E2%80%94%20%E9%80%90%E4%BA%BA%E5%AF%B9%E7%85%A7%E5%8E%BB%E5%90%91%E7%B1%BB%E5%9E%8B%E7%95%8C%E5%AE%9A%E6%A0%B8%E9%AA%8C%E4%BD%90%E8%AF%81%E6%9D%90%E6%96%99%EF%BC%8C%E5%8F%AA%E5%81%9A%E7%9C%9F%E5%AE%9E%E6%80%A7%E4%B8%8E%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A3%80%E6%9F%A5%EF%BC%8C%E4%B8%8D%E7%A2%B0%E8%90%BD%E5%AE%9E%E7%8E%87%E6%9C%AC%E8%BA%AB/%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91%E7%99%BB%E8%AE%B0%E4%BD%90%E8%AF%81%E6%A0%B8%E9%AA%8C%20%E2%80%94%E2%80%94%20%E9%80%90%E4%BA%BA%E5%AF%B9%E7%85%A7%E5%8E%BB%E5%90%91%E7%B1%BB%E5%9E%8B%E7%95%8C%E5%AE%9A%E6%A0%B8%E9%AA%8C%E4%BD%90%E8%AF%81%E6%9D%90%E6%96%99%EF%BC%8C%E5%8F%AA%E5%81%9A%E7%9C%9F%E5%AE%9E%E6%80%A7%E4%B8%8E%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A3%80%E6%9F%A5%EF%BC%8C%E4%B8%8D%E7%A2%B0%E8%90%BD%E5%AE%9E%E7%8E%87%E6%9C%AC%E8%BA%AB.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a9fcfe0d017c8cc2",
+            "title": "招生物料合规生成 —— 用自己学员的真实故事，过广告法这一关",
+            "roles": "市场",
+            "description": "通用 AI 文案家长看两句就划走，真正的风险是下一张罚单",
+            "source_refs": [
+              "source-catalog-a9fcfe0d017c8cc2"
+            ]
+          },
+          {
+            "id": "catalog-1e976e8f67339bf1",
+            "title": "毕业去向登记佐证核验 —— 逐人对照去向类型界定核验佐证材料，只做真实性与完整性检查，不碰落实率本身",
+            "roles": "行政",
+            "description": "就业数据保真是「不可触摸的高压线」，7 所高校 60 人被问责的那件事，起点只是「催齐就算」",
+            "source_refs": [
+              "source-catalog-1e976e8f67339bf1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a9fcfe0d017c8cc2"
+              ]
+            },
+            "label": "招生资料及要求",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待审核物料",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a9fcfe0d017c8cc2",
+          "catalog-1e976e8f67339bf1"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "academic",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "教学检查与院系管理",
+      "description": "行政比对院系材料与检查清单，形成缺项记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "行政",
+            "source_refs": [
+              "source-catalog-ac86b5de140c1ea5"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "比对院系材料与检查清单",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-ac86b5de140c1ea5"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "教学检查清单与附件",
+            "source_refs": [
+              "source-catalog-ac86b5de140c1ea5"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "缺项记录",
+            "source_refs": [
+              "source-catalog-ac86b5de140c1ea5"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-61e59c6aa00b014b",
+            "title": "一流课程申报附件清单核对 —— 十项附件各有不同的盖章方与签字方，缺哪项、找谁盖、什么时候截止，逐项对",
+            "locator": "【教育科研·教师·行政】一流课程申报附件清单核对 —— 十项附件各有不同的盖章方与签字方，缺哪项、找谁盖、什么时候截止，逐项对/一流课程申报附件清单核对 —— 十项附件各有不同的盖章方与签字方，缺哪项、找谁盖、什么时候截止，逐项对.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E4%B8%80%E6%B5%81%E8%AF%BE%E7%A8%8B%E7%94%B3%E6%8A%A5%E9%99%84%E4%BB%B6%E6%B8%85%E5%8D%95%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%8D%81%E9%A1%B9%E9%99%84%E4%BB%B6%E5%90%84%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E7%9B%96%E7%AB%A0%E6%96%B9%E4%B8%8E%E7%AD%BE%E5%AD%97%E6%96%B9%EF%BC%8C%E7%BC%BA%E5%93%AA%E9%A1%B9%E3%80%81%E6%89%BE%E8%B0%81%E7%9B%96%E3%80%81%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%88%AA%E6%AD%A2%EF%BC%8C%E9%80%90%E9%A1%B9%E5%AF%B9/%E4%B8%80%E6%B5%81%E8%AF%BE%E7%A8%8B%E7%94%B3%E6%8A%A5%E9%99%84%E4%BB%B6%E6%B8%85%E5%8D%95%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%8D%81%E9%A1%B9%E9%99%84%E4%BB%B6%E5%90%84%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E7%9B%96%E7%AB%A0%E6%96%B9%E4%B8%8E%E7%AD%BE%E5%AD%97%E6%96%B9%EF%BC%8C%E7%BC%BA%E5%93%AA%E9%A1%B9%E3%80%81%E6%89%BE%E8%B0%81%E7%9B%96%E3%80%81%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%88%AA%E6%AD%A2%EF%BC%8C%E9%80%90%E9%A1%B9%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-ac86b5de140c1ea5",
+            "title": "教学检查材料清单核对 —— 期初检查的五类材料、96 位老师，缺谁的、缺哪份，名单先出来",
+            "locator": "【教育科研·行政】教学检查材料清单核对 —— 期初检查的五类材料、96 位老师，缺谁的、缺哪份，名单先出来/教学检查材料清单核对 —— 期初检查的五类材料、96 位老师，缺谁的、缺哪份，名单先出来.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E6%95%99%E5%AD%A6%E6%A3%80%E6%9F%A5%E6%9D%90%E6%96%99%E6%B8%85%E5%8D%95%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E6%9C%9F%E5%88%9D%E6%A3%80%E6%9F%A5%E7%9A%84%E4%BA%94%E7%B1%BB%E6%9D%90%E6%96%99%E3%80%8196%20%E4%BD%8D%E8%80%81%E5%B8%88%EF%BC%8C%E7%BC%BA%E8%B0%81%E7%9A%84%E3%80%81%E7%BC%BA%E5%93%AA%E4%BB%BD%EF%BC%8C%E5%90%8D%E5%8D%95%E5%85%88%E5%87%BA%E6%9D%A5/%E6%95%99%E5%AD%A6%E6%A3%80%E6%9F%A5%E6%9D%90%E6%96%99%E6%B8%85%E5%8D%95%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E6%9C%9F%E5%88%9D%E6%A3%80%E6%9F%A5%E7%9A%84%E4%BA%94%E7%B1%BB%E6%9D%90%E6%96%99%E3%80%8196%20%E4%BD%8D%E8%80%81%E5%B8%88%EF%BC%8C%E7%BC%BA%E8%B0%81%E7%9A%84%E3%80%81%E7%BC%BA%E5%93%AA%E4%BB%BD%EF%BC%8C%E5%90%8D%E5%8D%95%E5%85%88%E5%87%BA%E6%9D%A5.md"
+          },
+          {
+            "id": "source-catalog-1cdea931942a47df",
+            "title": "院系会议纪要与待办督办 —— 党政联席会散会即出纪要，上次会议定的六件事这次谁还没交卷",
+            "locator": "【教育科研·行政】院系会议纪要与待办督办 —— 党政联席会散会即出纪要，上次会议定的六件事这次谁还没交卷/院系会议纪要与待办督办 —— 党政联席会散会即出纪要，上次会议定的六件事这次谁还没交卷.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E9%99%A2%E7%B3%BB%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%E4%B8%8E%E5%BE%85%E5%8A%9E%E7%9D%A3%E5%8A%9E%20%E2%80%94%E2%80%94%20%E5%85%9A%E6%94%BF%E8%81%94%E5%B8%AD%E4%BC%9A%E6%95%A3%E4%BC%9A%E5%8D%B3%E5%87%BA%E7%BA%AA%E8%A6%81%EF%BC%8C%E4%B8%8A%E6%AC%A1%E4%BC%9A%E8%AE%AE%E5%AE%9A%E7%9A%84%E5%85%AD%E4%BB%B6%E4%BA%8B%E8%BF%99%E6%AC%A1%E8%B0%81%E8%BF%98%E6%B2%A1%E4%BA%A4%E5%8D%B7/%E9%99%A2%E7%B3%BB%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%E4%B8%8E%E5%BE%85%E5%8A%9E%E7%9D%A3%E5%8A%9E%20%E2%80%94%E2%80%94%20%E5%85%9A%E6%94%BF%E8%81%94%E5%B8%AD%E4%BC%9A%E6%95%A3%E4%BC%9A%E5%8D%B3%E5%87%BA%E7%BA%AA%E8%A6%81%EF%BC%8C%E4%B8%8A%E6%AC%A1%E4%BC%9A%E8%AE%AE%E5%AE%9A%E7%9A%84%E5%85%AD%E4%BB%B6%E4%BA%8B%E8%BF%99%E6%AC%A1%E8%B0%81%E8%BF%98%E6%B2%A1%E4%BA%A4%E5%8D%B7.md"
+          },
+          {
+            "id": "source-catalog-dc7bde7a9d0fe5a5",
+            "title": "专业认证自评材料引擎 —— 三年试卷、成绩、大纲、教研台账跨部门归集，自评报告七大块逐章出初稿与佐证索引",
+            "locator": "【教育科研·行政】专业认证自评材料引擎 —— 三年试卷、成绩、大纲、教研台账跨部门归集，自评报告七大块逐章出初稿与佐证索引/专业认证自评材料引擎 —— 三年试卷、成绩、大纲、教研台账跨部门归集，自评报告七大块逐章出初稿与佐证索引.md:10",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E4%B8%93%E4%B8%9A%E8%AE%A4%E8%AF%81%E8%87%AA%E8%AF%84%E6%9D%90%E6%96%99%E5%BC%95%E6%93%8E%20%E2%80%94%E2%80%94%20%E4%B8%89%E5%B9%B4%E8%AF%95%E5%8D%B7%E3%80%81%E6%88%90%E7%BB%A9%E3%80%81%E5%A4%A7%E7%BA%B2%E3%80%81%E6%95%99%E7%A0%94%E5%8F%B0%E8%B4%A6%E8%B7%A8%E9%83%A8%E9%97%A8%E5%BD%92%E9%9B%86%EF%BC%8C%E8%87%AA%E8%AF%84%E6%8A%A5%E5%91%8A%E4%B8%83%E5%A4%A7%E5%9D%97%E9%80%90%E7%AB%A0%E5%87%BA%E5%88%9D%E7%A8%BF%E4%B8%8E%E4%BD%90%E8%AF%81%E7%B4%A2%E5%BC%95/%E4%B8%93%E4%B8%9A%E8%AE%A4%E8%AF%81%E8%87%AA%E8%AF%84%E6%9D%90%E6%96%99%E5%BC%95%E6%93%8E%20%E2%80%94%E2%80%94%20%E4%B8%89%E5%B9%B4%E8%AF%95%E5%8D%B7%E3%80%81%E6%88%90%E7%BB%A9%E3%80%81%E5%A4%A7%E7%BA%B2%E3%80%81%E6%95%99%E7%A0%94%E5%8F%B0%E8%B4%A6%E8%B7%A8%E9%83%A8%E9%97%A8%E5%BD%92%E9%9B%86%EF%BC%8C%E8%87%AA%E8%AF%84%E6%8A%A5%E5%91%8A%E4%B8%83%E5%A4%A7%E5%9D%97%E9%80%90%E7%AB%A0%E5%87%BA%E5%88%9D%E7%A8%BF%E4%B8%8E%E4%BD%90%E8%AF%81%E7%B4%A2%E5%BC%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-61e59c6aa00b014b",
+            "title": "一流课程申报附件清单核对 —— 十项附件各有不同的盖章方与签字方，缺哪项、找谁盖、什么时候截止，逐项对",
+            "roles": "教师 · 行政",
+            "description": "申报书正文两天能写完，真正压垮人的是十项附件——每项一个不同的盖章方",
+            "source_refs": [
+              "source-catalog-61e59c6aa00b014b"
+            ]
+          },
+          {
+            "id": "catalog-ac86b5de140c1ea5",
+            "title": "教学检查材料清单核对 —— 期初检查的五类材料、96 位老师，缺谁的、缺哪份，名单先出来",
+            "roles": "行政",
+            "description": "期初教学检查年年查五类材料，查出的整改名单从来赶不上补交截止日",
+            "source_refs": [
+              "source-catalog-ac86b5de140c1ea5"
+            ]
+          },
+          {
+            "id": "catalog-1cdea931942a47df",
+            "title": "院系会议纪要与待办督办 —— 党政联席会散会即出纪要，上次会议定的六件事这次谁还没交卷",
+            "roles": "行政",
+            "description": "每周一场党政联席会，纪要一周后才发出，待办到下次开会前无人再提",
+            "source_refs": [
+              "source-catalog-1cdea931942a47df"
+            ]
+          },
+          {
+            "id": "catalog-dc7bde7a9d0fe5a5",
+            "title": "专业认证自评材料引擎 —— 三年试卷、成绩、大纲、教研台账跨部门归集，自评报告七大块逐章出初稿与佐证索引",
+            "roles": "行政",
+            "description": "工程认证的实录是「吃住办公室一个月、210 页报告、两尺高佐证材料」，认证所需的恰恰是前三个场景的日常沉淀",
+            "source_refs": [
+              "source-catalog-dc7bde7a9d0fe5a5"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-ac86b5de140c1ea5"
+              ]
+            },
+            "label": "教学检查清单与附件",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "缺项记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-61e59c6aa00b014b",
+          "catalog-ac86b5de140c1ea5",
+          "catalog-1cdea931942a47df",
+          "catalog-dc7bde7a9d0fe5a5"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "教学与教研",
+      "scene_ids": [
+        "teaching",
+        "evaluation",
+        "learner"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "办学与科研",
+      "scene_ids": [
+        "academic",
+        "research",
+        "admissions"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 教育科研",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-a08398380b6f6d45",
+      "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+      "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:81",
+      "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "教案课件初稿",
+      "source_refs": [
+        "source-catalog-a08398380b6f6d45"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "核对教研资料",
+              "participant": "教师",
+              "description": "接收教研库记录，查看课程骨架与历次教研备注。交付可用教研材料。"
+            },
+            {
+              "label": "补充班级学情",
+              "participant": "教师",
+              "description": "接收可用教研材料，整理课堂记录中与本节课相关的困难。交付本班备课要点。"
+            },
+            {
+              "label": "生成分层初稿",
+              "participant": "教师",
+              "description": "接收本班备课要点，按学校或机构的教案骨架安排教学活动。交付待审教案与分层预案。"
+            },
+            {
+              "label": "教师审定与回流",
+              "participant": "教师",
+              "description": "接收待审教案与分层预案，核定教案，登记修改并把经验回流到教研库。交付审定教案与教研修订记录。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "teaching"
+  }
+}

@@ -1,0 +1,47 @@
+id: education-research
+name: 教育科研
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 申报书与申报清单
+  - 待复核项
+  - 试卷和成绩记录
+  - 试卷分析报告
+  - 教研资料与课堂记录
+  - 教案课件草稿
+  - 阶段学习记录
+  - 月度学情报告
+  - 招生资料及要求
+  - 待审核物料
+  - 教学检查清单与附件
+  - 缺项记录
+roles:
+  - 教师
+  - 行政
+  - HR
+  - 市场
+  - 销售
+  - 研发
+  - 运营
+actions:
+  - 核对申报材料与提交要求
+  - 汇总答卷结果并定位薄弱知识点
+  - 对照教研资料与班级学情备课
+  - 按学员整理学习表现
+  - 核对招生表述与审核要求
+  - 比对院系材料与检查清单
+asset_mappings:
+  移动教学白板:
+    - education-research.furniture.teaching-board
+  教学区:
+    - education-research.furniture.teaching-board
+  对照教研资料与班级学情备课:
+    - education-research.furniture.teaching-board
+templates:
+  - meeting-review
+  - monitoring-center
+  - equipment-operation
+  - single-workstation
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

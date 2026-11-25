@@ -1,0 +1,56 @@
+id: universal
+name: 通用
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 面试记录与评分表
+  - 候选人评估汇总
+  - 沟通记录
+  - 销售跟进提醒
+  - 活动资料
+  - 策划案草稿
+  - 需求与变更记录
+  - 需求变更台账
+  - 合同文本与标准模板
+  - 条款偏离清单
+  - 销售台账、发票与回款
+  - 账龄报告与催收清单
+  - 采购价格与规格
+  - 历史采购价格曲线
+  - 盘点表和资产记录
+  - 盘点报告
+roles:
+  - 财务
+  - 采购
+  - 法务
+  - 产品
+  - HR
+  - 市场
+  - 销售
+  - 行政
+  - 企业负责人
+actions:
+  - 汇总面试评价和证据
+  - 整理会谈信息和约定事项
+  - 整理活动背景和受众
+  - 核对变更及确认信息
+  - 逐条比对合同与模板
+  - 对齐发票、销售台账与回款
+  - 对齐历史采购记录
+  - 核对盘点表与记录差异
+asset_mappings:
+  文档扫描仪:
+    - universal.tool.document-scanner
+  单据处理台:
+    - universal.tool.document-scanner
+  对齐发票、销售台账与回款:
+    - universal.tool.document-scanner
+templates:
+  - meeting-review
+  - single-workstation
+  - monitoring-center
+  - equipment-operation
+  - warehouse
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

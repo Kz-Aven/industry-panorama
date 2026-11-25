@@ -1,0 +1,1 @@
+{"id":"production-line","title":"线性生产","size":[13,8],"slots":{"machine":[3.1,2.85,0],"operator":[3.55,5.05,0],"conveyor":[6.45,3.05,0],"inspection":[9.65,3.3,0],"inspector":[9.55,5.05,0],"materials":[1.5,5.7,0],"finished":[11.75,5.3,0],"board":[9.7,1.05,0],"wall":[5.25,0.43,0]}}

@@ -1,0 +1,159 @@
+{
+  "atlas_id": "customer-service-journey",
+  "title": "客户服务 · 工单回复与进度通知",
+  "description": "从工单建立到回复通知和归档的工作流。",
+  "target": "Abrar74774/FossFLOW@v1.0.6",
+  "view_id": "customer-service-journey",
+  "sprite": {
+    "size": 640,
+    "anchor": [
+      320,
+      320
+    ],
+    "scale": 2.5
+  },
+  "zones": [
+    {
+      "id": "workflow",
+      "fossflow_region_id": "zone-workflow",
+      "title": "工单流转",
+      "scene_ids": [
+        "ticket-intake",
+        "ticket-verify",
+        "ticket-notify"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "ticket-intake",
+      "fossflow_item_id": "ticket-intake",
+      "fossflow_icon_id": "art-ticket-intake",
+      "title": "受理与建单",
+      "description": "客服收集来访或渠道反馈并建立工单，形成结构化工单。",
+      "cases": [
+        {
+          "id": "customer-ticket",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "roles": "客服",
+          "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+          "source_refs": [
+            "source-customer-ticket"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-customer-ticket",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.desk",
+        "universal.person.office-worker",
+        "universal.person.customer",
+        "universal.building.window-wall",
+        "universal.furniture.chair",
+        "universal.electronics.computer",
+        "universal.document.sheet"
+      ]
+    },
+    {
+      "scene_id": "ticket-verify",
+      "fossflow_item_id": "ticket-verify",
+      "fossflow_icon_id": "art-ticket-verify",
+      "title": "事实核对与回复草拟",
+      "description": "技术支持汇集工单和状态信息，核对已知事实，形成回复草稿。",
+      "cases": [
+        {
+          "id": "customer-ticket",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "roles": "客服",
+          "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+          "source_refs": [
+            "source-customer-ticket"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-customer-ticket",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.industrial",
+        "universal.furniture.desk",
+        "universal.person.technician",
+        "universal.electronics.display",
+        "universal.document.sheet",
+        "universal.accessory.kanban",
+        "universal.accessory.status-light"
+      ]
+    },
+    {
+      "scene_id": "ticket-notify",
+      "fossflow_item_id": "ticket-notify",
+      "fossflow_icon_id": "art-ticket-notify",
+      "title": "进度通知与归档",
+      "description": "客服确认进度、更新通知并保存沟通记录，形成工单沟通档案。",
+      "cases": [
+        {
+          "id": "customer-ticket",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "roles": "客服",
+          "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+          "source_refs": [
+            "source-customer-ticket"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-customer-ticket",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.desk",
+        "universal.person.office-worker",
+        "universal.person.customer",
+        "universal.building.window-wall",
+        "universal.electronics.computer",
+        "universal.document.sheet"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "flow-1",
+      "fossflow_connector_id": "flow-1",
+      "source": "ticket-intake",
+      "target": "ticket-verify",
+      "kind": "flow",
+      "label": "结构化工单",
+      "source_refs": [
+        "source-customer-ticket"
+      ]
+    },
+    {
+      "id": "flow-2",
+      "fossflow_connector_id": "flow-2",
+      "source": "ticket-verify",
+      "target": "ticket-notify",
+      "kind": "flow",
+      "label": "回复草稿与更新口径",
+      "source_refs": [
+        "source-customer-ticket"
+      ]
+    }
+  ]
+}

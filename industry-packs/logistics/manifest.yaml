@@ -1,0 +1,46 @@
+id: logistics
+name: 交通物流
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 盘点表与库存流水
+  - 库存差异归因清单
+  - 报关单与关联单据
+  - 单据差异清单
+  - 账单与承运记录
+  - 待核费用明细
+  - 运营记录
+  - 经营日报
+  - 事故与行李信息
+  - 事故记录单
+  - 客户询价与成本口径
+  - 报价方案
+roles:
+  - 财务
+  - 客服
+  - 销售
+  - 市场
+  - 运营
+actions:
+  - 对照盘点表和进出库记录
+  - 检查申报材料之间的差异
+  - 对照账单、运单与约定费用
+  - 汇总网点经营数据
+  - 整理行李事故及遗失记录
+  - 核对运输要求并准备报价
+asset_mappings:
+  集装箱:
+    - logistics.equipment.container
+  仓储区:
+    - logistics.equipment.container
+  对照盘点表和进出库记录:
+    - logistics.equipment.container
+templates:
+  - equipment-operation
+  - single-workstation
+  - meeting-review
+  - monitoring-center
+  - warehouse
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

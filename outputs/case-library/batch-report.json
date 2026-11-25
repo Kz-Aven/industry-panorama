@@ -1,0 +1,126 @@
+{
+  "ok": 20,
+  "failed": 0,
+  "jobs": [
+    {
+      "input": "examples/case-library/logistics/atlas.json",
+      "status": "ok",
+      "scenes": 6,
+      "output": "outputs/case-library/logistics-atlas.html"
+    },
+    {
+      "input": "examples/case-library/logistics/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/logistics-journey.html"
+    },
+    {
+      "input": "examples/case-library/medical-health/atlas.json",
+      "status": "ok",
+      "scenes": 8,
+      "output": "outputs/case-library/medical-health-atlas.html"
+    },
+    {
+      "input": "examples/case-library/medical-health/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/medical-health-journey.html"
+    },
+    {
+      "input": "examples/case-library/construction-tourism/atlas.json",
+      "status": "ok",
+      "scenes": 7,
+      "output": "outputs/case-library/construction-tourism-atlas.html"
+    },
+    {
+      "input": "examples/case-library/construction-tourism/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/construction-tourism-journey.html"
+    },
+    {
+      "input": "examples/case-library/public-services/atlas.json",
+      "status": "ok",
+      "scenes": 6,
+      "output": "outputs/case-library/public-services-atlas.html"
+    },
+    {
+      "input": "examples/case-library/public-services/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/public-services-journey.html"
+    },
+    {
+      "input": "examples/case-library/education-research/atlas.json",
+      "status": "ok",
+      "scenes": 6,
+      "output": "outputs/case-library/education-research-atlas.html"
+    },
+    {
+      "input": "examples/case-library/education-research/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/education-research-journey.html"
+    },
+    {
+      "input": "examples/case-library/digital-creative/atlas.json",
+      "status": "ok",
+      "scenes": 8,
+      "output": "outputs/case-library/digital-creative-atlas.html"
+    },
+    {
+      "input": "examples/case-library/digital-creative/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/digital-creative-journey.html"
+    },
+    {
+      "input": "examples/case-library/consumer-retail/atlas.json",
+      "status": "ok",
+      "scenes": 11,
+      "output": "outputs/case-library/consumer-retail-atlas.html"
+    },
+    {
+      "input": "examples/case-library/consumer-retail/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/consumer-retail-journey.html"
+    },
+    {
+      "input": "examples/case-library/energy-utilities/atlas.json",
+      "status": "ok",
+      "scenes": 7,
+      "output": "outputs/case-library/energy-utilities-atlas.html"
+    },
+    {
+      "input": "examples/case-library/energy-utilities/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/energy-utilities-journey.html"
+    },
+    {
+      "input": "examples/case-library/universal/atlas.json",
+      "status": "ok",
+      "scenes": 8,
+      "output": "outputs/case-library/universal-atlas.html"
+    },
+    {
+      "input": "examples/case-library/universal/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/universal-journey.html"
+    },
+    {
+      "input": "examples/case-library/finance/atlas.json",
+      "status": "ok",
+      "scenes": 6,
+      "output": "outputs/case-library/finance-atlas.html"
+    },
+    {
+      "input": "examples/case-library/finance/journey.json",
+      "status": "ok",
+      "scenes": 4,
+      "output": "outputs/case-library/finance-journey.html"
+    }
+  ]
+}

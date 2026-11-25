@@ -1,0 +1,2002 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "energy-utilities",
+  "id": "energy-utilities-atlas",
+  "type": "industry_atlas",
+  "title": "能源公用场景全景图",
+  "description": "案例库 · 56 个案例，按工作场景归入 7 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "water",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "供水与水质检查",
+      "description": "生产对齐化验台账和管网班组记录，形成异常说明和日报。画面包含供水设施区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "生产",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对齐化验台账和管网班组记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "水质化验与管网记录",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "异常说明和日报",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-fd75b6cd25574a7b",
+            "title": "供水水质公示与上报数据包 —— 化验台账一键转政府公示格式",
+            "locator": "【能源公用·生产】供水水质公示与上报数据包 —— 化验台账一键转政府公示格式/供水水质公示与上报数据包 —— 化验台账一键转政府公示格式.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E4%BE%9B%E6%B0%B4%E6%B0%B4%E8%B4%A8%E5%85%AC%E7%A4%BA%E4%B8%8E%E4%B8%8A%E6%8A%A5%E6%95%B0%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E5%8C%96%E9%AA%8C%E5%8F%B0%E8%B4%A6%E4%B8%80%E9%94%AE%E8%BD%AC%E6%94%BF%E5%BA%9C%E5%85%AC%E7%A4%BA%E6%A0%BC%E5%BC%8F/%E4%BE%9B%E6%B0%B4%E6%B0%B4%E8%B4%A8%E5%85%AC%E7%A4%BA%E4%B8%8E%E4%B8%8A%E6%8A%A5%E6%95%B0%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E5%8C%96%E9%AA%8C%E5%8F%B0%E8%B4%A6%E4%B8%80%E9%94%AE%E8%BD%AC%E6%94%BF%E5%BA%9C%E5%85%AC%E7%A4%BA%E6%A0%BC%E5%BC%8F.md"
+          },
+          {
+            "id": "source-catalog-53fa20f00b399a16",
+            "title": "管网巡检记录与历史隐患台账比对",
+            "locator": "【能源公用·生产】管网巡检记录与历史隐患台账比对/管网巡检记录与历史隐患台账比对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%AE%A1%E7%BD%91%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%8E%86%E5%8F%B2%E9%9A%90%E6%82%A3%E5%8F%B0%E8%B4%A6%E6%AF%94%E5%AF%B9/%E7%AE%A1%E7%BD%91%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%8E%86%E5%8F%B2%E9%9A%90%E6%82%A3%E5%8F%B0%E8%B4%A6%E6%AF%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-618bafe9a6a0b14a",
+            "title": "全流程水质合规扫描与月报编制 —— 四个断面逐项对照 GB 5749-2022",
+            "locator": "【能源公用·生产】全流程水质合规扫描与月报编制 —— 四个断面逐项对照 GB 5749-2022/全流程水质合规扫描与月报编制 —— 四个断面逐项对照 GB 5749-2022.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%85%A8%E6%B5%81%E7%A8%8B%E6%B0%B4%E8%B4%A8%E5%90%88%E8%A7%84%E6%89%AB%E6%8F%8F%E4%B8%8E%E6%9C%88%E6%8A%A5%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E5%9B%9B%E4%B8%AA%E6%96%AD%E9%9D%A2%E9%80%90%E9%A1%B9%E5%AF%B9%E7%85%A7%20GB%205749-2022/%E5%85%A8%E6%B5%81%E7%A8%8B%E6%B0%B4%E8%B4%A8%E5%90%88%E8%A7%84%E6%89%AB%E6%8F%8F%E4%B8%8E%E6%9C%88%E6%8A%A5%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E5%9B%9B%E4%B8%AA%E6%96%AD%E9%9D%A2%E9%80%90%E9%A1%B9%E5%AF%B9%E7%85%A7%20GB%205749-2022.md"
+          },
+          {
+            "id": "source-catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-fd75b6cd25574a7b",
+            "title": "供水水质公示与上报数据包 —— 化验台账一键转政府公示格式",
+            "roles": "生产",
+            "description": "水质公示页每日更新，每期数据都靠人工将台账誊入政府格式，错一格即退回重报",
+            "source_refs": [
+              "source-catalog-fd75b6cd25574a7b"
+            ]
+          },
+          {
+            "id": "catalog-53fa20f00b399a16",
+            "title": "管网巡检记录与历史隐患台账比对",
+            "roles": "生产",
+            "description": "巡检仪显示每天 108 条巡检都完成了，三个月前那段被施工碾压过的管段，隐患台账里仍挂着「整改中」",
+            "source_refs": [
+              "source-catalog-53fa20f00b399a16"
+            ]
+          },
+          {
+            "id": "catalog-618bafe9a6a0b14a",
+            "title": "全流程水质合规扫描与月报编制 —— 四个断面逐项对照 GB 5749-2022",
+            "roles": "生产",
+            "description": "九项日检日日做、月检四十三项月月做，但哪项接近限值、哪个断面在恶化，始终无人横向比对",
+            "source_refs": [
+              "source-catalog-618bafe9a6a0b14a"
+            ]
+          },
+          {
+            "id": "catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "roles": "生产",
+            "description": "日报每天发、每天合格，直到末梢监测点余氯跌到限值边缘，才发现没人知道该找谁",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            },
+            "label": "水质化验与管网记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "异常说明和日报",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "energy-utilities.equipment.pump-skid",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "供水泵组",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-fd75b6cd25574a7b",
+          "catalog-53fa20f00b399a16",
+          "catalog-618bafe9a6a0b14a",
+          "catalog-b2d555a5adefddf4"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "environment",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "安全与环境记录",
+      "description": "生产逐项核对报送参数与记录出处，形成参数差异清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "生产",
+            "source_refs": [
+              "source-catalog-622b481c49327277"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "逐项核对报送参数与记录出处",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-622b481c49327277"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "碳排参数和记录",
+            "source_refs": [
+              "source-catalog-622b481c49327277"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "参数差异清单",
+            "source_refs": [
+              "source-catalog-622b481c49327277"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-195f581a757b2883",
+            "title": "承包商资质审查与人员证书到期预警 —— 外包队出一次事，业主单位跟着吃处罚",
+            "locator": "【能源公用·采购】承包商资质审查与人员证书到期预警 —— 外包队出一次事，业主单位跟着吃处罚/承包商资质审查与人员证书到期预警 —— 外包队出一次事，业主单位跟着吃处罚.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%89%BF%E5%8C%85%E5%95%86%E8%B5%84%E8%B4%A8%E5%AE%A1%E6%9F%A5%E4%B8%8E%E4%BA%BA%E5%91%98%E8%AF%81%E4%B9%A6%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E5%A4%96%E5%8C%85%E9%98%9F%E5%87%BA%E4%B8%80%E6%AC%A1%E4%BA%8B%EF%BC%8C%E4%B8%9A%E4%B8%BB%E5%8D%95%E4%BD%8D%E8%B7%9F%E7%9D%80%E5%90%83%E5%A4%84%E7%BD%9A/%E6%89%BF%E5%8C%85%E5%95%86%E8%B5%84%E8%B4%A8%E5%AE%A1%E6%9F%A5%E4%B8%8E%E4%BA%BA%E5%91%98%E8%AF%81%E4%B9%A6%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E5%A4%96%E5%8C%85%E9%98%9F%E5%87%BA%E4%B8%80%E6%AC%A1%E4%BA%8B%EF%BC%8C%E4%B8%9A%E4%B8%BB%E5%8D%95%E4%BD%8D%E8%B7%9F%E7%9D%80%E5%90%83%E5%A4%84%E7%BD%9A.md"
+          },
+          {
+            "id": "source-catalog-b988454eed9fcbef",
+            "title": "基于本厂事件库的安规考试题库",
+            "locator": "【能源公用·生产】基于本厂事件库的安规考试题库/基于本厂事件库的安规考试题库.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%9F%BA%E4%BA%8E%E6%9C%AC%E5%8E%82%E4%BA%8B%E4%BB%B6%E5%BA%93%E7%9A%84%E5%AE%89%E8%A7%84%E8%80%83%E8%AF%95%E9%A2%98%E5%BA%93/%E5%9F%BA%E4%BA%8E%E6%9C%AC%E5%8E%82%E4%BA%8B%E4%BB%B6%E5%BA%93%E7%9A%84%E5%AE%89%E8%A7%84%E8%80%83%E8%AF%95%E9%A2%98%E5%BA%93.md"
+          },
+          {
+            "id": "source-catalog-ede00b8ffd46da19",
+            "title": "入户安检隐患清单与整改闭环",
+            "locator": "【能源公用·生产】入户安检隐患清单与整改闭环/入户安检隐患清单与整改闭环.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%85%A5%E6%88%B7%E5%AE%89%E6%A3%80%E9%9A%90%E6%82%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E6%95%B4%E6%94%B9%E9%97%AD%E7%8E%AF/%E5%85%A5%E6%88%B7%E5%AE%89%E6%A3%80%E9%9A%90%E6%82%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E6%95%B4%E6%94%B9%E9%97%AD%E7%8E%AF.md"
+          },
+          {
+            "id": "source-catalog-64bff7830d1a73c9",
+            "title": "输电通道外破隐患与护线台账比对",
+            "locator": "【能源公用·生产】输电通道外破隐患与护线台账比对/输电通道外破隐患与护线台账比对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E8%BE%93%E7%94%B5%E9%80%9A%E9%81%93%E5%A4%96%E7%A0%B4%E9%9A%90%E6%82%A3%E4%B8%8E%E6%8A%A4%E7%BA%BF%E5%8F%B0%E8%B4%A6%E6%AF%94%E5%AF%B9/%E8%BE%93%E7%94%B5%E9%80%9A%E9%81%93%E5%A4%96%E7%A0%B4%E9%9A%90%E6%82%A3%E4%B8%8E%E6%8A%A4%E7%BA%BF%E5%8F%B0%E8%B4%A6%E6%AF%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-622b481c49327277",
+            "title": "碳排放重点参数链路核验",
+            "locator": "【能源公用·生产】碳排放重点参数链路核验/碳排放重点参数链路核验.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%A2%B3%E6%8E%92%E6%94%BE%E9%87%8D%E7%82%B9%E5%8F%82%E6%95%B0%E9%93%BE%E8%B7%AF%E6%A0%B8%E9%AA%8C/%E7%A2%B3%E6%8E%92%E6%94%BE%E9%87%8D%E7%82%B9%E5%8F%82%E6%95%B0%E9%93%BE%E8%B7%AF%E6%A0%B8%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-9332e6ecb36c71f1",
+            "title": "隐患台账屡改屡犯分析 —— 同一地点同一隐患第四次整改，销号记录每次都写「已闭环」",
+            "locator": "【能源公用·生产】隐患台账屡改屡犯分析 —— 同一地点同一隐患第四次整改，销号记录每次都写「已闭环」/隐患台账屡改屡犯分析 —— 同一地点同一隐患第四次整改，销号记录每次都写「已闭环」.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E9%9A%90%E6%82%A3%E5%8F%B0%E8%B4%A6%E5%B1%A1%E6%94%B9%E5%B1%A1%E7%8A%AF%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E5%90%8C%E4%B8%80%E5%9C%B0%E7%82%B9%E5%90%8C%E4%B8%80%E9%9A%90%E6%82%A3%E7%AC%AC%E5%9B%9B%E6%AC%A1%E6%95%B4%E6%94%B9%EF%BC%8C%E9%94%80%E5%8F%B7%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E9%83%BD%E5%86%99%E3%80%8C%E5%B7%B2%E9%97%AD%E7%8E%AF%E3%80%8D/%E9%9A%90%E6%82%A3%E5%8F%B0%E8%B4%A6%E5%B1%A1%E6%94%B9%E5%B1%A1%E7%8A%AF%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E5%90%8C%E4%B8%80%E5%9C%B0%E7%82%B9%E5%90%8C%E4%B8%80%E9%9A%90%E6%82%A3%E7%AC%AC%E5%9B%9B%E6%AC%A1%E6%95%B4%E6%94%B9%EF%BC%8C%E9%94%80%E5%8F%B7%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E9%83%BD%E5%86%99%E3%80%8C%E5%B7%B2%E9%97%AD%E7%8E%AF%E3%80%8D.md"
+          },
+          {
+            "id": "source-catalog-a21af6f53ae83ad1",
+            "title": "环保招标与商机监控简报 —— 盯标、筛资质、评匹配，一条不漏",
+            "locator": "【能源公用·销售】环保招标与商机监控简报 —— 盯标、筛资质、评匹配，一条不漏/环保招标与商机监控简报 —— 盯标、筛资质、评匹配，一条不漏.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%8E%AF%E4%BF%9D%E6%8B%9B%E6%A0%87%E4%B8%8E%E5%95%86%E6%9C%BA%E7%9B%91%E6%8E%A7%E7%AE%80%E6%8A%A5%20%E2%80%94%E2%80%94%20%E7%9B%AF%E6%A0%87%E3%80%81%E7%AD%9B%E8%B5%84%E8%B4%A8%E3%80%81%E8%AF%84%E5%8C%B9%E9%85%8D%EF%BC%8C%E4%B8%80%E6%9D%A1%E4%B8%8D%E6%BC%8F/%E7%8E%AF%E4%BF%9D%E6%8B%9B%E6%A0%87%E4%B8%8E%E5%95%86%E6%9C%BA%E7%9B%91%E6%8E%A7%E7%AE%80%E6%8A%A5%20%E2%80%94%E2%80%94%20%E7%9B%AF%E6%A0%87%E3%80%81%E7%AD%9B%E8%B5%84%E8%B4%A8%E3%80%81%E8%AF%84%E5%8C%B9%E9%85%8D%EF%BC%8C%E4%B8%80%E6%9D%A1%E4%B8%8D%E6%BC%8F.md"
+          },
+          {
+            "id": "source-catalog-1338af041b53848d",
+            "title": "环保管家月报与园区诊断报告 —— 检测巡查隐患一表成报，合同交付不欠账",
+            "locator": "【能源公用·运营】环保管家月报与园区诊断报告 —— 检测巡查隐患一表成报，合同交付不欠账/环保管家月报与园区诊断报告 —— 检测巡查隐患一表成报，合同交付不欠账.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%8E%AF%E4%BF%9D%E7%AE%A1%E5%AE%B6%E6%9C%88%E6%8A%A5%E4%B8%8E%E5%9B%AD%E5%8C%BA%E8%AF%8A%E6%96%AD%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%A3%80%E6%B5%8B%E5%B7%A1%E6%9F%A5%E9%9A%90%E6%82%A3%E4%B8%80%E8%A1%A8%E6%88%90%E6%8A%A5%EF%BC%8C%E5%90%88%E5%90%8C%E4%BA%A4%E4%BB%98%E4%B8%8D%E6%AC%A0%E8%B4%A6/%E7%8E%AF%E4%BF%9D%E7%AE%A1%E5%AE%B6%E6%9C%88%E6%8A%A5%E4%B8%8E%E5%9B%AD%E5%8C%BA%E8%AF%8A%E6%96%AD%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%A3%80%E6%B5%8B%E5%B7%A1%E6%9F%A5%E9%9A%90%E6%82%A3%E4%B8%80%E8%A1%A8%E6%88%90%E6%8A%A5%EF%BC%8C%E5%90%88%E5%90%8C%E4%BA%A4%E4%BB%98%E4%B8%8D%E6%AC%A0%E8%B4%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-195f581a757b2883",
+            "title": "承包商资质审查与人员证书到期预警 —— 外包队出一次事，业主单位跟着吃处罚",
+            "roles": "采购",
+            "description": "合同资质栏写着「证照齐全有效」，电工证已过期两个月，无人翻看文件盒",
+            "source_refs": [
+              "source-catalog-195f581a757b2883"
+            ]
+          },
+          {
+            "id": "catalog-b988454eed9fcbef",
+            "title": "基于本厂事件库的安规考试题库",
+            "roles": "生产",
+            "description": "安规考试年年考、通用题库网上到处是，本厂自己踩过的坑从未进过考题",
+            "source_refs": [
+              "source-catalog-b988454eed9fcbef"
+            ]
+          },
+          {
+            "id": "catalog-ede00b8ffd46da19",
+            "title": "入户安检隐患清单与整改闭环",
+            "roles": "生产",
+            "description": "安检覆盖率报的是 92%，那 8% 的「到访不遇」里有没有下一张爆管单，没人答得上来",
+            "source_refs": [
+              "source-catalog-ede00b8ffd46da19"
+            ]
+          },
+          {
+            "id": "catalog-64bff7830d1a73c9",
+            "title": "输电通道外破隐患与护线台账比对",
+            "roles": "生产",
+            "description": "施工外破占全市跳闸七成，保护区作业申请登记簿今年只记了 3 页",
+            "source_refs": [
+              "source-catalog-64bff7830d1a73c9"
+            ]
+          },
+          {
+            "id": "catalog-622b481c49327277",
+            "title": "碳排放重点参数链路核验",
+            "roles": "生产",
+            "description": "排放报告的每一个数都「有据可查」，直到核查机构问起某月缩分样的留样量，才发现链路上有个环节没留痕",
+            "source_refs": [
+              "source-catalog-622b481c49327277"
+            ]
+          },
+          {
+            "id": "catalog-9332e6ecb36c71f1",
+            "title": "隐患台账屡改屡犯分析 —— 同一地点同一隐患第四次整改，销号记录每次都写「已闭环」",
+            "roles": "生产",
+            "description": "隐患台账整改完成率 98%，中段运输巷的电缆护罩三年修了四次，每次均验收销号",
+            "source_refs": [
+              "source-catalog-9332e6ecb36c71f1"
+            ]
+          },
+          {
+            "id": "catalog-a21af6f53ae83ad1",
+            "title": "环保招标与商机监控简报 —— 盯标、筛资质、评匹配，一条不漏",
+            "roles": "销售",
+            "description": "招标信息每日在网上发布，但没有专职盯标的人——漏一条，即可能漏掉一个七位数年度合同",
+            "source_refs": [
+              "source-catalog-a21af6f53ae83ad1"
+            ]
+          },
+          {
+            "id": "catalog-1338af041b53848d",
+            "title": "环保管家月报与园区诊断报告 —— 检测巡查隐患一表成报，合同交付不欠账",
+            "roles": "运营",
+            "description": "月报是合同约定的硬性交付物，所需数据在检测报告里、隐患在巡查照片里、整改记录在微信群里",
+            "source_refs": [
+              "source-catalog-1338af041b53848d"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-622b481c49327277"
+              ]
+            },
+            "label": "碳排参数和记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "参数差异清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-195f581a757b2883",
+          "catalog-b988454eed9fcbef",
+          "catalog-ede00b8ffd46da19",
+          "catalog-64bff7830d1a73c9",
+          "catalog-622b481c49327277",
+          "catalog-9332e6ecb36c71f1",
+          "catalog-a21af6f53ae83ad1",
+          "catalog-1338af041b53848d"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "power",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "电力、热源与运行",
+      "description": "生产对齐热源事件的时间和处置记录，形成事件复盘材料。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "生产",
+            "source_refs": [
+              "source-catalog-0aed2da47e42f1fb"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对齐热源事件的时间和处置记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-0aed2da47e42f1fb"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "运行事件和工作记录",
+            "source_refs": [
+              "source-catalog-0aed2da47e42f1fb"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "事件复盘材料",
+            "source_refs": [
+              "source-catalog-0aed2da47e42f1fb"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-1f5169f4cf77ce01",
+            "title": "「两个细则」考核电费归因分析",
+            "locator": "【能源公用·生产】「两个细则」考核电费归因分析/「两个细则」考核电费归因分析.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E3%80%8C%E4%B8%A4%E4%B8%AA%E7%BB%86%E5%88%99%E3%80%8D%E8%80%83%E6%A0%B8%E7%94%B5%E8%B4%B9%E5%BD%92%E5%9B%A0%E5%88%86%E6%9E%90/%E3%80%8C%E4%B8%A4%E4%B8%AA%E7%BB%86%E5%88%99%E3%80%8D%E8%80%83%E6%A0%B8%E7%94%B5%E8%B4%B9%E5%BD%92%E5%9B%A0%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-ba1f0718b10e0702",
+            "title": "调度会一页会材 —— 生产、安全、设备三本账每天早上合成一张纸，矿长问什么都答得上来",
+            "locator": "【能源公用·生产】调度会一页会材 —— 生产、安全、设备三本账每天早上合成一张纸，矿长问什么都答得上来/调度会一页会材 —— 生产、安全、设备三本账每天早上合成一张纸，矿长问什么都答得上来.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E8%B0%83%E5%BA%A6%E4%BC%9A%E4%B8%80%E9%A1%B5%E4%BC%9A%E6%9D%90%20%E2%80%94%E2%80%94%20%E7%94%9F%E4%BA%A7%E3%80%81%E5%AE%89%E5%85%A8%E3%80%81%E8%AE%BE%E5%A4%87%E4%B8%89%E6%9C%AC%E8%B4%A6%E6%AF%8F%E5%A4%A9%E6%97%A9%E4%B8%8A%E5%90%88%E6%88%90%E4%B8%80%E5%BC%A0%E7%BA%B8%EF%BC%8C%E7%9F%BF%E9%95%BF%E9%97%AE%E4%BB%80%E4%B9%88%E9%83%BD%E7%AD%94%E5%BE%97%E4%B8%8A%E6%9D%A5/%E8%B0%83%E5%BA%A6%E4%BC%9A%E4%B8%80%E9%A1%B5%E4%BC%9A%E6%9D%90%20%E2%80%94%E2%80%94%20%E7%94%9F%E4%BA%A7%E3%80%81%E5%AE%89%E5%85%A8%E3%80%81%E8%AE%BE%E5%A4%87%E4%B8%89%E6%9C%AC%E8%B4%A6%E6%AF%8F%E5%A4%A9%E6%97%A9%E4%B8%8A%E5%90%88%E6%88%90%E4%B8%80%E5%BC%A0%E7%BA%B8%EF%BC%8C%E7%9F%BF%E9%95%BF%E9%97%AE%E4%BB%80%E4%B9%88%E9%83%BD%E7%AD%94%E5%BE%97%E4%B8%8A%E6%9D%A5.md"
+          },
+          {
+            "id": "source-catalog-e854f5105ca34fbd",
+            "title": "调度指令与操作票闭环核对",
+            "locator": "【能源公用·生产】调度指令与操作票闭环核对/调度指令与操作票闭环核对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E8%B0%83%E5%BA%A6%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%A5%A8%E9%97%AD%E7%8E%AF%E6%A0%B8%E5%AF%B9/%E8%B0%83%E5%BA%A6%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%A5%A8%E9%97%AD%E7%8E%AF%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-0aed2da47e42f1fb",
+            "title": "双热源异常夜的事件复盘报告",
+            "locator": "【能源公用·生产】双热源异常夜的事件复盘报告/双热源异常夜的事件复盘报告.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%8F%8C%E7%83%AD%E6%BA%90%E5%BC%82%E5%B8%B8%E5%A4%9C%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A/%E5%8F%8C%E7%83%AD%E6%BA%90%E5%BC%82%E5%B8%B8%E5%A4%9C%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A.md"
+          },
+          {
+            "id": "source-catalog-78a728536c3849cd",
+            "title": "污水厂运行日报与月报编制 —— 水量药耗泥量与达标天数一表拼齐",
+            "locator": "【能源公用·生产】污水厂运行日报与月报编制 —— 水量药耗泥量与达标天数一表拼齐/污水厂运行日报与月报编制 —— 水量药耗泥量与达标天数一表拼齐.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B1%A1%E6%B0%B4%E5%8E%82%E8%BF%90%E8%A1%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%88%E6%8A%A5%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E6%B0%B4%E9%87%8F%E8%8D%AF%E8%80%97%E6%B3%A5%E9%87%8F%E4%B8%8E%E8%BE%BE%E6%A0%87%E5%A4%A9%E6%95%B0%E4%B8%80%E8%A1%A8%E6%8B%BC%E9%BD%90/%E6%B1%A1%E6%B0%B4%E5%8E%82%E8%BF%90%E8%A1%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%88%E6%8A%A5%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E6%B0%B4%E9%87%8F%E8%8D%AF%E8%80%97%E6%B3%A5%E9%87%8F%E4%B8%8E%E8%BE%BE%E6%A0%87%E5%A4%A9%E6%95%B0%E4%B8%80%E8%A1%A8%E6%8B%BC%E9%BD%90.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-1f5169f4cf77ce01",
+            "title": "「两个细则」考核电费归因分析",
+            "roles": "生产",
+            "description": "每月 10 日公示考核结果，公示前没人知道自己因何被考核、哪一项还能申诉",
+            "source_refs": [
+              "source-catalog-1f5169f4cf77ce01"
+            ]
+          },
+          {
+            "id": "catalog-ba1f0718b10e0702",
+            "title": "调度会一页会材 —— 生产、安全、设备三本账每天早上合成一张纸，矿长问什么都答得上来",
+            "roles": "生产",
+            "description": "调度会上矿长追问昨日井下情况，三个科室翻十分钟微信记录，会议变成找资料大赛",
+            "source_refs": [
+              "source-catalog-ba1f0718b10e0702"
+            ]
+          },
+          {
+            "id": "catalog-e854f5105ca34fbd",
+            "title": "调度指令与操作票闭环核对",
+            "roles": "生产",
+            "description": "规程要求每道指令都录音、每项都逐项执行，是否都录了、是否都按序，从未有人逐单核对",
+            "source_refs": [
+              "source-catalog-e854f5105ca34fbd"
+            ]
+          },
+          {
+            "id": "catalog-0aed2da47e42f1fb",
+            "title": "双热源异常夜的事件复盘报告",
+            "roles": "生产",
+            "description": "那晚两套系统同时出异常，值班员凭经验处置，三周后复盘时，谁也说不清当时参数是怎么走的",
+            "source_refs": [
+              "source-catalog-0aed2da47e42f1fb"
+            ]
+          },
+          {
+            "id": "catalog-78a728536c3849cd",
+            "title": "污水厂运行日报与月报编制 —— 水量药耗泥量与达标天数一表拼齐",
+            "roles": "生产",
+            "description": "各项数据每日产生，月底编制月报时，水量、药耗、泥量分散在运行、库房、处置单位三处",
+            "source_refs": [
+              "source-catalog-78a728536c3849cd"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-0aed2da47e42f1fb"
+              ]
+            },
+            "label": "运行事件和工作记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "事件复盘材料",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-1f5169f4cf77ce01",
+          "catalog-ba1f0718b10e0702",
+          "catalog-e854f5105ca34fbd",
+          "catalog-0aed2da47e42f1fb",
+          "catalog-78a728536c3849cd"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "field",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "设备检修与现场生产",
+      "description": "生产核对设备台账及其现场记录，形成检维修计划。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "生产",
+            "source_refs": [
+              "source-catalog-44bd6c63008d6a34"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对设备台账及其现场记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-44bd6c63008d6a34"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "设备台账与维护记录",
+            "source_refs": [
+              "source-catalog-44bd6c63008d6a34"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "检维修计划",
+            "source_refs": [
+              "source-catalog-44bd6c63008d6a34"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4e7c1e2a1e4dc355",
+            "title": "到访不遇与拒检户证据链 —— 贴条留痕、时限核对与依法停气的报备底稿",
+            "locator": "【能源公用·生产·法务】到访不遇与拒检户证据链 —— 贴条留痕、时限核对与依法停气的报备底稿/到访不遇与拒检户证据链 —— 贴条留痕、时限核对与依法停气的报备底稿.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%88%B0%E8%AE%BF%E4%B8%8D%E9%81%87%E4%B8%8E%E6%8B%92%E6%A3%80%E6%88%B7%E8%AF%81%E6%8D%AE%E9%93%BE%20%E2%80%94%E2%80%94%20%E8%B4%B4%E6%9D%A1%E7%95%99%E7%97%95%E3%80%81%E6%97%B6%E9%99%90%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%BE%9D%E6%B3%95%E5%81%9C%E6%B0%94%E7%9A%84%E6%8A%A5%E5%A4%87%E5%BA%95%E7%A8%BF/%E5%88%B0%E8%AE%BF%E4%B8%8D%E9%81%87%E4%B8%8E%E6%8B%92%E6%A3%80%E6%88%B7%E8%AF%81%E6%8D%AE%E9%93%BE%20%E2%80%94%E2%80%94%20%E8%B4%B4%E6%9D%A1%E7%95%99%E7%97%95%E3%80%81%E6%97%B6%E9%99%90%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%BE%9D%E6%B3%95%E5%81%9C%E6%B0%94%E7%9A%84%E6%8A%A5%E5%A4%87%E5%BA%95%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-8b587aa02c37b2e4",
+            "title": "安全工器具试验台账与到期预警",
+            "locator": "【能源公用·生产】安全工器具试验台账与到期预警/安全工器具试验台账与到期预警.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%AE%89%E5%85%A8%E5%B7%A5%E5%99%A8%E5%85%B7%E8%AF%95%E9%AA%8C%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%99%A8%E5%85%B7%E8%AF%95%E9%AA%8C%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-ae1f858c89eab2c9",
+            "title": "班前会风险交底内容生成 —— 念十年不变的通用稿，不如按当日作业地点的风险定制十分钟",
+            "locator": "【能源公用·生产】班前会风险交底内容生成 —— 念十年不变的通用稿，不如按当日作业地点的风险定制十分钟/班前会风险交底内容生成 —— 念十年不变的通用稿，不如按当日作业地点的风险定制十分钟.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%8F%AD%E5%89%8D%E4%BC%9A%E9%A3%8E%E9%99%A9%E4%BA%A4%E5%BA%95%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E5%BF%B5%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%8F%98%E7%9A%84%E9%80%9A%E7%94%A8%E7%A8%BF%EF%BC%8C%E4%B8%8D%E5%A6%82%E6%8C%89%E5%BD%93%E6%97%A5%E4%BD%9C%E4%B8%9A%E5%9C%B0%E7%82%B9%E7%9A%84%E9%A3%8E%E9%99%A9%E5%AE%9A%E5%88%B6%E5%8D%81%E5%88%86%E9%92%9F/%E7%8F%AD%E5%89%8D%E4%BC%9A%E9%A3%8E%E9%99%A9%E4%BA%A4%E5%BA%95%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E5%BF%B5%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%8F%98%E7%9A%84%E9%80%9A%E7%94%A8%E7%A8%BF%EF%BC%8C%E4%B8%8D%E5%A6%82%E6%8C%89%E5%BD%93%E6%97%A5%E4%BD%9C%E4%B8%9A%E5%9C%B0%E7%82%B9%E7%9A%84%E9%A3%8E%E9%99%A9%E5%AE%9A%E5%88%B6%E5%8D%81%E5%88%86%E9%92%9F.md"
+          },
+          {
+            "id": "source-catalog-416135c3e6035da0",
+            "title": "变电站巡视记录与历史缺陷比对",
+            "locator": "【能源公用·生产】变电站巡视记录与历史缺陷比对/变电站巡视记录与历史缺陷比对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%8F%98%E7%94%B5%E7%AB%99%E5%B7%A1%E8%A7%86%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%8E%86%E5%8F%B2%E7%BC%BA%E9%99%B7%E6%AF%94%E5%AF%B9/%E5%8F%98%E7%94%B5%E7%AB%99%E5%B7%A1%E8%A7%86%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%8E%86%E5%8F%B2%E7%BC%BA%E9%99%B7%E6%AF%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-5588d04ada62fb4d",
+            "title": "储量核实报告提交前资料自洽预检 —— 评审退回的主因不是储量算错，是报告的数和县局台账对不上",
+            "locator": "【能源公用·生产】储量核实报告提交前资料自洽预检 —— 评审退回的主因不是储量算错，是报告的数和县局台账对不上/储量核实报告提交前资料自洽预检 —— 评审退回的主因不是储量算错，是报告的数和县局台账对不上.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%82%A8%E9%87%8F%E6%A0%B8%E5%AE%9E%E6%8A%A5%E5%91%8A%E6%8F%90%E4%BA%A4%E5%89%8D%E8%B5%84%E6%96%99%E8%87%AA%E6%B4%BD%E9%A2%84%E6%A3%80%20%E2%80%94%E2%80%94%20%E8%AF%84%E5%AE%A1%E9%80%80%E5%9B%9E%E7%9A%84%E4%B8%BB%E5%9B%A0%E4%B8%8D%E6%98%AF%E5%82%A8%E9%87%8F%E7%AE%97%E9%94%99%EF%BC%8C%E6%98%AF%E6%8A%A5%E5%91%8A%E7%9A%84%E6%95%B0%E5%92%8C%E5%8E%BF%E5%B1%80%E5%8F%B0%E8%B4%A6%E5%AF%B9%E4%B8%8D%E4%B8%8A/%E5%82%A8%E9%87%8F%E6%A0%B8%E5%AE%9E%E6%8A%A5%E5%91%8A%E6%8F%90%E4%BA%A4%E5%89%8D%E8%B5%84%E6%96%99%E8%87%AA%E6%B4%BD%E9%A2%84%E6%A3%80%20%E2%80%94%E2%80%94%20%E8%AF%84%E5%AE%A1%E9%80%80%E5%9B%9E%E7%9A%84%E4%B8%BB%E5%9B%A0%E4%B8%8D%E6%98%AF%E5%82%A8%E9%87%8F%E7%AE%97%E9%94%99%EF%BC%8C%E6%98%AF%E6%8A%A5%E5%91%8A%E7%9A%84%E6%95%B0%E5%92%8C%E5%8E%BF%E5%B1%80%E5%8F%B0%E8%B4%A6%E5%AF%B9%E4%B8%8D%E4%B8%8A.md"
+          },
+          {
+            "id": "source-catalog-86e585fc5ee822a5",
+            "title": "第三方施工工地比对 —— 会签缺项、监护排班与动土令到期预警",
+            "locator": "【能源公用·生产】第三方施工工地比对 —— 会签缺项、监护排班与动土令到期预警/第三方施工工地比对 —— 会签缺项、监护排班与动土令到期预警.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%AC%AC%E4%B8%89%E6%96%B9%E6%96%BD%E5%B7%A5%E5%B7%A5%E5%9C%B0%E6%AF%94%E5%AF%B9%20%E2%80%94%E2%80%94%20%E4%BC%9A%E7%AD%BE%E7%BC%BA%E9%A1%B9%E3%80%81%E7%9B%91%E6%8A%A4%E6%8E%92%E7%8F%AD%E4%B8%8E%E5%8A%A8%E5%9C%9F%E4%BB%A4%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6/%E7%AC%AC%E4%B8%89%E6%96%B9%E6%96%BD%E5%B7%A5%E5%B7%A5%E5%9C%B0%E6%AF%94%E5%AF%B9%20%E2%80%94%E2%80%94%20%E4%BC%9A%E7%AD%BE%E7%BC%BA%E9%A1%B9%E3%80%81%E7%9B%91%E6%8A%A4%E6%8E%92%E7%8F%AD%E4%B8%8E%E5%8A%A8%E5%9C%9F%E4%BB%A4%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-673a6e1a54fd59ee",
+            "title": "电气试验报告与历史数据比对",
+            "locator": "【能源公用·生产】电气试验报告与历史数据比对/电气试验报告与历史数据比对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%94%B5%E6%B0%94%E8%AF%95%E9%AA%8C%E6%8A%A5%E5%91%8A%E4%B8%8E%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%AF%94%E5%AF%B9/%E7%94%B5%E6%B0%94%E8%AF%95%E9%AA%8C%E6%8A%A5%E5%91%8A%E4%B8%8E%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%AF%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-fe271ef9031a85b0",
+            "title": "动火等作业票完整性核查与缺口清单 —— 票是班长填的，字是矿长签的，锅是签字的人背的",
+            "locator": "【能源公用·生产】动火等作业票完整性核查与缺口清单 —— 票是班长填的，字是矿长签的，锅是签字的人背的/动火等作业票完整性核查与缺口清单 —— 票是班长填的，字是矿长签的，锅是签字的人背的.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%8A%A8%E7%81%AB%E7%AD%89%E4%BD%9C%E4%B8%9A%E7%A5%A8%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%B8%E6%9F%A5%E4%B8%8E%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E7%A5%A8%E6%98%AF%E7%8F%AD%E9%95%BF%E5%A1%AB%E7%9A%84%EF%BC%8C%E5%AD%97%E6%98%AF%E7%9F%BF%E9%95%BF%E7%AD%BE%E7%9A%84%EF%BC%8C%E9%94%85%E6%98%AF%E7%AD%BE%E5%AD%97%E7%9A%84%E4%BA%BA%E8%83%8C%E7%9A%84/%E5%8A%A8%E7%81%AB%E7%AD%89%E4%BD%9C%E4%B8%9A%E7%A5%A8%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%B8%E6%9F%A5%E4%B8%8E%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E7%A5%A8%E6%98%AF%E7%8F%AD%E9%95%BF%E5%A1%AB%E7%9A%84%EF%BC%8C%E5%AD%97%E6%98%AF%E7%9F%BF%E9%95%BF%E7%AD%BE%E7%9A%84%EF%BC%8C%E9%94%85%E6%98%AF%E7%AD%BE%E5%AD%97%E7%9A%84%E4%BA%BA%E8%83%8C%E7%9A%84.md"
+          },
+          {
+            "id": "source-catalog-8eea32d975eff744",
+            "title": "风机故障工单与损失电量归因",
+            "locator": "【能源公用·生产】风机故障工单与损失电量归因/风机故障工单与损失电量归因.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E9%A3%8E%E6%9C%BA%E6%95%85%E9%9A%9C%E5%B7%A5%E5%8D%95%E4%B8%8E%E6%8D%9F%E5%A4%B1%E7%94%B5%E9%87%8F%E5%BD%92%E5%9B%A0/%E9%A3%8E%E6%9C%BA%E6%95%85%E9%9A%9C%E5%B7%A5%E5%8D%95%E4%B8%8E%E6%8D%9F%E5%A4%B1%E7%94%B5%E9%87%8F%E5%BD%92%E5%9B%A0.md"
+          },
+          {
+            "id": "source-catalog-f89e58a23ea407c6",
+            "title": "继电保护定值单三方核对",
+            "locator": "【能源公用·生产】继电保护定值单三方核对/继电保护定值单三方核对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%BB%A7%E7%94%B5%E4%BF%9D%E6%8A%A4%E5%AE%9A%E5%80%BC%E5%8D%95%E4%B8%89%E6%96%B9%E6%A0%B8%E5%AF%B9/%E7%BB%A7%E7%94%B5%E4%BF%9D%E6%8A%A4%E5%AE%9A%E5%80%BC%E5%8D%95%E4%B8%89%E6%96%B9%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-665253120ac802d3",
+            "title": "检修试验报告与历史数据比对",
+            "locator": "【能源公用·生产】检修试验报告与历史数据比对/检修试验报告与历史数据比对.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%A3%80%E4%BF%AE%E8%AF%95%E9%AA%8C%E6%8A%A5%E5%91%8A%E4%B8%8E%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%AF%94%E5%AF%B9/%E6%A3%80%E4%BF%AE%E8%AF%95%E9%AA%8C%E6%8A%A5%E5%91%8A%E4%B8%8E%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%AF%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-f446bb71dfaf1b0a",
+            "title": "检修停电计划与保电冲突平衡",
+            "locator": "【能源公用·生产】检修停电计划与保电冲突平衡/检修停电计划与保电冲突平衡.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%A3%80%E4%BF%AE%E5%81%9C%E7%94%B5%E8%AE%A1%E5%88%92%E4%B8%8E%E4%BF%9D%E7%94%B5%E5%86%B2%E7%AA%81%E5%B9%B3%E8%A1%A1/%E6%A3%80%E4%BF%AE%E5%81%9C%E7%94%B5%E8%AE%A1%E5%88%92%E4%B8%8E%E4%BF%9D%E7%94%B5%E5%86%B2%E7%AA%81%E5%B9%B3%E8%A1%A1.md"
+          },
+          {
+            "id": "source-catalog-26b6b837384ada44",
+            "title": "交接班记录缺项盘点与缺陷单派生",
+            "locator": "【能源公用·生产】交接班记录缺项盘点与缺陷单派生/交接班记录缺项盘点与缺陷单派生.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E4%BA%A4%E6%8E%A5%E7%8F%AD%E8%AE%B0%E5%BD%95%E7%BC%BA%E9%A1%B9%E7%9B%98%E7%82%B9%E4%B8%8E%E7%BC%BA%E9%99%B7%E5%8D%95%E6%B4%BE%E7%94%9F/%E4%BA%A4%E6%8E%A5%E7%8F%AD%E8%AE%B0%E5%BD%95%E7%BC%BA%E9%A1%B9%E7%9B%98%E7%82%B9%E4%B8%8E%E7%BC%BA%E9%99%B7%E5%8D%95%E6%B4%BE%E7%94%9F.md"
+          },
+          {
+            "id": "source-catalog-3a73e41420dd0d3a",
+            "title": "井史复杂情况案例库检索 —— 「这口井当年卡钻是谁处理的」不再靠老师傅还在不在",
+            "locator": "【能源公用·生产】井史复杂情况案例库检索 —— 「这口井当年卡钻是谁处理的」不再靠老师傅还在不在/井史复杂情况案例库检索 —— 「这口井当年卡钻是谁处理的」不再靠老师傅还在不在.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E4%BA%95%E5%8F%B2%E5%A4%8D%E6%9D%82%E6%83%85%E5%86%B5%E6%A1%88%E4%BE%8B%E5%BA%93%E6%A3%80%E7%B4%A2%20%E2%80%94%E2%80%94%20%E3%80%8C%E8%BF%99%E5%8F%A3%E4%BA%95%E5%BD%93%E5%B9%B4%E5%8D%A1%E9%92%BB%E6%98%AF%E8%B0%81%E5%A4%84%E7%90%86%E7%9A%84%E3%80%8D%E4%B8%8D%E5%86%8D%E9%9D%A0%E8%80%81%E5%B8%88%E5%82%85%E8%BF%98%E5%9C%A8%E4%B8%8D%E5%9C%A8/%E4%BA%95%E5%8F%B2%E5%A4%8D%E6%9D%82%E6%83%85%E5%86%B5%E6%A1%88%E4%BE%8B%E5%BA%93%E6%A3%80%E7%B4%A2%20%E2%80%94%E2%80%94%20%E3%80%8C%E8%BF%99%E5%8F%A3%E4%BA%95%E5%BD%93%E5%B9%B4%E5%8D%A1%E9%92%BB%E6%98%AF%E8%B0%81%E5%A4%84%E7%90%86%E7%9A%84%E3%80%8D%E4%B8%8D%E5%86%8D%E9%9D%A0%E8%80%81%E5%B8%88%E5%82%85%E8%BF%98%E5%9C%A8%E4%B8%8D%E5%9C%A8.md"
+          },
+          {
+            "id": "source-catalog-44bd6c63008d6a34",
+            "title": "设备台账账实核对与检维修计划编制",
+            "locator": "【能源公用·生产】设备台账账实核对与检维修计划编制/设备台账账实核对与检维修计划编制.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E8%AE%BE%E5%A4%87%E5%8F%B0%E8%B4%A6%E8%B4%A6%E5%AE%9E%E6%A0%B8%E5%AF%B9%E4%B8%8E%E6%A3%80%E7%BB%B4%E4%BF%AE%E8%AE%A1%E5%88%92%E7%BC%96%E5%88%B6/%E8%AE%BE%E5%A4%87%E5%8F%B0%E8%B4%A6%E8%B4%A6%E5%AE%9E%E6%A0%B8%E5%AF%B9%E4%B8%8E%E6%A3%80%E7%BB%B4%E4%BF%AE%E8%AE%A1%E5%88%92%E7%BC%96%E5%88%B6.md"
+          },
+          {
+            "id": "source-catalog-cbe4011499a792df",
+            "title": "受限空间作业票开工前核验",
+            "locator": "【能源公用·生产】受限空间作业票开工前核验/受限空间作业票开工前核验.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%8F%97%E9%99%90%E7%A9%BA%E9%97%B4%E4%BD%9C%E4%B8%9A%E7%A5%A8%E5%BC%80%E5%B7%A5%E5%89%8D%E6%A0%B8%E9%AA%8C/%E5%8F%97%E9%99%90%E7%A9%BA%E9%97%B4%E4%BD%9C%E4%B8%9A%E7%A5%A8%E5%BC%80%E5%B7%A5%E5%89%8D%E6%A0%B8%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-6e48685335a79a9a",
+            "title": "选矿班报与回收率归因 —— 化验单上的数放进本厂十二个月基线里，才看得出今天掉没掉",
+            "locator": "【能源公用·生产】选矿班报与回收率归因 —— 化验单上的数放进本厂十二个月基线里，才看得出今天掉没掉/选矿班报与回收率归因 —— 化验单上的数放进本厂十二个月基线里，才看得出今天掉没掉.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E9%80%89%E7%9F%BF%E7%8F%AD%E6%8A%A5%E4%B8%8E%E5%9B%9E%E6%94%B6%E7%8E%87%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%20%E5%8C%96%E9%AA%8C%E5%8D%95%E4%B8%8A%E7%9A%84%E6%95%B0%E6%94%BE%E8%BF%9B%E6%9C%AC%E5%8E%82%E5%8D%81%E4%BA%8C%E4%B8%AA%E6%9C%88%E5%9F%BA%E7%BA%BF%E9%87%8C%EF%BC%8C%E6%89%8D%E7%9C%8B%E5%BE%97%E5%87%BA%E4%BB%8A%E5%A4%A9%E6%8E%89%E6%B2%A1%E6%8E%89/%E9%80%89%E7%9F%BF%E7%8F%AD%E6%8A%A5%E4%B8%8E%E5%9B%9E%E6%94%B6%E7%8E%87%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%20%E5%8C%96%E9%AA%8C%E5%8D%95%E4%B8%8A%E7%9A%84%E6%95%B0%E6%94%BE%E8%BF%9B%E6%9C%AC%E5%8E%82%E5%8D%81%E4%BA%8C%E4%B8%AA%E6%9C%88%E5%9F%BA%E7%BA%BF%E9%87%8C%EF%BC%8C%E6%89%8D%E7%9C%8B%E5%BE%97%E5%87%BA%E4%BB%8A%E5%A4%A9%E6%8E%89%E6%B2%A1%E6%8E%89.md"
+          },
+          {
+            "id": "source-catalog-59f1c0eaddbd1610",
+            "title": "在线监测与化验数据交叉核验 —— 两套数对不上的日子，提前说清楚",
+            "locator": "【能源公用·生产】在线监测与化验数据交叉核验 —— 两套数对不上的日子，提前说清楚/在线监测与化验数据交叉核验 —— 两套数对不上的日子，提前说清楚.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%9C%A8%E7%BA%BF%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%8C%96%E9%AA%8C%E6%95%B0%E6%8D%AE%E4%BA%A4%E5%8F%89%E6%A0%B8%E9%AA%8C%20%E2%80%94%E2%80%94%20%E4%B8%A4%E5%A5%97%E6%95%B0%E5%AF%B9%E4%B8%8D%E4%B8%8A%E7%9A%84%E6%97%A5%E5%AD%90%EF%BC%8C%E6%8F%90%E5%89%8D%E8%AF%B4%E6%B8%85%E6%A5%9A/%E5%9C%A8%E7%BA%BF%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%8C%96%E9%AA%8C%E6%95%B0%E6%8D%AE%E4%BA%A4%E5%8F%89%E6%A0%B8%E9%AA%8C%20%E2%80%94%E2%80%94%20%E4%B8%A4%E5%A5%97%E6%95%B0%E5%AF%B9%E4%B8%8D%E4%B8%8A%E7%9A%84%E6%97%A5%E5%AD%90%EF%BC%8C%E6%8F%90%E5%89%8D%E8%AF%B4%E6%B8%85%E6%A5%9A.md"
+          },
+          {
+            "id": "source-catalog-b96be35b9c8d15da",
+            "title": "钻井班报表汇编与同区块时效日报 —— 每天两张班表合一份日报，还要经得起甲方问一句「纯钻进怎么才 5 小时」",
+            "locator": "【能源公用·生产】钻井班报表汇编与同区块时效日报 —— 每天两张班表合一份日报，还要经得起甲方问一句「纯钻进怎么才 5 小时」/钻井班报表汇编与同区块时效日报 —— 每天两张班表合一份日报，还要经得起甲方问一句「纯钻进怎么才 5 小时」.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E9%92%BB%E4%BA%95%E7%8F%AD%E6%8A%A5%E8%A1%A8%E6%B1%87%E7%BC%96%E4%B8%8E%E5%90%8C%E5%8C%BA%E5%9D%97%E6%97%B6%E6%95%88%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%A4%A9%E4%B8%A4%E5%BC%A0%E7%8F%AD%E8%A1%A8%E5%90%88%E4%B8%80%E4%BB%BD%E6%97%A5%E6%8A%A5%EF%BC%8C%E8%BF%98%E8%A6%81%E7%BB%8F%E5%BE%97%E8%B5%B7%E7%94%B2%E6%96%B9%E9%97%AE%E4%B8%80%E5%8F%A5%E3%80%8C%E7%BA%AF%E9%92%BB%E8%BF%9B%E6%80%8E%E4%B9%88%E6%89%8D%205%20%E5%B0%8F%E6%97%B6%E3%80%8D/%E9%92%BB%E4%BA%95%E7%8F%AD%E6%8A%A5%E8%A1%A8%E6%B1%87%E7%BC%96%E4%B8%8E%E5%90%8C%E5%8C%BA%E5%9D%97%E6%97%B6%E6%95%88%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%A4%A9%E4%B8%A4%E5%BC%A0%E7%8F%AD%E8%A1%A8%E5%90%88%E4%B8%80%E4%BB%BD%E6%97%A5%E6%8A%A5%EF%BC%8C%E8%BF%98%E8%A6%81%E7%BB%8F%E5%BE%97%E8%B5%B7%E7%94%B2%E6%96%B9%E9%97%AE%E4%B8%80%E5%8F%A5%E3%80%8C%E7%BA%AF%E9%92%BB%E8%BF%9B%E6%80%8E%E4%B9%88%E6%89%8D%205%20%E5%B0%8F%E6%97%B6%E3%80%8D.md"
+          },
+          {
+            "id": "source-catalog-2912d741012c7370",
+            "title": "采矿证延续节点跟踪与材料倒排 —— 新条例的受理窗口在届满前 6 个月到 3 个月，错过窗口矿权直接消灭",
+            "locator": "【能源公用·行政】采矿证延续节点跟踪与材料倒排 —— 新条例的受理窗口在届满前 6 个月到 3 个月，错过窗口矿权直接消灭/采矿证延续节点跟踪与材料倒排 —— 新条例的受理窗口在届满前 6 个月到 3 个月，错过窗口矿权直接消灭.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E9%87%87%E7%9F%BF%E8%AF%81%E5%BB%B6%E7%BB%AD%E8%8A%82%E7%82%B9%E8%B7%9F%E8%B8%AA%E4%B8%8E%E6%9D%90%E6%96%99%E5%80%92%E6%8E%92%20%E2%80%94%E2%80%94%20%E6%96%B0%E6%9D%A1%E4%BE%8B%E7%9A%84%E5%8F%97%E7%90%86%E7%AA%97%E5%8F%A3%E5%9C%A8%E5%B1%8A%E6%BB%A1%E5%89%8D%206%20%E4%B8%AA%E6%9C%88%E5%88%B0%203%20%E4%B8%AA%E6%9C%88%EF%BC%8C%E9%94%99%E8%BF%87%E7%AA%97%E5%8F%A3%E7%9F%BF%E6%9D%83%E7%9B%B4%E6%8E%A5%E6%B6%88%E7%81%AD/%E9%87%87%E7%9F%BF%E8%AF%81%E5%BB%B6%E7%BB%AD%E8%8A%82%E7%82%B9%E8%B7%9F%E8%B8%AA%E4%B8%8E%E6%9D%90%E6%96%99%E5%80%92%E6%8E%92%20%E2%80%94%E2%80%94%20%E6%96%B0%E6%9D%A1%E4%BE%8B%E7%9A%84%E5%8F%97%E7%90%86%E7%AA%97%E5%8F%A3%E5%9C%A8%E5%B1%8A%E6%BB%A1%E5%89%8D%206%20%E4%B8%AA%E6%9C%88%E5%88%B0%203%20%E4%B8%AA%E6%9C%88%EF%BC%8C%E9%94%99%E8%BF%87%E7%AA%97%E5%8F%A3%E7%9F%BF%E6%9D%83%E7%9B%B4%E6%8E%A5%E6%B6%88%E7%81%AD.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4e7c1e2a1e4dc355",
+            "title": "到访不遇与拒检户证据链 —— 贴条留痕、时限核对与依法停气的报备底稿",
+            "roles": "生产 · 法务",
+            "description": "安检员约半数时间到访不遇，一旦发生事故，「该户超期未检」即成为公司直接责任的证据",
+            "source_refs": [
+              "source-catalog-4e7c1e2a1e4dc355"
+            ]
+          },
+          {
+            "id": "catalog-8b587aa02c37b2e4",
+            "title": "安全工器具试验台账与到期预警",
+            "roles": "生产",
+            "description": "台账上验电器「下次试验」停在了去年，超期未试一律禁止使用，多少件带病上岗没人说清",
+            "source_refs": [
+              "source-catalog-8b587aa02c37b2e4"
+            ]
+          },
+          {
+            "id": "catalog-ae1f858c89eab2c9",
+            "title": "班前会风险交底内容生成 —— 念十年不变的通用稿，不如按当日作业地点的风险定制十分钟",
+            "roles": "生产",
+            "description": "班前会记录本上同一页内容念了三年，铜陵的事故调查报告专挑「前后笔迹不符」这类问题",
+            "source_refs": [
+              "source-catalog-ae1f858c89eab2c9"
+            ]
+          },
+          {
+            "id": "catalog-416135c3e6035da0",
+            "title": "变电站巡视记录与历史缺陷比对",
+            "roles": "生产",
+            "description": "巡视完成率月月 100%，同一间隔的红外测温异常记了 4 次，没人发现是同一处",
+            "source_refs": [
+              "source-catalog-416135c3e6035da0"
+            ]
+          },
+          {
+            "id": "catalog-5588d04ada62fb4d",
+            "title": "储量核实报告提交前资料自洽预检 —— 评审退回的主因不是储量算错，是报告的数和县局台账对不上",
+            "roles": "生产",
+            "description": "报告由资质单位编制、专家签字，退回理由常是动用储量与报县局的开采台账相差 800 吨",
+            "source_refs": [
+              "source-catalog-5588d04ada62fb4d"
+            ]
+          },
+          {
+            "id": "catalog-86e585fc5ee822a5",
+            "title": "第三方施工工地比对 —— 会签缺项、监护排班与动土令到期预警",
+            "roles": "生产",
+            "description": "监管框架六个百分之百早已齐备，挖断管道每起都源于未通知燃气公司就开挖",
+            "source_refs": [
+              "source-catalog-86e585fc5ee822a5"
+            ]
+          },
+          {
+            "id": "catalog-673a6e1a54fd59ee",
+            "title": "电气试验报告与历史数据比对",
+            "roles": "生产",
+            "description": "每份试验报告都写「合格」，套管介损从 0.42 升至 0.68，三份报告没一份提过这事",
+            "source_refs": [
+              "source-catalog-673a6e1a54fd59ee"
+            ]
+          },
+          {
+            "id": "catalog-fe271ef9031a85b0",
+            "title": "动火等作业票完整性核查与缺口清单 —— 票是班长填的，字是矿长签的，锅是签字的人背的",
+            "roles": "生产",
+            "description": "作业票四栏签字齐全看似合规，氧气乙炔间距栏填 5 米，作业照片中两瓶却肩并肩摆放",
+            "source_refs": [
+              "source-catalog-fe271ef9031a85b0"
+            ]
+          },
+          {
+            "id": "catalog-8eea32d975eff744",
+            "title": "风机故障工单与损失电量归因",
+            "roles": "生产",
+            "description": "137 张故障工单都闭环了，当月少发多少电、亏在哪个部件，没人说得清",
+            "source_refs": [
+              "source-catalog-8eea32d975eff744"
+            ]
+          },
+          {
+            "id": "catalog-f89e58a23ea407c6",
+            "title": "继电保护定值单三方核对",
+            "roles": "生产",
+            "description": "规程要求控制字必须相同、其它定值误差小于 1%，现场 3Ω 对通知单 0.33Ω 的事故，就差在没人逐项核对",
+            "source_refs": [
+              "source-catalog-f89e58a23ea407c6"
+            ]
+          },
+          {
+            "id": "catalog-665253120ac802d3",
+            "title": "检修试验报告与历史数据比对",
+            "roles": "生产",
+            "description": "每次检修都出报告、每份报告都写「合格」，振动值从 2.8 爬到 4.2，五份报告里没有一份提过",
+            "source_refs": [
+              "source-catalog-665253120ac802d3"
+            ]
+          },
+          {
+            "id": "catalog-f446bb71dfaf1b0a",
+            "title": "检修停电计划与保电冲突平衡",
+            "roles": "生产",
+            "description": "停电计划 23 项批了 22 项，元旦保电时段与主变消缺正面冲突，靠调度肉眼在日历上发现",
+            "source_refs": [
+              "source-catalog-f446bb71dfaf1b0a"
+            ]
+          },
+          {
+            "id": "catalog-26b6b837384ada44",
+            "title": "交接班记录缺项盘点与缺陷单派生",
+            "roles": "生产",
+            "description": "每个班的记录都写满了，但规定交接的七项内容缺了哪项，从来无人逐项核对",
+            "source_refs": [
+              "source-catalog-26b6b837384ada44"
+            ]
+          },
+          {
+            "id": "catalog-3a73e41420dd0d3a",
+            "title": "井史复杂情况案例库检索 —— 「这口井当年卡钻是谁处理的」不再靠老师傅还在不在",
+            "roles": "生产",
+            "description": "井队处置复杂情况依赖老队长的个人记忆，行业最年轻的机长已 48 岁，经验随人而走难以沉淀",
+            "source_refs": [
+              "source-catalog-3a73e41420dd0d3a"
+            ]
+          },
+          {
+            "id": "catalog-44bd6c63008d6a34",
+            "title": "设备台账账实核对与检维修计划编制",
+            "roles": "生产",
+            "description": "台账显示备件有 4 套、货架上是 0 套，同一台调压箱两年修了 5 次，每次都当新设备修",
+            "source_refs": [
+              "source-catalog-44bd6c63008d6a34"
+            ]
+          },
+          {
+            "id": "catalog-cbe4011499a792df",
+            "title": "受限空间作业票开工前核验",
+            "roles": "生产",
+            "description": "作业票每一栏都已填写，应加 11 块盲板的隔离清单，票面上只写了 3 块——这种票历史上都「合格」",
+            "source_refs": [
+              "source-catalog-cbe4011499a792df"
+            ]
+          },
+          {
+            "id": "catalog-6e48685335a79a9a",
+            "title": "选矿班报与回收率归因 —— 化验单上的数放进本厂十二个月基线里，才看得出今天掉没掉",
+            "roles": "生产",
+            "description": "班报回收率 86% 看似正常，放入本厂十二个月基线即为倒数第二，尾矿品位悄然上升 0.17 个百分点",
+            "source_refs": [
+              "source-catalog-6e48685335a79a9a"
+            ]
+          },
+          {
+            "id": "catalog-59f1c0eaddbd1610",
+            "title": "在线监测与化验数据交叉核验 —— 两套数对不上的日子，提前说清楚",
+            "roles": "生产",
+            "description": "企业花钱维护的在线监测系统，定责时却无法自证——规则明确现场手工数据优先",
+            "source_refs": [
+              "source-catalog-59f1c0eaddbd1610"
+            ]
+          },
+          {
+            "id": "catalog-b96be35b9c8d15da",
+            "title": "钻井班报表汇编与同区块时效日报 —— 每天两张班表合一份日报，还要经得起甲方问一句「纯钻进怎么才 5 小时」",
+            "roles": "生产",
+            "description": "班报表一式三份上交后即存入档案柜，三年后同一构造带再遇卡钻，无人记得当年那口井如何处置",
+            "source_refs": [
+              "source-catalog-b96be35b9c8d15da"
+            ]
+          },
+          {
+            "id": "catalog-2912d741012c7370",
+            "title": "采矿证延续节点跟踪与材料倒排 —— 新条例的受理窗口在届满前 6 个月到 3 个月，错过窗口矿权直接消灭",
+            "roles": "行政",
+            "description": "证照复印件在档案柜中静置四年，延续窗口已从到期前 30 天改为提前半年，不少矿主仍以为来得及",
+            "source_refs": [
+              "source-catalog-2912d741012c7370"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-44bd6c63008d6a34"
+              ]
+            },
+            "label": "设备台账与维护记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "检维修计划",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "panel",
+            "asset_id": "manufacturing.equipment.control-panel",
+            "position": [
+              2.15,
+              1.2,
+              0
+            ],
+            "rotation": 90
+          },
+          {
+            "id": "tools",
+            "asset_id": "manufacturing.tool.tool-cart",
+            "position": [
+              7.1,
+              4.51,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4e7c1e2a1e4dc355",
+          "catalog-8b587aa02c37b2e4",
+          "catalog-ae1f858c89eab2c9",
+          "catalog-416135c3e6035da0",
+          "catalog-5588d04ada62fb4d",
+          "catalog-86e585fc5ee822a5",
+          "catalog-673a6e1a54fd59ee",
+          "catalog-fe271ef9031a85b0",
+          "catalog-8eea32d975eff744",
+          "catalog-f89e58a23ea407c6",
+          "catalog-665253120ac802d3",
+          "catalog-f446bb71dfaf1b0a",
+          "catalog-26b6b837384ada44",
+          "catalog-3a73e41420dd0d3a",
+          "catalog-44bd6c63008d6a34",
+          "catalog-cbe4011499a792df",
+          "catalog-6e48685335a79a9a",
+          "catalog-59f1c0eaddbd1610",
+          "catalog-b96be35b9c8d15da",
+          "catalog-2912d741012c7370"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "customer",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "工单与用能服务",
+      "description": "客服核对分类和工单分派状态，形成漏派复核清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-bca51ea7e1d2ad20"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对分类和工单分派状态",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-bca51ea7e1d2ad20"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "客服工单与派单记录",
+            "source_refs": [
+              "source-catalog-bca51ea7e1d2ad20"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "漏派复核清单",
+            "source_refs": [
+              "source-catalog-bca51ea7e1d2ad20"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-56582d9261026560",
+            "title": "本地化客服知识库问答 —— 私有政策数据支撑的应答口径与工单预生成",
+            "locator": "【能源公用·客服】本地化客服知识库问答 —— 私有政策数据支撑的应答口径与工单预生成/本地化客服知识库问答 —— 私有政策数据支撑的应答口径与工单预生成.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%AE%A2%E6%9C%8D%E7%9F%A5%E8%AF%86%E5%BA%93%E9%97%AE%E7%AD%94%20%E2%80%94%E2%80%94%20%E7%A7%81%E6%9C%89%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE%E6%94%AF%E6%92%91%E7%9A%84%E5%BA%94%E7%AD%94%E5%8F%A3%E5%BE%84%E4%B8%8E%E5%B7%A5%E5%8D%95%E9%A2%84%E7%94%9F%E6%88%90/%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%AE%A2%E6%9C%8D%E7%9F%A5%E8%AF%86%E5%BA%93%E9%97%AE%E7%AD%94%20%E2%80%94%E2%80%94%20%E7%A7%81%E6%9C%89%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE%E6%94%AF%E6%92%91%E7%9A%84%E5%BA%94%E7%AD%94%E5%8F%A3%E5%BE%84%E4%B8%8E%E5%B7%A5%E5%8D%95%E9%A2%84%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-bca51ea7e1d2ad20",
+            "title": "客服工单分类复核与漏派排查",
+            "locator": "【能源公用·客服】客服工单分类复核与漏派排查/客服工单分类复核与漏派排查.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%9C%8D%E5%B7%A5%E5%8D%95%E5%88%86%E7%B1%BB%E5%A4%8D%E6%A0%B8%E4%B8%8E%E6%BC%8F%E6%B4%BE%E6%8E%92%E6%9F%A5/%E5%AE%A2%E6%9C%8D%E5%B7%A5%E5%8D%95%E5%88%86%E7%B1%BB%E5%A4%8D%E6%A0%B8%E4%B8%8E%E6%BC%8F%E6%B4%BE%E6%8E%92%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-c9d4fcca05f31ac9",
+            "title": "煤改气补贴申报底表 —— 两次表底数、名单交叉核对与公示材料的组装",
+            "locator": "【能源公用·行政】煤改气补贴申报底表 —— 两次表底数、名单交叉核对与公示材料的组装/煤改气补贴申报底表 —— 两次表底数、名单交叉核对与公示材料的组装.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%85%A4%E6%94%B9%E6%B0%94%E8%A1%A5%E8%B4%B4%E7%94%B3%E6%8A%A5%E5%BA%95%E8%A1%A8%20%E2%80%94%E2%80%94%20%E4%B8%A4%E6%AC%A1%E8%A1%A8%E5%BA%95%E6%95%B0%E3%80%81%E5%90%8D%E5%8D%95%E4%BA%A4%E5%8F%89%E6%A0%B8%E5%AF%B9%E4%B8%8E%E5%85%AC%E7%A4%BA%E6%9D%90%E6%96%99%E7%9A%84%E7%BB%84%E8%A3%85/%E7%85%A4%E6%94%B9%E6%B0%94%E8%A1%A5%E8%B4%B4%E7%94%B3%E6%8A%A5%E5%BA%95%E8%A1%A8%20%E2%80%94%E2%80%94%20%E4%B8%A4%E6%AC%A1%E8%A1%A8%E5%BA%95%E6%95%B0%E3%80%81%E5%90%8D%E5%8D%95%E4%BA%A4%E5%8F%89%E6%A0%B8%E5%AF%B9%E4%B8%8E%E5%85%AC%E7%A4%BA%E6%9D%90%E6%96%99%E7%9A%84%E7%BB%84%E8%A3%85.md"
+          },
+          {
+            "id": "source-catalog-edfe57e6de6a7a9b",
+            "title": "燃气具与连接管判废核对 —— 安检档案×判废年限的超期清单与换新线索",
+            "locator": "【能源公用·运营·客服】燃气具与连接管判废核对 —— 安检档案×判废年限的超期清单与换新线索/燃气具与连接管判废核对 —— 安检档案×判废年限的超期清单与换新线索.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%87%83%E6%B0%94%E5%85%B7%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%AE%A1%E5%88%A4%E5%BA%9F%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%AE%89%E6%A3%80%E6%A1%A3%E6%A1%88%C3%97%E5%88%A4%E5%BA%9F%E5%B9%B4%E9%99%90%E7%9A%84%E8%B6%85%E6%9C%9F%E6%B8%85%E5%8D%95%E4%B8%8E%E6%8D%A2%E6%96%B0%E7%BA%BF%E7%B4%A2/%E7%87%83%E6%B0%94%E5%85%B7%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%AE%A1%E5%88%A4%E5%BA%9F%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%AE%89%E6%A3%80%E6%A1%A3%E6%A1%88%C3%97%E5%88%A4%E5%BA%9F%E5%B9%B4%E9%99%90%E7%9A%84%E8%B6%85%E6%9C%9F%E6%B8%85%E5%8D%95%E4%B8%8E%E6%8D%A2%E6%96%B0%E7%BA%BF%E7%B4%A2.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-56582d9261026560",
+            "title": "本地化客服知识库问答 —— 私有政策数据支撑的应答口径与工单预生成",
+            "roles": "客服",
+            "description": "通用 AI 客服可答缴费等通用问题，答不了通气排期、限购原因等本地私有政策问题",
+            "source_refs": [
+              "source-catalog-56582d9261026560"
+            ]
+          },
+          {
+            "id": "catalog-bca51ea7e1d2ad20",
+            "title": "客服工单分类复核与漏派排查",
+            "roles": "客服",
+            "description": "工单系统里「气味咨询」和「疑似泄漏」是两个按钮，抢修班的到场时限，取决于接线员点了哪一个",
+            "source_refs": [
+              "source-catalog-bca51ea7e1d2ad20"
+            ]
+          },
+          {
+            "id": "catalog-c9d4fcca05f31ac9",
+            "title": "煤改气补贴申报底表 —— 两次表底数、名单交叉核对与公示材料的组装",
+            "roles": "行政",
+            "description": "补贴源头是两张手抄表底数，骗补追刑责、漏补引民怨，名单核对两头都不敢错",
+            "source_refs": [
+              "source-catalog-c9d4fcca05f31ac9"
+            ]
+          },
+          {
+            "id": "catalog-edfe57e6de6a7a9b",
+            "title": "燃气具与连接管判废核对 —— 安检档案×判废年限的超期清单与换新线索",
+            "roles": "运营 · 客服",
+            "description": "胶管漏气占户内事故三分之一以上，各户灶具购置年份分散留存于安检档案，长期无人盘点",
+            "source_refs": [
+              "source-catalog-edfe57e6de6a7a9b"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-bca51ea7e1d2ad20"
+              ]
+            },
+            "label": "客服工单与派单记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "漏派复核清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-56582d9261026560",
+          "catalog-bca51ea7e1d2ad20",
+          "catalog-c9d4fcca05f31ac9",
+          "catalog-edfe57e6de6a7a9b"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "project",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "工程项目与合规",
+      "description": "法务整理标准变更与涉及环节，形成影响简报。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "法务",
+            "source_refs": [
+              "source-catalog-24a82af10e9fbf4f"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理标准变更与涉及环节",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-24a82af10e9fbf4f"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "标准变更与内部资料",
+            "source_refs": [
+              "source-catalog-24a82af10e9fbf4f"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "影响简报",
+            "source_refs": [
+              "source-catalog-24a82af10e9fbf4f"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-c44bd579fd66a9d4",
+            "title": "出水超标归因与陈述申辩证据包 —— 进水冲击的证据链一次配齐",
+            "locator": "【能源公用·法务】出水超标归因与陈述申辩证据包 —— 进水冲击的证据链一次配齐/出水超标归因与陈述申辩证据包 —— 进水冲击的证据链一次配齐.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%87%BA%E6%B0%B4%E8%B6%85%E6%A0%87%E5%BD%92%E5%9B%A0%E4%B8%8E%E9%99%88%E8%BF%B0%E7%94%B3%E8%BE%A9%E8%AF%81%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E8%BF%9B%E6%B0%B4%E5%86%B2%E5%87%BB%E7%9A%84%E8%AF%81%E6%8D%AE%E9%93%BE%E4%B8%80%E6%AC%A1%E9%85%8D%E9%BD%90/%E5%87%BA%E6%B0%B4%E8%B6%85%E6%A0%87%E5%BD%92%E5%9B%A0%E4%B8%8E%E9%99%88%E8%BF%B0%E7%94%B3%E8%BE%A9%E8%AF%81%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E8%BF%9B%E6%B0%B4%E5%86%B2%E5%87%BB%E7%9A%84%E8%AF%81%E6%8D%AE%E9%93%BE%E4%B8%80%E6%AC%A1%E9%85%8D%E9%BD%90.md"
+          },
+          {
+            "id": "source-catalog-e12af5ca6f847208",
+            "title": "督察整改台账与销号材料汇编 —— 一项整改一套证据，销号不靠临阵翻箱",
+            "locator": "【能源公用·法务】督察整改台账与销号材料汇编 —— 一项整改一套证据，销号不靠临阵翻箱/督察整改台账与销号材料汇编 —— 一项整改一套证据，销号不靠临阵翻箱.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%9D%A3%E5%AF%9F%E6%95%B4%E6%94%B9%E5%8F%B0%E8%B4%A6%E4%B8%8E%E9%94%80%E5%8F%B7%E6%9D%90%E6%96%99%E6%B1%87%E7%BC%96%20%E2%80%94%E2%80%94%20%E4%B8%80%E9%A1%B9%E6%95%B4%E6%94%B9%E4%B8%80%E5%A5%97%E8%AF%81%E6%8D%AE%EF%BC%8C%E9%94%80%E5%8F%B7%E4%B8%8D%E9%9D%A0%E4%B8%B4%E9%98%B5%E7%BF%BB%E7%AE%B1/%E7%9D%A3%E5%AF%9F%E6%95%B4%E6%94%B9%E5%8F%B0%E8%B4%A6%E4%B8%8E%E9%94%80%E5%8F%B7%E6%9D%90%E6%96%99%E6%B1%87%E7%BC%96%20%E2%80%94%E2%80%94%20%E4%B8%80%E9%A1%B9%E6%95%B4%E6%94%B9%E4%B8%80%E5%A5%97%E8%AF%81%E6%8D%AE%EF%BC%8C%E9%94%80%E5%8F%B7%E4%B8%8D%E9%9D%A0%E4%B8%B4%E9%98%B5%E7%BF%BB%E7%AE%B1.md"
+          },
+          {
+            "id": "source-catalog-24a82af10e9fbf4f",
+            "title": "环保法规与标准更新影响简报 —— 新规落到「我们集团要改什么」",
+            "locator": "【能源公用·法务】环保法规与标准更新影响简报 —— 新规落到「我们集团要改什么」/环保法规与标准更新影响简报 —— 新规落到「我们集团要改什么」.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%8E%AF%E4%BF%9D%E6%B3%95%E8%A7%84%E4%B8%8E%E6%A0%87%E5%87%86%E6%9B%B4%E6%96%B0%E5%BD%B1%E5%93%8D%E7%AE%80%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%96%B0%E8%A7%84%E8%90%BD%E5%88%B0%E3%80%8C%E6%88%91%E4%BB%AC%E9%9B%86%E5%9B%A2%E8%A6%81%E6%94%B9%E4%BB%80%E4%B9%88%E3%80%8D/%E7%8E%AF%E4%BF%9D%E6%B3%95%E8%A7%84%E4%B8%8E%E6%A0%87%E5%87%86%E6%9B%B4%E6%96%B0%E5%BD%B1%E5%93%8D%E7%AE%80%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%96%B0%E8%A7%84%E8%90%BD%E5%88%B0%E3%80%8C%E6%88%91%E4%BB%AC%E9%9B%86%E5%9B%A2%E8%A6%81%E6%94%B9%E4%BB%80%E4%B9%88%E3%80%8D.md"
+          },
+          {
+            "id": "source-catalog-219d2a8590efafdb",
+            "title": "排污许可执行报告编制与台账勾稽 —— 十二项法定内容对着台账逐项写",
+            "locator": "【能源公用·法务】排污许可执行报告编制与台账勾稽 —— 十二项法定内容对着台账逐项写/排污许可执行报告编制与台账勾稽 —— 十二项法定内容对着台账逐项写.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%8E%92%E6%B1%A1%E8%AE%B8%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A%E7%BC%96%E5%88%B6%E4%B8%8E%E5%8F%B0%E8%B4%A6%E5%8B%BE%E7%A8%BD%20%E2%80%94%E2%80%94%20%E5%8D%81%E4%BA%8C%E9%A1%B9%E6%B3%95%E5%AE%9A%E5%86%85%E5%AE%B9%E5%AF%B9%E7%9D%80%E5%8F%B0%E8%B4%A6%E9%80%90%E9%A1%B9%E5%86%99/%E6%8E%92%E6%B1%A1%E8%AE%B8%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A%E7%BC%96%E5%88%B6%E4%B8%8E%E5%8F%B0%E8%B4%A6%E5%8B%BE%E7%A8%BD%20%E2%80%94%E2%80%94%20%E5%8D%81%E4%BA%8C%E9%A1%B9%E6%B3%95%E5%AE%9A%E5%86%85%E5%AE%B9%E5%AF%B9%E7%9D%80%E5%8F%B0%E8%B4%A6%E9%80%90%E9%A1%B9%E5%86%99.md"
+          },
+          {
+            "id": "source-catalog-39e169f31ffea576",
+            "title": "迎检资料一键组卷 —— 按检查清单把台账记录照片监测汇成卷",
+            "locator": "【能源公用·法务】迎检资料一键组卷 —— 按检查清单把台账记录照片监测汇成卷/迎检资料一键组卷 —— 按检查清单把台账记录照片监测汇成卷.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%BF%8E%E6%A3%80%E8%B5%84%E6%96%99%E4%B8%80%E9%94%AE%E7%BB%84%E5%8D%B7%20%E2%80%94%E2%80%94%20%E6%8C%89%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95%E6%8A%8A%E5%8F%B0%E8%B4%A6%E8%AE%B0%E5%BD%95%E7%85%A7%E7%89%87%E7%9B%91%E6%B5%8B%E6%B1%87%E6%88%90%E5%8D%B7/%E8%BF%8E%E6%A3%80%E8%B5%84%E6%96%99%E4%B8%80%E9%94%AE%E7%BB%84%E5%8D%B7%20%E2%80%94%E2%80%94%20%E6%8C%89%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95%E6%8A%8A%E5%8F%B0%E8%B4%A6%E8%AE%B0%E5%BD%95%E7%85%A7%E7%89%87%E7%9B%91%E6%B5%8B%E6%B1%87%E6%88%90%E5%8D%B7.md"
+          },
+          {
+            "id": "source-catalog-90013f24de9d1643",
+            "title": "竣工验收一户一档核验 —— 12 类归档清单与通气前置条件检查",
+            "locator": "【能源公用·行政】竣工验收一户一档核验 —— 12 类归档清单与通气前置条件检查/竣工验收一户一档核验 —— 12 类归档清单与通气前置条件检查.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%AB%A3%E5%B7%A5%E9%AA%8C%E6%94%B6%E4%B8%80%E6%88%B7%E4%B8%80%E6%A1%A3%E6%A0%B8%E9%AA%8C%20%E2%80%94%E2%80%94%2012%20%E7%B1%BB%E5%BD%92%E6%A1%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E9%80%9A%E6%B0%94%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%9F%A5/%E7%AB%A3%E5%B7%A5%E9%AA%8C%E6%94%B6%E4%B8%80%E6%88%B7%E4%B8%80%E6%A1%A3%E6%A0%B8%E9%AA%8C%20%E2%80%94%E2%80%94%2012%20%E7%B1%BB%E5%BD%92%E6%A1%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E9%80%9A%E6%B0%94%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-4869eea6da5f0222",
+            "title": "迎检材料包按检查条目汇编 —— 检查组要什么就从台账库抽什么，不再检查前夜全矿加班补台账",
+            "locator": "【能源公用·行政】迎检材料包按检查条目汇编 —— 检查组要什么就从台账库抽什么，不再检查前夜全矿加班补台账/迎检材料包按检查条目汇编 —— 检查组要什么就从台账库抽什么，不再检查前夜全矿加班补台账.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%BF%8E%E6%A3%80%E6%9D%90%E6%96%99%E5%8C%85%E6%8C%89%E6%A3%80%E6%9F%A5%E6%9D%A1%E7%9B%AE%E6%B1%87%E7%BC%96%20%E2%80%94%E2%80%94%20%E6%A3%80%E6%9F%A5%E7%BB%84%E8%A6%81%E4%BB%80%E4%B9%88%E5%B0%B1%E4%BB%8E%E5%8F%B0%E8%B4%A6%E5%BA%93%E6%8A%BD%E4%BB%80%E4%B9%88%EF%BC%8C%E4%B8%8D%E5%86%8D%E6%A3%80%E6%9F%A5%E5%89%8D%E5%A4%9C%E5%85%A8%E7%9F%BF%E5%8A%A0%E7%8F%AD%E8%A1%A5%E5%8F%B0%E8%B4%A6/%E8%BF%8E%E6%A3%80%E6%9D%90%E6%96%99%E5%8C%85%E6%8C%89%E6%A3%80%E6%9F%A5%E6%9D%A1%E7%9B%AE%E6%B1%87%E7%BC%96%20%E2%80%94%E2%80%94%20%E6%A3%80%E6%9F%A5%E7%BB%84%E8%A6%81%E4%BB%80%E4%B9%88%E5%B0%B1%E4%BB%8E%E5%8F%B0%E8%B4%A6%E5%BA%93%E6%8A%BD%E4%BB%80%E4%B9%88%EF%BC%8C%E4%B8%8D%E5%86%8D%E6%A3%80%E6%9F%A5%E5%89%8D%E5%A4%9C%E5%85%A8%E7%9F%BF%E5%8A%A0%E7%8F%AD%E8%A1%A5%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-8d69db9c9dc3fd2a",
+            "title": "盗气嫌疑筛选与证据材料包 —— 用气曲线异常户的推算与移送底稿",
+            "locator": "【能源公用·运营·法务】盗气嫌疑筛选与证据材料包 —— 用气曲线异常户的推算与移送底稿/盗气嫌疑筛选与证据材料包 —— 用气曲线异常户的推算与移送底稿.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%9B%97%E6%B0%94%E5%AB%8C%E7%96%91%E7%AD%9B%E9%80%89%E4%B8%8E%E8%AF%81%E6%8D%AE%E6%9D%90%E6%96%99%E5%8C%85%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%B0%94%E6%9B%B2%E7%BA%BF%E5%BC%82%E5%B8%B8%E6%88%B7%E7%9A%84%E6%8E%A8%E7%AE%97%E4%B8%8E%E7%A7%BB%E9%80%81%E5%BA%95%E7%A8%BF/%E7%9B%97%E6%B0%94%E5%AB%8C%E7%96%91%E7%AD%9B%E9%80%89%E4%B8%8E%E8%AF%81%E6%8D%AE%E6%9D%90%E6%96%99%E5%8C%85%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%B0%94%E6%9B%B2%E7%BA%BF%E5%BC%82%E5%B8%B8%E6%88%B7%E7%9A%84%E6%8E%A8%E7%AE%97%E4%B8%8E%E7%A7%BB%E9%80%81%E5%BA%95%E7%A8%BF.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-c44bd579fd66a9d4",
+            "title": "出水超标归因与陈述申辩证据包 —— 进水冲击的证据链一次配齐",
+            "roles": "法务",
+            "description": "超标罚单动辄十万元起步，同类案件有人罚 48 万、有人罚 10 万、有人不罚——差别全在证据链",
+            "source_refs": [
+              "source-catalog-c44bd579fd66a9d4"
+            ]
+          },
+          {
+            "id": "catalog-e12af5ca6f847208",
+            "title": "督察整改台账与销号材料汇编 —— 一项整改一套证据，销号不靠临阵翻箱",
+            "roles": "法务",
+            "description": "整改任务实行清单化销号制，但完成一项销号一项的前提，是每项整改的证据必须配齐",
+            "source_refs": [
+              "source-catalog-e12af5ca6f847208"
+            ]
+          },
+          {
+            "id": "catalog-24a82af10e9fbf4f",
+            "title": "环保法规与标准更新影响简报 —— 新规落到「我们集团要改什么」",
+            "roles": "法务",
+            "description": "法规标准每月更新，但无人岗位职责包含盯法规——往往检查时才发现规定已变",
+            "source_refs": [
+              "source-catalog-24a82af10e9fbf4f"
+            ]
+          },
+          {
+            "id": "catalog-219d2a8590efafdb",
+            "title": "排污许可执行报告编制与台账勾稽 —— 十二项法定内容对着台账逐项写",
+            "roles": "法务",
+            "description": "执行报告法定一季一报加年报，「数据逻辑错误」退件的主因，是报告数与台账数从未对账",
+            "source_refs": [
+              "source-catalog-219d2a8590efafdb"
+            ]
+          },
+          {
+            "id": "catalog-39e169f31ffea576",
+            "title": "迎检资料一键组卷 —— 按检查清单把台账记录照片监测汇成卷",
+            "roles": "法务",
+            "description": "检查组通知次日到场，资料当晚须备齐——台账在安环、照片在运行、监测在平台、联单在处置单位",
+            "source_refs": [
+              "source-catalog-39e169f31ffea576"
+            ]
+          },
+          {
+            "id": "catalog-90013f24de9d1643",
+            "title": "竣工验收一户一档核验 —— 12 类归档清单与通气前置条件检查",
+            "roles": "行政",
+            "description": "资料不全不予通气写入政府文件，缺项资料偏偏散在市场、工程、监理、客服四个口",
+            "source_refs": [
+              "source-catalog-90013f24de9d1643"
+            ]
+          },
+          {
+            "id": "catalog-4869eea6da5f0222",
+            "title": "迎检材料包按检查条目汇编 —— 检查组要什么就从台账库抽什么，不再检查前夜全矿加班补台账",
+            "roles": "行政",
+            "description": "检查组次日上午到场，当夜全矿补台账、打印店排队至凌晨——这套流程已延续二十年",
+            "source_refs": [
+              "source-catalog-4869eea6da5f0222"
+            ]
+          },
+          {
+            "id": "catalog-8d69db9c9dc3fd2a",
+            "title": "盗气嫌疑筛选与证据材料包 —— 用气曲线异常户的推算与移送底稿",
+            "roles": "运营 · 法务",
+            "description": "稽查队盯一户需蹲守一个月，与同类户一比，绕表痕迹已在数据里留存半年",
+            "source_refs": [
+              "source-catalog-8d69db9c9dc3fd2a"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-24a82af10e9fbf4f"
+              ]
+            },
+            "label": "标准变更与内部资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "影响简报",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-c44bd579fd66a9d4",
+          "catalog-e12af5ca6f847208",
+          "catalog-24a82af10e9fbf4f",
+          "catalog-219d2a8590efafdb",
+          "catalog-39e169f31ffea576",
+          "catalog-90013f24de9d1643",
+          "catalog-4869eea6da5f0222",
+          "catalog-8d69db9c9dc3fd2a"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "operation",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "能耗经营与对账",
+      "description": "运营按月核对节能量计算和费用口径，形成节能量核对结果。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-e0b75f45102cdfc7"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按月核对节能量计算和费用口径",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-e0b75f45102cdfc7"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "月度计量与合同依据",
+            "source_refs": [
+              "source-catalog-e0b75f45102cdfc7"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "节能量核对结果",
+            "source_refs": [
+              "source-catalog-e0b75f45102cdfc7"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-62f239bbc1e8fc06",
+            "title": "运营托管投标技术方案初稿 —— 从招标条款到运行方案人员配置一稿起",
+            "locator": "【能源公用·销售】运营托管投标技术方案初稿 —— 从招标条款到运行方案人员配置一稿起/运营托管投标技术方案初稿 —— 从招标条款到运行方案人员配置一稿起.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%BF%90%E8%90%A5%E6%89%98%E7%AE%A1%E6%8A%95%E6%A0%87%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%BB%8E%E6%8B%9B%E6%A0%87%E6%9D%A1%E6%AC%BE%E5%88%B0%E8%BF%90%E8%A1%8C%E6%96%B9%E6%A1%88%E4%BA%BA%E5%91%98%E9%85%8D%E7%BD%AE%E4%B8%80%E7%A8%BF%E8%B5%B7/%E8%BF%90%E8%90%A5%E6%89%98%E7%AE%A1%E6%8A%95%E6%A0%87%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%BB%8E%E6%8B%9B%E6%A0%87%E6%9D%A1%E6%AC%BE%E5%88%B0%E8%BF%90%E8%A1%8C%E6%96%B9%E6%A1%88%E4%BA%BA%E5%91%98%E9%85%8D%E7%BD%AE%E4%B8%80%E7%A8%BF%E8%B5%B7.md"
+          },
+          {
+            "id": "source-catalog-48fdf68405ffdf6b",
+            "title": "综合能源用能诊断 —— 分项计量数据驱动的能耗异常归因与改造建议",
+            "locator": "【能源公用·销售】综合能源用能诊断 —— 分项计量数据驱动的能耗异常归因与改造建议/综合能源用能诊断 —— 分项计量数据驱动的能耗异常归因与改造建议.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%BB%BC%E5%90%88%E8%83%BD%E6%BA%90%E7%94%A8%E8%83%BD%E8%AF%8A%E6%96%AD%20%E2%80%94%E2%80%94%20%E5%88%86%E9%A1%B9%E8%AE%A1%E9%87%8F%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E7%9A%84%E8%83%BD%E8%80%97%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0%E4%B8%8E%E6%94%B9%E9%80%A0%E5%BB%BA%E8%AE%AE/%E7%BB%BC%E5%90%88%E8%83%BD%E6%BA%90%E7%94%A8%E8%83%BD%E8%AF%8A%E6%96%AD%20%E2%80%94%E2%80%94%20%E5%88%86%E9%A1%B9%E8%AE%A1%E9%87%8F%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E7%9A%84%E8%83%BD%E8%80%97%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0%E4%B8%8E%E6%94%B9%E9%80%A0%E5%BB%BA%E8%AE%AE.md"
+          },
+          {
+            "id": "source-catalog-4cb13e446726b884",
+            "title": "水务集团碳盘查底稿编制 —— 因子选择留痕，别让盘查变成下一个数据问题",
+            "locator": "【能源公用·运营·管理层】水务集团碳盘查底稿编制 —— 因子选择留痕，别让盘查变成下一个数据问题/水务集团碳盘查底稿编制 —— 因子选择留痕，别让盘查变成下一个数据问题.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91%E6%B0%B4%E5%8A%A1%E9%9B%86%E5%9B%A2%E7%A2%B3%E7%9B%98%E6%9F%A5%E5%BA%95%E7%A8%BF%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E5%9B%A0%E5%AD%90%E9%80%89%E6%8B%A9%E7%95%99%E7%97%95%EF%BC%8C%E5%88%AB%E8%AE%A9%E7%9B%98%E6%9F%A5%E5%8F%98%E6%88%90%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/%E6%B0%B4%E5%8A%A1%E9%9B%86%E5%9B%A2%E7%A2%B3%E7%9B%98%E6%9F%A5%E5%BA%95%E7%A8%BF%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E5%9B%A0%E5%AD%90%E9%80%89%E6%8B%A9%E7%95%99%E7%97%95%EF%BC%8C%E5%88%AB%E8%AE%A9%E7%9B%98%E6%9F%A5%E5%8F%98%E6%88%90%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98.md"
+          },
+          {
+            "id": "source-catalog-b9d34d365a8e2edf",
+            "title": "ESG 可持续发展报告编制 —— 二十一项议题逐项配数据，漂绿质疑从源头防",
+            "locator": "【能源公用·运营·管理层】ESG 可持续发展报告编制 —— 二十一项议题逐项配数据，漂绿质疑从源头防/ESG 可持续发展报告编制 —— 二十一项议题逐项配数据，漂绿质疑从源头防.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91ESG%20%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E4%BA%8C%E5%8D%81%E4%B8%80%E9%A1%B9%E8%AE%AE%E9%A2%98%E9%80%90%E9%A1%B9%E9%85%8D%E6%95%B0%E6%8D%AE%EF%BC%8C%E6%BC%82%E7%BB%BF%E8%B4%A8%E7%96%91%E4%BB%8E%E6%BA%90%E5%A4%B4%E9%98%B2/ESG%20%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A%E7%BC%96%E5%88%B6%20%E2%80%94%E2%80%94%20%E4%BA%8C%E5%8D%81%E4%B8%80%E9%A1%B9%E8%AE%AE%E9%A2%98%E9%80%90%E9%A1%B9%E9%85%8D%E6%95%B0%E6%8D%AE%EF%BC%8C%E6%BC%82%E7%BB%BF%E8%B4%A8%E7%96%91%E4%BB%8E%E6%BA%90%E5%A4%B4%E9%98%B2.md"
+          },
+          {
+            "id": "source-catalog-96d24221a8c13926",
+            "title": "采暖季保供日报 —— 缺口测算、预警分级与压非保民执行留痕",
+            "locator": "【能源公用·运营】采暖季保供日报 —— 缺口测算、预警分级与压非保民执行留痕/采暖季保供日报 —— 缺口测算、预警分级与压非保民执行留痕.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%87%87%E6%9A%96%E5%AD%A3%E4%BF%9D%E4%BE%9B%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E7%BC%BA%E5%8F%A3%E6%B5%8B%E7%AE%97%E3%80%81%E9%A2%84%E8%AD%A6%E5%88%86%E7%BA%A7%E4%B8%8E%E5%8E%8B%E9%9D%9E%E4%BF%9D%E6%B0%91%E6%89%A7%E8%A1%8C%E7%95%99%E7%97%95/%E9%87%87%E6%9A%96%E5%AD%A3%E4%BF%9D%E4%BE%9B%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E7%BC%BA%E5%8F%A3%E6%B5%8B%E7%AE%97%E3%80%81%E9%A2%84%E8%AD%A6%E5%88%86%E7%BA%A7%E4%B8%8E%E5%8E%8B%E9%9D%9E%E4%BF%9D%E6%B0%91%E6%89%A7%E8%A1%8C%E7%95%99%E7%97%95.md"
+          },
+          {
+            "id": "source-catalog-79633a7359da1b2e",
+            "title": "购销差月度归因 —— 把输差拆到气源、表具、片区和每一方放散气",
+            "locator": "【能源公用·运营】购销差月度归因 —— 把输差拆到气源、表具、片区和每一方放散气/购销差月度归因 —— 把输差拆到气源、表具、片区和每一方放散气.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%B4%AD%E9%94%80%E5%B7%AE%E6%9C%88%E5%BA%A6%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%20%E6%8A%8A%E8%BE%93%E5%B7%AE%E6%8B%86%E5%88%B0%E6%B0%94%E6%BA%90%E3%80%81%E8%A1%A8%E5%85%B7%E3%80%81%E7%89%87%E5%8C%BA%E5%92%8C%E6%AF%8F%E4%B8%80%E6%96%B9%E6%94%BE%E6%95%A3%E6%B0%94/%E8%B4%AD%E9%94%80%E5%B7%AE%E6%9C%88%E5%BA%A6%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%20%E6%8A%8A%E8%BE%93%E5%B7%AE%E6%8B%86%E5%88%B0%E6%B0%94%E6%BA%90%E3%80%81%E8%A1%A8%E5%85%B7%E3%80%81%E7%89%87%E5%8C%BA%E5%92%8C%E6%AF%8F%E4%B8%80%E6%96%B9%E6%94%BE%E6%95%A3%E6%B0%94.md"
+          },
+          {
+            "id": "source-catalog-e0b75f45102cdfc7",
+            "title": "EMC 节能量月度对账 —— 基准线、修正因子与分享金额的三方核对单",
+            "locator": "【能源公用·运营】EMC 节能量月度对账 —— 基准线、修正因子与分享金额的三方核对单/EMC 节能量月度对账 —— 基准线、修正因子与分享金额的三方核对单.md:10",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E8%BF%90%E8%90%A5%E3%80%91EMC%20%E8%8A%82%E8%83%BD%E9%87%8F%E6%9C%88%E5%BA%A6%E5%AF%B9%E8%B4%A6%20%E2%80%94%E2%80%94%20%E5%9F%BA%E5%87%86%E7%BA%BF%E3%80%81%E4%BF%AE%E6%AD%A3%E5%9B%A0%E5%AD%90%E4%B8%8E%E5%88%86%E4%BA%AB%E9%87%91%E9%A2%9D%E7%9A%84%E4%B8%89%E6%96%B9%E6%A0%B8%E5%AF%B9%E5%8D%95/EMC%20%E8%8A%82%E8%83%BD%E9%87%8F%E6%9C%88%E5%BA%A6%E5%AF%B9%E8%B4%A6%20%E2%80%94%E2%80%94%20%E5%9F%BA%E5%87%86%E7%BA%BF%E3%80%81%E4%BF%AE%E6%AD%A3%E5%9B%A0%E5%AD%90%E4%B8%8E%E5%88%86%E4%BA%AB%E9%87%91%E9%A2%9D%E7%9A%84%E4%B8%89%E6%96%B9%E6%A0%B8%E5%AF%B9%E5%8D%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-62f239bbc1e8fc06",
+            "title": "运营托管投标技术方案初稿 —— 从招标条款到运行方案人员配置一稿起",
+            "roles": "销售",
+            "description": "投标文件每次都从零撰写，但方案的骨架、业绩与参数，都留存在上一份标书中",
+            "source_refs": [
+              "source-catalog-62f239bbc1e8fc06"
+            ]
+          },
+          {
+            "id": "catalog-48fdf68405ffdf6b",
+            "title": "综合能源用能诊断 —— 分项计量数据驱动的能耗异常归因与改造建议",
+            "roles": "销售",
+            "description": "客户提出节能改造意向，被问上年度用能去向即无法作答，行业普遍缺用能数据",
+            "source_refs": [
+              "source-catalog-48fdf68405ffdf6b"
+            ]
+          },
+          {
+            "id": "catalog-4cb13e446726b884",
+            "title": "水务集团碳盘查底稿编制 —— 因子选择留痕，别让盘查变成下一个数据问题",
+            "roles": "运营 · 管理层",
+            "description": "同一座污水厂用不同因子核算碳排可差出数倍，算小了构成漂绿，算大了是多背的减排指标",
+            "source_refs": [
+              "source-catalog-4cb13e446726b884"
+            ]
+          },
+          {
+            "id": "catalog-b9d34d365a8e2edf",
+            "title": "ESG 可持续发展报告编制 —— 二十一项议题逐项配数据，漂绿质疑从源头防",
+            "roles": "运营 · 管理层",
+            "description": "报告四月三十日前必须披露，数据收集从一月起就是黑洞——九成企业仍在 Excel 手工填报",
+            "source_refs": [
+              "source-catalog-b9d34d365a8e2edf"
+            ]
+          },
+          {
+            "id": "catalog-96d24221a8c13926",
+            "title": "采暖季保供日报 —— 缺口测算、预警分级与压非保民执行留痕",
+            "roles": "运营",
+            "description": "日报属政府文件形态须每日上报，全靠调度员手工从五个来源凑数，持续四个月",
+            "source_refs": [
+              "source-catalog-96d24221a8c13926"
+            ]
+          },
+          {
+            "id": "catalog-79633a7359da1b2e",
+            "title": "购销差月度归因 —— 把输差拆到气源、表具、片区和每一方放散气",
+            "roles": "运营",
+            "description": "报表上的输差仅为总数 3.2%，拆解后是 2,847 方施工放散、一块超差皮膜表与一户绕表私接",
+            "source_refs": [
+              "source-catalog-79633a7359da1b2e"
+            ]
+          },
+          {
+            "id": "catalog-e0b75f45102cdfc7",
+            "title": "EMC 节能量月度对账 —— 基准线、修正因子与分享金额的三方核对单",
+            "roles": "运营",
+            "description": "节能量=基准减报告加调整，调整量未在合同写死，判决书每个字都可能成为日后官司",
+            "source_refs": [
+              "source-catalog-e0b75f45102cdfc7"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-e0b75f45102cdfc7"
+              ]
+            },
+            "label": "月度计量与合同依据",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "节能量核对结果",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-62f239bbc1e8fc06",
+          "catalog-48fdf68405ffdf6b",
+          "catalog-4cb13e446726b884",
+          "catalog-b9d34d365a8e2edf",
+          "catalog-96d24221a8c13926",
+          "catalog-79633a7359da1b2e",
+          "catalog-e0b75f45102cdfc7"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "公用服务",
+      "scene_ids": [
+        "water",
+        "customer"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "生产运行",
+      "scene_ids": [
+        "power",
+        "field",
+        "environment"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "工程与经营",
+      "scene_ids": [
+        "project",
+        "operation"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 能源公用",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-b2d555a5adefddf4",
+      "title": "水质化验日报与末梢余氯异常归因",
+      "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:75",
+      "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "水质化验日报与末梢余氯异常归因",
+      "source_refs": [
+        "source-catalog-b2d555a5adefddf4"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "整理化验记录",
+              "participant": "化验员",
+              "description": "接收化验台账，汇总化验台账并标出需要关注的测点。交付异常测点表。"
+            },
+            {
+              "label": "对齐作业时间",
+              "participant": "化验员与管网班组",
+              "description": "接收异常测点表，把异常日与管网作业记录并排核对。交付作业时间轴。"
+            },
+            {
+              "label": "比对管网分区",
+              "participant": "化验员与管网班组",
+              "description": "接收作业时间轴，核对测点所属分区及上下游记录。交付归因线索与证据。"
+            },
+            {
+              "label": "出日报与待复核项",
+              "participant": "化验员",
+              "description": "接收归因线索与证据，整理上下游证据、异常说明和复核记录。交付水质日报及异常留痕。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "water"
+  }
+}

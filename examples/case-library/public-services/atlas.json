@@ -1,0 +1,1579 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "public-services",
+  "id": "public-services-atlas",
+  "type": "industry_atlas",
+  "title": "政务公共场景全景图",
+  "description": "案例库 · 38 个案例，按工作场景归入 6 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "hotline",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "热线受理与分拨",
+      "description": "客服对照事项清单和历史退单研判分拨，形成责任单位建议。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照事项清单和历史退单研判分拨",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "诉求工单与分拨记录",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "责任单位建议",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4b1f39cafe8ac55e",
+            "title": "12345 工单答复初稿 —— 按三类模板生成可溯源到文号的答复草稿",
+            "locator": "【政务公共·客服】12345 工单答复初稿 —— 按三类模板生成可溯源到文号的答复草稿/12345 工单答复初稿 —— 按三类模板生成可溯源到文号的答复草稿.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E7%AD%94%E5%A4%8D%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E6%8C%89%E4%B8%89%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%94%9F%E6%88%90%E5%8F%AF%E6%BA%AF%E6%BA%90%E5%88%B0%E6%96%87%E5%8F%B7%E7%9A%84%E7%AD%94%E5%A4%8D%E8%8D%89%E7%A8%BF/12345%20%E5%B7%A5%E5%8D%95%E7%AD%94%E5%A4%8D%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E6%8C%89%E4%B8%89%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%94%9F%E6%88%90%E5%8F%AF%E6%BA%AF%E6%BA%90%E5%88%B0%E6%96%87%E5%8F%B7%E7%9A%84%E7%AD%94%E5%A4%8D%E8%8D%89%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+          },
+          {
+            "id": "source-catalog-fd07232b62674cd0",
+            "title": "12345 类案分析报告 —— 高频诉求专项复盘，从工单台账里挖出根因",
+            "locator": "【政务公共·客服】12345 类案分析报告 —— 高频诉求专项复盘，从工单台账里挖出根因/12345 类案分析报告 —— 高频诉求专项复盘，从工单台账里挖出根因.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E7%B1%BB%E6%A1%88%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E9%AB%98%E9%A2%91%E8%AF%89%E6%B1%82%E4%B8%93%E9%A1%B9%E5%A4%8D%E7%9B%98%EF%BC%8C%E4%BB%8E%E5%B7%A5%E5%8D%95%E5%8F%B0%E8%B4%A6%E9%87%8C%E6%8C%96%E5%87%BA%E6%A0%B9%E5%9B%A0/12345%20%E7%B1%BB%E6%A1%88%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E9%AB%98%E9%A2%91%E8%AF%89%E6%B1%82%E4%B8%93%E9%A1%B9%E5%A4%8D%E7%9B%98%EF%BC%8C%E4%BB%8E%E5%B7%A5%E5%8D%95%E5%8F%B0%E8%B4%A6%E9%87%8C%E6%8C%96%E5%87%BA%E6%A0%B9%E5%9B%A0.md"
+          },
+          {
+            "id": "source-catalog-490565d8d02a27df",
+            "title": "12345 智能填单与话术推荐 —— 通话结束即成稿",
+            "locator": "【政务公共·客服】12345 智能填单与话术推荐 —— 通话结束即成稿/12345 智能填单与话术推荐 —— 通话结束即成稿.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E6%99%BA%E8%83%BD%E5%A1%AB%E5%8D%95%E4%B8%8E%E8%AF%9D%E6%9C%AF%E6%8E%A8%E8%8D%90%20%E2%80%94%E2%80%94%20%E9%80%9A%E8%AF%9D%E7%BB%93%E6%9D%9F%E5%8D%B3%E6%88%90%E7%A8%BF/12345%20%E6%99%BA%E8%83%BD%E5%A1%AB%E5%8D%95%E4%B8%8E%E8%AF%9D%E6%9C%AF%E6%8E%A8%E8%8D%90%20%E2%80%94%E2%80%94%20%E9%80%9A%E8%AF%9D%E7%BB%93%E6%9D%9F%E5%8D%B3%E6%88%90%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-260916e56fe4d0cb",
+            "title": "办理时限台账与超期预警 —— 十五个工作日、九十日、六十日，每个倒计时都看得见",
+            "locator": "【政务公共·客服】办理时限台账与超期预警 —— 十五个工作日、九十日、六十日，每个倒计时都看得见/办理时限台账与超期预警 —— 十五个工作日、九十日、六十日，每个倒计时都看得见.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%8A%9E%E7%90%86%E6%97%B6%E9%99%90%E5%8F%B0%E8%B4%A6%E4%B8%8E%E8%B6%85%E6%9C%9F%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E5%8D%81%E4%BA%94%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E3%80%81%E4%B9%9D%E5%8D%81%E6%97%A5%E3%80%81%E5%85%AD%E5%8D%81%E6%97%A5%EF%BC%8C%E6%AF%8F%E4%B8%AA%E5%80%92%E8%AE%A1%E6%97%B6%E9%83%BD%E7%9C%8B%E5%BE%97%E8%A7%81/%E5%8A%9E%E7%90%86%E6%97%B6%E9%99%90%E5%8F%B0%E8%B4%A6%E4%B8%8E%E8%B6%85%E6%9C%9F%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E5%8D%81%E4%BA%94%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E3%80%81%E4%B9%9D%E5%8D%81%E6%97%A5%E3%80%81%E5%85%AD%E5%8D%81%E6%97%A5%EF%BC%8C%E6%AF%8F%E4%B8%AA%E5%80%92%E8%AE%A1%E6%97%B6%E9%83%BD%E7%9C%8B%E5%BE%97%E8%A7%81.md"
+          },
+          {
+            "id": "source-catalog-daa09da1759c6cb8",
+            "title": "接访登记与诉求结构化 —— 把口述的纠纷当天变成要素齐全、去向明确的登记",
+            "locator": "【政务公共·客服】接访登记与诉求结构化 —— 把口述的纠纷当天变成要素齐全、去向明确的登记/接访登记与诉求结构化 —— 把口述的纠纷当天变成要素齐全、去向明确的登记.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8E%A5%E8%AE%BF%E7%99%BB%E8%AE%B0%E4%B8%8E%E8%AF%89%E6%B1%82%E7%BB%93%E6%9E%84%E5%8C%96%20%E2%80%94%E2%80%94%20%E6%8A%8A%E5%8F%A3%E8%BF%B0%E7%9A%84%E7%BA%A0%E7%BA%B7%E5%BD%93%E5%A4%A9%E5%8F%98%E6%88%90%E8%A6%81%E7%B4%A0%E9%BD%90%E5%85%A8%E3%80%81%E5%8E%BB%E5%90%91%E6%98%8E%E7%A1%AE%E7%9A%84%E7%99%BB%E8%AE%B0/%E6%8E%A5%E8%AE%BF%E7%99%BB%E8%AE%B0%E4%B8%8E%E8%AF%89%E6%B1%82%E7%BB%93%E6%9E%84%E5%8C%96%20%E2%80%94%E2%80%94%20%E6%8A%8A%E5%8F%A3%E8%BF%B0%E7%9A%84%E7%BA%A0%E7%BA%B7%E5%BD%93%E5%A4%A9%E5%8F%98%E6%88%90%E8%A6%81%E7%B4%A0%E9%BD%90%E5%85%A8%E3%80%81%E5%8E%BB%E5%90%91%E6%98%8E%E7%A1%AE%E7%9A%84%E7%99%BB%E8%AE%B0.md"
+          },
+          {
+            "id": "source-catalog-83a69d2cc237b5c1",
+            "title": "投诉举报分类分拨与重复件合并 —— 投诉和举报分别处理，重复的并单一次办",
+            "locator": "【政务公共·客服】投诉举报分类分拨与重复件合并 —— 投诉和举报分别处理，重复的并单一次办/投诉举报分类分拨与重复件合并 —— 投诉和举报分别处理，重复的并单一次办.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8A%95%E8%AF%89%E4%B8%BE%E6%8A%A5%E5%88%86%E7%B1%BB%E5%88%86%E6%8B%A8%E4%B8%8E%E9%87%8D%E5%A4%8D%E4%BB%B6%E5%90%88%E5%B9%B6%20%E2%80%94%E2%80%94%20%E6%8A%95%E8%AF%89%E5%92%8C%E4%B8%BE%E6%8A%A5%E5%88%86%E5%88%AB%E5%A4%84%E7%90%86%EF%BC%8C%E9%87%8D%E5%A4%8D%E7%9A%84%E5%B9%B6%E5%8D%95%E4%B8%80%E6%AC%A1%E5%8A%9E/%E6%8A%95%E8%AF%89%E4%B8%BE%E6%8A%A5%E5%88%86%E7%B1%BB%E5%88%86%E6%8B%A8%E4%B8%8E%E9%87%8D%E5%A4%8D%E4%BB%B6%E5%90%88%E5%B9%B6%20%E2%80%94%E2%80%94%20%E6%8A%95%E8%AF%89%E5%92%8C%E4%B8%BE%E6%8A%A5%E5%88%86%E5%88%AB%E5%A4%84%E7%90%86%EF%BC%8C%E9%87%8D%E5%A4%8D%E7%9A%84%E5%B9%B6%E5%8D%95%E4%B8%80%E6%AC%A1%E5%8A%9E.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4b1f39cafe8ac55e",
+            "title": "12345 工单答复初稿 —— 按三类模板生成可溯源到文号的答复草稿",
+            "roles": "客服",
+            "description": "答复中出现「已联系解释」即为无效答复，一律退回重办，退回一件扣 0.5 分，上不封顶",
+            "source_refs": [
+              "source-catalog-4b1f39cafe8ac55e"
+            ]
+          },
+          {
+            "id": "catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "roles": "客服",
+            "description": "工单分拨有误即被退回，退回 3 次即启动区级兜底",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          },
+          {
+            "id": "catalog-fd07232b62674cd0",
+            "title": "12345 类案分析报告 —— 高频诉求专项复盘，从工单台账里挖出根因",
+            "roles": "客服",
+            "description": "每个科室都自称工单最难办，福田已把类案调研从两周压到一天，先行单位已将其变为月度动作",
+            "source_refs": [
+              "source-catalog-fd07232b62674cd0"
+            ]
+          },
+          {
+            "id": "catalog-490565d8d02a27df",
+            "title": "12345 智能填单与话术推荐 —— 通话结束即成稿",
+            "roles": "客服",
+            "description": "话务员日均接 100 通电话，填单全靠通话结束后回忆手敲",
+            "source_refs": [
+              "source-catalog-490565d8d02a27df"
+            ]
+          },
+          {
+            "id": "catalog-260916e56fe4d0cb",
+            "title": "办理时限台账与超期预警 —— 十五个工作日、九十日、六十日，每个倒计时都看得见",
+            "roles": "客服",
+            "description": "时限是这条线的心跳，倒计时却散落在每个人的记忆与便签上",
+            "source_refs": [
+              "source-catalog-260916e56fe4d0cb"
+            ]
+          },
+          {
+            "id": "catalog-daa09da1759c6cb8",
+            "title": "接访登记与诉求结构化 —— 把口述的纠纷当天变成要素齐全、去向明确的登记",
+            "roles": "客服",
+            "description": "窗口一天登记十几批来访，漏填一个身份证号或错勾一个去向，事后全靠翻本子补查",
+            "source_refs": [
+              "source-catalog-daa09da1759c6cb8"
+            ]
+          },
+          {
+            "id": "catalog-83a69d2cc237b5c1",
+            "title": "投诉举报分类分拨与重复件合并 —— 投诉和举报分别处理，重复的并单一次办",
+            "roles": "客服",
+            "description": "每天上百条工单涌入，相当一部分是同一件事的第 N 次重复，每一条都在重复消耗核查人力",
+            "source_refs": [
+              "source-catalog-83a69d2cc237b5c1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-56cd093e82d505cf"
+              ]
+            },
+            "label": "诉求工单与分拨记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "责任单位建议",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4b1f39cafe8ac55e",
+          "catalog-56cd093e82d505cf",
+          "catalog-fd07232b62674cd0",
+          "catalog-490565d8d02a27df",
+          "catalog-260916e56fe4d0cb",
+          "catalog-daa09da1759c6cb8",
+          "catalog-83a69d2cc237b5c1"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "service",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "办事窗口与政策答复",
+      "description": "客服逐项核对申请材料，形成预审记录。画面包含办事窗口的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-0a2294f7934ac2ef"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "逐项核对申请材料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-0a2294f7934ac2ef"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "申请材料与办事清单",
+            "source_refs": [
+              "source-catalog-0a2294f7934ac2ef"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "预审记录",
+            "source_refs": [
+              "source-catalog-0a2294f7934ac2ef"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-6f7d87162776c831",
+            "title": "社保业务一次性告知单与材料预审 —— 让群众第一次来就把材料带齐",
+            "locator": "【政务公共·客服】社保业务一次性告知单与材料预审 —— 让群众第一次来就把材料带齐/社保业务一次性告知单与材料预审 —— 让群众第一次来就把材料带齐.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%A4%BE%E4%BF%9D%E4%B8%9A%E5%8A%A1%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E5%8D%95%E4%B8%8E%E6%9D%90%E6%96%99%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E8%AE%A9%E7%BE%A4%E4%BC%97%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%B0%B1%E6%8A%8A%E6%9D%90%E6%96%99%E5%B8%A6%E9%BD%90/%E7%A4%BE%E4%BF%9D%E4%B8%9A%E5%8A%A1%E4%B8%80%E6%AC%A1%E6%80%A7%E5%91%8A%E7%9F%A5%E5%8D%95%E4%B8%8E%E6%9D%90%E6%96%99%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E8%AE%A9%E7%BE%A4%E4%BC%97%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9D%A5%E5%B0%B1%E6%8A%8A%E6%9D%90%E6%96%99%E5%B8%A6%E9%BD%90.md"
+          },
+          {
+            "id": "source-catalog-0a2294f7934ac2ef",
+            "title": "收件材料预审 —— 齐全性与形式要件初检，出一张补正清单",
+            "locator": "【政务公共·客服】收件材料预审 —— 齐全性与形式要件初检，出一张补正清单/收件材料预审 —— 齐全性与形式要件初检，出一张补正清单.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%94%B6%E4%BB%B6%E6%9D%90%E6%96%99%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E9%BD%90%E5%85%A8%E6%80%A7%E4%B8%8E%E5%BD%A2%E5%BC%8F%E8%A6%81%E4%BB%B6%E5%88%9D%E6%A3%80%EF%BC%8C%E5%87%BA%E4%B8%80%E5%BC%A0%E8%A1%A5%E6%AD%A3%E6%B8%85%E5%8D%95/%E6%94%B6%E4%BB%B6%E6%9D%90%E6%96%99%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E9%BD%90%E5%85%A8%E6%80%A7%E4%B8%8E%E5%BD%A2%E5%BC%8F%E8%A6%81%E4%BB%B6%E5%88%9D%E6%A3%80%EF%BC%8C%E5%87%BA%E4%B8%80%E5%BC%A0%E8%A1%A5%E6%AD%A3%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-cd05c5076f84cc21",
+            "title": "税费政策口径比对与咨询答复底稿 —— 三份文件对不上时，答复以哪份为准",
+            "locator": "【政务公共·客服】税费政策口径比对与咨询答复底稿 —— 三份文件对不上时，答复以哪份为准/税费政策口径比对与咨询答复底稿 —— 三份文件对不上时，答复以哪份为准.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%A8%8E%E8%B4%B9%E6%94%BF%E7%AD%96%E5%8F%A3%E5%BE%84%E6%AF%94%E5%AF%B9%E4%B8%8E%E5%92%A8%E8%AF%A2%E7%AD%94%E5%A4%8D%E5%BA%95%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%BB%BD%E6%96%87%E4%BB%B6%E5%AF%B9%E4%B8%8D%E4%B8%8A%E6%97%B6%EF%BC%8C%E7%AD%94%E5%A4%8D%E4%BB%A5%E5%93%AA%E4%BB%BD%E4%B8%BA%E5%87%86/%E7%A8%8E%E8%B4%B9%E6%94%BF%E7%AD%96%E5%8F%A3%E5%BE%84%E6%AF%94%E5%AF%B9%E4%B8%8E%E5%92%A8%E8%AF%A2%E7%AD%94%E5%A4%8D%E5%BA%95%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%BB%BD%E6%96%87%E4%BB%B6%E5%AF%B9%E4%B8%8D%E4%B8%8A%E6%97%B6%EF%BC%8C%E7%AD%94%E5%A4%8D%E4%BB%A5%E5%93%AA%E4%BB%BD%E4%B8%BA%E5%87%86.md"
+          },
+          {
+            "id": "source-catalog-fe200d956d917154",
+            "title": "综窗「一口清」辅助问答 —— 上千个事项的收件要点，问一句给一条带出处的口径",
+            "locator": "【政务公共·客服】综窗「一口清」辅助问答 —— 上千个事项的收件要点，问一句给一条带出处的口径/综窗「一口清」辅助问答 —— 上千个事项的收件要点，问一句给一条带出处的口径.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%BB%BC%E7%AA%97%E3%80%8C%E4%B8%80%E5%8F%A3%E6%B8%85%E3%80%8D%E8%BE%85%E5%8A%A9%E9%97%AE%E7%AD%94%20%E2%80%94%E2%80%94%20%E4%B8%8A%E5%8D%83%E4%B8%AA%E4%BA%8B%E9%A1%B9%E7%9A%84%E6%94%B6%E4%BB%B6%E8%A6%81%E7%82%B9%EF%BC%8C%E9%97%AE%E4%B8%80%E5%8F%A5%E7%BB%99%E4%B8%80%E6%9D%A1%E5%B8%A6%E5%87%BA%E5%A4%84%E7%9A%84%E5%8F%A3%E5%BE%84/%E7%BB%BC%E7%AA%97%E3%80%8C%E4%B8%80%E5%8F%A3%E6%B8%85%E3%80%8D%E8%BE%85%E5%8A%A9%E9%97%AE%E7%AD%94%20%E2%80%94%E2%80%94%20%E4%B8%8A%E5%8D%83%E4%B8%AA%E4%BA%8B%E9%A1%B9%E7%9A%84%E6%94%B6%E4%BB%B6%E8%A6%81%E7%82%B9%EF%BC%8C%E9%97%AE%E4%B8%80%E5%8F%A5%E7%BB%99%E4%B8%80%E6%9D%A1%E5%B8%A6%E5%87%BA%E5%A4%84%E7%9A%84%E5%8F%A3%E5%BE%84.md"
+          },
+          {
+            "id": "source-catalog-3721e3b4dc00710b",
+            "title": "办事指南要素复核 —— 政策换版之后，逐项比对出差异清单",
+            "locator": "【政务公共·行政】办事指南要素复核 —— 政策换版之后，逐项比对出差异清单/办事指南要素复核 —— 政策换版之后，逐项比对出差异清单.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%E8%A6%81%E7%B4%A0%E5%A4%8D%E6%A0%B8%20%E2%80%94%E2%80%94%20%E6%94%BF%E7%AD%96%E6%8D%A2%E7%89%88%E4%B9%8B%E5%90%8E%EF%BC%8C%E9%80%90%E9%A1%B9%E6%AF%94%E5%AF%B9%E5%87%BA%E5%B7%AE%E5%BC%82%E6%B8%85%E5%8D%95/%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%E8%A6%81%E7%B4%A0%E5%A4%8D%E6%A0%B8%20%E2%80%94%E2%80%94%20%E6%94%BF%E7%AD%96%E6%8D%A2%E7%89%88%E4%B9%8B%E5%90%8E%EF%BC%8C%E9%80%90%E9%A1%B9%E6%AF%94%E5%AF%B9%E5%87%BA%E5%B7%AE%E5%BC%82%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-3569406e4c91b9c3",
+            "title": "政策问答库建设 —— 把一份新文件拆成带文号出处的问答对",
+            "locator": "【政务公共·行政】政策问答库建设 —— 把一份新文件拆成带文号出处的问答对/政策问答库建设 —— 把一份新文件拆成带文号出处的问答对.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E6%94%BF%E7%AD%96%E9%97%AE%E7%AD%94%E5%BA%93%E5%BB%BA%E8%AE%BE%20%E2%80%94%E2%80%94%20%E6%8A%8A%E4%B8%80%E4%BB%BD%E6%96%B0%E6%96%87%E4%BB%B6%E6%8B%86%E6%88%90%E5%B8%A6%E6%96%87%E5%8F%B7%E5%87%BA%E5%A4%84%E7%9A%84%E9%97%AE%E7%AD%94%E5%AF%B9/%E6%94%BF%E7%AD%96%E9%97%AE%E7%AD%94%E5%BA%93%E5%BB%BA%E8%AE%BE%20%E2%80%94%E2%80%94%20%E6%8A%8A%E4%B8%80%E4%BB%BD%E6%96%B0%E6%96%87%E4%BB%B6%E6%8B%86%E6%88%90%E5%B8%A6%E6%96%87%E5%8F%B7%E5%87%BA%E5%A4%84%E7%9A%84%E9%97%AE%E7%AD%94%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-6f7d87162776c831",
+            "title": "社保业务一次性告知单与材料预审 —— 让群众第一次来就把材料带齐",
+            "roles": "客服",
+            "description": "「一次性告知」是写进法规的义务，清单却散在五个经办系统里，窗口只能凭记忆拼凑",
+            "source_refs": [
+              "source-catalog-6f7d87162776c831"
+            ]
+          },
+          {
+            "id": "catalog-0a2294f7934ac2ef",
+            "title": "收件材料预审 —— 齐全性与形式要件初检，出一张补正清单",
+            "roles": "客服",
+            "description": "收错件退回，群众就要再跑一趟，退件率是综窗考核硬指标，形式要件却有几百种",
+            "source_refs": [
+              "source-catalog-0a2294f7934ac2ef"
+            ]
+          },
+          {
+            "id": "catalog-cd05c5076f84cc21",
+            "title": "税费政策口径比对与咨询答复底稿 —— 三份文件对不上时，答复以哪份为准",
+            "roles": "客服",
+            "description": "窗口和热线每天都在答复政策问题，答复一旦引错文件版本，三年后复议仍会被翻出",
+            "source_refs": [
+              "source-catalog-cd05c5076f84cc21"
+            ]
+          },
+          {
+            "id": "catalog-fe200d956d917154",
+            "title": "综窗「一口清」辅助问答 —— 上千个事项的收件要点，问一句给一条带出处的口径",
+            "roles": "客服",
+            "description": "窗口改为无差别综窗，人不可能变成全科医生，群众等待的十分钟，就是受理员翻文件找口径的十分钟",
+            "source_refs": [
+              "source-catalog-fe200d956d917154"
+            ]
+          },
+          {
+            "id": "catalog-3721e3b4dc00710b",
+            "title": "办事指南要素复核 —— 政策换版之后，逐项比对出差异清单",
+            "roles": "行政",
+            "description": "指南挂网那一刻起便开始过时，一个区上千项事项，人工每周比对永远排不进日程",
+            "source_refs": [
+              "source-catalog-3721e3b4dc00710b"
+            ]
+          },
+          {
+            "id": "catalog-3569406e4c91b9c3",
+            "title": "政策问答库建设 —— 把一份新文件拆成带文号出处的问答对",
+            "roles": "行政",
+            "description": "考核要求知识库每类齐备、缺一类扣 0.5 分，30 页文件拆成几十条问答全靠人工，排不进日程",
+            "source_refs": [
+              "source-catalog-3569406e4c91b9c3"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-0a2294f7934ac2ef"
+              ]
+            },
+            "label": "申请材料与办事清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "预审记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "public-services.furniture.service-counter",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "政务服务柜台",
+            "interaction": {
+              "case_ids": [
+                "catalog-0a2294f7934ac2ef"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-6f7d87162776c831",
+          "catalog-0a2294f7934ac2ef",
+          "catalog-cd05c5076f84cc21",
+          "catalog-fe200d956d917154",
+          "catalog-3721e3b4dc00710b",
+          "catalog-3569406e4c91b9c3"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "park",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "园区企业服务",
+      "description": "销售整合政策与企业咨询，形成咨询答复草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "销售",
+            "source_refs": [
+              "source-catalog-97343f46bc23e0d8"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整合政策与企业咨询",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-97343f46bc23e0d8"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "企业问题与政策资料",
+            "source_refs": [
+              "source-catalog-97343f46bc23e0d8"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "咨询答复草稿",
+            "source_refs": [
+              "source-catalog-97343f46bc23e0d8"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-1b3e771f4cff733a",
+            "title": "涉企信息归集对账与经营异常名录管理 —— 列入、届满、修复每一步都有期限可查",
+            "locator": "【政务公共·法务】涉企信息归集对账与经营异常名录管理 —— 列入、届满、修复每一步都有期限可查/涉企信息归集对账与经营异常名录管理 —— 列入、届满、修复每一步都有期限可查.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%B6%89%E4%BC%81%E4%BF%A1%E6%81%AF%E5%BD%92%E9%9B%86%E5%AF%B9%E8%B4%A6%E4%B8%8E%E7%BB%8F%E8%90%A5%E5%BC%82%E5%B8%B8%E5%90%8D%E5%BD%95%E7%AE%A1%E7%90%86%20%E2%80%94%E2%80%94%20%E5%88%97%E5%85%A5%E3%80%81%E5%B1%8A%E6%BB%A1%E3%80%81%E4%BF%AE%E5%A4%8D%E6%AF%8F%E4%B8%80%E6%AD%A5%E9%83%BD%E6%9C%89%E6%9C%9F%E9%99%90%E5%8F%AF%E6%9F%A5/%E6%B6%89%E4%BC%81%E4%BF%A1%E6%81%AF%E5%BD%92%E9%9B%86%E5%AF%B9%E8%B4%A6%E4%B8%8E%E7%BB%8F%E8%90%A5%E5%BC%82%E5%B8%B8%E5%90%8D%E5%BD%95%E7%AE%A1%E7%90%86%20%E2%80%94%E2%80%94%20%E5%88%97%E5%85%A5%E3%80%81%E5%B1%8A%E6%BB%A1%E3%80%81%E4%BF%AE%E5%A4%8D%E6%AF%8F%E4%B8%80%E6%AD%A5%E9%83%BD%E6%9C%89%E6%9C%9F%E9%99%90%E5%8F%AF%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-a778af6955c6c56f",
+            "title": "园区企业风险预警 —— 经营／涉诉／外迁提前看",
+            "locator": "【政务公共·销售】园区企业风险预警 —— 经营／涉诉／外迁提前看/园区企业风险预警 —— 经营／涉诉／外迁提前看.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%9B%AD%E5%8C%BA%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E7%BB%8F%E8%90%A5%EF%BC%8F%E6%B6%89%E8%AF%89%EF%BC%8F%E5%A4%96%E8%BF%81%E6%8F%90%E5%89%8D%E7%9C%8B/%E5%9B%AD%E5%8C%BA%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E7%BB%8F%E8%90%A5%EF%BC%8F%E6%B6%89%E8%AF%89%EF%BC%8F%E5%A4%96%E8%BF%81%E6%8F%90%E5%89%8D%E7%9C%8B.md"
+          },
+          {
+            "id": "source-catalog-97343f46bc23e0d8",
+            "title": "园区企业咨询智能回复 —— 政策问答带出处",
+            "locator": "【政务公共·销售】园区企业咨询智能回复 —— 政策问答带出处/园区企业咨询智能回复 —— 政策问答带出处.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%9B%AD%E5%8C%BA%E4%BC%81%E4%B8%9A%E5%92%A8%E8%AF%A2%E6%99%BA%E8%83%BD%E5%9B%9E%E5%A4%8D%20%E2%80%94%E2%80%94%20%E6%94%BF%E7%AD%96%E9%97%AE%E7%AD%94%E5%B8%A6%E5%87%BA%E5%A4%84/%E5%9B%AD%E5%8C%BA%E4%BC%81%E4%B8%9A%E5%92%A8%E8%AF%A2%E6%99%BA%E8%83%BD%E5%9B%9E%E5%A4%8D%20%E2%80%94%E2%80%94%20%E6%94%BF%E7%AD%96%E9%97%AE%E7%AD%94%E5%B8%A6%E5%87%BA%E5%A4%84.md"
+          },
+          {
+            "id": "source-catalog-860369a06136dc9a",
+            "title": "招商推介材料一键生成 —— 载体政策一次配齐",
+            "locator": "【政务公共·销售】招商推介材料一键生成 —— 载体政策一次配齐/招商推介材料一键生成 —— 载体政策一次配齐.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8B%9B%E5%95%86%E6%8E%A8%E4%BB%8B%E6%9D%90%E6%96%99%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E8%BD%BD%E4%BD%93%E6%94%BF%E7%AD%96%E4%B8%80%E6%AC%A1%E9%85%8D%E9%BD%90/%E6%8B%9B%E5%95%86%E6%8E%A8%E4%BB%8B%E6%9D%90%E6%96%99%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E8%BD%BD%E4%BD%93%E6%94%BF%E7%AD%96%E4%B8%80%E6%AC%A1%E9%85%8D%E9%BD%90.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-1b3e771f4cff733a",
+            "title": "涉企信息归集对账与经营异常名录管理 —— 列入、届满、修复每一步都有期限可查",
+            "roles": "法务",
+            "description": "名录管理是链条最长的台账，列入满一年才能修复、满三年进黑名单，中间无人盯办就是程序瑕疵",
+            "source_refs": [
+              "source-catalog-1b3e771f4cff733a"
+            ]
+          },
+          {
+            "id": "catalog-a778af6955c6c56f",
+            "title": "园区企业风险预警 —— 经营／涉诉／外迁提前看",
+            "roles": "销售",
+            "description": "企业外迁前 6 个月即出现信号，当时无人盯守",
+            "source_refs": [
+              "source-catalog-a778af6955c6c56f"
+            ]
+          },
+          {
+            "id": "catalog-97343f46bc23e0d8",
+            "title": "园区企业咨询智能回复 —— 政策问答带出处",
+            "roles": "销售",
+            "description": "日均 200 件咨询，90% 是政策兑现与申报窗口期问题",
+            "source_refs": [
+              "source-catalog-97343f46bc23e0d8"
+            ]
+          },
+          {
+            "id": "catalog-860369a06136dc9a",
+            "title": "招商推介材料一键生成 —— 载体政策一次配齐",
+            "roles": "销售",
+            "description": "落地建议报告需 5-7 个工作日，客户等不及便流失",
+            "source_refs": [
+              "source-catalog-860369a06136dc9a"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-97343f46bc23e0d8"
+              ]
+            },
+            "label": "企业问题与政策资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "咨询答复草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-1b3e771f4cff733a",
+          "catalog-a778af6955c6c56f",
+          "catalog-97343f46bc23e0d8",
+          "catalog-860369a06136dc9a"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "city",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "网格与城市运行",
+      "description": "行政整理巡查事件并形成待办，形成处置工单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "行政",
+            "source_refs": [
+              "source-catalog-0839f74fb60d39ba"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理巡查事件并形成待办",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-0839f74fb60d39ba"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "巡查日志",
+            "source_refs": [
+              "source-catalog-0839f74fb60d39ba"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "处置工单",
+            "source_refs": [
+              "source-catalog-0839f74fb60d39ba"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e28278afa7e01043",
+            "title": "城市运行体征周报自动编报 —— 12 局数据汇一份报",
+            "locator": "【政务公共·行政】城市运行体征周报自动编报 —— 12 局数据汇一份报/城市运行体征周报自动编报 —— 12 局数据汇一份报.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%9F%8E%E5%B8%82%E8%BF%90%E8%A1%8C%E4%BD%93%E5%BE%81%E5%91%A8%E6%8A%A5%E8%87%AA%E5%8A%A8%E7%BC%96%E6%8A%A5%20%E2%80%94%E2%80%94%2012%20%E5%B1%80%E6%95%B0%E6%8D%AE%E6%B1%87%E4%B8%80%E4%BB%BD%E6%8A%A5/%E5%9F%8E%E5%B8%82%E8%BF%90%E8%A1%8C%E4%BD%93%E5%BE%81%E5%91%A8%E6%8A%A5%E8%87%AA%E5%8A%A8%E7%BC%96%E6%8A%A5%20%E2%80%94%E2%80%94%2012%20%E5%B1%80%E6%95%B0%E6%8D%AE%E6%B1%87%E4%B8%80%E4%BB%BD%E6%8A%A5.md"
+          },
+          {
+            "id": "source-catalog-47c22325ea0e92df",
+            "title": "跨部门事件处置复盘报告 —— 一事件一份时间线",
+            "locator": "【政务公共·行政】跨部门事件处置复盘报告 —— 一事件一份时间线/跨部门事件处置复盘报告 —— 一事件一份时间线.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%B7%A8%E9%83%A8%E9%97%A8%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BA%8B%E4%BB%B6%E4%B8%80%E4%BB%BD%E6%97%B6%E9%97%B4%E7%BA%BF/%E8%B7%A8%E9%83%A8%E9%97%A8%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BA%8B%E4%BB%B6%E4%B8%80%E4%BB%BD%E6%97%B6%E9%97%B4%E7%BA%BF.md"
+          },
+          {
+            "id": "source-catalog-7c2d73b23a996420",
+            "title": "矛盾纠纷「五情」研判日报 —— 每天五点前，把散在五个本子上的情汇总成一张能用的表",
+            "locator": "【政务公共·行政】矛盾纠纷「五情」研判日报 —— 每天五点前，把散在五个本子上的情汇总成一张能用的表/矛盾纠纷「五情」研判日报 —— 每天五点前，把散在五个本子上的情汇总成一张能用的表.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%9F%9B%E7%9B%BE%E7%BA%A0%E7%BA%B7%E3%80%8C%E4%BA%94%E6%83%85%E3%80%8D%E7%A0%94%E5%88%A4%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%A4%A9%E4%BA%94%E7%82%B9%E5%89%8D%EF%BC%8C%E6%8A%8A%E6%95%A3%E5%9C%A8%E4%BA%94%E4%B8%AA%E6%9C%AC%E5%AD%90%E4%B8%8A%E7%9A%84%E6%83%85%E6%B1%87%E6%80%BB%E6%88%90%E4%B8%80%E5%BC%A0%E8%83%BD%E7%94%A8%E7%9A%84%E8%A1%A8/%E7%9F%9B%E7%9B%BE%E7%BA%A0%E7%BA%B7%E3%80%8C%E4%BA%94%E6%83%85%E3%80%8D%E7%A0%94%E5%88%A4%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%A4%A9%E4%BA%94%E7%82%B9%E5%89%8D%EF%BC%8C%E6%8A%8A%E6%95%A3%E5%9C%A8%E4%BA%94%E4%B8%AA%E6%9C%AC%E5%AD%90%E4%B8%8A%E7%9A%84%E6%83%85%E6%B1%87%E6%80%BB%E6%88%90%E4%B8%80%E5%BC%A0%E8%83%BD%E7%94%A8%E7%9A%84%E8%A1%A8.md"
+          },
+          {
+            "id": "source-catalog-b88bfb132dc90c33",
+            "title": "网格事件登记智能填单 —— 现场说一句话变工单",
+            "locator": "【政务公共·行政】网格事件登记智能填单 —— 现场说一句话变工单/网格事件登记智能填单 —— 现场说一句话变工单.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%BD%91%E6%A0%BC%E4%BA%8B%E4%BB%B6%E7%99%BB%E8%AE%B0%E6%99%BA%E8%83%BD%E5%A1%AB%E5%8D%95%20%E2%80%94%E2%80%94%20%E7%8E%B0%E5%9C%BA%E8%AF%B4%E4%B8%80%E5%8F%A5%E8%AF%9D%E5%8F%98%E5%B7%A5%E5%8D%95/%E7%BD%91%E6%A0%BC%E4%BA%8B%E4%BB%B6%E7%99%BB%E8%AE%B0%E6%99%BA%E8%83%BD%E5%A1%AB%E5%8D%95%20%E2%80%94%E2%80%94%20%E7%8E%B0%E5%9C%BA%E8%AF%B4%E4%B8%80%E5%8F%A5%E8%AF%9D%E5%8F%98%E5%B7%A5%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-0839f74fb60d39ba",
+            "title": "巡查日志 → 工单转化 —— 走过的路生成日报",
+            "locator": "【政务公共·行政】巡查日志 → 工单转化 —— 走过的路生成日报/巡查日志 → 工单转化 —— 走过的路生成日报.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%B7%A1%E6%9F%A5%E6%97%A5%E5%BF%97%20%E2%86%92%20%E5%B7%A5%E5%8D%95%E8%BD%AC%E5%8C%96%20%E2%80%94%E2%80%94%20%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF%E7%94%9F%E6%88%90%E6%97%A5%E6%8A%A5/%E5%B7%A1%E6%9F%A5%E6%97%A5%E5%BF%97%20%E2%86%92%20%E5%B7%A5%E5%8D%95%E8%BD%AC%E5%8C%96%20%E2%80%94%E2%80%94%20%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF%E7%94%9F%E6%88%90%E6%97%A5%E6%8A%A5.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e28278afa7e01043",
+            "title": "城市运行体征周报自动编报 —— 12 局数据汇一份报",
+            "roles": "行政",
+            "description": "每周一催报 12 个委办局数据，手工汇编挤占研判员一周工时",
+            "source_refs": [
+              "source-catalog-e28278afa7e01043"
+            ]
+          },
+          {
+            "id": "catalog-47c22325ea0e92df",
+            "title": "跨部门事件处置复盘报告 —— 一事件一份时间线",
+            "roles": "行政",
+            "description": "一次内涝牵动 6 个部门，复盘报告全靠人工拼数据",
+            "source_refs": [
+              "source-catalog-47c22325ea0e92df"
+            ]
+          },
+          {
+            "id": "catalog-7c2d73b23a996420",
+            "title": "矛盾纠纷「五情」研判日报 —— 每天五点前，把散在五个本子上的情汇总成一张能用的表",
+            "roles": "行政",
+            "description": "每天专人收五情建台账，汇总靠翻五个本子，日报靠前一夜加班赶制",
+            "source_refs": [
+              "source-catalog-7c2d73b23a996420"
+            ]
+          },
+          {
+            "id": "catalog-b88bfb132dc90c33",
+            "title": "网格事件登记智能填单 —— 现场说一句话变工单",
+            "roles": "行政",
+            "description": "网格员现场需手填 20 几个字段，真正能填对的不到一半",
+            "source_refs": [
+              "source-catalog-b88bfb132dc90c33"
+            ]
+          },
+          {
+            "id": "catalog-0839f74fb60d39ba",
+            "title": "巡查日志 → 工单转化 —— 走过的路生成日报",
+            "roles": "行政",
+            "description": "网格员每天走 2 万步，大半巡查未进入系统，等于白走",
+            "source_refs": [
+              "source-catalog-0839f74fb60d39ba"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-0839f74fb60d39ba"
+              ]
+            },
+            "label": "巡查日志",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "处置工单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e28278afa7e01043",
+          "catalog-47c22325ea0e92df",
+          "catalog-7c2d73b23a996420",
+          "catalog-b88bfb132dc90c33",
+          "catalog-0839f74fb60d39ba"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "law",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "执法文书与纠纷材料",
+      "description": "法务核对案卷材料和证据索引，形成证据索引。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "法务",
+            "source_refs": [
+              "source-catalog-b4f090d7db2a04f6"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对案卷材料和证据索引",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b4f090d7db2a04f6"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "案卷与文书资料",
+            "source_refs": [
+              "source-catalog-b4f090d7db2a04f6"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "证据索引",
+            "source_refs": [
+              "source-catalog-b4f090d7db2a04f6"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e095c38f6ae96158",
+            "title": "安全生产检查文书链 —— 一次检查四份文书一次成链，法条到条款、签批到层级",
+            "locator": "【政务公共·法务】安全生产检查文书链 —— 一次检查四份文书一次成链，法条到条款、签批到层级/安全生产检查文书链 —— 一次检查四份文书一次成链，法条到条款、签批到层级.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%AE%89%E5%85%A8%E7%94%9F%E4%BA%A7%E6%A3%80%E6%9F%A5%E6%96%87%E4%B9%A6%E9%93%BE%20%E2%80%94%E2%80%94%20%E4%B8%80%E6%AC%A1%E6%A3%80%E6%9F%A5%E5%9B%9B%E4%BB%BD%E6%96%87%E4%B9%A6%E4%B8%80%E6%AC%A1%E6%88%90%E9%93%BE%EF%BC%8C%E6%B3%95%E6%9D%A1%E5%88%B0%E6%9D%A1%E6%AC%BE%E3%80%81%E7%AD%BE%E6%89%B9%E5%88%B0%E5%B1%82%E7%BA%A7/%E5%AE%89%E5%85%A8%E7%94%9F%E4%BA%A7%E6%A3%80%E6%9F%A5%E6%96%87%E4%B9%A6%E9%93%BE%20%E2%80%94%E2%80%94%20%E4%B8%80%E6%AC%A1%E6%A3%80%E6%9F%A5%E5%9B%9B%E4%BB%BD%E6%96%87%E4%B9%A6%E4%B8%80%E6%AC%A1%E6%88%90%E9%93%BE%EF%BC%8C%E6%B3%95%E6%9D%A1%E5%88%B0%E6%9D%A1%E6%AC%BE%E3%80%81%E7%AD%BE%E6%89%B9%E5%88%B0%E5%B1%82%E7%BA%A7.md"
+          },
+          {
+            "id": "source-catalog-09b110dd6772c614",
+            "title": "笔录要素核对与点评 —— 讯问询问笔录送审前，把时间、签名、逻辑三关先过一遍",
+            "locator": "【政务公共·法务】笔录要素核对与点评 —— 讯问询问笔录送审前，把时间、签名、逻辑三关先过一遍/笔录要素核对与点评 —— 讯问询问笔录送审前，把时间、签名、逻辑三关先过一遍.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%AC%94%E5%BD%95%E8%A6%81%E7%B4%A0%E6%A0%B8%E5%AF%B9%E4%B8%8E%E7%82%B9%E8%AF%84%20%E2%80%94%E2%80%94%20%E8%AE%AF%E9%97%AE%E8%AF%A2%E9%97%AE%E7%AC%94%E5%BD%95%E9%80%81%E5%AE%A1%E5%89%8D%EF%BC%8C%E6%8A%8A%E6%97%B6%E9%97%B4%E3%80%81%E7%AD%BE%E5%90%8D%E3%80%81%E9%80%BB%E8%BE%91%E4%B8%89%E5%85%B3%E5%85%88%E8%BF%87%E4%B8%80%E9%81%8D/%E7%AC%94%E5%BD%95%E8%A6%81%E7%B4%A0%E6%A0%B8%E5%AF%B9%E4%B8%8E%E7%82%B9%E8%AF%84%20%E2%80%94%E2%80%94%20%E8%AE%AF%E9%97%AE%E8%AF%A2%E9%97%AE%E7%AC%94%E5%BD%95%E9%80%81%E5%AE%A1%E5%89%8D%EF%BC%8C%E6%8A%8A%E6%97%B6%E9%97%B4%E3%80%81%E7%AD%BE%E5%90%8D%E3%80%81%E9%80%BB%E8%BE%91%E4%B8%89%E5%85%B3%E5%85%88%E8%BF%87%E4%B8%80%E9%81%8D.md"
+          },
+          {
+            "id": "source-catalog-e13475ef58d528e3",
+            "title": "处罚决定说理段与裁量基准对照 —— 基准只能写进说理，不能当依据",
+            "locator": "【政务公共·法务】处罚决定说理段与裁量基准对照 —— 基准只能写进说理，不能当依据/处罚决定说理段与裁量基准对照 —— 基准只能写进说理，不能当依据.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%A4%84%E7%BD%9A%E5%86%B3%E5%AE%9A%E8%AF%B4%E7%90%86%E6%AE%B5%E4%B8%8E%E8%A3%81%E9%87%8F%E5%9F%BA%E5%87%86%E5%AF%B9%E7%85%A7%20%E2%80%94%E2%80%94%20%E5%9F%BA%E5%87%86%E5%8F%AA%E8%83%BD%E5%86%99%E8%BF%9B%E8%AF%B4%E7%90%86%EF%BC%8C%E4%B8%8D%E8%83%BD%E5%BD%93%E4%BE%9D%E6%8D%AE/%E5%A4%84%E7%BD%9A%E5%86%B3%E5%AE%9A%E8%AF%B4%E7%90%86%E6%AE%B5%E4%B8%8E%E8%A3%81%E9%87%8F%E5%9F%BA%E5%87%86%E5%AF%B9%E7%85%A7%20%E2%80%94%E2%80%94%20%E5%9F%BA%E5%87%86%E5%8F%AA%E8%83%BD%E5%86%99%E8%BF%9B%E8%AF%B4%E7%90%86%EF%BC%8C%E4%B8%8D%E8%83%BD%E5%BD%93%E4%BE%9D%E6%8D%AE.md"
+          },
+          {
+            "id": "source-catalog-42589145756fb265",
+            "title": "调解笔录转写与协议书生成 —— 当场调解成功，当场就该有能签字的协议",
+            "locator": "【政务公共·法务】调解笔录转写与协议书生成 —— 当场调解成功，当场就该有能签字的协议/调解笔录转写与协议书生成 —— 当场调解成功，当场就该有能签字的协议.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%B0%83%E8%A7%A3%E7%AC%94%E5%BD%95%E8%BD%AC%E5%86%99%E4%B8%8E%E5%8D%8F%E8%AE%AE%E4%B9%A6%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E5%BD%93%E5%9C%BA%E8%B0%83%E8%A7%A3%E6%88%90%E5%8A%9F%EF%BC%8C%E5%BD%93%E5%9C%BA%E5%B0%B1%E8%AF%A5%E6%9C%89%E8%83%BD%E7%AD%BE%E5%AD%97%E7%9A%84%E5%8D%8F%E8%AE%AE/%E8%B0%83%E8%A7%A3%E7%AC%94%E5%BD%95%E8%BD%AC%E5%86%99%E4%B8%8E%E5%8D%8F%E8%AE%AE%E4%B9%A6%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E5%BD%93%E5%9C%BA%E8%B0%83%E8%A7%A3%E6%88%90%E5%8A%9F%EF%BC%8C%E5%BD%93%E5%9C%BA%E5%B0%B1%E8%AF%A5%E6%9C%89%E8%83%BD%E7%AD%BE%E5%AD%97%E7%9A%84%E5%8D%8F%E8%AE%AE.md"
+          },
+          {
+            "id": "source-catalog-1c09ab728527733e",
+            "title": "矫正方案个性化生成 —— 一人一策，别再让方案成为追责通报里的那个证据",
+            "locator": "【政务公共·法务】矫正方案个性化生成 —— 一人一策，别再让方案成为追责通报里的那个证据/矫正方案个性化生成 —— 一人一策，别再让方案成为追责通报里的那个证据.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%9F%AB%E6%AD%A3%E6%96%B9%E6%A1%88%E4%B8%AA%E6%80%A7%E5%8C%96%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BA%BA%E4%B8%80%E7%AD%96%EF%BC%8C%E5%88%AB%E5%86%8D%E8%AE%A9%E6%96%B9%E6%A1%88%E6%88%90%E4%B8%BA%E8%BF%BD%E8%B4%A3%E9%80%9A%E6%8A%A5%E9%87%8C%E7%9A%84%E9%82%A3%E4%B8%AA%E8%AF%81%E6%8D%AE/%E7%9F%AB%E6%AD%A3%E6%96%B9%E6%A1%88%E4%B8%AA%E6%80%A7%E5%8C%96%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BA%BA%E4%B8%80%E7%AD%96%EF%BC%8C%E5%88%AB%E5%86%8D%E8%AE%A9%E6%96%B9%E6%A1%88%E6%88%90%E4%B8%BA%E8%BF%BD%E8%B4%A3%E9%80%9A%E6%8A%A5%E9%87%8C%E7%9A%84%E9%82%A3%E4%B8%AA%E8%AF%81%E6%8D%AE.md"
+          },
+          {
+            "id": "source-catalog-9ef59c430aa430c6",
+            "title": "接处警记录要素提取与分类 —— 十起警情回所后，先补齐每一条的受案判断要件",
+            "locator": "【政务公共·法务】接处警记录要素提取与分类 —— 十起警情回所后，先补齐每一条的受案判断要件/接处警记录要素提取与分类 —— 十起警情回所后，先补齐每一条的受案判断要件.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%8E%A5%E5%A4%84%E8%AD%A6%E8%AE%B0%E5%BD%95%E8%A6%81%E7%B4%A0%E6%8F%90%E5%8F%96%E4%B8%8E%E5%88%86%E7%B1%BB%20%E2%80%94%E2%80%94%20%E5%8D%81%E8%B5%B7%E8%AD%A6%E6%83%85%E5%9B%9E%E6%89%80%E5%90%8E%EF%BC%8C%E5%85%88%E8%A1%A5%E9%BD%90%E6%AF%8F%E4%B8%80%E6%9D%A1%E7%9A%84%E5%8F%97%E6%A1%88%E5%88%A4%E6%96%AD%E8%A6%81%E4%BB%B6/%E6%8E%A5%E5%A4%84%E8%AD%A6%E8%AE%B0%E5%BD%95%E8%A6%81%E7%B4%A0%E6%8F%90%E5%8F%96%E4%B8%8E%E5%88%86%E7%B1%BB%20%E2%80%94%E2%80%94%20%E5%8D%81%E8%B5%B7%E8%AD%A6%E6%83%85%E5%9B%9E%E6%89%80%E5%90%8E%EF%BC%8C%E5%85%88%E8%A1%A5%E9%BD%90%E6%AF%8F%E4%B8%80%E6%9D%A1%E7%9A%84%E5%8F%97%E6%A1%88%E5%88%A4%E6%96%AD%E8%A6%81%E4%BB%B6.md"
+          },
+          {
+            "id": "source-catalog-c6e26b291b26cb9b",
+            "title": "卷内材料与目录一致性核对 —— 移送、归档、评查之前，把整卷对一遍",
+            "locator": "【政务公共·法务】卷内材料与目录一致性核对 —— 移送、归档、评查之前，把整卷对一遍/卷内材料与目录一致性核对 —— 移送、归档、评查之前，把整卷对一遍.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%8D%B7%E5%86%85%E6%9D%90%E6%96%99%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E7%A7%BB%E9%80%81%E3%80%81%E5%BD%92%E6%A1%A3%E3%80%81%E8%AF%84%E6%9F%A5%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E6%95%B4%E5%8D%B7%E5%AF%B9%E4%B8%80%E9%81%8D/%E5%8D%B7%E5%86%85%E6%9D%90%E6%96%99%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E7%A7%BB%E9%80%81%E3%80%81%E5%BD%92%E6%A1%A3%E3%80%81%E8%AF%84%E6%9F%A5%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E6%95%B4%E5%8D%B7%E5%AF%B9%E4%B8%80%E9%81%8D.md"
+          },
+          {
+            "id": "source-catalog-2467cd2126e8f4ae",
+            "title": "社矫调查评估意见书 —— 十个工作日的刚性时限里，六项内容一项不空",
+            "locator": "【政务公共·法务】社矫调查评估意见书 —— 十个工作日的刚性时限里，六项内容一项不空/社矫调查评估意见书 —— 十个工作日的刚性时限里，六项内容一项不空.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%A4%BE%E7%9F%AB%E8%B0%83%E6%9F%A5%E8%AF%84%E4%BC%B0%E6%84%8F%E8%A7%81%E4%B9%A6%20%E2%80%94%E2%80%94%20%E5%8D%81%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E7%9A%84%E5%88%9A%E6%80%A7%E6%97%B6%E9%99%90%E9%87%8C%EF%BC%8C%E5%85%AD%E9%A1%B9%E5%86%85%E5%AE%B9%E4%B8%80%E9%A1%B9%E4%B8%8D%E7%A9%BA/%E7%A4%BE%E7%9F%AB%E8%B0%83%E6%9F%A5%E8%AF%84%E4%BC%B0%E6%84%8F%E8%A7%81%E4%B9%A6%20%E2%80%94%E2%80%94%20%E5%8D%81%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E7%9A%84%E5%88%9A%E6%80%A7%E6%97%B6%E9%99%90%E9%87%8C%EF%BC%8C%E5%85%AD%E9%A1%B9%E5%86%85%E5%AE%B9%E4%B8%80%E9%A1%B9%E4%B8%8D%E7%A9%BA.md"
+          },
+          {
+            "id": "source-catalog-86f5edbc2ec34dcb",
+            "title": "双随机抽查任务包与后续处置台账 —— 抽谁、谁去查、结果何时公示，全程留痕",
+            "locator": "【政务公共·法务】双随机抽查任务包与后续处置台账 —— 抽谁、谁去查、结果何时公示，全程留痕/双随机抽查任务包与后续处置台账 —— 抽谁、谁去查、结果何时公示，全程留痕.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%8F%8C%E9%9A%8F%E6%9C%BA%E6%8A%BD%E6%9F%A5%E4%BB%BB%E5%8A%A1%E5%8C%85%E4%B8%8E%E5%90%8E%E7%BB%AD%E5%A4%84%E7%BD%AE%E5%8F%B0%E8%B4%A6%20%E2%80%94%E2%80%94%20%E6%8A%BD%E8%B0%81%E3%80%81%E8%B0%81%E5%8E%BB%E6%9F%A5%E3%80%81%E7%BB%93%E6%9E%9C%E4%BD%95%E6%97%B6%E5%85%AC%E7%A4%BA%EF%BC%8C%E5%85%A8%E7%A8%8B%E7%95%99%E7%97%95/%E5%8F%8C%E9%9A%8F%E6%9C%BA%E6%8A%BD%E6%9F%A5%E4%BB%BB%E5%8A%A1%E5%8C%85%E4%B8%8E%E5%90%8E%E7%BB%AD%E5%A4%84%E7%BD%AE%E5%8F%B0%E8%B4%A6%20%E2%80%94%E2%80%94%20%E6%8A%BD%E8%B0%81%E3%80%81%E8%B0%81%E5%8E%BB%E6%9F%A5%E3%80%81%E7%BB%93%E6%9E%9C%E4%BD%95%E6%97%B6%E5%85%AC%E7%A4%BA%EF%BC%8C%E5%85%A8%E7%A8%8B%E7%95%99%E7%97%95.md"
+          },
+          {
+            "id": "source-catalog-b4f090d7db2a04f6",
+            "title": "行政处罚案卷证据链梳理与要素提取 —— 每份证据有出处、每个日期对得上、移送的线索不丢",
+            "locator": "【政务公共·法务】行政处罚案卷证据链梳理与要素提取 —— 每份证据有出处、每个日期对得上、移送的线索不丢/行政处罚案卷证据链梳理与要素提取 —— 每份证据有出处、每个日期对得上、移送的线索不丢.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%A1%8C%E6%94%BF%E5%A4%84%E7%BD%9A%E6%A1%88%E5%8D%B7%E8%AF%81%E6%8D%AE%E9%93%BE%E6%A2%B3%E7%90%86%E4%B8%8E%E8%A6%81%E7%B4%A0%E6%8F%90%E5%8F%96%20%E2%80%94%E2%80%94%20%E6%AF%8F%E4%BB%BD%E8%AF%81%E6%8D%AE%E6%9C%89%E5%87%BA%E5%A4%84%E3%80%81%E6%AF%8F%E4%B8%AA%E6%97%A5%E6%9C%9F%E5%AF%B9%E5%BE%97%E4%B8%8A%E3%80%81%E7%A7%BB%E9%80%81%E7%9A%84%E7%BA%BF%E7%B4%A2%E4%B8%8D%E4%B8%A2/%E8%A1%8C%E6%94%BF%E5%A4%84%E7%BD%9A%E6%A1%88%E5%8D%B7%E8%AF%81%E6%8D%AE%E9%93%BE%E6%A2%B3%E7%90%86%E4%B8%8E%E8%A6%81%E7%B4%A0%E6%8F%90%E5%8F%96%20%E2%80%94%E2%80%94%20%E6%AF%8F%E4%BB%BD%E8%AF%81%E6%8D%AE%E6%9C%89%E5%87%BA%E5%A4%84%E3%80%81%E6%AF%8F%E4%B8%AA%E6%97%A5%E6%9C%9F%E5%AF%B9%E5%BE%97%E4%B8%8A%E3%80%81%E7%A7%BB%E9%80%81%E7%9A%84%E7%BA%BF%E7%B4%A2%E4%B8%8D%E4%B8%A2.md"
+          },
+          {
+            "id": "source-catalog-2a3015f00311e5e7",
+            "title": "行政复议答复初稿 —— 逐项回应申请人主张，先替自己把纠错风险扫一遍",
+            "locator": "【政务公共·法务】行政复议答复初稿 —— 逐项回应申请人主张，先替自己把纠错风险扫一遍/行政复议答复初稿 —— 逐项回应申请人主张，先替自己把纠错风险扫一遍.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%A1%8C%E6%94%BF%E5%A4%8D%E8%AE%AE%E7%AD%94%E5%A4%8D%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E9%80%90%E9%A1%B9%E5%9B%9E%E5%BA%94%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%BB%E5%BC%A0%EF%BC%8C%E5%85%88%E6%9B%BF%E8%87%AA%E5%B7%B1%E6%8A%8A%E7%BA%A0%E9%94%99%E9%A3%8E%E9%99%A9%E6%89%AB%E4%B8%80%E9%81%8D/%E8%A1%8C%E6%94%BF%E5%A4%8D%E8%AE%AE%E7%AD%94%E5%A4%8D%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E9%80%90%E9%A1%B9%E5%9B%9E%E5%BA%94%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%BB%E5%BC%A0%EF%BC%8C%E5%85%88%E6%9B%BF%E8%87%AA%E5%B7%B1%E6%8A%8A%E7%BA%A0%E9%94%99%E9%A3%8E%E9%99%A9%E6%89%AB%E4%B8%80%E9%81%8D.md"
+          },
+          {
+            "id": "source-catalog-e1a18feb65bf5dc0",
+            "title": "执法质量月度自查 —— 三级盯案的最后一环，把当月的问题按评查口径汇成一张整改台账",
+            "locator": "【政务公共·法务】执法质量月度自查 —— 三级盯案的最后一环，把当月的问题按评查口径汇成一张整改台账/执法质量月度自查 —— 三级盯案的最后一环，把当月的问题按评查口径汇成一张整改台账.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%89%A7%E6%B3%95%E8%B4%A8%E9%87%8F%E6%9C%88%E5%BA%A6%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E7%BA%A7%E7%9B%AF%E6%A1%88%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E7%8E%AF%EF%BC%8C%E6%8A%8A%E5%BD%93%E6%9C%88%E7%9A%84%E9%97%AE%E9%A2%98%E6%8C%89%E8%AF%84%E6%9F%A5%E5%8F%A3%E5%BE%84%E6%B1%87%E6%88%90%E4%B8%80%E5%BC%A0%E6%95%B4%E6%94%B9%E5%8F%B0%E8%B4%A6/%E6%89%A7%E6%B3%95%E8%B4%A8%E9%87%8F%E6%9C%88%E5%BA%A6%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E7%BA%A7%E7%9B%AF%E6%A1%88%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E7%8E%AF%EF%BC%8C%E6%8A%8A%E5%BD%93%E6%9C%88%E7%9A%84%E9%97%AE%E9%A2%98%E6%8C%89%E8%AF%84%E6%9F%A5%E5%8F%A3%E5%BE%84%E6%B1%87%E6%88%90%E4%B8%80%E5%BC%A0%E6%95%B4%E6%94%B9%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-5ec5f2194897ae87",
+            "title": "治安与刑事案件执法文书初稿 —— 用本局三年同类案件的口径，出一份能过法制审核的呈请报告",
+            "locator": "【政务公共·法务】治安与刑事案件执法文书初稿 —— 用本局三年同类案件的口径，出一份能过法制审核的呈请报告/治安与刑事案件执法文书初稿 —— 用本局三年同类案件的口径，出一份能过法制审核的呈请报告.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%B2%BB%E5%AE%89%E4%B8%8E%E5%88%91%E4%BA%8B%E6%A1%88%E4%BB%B6%E6%89%A7%E6%B3%95%E6%96%87%E4%B9%A6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%9C%AC%E5%B1%80%E4%B8%89%E5%B9%B4%E5%90%8C%E7%B1%BB%E6%A1%88%E4%BB%B6%E7%9A%84%E5%8F%A3%E5%BE%84%EF%BC%8C%E5%87%BA%E4%B8%80%E4%BB%BD%E8%83%BD%E8%BF%87%E6%B3%95%E5%88%B6%E5%AE%A1%E6%A0%B8%E7%9A%84%E5%91%88%E8%AF%B7%E6%8A%A5%E5%91%8A/%E6%B2%BB%E5%AE%89%E4%B8%8E%E5%88%91%E4%BA%8B%E6%A1%88%E4%BB%B6%E6%89%A7%E6%B3%95%E6%96%87%E4%B9%A6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%9C%AC%E5%B1%80%E4%B8%89%E5%B9%B4%E5%90%8C%E7%B1%BB%E6%A1%88%E4%BB%B6%E7%9A%84%E5%8F%A3%E5%BE%84%EF%BC%8C%E5%87%BA%E4%B8%80%E4%BB%BD%E8%83%BD%E8%BF%87%E6%B3%95%E5%88%B6%E5%AE%A1%E6%A0%B8%E7%9A%84%E5%91%88%E8%AF%B7%E6%8A%A5%E5%91%8A.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e095c38f6ae96158",
+            "title": "安全生产检查文书链 —— 一次检查四份文书一次成链，法条到条款、签批到层级",
+            "roles": "法务",
+            "description": "现场查出的问题都记得，回来四份文书的法条串不起来，复查时说不出整改结果",
+            "source_refs": [
+              "source-catalog-e095c38f6ae96158"
+            ]
+          },
+          {
+            "id": "catalog-09b110dd6772c614",
+            "title": "笔录要素核对与点评 —— 讯问询问笔录送审前，把时间、签名、逻辑三关先过一遍",
+            "roles": "法务",
+            "description": "笔录是法定证据，最容易出错的恰是时间对不上、签名页遗漏这类细节",
+            "source_refs": [
+              "source-catalog-09b110dd6772c614"
+            ]
+          },
+          {
+            "id": "catalog-e13475ef58d528e3",
+            "title": "处罚决定说理段与裁量基准对照 —— 基准只能写进说理，不能当依据",
+            "roles": "法务",
+            "description": "说理段是处罚决定书里最难写的一段，写好了无人称道，写砸了复议见分晓",
+            "source_refs": [
+              "source-catalog-e13475ef58d528e3"
+            ]
+          },
+          {
+            "id": "catalog-42589145756fb265",
+            "title": "调解笔录转写与协议书生成 —— 当场调解成功，当场就该有能签字的协议",
+            "roles": "法务",
+            "description": "调解两小时、写协议一小时，当事人久等疲惫，第二周便来反悔",
+            "source_refs": [
+              "source-catalog-42589145756fb265"
+            ]
+          },
+          {
+            "id": "catalog-1c09ab728527733e",
+            "title": "矫正方案个性化生成 —— 一人一策，别再让方案成为追责通报里的那个证据",
+            "roles": "法务",
+            "description": "方案套用模板、连文化程度都填错，一旦出事，这份方案就是处分决定书里的原文",
+            "source_refs": [
+              "source-catalog-1c09ab728527733e"
+            ]
+          },
+          {
+            "id": "catalog-9ef59c430aa430c6",
+            "title": "接处警记录要素提取与分类 —— 十起警情回所后，先补齐每一条的受案判断要件",
+            "roles": "法务",
+            "description": "一天十起警情，当场处置完已是晚上，回所还要逐条补记录，是否转受案全凭记忆",
+            "source_refs": [
+              "source-catalog-9ef59c430aa430c6"
+            ]
+          },
+          {
+            "id": "catalog-c6e26b291b26cb9b",
+            "title": "卷内材料与目录一致性核对 —— 移送、归档、评查之前，把整卷对一遍",
+            "roles": "法务",
+            "description": "卷内少一份送达回证，评查就扣分、复议就可能翻案，却没人有精力逐卷核对",
+            "source_refs": [
+              "source-catalog-c6e26b291b26cb9b"
+            ]
+          },
+          {
+            "id": "catalog-2467cd2126e8f4ae",
+            "title": "社矫调查评估意见书 —— 十个工作日的刚性时限里，六项内容一项不空",
+            "roles": "法务",
+            "description": "法院委托函压着十个工作日的时限，一人所排不出两人上门，六项内容最易空缺的是被害人意见",
+            "source_refs": [
+              "source-catalog-2467cd2126e8f4ae"
+            ]
+          },
+          {
+            "id": "catalog-86f5edbc2ec34dcb",
+            "title": "双随机抽查任务包与后续处置台账 —— 抽谁、谁去查、结果何时公示，全程留痕",
+            "roles": "法务",
+            "description": "「双随机」的本质是限制自由裁量，任务包编制与结果录入恰恰最容易被当成随便填填",
+            "source_refs": [
+              "source-catalog-86f5edbc2ec34dcb"
+            ]
+          },
+          {
+            "id": "catalog-b4f090d7db2a04f6",
+            "title": "行政处罚案卷证据链梳理与要素提取 —— 每份证据有出处、每个日期对得上、移送的线索不丢",
+            "roles": "法务",
+            "description": "案卷是给三年后的复议法官看的，它却是三十天里被催着拼凑出来的",
+            "source_refs": [
+              "source-catalog-b4f090d7db2a04f6"
+            ]
+          },
+          {
+            "id": "catalog-2a3015f00311e5e7",
+            "title": "行政复议答复初稿 —— 逐项回应申请人主张，先替自己把纠错风险扫一遍",
+            "roles": "法务",
+            "description": "全国通报的复议纠错率为 11.5%，答复写不好，被纠正的就是本局的执法卷宗",
+            "source_refs": [
+              "source-catalog-2a3015f00311e5e7"
+            ]
+          },
+          {
+            "id": "catalog-e1a18feb65bf5dc0",
+            "title": "执法质量月度自查 —— 三级盯案的最后一环，把当月的问题按评查口径汇成一张整改台账",
+            "roles": "法务",
+            "description": "日自查、周评议都有表，到月评查才发现表填了一摞，问题依然零散",
+            "source_refs": [
+              "source-catalog-e1a18feb65bf5dc0"
+            ]
+          },
+          {
+            "id": "catalog-5ec5f2194897ae87",
+            "title": "治安与刑事案件执法文书初稿 —— 用本局三年同类案件的口径，出一份能过法制审核的呈请报告",
+            "roles": "法务",
+            "description": "办案最累的不是审讯而是材料，一个错字就要重做一份文书，耗费数小时",
+            "source_refs": [
+              "source-catalog-5ec5f2194897ae87"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b4f090d7db2a04f6"
+              ]
+            },
+            "label": "案卷与文书资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "证据索引",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e095c38f6ae96158",
+          "catalog-09b110dd6772c614",
+          "catalog-e13475ef58d528e3",
+          "catalog-42589145756fb265",
+          "catalog-1c09ab728527733e",
+          "catalog-9ef59c430aa430c6",
+          "catalog-c6e26b291b26cb9b",
+          "catalog-2467cd2126e8f4ae",
+          "catalog-86f5edbc2ec34dcb",
+          "catalog-b4f090d7db2a04f6",
+          "catalog-2a3015f00311e5e7",
+          "catalog-e1a18feb65bf5dc0",
+          "catalog-5ec5f2194897ae87"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "coordination",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "文书、迎检与督办",
+      "description": "行政从批示材料抽取任务与责任信息，形成督办台账。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "行政",
+            "source_refs": [
+              "source-catalog-08f458aa3fb4e061"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "从批示材料抽取任务与责任信息",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-08f458aa3fb4e061"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "批示件与工作记录",
+            "source_refs": [
+              "source-catalog-08f458aa3fb4e061"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "督办台账",
+            "source_refs": [
+              "source-catalog-08f458aa3fb4e061"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-3e84fca506226621",
+            "title": "公文初稿起草 —— 用本单位的历史存档与口径写，不是用「全国平均水平」写",
+            "locator": "【政务公共·行政】公文初稿起草 —— 用本单位的历史存档与口径写，不是用「全国平均水平」写/公文初稿起草 —— 用本单位的历史存档与口径写，不是用「全国平均水平」写.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%85%AC%E6%96%87%E5%88%9D%E7%A8%BF%E8%B5%B7%E8%8D%89%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%9C%AC%E5%8D%95%E4%BD%8D%E7%9A%84%E5%8E%86%E5%8F%B2%E5%AD%98%E6%A1%A3%E4%B8%8E%E5%8F%A3%E5%BE%84%E5%86%99%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E3%80%8C%E5%85%A8%E5%9B%BD%E5%B9%B3%E5%9D%87%E6%B0%B4%E5%B9%B3%E3%80%8D%E5%86%99/%E5%85%AC%E6%96%87%E5%88%9D%E7%A8%BF%E8%B5%B7%E8%8D%89%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%9C%AC%E5%8D%95%E4%BD%8D%E7%9A%84%E5%8E%86%E5%8F%B2%E5%AD%98%E6%A1%A3%E4%B8%8E%E5%8F%A3%E5%BE%84%E5%86%99%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E3%80%8C%E5%85%A8%E5%9B%BD%E5%B9%B3%E5%9D%87%E6%B0%B4%E5%B9%B3%E3%80%8D%E5%86%99.md"
+          },
+          {
+            "id": "source-catalog-08f458aa3fb4e061",
+            "title": "领导批示件智能立项与督办台账 —— 批示到办结闭环",
+            "locator": "【政务公共·行政】领导批示件智能立项与督办台账 —— 批示到办结闭环/领导批示件智能立项与督办台账 —— 批示到办结闭环.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E9%A2%86%E5%AF%BC%E6%89%B9%E7%A4%BA%E4%BB%B6%E6%99%BA%E8%83%BD%E7%AB%8B%E9%A1%B9%E4%B8%8E%E7%9D%A3%E5%8A%9E%E5%8F%B0%E8%B4%A6%20%E2%80%94%E2%80%94%20%E6%89%B9%E7%A4%BA%E5%88%B0%E5%8A%9E%E7%BB%93%E9%97%AD%E7%8E%AF/%E9%A2%86%E5%AF%BC%E6%89%B9%E7%A4%BA%E4%BB%B6%E6%99%BA%E8%83%BD%E7%AB%8B%E9%A1%B9%E4%B8%8E%E7%9D%A3%E5%8A%9E%E5%8F%B0%E8%B4%A6%20%E2%80%94%E2%80%94%20%E6%89%B9%E7%A4%BA%E5%88%B0%E5%8A%9E%E7%BB%93%E9%97%AD%E7%8E%AF.md"
+          },
+          {
+            "id": "source-catalog-01eb925c0ab03859",
+            "title": "迎检材料数据归集 —— 按考核清单替办公室把催数据的活干了",
+            "locator": "【政务公共·行政】迎检材料数据归集 —— 按考核清单替办公室把催数据的活干了/迎检材料数据归集 —— 按考核清单替办公室把催数据的活干了.md:10",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%BF%8E%E6%A3%80%E6%9D%90%E6%96%99%E6%95%B0%E6%8D%AE%E5%BD%92%E9%9B%86%20%E2%80%94%E2%80%94%20%E6%8C%89%E8%80%83%E6%A0%B8%E6%B8%85%E5%8D%95%E6%9B%BF%E5%8A%9E%E5%85%AC%E5%AE%A4%E6%8A%8A%E5%82%AC%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B4%BB%E5%B9%B2%E4%BA%86/%E8%BF%8E%E6%A3%80%E6%9D%90%E6%96%99%E6%95%B0%E6%8D%AE%E5%BD%92%E9%9B%86%20%E2%80%94%E2%80%94%20%E6%8C%89%E8%80%83%E6%A0%B8%E6%B8%85%E5%8D%95%E6%9B%BF%E5%8A%9E%E5%85%AC%E5%AE%A4%E6%8A%8A%E5%82%AC%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B4%BB%E5%B9%B2%E4%BA%86.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-3e84fca506226621",
+            "title": "公文初稿起草 —— 用本单位的历史存档与口径写，不是用「全国平均水平」写",
+            "roles": "行政",
+            "description": "通用大模型写的方案连村头老李的果园数据都对不上，改起来比重写还耗时",
+            "source_refs": [
+              "source-catalog-3e84fca506226621"
+            ]
+          },
+          {
+            "id": "catalog-08f458aa3fb4e061",
+            "title": "领导批示件智能立项与督办台账 —— 批示到办结闭环",
+            "roles": "行政",
+            "description": "47 件批示件须全流程闭环，漏一件即可能被巡察点名",
+            "source_refs": [
+              "source-catalog-08f458aa3fb4e061"
+            ]
+          },
+          {
+            "id": "catalog-01eb925c0ab03859",
+            "title": "迎检材料数据归集 —— 按考核清单替办公室把催数据的活干了",
+            "roles": "行政",
+            "description": "一套迎检材料要连熬一周，数据散在十几个科室，牵头人只能逐个催要",
+            "source_refs": [
+              "source-catalog-01eb925c0ab03859"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-08f458aa3fb4e061"
+              ]
+            },
+            "label": "批示件与工作记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "督办台账",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-3e84fca506226621",
+          "catalog-08f458aa3fb4e061",
+          "catalog-01eb925c0ab03859"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "诉求与办事",
+      "scene_ids": [
+        "hotline",
+        "service"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "城市运行",
+      "scene_ids": [
+        "city",
+        "coordination"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "治理与园区",
+      "scene_ids": [
+        "law",
+        "park"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 政务公共",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-56cd093e82d505cf",
+      "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+      "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:73",
+      "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "12345 工单智能分拨",
+      "source_refs": [
+        "source-catalog-56cd093e82d505cf"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "检查工单要素",
+              "participant": "热线话务员",
+              "description": "接收来电诉求，补记诉求地点与事项等必要信息。交付完整诉求工单。"
+            },
+            {
+              "label": "匹配事项和责任单位",
+              "participant": "分拨研判员",
+              "description": "接收完整诉求工单，结合事项清单及街镇映射生成候选责任单位。交付候选分拨建议。"
+            },
+            {
+              "label": "复核历史退单",
+              "participant": "分拨研判员",
+              "description": "接收候选分拨建议，核查同类历史退单，标明权属不清的工单。交付分拨待核清单。"
+            },
+            {
+              "label": "留存分派依据",
+              "participant": "分拨研判员",
+              "description": "接收分拨待核清单，汇总分派建议和特殊事项的处理依据。交付分派建议与留痕记录。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "service"
+  }
+}

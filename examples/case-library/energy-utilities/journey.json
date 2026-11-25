@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "energy-utilities",
+  "id": "energy-utilities-journey",
+  "type": "process_journey",
+  "title": "能源公用 · 水质化验日报与末梢余氯异常归因",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "整理化验记录",
+      "description": "化验员汇总化验台账并标出需要关注的测点，形成异常测点表。画面包含供水设施区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "化验员",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总化验台账并标出需要关注的测点",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "化验台账",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "异常测点表",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:75",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "roles": "生产",
+            "description": "日报每天发、每天合格，直到末梢监测点余氯跌到限值边缘，才发现没人知道该找谁",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            },
+            "label": "化验台账",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "异常测点表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "energy-utilities.equipment.pump-skid",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "供水泵组",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b2d555a5adefddf4"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "对齐作业时间",
+      "description": "化验员与管网班组把异常日与管网作业记录并排核对，形成作业时间轴。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "化验员与管网班组",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "把异常日与管网作业记录并排核对",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "异常测点表",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "作业时间轴",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:75",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "roles": "生产",
+            "description": "日报每天发、每天合格，直到末梢监测点余氯跌到限值边缘，才发现没人知道该找谁",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            },
+            "label": "异常测点表",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "作业时间轴",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b2d555a5adefddf4"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "比对管网分区",
+      "description": "化验员与管网班组核对测点所属分区及上下游记录，形成归因线索与证据。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "化验员与管网班组",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对测点所属分区及上下游记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "作业时间轴",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "归因线索与证据",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:75",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "roles": "生产",
+            "description": "日报每天发、每天合格，直到末梢监测点余氯跌到限值边缘，才发现没人知道该找谁",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            },
+            "label": "作业时间轴",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "归因线索与证据",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b2d555a5adefddf4"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "energy-utilities",
+      "type": "scenario_diorama",
+      "title": "出日报与待复核项",
+      "description": "化验员整理上下游证据、异常说明和复核记录，形成水质日报及异常留痕。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "化验员",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理上下游证据、异常说明和复核记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "归因线索与证据",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "水质日报及异常留痕",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:75",
+            "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b2d555a5adefddf4",
+            "title": "水质化验日报与末梢余氯异常归因",
+            "roles": "生产",
+            "description": "日报每天发、每天合格，直到末梢监测点余氯跌到限值边缘，才发现没人知道该找谁",
+            "source_refs": [
+              "source-catalog-b2d555a5adefddf4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b2d555a5adefddf4"
+              ]
+            },
+            "label": "归因线索与证据",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "水质日报及异常留痕",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b2d555a5adefddf4"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "异常测点表",
+      "source_refs": [
+        "source-catalog-b2d555a5adefddf4"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "作业时间轴",
+      "source_refs": [
+        "source-catalog-b2d555a5adefddf4"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "归因线索与证据",
+      "source_refs": [
+        "source-catalog-b2d555a5adefddf4"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-b2d555a5adefddf4"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-b2d555a5adefddf4",
+      "title": "水质化验日报与末梢余氯异常归因",
+      "locator": "【能源公用·生产】水质化验日报与末梢余氯异常归因/水质化验日报与末梢余氯异常归因.md:75",
+      "uri": "%E3%80%90%E8%83%BD%E6%BA%90%E5%85%AC%E7%94%A8%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0/%E6%B0%B4%E8%B4%A8%E5%8C%96%E9%AA%8C%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%9C%AB%E6%A2%A2%E4%BD%99%E6%B0%AF%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "水质化验日报与末梢余氯异常归因",
+      "source_refs": [
+        "source-catalog-b2d555a5adefddf4"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "整理化验记录",
+              "participant": "化验员",
+              "description": "接收化验台账，汇总化验台账并标出需要关注的测点。交付异常测点表。"
+            },
+            {
+              "label": "对齐作业时间",
+              "participant": "化验员与管网班组",
+              "description": "接收异常测点表，把异常日与管网作业记录并排核对。交付作业时间轴。"
+            },
+            {
+              "label": "比对管网分区",
+              "participant": "化验员与管网班组",
+              "description": "接收作业时间轴，核对测点所属分区及上下游记录。交付归因线索与证据。"
+            },
+            {
+              "label": "出日报与待复核项",
+              "participant": "化验员",
+              "description": "接收归因线索与证据，整理上下游证据、异常说明和复核记录。交付水质日报及异常留痕。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

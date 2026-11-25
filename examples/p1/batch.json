@@ -1,0 +1,9 @@
+{"jobs":[
+  {"input":"service.json","format":"html"},
+  {"input":"procurement.json","format":"html"},
+  {"input":"medical.json","format":"html"},
+  {"input":"warehouse.json","format":"html"},
+  {"input":"../information-technology/atlas.json","format":"html"},
+  {"input":"../manufacturing-atlas/atlas.json","format":"html"},
+  {"input":"../pmc-role/atlas.json","format":"html"}
+]}

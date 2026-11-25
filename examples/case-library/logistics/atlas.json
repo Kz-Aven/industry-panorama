@@ -1,0 +1,1345 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "logistics",
+  "id": "logistics-atlas",
+  "type": "industry_atlas",
+  "title": "交通物流场景全景图",
+  "description": "案例库 · 24 个案例，按工作场景归入 6 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "warehouse",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "仓储与订单履约",
+      "description": "运营对照盘点表和进出库记录，形成库存差异归因清单。画面包含仓储区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照盘点表和进出库记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "盘点表与库存流水",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "库存差异归因清单",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-fd7291911ffa6e57",
+            "title": "订单履约缺货预警",
+            "locator": "【交通物流·运营】订单履约缺货预警/订单履约缺货预警.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%AE%A2%E5%8D%95%E5%B1%A5%E7%BA%A6%E7%BC%BA%E8%B4%A7%E9%A2%84%E8%AD%A6/%E8%AE%A2%E5%8D%95%E5%B1%A5%E7%BA%A6%E7%BC%BA%E8%B4%A7%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-fd7291911ffa6e57",
+            "title": "订单履约缺货预警",
+            "roles": "运营",
+            "description": "订单到达才发现货不够发，库存不准，超卖缺货成为常态",
+            "source_refs": [
+              "source-catalog-fd7291911ffa6e57"
+            ]
+          },
+          {
+            "id": "catalog-971cf9b05128f1a0",
+            "title": "库存账实差异归因",
+            "roles": "运营",
+            "description": "账面 500 件、实盘仅 460 件，差的 40 件是哪票、谁的责任，从未有人归因",
+            "source_refs": [
+              "source-catalog-971cf9b05128f1a0"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            },
+            "label": "盘点表与库存流水",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "库存差异归因清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "logistics.equipment.container",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "集装箱",
+            "interaction": {
+              "case_ids": [
+                "catalog-971cf9b05128f1a0"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-fd7291911ffa6e57",
+          "catalog-971cf9b05128f1a0"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "customs",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "到港与报关",
+      "description": "运营检查申报材料之间的差异，形成单据差异清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-c8b5fc2bb13b31eb"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "检查申报材料之间的差异",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-c8b5fc2bb13b31eb"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "报关单与关联单据",
+            "source_refs": [
+              "source-catalog-c8b5fc2bb13b31eb"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "单据差异清单",
+            "source_refs": [
+              "source-catalog-c8b5fc2bb13b31eb"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-da1026631cf24995",
+            "title": "报关草单智能生成",
+            "locator": "【交通物流·运营】报关草单智能生成/报关草单智能生成.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%8A%A5%E5%85%B3%E8%8D%89%E5%8D%95%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90/%E6%8A%A5%E5%85%B3%E8%8D%89%E5%8D%95%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-c8b5fc2bb13b31eb",
+            "title": "报关四单一致审核",
+            "locator": "【交通物流·运营】报关四单一致审核/报关四单一致审核.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%8A%A5%E5%85%B3%E5%9B%9B%E5%8D%95%E4%B8%80%E8%87%B4%E5%AE%A1%E6%A0%B8/%E6%8A%A5%E5%85%B3%E5%9B%9B%E5%8D%95%E4%B8%80%E8%87%B4%E5%AE%A1%E6%A0%B8.md"
+          },
+          {
+            "id": "source-catalog-2c50ce703553ca39",
+            "title": "到港超期免费期预警",
+            "locator": "【交通物流·运营】到港超期免费期预警/到港超期免费期预警.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%88%B0%E6%B8%AF%E8%B6%85%E6%9C%9F%E5%85%8D%E8%B4%B9%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%88%B0%E6%B8%AF%E8%B6%85%E6%9C%9F%E5%85%8D%E8%B4%B9%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-41d4aaa5a69af95d",
+            "title": "跨单据一致性校验",
+            "locator": "【交通物流·运营】跨单据一致性校验/跨单据一致性校验.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%B7%A8%E5%8D%95%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%A1%E9%AA%8C/%E8%B7%A8%E5%8D%95%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%A1%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-7e1eb8e65894f8b4",
+            "title": "申报前差错拦截与 HS 归类建议",
+            "locator": "【交通物流·运营】申报前差错拦截与 HS 归类建议/申报前差错拦截与 HS 归类建议.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%94%B3%E6%8A%A5%E5%89%8D%E5%B7%AE%E9%94%99%E6%8B%A6%E6%88%AA%E4%B8%8E%20HS%20%E5%BD%92%E7%B1%BB%E5%BB%BA%E8%AE%AE/%E7%94%B3%E6%8A%A5%E5%89%8D%E5%B7%AE%E9%94%99%E6%8B%A6%E6%88%AA%E4%B8%8E%20HS%20%E5%BD%92%E7%B1%BB%E5%BB%BA%E8%AE%AE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-da1026631cf24995",
+            "title": "报关草单智能生成",
+            "roles": "运营",
+            "description": "一张报关单含 49 个栏目，录错一位即退单加罚款，历史申报过的品名每次都要从头重录",
+            "source_refs": [
+              "source-catalog-da1026631cf24995"
+            ]
+          },
+          {
+            "id": "catalog-c8b5fc2bb13b31eb",
+            "title": "报关四单一致审核",
+            "roles": "运营",
+            "description": "退单并非缺文件，而是几份文件对不上，发票 100 箱、箱单 98 箱的差异肉眼难以发现",
+            "source_refs": [
+              "source-catalog-c8b5fc2bb13b31eb"
+            ]
+          },
+          {
+            "id": "catalog-2c50ce703553ca39",
+            "title": "到港超期免费期预警",
+            "roles": "运营",
+            "description": "免堆期与免箱期是两个日期，超期即产生阶梯上涨的滞箱费，无人盯守，费用便一天天漏出",
+            "source_refs": [
+              "source-catalog-2c50ce703553ca39"
+            ]
+          },
+          {
+            "id": "catalog-41d4aaa5a69af95d",
+            "title": "跨单据一致性校验",
+            "roles": "运营",
+            "description": "一票货的发票、箱单、提单口径不一，发票写 100 台、箱单写 96 台，对不上即退单加查验",
+            "source_refs": [
+              "source-catalog-41d4aaa5a69af95d"
+            ]
+          },
+          {
+            "id": "catalog-7e1eb8e65894f8b4",
+            "title": "申报前差错拦截与 HS 归类建议",
+            "roles": "运营",
+            "description": "HS 码错一位税率天差地别，AI 直接归类正确率仅三成多，必须人工终审",
+            "source_refs": [
+              "source-catalog-7e1eb8e65894f8b4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-c8b5fc2bb13b31eb"
+              ]
+            },
+            "label": "报关单与关联单据",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "单据差异清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-da1026631cf24995",
+          "catalog-c8b5fc2bb13b31eb",
+          "catalog-2c50ce703553ca39",
+          "catalog-41d4aaa5a69af95d",
+          "catalog-7e1eb8e65894f8b4"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "finance",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "费用与结算",
+      "description": "财务对照账单、运单与约定费用，形成待核费用明细。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-5697da371fa12021"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照账单、运单与约定费用",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-5697da371fa12021"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "账单与承运记录",
+            "source_refs": [
+              "source-catalog-5697da371fa12021"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待核费用明细",
+            "source_refs": [
+              "source-catalog-5697da371fa12021"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e166b34d9b526b88",
+            "title": "代收货款台账核对与预警",
+            "locator": "【交通物流·财务】代收货款台账核对与预警/代收货款台账核对与预警.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E4%BB%A3%E6%94%B6%E8%B4%A7%E6%AC%BE%E5%8F%B0%E8%B4%A6%E6%A0%B8%E5%AF%B9%E4%B8%8E%E9%A2%84%E8%AD%A6/%E4%BB%A3%E6%94%B6%E8%B4%A7%E6%AC%BE%E5%8F%B0%E8%B4%A6%E6%A0%B8%E5%AF%B9%E4%B8%8E%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-5697da371fa12021",
+            "title": "干线承运商账单审核",
+            "locator": "【交通物流·财务】干线承运商账单审核/干线承运商账单审核.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B9%B2%E7%BA%BF%E6%89%BF%E8%BF%90%E5%95%86%E8%B4%A6%E5%8D%95%E5%AE%A1%E6%A0%B8/%E5%B9%B2%E7%BA%BF%E6%89%BF%E8%BF%90%E5%95%86%E8%B4%A6%E5%8D%95%E5%AE%A1%E6%A0%B8.md"
+          },
+          {
+            "id": "source-catalog-f3dfaac63032cb57",
+            "title": "航次盈亏归因",
+            "locator": "【交通物流·财务】航次盈亏归因/航次盈亏归因.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E8%88%AA%E6%AC%A1%E7%9B%88%E4%BA%8F%E5%BD%92%E5%9B%A0/%E8%88%AA%E6%AC%A1%E7%9B%88%E4%BA%8F%E5%BD%92%E5%9B%A0.md"
+          },
+          {
+            "id": "source-catalog-1d1e0f8ae7144893",
+            "title": "货代多币种自动对账",
+            "locator": "【交通物流·财务】货代多币种自动对账/货代多币种自动对账.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E8%B4%A7%E4%BB%A3%E5%A4%9A%E5%B8%81%E7%A7%8D%E8%87%AA%E5%8A%A8%E5%AF%B9%E8%B4%A6/%E8%B4%A7%E4%BB%A3%E5%A4%9A%E5%B8%81%E7%A7%8D%E8%87%AA%E5%8A%A8%E5%AF%B9%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-9d1e4e73e481a5ed",
+            "title": "金融返利逐笔核对",
+            "locator": "【交通物流·财务】金融返利逐笔核对/金融返利逐笔核对.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E9%87%91%E8%9E%8D%E8%BF%94%E5%88%A9%E9%80%90%E7%AC%94%E6%A0%B8%E5%AF%B9/%E9%87%91%E8%9E%8D%E8%BF%94%E5%88%A9%E9%80%90%E7%AC%94%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-2c26b28d0a0e561b",
+            "title": "网点-总部罚款对账与举证",
+            "locator": "【交通物流·财务】网点-总部罚款对账与举证/网点-总部罚款对账与举证.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%BD%91%E7%82%B9-%E6%80%BB%E9%83%A8%E7%BD%9A%E6%AC%BE%E5%AF%B9%E8%B4%A6%E4%B8%8E%E4%B8%BE%E8%AF%81/%E7%BD%91%E7%82%B9-%E6%80%BB%E9%83%A8%E7%BD%9A%E6%AC%BE%E5%AF%B9%E8%B4%A6%E4%B8%8E%E4%B8%BE%E8%AF%81.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e166b34d9b526b88",
+            "title": "代收货款台账核对与预警",
+            "roles": "财务",
+            "description": "代收货款收了却迟迟不返，资金截留挪用风险等爆发后才被发现",
+            "source_refs": [
+              "source-catalog-e166b34d9b526b88"
+            ]
+          },
+          {
+            "id": "catalog-5697da371fa12021",
+            "title": "干线承运商账单审核",
+            "roles": "财务",
+            "description": "承运商账单与自家运单一比对就差数万元，计费重量取实重还是体积重从未对齐",
+            "source_refs": [
+              "source-catalog-5697da371fa12021"
+            ]
+          },
+          {
+            "id": "catalog-f3dfaac63032cb57",
+            "title": "航次盈亏归因",
+            "roles": "财务",
+            "description": "整个船队账面看似赚钱，实则藏着亏本航次，不逐航次拆解，永远不知道钱漏在哪里",
+            "source_refs": [
+              "source-catalog-f3dfaac63032cb57"
+            ]
+          },
+          {
+            "id": "catalog-1d1e0f8ae7144893",
+            "title": "货代多币种自动对账",
+            "roles": "财务",
+            "description": "上了系统的财务仍在熬夜手工对账，报价模板与实际费用模板对不上，系统沦为昂贵的硬盘盒",
+            "source_refs": [
+              "source-catalog-1d1e0f8ae7144893"
+            ]
+          },
+          {
+            "id": "catalog-9d1e4e73e481a5ed",
+            "title": "金融返利逐笔核对",
+            "roles": "财务",
+            "description": "返利名目繁多，财务自身也难以算清，模糊返利漏核一笔即是真金白银的损失",
+            "source_refs": [
+              "source-catalog-9d1e4e73e481a5ed"
+            ]
+          },
+          {
+            "id": "catalog-2c26b28d0a0e561b",
+            "title": "网点-总部罚款对账与举证",
+            "roles": "财务",
+            "description": "总部罚了多少，网点月底才知道，该不该认账，全凭一张看不清明细的罚款单",
+            "source_refs": [
+              "source-catalog-2c26b28d0a0e561b"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-5697da371fa12021"
+              ]
+            },
+            "label": "账单与承运记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待核费用明细",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e166b34d9b526b88",
+          "catalog-5697da371fa12021",
+          "catalog-f3dfaac63032cb57",
+          "catalog-1d1e0f8ae7144893",
+          "catalog-9d1e4e73e481a5ed",
+          "catalog-2c26b28d0a0e561b"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "branch",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "网点经营",
+      "description": "运营汇总网点经营数据，形成经营日报。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-aff1d4aefec5b8bb"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总网点经营数据",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-aff1d4aefec5b8bb"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "运营记录",
+            "source_refs": [
+              "source-catalog-aff1d4aefec5b8bb"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "经营日报",
+            "source_refs": [
+              "source-catalog-aff1d4aefec5b8bb"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-aff1d4aefec5b8bb",
+            "title": "网点经营日报",
+            "locator": "【交通物流·运营】网点经营日报/网点经营日报.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%BD%91%E7%82%B9%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5/%E7%BD%91%E7%82%B9%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-aff1d4aefec5b8bb",
+            "title": "网点经营日报",
+            "roles": "运营",
+            "description": "网点当日盈亏说不清，收支、罚款、毛利散在微信转账与个人记忆里",
+            "source_refs": [
+              "source-catalog-aff1d4aefec5b8bb"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-aff1d4aefec5b8bb"
+              ]
+            },
+            "label": "运营记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "经营日报",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-aff1d4aefec5b8bb"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "service",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "售后与索赔",
+      "description": "客服整理行李事故及遗失记录，形成事故记录单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-552899ff5df0e005"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理行李事故及遗失记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-552899ff5df0e005"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "事故与行李信息",
+            "source_refs": [
+              "source-catalog-552899ff5df0e005"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "事故记录单",
+            "source_refs": [
+              "source-catalog-552899ff5df0e005"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-2e351ca2280f0e8b",
+            "title": "三包索赔材料整理与申报催办",
+            "locator": "【交通物流·客服】三包索赔材料整理与申报催办/三包索赔材料整理与申报催办.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E4%B8%89%E5%8C%85%E7%B4%A2%E8%B5%94%E6%9D%90%E6%96%99%E6%95%B4%E7%90%86%E4%B8%8E%E7%94%B3%E6%8A%A5%E5%82%AC%E5%8A%9E/%E4%B8%89%E5%8C%85%E7%B4%A2%E8%B5%94%E6%9D%90%E6%96%99%E6%95%B4%E7%90%86%E4%B8%8E%E7%94%B3%E6%8A%A5%E5%82%AC%E5%8A%9E.md"
+          },
+          {
+            "id": "source-catalog-552899ff5df0e005",
+            "title": "行李事故记录单生成",
+            "locator": "【交通物流·客服】行李事故记录单生成/行李事故记录单生成.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E8%A1%8C%E6%9D%8E%E4%BA%8B%E6%95%85%E8%AE%B0%E5%BD%95%E5%8D%95%E7%94%9F%E6%88%90/%E8%A1%8C%E6%9D%8E%E4%BA%8B%E6%95%85%E8%AE%B0%E5%BD%95%E5%8D%95%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-aa7866aa47c76cf3",
+            "title": "续保话术与战败分析",
+            "locator": "【交通物流·客服】续保话术与战败分析/续保话术与战败分析.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%BB%AD%E4%BF%9D%E8%AF%9D%E6%9C%AF%E4%B8%8E%E6%88%98%E8%B4%A5%E5%88%86%E6%9E%90/%E7%BB%AD%E4%BF%9D%E8%AF%9D%E6%9C%AF%E4%B8%8E%E6%88%98%E8%B4%A5%E5%88%86%E6%9E%90.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-2e351ca2280f0e8b",
+            "title": "三包索赔材料整理与申报催办",
+            "roles": "客服",
+            "description": "索赔员判定赔付，主机厂一句拒赔，损失只能由 4S 店自行承担",
+            "source_refs": [
+              "source-catalog-2e351ca2280f0e8b"
+            ]
+          },
+          {
+            "id": "catalog-552899ff5df0e005",
+            "title": "行李事故记录单生成",
+            "roles": "客服",
+            "description": "一次航班减载 100 多件行李，现场需手工填写 78 份事故记录单，填错一份，理赔即起争议",
+            "source_refs": [
+              "source-catalog-552899ff5df0e005"
+            ]
+          },
+          {
+            "id": "catalog-aa7866aa47c76cf3",
+            "title": "续保话术与战败分析",
+            "roles": "客服",
+            "description": "4S 店总是最后一个致电客户，电销渠道便宜 15% 便将客户抢走",
+            "source_refs": [
+              "source-catalog-aa7866aa47c76cf3"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-552899ff5df0e005"
+              ]
+            },
+            "label": "事故与行李信息",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "事故记录单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-2e351ca2280f0e8b",
+          "catalog-552899ff5df0e005",
+          "catalog-aa7866aa47c76cf3"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sales",
+      "industry": "logistics",
+      "type": "scenario_diorama",
+      "title": "询价与销售",
+      "description": "销售核对运输要求并准备报价，形成报价方案。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "销售",
+            "source_refs": [
+              "source-catalog-61b2bde0bef2b8b5"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对运输要求并准备报价",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-61b2bde0bef2b8b5"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "客户询价与成本口径",
+            "source_refs": [
+              "source-catalog-61b2bde0bef2b8b5"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "报价方案",
+            "source_refs": [
+              "source-catalog-61b2bde0bef2b8b5"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-fc1a868b34551a1b",
+            "title": "线索分层与差异化触达",
+            "locator": "【交通物流·销售·市场】线索分层与差异化触达/线索分层与差异化触达.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%BA%BF%E7%B4%A2%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%AE%E5%BC%82%E5%8C%96%E8%A7%A6%E8%BE%BE/%E7%BA%BF%E7%B4%A2%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%AE%E5%BC%82%E5%8C%96%E8%A7%A6%E8%BE%BE.md"
+          },
+          {
+            "id": "source-catalog-9848860208a293d5",
+            "title": "战败线索复盘与激活",
+            "locator": "【交通物流·销售·市场】战败线索复盘与激活/战败线索复盘与激活.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%88%98%E8%B4%A5%E7%BA%BF%E7%B4%A2%E5%A4%8D%E7%9B%98%E4%B8%8E%E6%BF%80%E6%B4%BB/%E6%88%98%E8%B4%A5%E7%BA%BF%E7%B4%A2%E5%A4%8D%E7%9B%98%E4%B8%8E%E6%BF%80%E6%B4%BB.md"
+          },
+          {
+            "id": "source-catalog-d8ac162b618b0a3b",
+            "title": "报价单生成",
+            "locator": "【交通物流·销售】报价单生成/报价单生成.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%A5%E4%BB%B7%E5%8D%95%E7%94%9F%E6%88%90/%E6%8A%A5%E4%BB%B7%E5%8D%95%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-bcc11250bfcee422",
+            "title": "报价底线成本核算",
+            "locator": "【交通物流·销售】报价底线成本核算/报价底线成本核算.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%A5%E4%BB%B7%E5%BA%95%E7%BA%BF%E6%88%90%E6%9C%AC%E6%A0%B8%E7%AE%97/%E6%8A%A5%E4%BB%B7%E5%BA%95%E7%BA%BF%E6%88%90%E6%9C%AC%E6%A0%B8%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-61b2bde0bef2b8b5",
+            "title": "即时询价报价",
+            "locator": "【交通物流·销售】即时询价报价/即时询价报价.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%8D%B3%E6%97%B6%E8%AF%A2%E4%BB%B7%E6%8A%A5%E4%BB%B7/%E5%8D%B3%E6%97%B6%E8%AF%A2%E4%BB%B7%E6%8A%A5%E4%BB%B7.md"
+          },
+          {
+            "id": "source-catalog-46ba7ef34adca56d",
+            "title": "金融方案单生成",
+            "locator": "【交通物流·销售】金融方案单生成/金融方案单生成.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E9%87%91%E8%9E%8D%E6%96%B9%E6%A1%88%E5%8D%95%E7%94%9F%E6%88%90/%E9%87%91%E8%9E%8D%E6%96%B9%E6%A1%88%E5%8D%95%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-332e3b677882fe37",
+            "title": "库存车毛利与库龄预警",
+            "locator": "【交通物流·销售】库存车毛利与库龄预警/库存车毛利与库龄预警.md:10",
+            "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%BA%93%E5%AD%98%E8%BD%A6%E6%AF%9B%E5%88%A9%E4%B8%8E%E5%BA%93%E9%BE%84%E9%A2%84%E8%AD%A6/%E5%BA%93%E5%AD%98%E8%BD%A6%E6%AF%9B%E5%88%A9%E4%B8%8E%E5%BA%93%E9%BE%84%E9%A2%84%E8%AD%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-fc1a868b34551a1b",
+            "title": "线索分层与差异化触达",
+            "roles": "销售 · 市场",
+            "description": "线索越买越贵、越买越假，群发模板式触达将 98.7% 的线索推向竞品",
+            "source_refs": [
+              "source-catalog-fc1a868b34551a1b"
+            ]
+          },
+          {
+            "id": "catalog-9848860208a293d5",
+            "title": "战败线索复盘与激活",
+            "roles": "销售 · 市场",
+            "description": "战败原因记录在表却无人查看，冷线索每搁置一个月就更凉一分",
+            "source_refs": [
+              "source-catalog-9848860208a293d5"
+            ]
+          },
+          {
+            "id": "catalog-d8ac162b618b0a3b",
+            "title": "报价单生成",
+            "roles": "销售",
+            "description": "报价单上只有车价没有成本，卖一台亏一台而企业自身并不知晓",
+            "source_refs": [
+              "source-catalog-d8ac162b618b0a3b"
+            ]
+          },
+          {
+            "id": "catalog-bcc11250bfcee422",
+            "title": "报价底线成本核算",
+            "roles": "销售",
+            "description": "报出的价格令客户满意，公司亏了钱自己却不知情，报价单上根本没有「成本」一栏",
+            "source_refs": [
+              "source-catalog-bcc11250bfcee422"
+            ]
+          },
+          {
+            "id": "catalog-61b2bde0bef2b8b5",
+            "title": "即时询价报价",
+            "roles": "销售",
+            "description": "客户询价后，业务员翻半天运价表再凭经验报一个数，报价慢几分钟，订单就进了别人口袋",
+            "source_refs": [
+              "source-catalog-61b2bde0bef2b8b5"
+            ]
+          },
+          {
+            "id": "catalog-46ba7ef34adca56d",
+            "title": "金融方案单生成",
+            "roles": "销售",
+            "description": "销售被要求主推贷款方案，月供与返佣却无人能算清",
+            "source_refs": [
+              "source-catalog-46ba7ef34adca56d"
+            ]
+          },
+          {
+            "id": "catalog-332e3b677882fe37",
+            "title": "库存车毛利与库龄预警",
+            "roles": "销售",
+            "description": "库存车每停一天就多付一天利息，但算不清哪台车在亏、该先清哪台",
+            "source_refs": [
+              "source-catalog-332e3b677882fe37"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-61b2bde0bef2b8b5"
+              ]
+            },
+            "label": "客户询价与成本口径",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "报价方案",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-fc1a868b34551a1b",
+          "catalog-9848860208a293d5",
+          "catalog-d8ac162b618b0a3b",
+          "catalog-bcc11250bfcee422",
+          "catalog-61b2bde0bef2b8b5",
+          "catalog-46ba7ef34adca56d",
+          "catalog-332e3b677882fe37"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "商机与客户",
+      "scene_ids": [
+        "sales",
+        "service"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "货物履约",
+      "scene_ids": [
+        "warehouse",
+        "customs"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "结算与经营",
+      "scene_ids": [
+        "finance",
+        "branch"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 交通物流",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-971cf9b05128f1a0",
+      "title": "库存账实差异归因",
+      "locator": "【交通物流·运营】库存账实差异归因/库存账实差异归因.md:75",
+      "uri": "%E3%80%90%E4%BA%A4%E9%80%9A%E7%89%A9%E6%B5%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0/%E5%BA%93%E5%AD%98%E8%B4%A6%E5%AE%9E%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "库存账实差异归因",
+      "source_refs": [
+        "source-catalog-971cf9b05128f1a0"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "校验盘点资料",
+              "participant": "仓储运营",
+              "description": "接收库存台账、流水、盘点表，核对库存台账、流水与盘点表是否齐全。交付可勾对资料。"
+            },
+            {
+              "label": "账实比对",
+              "participant": "仓储运营",
+              "description": "接收可勾对资料，按 SKU 核对账面和实盘数量。交付盘盈盘亏清单。"
+            },
+            {
+              "label": "回溯出入库",
+              "participant": "仓储运营",
+              "description": "接收盘盈盘亏清单，依据流水追查差异涉及的票据和环节。交付票据与归因证据。"
+            },
+            {
+              "label": "整理归因报告",
+              "participant": "仓储运营",
+              "description": "接收票据与归因证据，汇总差异、证据与待签批事项。交付差异归因报告。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "warehouse"
+  }
+}

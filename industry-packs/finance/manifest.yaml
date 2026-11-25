@@ -1,0 +1,50 @@
+id: finance
+name: 金融
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 报案信息、保单与材料
+  - 材料告知清单
+  - 本行档案和客户资料
+  - 尽调报告草稿
+  - 调研与公开资料
+  - 研究底稿
+  - 交易与对账数据
+  - 差异说明
+  - 投诉与以往答复
+  - 答复函草稿
+  - 监管资料与内部制度
+  - 差距清单
+roles:
+  - 财务
+  - 投研
+  - 运营
+  - 产品
+  - 法务
+  - 销售
+  - 管理层
+  - 客服
+actions:
+  - 核对报案情形与已有材料
+  - 对照客户档案和尽调材料
+  - 汇集材料并记录研究出处
+  - 核对日终交易和对账记录
+  - 对齐历史答复和本次事实
+  - 对照外部要求和内部制度
+asset_mappings:
+  银行业务受理台:
+    - finance.equipment.service-desk
+  业务柜台区:
+    - finance.equipment.service-desk
+  核对报案情形与已有材料:
+    - finance.equipment.service-desk
+  对齐历史答复和本次事实:
+    - finance.equipment.service-desk
+templates:
+  - equipment-operation
+  - meeting-review
+  - monitoring-center
+  - single-workstation
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

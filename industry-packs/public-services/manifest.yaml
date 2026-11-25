@@ -1,0 +1,44 @@
+id: public-services
+name: 政务公共
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 诉求工单与分拨记录
+  - 责任单位建议
+  - 申请材料与办事清单
+  - 预审记录
+  - 企业问题与政策资料
+  - 咨询答复草稿
+  - 巡查日志
+  - 处置工单
+  - 案卷与文书资料
+  - 证据索引
+  - 批示件与工作记录
+  - 督办台账
+roles:
+  - 法务
+  - 客服
+  - 销售
+  - 行政
+actions:
+  - 对照事项清单和历史退单研判分拨
+  - 逐项核对申请材料
+  - 整合政策与企业咨询
+  - 整理巡查事件并形成待办
+  - 核对案卷材料和证据索引
+  - 从批示材料抽取任务与责任信息
+asset_mappings:
+  政务服务柜台:
+    - public-services.furniture.service-counter
+  办事窗口:
+    - public-services.furniture.service-counter
+  逐项核对申请材料:
+    - public-services.furniture.service-counter
+templates:
+  - monitoring-center
+  - equipment-operation
+  - meeting-review
+  - single-workstation
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

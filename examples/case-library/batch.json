@@ -1,0 +1,64 @@
+{
+  "jobs": [
+    {
+      "input": "logistics/atlas.json"
+    },
+    {
+      "input": "logistics/journey.json"
+    },
+    {
+      "input": "medical-health/atlas.json"
+    },
+    {
+      "input": "medical-health/journey.json"
+    },
+    {
+      "input": "construction-tourism/atlas.json"
+    },
+    {
+      "input": "construction-tourism/journey.json"
+    },
+    {
+      "input": "public-services/atlas.json"
+    },
+    {
+      "input": "public-services/journey.json"
+    },
+    {
+      "input": "education-research/atlas.json"
+    },
+    {
+      "input": "education-research/journey.json"
+    },
+    {
+      "input": "digital-creative/atlas.json"
+    },
+    {
+      "input": "digital-creative/journey.json"
+    },
+    {
+      "input": "consumer-retail/atlas.json"
+    },
+    {
+      "input": "consumer-retail/journey.json"
+    },
+    {
+      "input": "energy-utilities/atlas.json"
+    },
+    {
+      "input": "energy-utilities/journey.json"
+    },
+    {
+      "input": "universal/atlas.json"
+    },
+    {
+      "input": "universal/journey.json"
+    },
+    {
+      "input": "finance/atlas.json"
+    },
+    {
+      "input": "finance/journey.json"
+    }
+  ]
+}

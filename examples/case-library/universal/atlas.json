@@ -1,0 +1,3779 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "universal",
+  "id": "universal-atlas",
+  "type": "role_atlas",
+  "title": "通用场景全景图",
+  "description": "案例库 · 156 个案例，按工作场景归入 8 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "hr",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "人力与员工服务",
+      "description": "HR汇总面试评价和证据，形成候选人评估汇总。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "HR",
+            "source_refs": [
+              "source-catalog-3d2da111d3e98c51"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总面试评价和证据",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-3d2da111d3e98c51"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "面试记录与评分表",
+            "source_refs": [
+              "source-catalog-3d2da111d3e98c51"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "候选人评估汇总",
+            "source_refs": [
+              "source-catalog-3d2da111d3e98c51"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-da007ab3a4fb7d5c",
+            "title": "合规文书草拟",
+            "locator": "【通用·法务·HR】合规文书草拟/合规文书草拟.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%C2%B7HR%E3%80%91%E5%90%88%E8%A7%84%E6%96%87%E4%B9%A6%E8%8D%89%E6%8B%9F/%E5%90%88%E8%A7%84%E6%96%87%E4%B9%A6%E8%8D%89%E6%8B%9F.md"
+          },
+          {
+            "id": "source-catalog-1f459e2a5c97caba",
+            "title": "组织诊断",
+            "locator": "【通用·HR·企业负责人】组织诊断/组织诊断.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%C2%B7%E4%BC%81%E4%B8%9A%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%91%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD/%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD.md"
+          },
+          {
+            "id": "source-catalog-7a2556bbe6f376b2",
+            "title": "部门人力盘点",
+            "locator": "【通用·HR】部门人力盘点/部门人力盘点.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E9%83%A8%E9%97%A8%E4%BA%BA%E5%8A%9B%E7%9B%98%E7%82%B9/%E9%83%A8%E9%97%A8%E4%BA%BA%E5%8A%9B%E7%9B%98%E7%82%B9.md"
+          },
+          {
+            "id": "source-catalog-c23270ae18392c92",
+            "title": "调薪／年终奖测算",
+            "locator": "【通用·HR】调薪／年终奖测算/调薪／年终奖测算.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E8%B0%83%E8%96%AA%EF%BC%8F%E5%B9%B4%E7%BB%88%E5%A5%96%E6%B5%8B%E7%AE%97/%E8%B0%83%E8%96%AA%EF%BC%8F%E5%B9%B4%E7%BB%88%E5%A5%96%E6%B5%8B%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-f5ac9b1bbc91ca6e",
+            "title": "工资条生成与异常波动拦截",
+            "locator": "【通用·HR】工资条生成与异常波动拦截/工资条生成与异常波动拦截.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%B7%A5%E8%B5%84%E6%9D%A1%E7%94%9F%E6%88%90%E4%B8%8E%E5%BC%82%E5%B8%B8%E6%B3%A2%E5%8A%A8%E6%8B%A6%E6%88%AA/%E5%B7%A5%E8%B5%84%E6%9D%A1%E7%94%9F%E6%88%90%E4%B8%8E%E5%BC%82%E5%B8%B8%E6%B3%A2%E5%8A%A8%E6%8B%A6%E6%88%AA.md"
+          },
+          {
+            "id": "source-catalog-ce85640885de63d4",
+            "title": "核心人才保留成本测算",
+            "locator": "【通用·HR】核心人才保留成本测算/核心人才保留成本测算.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%A0%B8%E5%BF%83%E4%BA%BA%E6%89%8D%E4%BF%9D%E7%95%99%E6%88%90%E6%9C%AC%E6%B5%8B%E7%AE%97/%E6%A0%B8%E5%BF%83%E4%BA%BA%E6%89%8D%E4%BF%9D%E7%95%99%E6%88%90%E6%9C%AC%E6%B5%8B%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-de8e28c421f48d39",
+            "title": "继任计划",
+            "locator": "【通用·HR】继任计划/继任计划.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%BB%A7%E4%BB%BB%E8%AE%A1%E5%88%92/%E7%BB%A7%E4%BB%BB%E8%AE%A1%E5%88%92.md"
+          },
+          {
+            "id": "source-catalog-01585c9b1abc9549",
+            "title": "绩效改进计划（PIP）文书与合规流程",
+            "locator": "【通用·HR】绩效改进计划（PIP）文书与合规流程/绩效改进计划（PIP）文书与合规流程.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%BB%A9%E6%95%88%E6%94%B9%E8%BF%9B%E8%AE%A1%E5%88%92%EF%BC%88PIP%EF%BC%89%E6%96%87%E4%B9%A6%E4%B8%8E%E5%90%88%E8%A7%84%E6%B5%81%E7%A8%8B/%E7%BB%A9%E6%95%88%E6%94%B9%E8%BF%9B%E8%AE%A1%E5%88%92%EF%BC%88PIP%EF%BC%89%E6%96%87%E4%B9%A6%E4%B8%8E%E5%90%88%E8%A7%84%E6%B5%81%E7%A8%8B.md"
+          },
+          {
+            "id": "source-catalog-b607d4c1da95ba22",
+            "title": "加班费敞口测算",
+            "locator": "【通用·HR】加班费敞口测算/加班费敞口测算.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%8A%A0%E7%8F%AD%E8%B4%B9%E6%95%9E%E5%8F%A3%E6%B5%8B%E7%AE%97/%E5%8A%A0%E7%8F%AD%E8%B4%B9%E6%95%9E%E5%8F%A3%E6%B5%8B%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-a0474c306574d07e",
+            "title": "简历格式归一与结构化",
+            "locator": "【通用·HR】简历格式归一与结构化/简历格式归一与结构化.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%AE%80%E5%8E%86%E6%A0%BC%E5%BC%8F%E5%BD%92%E4%B8%80%E4%B8%8E%E7%BB%93%E6%9E%84%E5%8C%96/%E7%AE%80%E5%8E%86%E6%A0%BC%E5%BC%8F%E5%BD%92%E4%B8%80%E4%B8%8E%E7%BB%93%E6%9E%84%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-10fbe03b166a3384",
+            "title": "课件／SOP 生成",
+            "locator": "【通用·HR】课件／SOP 生成/课件／SOP 生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E8%AF%BE%E4%BB%B6%EF%BC%8FSOP%20%E7%94%9F%E6%88%90/%E8%AF%BE%E4%BB%B6%EF%BC%8FSOP%20%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-5efcbb8072e0d920",
+            "title": "劳动合同台账重建与到期预警",
+            "locator": "【通用·HR】劳动合同台账重建与到期预警/劳动合同台账重建与到期预警.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E5%8F%B0%E8%B4%A6%E9%87%8D%E5%BB%BA%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E5%8F%B0%E8%B4%A6%E9%87%8D%E5%BB%BA%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-f94830a53de924ec",
+            "title": "劳动仲裁举证资料包",
+            "locator": "【通用·HR】劳动仲裁举证资料包/劳动仲裁举证资料包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%8A%B3%E5%8A%A8%E4%BB%B2%E8%A3%81%E4%B8%BE%E8%AF%81%E8%B5%84%E6%96%99%E5%8C%85/%E5%8A%B3%E5%8A%A8%E4%BB%B2%E8%A3%81%E4%B8%BE%E8%AF%81%E8%B5%84%E6%96%99%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-2800a5b10073fb7c",
+            "title": "离职面谈分析",
+            "locator": "【通用·HR】离职面谈分析/离职面谈分析.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%A6%BB%E8%81%8C%E9%9D%A2%E8%B0%88%E5%88%86%E6%9E%90/%E7%A6%BB%E8%81%8C%E9%9D%A2%E8%B0%88%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-3d2da111d3e98c51",
+            "title": "面试评估汇总",
+            "locator": "【通用·HR】面试评估汇总/面试评估汇总.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E9%9D%A2%E8%AF%95%E8%AF%84%E4%BC%B0%E6%B1%87%E6%80%BB/%E9%9D%A2%E8%AF%95%E8%AF%84%E4%BC%B0%E6%B1%87%E6%80%BB.md"
+          },
+          {
+            "id": "source-catalog-e8b193b49469022b",
+            "title": "面试题与量化录用条件生成",
+            "locator": "【通用·HR】面试题与量化录用条件生成/面试题与量化录用条件生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%8E%E9%87%8F%E5%8C%96%E5%BD%95%E7%94%A8%E6%9D%A1%E4%BB%B6%E7%94%9F%E6%88%90/%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%8E%E9%87%8F%E5%8C%96%E5%BD%95%E7%94%A8%E6%9D%A1%E4%BB%B6%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-ca0bbcede369b5df",
+            "title": "培训效果评估",
+            "locator": "【通用·HR】培训效果评估/培训效果评估.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%9F%B9%E8%AE%AD%E6%95%88%E6%9E%9C%E8%AF%84%E4%BC%B0/%E5%9F%B9%E8%AE%AD%E6%95%88%E6%9E%9C%E8%AF%84%E4%BC%B0.md"
+          },
+          {
+            "id": "source-catalog-02ef6987a0371474",
+            "title": "培训需求分析",
+            "locator": "【通用·HR】培训需求分析/培训需求分析.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%9F%B9%E8%AE%AD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/%E5%9F%B9%E8%AE%AD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-3e71f689231bdcf6",
+            "title": "批量简历筛选排序",
+            "locator": "【通用·HR】批量简历筛选排序/批量简历筛选排序.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%89%B9%E9%87%8F%E7%AE%80%E5%8E%86%E7%AD%9B%E9%80%89%E6%8E%92%E5%BA%8F/%E6%89%B9%E9%87%8F%E7%AE%80%E5%8E%86%E7%AD%9B%E9%80%89%E6%8E%92%E5%BA%8F.md"
+          },
+          {
+            "id": "source-catalog-5f76ec832920ae9b",
+            "title": "人才九宫格盘点",
+            "locator": "【通用·HR】人才九宫格盘点/人才九宫格盘点.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E4%BA%BA%E6%89%8D%E4%B9%9D%E5%AE%AB%E6%A0%BC%E7%9B%98%E7%82%B9/%E4%BA%BA%E6%89%8D%E4%B9%9D%E5%AE%AB%E6%A0%BC%E7%9B%98%E7%82%B9.md"
+          },
+          {
+            "id": "source-catalog-9934055a9a8d9754",
+            "title": "人员汰换评估",
+            "locator": "【通用·HR】人员汰换评估/人员汰换评估.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E4%BA%BA%E5%91%98%E6%B1%B0%E6%8D%A2%E8%AF%84%E4%BC%B0/%E4%BA%BA%E5%91%98%E6%B1%B0%E6%8D%A2%E8%AF%84%E4%BC%B0.md"
+          },
+          {
+            "id": "source-catalog-43ba22baedfb4a7d",
+            "title": "入离职手续办理",
+            "locator": "【通用·HR】入离职手续办理/入离职手续办理.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%85%A5%E7%A6%BB%E8%81%8C%E6%89%8B%E7%BB%AD%E5%8A%9E%E7%90%86/%E5%85%A5%E7%A6%BB%E8%81%8C%E6%89%8B%E7%BB%AD%E5%8A%9E%E7%90%86.md"
+          },
+          {
+            "id": "source-catalog-f1c2f19b8b0d869b",
+            "title": "入职合规启动包",
+            "locator": "【通用·HR】入职合规启动包/入职合规启动包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%85%A5%E8%81%8C%E5%90%88%E8%A7%84%E5%90%AF%E5%8A%A8%E5%8C%85/%E5%85%A5%E8%81%8C%E5%90%88%E8%A7%84%E5%90%AF%E5%8A%A8%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-a2d2d88fbf330ede",
+            "title": "社保基数三数比对体检",
+            "locator": "【通用·HR】社保基数三数比对体检/社保基数三数比对体检.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%A4%BE%E4%BF%9D%E5%9F%BA%E6%95%B0%E4%B8%89%E6%95%B0%E6%AF%94%E5%AF%B9%E4%BD%93%E6%A3%80/%E7%A4%BE%E4%BF%9D%E5%9F%BA%E6%95%B0%E4%B8%89%E6%95%B0%E6%AF%94%E5%AF%B9%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-fa188d300215077a",
+            "title": "试用期考核留痕与录用条件对照",
+            "locator": "【通用·HR】试用期考核留痕与录用条件对照/试用期考核留痕与录用条件对照.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E8%AF%95%E7%94%A8%E6%9C%9F%E8%80%83%E6%A0%B8%E7%95%99%E7%97%95%E4%B8%8E%E5%BD%95%E7%94%A8%E6%9D%A1%E4%BB%B6%E5%AF%B9%E7%85%A7/%E8%AF%95%E7%94%A8%E6%9C%9F%E8%80%83%E6%A0%B8%E7%95%99%E7%97%95%E4%B8%8E%E5%BD%95%E7%94%A8%E6%9D%A1%E4%BB%B6%E5%AF%B9%E7%85%A7.md"
+          },
+          {
+            "id": "source-catalog-7f06429cef79d064",
+            "title": "算薪跨部门数据拼图",
+            "locator": "【通用·HR】算薪跨部门数据拼图/算薪跨部门数据拼图.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%AE%97%E8%96%AA%E8%B7%A8%E9%83%A8%E9%97%A8%E6%95%B0%E6%8D%AE%E6%8B%BC%E5%9B%BE/%E7%AE%97%E8%96%AA%E8%B7%A8%E9%83%A8%E9%97%A8%E6%95%B0%E6%8D%AE%E6%8B%BC%E5%9B%BE.md"
+          },
+          {
+            "id": "source-catalog-06e211edc7b5eaa2",
+            "title": "投诉处理记录",
+            "locator": "【通用·HR】投诉处理记录/投诉处理记录.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%8A%95%E8%AF%89%E5%A4%84%E7%90%86%E8%AE%B0%E5%BD%95/%E6%8A%95%E8%AF%89%E5%A4%84%E7%90%86%E8%AE%B0%E5%BD%95.md"
+          },
+          {
+            "id": "source-catalog-fdbe4c68e6ad467a",
+            "title": "薪酬竞争力对标",
+            "locator": "【通用·HR】薪酬竞争力对标/薪酬竞争力对标.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E8%96%AA%E9%85%AC%E7%AB%9E%E4%BA%89%E5%8A%9B%E5%AF%B9%E6%A0%87/%E8%96%AA%E9%85%AC%E7%AB%9E%E4%BA%89%E5%8A%9B%E5%AF%B9%E6%A0%87.md"
+          },
+          {
+            "id": "source-catalog-0f2c0d6e74674d88",
+            "title": "业务会议纪要行动项",
+            "locator": "【通用·HR】业务会议纪要行动项/业务会议纪要行动项.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E4%B8%9A%E5%8A%A1%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%E8%A1%8C%E5%8A%A8%E9%A1%B9/%E4%B8%9A%E5%8A%A1%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%E8%A1%8C%E5%8A%A8%E9%A1%B9.md"
+          },
+          {
+            "id": "source-catalog-067793144c732183",
+            "title": "业务主管赋能",
+            "locator": "【通用·HR】业务主管赋能/业务主管赋能.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E4%B8%9A%E5%8A%A1%E4%B8%BB%E7%AE%A1%E8%B5%8B%E8%83%BD/%E4%B8%9A%E5%8A%A1%E4%B8%BB%E7%AE%A1%E8%B5%8B%E8%83%BD.md"
+          },
+          {
+            "id": "source-catalog-07307b18518f5a88",
+            "title": "用工合规排查",
+            "locator": "【通用·HR】用工合规排查/用工合规排查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E7%94%A8%E5%B7%A5%E5%90%88%E8%A7%84%E6%8E%92%E6%9F%A5/%E7%94%A8%E5%B7%A5%E5%90%88%E8%A7%84%E6%8E%92%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-393de17e9980866a",
+            "title": "员工福利方案测算",
+            "locator": "【通用·HR】员工福利方案测算/员工福利方案测算.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%91%98%E5%B7%A5%E7%A6%8F%E5%88%A9%E6%96%B9%E6%A1%88%E6%B5%8B%E7%AE%97/%E5%91%98%E5%B7%A5%E7%A6%8F%E5%88%A9%E6%96%B9%E6%A1%88%E6%B5%8B%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-700f4e06609e22ab",
+            "title": "员工花名册法定栏位体检与重建",
+            "locator": "【通用·HR】员工花名册法定栏位体检与重建/员工花名册法定栏位体检与重建.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%91%98%E5%B7%A5%E8%8A%B1%E5%90%8D%E5%86%8C%E6%B3%95%E5%AE%9A%E6%A0%8F%E4%BD%8D%E4%BD%93%E6%A3%80%E4%B8%8E%E9%87%8D%E5%BB%BA/%E5%91%98%E5%B7%A5%E8%8A%B1%E5%90%8D%E5%86%8C%E6%B3%95%E5%AE%9A%E6%A0%8F%E4%BD%8D%E4%BD%93%E6%A3%80%E4%B8%8E%E9%87%8D%E5%BB%BA.md"
+          },
+          {
+            "id": "source-catalog-2a5d0da3c251fff1",
+            "title": "员工满意度分析",
+            "locator": "【通用·HR】员工满意度分析/员工满意度分析.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%91%98%E5%B7%A5%E6%BB%A1%E6%84%8F%E5%BA%A6%E5%88%86%E6%9E%90/%E5%91%98%E5%B7%A5%E6%BB%A1%E6%84%8F%E5%BA%A6%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-682ac24d3577c340",
+            "title": "员工证明一键开具",
+            "locator": "【通用·HR】员工证明一键开具/员工证明一键开具.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E5%91%98%E5%B7%A5%E8%AF%81%E6%98%8E%E4%B8%80%E9%94%AE%E5%BC%80%E5%85%B7/%E5%91%98%E5%B7%A5%E8%AF%81%E6%98%8E%E4%B8%80%E9%94%AE%E5%BC%80%E5%85%B7.md"
+          },
+          {
+            "id": "source-catalog-6769d0c88ff3a9b1",
+            "title": "月度人力成本一页纸",
+            "locator": "【通用·HR】月度人力成本一页纸/月度人力成本一页纸.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%9C%88%E5%BA%A6%E4%BA%BA%E5%8A%9B%E6%88%90%E6%9C%AC%E4%B8%80%E9%A1%B5%E7%BA%B8/%E6%9C%88%E5%BA%A6%E4%BA%BA%E5%8A%9B%E6%88%90%E6%9C%AC%E4%B8%80%E9%A1%B5%E7%BA%B8.md"
+          },
+          {
+            "id": "source-catalog-d2027592a37fbfa2",
+            "title": "月度薪资核算",
+            "locator": "【通用·HR】月度薪资核算/月度薪资核算.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%9C%88%E5%BA%A6%E8%96%AA%E8%B5%84%E6%A0%B8%E7%AE%97/%E6%9C%88%E5%BA%A6%E8%96%AA%E8%B5%84%E6%A0%B8%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-1fa9888409e4a3b8",
+            "title": "招聘漏斗与渠道效果分析",
+            "locator": "【通用·HR】招聘漏斗与渠道效果分析/招聘漏斗与渠道效果分析.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%8B%9B%E8%81%98%E6%BC%8F%E6%96%97%E4%B8%8E%E6%B8%A0%E9%81%93%E6%95%88%E6%9E%9C%E5%88%86%E6%9E%90/%E6%8B%9B%E8%81%98%E6%BC%8F%E6%96%97%E4%B8%8E%E6%B8%A0%E9%81%93%E6%95%88%E6%9E%9C%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-0d257f91b4dcb51f",
+            "title": "招聘漏斗月报与渠道 ROI",
+            "locator": "【通用·HR】招聘漏斗月报与渠道 ROI/招聘漏斗月报与渠道 ROI.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E6%8B%9B%E8%81%98%E6%BC%8F%E6%96%97%E6%9C%88%E6%8A%A5%E4%B8%8E%E6%B8%A0%E9%81%93%20ROI/%E6%8B%9B%E8%81%98%E6%BC%8F%E6%96%97%E6%9C%88%E6%8A%A5%E4%B8%8E%E6%B8%A0%E9%81%93%20ROI.md"
+          },
+          {
+            "id": "source-catalog-8f89437f92d494ec",
+            "title": "转正调动流程",
+            "locator": "【通用·HR】转正调动流程/转正调动流程.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91%E8%BD%AC%E6%AD%A3%E8%B0%83%E5%8A%A8%E6%B5%81%E7%A8%8B/%E8%BD%AC%E6%AD%A3%E8%B0%83%E5%8A%A8%E6%B5%81%E7%A8%8B.md"
+          },
+          {
+            "id": "source-catalog-bfd75861241c784b",
+            "title": "JD 需求拆解",
+            "locator": "【通用·HR】JD 需求拆解/JD 需求拆解.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91JD%20%E9%9C%80%E6%B1%82%E6%8B%86%E8%A7%A3/JD%20%E9%9C%80%E6%B1%82%E6%8B%86%E8%A7%A3.md"
+          },
+          {
+            "id": "source-catalog-0dc6376ced746c10",
+            "title": "Offer 谈判测算",
+            "locator": "【通用·HR】Offer 谈判测算/Offer 谈判测算.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7HR%E3%80%91Offer%20%E8%B0%88%E5%88%A4%E6%B5%8B%E7%AE%97/Offer%20%E8%B0%88%E5%88%A4%E6%B5%8B%E7%AE%97.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-da007ab3a4fb7d5c",
+            "title": "合规文书草拟",
+            "roles": "法务 · HR",
+            "description": "文书从零起草，要件遗漏风险大，法条引用错一个款项即可能导致仲裁败诉",
+            "source_refs": [
+              "source-catalog-da007ab3a4fb7d5c"
+            ]
+          },
+          {
+            "id": "catalog-1f459e2a5c97caba",
+            "title": "组织诊断",
+            "roles": "HR · 企业负责人",
+            "description": "组织诊断依赖主观感觉，离职率高、干劲不足，说不清是钱还是人的问题",
+            "source_refs": [
+              "source-catalog-1f459e2a5c97caba"
+            ]
+          },
+          {
+            "id": "catalog-7a2556bbe6f376b2",
+            "title": "部门人力盘点",
+            "roles": "HR",
+            "description": "季度人力盘点需 2-3 小时，编制表、在岗表、流动记录分散在不同 Excel 中手工对账",
+            "source_refs": [
+              "source-catalog-7a2556bbe6f376b2"
+            ]
+          },
+          {
+            "id": "catalog-c23270ae18392c92",
+            "title": "调薪／年终奖测算",
+            "roles": "HR",
+            "description": "年度调薪需 Excel 手工逐人试算，超预算时缺乏科学方法，凭经验压减",
+            "source_refs": [
+              "source-catalog-c23270ae18392c92"
+            ]
+          },
+          {
+            "id": "catalog-f5ac9b1bbc91ca6e",
+            "title": "工资条生成与异常波动拦截",
+            "roles": "HR",
+            "description": "工资多发无人主动反馈，少发 200 元的员工持银行短信找到老板办公室",
+            "source_refs": [
+              "source-catalog-f5ac9b1bbc91ca6e"
+            ]
+          },
+          {
+            "id": "catalog-ce85640885de63d4",
+            "title": "核心人才保留成本测算",
+            "roles": "HR",
+            "description": "模具师傅提离职才想起没调过薪，重新招一人的成本相当于其三个月工资",
+            "source_refs": [
+              "source-catalog-ce85640885de63d4"
+            ]
+          },
+          {
+            "id": "catalog-de8e28c421f48d39",
+            "title": "继任计划",
+            "roles": "HR",
+            "description": "面谈纪要散乱，离职真实原因被隐藏，核心人才流失消息滞后，无可复用的对策",
+            "source_refs": [
+              "source-catalog-de8e28c421f48d39"
+            ]
+          },
+          {
+            "id": "catalog-01585c9b1abc9549",
+            "title": "绩效改进计划（PIP）文书与合规流程",
+            "roles": "HR",
+            "description": "想给绩效差的员工改进机会，解除时却被认定「变相刁难」，赔偿 2N",
+            "source_refs": [
+              "source-catalog-01585c9b1abc9549"
+            ]
+          },
+          {
+            "id": "catalog-b607d4c1da95ba22",
+            "title": "加班费敞口测算",
+            "roles": "HR",
+            "description": "月薪含周六加班费仅为老板口头约定，仲裁中举证不能，双倍加班费照付",
+            "source_refs": [
+              "source-catalog-b607d4c1da95ba22"
+            ]
+          },
+          {
+            "id": "catalog-a0474c306574d07e",
+            "title": "简历格式归一与结构化",
+            "roles": "HR",
+            "description": "300 份简历一半文件名是「简历.pdf」，是否筛过、筛过几次无人记得",
+            "source_refs": [
+              "source-catalog-a0474c306574d07e"
+            ]
+          },
+          {
+            "id": "catalog-10fbe03b166a3384",
+            "title": "课件／SOP 生成",
+            "roles": "HR",
+            "description": "每门课程从零编写课件，耗时 2-3 天起，课件结构随意，质量依赖个人",
+            "source_refs": [
+              "source-catalog-10fbe03b166a3384"
+            ]
+          },
+          {
+            "id": "catalog-5efcbb8072e0d920",
+            "title": "劳动合同台账重建与到期预警",
+            "roles": "HR",
+            "description": "合同长期留存于档案柜无人翻阅，直到离职员工申请仲裁才发现 3 份已过期",
+            "source_refs": [
+              "source-catalog-5efcbb8072e0d920"
+            ]
+          },
+          {
+            "id": "catalog-f94830a53de924ec",
+            "title": "劳动仲裁举证资料包",
+            "roles": "HR",
+            "description": "收到仲裁通知才发现举证责任在公司，相关记录一半散在他人电脑里",
+            "source_refs": [
+              "source-catalog-f94830a53de924ec"
+            ]
+          },
+          {
+            "id": "catalog-2800a5b10073fb7c",
+            "title": "离职面谈分析",
+            "roles": "HR",
+            "description": "离职面谈纪要散乱，原因依赖人工归类，场面话掩盖真实诉求",
+            "source_refs": [
+              "source-catalog-2800a5b10073fb7c"
+            ]
+          },
+          {
+            "id": "catalog-3d2da111d3e98c51",
+            "title": "面试评估汇总",
+            "roles": "HR",
+            "description": "面试反馈分散在五个渠道，面试官口径不一，汇总缺乏统一标准",
+            "source_refs": [
+              "source-catalog-3d2da111d3e98c51"
+            ]
+          },
+          {
+            "id": "catalog-e8b193b49469022b",
+            "title": "面试题与量化录用条件生成",
+            "roles": "HR",
+            "description": "面试全靠随意交谈，辞退时才发现「不符合要求」在仲裁中不构成录用条件",
+            "source_refs": [
+              "source-catalog-e8b193b49469022b"
+            ]
+          },
+          {
+            "id": "catalog-ca0bbcede369b5df",
+            "title": "培训效果评估",
+            "roles": "HR",
+            "description": "培训结束后效果无人评估，仅统计满意度，无法看见真实效果",
+            "source_refs": [
+              "source-catalog-ca0bbcede369b5df"
+            ]
+          },
+          {
+            "id": "catalog-02ef6987a0371474",
+            "title": "培训需求分析",
+            "roles": "HR",
+            "description": "年度培训计划缺乏量化依据，培训需求与绩效短板相互脱节",
+            "source_refs": [
+              "source-catalog-02ef6987a0371474"
+            ]
+          },
+          {
+            "id": "catalog-3e71f689231bdcf6",
+            "title": "批量简历筛选排序",
+            "roles": "HR",
+            "description": "逐份翻阅简历耗时 2-4 小时起，同一岗位不同 HR 筛选标准不一",
+            "source_refs": [
+              "source-catalog-3e71f689231bdcf6"
+            ]
+          },
+          {
+            "id": "catalog-5f76ec832920ae9b",
+            "title": "人才九宫格盘点",
+            "roles": "HR",
+            "description": "年度盘点手工填格，耗时一天起，潜力缺乏统一标准，九宫格结果失真",
+            "source_refs": [
+              "source-catalog-5f76ec832920ae9b"
+            ]
+          },
+          {
+            "id": "catalog-9934055a9a8d9754",
+            "title": "人员汰换评估",
+            "roles": "HR",
+            "description": "汰换名单依赖感觉与人情，绩效、薪酬、考勤、违纪四类台账手工比对一天起",
+            "source_refs": [
+              "source-catalog-9934055a9a8d9754"
+            ]
+          },
+          {
+            "id": "catalog-43ba22baedfb4a7d",
+            "title": "入离职手续办理",
+            "roles": "HR",
+            "description": "入职需跑多个部门，漏一项材料即重来，离职交接依赖微信群人工催促",
+            "source_refs": [
+              "source-catalog-43ba22baedfb4a7d"
+            ]
+          },
+          {
+            "id": "catalog-f1c2f19b8b0d869b",
+            "title": "入职合规启动包",
+            "roles": "HR",
+            "description": "入职流程拖延搁置，到年底才发现有 6 人一直未签劳动合同",
+            "source_refs": [
+              "source-catalog-f1c2f19b8b0d869b"
+            ]
+          },
+          {
+            "id": "catalog-a2d2d88fbf330ede",
+            "title": "社保基数三数比对体检",
+            "roles": "HR",
+            "description": "按最低基数缴纳了三年，稽查通知到达时，滞纳金已达本金的一半",
+            "source_refs": [
+              "source-catalog-a2d2d88fbf330ede"
+            ]
+          },
+          {
+            "id": "catalog-fa188d300215077a",
+            "title": "试用期考核留痕与录用条件对照",
+            "roles": "HR",
+            "description": "试用期辞退理由仅写「不符合要求」，仲裁追问录用条件及是否告知时无法应答",
+            "source_refs": [
+              "source-catalog-fa188d300215077a"
+            ]
+          },
+          {
+            "id": "catalog-7f06429cef79d064",
+            "title": "算薪跨部门数据拼图",
+            "roles": "HR",
+            "description": "工资表 12 个 Sheet 每月手工拼合，数字算对了规则却用错，错误难以自查",
+            "source_refs": [
+              "source-catalog-7f06429cef79d064"
+            ]
+          },
+          {
+            "id": "catalog-06e211edc7b5eaa2",
+            "title": "投诉处理记录",
+            "roles": "HR",
+            "description": "投诉受理后不知先核查什么，何种须升级、何种可调解缺乏分级标准",
+            "source_refs": [
+              "source-catalog-06e211edc7b5eaa2"
+            ]
+          },
+          {
+            "id": "catalog-fdbe4c68e6ad467a",
+            "title": "薪酬竞争力对标",
+            "roles": "HR",
+            "description": "公司薪酬水平缺乏数据支撑，薪酬倒挂难以察觉，常在员工提离职时才暴露",
+            "source_refs": [
+              "source-catalog-fdbe4c68e6ad467a"
+            ]
+          },
+          {
+            "id": "catalog-0f2c0d6e74674d88",
+            "title": "业务会议纪要行动项",
+            "roles": "HR",
+            "description": "跟会与纪要整理占用半天，HR 行动项依赖会后回忆，离职风险等议题易遗漏",
+            "source_refs": [
+              "source-catalog-0f2c0d6e74674d88"
+            ]
+          },
+          {
+            "id": "catalog-067793144c732183",
+            "title": "业务主管赋能",
+            "roles": "HR",
+            "description": "同类求助反复应答，同一低绩效面谈，不同主管获得的辅导口径不一",
+            "source_refs": [
+              "source-catalog-067793144c732183"
+            ]
+          },
+          {
+            "id": "catalog-07307b18518f5a88",
+            "title": "用工合规排查",
+            "roles": "HR",
+            "description": "合同、考勤、加班需逐条核对，耗时一天起，漏检一条到期未续签即面临双倍工资",
+            "source_refs": [
+              "source-catalog-07307b18518f5a88"
+            ]
+          },
+          {
+            "id": "catalog-393de17e9980866a",
+            "title": "员工福利方案测算",
+            "roles": "HR",
+            "description": "福利方案比选全靠 Excel 手工测算，方案人均 1500 实际出账 2200，因漏算附加费",
+            "source_refs": [
+              "source-catalog-393de17e9980866a"
+            ]
+          },
+          {
+            "id": "catalog-700f4e06609e22ab",
+            "title": "员工花名册法定栏位体检与重建",
+            "roles": "HR",
+            "description": "花名册多版本并存（最终版/新版/在职员工(1)），无法确认哪份数据准确",
+            "source_refs": [
+              "source-catalog-700f4e06609e22ab"
+            ]
+          },
+          {
+            "id": "catalog-2a5d0da3c251fff1",
+            "title": "员工满意度分析",
+            "roles": "HR",
+            "description": "18 题 24 人手工计算六维度均分至少一天，3.1 分属正常还是预警全凭主观",
+            "source_refs": [
+              "source-catalog-2a5d0da3c251fff1"
+            ]
+          },
+          {
+            "id": "catalog-682ac24d3577c340",
+            "title": "员工证明一键开具",
+            "roles": "HR",
+            "description": "四种证明四种模板，每次现找现填，「月薪」与「月平均工资」口径不一，银行不认可",
+            "source_refs": [
+              "source-catalog-682ac24d3577c340"
+            ]
+          },
+          {
+            "id": "catalog-6769d0c88ff3a9b1",
+            "title": "月度人力成本一页纸",
+            "roles": "HR",
+            "description": "老板问本月人力成本为何多了 8 万，翻半小时 Excel 也说不出准数",
+            "source_refs": [
+              "source-catalog-6769d0c88ff3a9b1"
+            ]
+          },
+          {
+            "id": "catalog-d2027592a37fbfa2",
+            "title": "月度薪资核算",
+            "roles": "HR",
+            "description": "每月发薪前后需逐人手工对齐三张表，公式层层嵌套，一处出错全盘皆错",
+            "source_refs": [
+              "source-catalog-d2027592a37fbfa2"
+            ]
+          },
+          {
+            "id": "catalog-1fa9888409e4a3b8",
+            "title": "招聘漏斗与渠道效果分析",
+            "roles": "HR",
+            "description": "钱花在哪最值、人卡在哪一环难以回答，Excel 透视表分析半天起步",
+            "source_refs": [
+              "source-catalog-1fa9888409e4a3b8"
+            ]
+          },
+          {
+            "id": "catalog-0d257f91b4dcb51f",
+            "title": "招聘漏斗月报与渠道 ROI",
+            "roles": "HR",
+            "description": "老板问招聘预算花在哪里，HR 答不上来，数据散在五个平台后台",
+            "source_refs": [
+              "source-catalog-0d257f91b4dcb51f"
+            ]
+          },
+          {
+            "id": "catalog-8f89437f92d494ec",
+            "title": "转正调动流程",
+            "roles": "HR",
+            "description": "转正调动共五个节点，漏一个即出错，漏掉薪资调整，员工下月仍拿试用期工资",
+            "source_refs": [
+              "source-catalog-8f89437f92d494ec"
+            ]
+          },
+          {
+            "id": "catalog-bfd75861241c784b",
+            "title": "JD 需求拆解",
+            "roles": "HR",
+            "description": "业务需求往往只有一句话，需来回确认 1-2 小时，JD 反复修改三版",
+            "source_refs": [
+              "source-catalog-bfd75861241c784b"
+            ]
+          },
+          {
+            "id": "catalog-0dc6376ced746c10",
+            "title": "Offer 谈判测算",
+            "roles": "HR",
+            "description": "跨表测算一小时起步且易漏项，期望 30K 与 45K 处理不同，却只有跟或不跟两条路",
+            "source_refs": [
+              "source-catalog-0dc6376ced746c10"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-3d2da111d3e98c51"
+              ]
+            },
+            "label": "面试记录与评分表",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "候选人评估汇总",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-da007ab3a4fb7d5c",
+          "catalog-1f459e2a5c97caba",
+          "catalog-7a2556bbe6f376b2",
+          "catalog-c23270ae18392c92",
+          "catalog-f5ac9b1bbc91ca6e",
+          "catalog-ce85640885de63d4",
+          "catalog-de8e28c421f48d39",
+          "catalog-01585c9b1abc9549",
+          "catalog-b607d4c1da95ba22",
+          "catalog-a0474c306574d07e",
+          "catalog-10fbe03b166a3384",
+          "catalog-5efcbb8072e0d920",
+          "catalog-f94830a53de924ec",
+          "catalog-2800a5b10073fb7c",
+          "catalog-3d2da111d3e98c51",
+          "catalog-e8b193b49469022b",
+          "catalog-ca0bbcede369b5df",
+          "catalog-02ef6987a0371474",
+          "catalog-3e71f689231bdcf6",
+          "catalog-5f76ec832920ae9b",
+          "catalog-9934055a9a8d9754",
+          "catalog-43ba22baedfb4a7d",
+          "catalog-f1c2f19b8b0d869b",
+          "catalog-a2d2d88fbf330ede",
+          "catalog-fa188d300215077a",
+          "catalog-7f06429cef79d064",
+          "catalog-06e211edc7b5eaa2",
+          "catalog-fdbe4c68e6ad467a",
+          "catalog-0f2c0d6e74674d88",
+          "catalog-067793144c732183",
+          "catalog-07307b18518f5a88",
+          "catalog-393de17e9980866a",
+          "catalog-700f4e06609e22ab",
+          "catalog-2a5d0da3c251fff1",
+          "catalog-682ac24d3577c340",
+          "catalog-6769d0c88ff3a9b1",
+          "catalog-d2027592a37fbfa2",
+          "catalog-1fa9888409e4a3b8",
+          "catalog-0d257f91b4dcb51f",
+          "catalog-8f89437f92d494ec",
+          "catalog-bfd75861241c784b",
+          "catalog-0dc6376ced746c10"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sales",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "销售与客户跟进",
+      "description": "销售整理会谈信息和约定事项，形成销售跟进提醒。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "销售",
+            "source_refs": [
+              "source-catalog-942930cfd5884813"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理会谈信息和约定事项",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-942930cfd5884813"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "沟通记录",
+            "source_refs": [
+              "source-catalog-942930cfd5884813"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "销售跟进提醒",
+            "source_refs": [
+              "source-catalog-942930cfd5884813"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-11744d63e0b374e3",
+            "title": "留资线索清洗与分级",
+            "locator": "【通用·市场·销售】留资线索清洗与分级/留资线索清洗与分级.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%95%99%E8%B5%84%E7%BA%BF%E7%B4%A2%E6%B8%85%E6%B4%97%E4%B8%8E%E5%88%86%E7%BA%A7/%E7%95%99%E8%B5%84%E7%BA%BF%E7%B4%A2%E6%B8%85%E6%B4%97%E4%B8%8E%E5%88%86%E7%BA%A7.md"
+          },
+          {
+            "id": "source-catalog-e39297c9b550e572",
+            "title": "拜访前作战简报",
+            "locator": "【通用·销售】拜访前作战简报/拜访前作战简报.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8B%9C%E8%AE%BF%E5%89%8D%E4%BD%9C%E6%88%98%E7%AE%80%E6%8A%A5/%E6%8B%9C%E8%AE%BF%E5%89%8D%E4%BD%9C%E6%88%98%E7%AE%80%E6%8A%A5.md"
+          },
+          {
+            "id": "source-catalog-6685642e79f34ebd",
+            "title": "报价测算表生成",
+            "locator": "【通用·销售】报价测算表生成/报价测算表生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%A5%E4%BB%B7%E6%B5%8B%E7%AE%97%E8%A1%A8%E7%94%9F%E6%88%90/%E6%8A%A5%E4%BB%B7%E6%B5%8B%E7%AE%97%E8%A1%A8%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-578de6ae174e3f6b",
+            "title": "丢单复盘归档",
+            "locator": "【通用·销售】丢单复盘归档/丢单复盘归档.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E4%B8%A2%E5%8D%95%E5%A4%8D%E7%9B%98%E5%BD%92%E6%A1%A3/%E4%B8%A2%E5%8D%95%E5%A4%8D%E7%9B%98%E5%BD%92%E6%A1%A3.md"
+          },
+          {
+            "id": "source-catalog-77a6a141f3b94adf",
+            "title": "丢单复盘事实时间线重建",
+            "locator": "【通用·销售】丢单复盘事实时间线重建/丢单复盘事实时间线重建.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E4%B8%A2%E5%8D%95%E5%A4%8D%E7%9B%98%E4%BA%8B%E5%AE%9E%E6%97%B6%E9%97%B4%E7%BA%BF%E9%87%8D%E5%BB%BA/%E4%B8%A2%E5%8D%95%E5%A4%8D%E7%9B%98%E4%BA%8B%E5%AE%9E%E6%97%B6%E9%97%B4%E7%BA%BF%E9%87%8D%E5%BB%BA.md"
+          },
+          {
+            "id": "source-catalog-eef38361b2af4d2a",
+            "title": "方案初稿组装（带出处）",
+            "locator": "【通用·销售】方案初稿组装（带出处）/方案初稿组装（带出处）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%E7%BB%84%E8%A3%85%EF%BC%88%E5%B8%A6%E5%87%BA%E5%A4%84%EF%BC%89/%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%E7%BB%84%E8%A3%85%EF%BC%88%E5%B8%A6%E5%87%BA%E5%A4%84%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-a806c45ca86fa176",
+            "title": "关联方串标风险自查",
+            "locator": "【通用·销售】关联方串标风险自查/关联方串标风险自查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%85%B3%E8%81%94%E6%96%B9%E4%B8%B2%E6%A0%87%E9%A3%8E%E9%99%A9%E8%87%AA%E6%9F%A5/%E5%85%B3%E8%81%94%E6%96%B9%E4%B8%B2%E6%A0%87%E9%A3%8E%E9%99%A9%E8%87%AA%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-ec22147c185583f2",
+            "title": "合同到期与续签盘点",
+            "locator": "【通用·销售】合同到期与续签盘点/合同到期与续签盘点.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%90%88%E5%90%8C%E5%88%B0%E6%9C%9F%E4%B8%8E%E7%BB%AD%E7%AD%BE%E7%9B%98%E7%82%B9/%E5%90%88%E5%90%8C%E5%88%B0%E6%9C%9F%E4%B8%8E%E7%BB%AD%E7%AD%BE%E7%9B%98%E7%82%B9.md"
+          },
+          {
+            "id": "source-catalog-02ebea97fdb155dc",
+            "title": "合同评审跨部门资料一次性齐套",
+            "locator": "【通用·销售】合同评审跨部门资料一次性齐套/合同评审跨部门资料一次性齐套.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%90%88%E5%90%8C%E8%AF%84%E5%AE%A1%E8%B7%A8%E9%83%A8%E9%97%A8%E8%B5%84%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E9%BD%90%E5%A5%97/%E5%90%88%E5%90%8C%E8%AF%84%E5%AE%A1%E8%B7%A8%E9%83%A8%E9%97%A8%E8%B5%84%E6%96%99%E4%B8%80%E6%AC%A1%E6%80%A7%E9%BD%90%E5%A5%97.md"
+          },
+          {
+            "id": "source-catalog-942930cfd5884813",
+            "title": "会议纪要整理与跟进提醒",
+            "locator": "【通用·销售】会议纪要整理与跟进提醒/会议纪要整理与跟进提醒.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%E6%95%B4%E7%90%86%E4%B8%8E%E8%B7%9F%E8%BF%9B%E6%8F%90%E9%86%92/%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%E6%95%B4%E7%90%86%E4%B8%8E%E8%B7%9F%E8%BF%9B%E6%8F%90%E9%86%92.md"
+          },
+          {
+            "id": "source-catalog-a0c884f04cd4a711",
+            "title": "获客信息录入及潜客推荐",
+            "locator": "【通用·销售】获客信息录入及潜客推荐/获客信息录入及潜客推荐.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%8E%B7%E5%AE%A2%E4%BF%A1%E6%81%AF%E5%BD%95%E5%85%A5%E5%8F%8A%E6%BD%9C%E5%AE%A2%E6%8E%A8%E8%8D%90/%E8%8E%B7%E5%AE%A2%E4%BF%A1%E6%81%AF%E5%BD%95%E5%85%A5%E5%8F%8A%E6%BD%9C%E5%AE%A2%E6%8E%A8%E8%8D%90.md"
+          },
+          {
+            "id": "source-catalog-a3a47df28788c39e",
+            "title": "经销商返利兑现核对",
+            "locator": "【通用·销售】经销商返利兑现核对/经销商返利兑现核对.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%BB%8F%E9%94%80%E5%95%86%E8%BF%94%E5%88%A9%E5%85%91%E7%8E%B0%E6%A0%B8%E5%AF%B9/%E7%BB%8F%E9%94%80%E5%95%86%E8%BF%94%E5%88%A9%E5%85%91%E7%8E%B0%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-aa932da6c1b4bcb4",
+            "title": "客户背景调查与价值研判",
+            "locator": "【通用·销售】客户背景调查与价值研判/客户背景调查与价值研判.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%E8%83%8C%E6%99%AF%E8%B0%83%E6%9F%A5%E4%B8%8E%E4%BB%B7%E5%80%BC%E7%A0%94%E5%88%A4/%E5%AE%A2%E6%88%B7%E8%83%8C%E6%99%AF%E8%B0%83%E6%9F%A5%E4%B8%8E%E4%BB%B7%E5%80%BC%E7%A0%94%E5%88%A4.md"
+          },
+          {
+            "id": "source-catalog-b7e4b9f8d5dad077",
+            "title": "客户对账差异逐笔排查",
+            "locator": "【通用·销售】客户对账差异逐笔排查/客户对账差异逐笔排查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E9%80%90%E7%AC%94%E6%8E%92%E6%9F%A5/%E5%AE%A2%E6%88%B7%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E9%80%90%E7%AC%94%E6%8E%92%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-7fe2feede1b0f318",
+            "title": "客户额度占用与超限发货预警",
+            "locator": "【通用·销售】客户额度占用与超限发货预警/客户额度占用与超限发货预警.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%E9%A2%9D%E5%BA%A6%E5%8D%A0%E7%94%A8%E4%B8%8E%E8%B6%85%E9%99%90%E5%8F%91%E8%B4%A7%E9%A2%84%E8%AD%A6/%E5%AE%A2%E6%88%B7%E9%A2%9D%E5%BA%A6%E5%8D%A0%E7%94%A8%E4%B8%8E%E8%B6%85%E9%99%90%E5%8F%91%E8%B4%A7%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-f1c197854f60665d",
+            "title": "客户交接包",
+            "locator": "【通用·销售】客户交接包/客户交接包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%E4%BA%A4%E6%8E%A5%E5%8C%85/%E5%AE%A2%E6%88%B7%E4%BA%A4%E6%8E%A5%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-820b30dc8e128451",
+            "title": "客户首次联系开场白生成",
+            "locator": "【通用·销售】客户首次联系开场白生成/客户首次联系开场白生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%E9%A6%96%E6%AC%A1%E8%81%94%E7%B3%BB%E5%BC%80%E5%9C%BA%E7%99%BD%E7%94%9F%E6%88%90/%E5%AE%A2%E6%88%B7%E9%A6%96%E6%AC%A1%E8%81%94%E7%B3%BB%E5%BC%80%E5%9C%BA%E7%99%BD%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-4bbc52948a677b21",
+            "title": "客户信用速查卡",
+            "locator": "【通用·销售】客户信用速查卡/客户信用速查卡.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%E4%BF%A1%E7%94%A8%E9%80%9F%E6%9F%A5%E5%8D%A1/%E5%AE%A2%E6%88%B7%E4%BF%A1%E7%94%A8%E9%80%9F%E6%9F%A5%E5%8D%A1.md"
+          },
+          {
+            "id": "source-catalog-57faf61c2a7c30da",
+            "title": "历史报价归集与口径核对",
+            "locator": "【通用·销售】历史报价归集与口径核对/历史报价归集与口径核对.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%8E%86%E5%8F%B2%E6%8A%A5%E4%BB%B7%E5%BD%92%E9%9B%86%E4%B8%8E%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9/%E5%8E%86%E5%8F%B2%E6%8A%A5%E4%BB%B7%E5%BD%92%E9%9B%86%E4%B8%8E%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-11941d381ef27f25",
+            "title": "历史报价一致性与越权折扣核查",
+            "locator": "【通用·销售】历史报价一致性与越权折扣核查/历史报价一致性与越权折扣核查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%8E%86%E5%8F%B2%E6%8A%A5%E4%BB%B7%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E8%B6%8A%E6%9D%83%E6%8A%98%E6%89%A3%E6%A0%B8%E6%9F%A5/%E5%8E%86%E5%8F%B2%E6%8A%A5%E4%BB%B7%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E8%B6%8A%E6%9D%83%E6%8A%98%E6%89%A3%E6%A0%B8%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-b3ef6d56af77474c",
+            "title": "渠道价格体系一致性与窜货证据链",
+            "locator": "【通用·销售】渠道价格体系一致性与窜货证据链/渠道价格体系一致性与窜货证据链.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%B8%A0%E9%81%93%E4%BB%B7%E6%A0%BC%E4%BD%93%E7%B3%BB%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E7%AA%9C%E8%B4%A7%E8%AF%81%E6%8D%AE%E9%93%BE/%E6%B8%A0%E9%81%93%E4%BB%B7%E6%A0%BC%E4%BD%93%E7%B3%BB%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E7%AA%9C%E8%B4%A7%E8%AF%81%E6%8D%AE%E9%93%BE.md"
+          },
+          {
+            "id": "source-catalog-98a9ad183fc3c1ee",
+            "title": "商机健康度体检",
+            "locator": "【通用·销售】商机健康度体检/商机健康度体检.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%95%86%E6%9C%BA%E5%81%A5%E5%BA%B7%E5%BA%A6%E4%BD%93%E6%A3%80/%E5%95%86%E6%9C%BA%E5%81%A5%E5%BA%B7%E5%BA%A6%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-eb30e3dc0c56d152",
+            "title": "商务标废标项逐条自查",
+            "locator": "【通用·销售】商务标废标项逐条自查/商务标废标项逐条自查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%95%86%E5%8A%A1%E6%A0%87%E5%BA%9F%E6%A0%87%E9%A1%B9%E9%80%90%E6%9D%A1%E8%87%AA%E6%9F%A5/%E5%95%86%E5%8A%A1%E6%A0%87%E5%BA%9F%E6%A0%87%E9%A1%B9%E9%80%90%E6%9D%A1%E8%87%AA%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-5da168ed66683ee3",
+            "title": "停滞商机识别与唤醒清单",
+            "locator": "【通用·销售】停滞商机识别与唤醒清单/停滞商机识别与唤醒清单.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%81%9C%E6%BB%9E%E5%95%86%E6%9C%BA%E8%AF%86%E5%88%AB%E4%B8%8E%E5%94%A4%E9%86%92%E6%B8%85%E5%8D%95/%E5%81%9C%E6%BB%9E%E5%95%86%E6%9C%BA%E8%AF%86%E5%88%AB%E4%B8%8E%E5%94%A4%E9%86%92%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-4dc8f51cf900fa15",
+            "title": "投标废标体检",
+            "locator": "【通用·销售】投标废标体检/投标废标体检.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%95%E6%A0%87%E5%BA%9F%E6%A0%87%E4%BD%93%E6%A3%80/%E6%8A%95%E6%A0%87%E5%BA%9F%E6%A0%87%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-93824e5d240d4061",
+            "title": "投标资料一键组卷",
+            "locator": "【通用·销售】投标资料一键组卷/投标资料一键组卷.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%95%E6%A0%87%E8%B5%84%E6%96%99%E4%B8%80%E9%94%AE%E7%BB%84%E5%8D%B7/%E6%8A%95%E6%A0%87%E8%B5%84%E6%96%99%E4%B8%80%E9%94%AE%E7%BB%84%E5%8D%B7.md"
+          },
+          {
+            "id": "source-catalog-b8f0c3e9f9c07839",
+            "title": "投不投的可行性初筛",
+            "locator": "【通用·销售】投不投的可行性初筛/投不投的可行性初筛.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%95%E4%B8%8D%E6%8A%95%E7%9A%84%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%9D%E7%AD%9B/%E6%8A%95%E4%B8%8D%E6%8A%95%E7%9A%84%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%9D%E7%AD%9B.md"
+          },
+          {
+            "id": "source-catalog-3034bd624bae09e3",
+            "title": "需求澄清纪要",
+            "locator": "【通用·销售】需求澄清纪要/需求澄清纪要.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E9%9C%80%E6%B1%82%E6%BE%84%E6%B8%85%E7%BA%AA%E8%A6%81/%E9%9C%80%E6%B1%82%E6%BE%84%E6%B8%85%E7%BA%AA%E8%A6%81.md"
+          },
+          {
+            "id": "source-catalog-6fcf90aa634fe1c5",
+            "title": "逾期应收账龄分档与差异化催收方案",
+            "locator": "【通用·销售】逾期应收账龄分档与差异化催收方案/逾期应收账龄分档与差异化催收方案.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E9%80%BE%E6%9C%9F%E5%BA%94%E6%94%B6%E8%B4%A6%E9%BE%84%E5%88%86%E6%A1%A3%E4%B8%8E%E5%B7%AE%E5%BC%82%E5%8C%96%E5%82%AC%E6%94%B6%E6%96%B9%E6%A1%88/%E9%80%BE%E6%9C%9F%E5%BA%94%E6%94%B6%E8%B4%A6%E9%BE%84%E5%88%86%E6%A1%A3%E4%B8%8E%E5%B7%AE%E5%BC%82%E5%8C%96%E5%82%AC%E6%94%B6%E6%96%B9%E6%A1%88.md"
+          },
+          {
+            "id": "source-catalog-5f65bf0ca08ff7c9",
+            "title": "语音转结构化跟进记录",
+            "locator": "【通用·销售】语音转结构化跟进记录/语音转结构化跟进记录.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%AF%AD%E9%9F%B3%E8%BD%AC%E7%BB%93%E6%9E%84%E5%8C%96%E8%B7%9F%E8%BF%9B%E8%AE%B0%E5%BD%95/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E7%BB%93%E6%9E%84%E5%8C%96%E8%B7%9F%E8%BF%9B%E8%AE%B0%E5%BD%95.md"
+          },
+          {
+            "id": "source-catalog-8d0fa9abdc45ae57",
+            "title": "展会名片分级与跟进清单",
+            "locator": "【通用·销售】展会名片分级与跟进清单/展会名片分级与跟进清单.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%B1%95%E4%BC%9A%E5%90%8D%E7%89%87%E5%88%86%E7%BA%A7%E4%B8%8E%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95/%E5%B1%95%E4%BC%9A%E5%90%8D%E7%89%87%E5%88%86%E7%BA%A7%E4%B8%8E%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-f2491da5a05525e9",
+            "title": "招标文件实质性条款逐条清单化",
+            "locator": "【通用·销售】招标文件实质性条款逐条清单化/招标文件实质性条款逐条清单化.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8B%9B%E6%A0%87%E6%96%87%E4%BB%B6%E5%AE%9E%E8%B4%A8%E6%80%A7%E6%9D%A1%E6%AC%BE%E9%80%90%E6%9D%A1%E6%B8%85%E5%8D%95%E5%8C%96/%E6%8B%9B%E6%A0%87%E6%96%87%E4%BB%B6%E5%AE%9E%E8%B4%A8%E6%80%A7%E6%9D%A1%E6%AC%BE%E9%80%90%E6%9D%A1%E6%B8%85%E5%8D%95%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-a97de1a774570e0c",
+            "title": "招标文件智能解读",
+            "locator": "【通用·销售】招标文件智能解读/招标文件智能解读.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8B%9B%E6%A0%87%E6%96%87%E4%BB%B6%E6%99%BA%E8%83%BD%E8%A7%A3%E8%AF%BB/%E6%8B%9B%E6%A0%87%E6%96%87%E4%BB%B6%E6%99%BA%E8%83%BD%E8%A7%A3%E8%AF%BB.md"
+          },
+          {
+            "id": "source-catalog-e849986554f9e66f",
+            "title": "资质证书台账与到期预警",
+            "locator": "【通用·销售】资质证书台账与到期预警/资质证书台账与到期预警.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-11744d63e0b374e3",
+            "title": "留资线索清洗与分级",
+            "roles": "市场 · 销售",
+            "description": "表单里混着同行询价、学生调研、乱填的 139 手机号，原样交给销售群即埋下三方争议",
+            "source_refs": [
+              "source-catalog-11744d63e0b374e3"
+            ]
+          },
+          {
+            "id": "catalog-e39297c9b550e572",
+            "title": "拜访前作战简报",
+            "roles": "销售",
+            "description": "人站在客户公司门口，才开始翻找上次沟通记录，这是销售公认的最尴尬瞬间",
+            "source_refs": [
+              "source-catalog-e39297c9b550e572"
+            ]
+          },
+          {
+            "id": "catalog-6685642e79f34ebd",
+            "title": "报价测算表生成",
+            "roles": "销售",
+            "description": "报价单发出后石沉大海，客户财务一眼看出合价未对上，己方无人回头检查",
+            "source_refs": [
+              "source-catalog-6685642e79f34ebd"
+            ]
+          },
+          {
+            "id": "catalog-578de6ae174e3f6b",
+            "title": "丢单复盘归档",
+            "roles": "销售",
+            "description": "丢单复盘会只开半小时，结论是「客户预算不够」，随后所有人去忙下一单",
+            "source_refs": [
+              "source-catalog-578de6ae174e3f6b"
+            ]
+          },
+          {
+            "id": "catalog-77a6a141f3b94adf",
+            "title": "丢单复盘事实时间线重建",
+            "roles": "销售",
+            "description": "复盘结论三句话，报价太高、联系人离职、对手价格低，都是结论不是分析",
+            "source_refs": [
+              "source-catalog-77a6a141f3b94adf"
+            ]
+          },
+          {
+            "id": "catalog-eef38361b2af4d2a",
+            "title": "方案初稿组装（带出处）",
+            "roles": "销售",
+            "description": "AI 写的方案看着专业，客户技术负责人一问「这个参数哪来的」，全场安静",
+            "source_refs": [
+              "source-catalog-eef38361b2af4d2a"
+            ]
+          },
+          {
+            "id": "catalog-a806c45ca86fa176",
+            "title": "关联方串标风险自查",
+            "roles": "销售",
+            "description": "认定串标的依据已技术化到 IP 共现率，而几乎没有企业在投标前自查过",
+            "source_refs": [
+              "source-catalog-a806c45ca86fa176"
+            ]
+          },
+          {
+            "id": "catalog-ec22147c185583f2",
+            "title": "合同到期与续签盘点",
+            "roles": "销售",
+            "description": "制度写着提前三十天提醒续签，实际靠销售的记性",
+            "source_refs": [
+              "source-catalog-ec22147c185583f2"
+            ]
+          },
+          {
+            "id": "catalog-02ebea97fdb155dc",
+            "title": "合同评审跨部门资料一次性齐套",
+            "roles": "销售",
+            "description": "评审会开到一半，发现财务要的开票口径没人提供，于是散会下周再开",
+            "source_refs": [
+              "source-catalog-02ebea97fdb155dc"
+            ]
+          },
+          {
+            "id": "catalog-942930cfd5884813",
+            "title": "会议纪要整理与跟进提醒",
+            "roles": "销售",
+            "description": "会后纪要、CRM 跟进、待办和提醒要分头做，同一批信息整理三遍，藏在记录里的承诺还容易漏",
+            "source_refs": [
+              "source-catalog-942930cfd5884813"
+            ]
+          },
+          {
+            "id": "catalog-a0c884f04cd4a711",
+            "title": "获客信息录入及潜客推荐",
+            "roles": "销售",
+            "description": "展会回来一摞名单，整理费时、匹配度难判断、跟进顺序靠感觉，真正值得跟的客户可能被排在后面",
+            "source_refs": [
+              "source-catalog-a0c884f04cd4a711"
+            ]
+          },
+          {
+            "id": "catalog-a3a47df28788c39e",
+            "title": "经销商返利兑现核对",
+            "roles": "销售",
+            "description": "返利纠纷的争点全部是账对不上，而不是算不对",
+            "source_refs": [
+              "source-catalog-a3a47df28788c39e"
+            ]
+          },
+          {
+            "id": "catalog-aa932da6c1b4bcb4",
+            "title": "客户背景调查与价值研判",
+            "roles": "销售",
+            "description": "准备接触一家企业前，业务、规模、股东背景与近期动态散在各平台，同名主体还要反复核对，调查完也难判断值不值得投入",
+            "source_refs": [
+              "source-catalog-aa932da6c1b4bcb4"
+            ]
+          },
+          {
+            "id": "catalog-b7e4b9f8d5dad077",
+            "title": "客户对账差异逐笔排查",
+            "roles": "销售",
+            "description": "客户对账单与我方台账差 17 万，两边都说自己的账没错",
+            "source_refs": [
+              "source-catalog-b7e4b9f8d5dad077"
+            ]
+          },
+          {
+            "id": "catalog-7fe2feede1b0f318",
+            "title": "客户额度占用与超限发货预警",
+            "roles": "销售",
+            "description": "系统里能录信用额度，销售开单照样超限",
+            "source_refs": [
+              "source-catalog-7fe2feede1b0f318"
+            ]
+          },
+          {
+            "id": "catalog-f1c197854f60665d",
+            "title": "客户交接包",
+            "roles": "销售",
+            "description": "老销售离职带走的不只是人，还有 27 个客户八个月的记忆，接手人如同面对新客户",
+            "source_refs": [
+              "source-catalog-f1c197854f60665d"
+            ]
+          },
+          {
+            "id": "catalog-820b30dc8e128451",
+            "title": "客户首次联系开场白生成",
+            "roles": "销售",
+            "description": "有客户也有渠道，第一次联系却不知道拿哪条信息开口，容易变成堆产品功能、也没说清希望对方回什么",
+            "source_refs": [
+              "source-catalog-820b30dc8e128451"
+            ]
+          },
+          {
+            "id": "catalog-4bbc52948a677b21",
+            "title": "客户信用速查卡",
+            "roles": "销售",
+            "description": "新客户要下 87 万首单、账期 60 天，签约前无人核查，连企查查都没扫一眼",
+            "source_refs": [
+              "source-catalog-4bbc52948a677b21"
+            ]
+          },
+          {
+            "id": "catalog-57faf61c2a7c30da",
+            "title": "历史报价归集与口径核对",
+            "roles": "销售",
+            "description": "同一客户三个历史报价：152 万、158 万、149 万，口径各不相同，说不清到底降没降价",
+            "source_refs": [
+              "source-catalog-57faf61c2a7c30da"
+            ]
+          },
+          {
+            "id": "catalog-11941d381ef27f25",
+            "title": "历史报价一致性与越权折扣核查",
+            "roles": "销售",
+            "description": "折扣申请单上写的是客户要求，而这个客户上一单的折扣是多少，没人翻过",
+            "source_refs": [
+              "source-catalog-11941d381ef27f25"
+            ]
+          },
+          {
+            "id": "catalog-b3ef6d56af77474c",
+            "title": "渠道价格体系一致性与窜货证据链",
+            "roles": "销售",
+            "description": "合同里窜货定义只有一句话，取证标准和认定流程一个字都没写",
+            "source_refs": [
+              "source-catalog-b3ef6d56af77474c"
+            ]
+          },
+          {
+            "id": "catalog-98a9ad183fc3c1ee",
+            "title": "商机健康度体检",
+            "roles": "销售",
+            "description": "老板看漏斗觉得「我有很多潜在客户」，60% 的方案阶段商机已成僵尸，只是无人点破",
+            "source_refs": [
+              "source-catalog-98a9ad183fc3c1ee"
+            ]
+          },
+          {
+            "id": "catalog-eb30e3dc0c56d152",
+            "title": "商务标废标项逐条自查",
+            "roles": "销售",
+            "description": "标书做了两周，而废标事由通报里的条目，没有一条需要专业判断",
+            "source_refs": [
+              "source-catalog-eb30e3dc0c56d152"
+            ]
+          },
+          {
+            "id": "catalog-5da168ed66683ee3",
+            "title": "停滞商机识别与唤醒清单",
+            "roles": "销售",
+            "description": "Pipeline 上写着推进中，最后一次实质互动是四个半月前",
+            "source_refs": [
+              "source-catalog-5da168ed66683ee3"
+            ]
+          },
+          {
+            "id": "catalog-4dc8f51cf900fa15",
+            "title": "投标废标体检",
+            "roles": "销售",
+            "description": "标书改到凌晨三点，开标现场念出的废标原因只有一行字，且与竞争对手无关",
+            "source_refs": [
+              "source-catalog-4dc8f51cf900fa15"
+            ]
+          },
+          {
+            "id": "catalog-93824e5d240d4061",
+            "title": "投标资料一键组卷",
+            "roles": "销售",
+            "description": "投标资料总在截止前临时拼凑，商务、销售、技术、财务、法务在微信群里接力找文件",
+            "source_refs": [
+              "source-catalog-93824e5d240d4061"
+            ]
+          },
+          {
+            "id": "catalog-b8f0c3e9f9c07839",
+            "title": "投不投的可行性初筛",
+            "roles": "销售",
+            "description": "中标率不到三成，但每个标都投的隐性成本没人算过",
+            "source_refs": [
+              "source-catalog-b8f0c3e9f9c07839"
+            ]
+          },
+          {
+            "id": "catalog-3034bd624bae09e3",
+            "title": "需求澄清纪要",
+            "roles": "销售",
+            "description": "销售与客户聊了两小时，传给售前的需求只有微信里一句「他们要上自动线，出个方案」",
+            "source_refs": [
+              "source-catalog-3034bd624bae09e3"
+            ]
+          },
+          {
+            "id": "catalog-6fcf90aa634fe1c5",
+            "title": "逾期应收账龄分档与差异化催收方案",
+            "roles": "销售",
+            "description": "账龄表每月都做，诉讼时效那一栏从来没人填",
+            "source_refs": [
+              "source-catalog-6fcf90aa634fe1c5"
+            ]
+          },
+          {
+            "id": "catalog-5f65bf0ca08ff7c9",
+            "title": "语音转结构化跟进记录",
+            "roles": "销售",
+            "description": "周一例会要复盘，CRM 数据全靠临时编，真实跟进过程留在销售的语音里，无人归档",
+            "source_refs": [
+              "source-catalog-5f65bf0ca08ff7c9"
+            ]
+          },
+          {
+            "id": "catalog-8d0fa9abdc45ae57",
+            "title": "展会名片分级与跟进清单",
+            "roles": "销售",
+            "description": "展会收了 86 张名片，三周后仍留在抽屉里，A 级客户已被对手跟进两轮",
+            "source_refs": [
+              "source-catalog-8d0fa9abdc45ae57"
+            ]
+          },
+          {
+            "id": "catalog-f2491da5a05525e9",
+            "title": "招标文件实质性条款逐条清单化",
+            "roles": "销售",
+            "description": "一百多页招标文件，星号散落在四个章节，漏掉一条不给澄清机会，直接废标",
+            "source_refs": [
+              "source-catalog-f2491da5a05525e9"
+            ]
+          },
+          {
+            "id": "catalog-a97de1a774570e0c",
+            "title": "招标文件智能解读",
+            "roles": "销售",
+            "description": "287 页招标文件无人通读，每人只翻自己要看的几页，废标条款藏在没人看的那页",
+            "source_refs": [
+              "source-catalog-a97de1a774570e0c"
+            ]
+          },
+          {
+            "id": "catalog-e849986554f9e66f",
+            "title": "资质证书台账与到期预警",
+            "roles": "销售",
+            "description": "资质证书散落在三个抽屉和四个人电脑里，直到招标公告要求，才发现已过期 22 天",
+            "source_refs": [
+              "source-catalog-e849986554f9e66f"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-942930cfd5884813"
+              ]
+            },
+            "label": "沟通记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "销售跟进提醒",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-11744d63e0b374e3",
+          "catalog-e39297c9b550e572",
+          "catalog-6685642e79f34ebd",
+          "catalog-578de6ae174e3f6b",
+          "catalog-77a6a141f3b94adf",
+          "catalog-eef38361b2af4d2a",
+          "catalog-a806c45ca86fa176",
+          "catalog-ec22147c185583f2",
+          "catalog-02ebea97fdb155dc",
+          "catalog-942930cfd5884813",
+          "catalog-a0c884f04cd4a711",
+          "catalog-a3a47df28788c39e",
+          "catalog-aa932da6c1b4bcb4",
+          "catalog-b7e4b9f8d5dad077",
+          "catalog-7fe2feede1b0f318",
+          "catalog-f1c197854f60665d",
+          "catalog-820b30dc8e128451",
+          "catalog-4bbc52948a677b21",
+          "catalog-57faf61c2a7c30da",
+          "catalog-11941d381ef27f25",
+          "catalog-b3ef6d56af77474c",
+          "catalog-98a9ad183fc3c1ee",
+          "catalog-eb30e3dc0c56d152",
+          "catalog-5da168ed66683ee3",
+          "catalog-4dc8f51cf900fa15",
+          "catalog-93824e5d240d4061",
+          "catalog-b8f0c3e9f9c07839",
+          "catalog-3034bd624bae09e3",
+          "catalog-6fcf90aa634fe1c5",
+          "catalog-5f65bf0ca08ff7c9",
+          "catalog-8d0fa9abdc45ae57",
+          "catalog-f2491da5a05525e9",
+          "catalog-a97de1a774570e0c",
+          "catalog-e849986554f9e66f"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "market",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "市场与活动",
+      "description": "市场整理活动背景和受众，形成策划案草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "市场",
+            "source_refs": [
+              "source-catalog-77b541d96ad56593"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理活动背景和受众",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-77b541d96ad56593"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "活动资料",
+            "source_refs": [
+              "source-catalog-77b541d96ad56593"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "策划案草稿",
+            "source_refs": [
+              "source-catalog-77b541d96ad56593"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-b1223416d2935770",
+            "title": "白皮书初稿框架（数据位标注）",
+            "locator": "【通用·市场】白皮书初稿框架（数据位标注）/白皮书初稿框架（数据位标注）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%99%BD%E7%9A%AE%E4%B9%A6%E5%88%9D%E7%A8%BF%E6%A1%86%E6%9E%B6%EF%BC%88%E6%95%B0%E6%8D%AE%E4%BD%8D%E6%A0%87%E6%B3%A8%EF%BC%89/%E7%99%BD%E7%9A%AE%E4%B9%A6%E5%88%9D%E7%A8%BF%E6%A1%86%E6%9E%B6%EF%BC%88%E6%95%B0%E6%8D%AE%E4%BD%8D%E6%A0%87%E6%B3%A8%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-c332e27636437ea2",
+            "title": "广告法极限词发布前自查",
+            "locator": "【通用·市场】广告法极限词发布前自查/广告法极限词发布前自查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%B9%BF%E5%91%8A%E6%B3%95%E6%9E%81%E9%99%90%E8%AF%8D%E5%8F%91%E5%B8%83%E5%89%8D%E8%87%AA%E6%9F%A5/%E5%B9%BF%E5%91%8A%E6%B3%95%E6%9E%81%E9%99%90%E8%AF%8D%E5%8F%91%E5%B8%83%E5%89%8D%E8%87%AA%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-77b541d96ad56593",
+            "title": "活动策划案初稿",
+            "locator": "【通用·市场】活动策划案初稿/活动策划案初稿.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92%E6%A1%88%E5%88%9D%E7%A8%BF/%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92%E6%A1%88%E5%88%9D%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-7dc2e47fee237d46",
+            "title": "活动预算表与对账",
+            "locator": "【通用·市场】活动预算表与对账/活动预算表与对账.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%B4%BB%E5%8A%A8%E9%A2%84%E7%AE%97%E8%A1%A8%E4%B8%8E%E5%AF%B9%E8%B4%A6/%E6%B4%BB%E5%8A%A8%E9%A2%84%E7%AE%97%E8%A1%A8%E4%B8%8E%E5%AF%B9%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-aa62c6199a91c87b",
+            "title": "竞品动态周报",
+            "locator": "【通用·市场】竞品动态周报/竞品动态周报.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%AB%9E%E5%93%81%E5%8A%A8%E6%80%81%E5%91%A8%E6%8A%A5/%E7%AB%9E%E5%93%81%E5%8A%A8%E6%80%81%E5%91%A8%E6%8A%A5.md"
+          },
+          {
+            "id": "source-catalog-405e966a428591ac",
+            "title": "竞品分析报告（突击版）",
+            "locator": "【通用·市场】竞品分析报告（突击版）/竞品分析报告（突击版）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%EF%BC%88%E7%AA%81%E5%87%BB%E7%89%88%EF%BC%89/%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%EF%BC%88%E7%AA%81%E5%87%BB%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-f3e24c8d778c2f98",
+            "title": "内容选题库周更",
+            "locator": "【通用·市场】内容选题库周更/内容选题库周更.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%86%85%E5%AE%B9%E9%80%89%E9%A2%98%E5%BA%93%E5%91%A8%E6%9B%B4/%E5%86%85%E5%AE%B9%E9%80%89%E9%A2%98%E5%BA%93%E5%91%A8%E6%9B%B4.md"
+          },
+          {
+            "id": "source-catalog-e319acf3099bfaec",
+            "title": "投放周报与异常拦截",
+            "locator": "【通用·市场】投放周报与异常拦截/投放周报与异常拦截.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%8A%95%E6%94%BE%E5%91%A8%E6%8A%A5%E4%B8%8E%E5%BC%82%E5%B8%B8%E6%8B%A6%E6%88%AA/%E6%8A%95%E6%94%BE%E5%91%A8%E6%8A%A5%E4%B8%8E%E5%BC%82%E5%B8%B8%E6%8B%A6%E6%88%AA.md"
+          },
+          {
+            "id": "source-catalog-92bb919f837907f1",
+            "title": "线索交接表（挡锅凭证）",
+            "locator": "【通用·市场】线索交接表（挡锅凭证）/线索交接表（挡锅凭证）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%BA%BF%E7%B4%A2%E4%BA%A4%E6%8E%A5%E8%A1%A8%EF%BC%88%E6%8C%A1%E9%94%85%E5%87%AD%E8%AF%81%EF%BC%89/%E7%BA%BF%E7%B4%A2%E4%BA%A4%E6%8E%A5%E8%A1%A8%EF%BC%88%E6%8C%A1%E9%94%85%E5%87%AD%E8%AF%81%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-533e299a65c7813c",
+            "title": "已发布内容数据引用溯源核对",
+            "locator": "【通用·市场】已发布内容数据引用溯源核对/已发布内容数据引用溯源核对.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%B7%B2%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9%E6%95%B0%E6%8D%AE%E5%BC%95%E7%94%A8%E6%BA%AF%E6%BA%90%E6%A0%B8%E5%AF%B9/%E5%B7%B2%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9%E6%95%B0%E6%8D%AE%E5%BC%95%E7%94%A8%E6%BA%AF%E6%BA%90%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-480707b8c93c5fef",
+            "title": "月度市场报表五指标一页纸",
+            "locator": "【通用·市场】月度市场报表五指标一页纸/月度市场报表五指标一页纸.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%9C%88%E5%BA%A6%E5%B8%82%E5%9C%BA%E6%8A%A5%E8%A1%A8%E4%BA%94%E6%8C%87%E6%A0%87%E4%B8%80%E9%A1%B5%E7%BA%B8/%E6%9C%88%E5%BA%A6%E5%B8%82%E5%9C%BA%E6%8A%A5%E8%A1%A8%E4%BA%94%E6%8C%87%E6%A0%87%E4%B8%80%E9%A1%B5%E7%BA%B8.md"
+          },
+          {
+            "id": "source-catalog-fbc547addd7c7f36",
+            "title": "展会 ROI 复盘表",
+            "locator": "【通用·市场】展会 ROI 复盘表/展会 ROI 复盘表.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%B1%95%E4%BC%9A%20ROI%20%E5%A4%8D%E7%9B%98%E8%A1%A8/%E5%B1%95%E4%BC%9A%20ROI%20%E5%A4%8D%E7%9B%98%E8%A1%A8.md"
+          },
+          {
+            "id": "source-catalog-ca2632334e18ac03",
+            "title": "KOL 与媒体资源库结构化",
+            "locator": "【通用·市场】KOL 与媒体资源库结构化/KOL 与媒体资源库结构化.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91KOL%20%E4%B8%8E%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90%E5%BA%93%E7%BB%93%E6%9E%84%E5%8C%96/KOL%20%E4%B8%8E%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90%E5%BA%93%E7%BB%93%E6%9E%84%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-2278697d560ac17d",
+            "title": "SEM 否词建议清单",
+            "locator": "【通用·市场】SEM 否词建议清单/SEM 否词建议清单.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91SEM%20%E5%90%A6%E8%AF%8D%E5%BB%BA%E8%AE%AE%E6%B8%85%E5%8D%95/SEM%20%E5%90%A6%E8%AF%8D%E5%BB%BA%E8%AE%AE%E6%B8%85%E5%8D%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-b1223416d2935770",
+            "title": "白皮书初稿框架（数据位标注）",
+            "roles": "市场",
+            "description": "AI 代写的白皮书数据看似漂亮，展会现场被同行指出「增长率是编的」，场面难堪",
+            "source_refs": [
+              "source-catalog-b1223416d2935770"
+            ]
+          },
+          {
+            "id": "catalog-c332e27636437ea2",
+            "title": "广告法极限词发布前自查",
+            "roles": "市场",
+            "description": "官网使用「行业首选」「最先进的算法」等绝对化用语，市场部全年预算 3 万，罚单起步价 20 万",
+            "source_refs": [
+              "source-catalog-c332e27636437ea2"
+            ]
+          },
+          {
+            "id": "catalog-77b541d96ad56593",
+            "title": "活动策划案初稿",
+            "roles": "市场",
+            "description": "需要一份「能上会」的沙龙策划案，上次提交的版本被批「这不是方案，这是想法」",
+            "source_refs": [
+              "source-catalog-77b541d96ad56593"
+            ]
+          },
+          {
+            "id": "catalog-7dc2e47fee237d46",
+            "title": "活动预算表与对账",
+            "roles": "市场",
+            "description": "预算 17.2 万、实际支出 18.6 万，超支 1.4 万中，9 千为特装加急、5 千为当天临时印刷",
+            "source_refs": [
+              "source-catalog-7dc2e47fee237d46"
+            ]
+          },
+          {
+            "id": "catalog-aa62c6199a91c87b",
+            "title": "竞品动态周报",
+            "roles": "市场",
+            "description": "威镌数控上周三官降 8%，市场部周六经朋友圈得知，管理层周一从客户处听闻",
+            "source_refs": [
+              "source-catalog-aa62c6199a91c87b"
+            ]
+          },
+          {
+            "id": "catalog-405e966a428591ac",
+            "title": "竞品分析报告（突击版）",
+            "roles": "市场",
+            "description": "晚上 9 点收到指令：明早见华数，2 小时内交竞品分析，手上只有几张截图",
+            "source_refs": [
+              "source-catalog-405e966a428591ac"
+            ]
+          },
+          {
+            "id": "catalog-f3e24c8d778c2f98",
+            "title": "内容选题库周更",
+            "roles": "市场",
+            "description": "选题会常开成沉默会，「这周写什么」的答案永远是参考同行",
+            "source_refs": [
+              "source-catalog-f3e24c8d778c2f98"
+            ]
+          },
+          {
+            "id": "catalog-e319acf3099bfaec",
+            "title": "投放周报与异常拦截",
+            "roles": "市场",
+            "description": "SEM 默认周报只有「消耗 5,200 元」，老板看得到消耗，看不到 1,733 元的单条线索成本",
+            "source_refs": [
+              "source-catalog-e319acf3099bfaec"
+            ]
+          },
+          {
+            "id": "catalog-92bb919f837907f1",
+            "title": "线索交接表（挡锅凭证）",
+            "roles": "市场",
+            "description": "市场说销售跟进率不到 50%，销售说线索全是垃圾，交接一刻，责任已界定不清",
+            "source_refs": [
+              "source-catalog-92bb919f837907f1"
+            ]
+          },
+          {
+            "id": "catalog-533e299a65c7813c",
+            "title": "已发布内容数据引用溯源核对",
+            "roles": "市场",
+            "description": "公众号两年引用 96 个数据，无一核对过原始出处",
+            "source_refs": [
+              "source-catalog-533e299a65c7813c"
+            ]
+          },
+          {
+            "id": "catalog-480707b8c93c5fef",
+            "title": "月度市场报表五指标一页纸",
+            "roles": "市场",
+            "description": "月报做了 12 页 PPT，管理层翻到第三页就追问线索数，注意力只有 90 秒",
+            "source_refs": [
+              "source-catalog-480707b8c93c5fef"
+            ]
+          },
+          {
+            "id": "catalog-fbc547addd7c7f36",
+            "title": "展会 ROI 复盘表",
+            "roles": "市场",
+            "description": "展会投入 18.6 万，复盘结论只有「品牌得到了曝光」，明年 32 万展位预订通知已至",
+            "source_refs": [
+              "source-catalog-fbc547addd7c7f36"
+            ]
+          },
+          {
+            "id": "catalog-ca2632334e18ac03",
+            "title": "KOL 与媒体资源库结构化",
+            "roles": "市场",
+            "description": "同一行业 KOL 上次合作 8 千、这次报价 2 万，缺乏历史记录的企业在谈判中处于裸奔状态",
+            "source_refs": [
+              "source-catalog-ca2632334e18ac03"
+            ]
+          },
+          {
+            "id": "catalog-2278697d560ac17d",
+            "title": "SEM 否词建议清单",
+            "roles": "市场",
+            "description": "账户搭建时加过一次否词，两年来搜索词报告再无人打开过",
+            "source_refs": [
+              "source-catalog-2278697d560ac17d"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-77b541d96ad56593"
+              ]
+            },
+            "label": "活动资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "策划案草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-b1223416d2935770",
+          "catalog-c332e27636437ea2",
+          "catalog-77b541d96ad56593",
+          "catalog-7dc2e47fee237d46",
+          "catalog-aa62c6199a91c87b",
+          "catalog-405e966a428591ac",
+          "catalog-f3e24c8d778c2f98",
+          "catalog-e319acf3099bfaec",
+          "catalog-92bb919f837907f1",
+          "catalog-533e299a65c7813c",
+          "catalog-480707b8c93c5fef",
+          "catalog-fbc547addd7c7f36",
+          "catalog-ca2632334e18ac03",
+          "catalog-2278697d560ac17d"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "product",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "产品与需求",
+      "description": "产品核对变更及确认信息，形成需求变更台账。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "产品",
+            "source_refs": [
+              "source-catalog-b7ac58b1556f94b5"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对变更及确认信息",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b7ac58b1556f94b5"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "需求与变更记录",
+            "source_refs": [
+              "source-catalog-b7ac58b1556f94b5"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "需求变更台账",
+            "source_refs": [
+              "source-catalog-b7ac58b1556f94b5"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-58f811be144f6aeb",
+            "title": "定制工时与毛利台账",
+            "locator": "【通用·产品】定制工时与毛利台账/定制工时与毛利台账.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E5%AE%9A%E5%88%B6%E5%B7%A5%E6%97%B6%E4%B8%8E%E6%AF%9B%E5%88%A9%E5%8F%B0%E8%B4%A6/%E5%AE%9A%E5%88%B6%E5%B7%A5%E6%97%B6%E4%B8%8E%E6%AF%9B%E5%88%A9%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-9b550d3433587b18",
+            "title": "多渠道需求归集结构化",
+            "locator": "【通用·产品】多渠道需求归集结构化/多渠道需求归集结构化.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E5%A4%9A%E6%B8%A0%E9%81%93%E9%9C%80%E6%B1%82%E5%BD%92%E9%9B%86%E7%BB%93%E6%9E%84%E5%8C%96/%E5%A4%9A%E6%B8%A0%E9%81%93%E9%9C%80%E6%B1%82%E5%BD%92%E9%9B%86%E7%BB%93%E6%9E%84%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-ef280b16feaee923",
+            "title": "发布检查清单执行留痕",
+            "locator": "【通用·产品】发布检查清单执行留痕/发布检查清单执行留痕.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E5%8F%91%E5%B8%83%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95%E6%89%A7%E8%A1%8C%E7%95%99%E7%97%95/%E5%8F%91%E5%B8%83%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95%E6%89%A7%E8%A1%8C%E7%95%99%E7%97%95.md"
+          },
+          {
+            "id": "source-catalog-ab720ed30aa800d5",
+            "title": "客服工单全量聚类",
+            "locator": "【通用·产品】客服工单全量聚类/客服工单全量聚类.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E5%AE%A2%E6%9C%8D%E5%B7%A5%E5%8D%95%E5%85%A8%E9%87%8F%E8%81%9A%E7%B1%BB/%E5%AE%A2%E6%9C%8D%E5%B7%A5%E5%8D%95%E5%85%A8%E9%87%8F%E8%81%9A%E7%B1%BB.md"
+          },
+          {
+            "id": "source-catalog-a954e4221a152935",
+            "title": "客户承诺台账",
+            "locator": "【通用·产品】客户承诺台账/客户承诺台账.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E5%AE%A2%E6%88%B7%E6%89%BF%E8%AF%BA%E5%8F%B0%E8%B4%A6/%E5%AE%A2%E6%88%B7%E6%89%BF%E8%AF%BA%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-539dcdbc83263094",
+            "title": "老板口头指示翻译",
+            "locator": "【通用·产品】老板口头指示翻译/老板口头指示翻译.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E8%80%81%E6%9D%BF%E5%8F%A3%E5%A4%B4%E6%8C%87%E7%A4%BA%E7%BF%BB%E8%AF%91/%E8%80%81%E6%9D%BF%E5%8F%A3%E5%A4%B4%E6%8C%87%E7%A4%BA%E7%BF%BB%E8%AF%91.md"
+          },
+          {
+            "id": "source-catalog-22c27eaa1c1b4d39",
+            "title": "评审材料自动凑齐",
+            "locator": "【通用·产品】评审材料自动凑齐/评审材料自动凑齐.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E8%AF%84%E5%AE%A1%E6%9D%90%E6%96%99%E8%87%AA%E5%8A%A8%E5%87%91%E9%BD%90/%E8%AF%84%E5%AE%A1%E6%9D%90%E6%96%99%E8%87%AA%E5%8A%A8%E5%87%91%E9%BD%90.md"
+          },
+          {
+            "id": "source-catalog-a81d6b4edaaa4a53",
+            "title": "评审决议与待办登记",
+            "locator": "【通用·产品】评审决议与待办登记/评审决议与待办登记.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E8%AF%84%E5%AE%A1%E5%86%B3%E8%AE%AE%E4%B8%8E%E5%BE%85%E5%8A%9E%E7%99%BB%E8%AE%B0/%E8%AF%84%E5%AE%A1%E5%86%B3%E8%AE%AE%E4%B8%8E%E5%BE%85%E5%8A%9E%E7%99%BB%E8%AE%B0.md"
+          },
+          {
+            "id": "source-catalog-c36502cc8f23875b",
+            "title": "事故复盘初稿",
+            "locator": "【通用·产品】事故复盘初稿/事故复盘初稿.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E4%BA%8B%E6%95%85%E5%A4%8D%E7%9B%98%E5%88%9D%E7%A8%BF/%E4%BA%8B%E6%95%85%E5%A4%8D%E7%9B%98%E5%88%9D%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-b7ac58b1556f94b5",
+            "title": "需求变更留档登记",
+            "locator": "【通用·产品】需求变更留档登记/需求变更留档登记.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%9C%80%E6%B1%82%E5%8F%98%E6%9B%B4%E7%95%99%E6%A1%A3%E7%99%BB%E8%AE%B0/%E9%9C%80%E6%B1%82%E5%8F%98%E6%9B%B4%E7%95%99%E6%A1%A3%E7%99%BB%E8%AE%B0.md"
+          },
+          {
+            "id": "source-catalog-a37779344d480ebd",
+            "title": "需求池清淤体检",
+            "locator": "【通用·产品】需求池清淤体检/需求池清淤体检.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%9C%80%E6%B1%82%E6%B1%A0%E6%B8%85%E6%B7%A4%E4%BD%93%E6%A3%80/%E9%9C%80%E6%B1%82%E6%B1%A0%E6%B8%85%E6%B7%A4%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-153409e0255381d5",
+            "title": "需求来源回溯档案",
+            "locator": "【通用·产品】需求来源回溯档案/需求来源回溯档案.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%9C%80%E6%B1%82%E6%9D%A5%E6%BA%90%E5%9B%9E%E6%BA%AF%E6%A1%A3%E6%A1%88/%E9%9C%80%E6%B1%82%E6%9D%A5%E6%BA%90%E5%9B%9E%E6%BA%AF%E6%A1%A3%E6%A1%88.md"
+          },
+          {
+            "id": "source-catalog-6434ca637b2200c1",
+            "title": "验收测试用例生成",
+            "locator": "【通用·产品】验收测试用例生成/验收测试用例生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%AA%8C%E6%94%B6%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%94%9F%E6%88%90/%E9%AA%8C%E6%94%B6%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-7c48b0c3ea2e756a",
+            "title": "PRD 评审前找茬预演",
+            "locator": "【通用·产品】PRD 评审前找茬预演/PRD 评审前找茬预演.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91PRD%20%E8%AF%84%E5%AE%A1%E5%89%8D%E6%89%BE%E8%8C%AC%E9%A2%84%E6%BC%94/PRD%20%E8%AF%84%E5%AE%A1%E5%89%8D%E6%89%BE%E8%8C%AC%E9%A2%84%E6%BC%94.md"
+          },
+          {
+            "id": "source-catalog-ec562ff81b1b3b70",
+            "title": "PRD 一致性终审",
+            "locator": "【通用·产品】PRD 一致性终审/PRD 一致性终审.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E4%BA%A7%E5%93%81%E3%80%91PRD%20%E4%B8%80%E8%87%B4%E6%80%A7%E7%BB%88%E5%AE%A1/PRD%20%E4%B8%80%E8%87%B4%E6%80%A7%E7%BB%88%E5%AE%A1.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-58f811be144f6aeb",
+            "title": "定制工时与毛利台账",
+            "roles": "产品",
+            "description": "定制工时占研发 39%、毛利掉到 58%，低于投资人 65% 警戒线，这笔账多数中小 SaaS 从未算过",
+            "source_refs": [
+              "source-catalog-58f811be144f6aeb"
+            ]
+          },
+          {
+            "id": "catalog-9b550d3433587b18",
+            "title": "多渠道需求归集结构化",
+            "roles": "产品",
+            "description": "同一「导出」需求散在销售微信、客服工单、客户邮件、老板语音六处，需求池里始终没有它",
+            "source_refs": [
+              "source-catalog-9b550d3433587b18"
+            ]
+          },
+          {
+            "id": "catalog-ef280b16feaee923",
+            "title": "发布检查清单执行留痕",
+            "roles": "产品",
+            "description": "上次事故复盘第一条就是回滚预案缺失，检查清单的价值不在列出，在逐项核过并留痕",
+            "source_refs": [
+              "source-catalog-ef280b16feaee923"
+            ]
+          },
+          {
+            "id": "catalog-ab720ed30aa800d5",
+            "title": "客服工单全量聚类",
+            "roles": "产品",
+            "description": "人工质检只能抽检 1%-2% 的会话，「报表与导出」168 条工单聚成主题，对应需求去年已被拒",
+            "source_refs": [
+              "source-catalog-ab720ed30aa800d5"
+            ]
+          },
+          {
+            "id": "catalog-a954e4221a152935",
+            "title": "客户承诺台账",
+            "roles": "产品",
+            "description": "销售答应客户的「Q3 一定上」产品侧从未看见，承诺散落销售微信，是续约纠纷之源",
+            "source_refs": [
+              "source-catalog-a954e4221a152935"
+            ]
+          },
+          {
+            "id": "catalog-539dcdbc83263094",
+            "title": "老板口头指示翻译",
+            "roles": "产品",
+            "description": "老板周日晚上 60 秒语音要求加导出，翻译成需求卡需原话留档、结构化与澄清问题三步",
+            "source_refs": [
+              "source-catalog-539dcdbc83263094"
+            ]
+          },
+          {
+            "id": "catalog-22c27eaa1c1b4d39",
+            "title": "评审材料自动凑齐",
+            "roles": "产品",
+            "description": "评审会前一小时还在找需求是谁提的，证据没带齐，每个答不上的问题都是减分",
+            "source_refs": [
+              "source-catalog-22c27eaa1c1b4d39"
+            ]
+          },
+          {
+            "id": "catalog-a81d6b4edaaa4a53",
+            "title": "评审决议与待办登记",
+            "roles": "产品",
+            "description": "评审会开完，决议散在三个人各自的记忆里，一个月后挂起约定无从查证",
+            "source_refs": [
+              "source-catalog-a81d6b4edaaa4a53"
+            ]
+          },
+          {
+            "id": "catalog-c36502cc8f23875b",
+            "title": "事故复盘初稿",
+            "roles": "产品",
+            "description": "事故复盘停在「下次注意」，三个月后同类事故重演，复盘价值在改进项闭环，初稿是起点",
+            "source_refs": [
+              "source-catalog-c36502cc8f23875b"
+            ]
+          },
+          {
+            "id": "catalog-b7ac58b1556f94b5",
+            "title": "需求变更留档登记",
+            "roles": "产品",
+            "description": "项目后期搞不清哪些需求已满足、哪次变更谁批的，口头变更禁令靠人执行从未奏效",
+            "source_refs": [
+              "source-catalog-b7ac58b1556f94b5"
+            ]
+          },
+          {
+            "id": "catalog-a37779344d480ebd",
+            "title": "需求池清淤体检",
+            "roles": "产品",
+            "description": "需求池 427 条，近半年动过的不足三分之一，进来的没人清、历史需求没人敢删",
+            "source_refs": [
+              "source-catalog-a37779344d480ebd"
+            ]
+          },
+          {
+            "id": "catalog-153409e0255381d5",
+            "title": "需求来源回溯档案",
+            "roles": "产品",
+            "description": "老板会上追问某需求后续进展，无回溯档案时，每次都要翻聊天记录考古半天",
+            "source_refs": [
+              "source-catalog-153409e0255381d5"
+            ]
+          },
+          {
+            "id": "catalog-6434ca637b2200c1",
+            "title": "验收测试用例生成",
+            "roles": "产品",
+            "description": "没有专职测试，验收靠产品经理拿自己手机点一遍，「感觉没问题」是唯一测试报告",
+            "source_refs": [
+              "source-catalog-6434ca637b2200c1"
+            ]
+          },
+          {
+            "id": "catalog-7c48b0c3ea2e756a",
+            "title": "PRD 评审前找茬预演",
+            "roles": "产品",
+            "description": "评审会上研发才问「两个状态同时触发怎么办」，这类问题应在评审前一天暴露",
+            "source_refs": [
+              "source-catalog-7c48b0c3ea2e756a"
+            ]
+          },
+          {
+            "id": "catalog-ec562ff81b1b3b70",
+            "title": "PRD 一致性终审",
+            "roles": "产品",
+            "description": "「本期不做」写进范围声明，正文却详述其交互，研发按正文实现，范围争议回到产品",
+            "source_refs": [
+              "source-catalog-ec562ff81b1b3b70"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b7ac58b1556f94b5"
+              ]
+            },
+            "label": "需求与变更记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "需求变更台账",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-58f811be144f6aeb",
+          "catalog-9b550d3433587b18",
+          "catalog-ef280b16feaee923",
+          "catalog-ab720ed30aa800d5",
+          "catalog-a954e4221a152935",
+          "catalog-539dcdbc83263094",
+          "catalog-22c27eaa1c1b4d39",
+          "catalog-a81d6b4edaaa4a53",
+          "catalog-c36502cc8f23875b",
+          "catalog-b7ac58b1556f94b5",
+          "catalog-a37779344d480ebd",
+          "catalog-153409e0255381d5",
+          "catalog-6434ca637b2200c1",
+          "catalog-7c48b0c3ea2e756a",
+          "catalog-ec562ff81b1b3b70"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "legal",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "合同、法务与风险",
+      "description": "销售逐条比对合同与模板，形成条款偏离清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "销售",
+            "source_refs": [
+              "source-catalog-012d366c6839f406"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "逐条比对合同与模板",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-012d366c6839f406"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "合同文本与标准模板",
+            "source_refs": [
+              "source-catalog-012d366c6839f406"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "条款偏离清单",
+            "source_refs": [
+              "source-catalog-012d366c6839f406"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-793759c42a5193f8",
+            "title": "应收账龄三色与催收动作台账",
+            "locator": "【通用·财务·法务】应收账龄三色与催收动作台账/应收账龄三色与催收动作台账.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E9%BE%84%E4%B8%89%E8%89%B2%E4%B8%8E%E5%82%AC%E6%94%B6%E5%8A%A8%E4%BD%9C%E5%8F%B0%E8%B4%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E9%BE%84%E4%B8%89%E8%89%B2%E4%B8%8E%E5%82%AC%E6%94%B6%E5%8A%A8%E4%BD%9C%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-0b4d0a73a3b95375",
+            "title": "催款函草稿（企业公章版）",
+            "locator": "【通用·法务】催款函草稿（企业公章版）/催款函草稿（企业公章版）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%82%AC%E6%AC%BE%E5%87%BD%E8%8D%89%E7%A8%BF%EF%BC%88%E4%BC%81%E4%B8%9A%E5%85%AC%E7%AB%A0%E7%89%88%EF%BC%89/%E5%82%AC%E6%AC%BE%E5%87%BD%E8%8D%89%E7%A8%BF%EF%BC%88%E4%BC%81%E4%B8%9A%E5%85%AC%E7%AB%A0%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-2a9441fdef4a29c1",
+            "title": "催收证据链完整性体检",
+            "locator": "【通用·法务】催收证据链完整性体检/催收证据链完整性体检.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%82%AC%E6%94%B6%E8%AF%81%E6%8D%AE%E9%93%BE%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BD%93%E6%A3%80/%E5%82%AC%E6%94%B6%E8%AF%81%E6%8D%AE%E9%93%BE%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-78b02c04681c8303",
+            "title": "对账函与签章补救",
+            "locator": "【通用·法务】对账函与签章补救/对账函与签章补救.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%AF%B9%E8%B4%A6%E5%87%BD%E4%B8%8E%E7%AD%BE%E7%AB%A0%E8%A1%A5%E6%95%91/%E5%AF%B9%E8%B4%A6%E5%87%BD%E4%B8%8E%E7%AD%BE%E7%AB%A0%E8%A1%A5%E6%95%91.md"
+          },
+          {
+            "id": "source-catalog-473d4373e3cfbd55",
+            "title": "盖章前版本比对（对方改了什么）",
+            "locator": "【通用·法务】盖章前版本比对（对方改了什么）/盖章前版本比对（对方改了什么）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%9B%96%E7%AB%A0%E5%89%8D%E7%89%88%E6%9C%AC%E6%AF%94%E5%AF%B9%EF%BC%88%E5%AF%B9%E6%96%B9%E6%94%B9%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%89/%E7%9B%96%E7%AB%A0%E5%89%8D%E7%89%88%E6%9C%AC%E6%AF%94%E5%AF%B9%EF%BC%88%E5%AF%B9%E6%96%B9%E6%94%B9%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-1c89790d96fd5fde",
+            "title": "合同风险分级初审（四栏清单版）",
+            "locator": "【通用·法务】合同风险分级初审（四栏清单版）/合同风险分级初审（四栏清单版）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E5%88%86%E7%BA%A7%E5%88%9D%E5%AE%A1%EF%BC%88%E5%9B%9B%E6%A0%8F%E6%B8%85%E5%8D%95%E7%89%88%EF%BC%89/%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E5%88%86%E7%BA%A7%E5%88%9D%E5%AE%A1%EF%BC%88%E5%9B%9B%E6%A0%8F%E6%B8%85%E5%8D%95%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-a6dcfde0073cae5f",
+            "title": "律师函委托需求包",
+            "locator": "【通用·法务】律师函委托需求包/律师函委托需求包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%BE%8B%E5%B8%88%E5%87%BD%E5%A7%94%E6%89%98%E9%9C%80%E6%B1%82%E5%8C%85/%E5%BE%8B%E5%B8%88%E5%87%BD%E5%A7%94%E6%89%98%E9%9C%80%E6%B1%82%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-21c9803ed4d7d9d1",
+            "title": "签约对方资信核查摘要",
+            "locator": "【通用·法务】签约对方资信核查摘要/签约对方资信核查摘要.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%AD%BE%E7%BA%A6%E5%AF%B9%E6%96%B9%E8%B5%84%E4%BF%A1%E6%A0%B8%E6%9F%A5%E6%91%98%E8%A6%81/%E7%AD%BE%E7%BA%A6%E5%AF%B9%E6%96%B9%E8%B5%84%E4%BF%A1%E6%A0%B8%E6%9F%A5%E6%91%98%E8%A6%81.md"
+          },
+          {
+            "id": "source-catalog-deb352c55743dc77",
+            "title": "散落合同抽取建台账",
+            "locator": "【通用·法务】散落合同抽取建台账/散落合同抽取建台账.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%95%A3%E8%90%BD%E5%90%88%E5%90%8C%E6%8A%BD%E5%8F%96%E5%BB%BA%E5%8F%B0%E8%B4%A6/%E6%95%A3%E8%90%BD%E5%90%88%E5%90%8C%E6%8A%BD%E5%8F%96%E5%BB%BA%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-dd4ff54735a528f3",
+            "title": "收到律师函应急包",
+            "locator": "【通用·法务】收到律师函应急包/收到律师函应急包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%94%B6%E5%88%B0%E5%BE%8B%E5%B8%88%E5%87%BD%E5%BA%94%E6%80%A5%E5%8C%85/%E6%94%B6%E5%88%B0%E5%BE%8B%E5%B8%88%E5%87%BD%E5%BA%94%E6%80%A5%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-dbc10b076a80c66f",
+            "title": "诉讼节点倒计时跟踪",
+            "locator": "【通用·法务】诉讼节点倒计时跟踪/诉讼节点倒计时跟踪.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%AF%89%E8%AE%BC%E8%8A%82%E7%82%B9%E5%80%92%E8%AE%A1%E6%97%B6%E8%B7%9F%E8%B8%AA/%E8%AF%89%E8%AE%BC%E8%8A%82%E7%82%B9%E5%80%92%E8%AE%A1%E6%97%B6%E8%B7%9F%E8%B8%AA.md"
+          },
+          {
+            "id": "source-catalog-d6e6e7b26dba3cab",
+            "title": "诉讼时效倒推预警表",
+            "locator": "【通用·法务】诉讼时效倒推预警表/诉讼时效倒推预警表.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%AF%89%E8%AE%BC%E6%97%B6%E6%95%88%E5%80%92%E6%8E%A8%E9%A2%84%E8%AD%A6%E8%A1%A8/%E8%AF%89%E8%AE%BC%E6%97%B6%E6%95%88%E5%80%92%E6%8E%A8%E9%A2%84%E8%AD%A6%E8%A1%A8.md"
+          },
+          {
+            "id": "source-catalog-45703061a8f1c4dc",
+            "title": "微信催款留证指引",
+            "locator": "【通用·法务】微信催款留证指引/微信催款留证指引.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%BE%AE%E4%BF%A1%E5%82%AC%E6%AC%BE%E7%95%99%E8%AF%81%E6%8C%87%E5%BC%95/%E5%BE%AE%E4%BF%A1%E5%82%AC%E6%AC%BE%E7%95%99%E8%AF%81%E6%8C%87%E5%BC%95.md"
+          },
+          {
+            "id": "source-catalog-421735384c71a785",
+            "title": "宣传物料极限词语义扫描",
+            "locator": "【通用·法务】宣传物料极限词语义扫描/宣传物料极限词语义扫描.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%AE%A3%E4%BC%A0%E7%89%A9%E6%96%99%E6%9E%81%E9%99%90%E8%AF%8D%E8%AF%AD%E4%B9%89%E6%89%AB%E6%8F%8F/%E5%AE%A3%E4%BC%A0%E7%89%A9%E6%96%99%E6%9E%81%E9%99%90%E8%AF%8D%E8%AF%AD%E4%B9%89%E6%89%AB%E6%8F%8F.md"
+          },
+          {
+            "id": "source-catalog-e62c2fd0a6cce0c8",
+            "title": "自动续约条款扫描与通知期倒排",
+            "locator": "【通用·法务】自动续约条款扫描与通知期倒排/自动续约条款扫描与通知期倒排.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%87%AA%E5%8A%A8%E7%BB%AD%E7%BA%A6%E6%9D%A1%E6%AC%BE%E6%89%AB%E6%8F%8F%E4%B8%8E%E9%80%9A%E7%9F%A5%E6%9C%9F%E5%80%92%E6%8E%92/%E8%87%AA%E5%8A%A8%E7%BB%AD%E7%BA%A6%E6%9D%A1%E6%AC%BE%E6%89%AB%E6%8F%8F%E4%B8%8E%E9%80%9A%E7%9F%A5%E6%9C%9F%E5%80%92%E6%8E%92.md"
+          },
+          {
+            "id": "source-catalog-012d366c6839f406",
+            "title": "合同条款与标准模板偏离比对",
+            "locator": "【通用·销售】合同条款与标准模板偏离比对/合同条款与标准模板偏离比对.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%90%88%E5%90%8C%E6%9D%A1%E6%AC%BE%E4%B8%8E%E6%A0%87%E5%87%86%E6%A8%A1%E6%9D%BF%E5%81%8F%E7%A6%BB%E6%AF%94%E5%AF%B9/%E5%90%88%E5%90%8C%E6%9D%A1%E6%AC%BE%E4%B8%8E%E6%A0%87%E5%87%86%E6%A8%A1%E6%9D%BF%E5%81%8F%E7%A6%BB%E6%AF%94%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-793759c42a5193f8",
+            "title": "应收账龄三色与催收动作台账",
+            "roles": "财务 · 法务",
+            "description": "208 万逾期应收仅留存在财务账龄表中，无一栏记录「谁在催、催到哪一步」",
+            "source_refs": [
+              "source-catalog-793759c42a5193f8"
+            ]
+          },
+          {
+            "id": "catalog-0b4d0a73a3b95375",
+            "title": "催款函草稿（企业公章版）",
+            "roles": "法务",
+            "description": "企业法务不能发律师函，市场价 500 到 5000 一封，卡住的正是「我们认真了」的态度",
+            "source_refs": [
+              "source-catalog-0b4d0a73a3b95375"
+            ]
+          },
+          {
+            "id": "catalog-2a9441fdef4a29c1",
+            "title": "催收证据链完整性体检",
+            "roles": "法务",
+            "description": "官司还没打，输赢已定，输在两年前送货时未让对方签字的签收单",
+            "source_refs": [
+              "source-catalog-2a9441fdef4a29c1"
+            ]
+          },
+          {
+            "id": "catalog-78b02c04681c8303",
+            "title": "对账函与签章补救",
+            "roles": "法务",
+            "description": "已过时效的 19.7 万仍有补救空间，前提是让对方在一张纸上盖章，且不惊动对方",
+            "source_refs": [
+              "source-catalog-78b02c04681c8303"
+            ]
+          },
+          {
+            "id": "catalog-473d4373e3cfbd55",
+            "title": "盖章前版本比对（对方改了什么）",
+            "roles": "法务",
+            "description": "双方已谈妥三处修改，对方回传的「定稿版2」中静默多出三处未提过的改动",
+            "source_refs": [
+              "source-catalog-473d4373e3cfbd55"
+            ]
+          },
+          {
+            "id": "catalog-1c89790d96fd5fde",
+            "title": "合同风险分级初审（四栏清单版）",
+            "roles": "法务",
+            "description": "业务嫌法务审得慢，真正的风险不在审漏字眼，而在付款条款与违约金的不对等无人算过账",
+            "source_refs": [
+              "source-catalog-1c89790d96fd5fde"
+            ]
+          },
+          {
+            "id": "catalog-a6dcfde0073cae5f",
+            "title": "律师函委托需求包",
+            "roles": "法务",
+            "description": "为发一封律师函要跑两三趟律所，大部分时间在回答「你们证据在哪」",
+            "source_refs": [
+              "source-catalog-a6dcfde0073cae5f"
+            ]
+          },
+          {
+            "id": "catalog-21c9803ed4d7d9d1",
+            "title": "签约对方资信核查摘要",
+            "roles": "法务",
+            "description": "新客户要求 60 天账期，注册资本 500 万为认缴，实缴期限 2045 年",
+            "source_refs": [
+              "source-catalog-21c9803ed4d7d9d1"
+            ]
+          },
+          {
+            "id": "catalog-deb352c55743dc77",
+            "title": "散落合同抽取建台账",
+            "roles": "法务",
+            "description": "法务电脑 4 个文件夹存 62 份扫描件，业务员微信中还有 30 多份，台账仅登记 38 条",
+            "source_refs": [
+              "source-catalog-deb352c55743dc77"
+            ]
+          },
+          {
+            "id": "catalog-dd4ff54735a528f3",
+            "title": "收到律师函应急包",
+            "roles": "法务",
+            "description": "收到索赔 12 万的律师函，老板第一反应是「息事宁人」，第二反应才是「我们侵权了吗」",
+            "source_refs": [
+              "source-catalog-dd4ff54735a528f3"
+            ]
+          },
+          {
+            "id": "catalog-dbc10b076a80c66f",
+            "title": "诉讼节点倒计时跟踪",
+            "roles": "法务",
+            "description": "一审胜诉 33.6 万，判决书送达日期记不清，上诉期、生效日、执行窗口全系于这一日期",
+            "source_refs": [
+              "source-catalog-dbc10b076a80c66f"
+            ]
+          },
+          {
+            "id": "catalog-d6e6e7b26dba3cab",
+            "title": "诉讼时效倒推预警表",
+            "roles": "法务",
+            "description": "对方当庭承认欠款，法院仍全额驳回——时效已过，认账救不回过期债权",
+            "source_refs": [
+              "source-catalog-d6e6e7b26dba3cab"
+            ]
+          },
+          {
+            "id": "catalog-45703061a8f1c4dc",
+            "title": "微信催款留证指引",
+            "roles": "法务",
+            "description": "日常催款都在微信上进行，到法庭才发现未让对方确认金额，连对方身份都无法证明",
+            "source_refs": [
+              "source-catalog-45703061a8f1c4dc"
+            ]
+          },
+          {
+            "id": "catalog-421735384c71a785",
+            "title": "宣传物料极限词语义扫描",
+            "roles": "法务",
+            "description": "官网写有「最安全的配电方案」，广告法罚单 20 万起步，是否违规取决于检测报告怎么写",
+            "source_refs": [
+              "source-catalog-421735384c71a785"
+            ]
+          },
+          {
+            "id": "catalog-e62c2fd0a6cce0c8",
+            "title": "自动续约条款扫描与通知期倒排",
+            "roles": "法务",
+            "description": "设备年初刚大修更换，36 万一年的维保合同下月自动续约，通知期昨天刚过",
+            "source_refs": [
+              "source-catalog-e62c2fd0a6cce0c8"
+            ]
+          },
+          {
+            "id": "catalog-012d366c6839f406",
+            "title": "合同条款与标准模板偏离比对",
+            "roles": "销售",
+            "description": "客户法务改了七处，销售看了一遍便说没什么问题",
+            "source_refs": [
+              "source-catalog-012d366c6839f406"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-012d366c6839f406"
+              ]
+            },
+            "label": "合同文本与标准模板",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "条款偏离清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-793759c42a5193f8",
+          "catalog-0b4d0a73a3b95375",
+          "catalog-2a9441fdef4a29c1",
+          "catalog-78b02c04681c8303",
+          "catalog-473d4373e3cfbd55",
+          "catalog-1c89790d96fd5fde",
+          "catalog-a6dcfde0073cae5f",
+          "catalog-21c9803ed4d7d9d1",
+          "catalog-deb352c55743dc77",
+          "catalog-dd4ff54735a528f3",
+          "catalog-dbc10b076a80c66f",
+          "catalog-d6e6e7b26dba3cab",
+          "catalog-45703061a8f1c4dc",
+          "catalog-421735384c71a785",
+          "catalog-e62c2fd0a6cce0c8",
+          "catalog-012d366c6839f406"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "finance",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "财务与单据核对",
+      "description": "财务对齐发票、销售台账与回款，形成账龄报告与催收清单。画面包含单据处理台的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对齐发票、销售台账与回款",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "销售台账、发票与回款",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "账龄报告与催收清单",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-88a282ae89679abc",
+            "title": "月度对账差异表（三单匹配）",
+            "locator": "【通用·财务·采购】月度对账差异表（三单匹配）/月度对账差异表（三单匹配）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%9C%88%E5%BA%A6%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E8%A1%A8%EF%BC%88%E4%B8%89%E5%8D%95%E5%8C%B9%E9%85%8D%EF%BC%89/%E6%9C%88%E5%BA%A6%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E8%A1%A8%EF%BC%88%E4%B8%89%E5%8D%95%E5%8C%B9%E9%85%8D%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-f7a25d6be70755ca",
+            "title": "报销单合规预审",
+            "locator": "【通用·财务】报销单合规预审/报销单合规预审.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E6%8A%A5%E9%94%80%E5%8D%95%E5%90%88%E8%A7%84%E9%A2%84%E5%AE%A1/%E6%8A%A5%E9%94%80%E5%8D%95%E5%90%88%E8%A7%84%E9%A2%84%E5%AE%A1.md"
+          },
+          {
+            "id": "source-catalog-af1a3658b6e693f0",
+            "title": "费用异常波动分析",
+            "locator": "【通用·财务】费用异常波动分析/费用异常波动分析.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E8%B4%B9%E7%94%A8%E5%BC%82%E5%B8%B8%E6%B3%A2%E5%8A%A8%E5%88%86%E6%9E%90/%E8%B4%B9%E7%94%A8%E5%BC%82%E5%B8%B8%E6%B3%A2%E5%8A%A8%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-4c5baca2464b2d8f",
+            "title": "经营周报自动拼表",
+            "locator": "【通用·财务】经营周报自动拼表/经营周报自动拼表.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%BB%8F%E8%90%A5%E5%91%A8%E6%8A%A5%E8%87%AA%E5%8A%A8%E6%8B%BC%E8%A1%A8/%E7%BB%8F%E8%90%A5%E5%91%A8%E6%8A%A5%E8%87%AA%E5%8A%A8%E6%8B%BC%E8%A1%A8.md"
+          },
+          {
+            "id": "source-catalog-068ade9b00be3860",
+            "title": "纳税日历与逾期预警",
+            "locator": "【通用·财务】纳税日历与逾期预警/纳税日历与逾期预警.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%BA%B3%E7%A8%8E%E6%97%A5%E5%8E%86%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E7%BA%B3%E7%A8%8E%E6%97%A5%E5%8E%86%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-54e62e9cb1407d2c",
+            "title": "纳税申报前风险清单",
+            "locator": "【通用·财务】纳税申报前风险清单/纳税申报前风险清单.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%BA%B3%E7%A8%8E%E7%94%B3%E6%8A%A5%E5%89%8D%E9%A3%8E%E9%99%A9%E6%B8%85%E5%8D%95/%E7%BA%B3%E7%A8%8E%E7%94%B3%E6%8A%A5%E5%89%8D%E9%A3%8E%E9%99%A9%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-39431ce3951fadb6",
+            "title": "凭证全量稽核扫描",
+            "locator": "【通用·财务】凭证全量稽核扫描/凭证全量稽核扫描.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%87%AD%E8%AF%81%E5%85%A8%E9%87%8F%E7%A8%BD%E6%A0%B8%E6%89%AB%E6%8F%8F/%E5%87%AD%E8%AF%81%E5%85%A8%E9%87%8F%E7%A8%BD%E6%A0%B8%E6%89%AB%E6%8F%8F.md"
+          },
+          {
+            "id": "source-catalog-f962edf4294884de",
+            "title": "税收优惠体检与漏享扫描",
+            "locator": "【通用·财务】税收优惠体检与漏享扫描/税收优惠体检与漏享扫描.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%A8%8E%E6%94%B6%E4%BC%98%E6%83%A0%E4%BD%93%E6%A3%80%E4%B8%8E%E6%BC%8F%E4%BA%AB%E6%89%AB%E6%8F%8F/%E7%A8%8E%E6%94%B6%E4%BC%98%E6%83%A0%E4%BD%93%E6%A3%80%E4%B8%8E%E6%BC%8F%E4%BA%AB%E6%89%AB%E6%8F%8F.md"
+          },
+          {
+            "id": "source-catalog-feb84fcd8da5e068",
+            "title": "往来对账差异清单",
+            "locator": "【通用·财务】往来对账差异清单/往来对账差异清单.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BE%80%E6%9D%A5%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E6%B8%85%E5%8D%95/%E5%BE%80%E6%9D%A5%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-671f08e7776e0463",
+            "title": "银行余额调节表自动编制",
+            "locator": "【通用·财务】银行余额调节表自动编制/银行余额调节表自动编制.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E9%93%B6%E8%A1%8C%E4%BD%99%E9%A2%9D%E8%B0%83%E8%8A%82%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%BC%96%E5%88%B6/%E9%93%B6%E8%A1%8C%E4%BD%99%E9%A2%9D%E8%B0%83%E8%8A%82%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%BC%96%E5%88%B6.md"
+          },
+          {
+            "id": "source-catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-f99bb06afe090b31",
+            "title": "预算编制数据收集",
+            "locator": "【通用·财务】预算编制数据收集/预算编制数据收集.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E9%A2%84%E7%AE%97%E7%BC%96%E5%88%B6%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86/%E9%A2%84%E7%AE%97%E7%BC%96%E5%88%B6%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86.md"
+          },
+          {
+            "id": "source-catalog-a33dce35a36350c5",
+            "title": "资金日报自动拼表",
+            "locator": "【通用·财务】资金日报自动拼表/资金日报自动拼表.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E8%B5%84%E9%87%91%E6%97%A5%E6%8A%A5%E8%87%AA%E5%8A%A8%E6%8B%BC%E8%A1%A8/%E8%B5%84%E9%87%91%E6%97%A5%E6%8A%A5%E8%87%AA%E5%8A%A8%E6%8B%BC%E8%A1%A8.md"
+          },
+          {
+            "id": "source-catalog-9cc6ed56710029ff",
+            "title": "框架合同与实际结算偏离核查",
+            "locator": "【通用·行政·财务】框架合同与实际结算偏离核查/框架合同与实际结算偏离核查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E6%A1%86%E6%9E%B6%E5%90%88%E5%90%8C%E4%B8%8E%E5%AE%9E%E9%99%85%E7%BB%93%E7%AE%97%E5%81%8F%E7%A6%BB%E6%A0%B8%E6%9F%A5/%E6%A1%86%E6%9E%B6%E5%90%88%E5%90%8C%E4%B8%8E%E5%AE%9E%E9%99%85%E7%BB%93%E7%AE%97%E5%81%8F%E7%A6%BB%E6%A0%B8%E6%9F%A5.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-88a282ae89679abc",
+            "title": "月度对账差异表（三单匹配）",
+            "roles": "财务 · 采购",
+            "description": "供应商对账单与自家记录差了八千元，为这八千元，采购、仓库、财务三人对了一下午",
+            "source_refs": [
+              "source-catalog-88a282ae89679abc"
+            ]
+          },
+          {
+            "id": "catalog-f7a25d6be70755ca",
+            "title": "报销单合规预审",
+            "roles": "财务",
+            "description": "报销单看着天天在过、实际天天在争议，退单的话术和依据，才是财务最缺的",
+            "source_refs": [
+              "source-catalog-f7a25d6be70755ca"
+            ]
+          },
+          {
+            "id": "catalog-af1a3658b6e693f0",
+            "title": "费用异常波动分析",
+            "roles": "财务",
+            "description": "费用涨了，老板问钱去哪了，财务只能答涨了，答不出是量涨还是价涨",
+            "source_refs": [
+              "source-catalog-af1a3658b6e693f0"
+            ]
+          },
+          {
+            "id": "catalog-4c5baca2464b2d8f",
+            "title": "经营周报自动拼表",
+            "roles": "财务",
+            "description": "老板要的那张周报，散在三个模块里，财务每周手工导出粘 Excel，花两小时",
+            "source_refs": [
+              "source-catalog-4c5baca2464b2d8f"
+            ]
+          },
+          {
+            "id": "catalog-068ade9b00be3860",
+            "title": "纳税日历与逾期预警",
+            "roles": "财务",
+            "description": "每个月都有申报截止日，一错过就是钱，逾期一天万分之五，从来没人提前算好该哪天启动",
+            "source_refs": [
+              "source-catalog-068ade9b00be3860"
+            ]
+          },
+          {
+            "id": "catalog-54e62e9cb1407d2c",
+            "title": "纳税申报前风险清单",
+            "roles": "财务",
+            "description": "申报表填得再快，也挡不住被金税四期扫出来，真正怕的是申报前没人先帮你扫一遍",
+            "source_refs": [
+              "source-catalog-54e62e9cb1407d2c"
+            ]
+          },
+          {
+            "id": "catalog-39431ce3951fadb6",
+            "title": "凭证全量稽核扫描",
+            "roles": "财务",
+            "description": "制度要求凭证有稽核人签章、实际从没抽过，不是抽 5%，是全部扫一遍",
+            "source_refs": [
+              "source-catalog-39431ce3951fadb6"
+            ]
+          },
+          {
+            "id": "catalog-f962edf4294884de",
+            "title": "税收优惠体检与漏享扫描",
+            "roles": "财务",
+            "description": "本该少交的税一分没少交，五项优惠一项没享，一年多缴 83 万",
+            "source_refs": [
+              "source-catalog-f962edf4294884de"
+            ]
+          },
+          {
+            "id": "catalog-feb84fcd8da5e068",
+            "title": "往来对账差异清单",
+            "roles": "财务",
+            "description": "和客户对账一对就起争议，所以一直拖着，拖了三年的账，最后是一张 2 万红字发票没冲减",
+            "source_refs": [
+              "source-catalog-feb84fcd8da5e068"
+            ]
+          },
+          {
+            "id": "catalog-671f08e7776e0463",
+            "title": "银行余额调节表自动编制",
+            "roles": "财务",
+            "description": "制度要求每月做、实际从没做过，长期不做等于把 50 万的资金差异藏在未达账项里",
+            "source_refs": [
+              "source-catalog-671f08e7776e0463"
+            ]
+          },
+          {
+            "id": "catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "roles": "财务",
+            "description": "账上 300 万应收，老板以为都是钱，逾期超过 1 年的，核销概率高达 80%",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          },
+          {
+            "id": "catalog-f99bb06afe090b31",
+            "title": "预算编制数据收集",
+            "roles": "财务",
+            "description": "预算到最后都是依赖经验估算，因为各部门交来的表格式五花八门，根本对不齐",
+            "source_refs": [
+              "source-catalog-f99bb06afe090b31"
+            ]
+          },
+          {
+            "id": "catalog-a33dce35a36350c5",
+            "title": "资金日报自动拼表",
+            "roles": "财务",
+            "description": "老板每天早上都问账上还有多少钱，出纳要从三家网银和微信截图里现凑",
+            "source_refs": [
+              "source-catalog-a33dce35a36350c5"
+            ]
+          },
+          {
+            "id": "catalog-9cc6ed56710029ff",
+            "title": "框架合同与实际结算偏离核查",
+            "roles": "行政 · 财务",
+            "description": "物业保洁绿植快递每月照付，合同写的服务频次和实际结算单从来没人对过",
+            "source_refs": [
+              "source-catalog-9cc6ed56710029ff"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            },
+            "label": "销售台账、发票与回款",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "账龄报告与催收清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "universal.tool.document-scanner",
+            "position": [
+              5.18,
+              2.6399999999999997,
+              0
+            ],
+            "rotation": 0,
+            "support": "workstation",
+            "label": "文档扫描仪",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-88a282ae89679abc",
+          "catalog-f7a25d6be70755ca",
+          "catalog-af1a3658b6e693f0",
+          "catalog-4c5baca2464b2d8f",
+          "catalog-068ade9b00be3860",
+          "catalog-54e62e9cb1407d2c",
+          "catalog-39431ce3951fadb6",
+          "catalog-f962edf4294884de",
+          "catalog-feb84fcd8da5e068",
+          "catalog-671f08e7776e0463",
+          "catalog-bc37b9a24caa79d8",
+          "catalog-f99bb06afe090b31",
+          "catalog-a33dce35a36350c5",
+          "catalog-9cc6ed56710029ff"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sourcing",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "采购与库存协同",
+      "description": "采购对齐历史采购记录，形成历史采购价格曲线。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "采购",
+            "source_refs": [
+              "source-catalog-83e593479e9d3dc9"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对齐历史采购记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-83e593479e9d3dc9"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "采购价格与规格",
+            "source_refs": [
+              "source-catalog-83e593479e9d3dc9"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "历史采购价格曲线",
+            "source_refs": [
+              "source-catalog-83e593479e9d3dc9"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-7f430528862632d9",
+            "title": "比价留档表（三家报价+历史价对照）",
+            "locator": "【通用·采购】比价留档表（三家报价+历史价对照）/比价留档表（三家报价+历史价对照）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%AF%94%E4%BB%B7%E7%95%99%E6%A1%A3%E8%A1%A8%EF%BC%88%E4%B8%89%E5%AE%B6%E6%8A%A5%E4%BB%B7+%E5%8E%86%E5%8F%B2%E4%BB%B7%E5%AF%B9%E7%85%A7%EF%BC%89/%E6%AF%94%E4%BB%B7%E7%95%99%E6%A1%A3%E8%A1%A8%EF%BC%88%E4%B8%89%E5%AE%B6%E6%8A%A5%E4%BB%B7+%E5%8E%86%E5%8F%B2%E4%BB%B7%E5%AF%B9%E7%85%A7%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-e3bc44e71e697eb5",
+            "title": "采购订单跟踪表自动更新",
+            "locator": "【通用·采购】采购订单跟踪表自动更新/采购订单跟踪表自动更新.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95%E8%B7%9F%E8%B8%AA%E8%A1%A8%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95%E8%B7%9F%E8%B8%AA%E8%A1%A8%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0.md"
+          },
+          {
+            "id": "source-catalog-84d64456088f45b4",
+            "title": "催货台账与当日催货清单",
+            "locator": "【通用·采购】催货台账与当日催货清单/催货台账与当日催货清单.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E5%82%AC%E8%B4%A7%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%BD%93%E6%97%A5%E5%82%AC%E8%B4%A7%E6%B8%85%E5%8D%95/%E5%82%AC%E8%B4%A7%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%BD%93%E6%97%A5%E5%82%AC%E8%B4%A7%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-e4546cedb4409cd3",
+            "title": "供应商事实卡（不打分版）",
+            "locator": "【通用·采购】供应商事实卡（不打分版）/供应商事实卡（不打分版）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E4%BE%9B%E5%BA%94%E5%95%86%E4%BA%8B%E5%AE%9E%E5%8D%A1%EF%BC%88%E4%B8%8D%E6%89%93%E5%88%86%E7%89%88%EF%BC%89/%E4%BE%9B%E5%BA%94%E5%95%86%E4%BA%8B%E5%AE%9E%E5%8D%A1%EF%BC%88%E4%B8%8D%E6%89%93%E5%88%86%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-83e593479e9d3dc9",
+            "title": "历史采购价价格曲线",
+            "locator": "【通用·采购】历史采购价价格曲线/历史采购价价格曲线.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E5%8E%86%E5%8F%B2%E9%87%87%E8%B4%AD%E4%BB%B7%E4%BB%B7%E6%A0%BC%E6%9B%B2%E7%BA%BF/%E5%8E%86%E5%8F%B2%E9%87%87%E8%B4%AD%E4%BB%B7%E4%BB%B7%E6%A0%BC%E6%9B%B2%E7%BA%BF.md"
+          },
+          {
+            "id": "source-catalog-57ec7ed6dbb6cd62",
+            "title": "微信询价截图归档为结构化记录",
+            "locator": "【通用·采购】微信询价截图归档为结构化记录/微信询价截图归档为结构化记录.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E5%BE%AE%E4%BF%A1%E8%AF%A2%E4%BB%B7%E6%88%AA%E5%9B%BE%E5%BD%92%E6%A1%A3%E4%B8%BA%E7%BB%93%E6%9E%84%E5%8C%96%E8%AE%B0%E5%BD%95/%E5%BE%AE%E4%BF%A1%E8%AF%A2%E4%BB%B7%E6%88%AA%E5%9B%BE%E5%BD%92%E6%A1%A3%E4%B8%BA%E7%BB%93%E6%9E%84%E5%8C%96%E8%AE%B0%E5%BD%95.md"
+          },
+          {
+            "id": "source-catalog-de357046d60f6881",
+            "title": "涨价审批说明单（给老板版）",
+            "locator": "【通用·采购】涨价审批说明单（给老板版）/涨价审批说明单（给老板版）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%B6%A8%E4%BB%B7%E5%AE%A1%E6%89%B9%E8%AF%B4%E6%98%8E%E5%8D%95%EF%BC%88%E7%BB%99%E8%80%81%E6%9D%BF%E7%89%88%EF%BC%89/%E6%B6%A8%E4%BB%B7%E5%AE%A1%E6%89%B9%E8%AF%B4%E6%98%8E%E5%8D%95%EF%BC%88%E7%BB%99%E8%80%81%E6%9D%BF%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-62a05fddc69e5ed3",
+            "title": "多供应商报价逐项拆解比价",
+            "locator": "【通用·行政·采购】多供应商报价逐项拆解比价/多供应商报价逐项拆解比价.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E5%A4%9A%E4%BE%9B%E5%BA%94%E5%95%86%E6%8A%A5%E4%BB%B7%E9%80%90%E9%A1%B9%E6%8B%86%E8%A7%A3%E6%AF%94%E4%BB%B7/%E5%A4%9A%E4%BE%9B%E5%BA%94%E5%95%86%E6%8A%A5%E4%BB%B7%E9%80%90%E9%A1%B9%E6%8B%86%E8%A7%A3%E6%AF%94%E4%BB%B7.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-7f430528862632d9",
+            "title": "比价留档表（三家报价+历史价对照）",
+            "roles": "采购",
+            "description": "货比三家靠的是微信，比完没留一张截图，审计时无法证明比过价",
+            "source_refs": [
+              "source-catalog-7f430528862632d9"
+            ]
+          },
+          {
+            "id": "catalog-e3bc44e71e697eb5",
+            "title": "采购订单跟踪表自动更新",
+            "roles": "采购",
+            "description": "ERP 改一条订单要十分钟，Excel 加微信批量五十条仅二十分钟，状态列却三个月没更新",
+            "source_refs": [
+              "source-catalog-e3bc44e71e697eb5"
+            ]
+          },
+          {
+            "id": "catalog-84d64456088f45b4",
+            "title": "催货台账与当日催货清单",
+            "roles": "采购",
+            "description": "催了八次的货，第九次对方反问「你怎么不早说」，催货记录全在脑子里，没有留痕",
+            "source_refs": [
+              "source-catalog-84d64456088f45b4"
+            ]
+          },
+          {
+            "id": "catalog-e4546cedb4409cd3",
+            "title": "供应商事实卡（不打分版）",
+            "roles": "采购",
+            "description": "供应商考核表打了三年分，得分全在 80 分上下，与订单分配毫无关联",
+            "source_refs": [
+              "source-catalog-e4546cedb4409cd3"
+            ]
+          },
+          {
+            "id": "catalog-83e593479e9d3dc9",
+            "title": "历史采购价价格曲线",
+            "roles": "采购",
+            "description": "指责供应商涨得太狠，说完自己也说不清去年到底是多少",
+            "source_refs": [
+              "source-catalog-83e593479e9d3dc9"
+            ]
+          },
+          {
+            "id": "catalog-57ec7ed6dbb6cd62",
+            "title": "微信询价截图归档为结构化记录",
+            "roles": "采购",
+            "description": "供应商群里的报价截图存了几百张，想找三个月前那家的报价比翻相册还难",
+            "source_refs": [
+              "source-catalog-57ec7ed6dbb6cd62"
+            ]
+          },
+          {
+            "id": "catalog-de357046d60f6881",
+            "title": "涨价审批说明单（给老板版）",
+            "roles": "采购",
+            "description": "供应商发函涨价 6.5%，老板娘问该不该答应，采购自己心里也没底",
+            "source_refs": [
+              "source-catalog-de357046d60f6881"
+            ]
+          },
+          {
+            "id": "catalog-62a05fddc69e5ed3",
+            "title": "多供应商报价逐项拆解比价",
+            "roles": "行政 · 采购",
+            "description": "三家报价单价看着差几分钱，折算到到厂价后，最便宜那家反而最贵",
+            "source_refs": [
+              "source-catalog-62a05fddc69e5ed3"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "warehouse",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-83e593479e9d3dc9"
+              ]
+            },
+            "label": "采购价格与规格",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "历史采购价格曲线",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "rack",
+            "asset_id": "manufacturing.equipment.rack",
+            "position": [
+              7.28,
+              1.28,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "pallet",
+            "asset_id": "universal.material.pallet",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cargo",
+            "asset_id": "universal.material.carton",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0,
+            "support": "pallet"
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              7.33,
+              4.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-7f430528862632d9",
+          "catalog-e3bc44e71e697eb5",
+          "catalog-84d64456088f45b4",
+          "catalog-e4546cedb4409cd3",
+          "catalog-83e593479e9d3dc9",
+          "catalog-57ec7ed6dbb6cd62",
+          "catalog-de357046d60f6881",
+          "catalog-62a05fddc69e5ed3"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "admin",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "行政与管理协作",
+      "description": "行政核对盘点表与记录差异，形成盘点报告。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "行政",
+            "source_refs": [
+              "source-catalog-12dd96b647c70b85"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对盘点表与记录差异",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-12dd96b647c70b85"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "盘点表和资产记录",
+            "source_refs": [
+              "source-catalog-12dd96b647c70b85"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "盘点报告",
+            "source_refs": [
+              "source-catalog-12dd96b647c70b85"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4cfe5836831cd436",
+            "title": "雇主责任险与团意险方案横向比对",
+            "locator": "【通用·行政】雇主责任险与团意险方案横向比对/雇主责任险与团意险方案横向比对.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E9%9B%87%E4%B8%BB%E8%B4%A3%E4%BB%BB%E9%99%A9%E4%B8%8E%E5%9B%A2%E6%84%8F%E9%99%A9%E6%96%B9%E6%A1%88%E6%A8%AA%E5%90%91%E6%AF%94%E5%AF%B9/%E9%9B%87%E4%B8%BB%E8%B4%A3%E4%BB%BB%E9%99%A9%E4%B8%8E%E5%9B%A2%E6%84%8F%E9%99%A9%E6%96%B9%E6%A1%88%E6%A8%AA%E5%90%91%E6%AF%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-35c4f6db5e1d8233",
+            "title": "跨会议待办闭环追踪",
+            "locator": "【通用·行政】跨会议待办闭环追踪/跨会议待办闭环追踪.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%B7%A8%E4%BC%9A%E8%AE%AE%E5%BE%85%E5%8A%9E%E9%97%AD%E7%8E%AF%E8%BF%BD%E8%B8%AA/%E8%B7%A8%E4%BC%9A%E8%AE%AE%E5%BE%85%E5%8A%9E%E9%97%AD%E7%8E%AF%E8%BF%BD%E8%B8%AA.md"
+          },
+          {
+            "id": "source-catalog-e3f2c30b23e03818",
+            "title": "离职资产与授权回收核查",
+            "locator": "【通用·行政】离职资产与授权回收核查/离职资产与授权回收核查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%A6%BB%E8%81%8C%E8%B5%84%E4%BA%A7%E4%B8%8E%E6%8E%88%E6%9D%83%E5%9B%9E%E6%94%B6%E6%A0%B8%E6%9F%A5/%E7%A6%BB%E8%81%8C%E8%B5%84%E4%BA%A7%E4%B8%8E%E6%8E%88%E6%9D%83%E5%9B%9E%E6%94%B6%E6%A0%B8%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-398a5e9b4d346396",
+            "title": "年度合规日历与到期预警台账构建",
+            "locator": "【通用·行政】年度合规日历与到期预警台账构建/年度合规日历与到期预警台账构建.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%B9%B4%E5%BA%A6%E5%90%88%E8%A7%84%E6%97%A5%E5%8E%86%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6%E5%8F%B0%E8%B4%A6%E6%9E%84%E5%BB%BA/%E5%B9%B4%E5%BA%A6%E5%90%88%E8%A7%84%E6%97%A5%E5%8E%86%E4%B8%8E%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6%E5%8F%B0%E8%B4%A6%E6%9E%84%E5%BB%BA.md"
+          },
+          {
+            "id": "source-catalog-12dd96b647c70b85",
+            "title": "盘点差异归因与盘点报告生成",
+            "locator": "【通用·行政】盘点差异归因与盘点报告生成/盘点差异归因与盘点报告生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%9B%98%E7%82%B9%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0%E4%B8%8E%E7%9B%98%E7%82%B9%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/%E7%9B%98%E7%82%B9%E5%B7%AE%E5%BC%82%E5%BD%92%E5%9B%A0%E4%B8%8E%E7%9B%98%E7%82%B9%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-8271cb4fb0db3c37",
+            "title": "行政费用异常归因（量价分离）",
+            "locator": "【通用·行政】行政费用异常归因（量价分离）/行政费用异常归因（量价分离）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%A1%8C%E6%94%BF%E8%B4%B9%E7%94%A8%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0%EF%BC%88%E9%87%8F%E4%BB%B7%E5%88%86%E7%A6%BB%EF%BC%89/%E8%A1%8C%E6%94%BF%E8%B4%B9%E7%94%A8%E5%BC%82%E5%B8%B8%E5%BD%92%E5%9B%A0%EF%BC%88%E9%87%8F%E4%BB%B7%E5%88%86%E7%A6%BB%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-328d4493989de9b2",
+            "title": "行政预算编制依据包",
+            "locator": "【通用·行政】行政预算编制依据包/行政预算编制依据包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%A1%8C%E6%94%BF%E9%A2%84%E7%AE%97%E7%BC%96%E5%88%B6%E4%BE%9D%E6%8D%AE%E5%8C%85/%E8%A1%8C%E6%94%BF%E9%A2%84%E7%AE%97%E7%BC%96%E5%88%B6%E4%BE%9D%E6%8D%AE%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-6f71fc1c04f836a3",
+            "title": "行政月报与量化口径生成",
+            "locator": "【通用·行政】行政月报与量化口径生成/行政月报与量化口径生成.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%A1%8C%E6%94%BF%E6%9C%88%E6%8A%A5%E4%B8%8E%E9%87%8F%E5%8C%96%E5%8F%A3%E5%BE%84%E7%94%9F%E6%88%90/%E8%A1%8C%E6%94%BF%E6%9C%88%E6%8A%A5%E4%B8%8E%E9%87%8F%E5%8C%96%E5%8F%A3%E5%BE%84%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-57dc16647e42dc10",
+            "title": "续租与换租决策包",
+            "locator": "【通用·行政】续租与换租决策包/续租与换租决策包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E7%BB%AD%E7%A7%9F%E4%B8%8E%E6%8D%A2%E7%A7%9F%E5%86%B3%E7%AD%96%E5%8C%85/%E7%BB%AD%E7%A7%9F%E4%B8%8E%E6%8D%A2%E7%A7%9F%E5%86%B3%E7%AD%96%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-a9a0e79b8415dc34",
+            "title": "制度冲突与失效引用排查",
+            "locator": "【通用·行政】制度冲突与失效引用排查/制度冲突与失效引用排查.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%88%B6%E5%BA%A6%E5%86%B2%E7%AA%81%E4%B8%8E%E5%A4%B1%E6%95%88%E5%BC%95%E7%94%A8%E6%8E%92%E6%9F%A5/%E5%88%B6%E5%BA%A6%E5%86%B2%E7%AA%81%E4%B8%8E%E5%A4%B1%E6%95%88%E5%BC%95%E7%94%A8%E6%8E%92%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-86b04f5003ebe332",
+            "title": "制度问答知识库（带出处）",
+            "locator": "【通用·行政】制度问答知识库（带出处）/制度问答知识库（带出处）.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E5%88%B6%E5%BA%A6%E9%97%AE%E7%AD%94%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E5%B8%A6%E5%87%BA%E5%A4%84%EF%BC%89/%E5%88%B6%E5%BA%A6%E9%97%AE%E7%AD%94%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E5%B8%A6%E5%87%BA%E5%A4%84%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-fbfb37b1687b0533",
+            "title": "重要会议前的资料预备包",
+            "locator": "【通用·行政】重要会议前的资料预备包/重要会议前的资料预备包.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E9%87%8D%E8%A6%81%E4%BC%9A%E8%AE%AE%E5%89%8D%E7%9A%84%E8%B5%84%E6%96%99%E9%A2%84%E5%A4%87%E5%8C%85/%E9%87%8D%E8%A6%81%E4%BC%9A%E8%AE%AE%E5%89%8D%E7%9A%84%E8%B5%84%E6%96%99%E9%A2%84%E5%A4%87%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-3cddecc4e10c326f",
+            "title": "资产台账清洗与幽灵资产识别",
+            "locator": "【通用·行政】资产台账清洗与幽灵资产识别/资产台账清洗与幽灵资产识别.md:10",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%A1%8C%E6%94%BF%E3%80%91%E8%B5%84%E4%BA%A7%E5%8F%B0%E8%B4%A6%E6%B8%85%E6%B4%97%E4%B8%8E%E5%B9%BD%E7%81%B5%E8%B5%84%E4%BA%A7%E8%AF%86%E5%88%AB/%E8%B5%84%E4%BA%A7%E5%8F%B0%E8%B4%A6%E6%B8%85%E6%B4%97%E4%B8%8E%E5%B9%BD%E7%81%B5%E8%B5%84%E4%BA%A7%E8%AF%86%E5%88%AB.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4cfe5836831cd436",
+            "title": "雇主责任险与团意险方案横向比对",
+            "roles": "行政",
+            "description": "同样 50 万保额，一家报 270 一家报 449，贵的不一定更好，便宜的可能不赔猝死",
+            "source_refs": [
+              "source-catalog-4cfe5836831cd436"
+            ]
+          },
+          {
+            "id": "catalog-35c4f6db5e1d8233",
+            "title": "跨会议待办闭环追踪",
+            "roles": "行政",
+            "description": "会议纪要发出后无人跟进，决议事项缺乏闭环追踪与执行机制",
+            "source_refs": [
+              "source-catalog-35c4f6db5e1d8233"
+            ]
+          },
+          {
+            "id": "catalog-e3f2c30b23e03818",
+            "title": "离职资产与授权回收核查",
+            "roles": "行政",
+            "description": "人走了电脑找不到了，更麻烦的是他手上那份盖过章的授权书还在",
+            "source_refs": [
+              "source-catalog-e3f2c30b23e03818"
+            ]
+          },
+          {
+            "id": "catalog-398a5e9b4d346396",
+            "title": "年度合规日历与到期预警台账构建",
+            "roles": "行政",
+            "description": "难的不是到期提醒，是先把那份半年没更新的台账重建出来",
+            "source_refs": [
+              "source-catalog-398a5e9b4d346396"
+            ]
+          },
+          {
+            "id": "catalog-12dd96b647c70b85",
+            "title": "盘点差异归因与盘点报告生成",
+            "roles": "行政",
+            "description": "盘完了差了 27 台，报告里差异原因那一栏，最后往往是随便解释",
+            "source_refs": [
+              "source-catalog-12dd96b647c70b85"
+            ]
+          },
+          {
+            "id": "catalog-8271cb4fb0db3c37",
+            "title": "行政费用异常归因（量价分离）",
+            "roles": "行政",
+            "description": "水电物业费用持续上涨，未做量价分离，分不清用量增加还是单价上涨",
+            "source_refs": [
+              "source-catalog-8271cb4fb0db3c37"
+            ]
+          },
+          {
+            "id": "catalog-328d4493989de9b2",
+            "title": "行政预算编制依据包",
+            "roles": "行政",
+            "description": "预算多按「去年加 10%」编制，采用其他算法需先有动因测算依据",
+            "source_refs": [
+              "source-catalog-328d4493989de9b2"
+            ]
+          },
+          {
+            "id": "catalog-6f71fc1c04f836a3",
+            "title": "行政月报与量化口径生成",
+            "roles": "行政",
+            "description": "工作做好无人肯定、出问题即担责，月报是行政工作唯一可见的业绩载体",
+            "source_refs": [
+              "source-catalog-6f71fc1c04f836a3"
+            ]
+          },
+          {
+            "id": "catalog-57dc16647e42dc10",
+            "title": "续租与换租决策包",
+            "roles": "行政",
+            "description": "租金看着降了，但把装修摊销、复原义务、空调加班费算进去，可能比现在更贵",
+            "source_refs": [
+              "source-catalog-57dc16647e42dc10"
+            ]
+          },
+          {
+            "id": "catalog-a9a0e79b8415dc34",
+            "title": "制度冲突与失效引用排查",
+            "roles": "行政",
+            "description": "考勤制度去年改了，用车制度里引用的还是那条已作废的条款",
+            "source_refs": [
+              "source-catalog-a9a0e79b8415dc34"
+            ]
+          },
+          {
+            "id": "catalog-86b04f5003ebe332",
+            "title": "制度问答知识库（带出处）",
+            "roles": "行政",
+            "description": "年假怎么算、这张发票能不能报、加班餐补多少，同样的问题一天被问八遍",
+            "source_refs": [
+              "source-catalog-86b04f5003ebe332"
+            ]
+          },
+          {
+            "id": "catalog-fbfb37b1687b0533",
+            "title": "重要会议前的资料预备包",
+            "roles": "行政",
+            "description": "会议材料临近开会才准备，历史决议、制度条款与合同约定分散难查",
+            "source_refs": [
+              "source-catalog-fbfb37b1687b0533"
+            ]
+          },
+          {
+            "id": "catalog-3cddecc4e10c326f",
+            "title": "资产台账清洗与幽灵资产识别",
+            "roles": "行政",
+            "description": "台账越来越长、虚挂资产越来越多，盘点时全是找不到的幽灵资产",
+            "source_refs": [
+              "source-catalog-3cddecc4e10c326f"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-12dd96b647c70b85"
+              ]
+            },
+            "label": "盘点表和资产记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "盘点报告",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4cfe5836831cd436",
+          "catalog-35c4f6db5e1d8233",
+          "catalog-e3f2c30b23e03818",
+          "catalog-398a5e9b4d346396",
+          "catalog-12dd96b647c70b85",
+          "catalog-8271cb4fb0db3c37",
+          "catalog-328d4493989de9b2",
+          "catalog-6f71fc1c04f836a3",
+          "catalog-57dc16647e42dc10",
+          "catalog-a9a0e79b8415dc34",
+          "catalog-86b04f5003ebe332",
+          "catalog-fbfb37b1687b0533",
+          "catalog-3cddecc4e10c326f"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "人员与日常办公",
+      "scene_ids": [
+        "hr",
+        "admin",
+        "legal"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "客户与产品",
+      "scene_ids": [
+        "sales",
+        "market",
+        "product"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "资金与供应",
+      "scene_ids": [
+        "finance",
+        "sourcing"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 通用",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-bc37b9a24caa79d8",
+      "title": "应收账款账龄分析与逾期预警",
+      "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:73",
+      "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "应收账款账龄分析与逾期预警",
+      "source_refs": [
+        "source-catalog-bc37b9a24caa79d8"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "对齐业务口径",
+              "participant": "财务与销售",
+              "description": "接收销售台账与发票，核对销售台账中的订单与财务确认记录。交付口径差异记录。"
+            },
+            {
+              "label": "匹配银行回款",
+              "participant": "财务",
+              "description": "接收口径差异记录，对照回款流水与发票，找出未完全回收的项目。交付未收金额清单。"
+            },
+            {
+              "label": "整理账龄分组",
+              "participant": "财务",
+              "description": "接收未收金额清单，依据业务约定对未收款项按账龄分类。交付应收账龄表。"
+            },
+            {
+              "label": "整理催收优先级",
+              "participant": "财务与销售",
+              "description": "接收应收账龄表，汇总逾期金额与天数，形成跟进清单。交付催收跟进清单。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "finance"
+  }
+}

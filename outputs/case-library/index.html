@@ -1,0 +1,162 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eeede8"><title>行业微观全景图 · 看懂 12 个行业每天在忙什么</title>
+<meta name="description" content="用等距微缩场景，把 12 个行业的真实工作拆成一个个小工位。写给不在这个行业里的产品经理。">
+<style>
+:root{--ink:#16140f;--red:#c8402b;--red-deep:#a93422;--bg:#eeede8;--line:#d6d4cc;--soft:#e2e0d8;--paper:#f7f6f2;--mute:#6b6860;--body:#3a372f;
+--serif:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;--sans:"PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;--gutter:clamp(20px,4vw,56px)}
+*{box-sizing:border-box}[hidden]{display:none!important}html{color:var(--ink);background:var(--bg);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0}a{color:inherit;text-decoration:none;transition:color .18s,background-color .18s,border-color .18s}a:hover{color:var(--red)}
+:focus-visible{outline:2px solid var(--red);outline-offset:4px}::selection{background:#c8402b33}
+p{line-height:1.8;margin:0}h1,h2,h3{margin:0;text-wrap:pretty}
+.shell{width:min(100%,1440px);margin-inline:auto;padding-inline:var(--gutter)}
+.mono{font:500 .75rem/1.55 var(--mono);letter-spacing:.02em;color:var(--mute)}
+.num{font:500 .75rem var(--mono);color:var(--red)}
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(1.2) blur(8px)}
+.top .shell{display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:.65rem;font-weight:700;font-size:.95rem}.mark{display:grid;place-items:center;width:22px;height:22px;border-radius:2px;background:var(--red);color:#fff;font:700 12px/1 var(--serif)}
+.top nav{display:flex;gap:clamp(.9rem,2.6vw,2.2rem);font-size:.875rem}
+.hero{min-height:calc(100svh - 64px);align-content:center;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;padding-block:clamp(56px,9vw,128px) clamp(40px,6vw,80px)}
+.hero-meta{grid-column:1/4;padding-top:18px}.hero-meta p{margin-bottom:6px;line-height:1.6}
+.hero h1{grid-column:1/13;font:900 clamp(48px,8.4vw,128px)/1 var(--serif)}
+.hero h1 span{display:block;margin-top:clamp(18px,2.6vw,32px);font:500 clamp(20px,2.6vw,36px)/1.35 var(--serif);max-width:18em}
+.hero h1 em{font-style:normal;color:var(--red)}
+.lede{grid-column:1/8;margin-top:32px;color:var(--mute);max-width:36em}
+.now{grid-column:9/13;margin-top:32px;padding-left:14px;border-left:2px solid var(--red);font-size:.875rem;color:var(--body)}
+.now strong{display:block;font:700 2rem/1.1 var(--serif);color:var(--ink)}
+.sec{padding-block:clamp(40px,6vw,88px)}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-top:14px;margin-bottom:28px;border-top:2px solid var(--ink)}
+.sh h2{font:700 clamp(1.4rem,2.4vw,1.9rem)/1.35 var(--serif)}
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:0;padding:0;border-bottom:1px solid var(--line)}
+.how li{padding:22px 22px 26px 0;border-right:1px solid var(--line);margin-right:22px}.how li:last-child{border-right:0}
+.how h3{font:700 1.2rem/1.4 var(--serif);margin:10px 0 2px}.how p:last-child{color:var(--body);font-size:.9rem;margin-top:8px}
+.how li:first-child h3::after{content:"推荐先看";margin-left:8px;padding:2px 6px;font:500 10px var(--mono);color:#fff;background:var(--red);vertical-align:3px}
+.tip{margin-top:18px;font-size:.875rem;color:var(--mute)}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;margin-bottom:24px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{min-height:36px;padding:0 14px;border:1px solid var(--line);background:transparent;color:var(--body);font:inherit;font-size:.875rem;border-radius:2px;cursor:pointer}
+.chips button:hover{border-color:var(--ink)}.chips button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.search{min-height:36px;width:min(100%,260px);padding:0 12px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:.875rem;border-radius:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,400px),1fr));gap:40px 32px}
+.ind{display:flex;flex-direction:column;border-top:1px solid var(--ink);padding-top:16px}
+.shot{position:relative;display:block;aspect-ratio:3/2;background:var(--paper);overflow:hidden;border:1px solid var(--line)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}.shot:hover img{transform:scale(1.04)}
+.tag{position:absolute;left:10px;top:10px;padding:3px 8px;background:var(--bg);font:500 11px var(--mono);color:var(--body)}
+.body{padding-top:16px}.body h3{font:700 1.6rem/1.3 var(--serif);margin:6px 0 6px}.desc{color:var(--body);font-size:.95rem}
+.story{display:block;margin:16px 0 4px;padding:12px 14px;background:var(--paper);border-left:2px solid var(--red)}
+.story strong{display:block;font:600 1.05rem/1.5 var(--serif);margin-top:2px}.story:hover{background:var(--soft)}
+details{border-bottom:1px solid var(--line)}summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:.875rem;color:var(--body);list-style:none}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";margin-left:auto;font-family:var(--mono);color:var(--mute)}details[open] summary::after{content:"−"}
+.terms{list-style:none;padding:0 0 12px;margin:0;font-size:.875rem;color:var(--body);line-height:1.7}.terms dfn{font-style:normal;font-weight:700;color:var(--ink);margin-right:8px}.terms dfn::after{content:"："}
+.views{list-style:none;margin:0;padding:0 0 8px}.views a{display:grid;grid-template-columns:28px 1fr auto 16px;align-items:center;gap:8px;min-height:42px;border-top:1px dashed var(--line);font-size:.9rem}
+.views .vd{font:500 11px var(--mono);color:var(--mute)}.views .arr{color:var(--mute)}.views a:hover .arr{color:var(--red)}
+.empty{color:var(--mute);padding:40px 0}
+footer{border-top:1px solid var(--line);margin-top:40px}footer .shell{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px}
+@media(max-width:900px){.hero-meta,.hero h1,.lede,.now{grid-column:1/-1}.hero-meta{padding:0 0 18px}.how{grid-template-columns:1fr 1fr}.how li:nth-child(2){border-right:0}}
+@media(max-width:560px){.how{grid-template-columns:1fr}.how li{border-right:0;border-bottom:1px solid var(--line);margin:0}.top nav a:not(:last-child){display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+html{scroll-behavior:smooth}#industries,#how{scroll-margin-top:72px}
+.cta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:.7rem 1.4rem;border:1px solid var(--ink);background:var(--ink);color:var(--bg);font-size:.9375rem;font-weight:500}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}.btn span{animation:nud 1.6s ease-in-out infinite}
+.btn.ghost{background:transparent;color:var(--ink)}.btn.ghost:hover{background:var(--soft);color:var(--ink);border-color:var(--ink)}
+@keyframes nud{50%{transform:translateY(3px)}}
+@media(max-width:900px){.hero{min-height:0}}
+.hero{position:relative;isolation:isolate}
+.hero>*:not(.hero-art){position:relative;z-index:1}
+.hero-art{position:absolute;z-index:0;top:50%;right:calc(var(--gutter)*-.5);width:min(64%,980px);aspect-ratio:3/2;transform:translateY(-50%);pointer-events:none}
+.hero-art img{width:100%;height:100%;object-fit:contain;opacity:.92}
+.hero-art::after{content:"";position:absolute;inset:-2px;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 55%,transparent) 30%,color-mix(in srgb,var(--bg) 22%,transparent) 65%,color-mix(in srgb,var(--bg) 30%,transparent) 100%),radial-gradient(ellipse at 60% 50%,transparent 45%,var(--bg) 78%)}
+.now{background:color-mix(in srgb,var(--bg) 70%,transparent);padding-block:6px;backdrop-filter:blur(2px)}
+@media(max-width:900px){.hero-art{width:100%;top:auto;bottom:0;transform:none;opacity:.35}}
+</style></head><body>
+<header class="top"><div class="shell"><a class="brand" href="#top"><span class="mark">景</span>行业微观全景图</a>
+<nav aria-label="页面导航"><a href="#how">怎么看</a><a href="#industries">12 个行业</a><a href="../asset-library.html">素材库</a></nav></div></header>
+<main id="top"><section class="shell hero"><div class="hero-art" aria-hidden="true"><img src="thumbs/hero-manufacturing.webp" alt=""></div>
+<h1>把行业<br>放大来看<span>一个行业每天在忙什么？<em>谁</em>拿着<em>什么</em>，交给了<em>谁</em>。</span></h1>
+<p class="lede">我们把 12 个行业里 706 个真实工作案例，画成一个个等距微缩的工位。不用懂行话，跟着一件具体的小事走一遍，就能看出这个行业的分工、交接和最容易出错的地方——这些往往就是产品机会。</p>
+<div class="now"><strong>706</strong>个真实案例<br>91 个工作场景 · 12 个行业</div><div class="cta"><a class="btn" href="#industries">查看 12 个行业 <span aria-hidden="true">↓</span></a><a class="btn ghost" href="#how">先了解怎么看</a></div></section>
+<section class="shell sec" id="how" aria-labelledby="how-t"><div class="sh"><h2 id="how-t">怎么看：每个行业都有 4 种看法</h2><span class="mono">由浅入深</span></div>
+<ol class="how"><li><span class="num">01</span><h3>跟一件事走一遍</h3><p class="mono">故事线</p><p>3 分钟入门：沿着一个真实小任务，走完行业里的几个工位。</p></li><li><span class="num">02</span><h3>看谁和谁打交道</h3><p class="mono">业务全景</p><p>看清上下游：客户、本方、协作方之间交接了什么。</p></li><li><span class="num">03</span><h3>逛遍所有工作场景</h3><p class="mono">场景地图</p><p>全行业的工作场景摆在一张图上，每个场景背后是真实案例。</p></li><li><span class="num">04</span><h3>拆开一个流程</h3><p class="mono">流程拆解</p><p>把一条典型流程拆成几站，逐站看人、资料和产出。</p></li></ol>
+<p class="tip">第一次来？挑一个你最熟悉的行业，从「跟一件事走一遍」开始，看完 4 个工位再去看全景。</p></section>
+<section class="shell sec" id="industries" aria-labelledby="ind-t"><div class="sh"><h2 id="ind-t">挑一个行业开始</h2><span class="mono" id="count">12 / 12</span></div>
+<div class="toolbar"><div class="chips" role="group" aria-label="按类型筛选"><button type="button" data-f="all" aria-pressed="true">全部</button><button type="button" data-f="life" aria-pressed="false">生活里天天接触</button><button type="button" data-f="prod" aria-pressed="false">把东西造出来、运出去</button><button type="button" data-f="pro" aria-pressed="false">专业服务</button><button type="button" data-f="pub" aria-pressed="false">公共与社会</button></div><input class="search" id="q" type="search" placeholder="搜行业或词，如：理赔、报关" aria-label="搜索行业"></div>
+<div class="grid" id="grid"><article class="ind" data-g="life" data-k="通用几乎每家公司都有的活：销售、财务、人事、采购怎么配合。一笔应收款，怎么查清还欠多少应收账款货卖出去了、钱还没收回来的那部分账龄这笔钱已经拖了多久没收">
+<a class="shot" href="universal-floor-map.html" aria-label="通用：一笔应收款，怎么查清还欠多少"><img src="thumbs/universal.webp" alt="通用行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">生活里天天接触</span></a>
+<div class="body"><p class="mono">01 · 8 个场景 · 156 个真实案例</p>
+<h3>通用</h3><p class="desc">几乎每家公司都有的活：销售、财务、人事、采购怎么配合。</p>
+<a class="story" href="universal-floor-map.html"><span class="mono">从这里开始</span><strong>一笔应收款，怎么查清还欠多少？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>应收账款</dfn>货卖出去了、钱还没收回来的那部分</li><li><dfn>账龄</dfn>这笔钱已经拖了多久没收</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="universal-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="universal-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="universal-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="universal-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="life" data-k="消费零售商品从工厂到仓库、到货架、再到你手上的全过程。一批货进海外仓，怎么核对短收和索赔头程把货从国内运到海外仓库的这一段短收实际到货比发货单上少">
+<a class="shot" href="consumer-retail-floor-map.html" aria-label="消费零售：一批货进海外仓，怎么核对短收和索赔"><img src="thumbs/consumer-retail.webp" alt="消费零售行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">生活里天天接触</span></a>
+<div class="body"><p class="mono">02 · 11 个场景 · 146 个真实案例</p>
+<h3>消费零售</h3><p class="desc">商品从工厂到仓库、到货架、再到你手上的全过程。</p>
+<a class="story" href="consumer-retail-floor-map.html"><span class="mono">从这里开始</span><strong>一批货进海外仓，怎么核对短收和索赔？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>头程</dfn>把货从国内运到海外仓库的这一段</li><li><dfn>短收</dfn>实际到货比发货单上少</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="consumer-retail-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="consumer-retail-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="consumer-retail-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="consumer-retail-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pro" data-k="金融保险、银行、投资机构怎么服务客户，同时守住风险。一次理赔报案，怎么形成材料告知单理赔出险后向保险公司申请赔付一次性告知一次把要补的材料讲全，客户不用反复跑">
+<a class="shot" href="finance-floor-map.html" aria-label="金融：一次理赔报案，怎么形成材料告知单"><img src="thumbs/finance.webp" alt="金融行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">专业服务</span></a>
+<div class="body"><p class="mono">03 · 6 个场景 · 36 个真实案例</p>
+<h3>金融</h3><p class="desc">保险、银行、投资机构怎么服务客户，同时守住风险。</p>
+<a class="story" href="finance-floor-map.html"><span class="mono">从这里开始</span><strong>一次理赔报案，怎么形成材料告知单？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>理赔</dfn>出险后向保险公司申请赔付</li><li><dfn>一次性告知</dfn>一次把要补的材料讲全，客户不用反复跑</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="finance-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="finance-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="finance-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="finance-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pro" data-k="医疗健康医院和药械企业怎么照顾病人、管好合规材料。一份出院名单，怎么变成随访台账随访病人出院后定期回访，看恢复情况分层按风险高低安排不同的回访频率">
+<a class="shot" href="medical-health-floor-map.html" aria-label="医疗健康：一份出院名单，怎么变成随访台账"><img src="thumbs/medical-health.webp" alt="医疗健康行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">专业服务</span></a>
+<div class="body"><p class="mono">04 · 8 个场景 · 37 个真实案例</p>
+<h3>医疗健康</h3><p class="desc">医院和药械企业怎么照顾病人、管好合规材料。</p>
+<a class="story" href="medical-health-floor-map.html"><span class="mono">从这里开始</span><strong>一份出院名单，怎么变成随访台账？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>随访</dfn>病人出院后定期回访，看恢复情况</li><li><dfn>分层</dfn>按风险高低安排不同的回访频率</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="medical-health-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="medical-health-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="medical-health-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="medical-health-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="prod" data-k="制造业把原料变成产品：接单、排产、生产、质检、发货。一张急单，如何走完工厂排产决定先做哪张单、用哪条线、哪天做放行质检合格后允许出厂的那一步">
+<a class="shot" href="../manufacturing-floor-map.html" aria-label="制造业：一张急单，如何走完工厂"><img src="thumbs/manufacturing.webp" alt="制造业行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">把东西造出来、运出去</span></a>
+<div class="body"><p class="mono">05 · 9 个场景 · 66 个真实案例</p>
+<h3>制造业</h3><p class="desc">把原料变成产品：接单、排产、生产、质检、发货。</p>
+<a class="story" href="../manufacturing-floor-map.html"><span class="mono">从这里开始</span><strong>一张急单，如何走完工厂？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>排产</dfn>决定先做哪张单、用哪条线、哪天做</li><li><dfn>放行</dfn>质检合格后允许出厂的那一步</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="../manufacturing-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="../manufacturing-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="../manufacturing-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="prod" data-k="交通物流让货物在仓库、港口、车辆之间准确流动，账和货对得上。一笔库存差异，怎么追到责任环节账实差异系统里记的数和货架上的数不一致报关货物进出境时向海关申报">
+<a class="shot" href="logistics-floor-map.html" aria-label="交通物流：一笔库存差异，怎么追到责任环节"><img src="thumbs/logistics.webp" alt="交通物流行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">把东西造出来、运出去</span></a>
+<div class="body"><p class="mono">06 · 6 个场景 · 24 个真实案例</p>
+<h3>交通物流</h3><p class="desc">让货物在仓库、港口、车辆之间准确流动，账和货对得上。</p>
+<a class="story" href="logistics-floor-map.html"><span class="mono">从这里开始</span><strong>一笔库存差异，怎么追到责任环节？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>账实差异</dfn>系统里记的数和货架上的数不一致</li><li><dfn>报关</dfn>货物进出境时向海关申报</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="logistics-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="logistics-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="logistics-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="logistics-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="prod" data-k="能源公用水、电、热的生产和输送，关键是安全、稳定、可追溯。一个水质异常点，怎么追到管网记录余氯自来水里残留的消毒剂，太低可能有污染风险末梢管网最远端的用水点">
+<a class="shot" href="energy-utilities-floor-map.html" aria-label="能源公用：一个水质异常点，怎么追到管网记录"><img src="thumbs/energy-utilities.webp" alt="能源公用行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">把东西造出来、运出去</span></a>
+<div class="body"><p class="mono">07 · 7 个场景 · 56 个真实案例</p>
+<h3>能源公用</h3><p class="desc">水、电、热的生产和输送，关键是安全、稳定、可追溯。</p>
+<a class="story" href="energy-utilities-floor-map.html"><span class="mono">从这里开始</span><strong>一个水质异常点，怎么追到管网记录？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>余氯</dfn>自来水里残留的消毒剂，太低可能有污染风险</li><li><dfn>末梢</dfn>管网最远端的用水点</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="energy-utilities-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="energy-utilities-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="energy-utilities-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="energy-utilities-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pro" data-k="信息技术让系统和机房稳定运行，出了问题能查到原因。一次机房巡检，怎么形成可追溯日报巡检按固定路线检查设备状态动环机房的电力、温湿度等「动力与环境」">
+<a class="shot" href="information-technology-floor-map.html" aria-label="信息技术：一次机房巡检，怎么形成可追溯日报"><img src="thumbs/information-technology.webp" alt="信息技术行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">专业服务</span></a>
+<div class="body"><p class="mono">08 · 9 个场景 · 50 个真实案例</p>
+<h3>信息技术</h3><p class="desc">让系统和机房稳定运行，出了问题能查到原因。</p>
+<a class="story" href="information-technology-floor-map.html"><span class="mono">从这里开始</span><strong>一次机房巡检，怎么形成可追溯日报？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>巡检</dfn>按固定路线检查设备状态</li><li><dfn>动环</dfn>机房的电力、温湿度等「动力与环境」</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="information-technology-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="information-technology-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="../information-technology-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pro" data-k="数字创意影视、内容和营销作品从创意、制作到发行。一份粗剪字幕，怎么交给剪辑和译制粗剪先把素材拼出大致版本时间码视频里每一帧的时间位置">
+<a class="shot" href="digital-creative-floor-map.html" aria-label="数字创意：一份粗剪字幕，怎么交给剪辑和译制"><img src="thumbs/digital-creative.webp" alt="数字创意行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">专业服务</span></a>
+<div class="body"><p class="mono">09 · 8 个场景 · 51 个真实案例</p>
+<h3>数字创意</h3><p class="desc">影视、内容和营销作品从创意、制作到发行。</p>
+<a class="story" href="digital-creative-floor-map.html"><span class="mono">从这里开始</span><strong>一份粗剪字幕，怎么交给剪辑和译制？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>粗剪</dfn>先把素材拼出大致版本</li><li><dfn>时间码</dfn>视频里每一帧的时间位置</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="digital-creative-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="digital-creative-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="digital-creative-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="digital-creative-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pub" data-k="教育科研老师怎么备课、上课、评价，学校怎么办学和做科研。一份教案，怎么从课堂回到教研库教研老师们一起研究怎么教学情学生对知识的掌握程度">
+<a class="shot" href="education-research-floor-map.html" aria-label="教育科研：一份教案，怎么从课堂回到教研库"><img src="thumbs/education-research.webp" alt="教育科研行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">公共与社会</span></a>
+<div class="body"><p class="mono">10 · 6 个场景 · 22 个真实案例</p>
+<h3>教育科研</h3><p class="desc">老师怎么备课、上课、评价，学校怎么办学和做科研。</p>
+<a class="story" href="education-research-floor-map.html"><span class="mono">从这里开始</span><strong>一份教案，怎么从课堂回到教研库？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>教研</dfn>老师们一起研究怎么教</li><li><dfn>学情</dfn>学生对知识的掌握程度</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="education-research-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="education-research-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="education-research-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="education-research-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pub" data-k="政务公共市民的诉求和办事，怎么流转到对的部门。一通 12345 来电，怎么找到承办单位12345政务服务便民热线分拨把工单派给负责的单位">
+<a class="shot" href="public-services-floor-map.html" aria-label="政务公共：一通 12345 来电，怎么找到承办单位"><img src="thumbs/public-services.webp" alt="政务公共行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">公共与社会</span></a>
+<div class="body"><p class="mono">11 · 6 个场景 · 38 个真实案例</p>
+<h3>政务公共</h3><p class="desc">市民的诉求和办事，怎么流转到对的部门。</p>
+<a class="story" href="public-services-floor-map.html"><span class="mono">从这里开始</span><strong>一通 12345 来电，怎么找到承办单位？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>12345</dfn>政务服务便民热线</li><li><dfn>分拨</dfn>把工单派给负责的单位</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="public-services-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="public-services-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="public-services-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="public-services-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article><article class="ind" data-g="pub" data-k="建筑文旅盖楼、修景区、办活动，每一次改动都要留下证据。一次施工变更，怎么留下签证证据工程变更施工中修改原设计或工程量签证甲乙双方对额外工作量的书面确认，不是出国签证">
+<a class="shot" href="construction-tourism-floor-map.html" aria-label="建筑文旅：一次施工变更，怎么留下签证证据"><img src="thumbs/construction-tourism.webp" alt="建筑文旅行业的等距微缩工作现场" loading="lazy" decoding="async"><span class="tag">公共与社会</span></a>
+<div class="body"><p class="mono">12 · 7 个场景 · 24 个真实案例</p>
+<h3>建筑文旅</h3><p class="desc">盖楼、修景区、办活动，每一次改动都要留下证据。</p>
+<a class="story" href="construction-tourism-floor-map.html"><span class="mono">从这里开始</span><strong>一次施工变更，怎么留下签证证据？</strong></a>
+<details><summary>先认识 2 个行话</summary><ul class="terms"><li><dfn>工程变更</dfn>施工中修改原设计或工程量</li><li><dfn>签证</dfn>甲乙双方对额外工作量的书面确认，不是出国签证</li></ul></details>
+<details class="more"><summary>更多看法</summary><ol class="views"><li><a href="construction-tourism-floor-map.html"><span class="num">01</span><span class="vt">跟一件事走一遍</span><span class="vd">故事线</span><span class="arr">→</span></a></li><li><a href="construction-tourism-business-journey.html"><span class="num">02</span><span class="vt">看谁和谁打交道</span><span class="vd">业务全景</span><span class="arr">→</span></a></li><li><a href="construction-tourism-atlas.html"><span class="num">03</span><span class="vt">逛遍所有工作场景</span><span class="vd">场景地图</span><span class="arr">→</span></a></li><li><a href="construction-tourism-journey.html"><span class="num">04</span><span class="vt">拆开一个流程</span><span class="vd">流程拆解</span><span class="arr">→</span></a></li></ol></details></div></article></div><p class="empty" id="empty" hidden>没有匹配的行业，换个词试试。</p></section></main>
+<footer><div class="shell"><p class="mono">所有场景依据真实案例整理，工位与布局为示意，实际分工因企业而异。</p><a class="mono" href="../asset-library.html">查看场景素材库 →</a></div></footer>
+<script>
+const cards=[...document.querySelectorAll('.ind')],chips=[...document.querySelectorAll('[data-f]')],q=document.getElementById('q');let f='all';
+function run(){const t=q.value.trim();let n=0;for(const c of cards){const ok=(f==='all'||c.dataset.g===f)&&(!t||c.dataset.k.includes(t));c.hidden=!ok;n+=ok}
+document.getElementById('count').textContent=n+' / '+cards.length;document.getElementById('empty').hidden=n>0}
+chips.forEach(b=>b.onclick=()=>{f=b.dataset.f;chips.forEach(x=>x.setAttribute('aria-pressed',x===b));run()});q.oninput=run;
+</script></body></html>

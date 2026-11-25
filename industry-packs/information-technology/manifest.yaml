@@ -1,0 +1,26 @@
+id: information-technology
+name: 信息技术
+version: 1.0.0
+vocabulary:
+  SLA: 服务水平协议
+  RCA: 根因分析
+  POC: 概念验证
+  RFP: 提案征询
+  PUE: 数据中心电能使用效率指标
+  动环: 机房动力与环境监控
+  割接: 既有网络或系统的计划性切换
+entities: [招标需求, 需求池, 接口文档, 验收记录, 客户工单, 动环告警, 巡检日报, 资质证明]
+roles: [销售, 市场, 产品, 研发, 技术支持, 生产, 客服, 运营, 法务]
+actions: [需求归集, 接口巡检, 实施验收, 告警核对, 机房巡检, 工单分诊, 活动复盘, 资质预审]
+asset_mappings:
+  机房巡检: [information-technology.equipment.server-rack, universal.accessory.status-light, universal.document.sheet]
+  项目评审: [universal.furniture.meeting-table, universal.document.sheet]
+  工单处理: [universal.electronics.computer, universal.document.sheet]
+  值班监控: [universal.electronics.display, universal.accessory.status-light]
+  报告复核: [universal.person.office-worker, universal.document.sheet]
+  资质核验: [universal.document.contract, universal.electronics.computer]
+templates: [single-workstation, team-collaboration, equipment-operation, meeting-review, customer-reception, monitoring-center]
+visual_constraints:
+  - 复用统一的写实等距人物、桌面设备和资料对象。
+  - 原始生产标签在机房主题中可辅以机房运维说明，保留案例原始岗位。
+  - 不把不同细分领域或企业的独立案例串成同一条业务流。

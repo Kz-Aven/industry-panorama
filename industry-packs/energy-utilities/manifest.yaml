@@ -1,0 +1,51 @@
+id: energy-utilities
+name: 能源公用
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 水质化验与管网记录
+  - 异常说明和日报
+  - 碳排参数和记录
+  - 参数差异清单
+  - 运行事件和工作记录
+  - 事件复盘材料
+  - 设备台账与维护记录
+  - 检维修计划
+  - 客服工单与派单记录
+  - 漏派复核清单
+  - 标准变更与内部资料
+  - 影响简报
+  - 月度计量与合同依据
+  - 节能量核对结果
+roles:
+  - 采购
+  - 法务
+  - 客服
+  - 生产
+  - 销售
+  - 行政
+  - 运营
+  - 管理层
+actions:
+  - 对齐化验台账和管网班组记录
+  - 逐项核对报送参数与记录出处
+  - 对齐热源事件的时间和处置记录
+  - 核对设备台账及其现场记录
+  - 核对分类和工单分派状态
+  - 整理标准变更与涉及环节
+  - 按月核对节能量计算和费用口径
+asset_mappings:
+  供水泵组:
+    - energy-utilities.equipment.pump-skid
+  供水设施区:
+    - energy-utilities.equipment.pump-skid
+  对齐化验台账和管网班组记录:
+    - energy-utilities.equipment.pump-skid
+templates:
+  - equipment-operation
+  - monitoring-center
+  - single-workstation
+  - meeting-review
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

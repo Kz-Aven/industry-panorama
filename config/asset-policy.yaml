@@ -1,0 +1,3 @@
+active_status: approved
+fallback_order: [exact, industry-tags, alias, equivalent-universal, composition, procedural, external, imagegen, blender]
+external_requires: [source_url, license, attribution]

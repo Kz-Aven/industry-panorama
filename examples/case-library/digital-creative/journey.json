@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "digital-creative",
+  "id": "digital-creative-journey",
+  "type": "process_journey",
+  "title": "数字创意 · 字幕与剧本定稿对照校对",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "digital-creative",
+      "type": "scenario_diorama",
+      "title": "收齐粗剪与字幕",
+      "description": "内容制作人员收集粗剪版、自动字幕及定稿剧本，形成校对输入包。画面包含拍摄工作区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "内容制作人员",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "收集粗剪版、自动字幕及定稿剧本",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "粗剪、字幕与剧本",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "校对输入包",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "locator": "【数字创意·生产·市场】字幕与剧本定稿对照校对/字幕与剧本定稿对照校对.md:75",
+            "uri": "%E3%80%90%E6%95%B0%E5%AD%97%E5%88%9B%E6%84%8F%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9/%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "roles": "生产 · 市场",
+            "description": "自动字幕准确率日常够用，却不知道女主家的公司在剧本里叫顾氏集团",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-4d43239b90d950fc"
+              ]
+            },
+            "label": "粗剪、字幕与剧本",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "校对输入包",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "digital-creative.equipment.camera-rig",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "影视摄影机组",
+            "interaction": {
+              "case_ids": [
+                "catalog-4d43239b90d950fc"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4d43239b90d950fc"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "digital-creative",
+      "type": "scenario_diorama",
+      "title": "按时间码校对",
+      "description": "内容校对人员按时间码比对台词、漏句和专有名词，形成错漏清单与术语表。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "内容校对人员",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按时间码比对台词、漏句和专有名词",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "校对输入包",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "错漏清单与术语表",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "locator": "【数字创意·生产·市场】字幕与剧本定稿对照校对/字幕与剧本定稿对照校对.md:75",
+            "uri": "%E3%80%90%E6%95%B0%E5%AD%97%E5%88%9B%E6%84%8F%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9/%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "roles": "生产 · 市场",
+            "description": "自动字幕准确率日常够用，却不知道女主家的公司在剧本里叫顾氏集团",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-4d43239b90d950fc"
+              ]
+            },
+            "label": "校对输入包",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "错漏清单与术语表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4d43239b90d950fc"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "digital-creative",
+      "type": "scenario_diorama",
+      "title": "复查修改稿",
+      "description": "内容校对人员核对已修改剧本对应的字幕并形成修订版，形成修订 SRT 与术语表。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "内容校对人员",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对已修改剧本对应的字幕并形成修订版",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "错漏清单与术语表",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "修订 SRT 与术语表",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "locator": "【数字创意·生产·市场】字幕与剧本定稿对照校对/字幕与剧本定稿对照校对.md:75",
+            "uri": "%E3%80%90%E6%95%B0%E5%AD%97%E5%88%9B%E6%84%8F%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9/%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "roles": "生产 · 市场",
+            "description": "自动字幕准确率日常够用，却不知道女主家的公司在剧本里叫顾氏集团",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-4d43239b90d950fc"
+              ]
+            },
+            "label": "错漏清单与术语表",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "修订 SRT 与术语表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4d43239b90d950fc"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "digital-creative",
+      "type": "scenario_diorama",
+      "title": "交剪辑与译制",
+      "description": "剪辑与译制人员剪辑替换字幕，译制人员沿用约定术语，形成可供后续制作的字幕与词表。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "剪辑与译制人员",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "剪辑替换字幕，译制人员沿用约定术语",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "修订 SRT 与术语表",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "可供后续制作的字幕与词表",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "locator": "【数字创意·生产·市场】字幕与剧本定稿对照校对/字幕与剧本定稿对照校对.md:75",
+            "uri": "%E3%80%90%E6%95%B0%E5%AD%97%E5%88%9B%E6%84%8F%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9/%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-4d43239b90d950fc",
+            "title": "字幕与剧本定稿对照校对",
+            "roles": "生产 · 市场",
+            "description": "自动字幕准确率日常够用，却不知道女主家的公司在剧本里叫顾氏集团",
+            "source_refs": [
+              "source-catalog-4d43239b90d950fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-4d43239b90d950fc"
+              ]
+            },
+            "label": "修订 SRT 与术语表",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "可供后续制作的字幕与词表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-4d43239b90d950fc"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "校对输入包",
+      "source_refs": [
+        "source-catalog-4d43239b90d950fc"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "错漏清单与术语表",
+      "source_refs": [
+        "source-catalog-4d43239b90d950fc"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "修订 SRT 与术语表",
+      "source_refs": [
+        "source-catalog-4d43239b90d950fc"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-4d43239b90d950fc"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-4d43239b90d950fc",
+      "title": "字幕与剧本定稿对照校对",
+      "locator": "【数字创意·生产·市场】字幕与剧本定稿对照校对/字幕与剧本定稿对照校对.md:75",
+      "uri": "%E3%80%90%E6%95%B0%E5%AD%97%E5%88%9B%E6%84%8F%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9/%E5%AD%97%E5%B9%95%E4%B8%8E%E5%89%A7%E6%9C%AC%E5%AE%9A%E7%A8%BF%E5%AF%B9%E7%85%A7%E6%A0%A1%E5%AF%B9.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "字幕与剧本定稿对照校对",
+      "source_refs": [
+        "source-catalog-4d43239b90d950fc"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "收齐粗剪与字幕",
+              "participant": "内容制作人员",
+              "description": "接收粗剪、字幕与剧本，收集粗剪版、自动字幕及定稿剧本。交付校对输入包。"
+            },
+            {
+              "label": "按时间码校对",
+              "participant": "内容校对人员",
+              "description": "接收校对输入包，按时间码比对台词、漏句和专有名词。交付错漏清单与术语表。"
+            },
+            {
+              "label": "复查修改稿",
+              "participant": "内容校对人员",
+              "description": "接收错漏清单与术语表，核对已修改剧本对应的字幕并形成修订版。交付修订 SRT 与术语表。"
+            },
+            {
+              "label": "交剪辑与译制",
+              "participant": "剪辑与译制人员",
+              "description": "接收修订 SRT 与术语表，剪辑替换字幕，译制人员沿用约定术语。交付可供后续制作的字幕与词表。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

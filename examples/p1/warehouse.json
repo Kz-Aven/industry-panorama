@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "id": "shipping-verification",
+  "type": "scenario_diorama",
+  "industry": "manufacturing",
+  "title": "出货复核与码头交接",
+  "description": "仓管员在工作台核对待发纸箱、发货单和订单号并记录结果；码头同事接收已复核纸箱。",
+  "semantic": {
+    "roles": [
+      {
+        "id": "checker",
+        "label": "仓管员",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      },
+      {
+        "id": "receiver",
+        "label": "码头同事",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "check",
+        "label": "核对待发纸箱与订单号，将结果记录在发货单上",
+        "source_refs": [
+          "user-shipping-workflow"
+        ],
+        "actor": "checker",
+        "target": "unverified-carton",
+        "output": "delivery-note"
+      },
+      {
+        "id": "receive",
+        "label": "在工作台旁接收已复核纸箱",
+        "source_refs": [
+          "user-shipping-workflow"
+        ],
+        "actor": "receiver",
+        "target": "verified-carton",
+        "output": "verified-carton"
+      }
+    ],
+    "business_objects": [
+      {
+        "id": "unverified-carton",
+        "label": "待发纸箱",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      },
+      {
+        "id": "verified-carton",
+        "label": "已复核纸箱",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      },
+      {
+        "id": "delivery-note",
+        "label": "发货单及复核结果",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      },
+      {
+        "id": "order-no",
+        "label": "订单号",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      }
+    ],
+    "systems": [],
+    "relations": [
+      {
+        "id": "reference-number",
+        "label": "按订单号核对",
+        "source_refs": [
+          "user-shipping-workflow"
+        ],
+        "source": "delivery-note",
+        "target": "order-no"
+      }
+    ],
+    "source_refs": [
+      {
+        "id": "user-shipping-workflow",
+        "title": "出货复核流程说明",
+        "locator": "本次用户请求 / 出货复核段",
+        "excerpt": "仓管员对照发货单核对待发纸箱与订单号，把复核结果记录在发货单上；码头同事在工作台旁接收已经复核的纸箱。"
+      }
+    ],
+    "cases": [
+      {
+        "id": "shipping-user-example",
+        "title": "一箱待发纸箱的出货复核",
+        "roles": "仓管员、码头同事",
+        "description": "仓管员对照发货单核对待发纸箱与订单号，把复核结果记录在发货单上；码头同事在工作台旁接收已经复核的纸箱。",
+        "source_refs": [
+          "user-shipping-workflow"
+        ]
+      }
+    ]
+  },
+  "scene": {
+    "template": "warehouse",
+    "platform": {
+      "asset_id": "universal.platform.industrial",
+      "size": [
+        9,
+        6
+      ],
+      "height": 0.3
+    },
+    "objects": [
+      {
+        "id": "workstation",
+        "asset_id": "universal.furniture.meeting-table",
+        "slot": "workstation"
+      },
+      {
+        "id": "checking-operator",
+        "asset_id": "universal.person.worker",
+        "rotation": 0,
+        "semantic_ref": "checker",
+        "action": "check",
+        "target": "delivery-document",
+        "slot": "checking-operator"
+      },
+      {
+        "id": "dock-operator",
+        "asset_id": "universal.person.worker",
+        "rotation": 180,
+        "semantic_ref": "receiver",
+        "action": "receive",
+        "target": "checked-box",
+        "slot": "dock-operator"
+      },
+      {
+        "id": "delivery-document",
+        "asset_id": "universal.document.order",
+        "support": "workstation",
+        "semantic_ref": "delivery-note",
+        "label": "发货单（复核结果）",
+        "slot": "delivery-document"
+      },
+      {
+        "id": "unchecked-box",
+        "asset_id": "universal.material.carton",
+        "support": "workstation",
+        "semantic_ref": "unverified-carton",
+        "label": "待发纸箱",
+        "slot": "unchecked-box"
+      },
+      {
+        "id": "checked-box",
+        "asset_id": "universal.material.carton",
+        "support": "workstation",
+        "semantic_ref": "verified-carton",
+        "label": "已复核纸箱",
+        "interaction": {
+          "case_ids": [
+            "shipping-user-example"
+          ]
+        },
+        "slot": "checked-box"
+      },
+      {
+        "id": "rack",
+        "asset_id": "universal.furniture.cabinet",
+        "slot": "rack"
+      },
+      {
+        "id": "pallet",
+        "asset_id": "universal.material.pallet",
+        "slot": "pallet"
+      },
+      {
+        "id": "cart",
+        "asset_id": "universal.vehicle.hand-cart",
+        "slot": "cart"
+      }
+    ]
+  },
+  "interaction": {
+    "case_ids": [
+      "shipping-user-example"
+    ]
+  },
+  "render": {}
+}

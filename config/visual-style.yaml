@@ -1,0 +1,21 @@
+id: industrial-isometric-v1
+projection: orthographic-isometric
+axes_degrees: 30
+camera_azimuth: 45
+camera_elevation: 35.264
+light: upper-left
+palette:
+  navy: '#263f52'
+  steel: '#517a96'
+  teal: '#4c9c95'
+  ice: '#a9bec9'
+  white: '#e4eced'
+  wood: '#c2a481'
+  safety: '#c49a4f'
+asset_finish:
+  medium: physically-rendered-realistic-miniature
+  background: transparent-alpha
+  direction_order: [0, 90, 180, 270]
+  human_scale_m: 1.71
+  light: soft-upper-left-in-image-space
+  materials: [matte-powder-coated-steel, brushed-metal, glass, woven-fabric, pale-oak]

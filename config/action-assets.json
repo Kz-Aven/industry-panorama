@@ -1,0 +1,7 @@
+[
+  {"id":"warehouse-check","when":{"role":["仓管","仓储"],"action":["核对","复核"],"tool":["发货单","出库单"],"target":["纸箱","箱件"]},"assets":{"role":"universal.person.worker","tool":"universal.document.order","target":"universal.material.carton"},"pose":"站姿，前伸手臂，朝向核对台"},
+  {"id":"support-ticket","when":{"role":["客服","值班"],"action":["归集","核对","更新","回复"],"tool":["工单系统","客服工作台"],"target":["工单","客户请求"]},"assets":{"role":"universal.person.office-worker","tool":"universal.electronics.computer","target":"universal.document.sheet"},"pose":"站姿，双手在身前，朝向终端"},
+  {"id":"incident-screen","when":{"role":["技术支持","运维"],"action":["核对","对齐","监控"],"tool":["监控屏","监控台"],"target":["告警","指标"]},"assets":{"role":"universal.person.technician","tool":"universal.electronics.display","target":"universal.document.sheet"},"pose":"站姿，双手在身前，朝向监控屏"},
+  {"id":"meeting-review","when":{"role":["采购","评审","销售"],"action":["核对","评审","确认","跟催"],"tool":["评审表","跟催清单","核对表"],"target":["到货","供应商","报价","承诺"]},"assets":{"role":"universal.person.business-staff","tool":"universal.document.sheet","target":"universal.document.order"},"pose":"站姿，手掌略展开，朝向评审对象"},
+  {"id":"patient-reception","when":{"role":["接待","导诊","医护"],"action":["接待","核对","问询","交接"],"tool":["登记表","预约工作台"],"target":["预约","来访","基础信息"]},"assets":{"role":"medical-health.person.clinician","tool":"universal.document.sheet","target":"universal.document.order"},"pose":"站姿，单手略展开，朝向来访者"}
+]

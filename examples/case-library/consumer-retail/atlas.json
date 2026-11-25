@@ -1,0 +1,4053 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "consumer-retail",
+  "id": "consumer-retail-atlas",
+  "type": "industry_atlas",
+  "title": "消费零售场景全景图",
+  "description": "案例库 · 146 个案例，按工作场景归入 11 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "fulfillment",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "库存、仓配与交付",
+      "description": "运营逐票核对装箱、签收和上架，形成差异与索赔清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "逐票核对装箱、签收和上架",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "装箱单与上架记录",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "差异与索赔清单",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-6906db91fa09bd43",
+            "title": "临期品预警 —— 一份报表进来，一张协作表出去",
+            "locator": "【消费零售·采购·运营】临期品预警 —— 一份报表进来，一张协作表出去/临期品预警 —— 一份报表进来，一张协作表出去.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%B8%B4%E6%9C%9F%E5%93%81%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BB%BD%E6%8A%A5%E8%A1%A8%E8%BF%9B%E6%9D%A5%EF%BC%8C%E4%B8%80%E5%BC%A0%E5%8D%8F%E4%BD%9C%E8%A1%A8%E5%87%BA%E5%8E%BB/%E4%B8%B4%E6%9C%9F%E5%93%81%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BB%BD%E6%8A%A5%E8%A1%A8%E8%BF%9B%E6%9D%A5%EF%BC%8C%E4%B8%80%E5%BC%A0%E5%8D%8F%E4%BD%9C%E8%A1%A8%E5%87%BA%E5%8E%BB.md"
+          },
+          {
+            "id": "source-catalog-8c1730ba4565a771",
+            "title": "配送及时率跟踪 —— 9 步规则算清每一趟车",
+            "locator": "【消费零售·采购·运营】配送及时率跟踪 —— 9 步规则算清每一趟车/配送及时率跟踪 —— 9 步规则算清每一趟车.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%85%8D%E9%80%81%E5%8F%8A%E6%97%B6%E7%8E%87%E8%B7%9F%E8%B8%AA%20%E2%80%94%E2%80%94%209%20%E6%AD%A5%E8%A7%84%E5%88%99%E7%AE%97%E6%B8%85%E6%AF%8F%E4%B8%80%E8%B6%9F%E8%BD%A6/%E9%85%8D%E9%80%81%E5%8F%8A%E6%97%B6%E7%8E%87%E8%B7%9F%E8%B8%AA%20%E2%80%94%E2%80%94%209%20%E6%AD%A5%E8%A7%84%E5%88%99%E7%AE%97%E6%B8%85%E6%AF%8F%E4%B8%80%E8%B6%9F%E8%BD%A6.md"
+          },
+          {
+            "id": "source-catalog-4a35b5c40aa29084",
+            "title": "临期预警与分时段出清方案",
+            "locator": "【消费零售·管理层】临期预警与分时段出清方案/临期预警与分时段出清方案.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91%E4%B8%B4%E6%9C%9F%E9%A2%84%E8%AD%A6%E4%B8%8E%E5%88%86%E6%97%B6%E6%AE%B5%E5%87%BA%E6%B8%85%E6%96%B9%E6%A1%88/%E4%B8%B4%E6%9C%9F%E9%A2%84%E8%AD%A6%E4%B8%8E%E5%88%86%E6%97%B6%E6%AE%B5%E5%87%BA%E6%B8%85%E6%96%B9%E6%A1%88.md"
+          },
+          {
+            "id": "source-catalog-e3c3b686d4f894e1",
+            "title": "波段畅滞销归因复盘",
+            "locator": "【消费零售·运营】波段畅滞销归因复盘/波段畅滞销归因复盘.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B3%A2%E6%AE%B5%E7%95%85%E6%BB%9E%E9%94%80%E5%BD%92%E5%9B%A0%E5%A4%8D%E7%9B%98/%E6%B3%A2%E6%AE%B5%E7%95%85%E6%BB%9E%E9%94%80%E5%BD%92%E5%9B%A0%E5%A4%8D%E7%9B%98.md"
+          },
+          {
+            "id": "source-catalog-22414fe866d40f28",
+            "title": "广告—库存—利润联动预警",
+            "locator": "【消费零售·运营】广告—库存—利润联动预警/广告—库存—利润联动预警.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%B9%BF%E5%91%8A%E2%80%94%E5%BA%93%E5%AD%98%E2%80%94%E5%88%A9%E6%B6%A6%E8%81%94%E5%8A%A8%E9%A2%84%E8%AD%A6/%E5%B9%BF%E5%91%8A%E2%80%94%E5%BA%93%E5%AD%98%E2%80%94%E5%88%A9%E6%B6%A6%E8%81%94%E5%8A%A8%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-99b81cf8d3fa0c48",
+            "title": "近效期分级处置方案 —— ERP 只会报警，报警之后怎么办没人管",
+            "locator": "【消费零售·运营】近效期分级处置方案 —— ERP 只会报警，报警之后怎么办没人管/近效期分级处置方案 —— ERP 只会报警，报警之后怎么办没人管.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%BF%91%E6%95%88%E6%9C%9F%E5%88%86%E7%BA%A7%E5%A4%84%E7%BD%AE%E6%96%B9%E6%A1%88%20%E2%80%94%E2%80%94%20ERP%20%E5%8F%AA%E4%BC%9A%E6%8A%A5%E8%AD%A6%EF%BC%8C%E6%8A%A5%E8%AD%A6%E4%B9%8B%E5%90%8E%E6%80%8E%E4%B9%88%E5%8A%9E%E6%B2%A1%E4%BA%BA%E7%AE%A1/%E8%BF%91%E6%95%88%E6%9C%9F%E5%88%86%E7%BA%A7%E5%A4%84%E7%BD%AE%E6%96%B9%E6%A1%88%20%E2%80%94%E2%80%94%20ERP%20%E5%8F%AA%E4%BC%9A%E6%8A%A5%E8%AD%A6%EF%BC%8C%E6%8A%A5%E8%AD%A6%E4%B9%8B%E5%90%8E%E6%80%8E%E4%B9%88%E5%8A%9E%E6%B2%A1%E4%BA%BA%E7%AE%A1.md"
+          },
+          {
+            "id": "source-catalog-72640c8415670ebd",
+            "title": "临期批次周内清完 —— 距过期与未动销天数连着看",
+            "locator": "【消费零售·运营】临期批次周内清完 —— 距过期与未动销天数连着看/临期批次周内清完 —— 距过期与未动销天数连着看.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%B8%B4%E6%9C%9F%E6%89%B9%E6%AC%A1%E5%91%A8%E5%86%85%E6%B8%85%E5%AE%8C%20%E2%80%94%E2%80%94%20%E8%B7%9D%E8%BF%87%E6%9C%9F%E4%B8%8E%E6%9C%AA%E5%8A%A8%E9%94%80%E5%A4%A9%E6%95%B0%E8%BF%9E%E7%9D%80%E7%9C%8B/%E4%B8%B4%E6%9C%9F%E6%89%B9%E6%AC%A1%E5%91%A8%E5%86%85%E6%B8%85%E5%AE%8C%20%E2%80%94%E2%80%94%20%E8%B7%9D%E8%BF%87%E6%9C%9F%E4%B8%8E%E6%9C%AA%E5%8A%A8%E9%94%80%E5%A4%A9%E6%95%B0%E8%BF%9E%E7%9D%80%E7%9C%8B.md"
+          },
+          {
+            "id": "source-catalog-4f5a023b2812f72b",
+            "title": "每日效期扫描与报废",
+            "locator": "【消费零售·运营】每日效期扫描与报废/每日效期扫描与报废.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%AF%8F%E6%97%A5%E6%95%88%E6%9C%9F%E6%89%AB%E6%8F%8F%E4%B8%8E%E6%8A%A5%E5%BA%9F/%E6%AF%8F%E6%97%A5%E6%95%88%E6%9C%9F%E6%89%AB%E6%8F%8F%E4%B8%8E%E6%8A%A5%E5%BA%9F.md"
+          },
+          {
+            "id": "source-catalog-49653f10739adab4",
+            "title": "配送异常账算清再申诉",
+            "locator": "【消费零售·运营】配送异常账算清再申诉/配送异常账算清再申诉.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%85%8D%E9%80%81%E5%BC%82%E5%B8%B8%E8%B4%A6%E7%AE%97%E6%B8%85%E5%86%8D%E7%94%B3%E8%AF%89/%E9%85%8D%E9%80%81%E5%BC%82%E5%B8%B8%E8%B4%A6%E7%AE%97%E6%B8%85%E5%86%8D%E7%94%B3%E8%AF%89.md"
+          },
+          {
+            "id": "source-catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+          },
+          {
+            "id": "source-catalog-dd6ca9a343fc29a0",
+            "title": "异常驱动自动补货",
+            "locator": "【消费零售·运营】异常驱动自动补货/异常驱动自动补货.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BC%82%E5%B8%B8%E9%A9%B1%E5%8A%A8%E8%87%AA%E5%8A%A8%E8%A1%A5%E8%B4%A7/%E5%BC%82%E5%B8%B8%E9%A9%B1%E5%8A%A8%E8%87%AA%E5%8A%A8%E8%A1%A5%E8%B4%A7.md"
+          },
+          {
+            "id": "source-catalog-7242d503e07f5eba",
+            "title": "滞销 SKU 分级诊断与清理方案",
+            "locator": "【消费零售·运营】滞销 SKU 分级诊断与清理方案/滞销 SKU 分级诊断与清理方案.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%BB%9E%E9%94%80%20SKU%20%E5%88%86%E7%BA%A7%E8%AF%8A%E6%96%AD%E4%B8%8E%E6%B8%85%E7%90%86%E6%96%B9%E6%A1%88/%E6%BB%9E%E9%94%80%20SKU%20%E5%88%86%E7%BA%A7%E8%AF%8A%E6%96%AD%E4%B8%8E%E6%B8%85%E7%90%86%E6%96%B9%E6%A1%88.md"
+          },
+          {
+            "id": "source-catalog-3aa8cc84a7b66f35",
+            "title": "滞销款店间调拨建议",
+            "locator": "【消费零售·运营】滞销款店间调拨建议/滞销款店间调拨建议.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%BB%9E%E9%94%80%E6%AC%BE%E5%BA%97%E9%97%B4%E8%B0%83%E6%8B%A8%E5%BB%BA%E8%AE%AE/%E6%BB%9E%E9%94%80%E6%AC%BE%E5%BA%97%E9%97%B4%E8%B0%83%E6%8B%A8%E5%BB%BA%E8%AE%AE.md"
+          },
+          {
+            "id": "source-catalog-c54c2d3694d08f6a",
+            "title": "FBA赔偿与异常货件损失追回",
+            "locator": "【消费零售·运营】FBA赔偿与异常货件损失追回/FBA赔偿与异常货件损失追回.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91FBA%E8%B5%94%E5%81%BF%E4%B8%8E%E5%BC%82%E5%B8%B8%E8%B4%A7%E4%BB%B6%E6%8D%9F%E5%A4%B1%E8%BF%BD%E5%9B%9E/FBA%E8%B5%94%E5%81%BF%E4%B8%8E%E5%BC%82%E5%B8%B8%E8%B4%A7%E4%BB%B6%E6%8D%9F%E5%A4%B1%E8%BF%BD%E5%9B%9E.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-6906db91fa09bd43",
+            "title": "临期品预警 —— 一份报表进来，一张协作表出去",
+            "roles": "采购 · 运营",
+            "description": "多期报表人工比对，耗时且易漏；「新增/历史/已过期」分类口径不一",
+            "source_refs": [
+              "source-catalog-6906db91fa09bd43"
+            ]
+          },
+          {
+            "id": "catalog-8c1730ba4565a771",
+            "title": "配送及时率跟踪 —— 9 步规则算清每一趟车",
+            "roles": "采购 · 运营",
+            "description": "9 步计算规则复杂，人工执行口径易漂移；三大仓明细数千行，人工核对不现实",
+            "source_refs": [
+              "source-catalog-8c1730ba4565a771"
+            ]
+          },
+          {
+            "id": "catalog-4a35b5c40aa29084",
+            "title": "临期预警与分时段出清方案",
+            "roles": "管理层",
+            "description": "过期食品处罚起点为五万元，折价过早白丢毛利、过晚则直接报损",
+            "source_refs": [
+              "source-catalog-4a35b5c40aa29084"
+            ]
+          },
+          {
+            "id": "catalog-e3c3b686d4f894e1",
+            "title": "波段畅滞销归因复盘",
+            "roles": "运营",
+            "description": "每周例行拉取畅滞销排名，拉完后无人给出归因与后续动作",
+            "source_refs": [
+              "source-catalog-e3c3b686d4f894e1"
+            ]
+          },
+          {
+            "id": "catalog-22414fe866d40f28",
+            "title": "广告—库存—利润联动预警",
+            "roles": "运营",
+            "description": "广告看 ROAS、供应链看库存，没人一起看，断货后广告权重与排名双输",
+            "source_refs": [
+              "source-catalog-22414fe866d40f28"
+            ]
+          },
+          {
+            "id": "catalog-99b81cf8d3fa0c48",
+            "title": "近效期分级处置方案 —— ERP 只会报警，报警之后怎么办没人管",
+            "roles": "运营",
+            "description": "ERP 弹出一屏红色预警，店长的处理办法是等月底盘点时一起认账",
+            "source_refs": [
+              "source-catalog-99b81cf8d3fa0c48"
+            ]
+          },
+          {
+            "id": "catalog-72640c8415670ebd",
+            "title": "临期批次周内清完 —— 距过期与未动销天数连着看",
+            "roles": "运营",
+            "description": "超一半 SKU 三个月零动销，等传统月报反映问题时已错过处理窗口",
+            "source_refs": [
+              "source-catalog-72640c8415670ebd"
+            ]
+          },
+          {
+            "id": "catalog-4f5a023b2812f72b",
+            "title": "每日效期扫描与报废",
+            "roles": "运营",
+            "description": "后厨原料效期全靠标签，过期原料被做成餐品，一单罚5万起步，还可能是10倍货值",
+            "source_refs": [
+              "source-catalog-4f5a023b2812f72b"
+            ]
+          },
+          {
+            "id": "catalog-49653f10739adab4",
+            "title": "配送异常账算清再申诉",
+            "roles": "运营",
+            "description": "骑手点了已送达、顾客没收到，平台让商家退款，商家不会申诉，只能默认承担损失",
+            "source_refs": [
+              "source-catalog-49653f10739adab4"
+            ]
+          },
+          {
+            "id": "catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "roles": "运营",
+            "description": "装箱单写着 500 件，海外仓系统只上架 480 件，差的 20 件去向无人核对",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          },
+          {
+            "id": "catalog-dd6ca9a343fc29a0",
+            "title": "异常驱动自动补货",
+            "roles": "运营",
+            "description": "异常类型多凭经验难全覆盖，补货决策一次要 1 小时，缺货与积压并存",
+            "source_refs": [
+              "source-catalog-dd6ca9a343fc29a0"
+            ]
+          },
+          {
+            "id": "catalog-7242d503e07f5eba",
+            "title": "滞销 SKU 分级诊断与清理方案",
+            "roles": "运营",
+            "description": "滞销库存按传统清仓只能回款 4 万，分级处理可回笼 10.9 万，但无人做过分级",
+            "source_refs": [
+              "source-catalog-7242d503e07f5eba"
+            ]
+          },
+          {
+            "id": "catalog-3aa8cc84a7b66f35",
+            "title": "滞销款店间调拨建议",
+            "roles": "运营",
+            "description": "总库存账面看似充足，拆到单店则城西断码、滨江积压，缺货与积压并存",
+            "source_refs": [
+              "source-catalog-3aa8cc84a7b66f35"
+            ]
+          },
+          {
+            "id": "catalog-c54c2d3694d08f6a",
+            "title": "FBA赔偿与异常货件损失追回",
+            "roles": "运营",
+            "description": "自动赔偿不等于足额赔偿，索赔有时效，过期就归零",
+            "source_refs": [
+              "source-catalog-c54c2d3694d08f6a"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "warehouse",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-c6dff14b0eed1cc1"
+              ]
+            },
+            "label": "装箱单与上架记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "差异与索赔清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "rack",
+            "asset_id": "manufacturing.equipment.rack",
+            "position": [
+              7.28,
+              1.28,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "pallet",
+            "asset_id": "universal.material.pallet",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cargo",
+            "asset_id": "universal.material.carton",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0,
+            "support": "pallet"
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              7.33,
+              4.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-6906db91fa09bd43",
+          "catalog-8c1730ba4565a771",
+          "catalog-4a35b5c40aa29084",
+          "catalog-e3c3b686d4f894e1",
+          "catalog-22414fe866d40f28",
+          "catalog-99b81cf8d3fa0c48",
+          "catalog-72640c8415670ebd",
+          "catalog-4f5a023b2812f72b",
+          "catalog-49653f10739adab4",
+          "catalog-c6dff14b0eed1cc1",
+          "catalog-dd6ca9a343fc29a0",
+          "catalog-7242d503e07f5eba",
+          "catalog-3aa8cc84a7b66f35",
+          "catalog-c54c2d3694d08f6a"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "support",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "顾客服务与售后",
+      "description": "客服、运营按订单核对客户问题与处理进度，形成订单追踪记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服、运营",
+            "source_refs": [
+              "source-catalog-9b8fe64c9376c27a"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按订单核对客户问题与处理进度",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-9b8fe64c9376c27a"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "客诉记录与订单",
+            "source_refs": [
+              "source-catalog-9b8fe64c9376c27a"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "订单追踪记录",
+            "source_refs": [
+              "source-catalog-9b8fe64c9376c27a"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-194e621f9f3b38ac",
+            "title": "退款后净收入复盘",
+            "locator": "【消费零售·财务·管理层】退款后净收入复盘/退款后净收入复盘.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91%E9%80%80%E6%AC%BE%E5%90%8E%E5%87%80%E6%94%B6%E5%85%A5%E5%A4%8D%E7%9B%98/%E9%80%80%E6%AC%BE%E5%90%8E%E5%87%80%E6%94%B6%E5%85%A5%E5%A4%8D%E7%9B%98.md"
+          },
+          {
+            "id": "source-catalog-9b8fe64c9376c27a",
+            "title": "客诉订单追踪 —— 群消息进来，闭环日报出去",
+            "locator": "【消费零售·客服·运营】客诉订单追踪 —— 群消息进来，闭环日报出去/客诉订单追踪 —— 群消息进来，闭环日报出去.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%AE%A2%E8%AF%89%E8%AE%A2%E5%8D%95%E8%BF%BD%E8%B8%AA%20%E2%80%94%E2%80%94%20%E7%BE%A4%E6%B6%88%E6%81%AF%E8%BF%9B%E6%9D%A5%EF%BC%8C%E9%97%AD%E7%8E%AF%E6%97%A5%E6%8A%A5%E5%87%BA%E5%8E%BB/%E5%AE%A2%E8%AF%89%E8%AE%A2%E5%8D%95%E8%BF%BD%E8%B8%AA%20%E2%80%94%E2%80%94%20%E7%BE%A4%E6%B6%88%E6%81%AF%E8%BF%9B%E6%9D%A5%EF%BC%8C%E9%97%AD%E7%8E%AF%E6%97%A5%E6%8A%A5%E5%87%BA%E5%8E%BB.md"
+          },
+          {
+            "id": "source-catalog-9d527cbd987f53f2",
+            "title": "餐饮智能点餐助手",
+            "locator": "【消费零售·客服】餐饮智能点餐助手/餐饮智能点餐助手.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E9%A4%90%E9%A5%AE%E6%99%BA%E8%83%BD%E7%82%B9%E9%A4%90%E5%8A%A9%E6%89%8B/%E9%A4%90%E9%A5%AE%E6%99%BA%E8%83%BD%E7%82%B9%E9%A4%90%E5%8A%A9%E6%89%8B.md"
+          },
+          {
+            "id": "source-catalog-b5258a475f4a410a",
+            "title": "差评归因当天回",
+            "locator": "【消费零售·客服】差评归因当天回/差评归因当天回.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%B7%AE%E8%AF%84%E5%BD%92%E5%9B%A0%E5%BD%93%E5%A4%A9%E5%9B%9E/%E5%B7%AE%E8%AF%84%E5%BD%92%E5%9B%A0%E5%BD%93%E5%A4%A9%E5%9B%9E.md"
+          },
+          {
+            "id": "source-catalog-71cc5566750836bd",
+            "title": "差评回复话术（数据驱动版） —— 通用模板给不了「这是他第三次投诉上菜慢」",
+            "locator": "【消费零售·客服】差评回复话术（数据驱动版） —— 通用模板给不了「这是他第三次投诉上菜慢」/差评回复话术（数据驱动版） —— 通用模板给不了「这是他第三次投诉上菜慢」.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%B7%AE%E8%AF%84%E5%9B%9E%E5%A4%8D%E8%AF%9D%E6%9C%AF%EF%BC%88%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E7%89%88%EF%BC%89%20%E2%80%94%E2%80%94%20%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E7%BB%99%E4%B8%8D%E4%BA%86%E3%80%8C%E8%BF%99%E6%98%AF%E4%BB%96%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%95%E8%AF%89%E4%B8%8A%E8%8F%9C%E6%85%A2%E3%80%8D/%E5%B7%AE%E8%AF%84%E5%9B%9E%E5%A4%8D%E8%AF%9D%E6%9C%AF%EF%BC%88%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E7%89%88%EF%BC%89%20%E2%80%94%E2%80%94%20%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E7%BB%99%E4%B8%8D%E4%BA%86%E3%80%8C%E8%BF%99%E6%98%AF%E4%BB%96%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%95%E8%AF%89%E4%B8%8A%E8%8F%9C%E6%85%A2%E3%80%8D.md"
+          },
+          {
+            "id": "source-catalog-8fb70033339a8180",
+            "title": "差评信号当天处置 —— 慢信号也要抓得住",
+            "locator": "【消费零售·客服】差评信号当天处置 —— 慢信号也要抓得住/差评信号当天处置 —— 慢信号也要抓得住.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%B7%AE%E8%AF%84%E4%BF%A1%E5%8F%B7%E5%BD%93%E5%A4%A9%E5%A4%84%E7%BD%AE%20%E2%80%94%E2%80%94%20%E6%85%A2%E4%BF%A1%E5%8F%B7%E4%B9%9F%E8%A6%81%E6%8A%93%E5%BE%97%E4%BD%8F/%E5%B7%AE%E8%AF%84%E4%BF%A1%E5%8F%B7%E5%BD%93%E5%A4%A9%E5%A4%84%E7%BD%AE%20%E2%80%94%E2%80%94%20%E6%85%A2%E4%BF%A1%E5%8F%B7%E4%B9%9F%E8%A6%81%E6%8A%93%E5%BE%97%E4%BD%8F.md"
+          },
+          {
+            "id": "source-catalog-48a2957ae52cca06",
+            "title": "多语言客诉差评与 Chargeback 抗辩",
+            "locator": "【消费零售·客服】多语言客诉差评与 Chargeback 抗辩/多语言客诉差评与 Chargeback 抗辩.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%A2%E8%AF%89%E5%B7%AE%E8%AF%84%E4%B8%8E%20Chargeback%20%E6%8A%97%E8%BE%A9/%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%A2%E8%AF%89%E5%B7%AE%E8%AF%84%E4%B8%8E%20Chargeback%20%E6%8A%97%E8%BE%A9.md"
+          },
+          {
+            "id": "source-catalog-b6c54d597ecf2a4b",
+            "title": "复杂退款／拒付证据包",
+            "locator": "【消费零售·客服】复杂退款／拒付证据包/复杂退款／拒付证据包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%A4%8D%E6%9D%82%E9%80%80%E6%AC%BE%EF%BC%8F%E6%8B%92%E4%BB%98%E8%AF%81%E6%8D%AE%E5%8C%85/%E5%A4%8D%E6%9D%82%E9%80%80%E6%AC%BE%EF%BC%8F%E6%8B%92%E4%BB%98%E8%AF%81%E6%8D%AE%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-f2ba7e1051020be9",
+            "title": "客户满意度调研评估",
+            "locator": "【消费零售·客服】客户满意度调研评估/客户满意度调研评估.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E6%BB%A1%E6%84%8F%E5%BA%A6%E8%B0%83%E7%A0%94%E8%AF%84%E4%BC%B0/%E5%AE%A2%E6%88%B7%E6%BB%A1%E6%84%8F%E5%BA%A6%E8%B0%83%E7%A0%94%E8%AF%84%E4%BC%B0.md"
+          },
+          {
+            "id": "source-catalog-120e2acc991b2f08",
+            "title": "客诉当天定位批次 —— 别等 12315 替你发现",
+            "locator": "【消费零售·客服】客诉当天定位批次 —— 别等 12315 替你发现/客诉当天定位批次 —— 别等 12315 替你发现.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E8%AF%89%E5%BD%93%E5%A4%A9%E5%AE%9A%E4%BD%8D%E6%89%B9%E6%AC%A1%20%E2%80%94%E2%80%94%20%E5%88%AB%E7%AD%89%2012315%20%E6%9B%BF%E4%BD%A0%E5%8F%91%E7%8E%B0/%E5%AE%A2%E8%AF%89%E5%BD%93%E5%A4%A9%E5%AE%9A%E4%BD%8D%E6%89%B9%E6%AC%A1%20%E2%80%94%E2%80%94%20%E5%88%AB%E7%AD%89%2012315%20%E6%9B%BF%E4%BD%A0%E5%8F%91%E7%8E%B0.md"
+          },
+          {
+            "id": "source-catalog-e978e83bd7ebe211",
+            "title": "投诉与敏感应对",
+            "locator": "【消费零售·客服】投诉与敏感应对/投诉与敏感应对.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8A%95%E8%AF%89%E4%B8%8E%E6%95%8F%E6%84%9F%E5%BA%94%E5%AF%B9/%E6%8A%95%E8%AF%89%E4%B8%8E%E6%95%8F%E6%84%9F%E5%BA%94%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-00ad3a13e025447d",
+            "title": "用户体验-用户体验管理全链路",
+            "locator": "【消费零售·客服】用户体验-用户体验管理全链路/用户体验-用户体验管理全链路.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C-%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E7%AE%A1%E7%90%86%E5%85%A8%E9%93%BE%E8%B7%AF/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C-%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E7%AE%A1%E7%90%86%E5%85%A8%E9%93%BE%E8%B7%AF.md"
+          },
+          {
+            "id": "source-catalog-6c9e9ea20967b237",
+            "title": "VOC产品质量闭环",
+            "locator": "【消费零售·客服】VOC产品质量闭环/VOC产品质量闭环.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91VOC%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E9%97%AD%E7%8E%AF/VOC%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E9%97%AD%E7%8E%AF.md"
+          },
+          {
+            "id": "source-catalog-1d8291eeb6f9ab05",
+            "title": "VOC客户之声分析",
+            "locator": "【消费零售·客服】VOC客户之声分析/VOC客户之声分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91VOC%E5%AE%A2%E6%88%B7%E4%B9%8B%E5%A3%B0%E5%88%86%E6%9E%90/VOC%E5%AE%A2%E6%88%B7%E4%B9%8B%E5%A3%B0%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-0a17484141f579d3",
+            "title": "退款原因与主播承诺归因",
+            "locator": "【消费零售·运营·管理层】退款原因与主播承诺归因/退款原因与主播承诺归因.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91%E9%80%80%E6%AC%BE%E5%8E%9F%E5%9B%A0%E4%B8%8E%E4%B8%BB%E6%92%AD%E6%89%BF%E8%AF%BA%E5%BD%92%E5%9B%A0/%E9%80%80%E6%AC%BE%E5%8E%9F%E5%9B%A0%E4%B8%8E%E4%B8%BB%E6%92%AD%E6%89%BF%E8%AF%BA%E5%BD%92%E5%9B%A0.md"
+          },
+          {
+            "id": "source-catalog-7662a015e30413b9",
+            "title": "差评与退款原因聚类分析",
+            "locator": "【消费零售·运营·客服】差评与退款原因聚类分析/差评与退款原因聚类分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%B7%AE%E8%AF%84%E4%B8%8E%E9%80%80%E6%AC%BE%E5%8E%9F%E5%9B%A0%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90/%E5%B7%AE%E8%AF%84%E4%B8%8E%E9%80%80%E6%AC%BE%E5%8E%9F%E5%9B%A0%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-1784c127ca468487",
+            "title": "VOC 顾客声音分析 —— 把顾客的声音变成预警与行动",
+            "locator": "【消费零售·运营·市场】VOC 顾客声音分析 —— 把顾客的声音变成预警与行动/VOC 顾客声音分析 —— 把顾客的声音变成预警与行动.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91VOC%20%E9%A1%BE%E5%AE%A2%E5%A3%B0%E9%9F%B3%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E6%8A%8A%E9%A1%BE%E5%AE%A2%E7%9A%84%E5%A3%B0%E9%9F%B3%E5%8F%98%E6%88%90%E9%A2%84%E8%AD%A6%E4%B8%8E%E8%A1%8C%E5%8A%A8/VOC%20%E9%A1%BE%E5%AE%A2%E5%A3%B0%E9%9F%B3%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E6%8A%8A%E9%A1%BE%E5%AE%A2%E7%9A%84%E5%A3%B0%E9%9F%B3%E5%8F%98%E6%88%90%E9%A2%84%E8%AD%A6%E4%B8%8E%E8%A1%8C%E5%8A%A8.md"
+          },
+          {
+            "id": "source-catalog-e540d5359938dc5d",
+            "title": "退换货归因月报",
+            "locator": "【消费零售·运营】退换货归因月报/退换货归因月报.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%80%80%E6%8D%A2%E8%B4%A7%E5%BD%92%E5%9B%A0%E6%9C%88%E6%8A%A5/%E9%80%80%E6%8D%A2%E8%B4%A7%E5%BD%92%E5%9B%A0%E6%9C%88%E6%8A%A5.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-194e621f9f3b38ac",
+            "title": "退款后净收入复盘",
+            "roles": "财务 · 管理层",
+            "description": "支付额 486,000 元看似达标，扣完退款、佣金、投流和履约后，两个明星 SKU 实际贡献为负",
+            "source_refs": [
+              "source-catalog-194e621f9f3b38ac"
+            ]
+          },
+          {
+            "id": "catalog-9b8fe64c9376c27a",
+            "title": "客诉订单追踪 —— 群消息进来，闭环日报出去",
+            "roles": "客服 · 运营",
+            "description": "客诉散在群聊消息里，无人能逐条翻；客诉与订单脱节，无法定位责任环节",
+            "source_refs": [
+              "source-catalog-9b8fe64c9376c27a"
+            ]
+          },
+          {
+            "id": "catalog-9d527cbd987f53f2",
+            "title": "餐饮智能点餐助手",
+            "roles": "客服",
+            "description": "点餐翻菜单 5 分钟起步，优惠信息散落各渠道难比对，新品牌接入重复开发",
+            "source_refs": [
+              "source-catalog-9d527cbd987f53f2"
+            ]
+          },
+          {
+            "id": "catalog-b5258a475f4a410a",
+            "title": "差评归因当天回",
+            "roles": "客服",
+            "description": "平台规定差评务必当天回复，店长忙到深夜才看，十条差评九条被归成「顾客挑剔」",
+            "source_refs": [
+              "source-catalog-b5258a475f4a410a"
+            ]
+          },
+          {
+            "id": "catalog-71cc5566750836bd",
+            "title": "差评回复话术（数据驱动版） —— 通用模板给不了「这是他第三次投诉上菜慢」",
+            "roles": "客服",
+            "description": "一条带图差评使门店 3 天曝光下降 8-15%，诚恳回复的门店评分恢复速度是沉默门店的 2.3 倍",
+            "source_refs": [
+              "source-catalog-71cc5566750836bd"
+            ]
+          },
+          {
+            "id": "catalog-8fb70033339a8180",
+            "title": "差评信号当天处置 —— 慢信号也要抓得住",
+            "roles": "客服",
+            "description": "差评聚集三周才被察觉，该信号第一周就已出现在评论区",
+            "source_refs": [
+              "source-catalog-8fb70033339a8180"
+            ]
+          },
+          {
+            "id": "catalog-48a2957ae52cca06",
+            "title": "多语言客诉差评与 Chargeback 抗辩",
+            "roles": "客服",
+            "description": "一条差评十分钟就能回，回错措辞可能被判操纵评论，回慢了 A-to-Z 直接扣款",
+            "source_refs": [
+              "source-catalog-48a2957ae52cca06"
+            ]
+          },
+          {
+            "id": "catalog-b6c54d597ecf2a4b",
+            "title": "复杂退款／拒付证据包",
+            "roles": "客服",
+            "description": "拒付材料散落、截止日前凑不齐，5 天时限里需跨四个系统凑齐证据",
+            "source_refs": [
+              "source-catalog-b6c54d597ecf2a4b"
+            ]
+          },
+          {
+            "id": "catalog-f2ba7e1051020be9",
+            "title": "客户满意度调研评估",
+            "roles": "客服",
+            "description": "问卷设计靠经验耗时，数据分析手工做洞察产出慢，报告格式不统一可读性差",
+            "source_refs": [
+              "source-catalog-f2ba7e1051020be9"
+            ]
+          },
+          {
+            "id": "catalog-120e2acc991b2f08",
+            "title": "客诉当天定位批次 —— 别等 12315 替你发现",
+            "roles": "客服",
+            "description": "监管转办函到达才察觉问题，批次聚集信号早已存在于客诉记录",
+            "source_refs": [
+              "source-catalog-120e2acc991b2f08"
+            ]
+          },
+          {
+            "id": "catalog-e978e83bd7ebe211",
+            "title": "投诉与敏感应对",
+            "roles": "客服",
+            "description": "一句话说错，品牌就会被截图挂上抖音小红书，新员工用错话术、把 P0 当 P3 处理",
+            "source_refs": [
+              "source-catalog-e978e83bd7ebe211"
+            ]
+          },
+          {
+            "id": "catalog-00ad3a13e025447d",
+            "title": "用户体验-用户体验管理全链路",
+            "roles": "客服",
+            "description": "NPS 只有分没有因、差评分散排不出优先级，红色舆情发酵才发现、危机话术易踩红线",
+            "source_refs": [
+              "source-catalog-00ad3a13e025447d"
+            ]
+          },
+          {
+            "id": "catalog-6c9e9ea20967b237",
+            "title": "VOC产品质量闭环",
+            "roles": "客服",
+            "description": "仓库按外观标 Defective、客户按体验退货，两套语言说的是两件事，差评、退货、工单散在三个系统，无人交叉核对",
+            "source_refs": [
+              "source-catalog-6c9e9ea20967b237"
+            ]
+          },
+          {
+            "id": "catalog-1d8291eeb6f9ab05",
+            "title": "VOC客户之声分析",
+            "roles": "客服",
+            "description": "舆情散落多平台人工汇总要 4 小时，食安预警常发酵后才被发现",
+            "source_refs": [
+              "source-catalog-1d8291eeb6f9ab05"
+            ]
+          },
+          {
+            "id": "catalog-0a17484141f579d3",
+            "title": "退款原因与主播承诺归因",
+            "roles": "运营 · 管理层",
+            "description": "平台将 126 笔退款归为质量与不喜欢，逐字稿显示其中 43 笔集中在同一句承诺之后",
+            "source_refs": [
+              "source-catalog-0a17484141f579d3"
+            ]
+          },
+          {
+            "id": "catalog-7662a015e30413b9",
+            "title": "差评与退款原因聚类分析",
+            "roles": "运营 · 客服",
+            "description": "退款率冲到 63% 的商家，症状看了三个月，病因无人查过一次",
+            "source_refs": [
+              "source-catalog-7662a015e30413b9"
+            ]
+          },
+          {
+            "id": "catalog-1784c127ca468487",
+            "title": "VOC 顾客声音分析 —— 把顾客的声音变成预警与行动",
+            "roles": "运营 · 市场",
+            "description": "反馈渠道分散，人工聚合周期长；问题归因靠经验，缺乏结构化维度",
+            "source_refs": [
+              "source-catalog-1784c127ca468487"
+            ]
+          },
+          {
+            "id": "catalog-e540d5359938dc5d",
+            "title": "退换货归因月报",
+            "roles": "运营",
+            "description": "退货理由依赖客服手工勾选，「尺码不合」与「不喜欢」背后是两笔完全不同的账",
+            "source_refs": [
+              "source-catalog-e540d5359938dc5d"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-9b8fe64c9376c27a"
+              ]
+            },
+            "label": "客诉记录与订单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "订单追踪记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-194e621f9f3b38ac",
+          "catalog-9b8fe64c9376c27a",
+          "catalog-9d527cbd987f53f2",
+          "catalog-b5258a475f4a410a",
+          "catalog-71cc5566750836bd",
+          "catalog-8fb70033339a8180",
+          "catalog-48a2957ae52cca06",
+          "catalog-b6c54d597ecf2a4b",
+          "catalog-f2ba7e1051020be9",
+          "catalog-120e2acc991b2f08",
+          "catalog-e978e83bd7ebe211",
+          "catalog-00ad3a13e025447d",
+          "catalog-6c9e9ea20967b237",
+          "catalog-1d8291eeb6f9ab05",
+          "catalog-0a17484141f579d3",
+          "catalog-7662a015e30413b9",
+          "catalog-1784c127ca468487",
+          "catalog-e540d5359938dc5d"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "membership",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "会员与私域运营",
+      "description": "运营按历史记录选出待触达会员，形成触达名单与话术。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-5dac06bc0522ebaa"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按历史记录选出待触达会员",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-5dac06bc0522ebaa"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "会员与消费记录",
+            "source_refs": [
+              "source-catalog-5dac06bc0522ebaa"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "触达名单与话术",
+            "source_refs": [
+              "source-catalog-5dac06bc0522ebaa"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-64e92e013d2bb7ea",
+            "title": "本店社群营销文案",
+            "locator": "【消费零售·市场】本店社群营销文案/本店社群营销文案.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%9C%AC%E5%BA%97%E7%A4%BE%E7%BE%A4%E8%90%A5%E9%94%80%E6%96%87%E6%A1%88/%E6%9C%AC%E5%BA%97%E7%A4%BE%E7%BE%A4%E8%90%A5%E9%94%80%E6%96%87%E6%A1%88.md"
+          },
+          {
+            "id": "source-catalog-5dac06bc0522ebaa",
+            "title": "沉睡会员唤醒名单与企微话术",
+            "locator": "【消费零售·运营】沉睡会员唤醒名单与企微话术/沉睡会员唤醒名单与企微话术.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B2%89%E7%9D%A1%E4%BC%9A%E5%91%98%E5%94%A4%E9%86%92%E5%90%8D%E5%8D%95%E4%B8%8E%E4%BC%81%E5%BE%AE%E8%AF%9D%E6%9C%AF/%E6%B2%89%E7%9D%A1%E4%BC%9A%E5%91%98%E5%94%A4%E9%86%92%E5%90%8D%E5%8D%95%E4%B8%8E%E4%BC%81%E5%BE%AE%E8%AF%9D%E6%9C%AF.md"
+          },
+          {
+            "id": "source-catalog-681a6305a8259bb5",
+            "title": "会员运营-会员权益体系设计",
+            "locator": "【消费零售·运营】会员运营-会员权益体系设计/会员运营-会员权益体系设计.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BC%9A%E5%91%98%E8%BF%90%E8%90%A5-%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1/%E4%BC%9A%E5%91%98%E8%BF%90%E8%90%A5-%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1.md"
+          },
+          {
+            "id": "source-catalog-3b7c7ab4a6139d8a",
+            "title": "会员运营周报",
+            "locator": "【消费零售·运营】会员运营周报/会员运营周报.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BC%9A%E5%91%98%E8%BF%90%E8%90%A5%E5%91%A8%E6%8A%A5/%E4%BC%9A%E5%91%98%E8%BF%90%E8%90%A5%E5%91%A8%E6%8A%A5.md"
+          },
+          {
+            "id": "source-catalog-51b9b07168431b91",
+            "title": "企微客户标签自动补全",
+            "locator": "【消费零售·运营】企微客户标签自动补全/企微客户标签自动补全.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BC%81%E5%BE%AE%E5%AE%A2%E6%88%B7%E6%A0%87%E7%AD%BE%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/%E4%BC%81%E5%BE%AE%E5%AE%A2%E6%88%B7%E6%A0%87%E7%AD%BE%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8.md"
+          },
+          {
+            "id": "source-catalog-5038ac8e9204266e",
+            "title": "社群周内容包",
+            "locator": "【消费零售·运营】社群周内容包/社群周内容包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%A4%BE%E7%BE%A4%E5%91%A8%E5%86%85%E5%AE%B9%E5%8C%85/%E7%A4%BE%E7%BE%A4%E5%91%A8%E5%86%85%E5%AE%B9%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-005719adb1b4c742",
+            "title": "私域 SOP 执行留痕周报",
+            "locator": "【消费零售·运营】私域 SOP 执行留痕周报/私域 SOP 执行留痕周报.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%A7%81%E5%9F%9F%20SOP%20%E6%89%A7%E8%A1%8C%E7%95%99%E7%97%95%E5%91%A8%E6%8A%A5/%E7%A7%81%E5%9F%9F%20SOP%20%E6%89%A7%E8%A1%8C%E7%95%99%E7%97%95%E5%91%A8%E6%8A%A5.md"
+          },
+          {
+            "id": "source-catalog-8451b5b74277aa98",
+            "title": "私域运营-私域单店拉新规模化复制",
+            "locator": "【消费零售·运营】私域运营-私域单店拉新规模化复制/私域运营-私域单店拉新规模化复制.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%A7%81%E5%9F%9F%E8%BF%90%E8%90%A5-%E7%A7%81%E5%9F%9F%E5%8D%95%E5%BA%97%E6%8B%89%E6%96%B0%E8%A7%84%E6%A8%A1%E5%8C%96%E5%A4%8D%E5%88%B6/%E7%A7%81%E5%9F%9F%E8%BF%90%E8%90%A5-%E7%A7%81%E5%9F%9F%E5%8D%95%E5%BA%97%E6%8B%89%E6%96%B0%E8%A7%84%E6%A8%A1%E5%8C%96%E5%A4%8D%E5%88%B6.md"
+          },
+          {
+            "id": "source-catalog-b9f83a62cbbe0e5e",
+            "title": "RFM 分层与差异化触达",
+            "locator": "【消费零售·运营】RFM 分层与差异化触达/RFM 分层与差异化触达.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91RFM%20%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%AE%E5%BC%82%E5%8C%96%E8%A7%A6%E8%BE%BE/RFM%20%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%AE%E5%BC%82%E5%8C%96%E8%A7%A6%E8%BE%BE.md"
+          },
+          {
+            "id": "source-catalog-153636b02c9080ba",
+            "title": "RFM 分层与沉睡唤醒名单",
+            "locator": "【消费零售·运营】RFM 分层与沉睡唤醒名单/RFM 分层与沉睡唤醒名单.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91RFM%20%E5%88%86%E5%B1%82%E4%B8%8E%E6%B2%89%E7%9D%A1%E5%94%A4%E9%86%92%E5%90%8D%E5%8D%95/RFM%20%E5%88%86%E5%B1%82%E4%B8%8E%E6%B2%89%E7%9D%A1%E5%94%A4%E9%86%92%E5%90%8D%E5%8D%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-64e92e013d2bb7ea",
+            "title": "本店社群营销文案",
+            "roles": "市场",
+            "description": "员工用通用 AI 写的文案很流畅，但不知道本店当日到货与折扣信息",
+            "source_refs": [
+              "source-catalog-64e92e013d2bb7ea"
+            ]
+          },
+          {
+            "id": "catalog-5dac06bc0522ebaa",
+            "title": "沉睡会员唤醒名单与企微话术",
+            "roles": "运营",
+            "description": "会员系统里留存着几万个注册会员，想唤醒也不知从何下手",
+            "source_refs": [
+              "source-catalog-5dac06bc0522ebaa"
+            ]
+          },
+          {
+            "id": "catalog-681a6305a8259bb5",
+            "title": "会员运营-会员权益体系设计",
+            "roles": "运营",
+            "description": "分层靠拍脑袋缺数据，权益堆砌成本失控，付费卡定价抄竞品回本算不清，上线效果没人复盘",
+            "source_refs": [
+              "source-catalog-681a6305a8259bb5"
+            ]
+          },
+          {
+            "id": "catalog-3b7c7ab4a6139d8a",
+            "title": "会员运营周报",
+            "roles": "运营",
+            "description": "会员系统里 RFM 标签齐全，但无人每周将其转化为本周行动清单",
+            "source_refs": [
+              "source-catalog-3b7c7ab4a6139d8a"
+            ]
+          },
+          {
+            "id": "catalog-51b9b07168431b91",
+            "title": "企微客户标签自动补全",
+            "roles": "运营",
+            "description": "客户在群里提到「家里宝宝刚满月」，无人记得将她标注为「母婴敏感人群」",
+            "source_refs": [
+              "source-catalog-51b9b07168431b91"
+            ]
+          },
+          {
+            "id": "catalog-5038ac8e9204266e",
+            "title": "社群周内容包",
+            "roles": "运营",
+            "description": "一个运营管 10-20 个群，每周都要新出一套内容包，每周 6-8 小时耗在重复写话术",
+            "source_refs": [
+              "source-catalog-5038ac8e9204266e"
+            ]
+          },
+          {
+            "id": "catalog-005719adb1b4c742",
+            "title": "私域 SOP 执行留痕周报",
+            "roles": "运营",
+            "description": "SOP 写在飞书文档里三十七页，谁执行谁没执行无人可知",
+            "source_refs": [
+              "source-catalog-005719adb1b4c742"
+            ]
+          },
+          {
+            "id": "catalog-8451b5b74277aa98",
+            "title": "私域运营-私域单店拉新规模化复制",
+            "roles": "运营",
+            "description": "拉新玩法同质化加粉转化低，社群沉默无裂变机制，单店跑通后无 SOP 难复制到多店",
+            "source_refs": [
+              "source-catalog-8451b5b74277aa98"
+            ]
+          },
+          {
+            "id": "catalog-b9f83a62cbbe0e5e",
+            "title": "RFM 分层与差异化触达",
+            "roles": "运营",
+            "description": "对所有会员一视同仁，是最省事也最贵的做法，给忠诚客户发券纯粹伤利润",
+            "source_refs": [
+              "source-catalog-b9f83a62cbbe0e5e"
+            ]
+          },
+          {
+            "id": "catalog-153636b02c9080ba",
+            "title": "RFM 分层与沉睡唤醒名单",
+            "roles": "运营",
+            "description": "微信里留存八千个购买过的客户，其中两千四百个 90 天无互动，在通讯录里沉寂",
+            "source_refs": [
+              "source-catalog-153636b02c9080ba"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-5dac06bc0522ebaa"
+              ]
+            },
+            "label": "会员与消费记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "触达名单与话术",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-64e92e013d2bb7ea",
+          "catalog-5dac06bc0522ebaa",
+          "catalog-681a6305a8259bb5",
+          "catalog-3b7c7ab4a6139d8a",
+          "catalog-51b9b07168431b91",
+          "catalog-5038ac8e9204266e",
+          "catalog-005719adb1b4c742",
+          "catalog-8451b5b74277aa98",
+          "catalog-b9f83a62cbbe0e5e",
+          "catalog-153636b02c9080ba"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "store",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "门店与现场经营",
+      "description": "运营汇总门店周记录并突出异常，形成门店异常清单。画面包含门店陈列区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-d77acaf4615acb19"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总门店周记录并突出异常",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-d77acaf4615acb19"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "门店周报数据",
+            "source_refs": [
+              "source-catalog-d77acaf4615acb19"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "门店异常清单",
+            "source_refs": [
+              "source-catalog-d77acaf4615acb19"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a61a9f3e4bcf12f9",
+            "title": "餐饮菜品上新规划",
+            "locator": "【消费零售·产品】餐饮菜品上新规划/餐饮菜品上新规划.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%A4%90%E9%A5%AE%E8%8F%9C%E5%93%81%E4%B8%8A%E6%96%B0%E8%A7%84%E5%88%92/%E9%A4%90%E9%A5%AE%E8%8F%9C%E5%93%81%E4%B8%8A%E6%96%B0%E8%A7%84%E5%88%92.md"
+          },
+          {
+            "id": "source-catalog-bda69cfad2839b27",
+            "title": "门店经营日报与晨会一页纸",
+            "locator": "【消费零售·管理层】门店经营日报与晨会一页纸/门店经营日报与晨会一页纸.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91%E9%97%A8%E5%BA%97%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%99%A8%E4%BC%9A%E4%B8%80%E9%A1%B5%E7%BA%B8/%E9%97%A8%E5%BA%97%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5%E4%B8%8E%E6%99%A8%E4%BC%9A%E4%B8%80%E9%A1%B5%E7%BA%B8.md"
+          },
+          {
+            "id": "source-catalog-46369f2788541a21",
+            "title": "门店断货智能归因 —— 从断货报表到处置闭环",
+            "locator": "【消费零售·运营·采购】门店断货智能归因 —— 从断货报表到处置闭环/门店断货智能归因 —— 从断货报表到处置闭环.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E9%97%A8%E5%BA%97%E6%96%AD%E8%B4%A7%E6%99%BA%E8%83%BD%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%20%E4%BB%8E%E6%96%AD%E8%B4%A7%E6%8A%A5%E8%A1%A8%E5%88%B0%E5%A4%84%E7%BD%AE%E9%97%AD%E7%8E%AF/%E9%97%A8%E5%BA%97%E6%96%AD%E8%B4%A7%E6%99%BA%E8%83%BD%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%20%E4%BB%8E%E6%96%AD%E8%B4%A7%E6%8A%A5%E8%A1%A8%E5%88%B0%E5%A4%84%E7%BD%AE%E9%97%AD%E7%8E%AF.md"
+          },
+          {
+            "id": "source-catalog-72bfb5545112e333",
+            "title": "菜品上新效果评估",
+            "locator": "【消费零售·运营】菜品上新效果评估/菜品上新效果评估.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%8F%9C%E5%93%81%E4%B8%8A%E6%96%B0%E6%95%88%E6%9E%9C%E8%AF%84%E4%BC%B0/%E8%8F%9C%E5%93%81%E4%B8%8A%E6%96%B0%E6%95%88%E6%9E%9C%E8%AF%84%E4%BC%B0.md"
+          },
+          {
+            "id": "source-catalog-2ca5a11e45e8a0e3",
+            "title": "茶咖门店时段杯量分析",
+            "locator": "【消费零售·运营】茶咖门店时段杯量分析/茶咖门店时段杯量分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%8C%B6%E5%92%96%E9%97%A8%E5%BA%97%E6%97%B6%E6%AE%B5%E6%9D%AF%E9%87%8F%E5%88%86%E6%9E%90/%E8%8C%B6%E5%92%96%E9%97%A8%E5%BA%97%E6%97%B6%E6%AE%B5%E6%9D%AF%E9%87%8F%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-79178aebc8d3b1ef",
+            "title": "店长晨会脚本自动生成",
+            "locator": "【消费零售·运营】店长晨会脚本自动生成/店长晨会脚本自动生成.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%97%E9%95%BF%E6%99%A8%E4%BC%9A%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/%E5%BA%97%E9%95%BF%E6%99%A8%E4%BC%9A%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-c28d04ffa290b3b0",
+            "title": "店长经营助手（全流程工作台）",
+            "locator": "【消费零售·运营】店长经营助手（全流程工作台）/店长经营助手（全流程工作台）.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BA%97%E9%95%BF%E7%BB%8F%E8%90%A5%E5%8A%A9%E6%89%8B%EF%BC%88%E5%85%A8%E6%B5%81%E7%A8%8B%E5%B7%A5%E4%BD%9C%E5%8F%B0%EF%BC%89/%E5%BA%97%E9%95%BF%E7%BB%8F%E8%90%A5%E5%8A%A9%E6%89%8B%EF%BC%88%E5%85%A8%E6%B5%81%E7%A8%8B%E5%B7%A5%E4%BD%9C%E5%8F%B0%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-9629407448c1fa61",
+            "title": "督导巡店重点预筛",
+            "locator": "【消费零售·运营】督导巡店重点预筛/督导巡店重点预筛.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%9D%A3%E5%AF%BC%E5%B7%A1%E5%BA%97%E9%87%8D%E7%82%B9%E9%A2%84%E7%AD%9B/%E7%9D%A3%E5%AF%BC%E5%B7%A1%E5%BA%97%E9%87%8D%E7%82%B9%E9%A2%84%E7%AD%9B.md"
+          },
+          {
+            "id": "source-catalog-e59bdba502acd1c4",
+            "title": "加盟工单问题分析",
+            "locator": "【消费零售·运营】加盟工单问题分析/加盟工单问题分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%8A%A0%E7%9B%9F%E5%B7%A5%E5%8D%95%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/%E5%8A%A0%E7%9B%9F%E5%B7%A5%E5%8D%95%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-38e55b7e860a88e4",
+            "title": "加盟商照着手册就能开店",
+            "locator": "【消费零售·运营】加盟商照着手册就能开店/加盟商照着手册就能开店.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%8A%A0%E7%9B%9F%E5%95%86%E7%85%A7%E7%9D%80%E6%89%8B%E5%86%8C%E5%B0%B1%E8%83%BD%E5%BC%80%E5%BA%97/%E5%8A%A0%E7%9B%9F%E5%95%86%E7%85%A7%E7%9D%80%E6%89%8B%E5%86%8C%E5%B0%B1%E8%83%BD%E5%BC%80%E5%BA%97.md"
+          },
+          {
+            "id": "source-catalog-f4ab92e50d862747",
+            "title": "门店工单分析",
+            "locator": "【消费零售·运营】门店工单分析/门店工单分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%97%A8%E5%BA%97%E5%B7%A5%E5%8D%95%E5%88%86%E6%9E%90/%E9%97%A8%E5%BA%97%E5%B7%A5%E5%8D%95%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-1ee0652a96366a04",
+            "title": "门店经营分析",
+            "locator": "【消费零售·运营】门店经营分析/门店经营分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%97%A8%E5%BA%97%E7%BB%8F%E8%90%A5%E5%88%86%E6%9E%90/%E9%97%A8%E5%BA%97%E7%BB%8F%E8%90%A5%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-6386ede4544f29e7",
+            "title": "门店设备运行监测",
+            "locator": "【消费零售·运营】门店设备运行监测/门店设备运行监测.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%97%A8%E5%BA%97%E8%AE%BE%E5%A4%87%E8%BF%90%E8%A1%8C%E7%9B%91%E6%B5%8B/%E9%97%A8%E5%BA%97%E8%AE%BE%E5%A4%87%E8%BF%90%E8%A1%8C%E7%9B%91%E6%B5%8B.md"
+          },
+          {
+            "id": "source-catalog-6fa888d6b6287a47",
+            "title": "门店营销执行跟进",
+            "locator": "【消费零售·运营】门店营销执行跟进/门店营销执行跟进.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%97%A8%E5%BA%97%E8%90%A5%E9%94%80%E6%89%A7%E8%A1%8C%E8%B7%9F%E8%BF%9B/%E9%97%A8%E5%BA%97%E8%90%A5%E9%94%80%E6%89%A7%E8%A1%8C%E8%B7%9F%E8%BF%9B.md"
+          },
+          {
+            "id": "source-catalog-d77acaf4615acb19",
+            "title": "门店周报异常标红版",
+            "locator": "【消费零售·运营】门店周报异常标红版/门店周报异常标红版.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%97%A8%E5%BA%97%E5%91%A8%E6%8A%A5%E5%BC%82%E5%B8%B8%E6%A0%87%E7%BA%A2%E7%89%88/%E9%97%A8%E5%BA%97%E5%91%A8%E6%8A%A5%E5%BC%82%E5%B8%B8%E6%A0%87%E7%BA%A2%E7%89%88.md"
+          },
+          {
+            "id": "source-catalog-a81e496c39fccf3b",
+            "title": "排班计划生成与冲突处理",
+            "locator": "【消费零售·运营】排班计划生成与冲突处理/排班计划生成与冲突处理.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%8E%92%E7%8F%AD%E8%AE%A1%E5%88%92%E7%94%9F%E6%88%90%E4%B8%8E%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/%E6%8E%92%E7%8F%AD%E8%AE%A1%E5%88%92%E7%94%9F%E6%88%90%E4%B8%8E%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86.md"
+          },
+          {
+            "id": "source-catalog-1975b19e850140d1",
+            "title": "巡店报告与整改闭环追踪",
+            "locator": "【消费零售·运营】巡店报告与整改闭环追踪/巡店报告与整改闭环追踪.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%B7%A1%E5%BA%97%E6%8A%A5%E5%91%8A%E4%B8%8E%E6%95%B4%E6%94%B9%E9%97%AD%E7%8E%AF%E8%BF%BD%E8%B8%AA/%E5%B7%A1%E5%BA%97%E6%8A%A5%E5%91%8A%E4%B8%8E%E6%95%B4%E6%94%B9%E9%97%AD%E7%8E%AF%E8%BF%BD%E8%B8%AA.md"
+          },
+          {
+            "id": "source-catalog-6176dbb49bcc971f",
+            "title": "巡检当天变整改单",
+            "locator": "【消费零售·运营】巡检当天变整改单/巡检当天变整改单.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%B7%A1%E6%A3%80%E5%BD%93%E5%A4%A9%E5%8F%98%E6%95%B4%E6%94%B9%E5%8D%95/%E5%B7%A1%E6%A3%80%E5%BD%93%E5%A4%A9%E5%8F%98%E6%95%B4%E6%94%B9%E5%8D%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a61a9f3e4bcf12f9",
+            "title": "餐饮菜品上新规划",
+            "roles": "产品",
+            "description": "凭经验选品市场验证滞后，竞品情报分散难聚，上新 SOP 模板不统一，方案写到评审前夜",
+            "source_refs": [
+              "source-catalog-a61a9f3e4bcf12f9"
+            ]
+          },
+          {
+            "id": "catalog-bda69cfad2839b27",
+            "title": "门店经营日报与晨会一页纸",
+            "roles": "管理层",
+            "description": "POS 系统里数据齐全，店长每天清晨仍对屏幕十五分钟，不知次日进什么货",
+            "source_refs": [
+              "source-catalog-bda69cfad2839b27"
+            ]
+          },
+          {
+            "id": "catalog-46369f2788541a21",
+            "title": "门店断货智能归因 —— 从断货报表到处置闭环",
+            "roles": "运营 · 采购",
+            "description": "每天上千条断货人工处理不过来；采购责任不在门店，责任错配；员工点完成没验收，假闭环",
+            "source_refs": [
+              "source-catalog-46369f2788541a21"
+            ]
+          },
+          {
+            "id": "catalog-72bfb5545112e333",
+            "title": "菜品上新效果评估",
+            "roles": "运营",
+            "description": "新菜效果缺乏量化评估，蚕食老菜不自知，下架决策靠拍脑袋",
+            "source_refs": [
+              "source-catalog-72bfb5545112e333"
+            ]
+          },
+          {
+            "id": "catalog-2ca5a11e45e8a0e3",
+            "title": "茶咖门店时段杯量分析",
+            "roles": "运营",
+            "description": "时段杯量分布不清，高峰排队低谷闲置，排班备料靠经验",
+            "source_refs": [
+              "source-catalog-2ca5a11e45e8a0e3"
+            ]
+          },
+          {
+            "id": "catalog-79178aebc8d3b1ef",
+            "title": "店长晨会脚本自动生成",
+            "roles": "运营",
+            "description": "总部通知散落多个群聊汇总耗时，今日重点依赖记忆容易遗漏，激励话术每次重写质量不稳定",
+            "source_refs": [
+              "source-catalog-79178aebc8d3b1ef"
+            ]
+          },
+          {
+            "id": "catalog-c28d04ffa290b3b0",
+            "title": "店长经营助手（全流程工作台）",
+            "roles": "运营",
+            "description": "店长一天被 18 件琐事切碎，数据散落多个系统，从早忙到晚说不清今天干了什么",
+            "source_refs": [
+              "source-catalog-c28d04ffa290b3b0"
+            ]
+          },
+          {
+            "id": "catalog-9629407448c1fa61",
+            "title": "督导巡店重点预筛",
+            "roles": "运营",
+            "description": "巡店表有 100 多项打勾项，但真正出问题的店往往藏在数据里",
+            "source_refs": [
+              "source-catalog-9629407448c1fa61"
+            ]
+          },
+          {
+            "id": "catalog-e59bdba502acd1c4",
+            "title": "加盟工单问题分析",
+            "roles": "运营",
+            "description": "工单量大来源杂，分类口径不一，高风险工单发现晚，分析报告每周手工拼半天",
+            "source_refs": [
+              "source-catalog-e59bdba502acd1c4"
+            ]
+          },
+          {
+            "id": "catalog-38e55b7e860a88e4",
+            "title": "加盟商照着手册就能开店",
+            "roles": "运营",
+            "description": "总部以为加盟商照着手册就能开店，实际上加盟商连「保本营业额」都没算过，签约25万、开业前被迫追加到45万",
+            "source_refs": [
+              "source-catalog-38e55b7e860a88e4"
+            ]
+          },
+          {
+            "id": "catalog-f4ab92e50d862747",
+            "title": "门店工单分析",
+            "roles": "运营",
+            "description": "工单散落 5 个系统手工汇总 2 天起，只列问题不找因果，整改复发率高达 35%",
+            "source_refs": [
+              "source-catalog-f4ab92e50d862747"
+            ]
+          },
+          {
+            "id": "catalog-1ee0652a96366a04",
+            "title": "门店经营分析",
+            "roles": "运营",
+            "description": "备货靠经验偏差 ±30%、日报手工拼 30 分钟，异常靠巡店发现、差评 24 小时才回复",
+            "source_refs": [
+              "source-catalog-1ee0652a96366a04"
+            ]
+          },
+          {
+            "id": "catalog-6386ede4544f29e7",
+            "title": "门店设备运行监测",
+            "roles": "运营",
+            "description": "高峰期忙乱忘记开备用设备，设备状态无实时可见性，备餐速度跟不上单量",
+            "source_refs": [
+              "source-catalog-6386ede4544f29e7"
+            ]
+          },
+          {
+            "id": "catalog-6fa888d6b6287a47",
+            "title": "门店营销执行跟进",
+            "roles": "运营",
+            "description": "总部方案水土不服，活动设计缺乏新意，执行标准不统一，数据分散难整合",
+            "source_refs": [
+              "source-catalog-6fa888d6b6287a47"
+            ]
+          },
+          {
+            "id": "catalog-d77acaf4615acb19",
+            "title": "门店周报异常标红版",
+            "roles": "运营",
+            "description": "18 家门店每周填报 18 份周报，口径不齐，总部拼一整晚，会上却无人查看",
+            "source_refs": [
+              "source-catalog-d77acaf4615acb19"
+            ]
+          },
+          {
+            "id": "catalog-a81e496c39fccf3b",
+            "title": "排班计划生成与冲突处理",
+            "roles": "运营",
+            "description": "每周排班耗时 2 小时，培训不合格员工被排上关键岗位，工时合规风险难发现",
+            "source_refs": [
+              "source-catalog-a81e496c39fccf3b"
+            ]
+          },
+          {
+            "id": "catalog-1975b19e850140d1",
+            "title": "巡店报告与整改闭环追踪",
+            "roles": "运营",
+            "description": "发现问题从来不是瓶颈，超六成连锁存在巡而未改、改而未验、验而未固",
+            "source_refs": [
+              "source-catalog-1975b19e850140d1"
+            ]
+          },
+          {
+            "id": "catalog-6176dbb49bcc971f",
+            "title": "巡检当天变整改单",
+            "roles": "运营",
+            "description": "督导巡完店拍了照片发群里，问题无人跟进，下个月同一家店同样的问题再次出现",
+            "source_refs": [
+              "source-catalog-6176dbb49bcc971f"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-d77acaf4615acb19"
+              ]
+            },
+            "label": "门店周报数据",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "门店异常清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "consumer-retail.equipment.store-shelf",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "零售陈列货架",
+            "interaction": {
+              "case_ids": [
+                "catalog-d77acaf4615acb19"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a61a9f3e4bcf12f9",
+          "catalog-bda69cfad2839b27",
+          "catalog-46369f2788541a21",
+          "catalog-72bfb5545112e333",
+          "catalog-2ca5a11e45e8a0e3",
+          "catalog-79178aebc8d3b1ef",
+          "catalog-c28d04ffa290b3b0",
+          "catalog-9629407448c1fa61",
+          "catalog-e59bdba502acd1c4",
+          "catalog-38e55b7e860a88e4",
+          "catalog-f4ab92e50d862747",
+          "catalog-1ee0652a96366a04",
+          "catalog-6386ede4544f29e7",
+          "catalog-6fa888d6b6287a47",
+          "catalog-d77acaf4615acb19",
+          "catalog-a81e496c39fccf3b",
+          "catalog-1975b19e850140d1",
+          "catalog-6176dbb49bcc971f"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "finance",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "收款、利润与核对",
+      "description": "财务比对多平台收款及计算口径，形成利润核对底稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-292baf9da24a9917"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "比对多平台收款及计算口径",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-292baf9da24a9917"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "平台回款与成本记录",
+            "source_refs": [
+              "source-catalog-292baf9da24a9917"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "利润核对底稿",
+            "source_refs": [
+              "source-catalog-292baf9da24a9917"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-9745128fcec558fc",
+            "title": "多平台对账差异证据包",
+            "locator": "【消费零售·财务】多平台对账差异证据包/多平台对账差异证据包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E8%AF%81%E6%8D%AE%E5%8C%85/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%AF%B9%E8%B4%A6%E5%B7%AE%E5%BC%82%E8%AF%81%E6%8D%AE%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-292baf9da24a9917",
+            "title": "多平台多币种回款利润还原",
+            "locator": "【消费零售·财务】多平台多币种回款利润还原/多平台多币种回款利润还原.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%A4%9A%E5%B8%81%E7%A7%8D%E5%9B%9E%E6%AC%BE%E5%88%A9%E6%B6%A6%E8%BF%98%E5%8E%9F/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%A4%9A%E5%B8%81%E7%A7%8D%E5%9B%9E%E6%AC%BE%E5%88%A9%E6%B6%A6%E8%BF%98%E5%8E%9F.md"
+          },
+          {
+            "id": "source-catalog-93b84cf133682507",
+            "title": "进项发票验真归集",
+            "locator": "【消费零售·财务】进项发票验真归集/进项发票验真归集.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E8%BF%9B%E9%A1%B9%E5%8F%91%E7%A5%A8%E9%AA%8C%E7%9C%9F%E5%BD%92%E9%9B%86/%E8%BF%9B%E9%A1%B9%E5%8F%91%E7%A5%A8%E9%AA%8C%E7%9C%9F%E5%BD%92%E9%9B%86.md"
+          },
+          {
+            "id": "source-catalog-6861a7caa83ca513",
+            "title": "平台费用异常审计",
+            "locator": "【消费零售·财务】平台费用异常审计/平台费用异常审计.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B9%B3%E5%8F%B0%E8%B4%B9%E7%94%A8%E5%BC%82%E5%B8%B8%E5%AE%A1%E8%AE%A1/%E5%B9%B3%E5%8F%B0%E8%B4%B9%E7%94%A8%E5%BC%82%E5%B8%B8%E5%AE%A1%E8%AE%A1.md"
+          },
+          {
+            "id": "source-catalog-94017e12808a83ba",
+            "title": "三大报表自动生成",
+            "locator": "【消费零售·财务】三大报表自动生成/三大报表自动生成.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E4%B8%89%E5%A4%A7%E6%8A%A5%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/%E4%B8%89%E5%A4%A7%E6%8A%A5%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-a654a5393af7f68d",
+            "title": "食材成本核算与分析",
+            "locator": "【消费零售·财务】食材成本核算与分析/食材成本核算与分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E9%A3%9F%E6%9D%90%E6%88%90%E6%9C%AC%E6%A0%B8%E7%AE%97%E4%B8%8E%E5%88%86%E6%9E%90/%E9%A3%9F%E6%9D%90%E6%88%90%E6%9C%AC%E6%A0%B8%E7%AE%97%E4%B8%8E%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-a23af06806365168",
+            "title": "月末结账清单自动整理",
+            "locator": "【消费零售·财务】月末结账清单自动整理/月末结账清单自动整理.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E6%9C%88%E6%9C%AB%E7%BB%93%E8%B4%A6%E6%B8%85%E5%8D%95%E8%87%AA%E5%8A%A8%E6%95%B4%E7%90%86/%E6%9C%88%E6%9C%AB%E7%BB%93%E8%B4%A6%E6%B8%85%E5%8D%95%E8%87%AA%E5%8A%A8%E6%95%B4%E7%90%86.md"
+          },
+          {
+            "id": "source-catalog-921875cdb9846ae7",
+            "title": "供应商费用返利核对",
+            "locator": "【消费零售·采购】供应商费用返利核对/供应商费用返利核对.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%B9%E7%94%A8%E8%BF%94%E5%88%A9%E6%A0%B8%E5%AF%B9/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%B9%E7%94%A8%E8%BF%94%E5%88%A9%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-bbbb28dba8501cc0",
+            "title": "新品全口径利润立项",
+            "locator": "【消费零售·产品·运营】新品全口径利润立项/新品全口径利润立项.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E4%BA%A7%E5%93%81%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%96%B0%E5%93%81%E5%85%A8%E5%8F%A3%E5%BE%84%E5%88%A9%E6%B6%A6%E7%AB%8B%E9%A1%B9/%E6%96%B0%E5%93%81%E5%85%A8%E5%8F%A3%E5%BE%84%E5%88%A9%E6%B6%A6%E7%AB%8B%E9%A1%B9.md"
+          },
+          {
+            "id": "source-catalog-6f41f709fe13ab68",
+            "title": "经营利润异常会诊与行动审批",
+            "locator": "【消费零售·管理层·企业负责人】经营利润异常会诊与行动审批/经营利润异常会诊与行动审批.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%C2%B7%E4%BC%81%E4%B8%9A%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%91%E7%BB%8F%E8%90%A5%E5%88%A9%E6%B6%A6%E5%BC%82%E5%B8%B8%E4%BC%9A%E8%AF%8A%E4%B8%8E%E8%A1%8C%E5%8A%A8%E5%AE%A1%E6%89%B9/%E7%BB%8F%E8%90%A5%E5%88%A9%E6%B6%A6%E5%BC%82%E5%B8%B8%E4%BC%9A%E8%AF%8A%E4%B8%8E%E8%A1%8C%E5%8A%A8%E5%AE%A1%E6%89%B9.md"
+          },
+          {
+            "id": "source-catalog-1aab9485ecd2e6d4",
+            "title": "渠道费用当周核完 —— 花没花值不值疑点在哪",
+            "locator": "【消费零售·销售】渠道费用当周核完 —— 花没花值不值疑点在哪/渠道费用当周核完 —— 花没花值不值疑点在哪.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%B8%A0%E9%81%93%E8%B4%B9%E7%94%A8%E5%BD%93%E5%91%A8%E6%A0%B8%E5%AE%8C%20%E2%80%94%E2%80%94%20%E8%8A%B1%E6%B2%A1%E8%8A%B1%E5%80%BC%E4%B8%8D%E5%80%BC%E7%96%91%E7%82%B9%E5%9C%A8%E5%93%AA/%E6%B8%A0%E9%81%93%E8%B4%B9%E7%94%A8%E5%BD%93%E5%91%A8%E6%A0%B8%E5%AE%8C%20%E2%80%94%E2%80%94%20%E8%8A%B1%E6%B2%A1%E8%8A%B1%E5%80%BC%E4%B8%8D%E5%80%BC%E7%96%91%E7%82%B9%E5%9C%A8%E5%93%AA.md"
+          },
+          {
+            "id": "source-catalog-f8e0a11e902fd2ad",
+            "title": "三平台账单逐单对清 —— 差异判因到订单号",
+            "locator": "【消费零售·销售】三平台账单逐单对清 —— 差异判因到订单号/三平台账单逐单对清 —— 差异判因到订单号.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E4%B8%89%E5%B9%B3%E5%8F%B0%E8%B4%A6%E5%8D%95%E9%80%90%E5%8D%95%E5%AF%B9%E6%B8%85%20%E2%80%94%E2%80%94%20%E5%B7%AE%E5%BC%82%E5%88%A4%E5%9B%A0%E5%88%B0%E8%AE%A2%E5%8D%95%E5%8F%B7/%E4%B8%89%E5%B9%B3%E5%8F%B0%E8%B4%A6%E5%8D%95%E9%80%90%E5%8D%95%E5%AF%B9%E6%B8%85%20%E2%80%94%E2%80%94%20%E5%B7%AE%E5%BC%82%E5%88%A4%E5%9B%A0%E5%88%B0%E8%AE%A2%E5%8D%95%E5%8F%B7.md"
+          },
+          {
+            "id": "source-catalog-b42cd512ab5ad5be",
+            "title": "多平台经营日报（口径统一版）",
+            "locator": "【消费零售·运营】多平台经营日报（口径统一版）/多平台经营日报（口径统一版）.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%9A%E5%B9%B3%E5%8F%B0%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5%EF%BC%88%E5%8F%A3%E5%BE%84%E7%BB%9F%E4%B8%80%E7%89%88%EF%BC%89/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5%EF%BC%88%E5%8F%A3%E5%BE%84%E7%BB%9F%E4%B8%80%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-560e1c0e728c5d30",
+            "title": "选品利润测算与竞品价格体检",
+            "locator": "【消费零售·运营】选品利润测算与竞品价格体检/选品利润测算与竞品价格体检.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%80%89%E5%93%81%E5%88%A9%E6%B6%A6%E6%B5%8B%E7%AE%97%E4%B8%8E%E7%AB%9E%E5%93%81%E4%BB%B7%E6%A0%BC%E4%BD%93%E6%A3%80/%E9%80%89%E5%93%81%E5%88%A9%E6%B6%A6%E6%B5%8B%E7%AE%97%E4%B8%8E%E7%AB%9E%E5%93%81%E4%BB%B7%E6%A0%BC%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-5207c584f7edb001",
+            "title": "GMV 对账器（82% 告警线）",
+            "locator": "【消费零售·运营】GMV 对账器（82% 告警线）/GMV 对账器（82% 告警线）.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91GMV%20%E5%AF%B9%E8%B4%A6%E5%99%A8%EF%BC%8882%25%20%E5%91%8A%E8%AD%A6%E7%BA%BF%EF%BC%89/GMV%20%E5%AF%B9%E8%B4%A6%E5%99%A8%EF%BC%8882%25%20%E5%91%8A%E8%AD%A6%E7%BA%BF%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-3a937c3713a7c6fd",
+            "title": "PPC搜索词与真实利润诊断",
+            "locator": "【消费零售·运营】PPC搜索词与真实利润诊断/PPC搜索词与真实利润诊断.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91PPC%E6%90%9C%E7%B4%A2%E8%AF%8D%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%88%A9%E6%B6%A6%E8%AF%8A%E6%96%AD/PPC%E6%90%9C%E7%B4%A2%E8%AF%8D%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%88%A9%E6%B6%A6%E8%AF%8A%E6%96%AD.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-9745128fcec558fc",
+            "title": "多平台对账差异证据包",
+            "roles": "财务",
+            "description": "平台结算周期与会计期间永远错位，四方四个时间轴，硬对必差",
+            "source_refs": [
+              "source-catalog-9745128fcec558fc"
+            ]
+          },
+          {
+            "id": "catalog-292baf9da24a9917",
+            "title": "多平台多币种回款利润还原",
+            "roles": "财务",
+            "description": "结算单显示到账一万美元，毛销售其实一万八，差的八千去向无人逐项拆解",
+            "source_refs": [
+              "source-catalog-292baf9da24a9917"
+            ]
+          },
+          {
+            "id": "catalog-93b84cf133682507",
+            "title": "进项发票验真归集",
+            "roles": "财务",
+            "description": "发票量大人工逐张验真耗时，重复报销与假发票难发现，跨门店归集还易遗漏",
+            "source_refs": [
+              "source-catalog-93b84cf133682507"
+            ]
+          },
+          {
+            "id": "catalog-6861a7caa83ca513",
+            "title": "平台费用异常审计",
+            "roles": "财务",
+            "description": "费率调整后无人同步更新账单规则，重复扣费单笔金额小，混在几千行里抽查难命中",
+            "source_refs": [
+              "source-catalog-6861a7caa83ca513"
+            ]
+          },
+          {
+            "id": "catalog-94017e12808a83ba",
+            "title": "三大报表自动生成",
+            "roles": "财务",
+            "description": "手工编制报表要 2~3 天，跨期 Vlookup 重复劳动，不同人编出的报表格式还不统一",
+            "source_refs": [
+              "source-catalog-94017e12808a83ba"
+            ]
+          },
+          {
+            "id": "catalog-a654a5393af7f68d",
+            "title": "食材成本核算与分析",
+            "roles": "财务",
+            "description": "BOM 失真放大虚假损耗，倒挤法依赖盘点准确性，成本异常往往月度复盘才被发现",
+            "source_refs": [
+              "source-catalog-a654a5393af7f68d"
+            ]
+          },
+          {
+            "id": "catalog-a23af06806365168",
+            "title": "月末结账清单自动整理",
+            "roles": "财务",
+            "description": "结账事项跨多模块易遗漏，多主体进度分散难跟踪，关账时点强约束返工成本高",
+            "source_refs": [
+              "source-catalog-a23af06806365168"
+            ]
+          },
+          {
+            "id": "catalog-921875cdb9846ae7",
+            "title": "供应商费用返利核对",
+            "roles": "采购",
+            "description": "超市向供应商收取进场费、海报费、节庆费、堆头费等十几种费用，合同应收与实际入账无人逐条核对",
+            "source_refs": [
+              "source-catalog-921875cdb9846ae7"
+            ]
+          },
+          {
+            "id": "catalog-bbbb28dba8501cc0",
+            "title": "新品全口径利润立项",
+            "roles": "产品 · 运营",
+            "description": "立项看毛利，量产看现金，广告、退货、平台费、头程、认证费量产才逐个现身",
+            "source_refs": [
+              "source-catalog-bbbb28dba8501cc0"
+            ]
+          },
+          {
+            "id": "catalog-6f41f709fe13ab68",
+            "title": "经营利润异常会诊与行动审批",
+            "roles": "管理层 · 企业负责人",
+            "description": "看得到销售额，看不到钱去哪了，想确认这个月赚没赚，要等财务拉表一星期",
+            "source_refs": [
+              "source-catalog-6f41f709fe13ab68"
+            ]
+          },
+          {
+            "id": "catalog-1aab9485ecd2e6d4",
+            "title": "渠道费用当周核完 —— 花没花值不值疑点在哪",
+            "roles": "销售",
+            "description": "营销费用是第二大成本，支出后无人说得清哪一笔带来了动销",
+            "source_refs": [
+              "source-catalog-1aab9485ecd2e6d4"
+            ]
+          },
+          {
+            "id": "catalog-f8e0a11e902fd2ad",
+            "title": "三平台账单逐单对清 —— 差异判因到订单号",
+            "roles": "销售",
+            "description": "对账工具只标记差异金额，无人解释每一笔差异的成因",
+            "source_refs": [
+              "source-catalog-f8e0a11e902fd2ad"
+            ]
+          },
+          {
+            "id": "catalog-b42cd512ab5ad5be",
+            "title": "多平台经营日报（口径统一版）",
+            "roles": "运营",
+            "description": "日报 GMV 数字漂亮，管理层追问「钱呢」：支付口径与实收之间隔着 15% 水分",
+            "source_refs": [
+              "source-catalog-b42cd512ab5ad5be"
+            ]
+          },
+          {
+            "id": "catalog-560e1c0e728c5d30",
+            "title": "选品利润测算与竞品价格体检",
+            "roles": "运营",
+            "description": "表上月流水五万美元，扣完广告、物流、退货，到手仅一千八",
+            "source_refs": [
+              "source-catalog-560e1c0e728c5d30"
+            ]
+          },
+          {
+            "id": "catalog-5207c584f7edb001",
+            "title": "GMV 对账器（82% 告警线）",
+            "roles": "运营",
+            "description": "运营口径售出 92 万，财务口径到账 79 万，双方各持其表难以对齐",
+            "source_refs": [
+              "source-catalog-5207c584f7edb001"
+            ]
+          },
+          {
+            "id": "catalog-3a937c3713a7c6fd",
+            "title": "PPC搜索词与真实利润诊断",
+            "roles": "运营",
+            "description": "ACoS 高就停词是最贵的条件反射，广告报表里看不到利润",
+            "source_refs": [
+              "source-catalog-3a937c3713a7c6fd"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-292baf9da24a9917"
+              ]
+            },
+            "label": "平台回款与成本记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "利润核对底稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-9745128fcec558fc",
+          "catalog-292baf9da24a9917",
+          "catalog-93b84cf133682507",
+          "catalog-6861a7caa83ca513",
+          "catalog-94017e12808a83ba",
+          "catalog-a654a5393af7f68d",
+          "catalog-a23af06806365168",
+          "catalog-921875cdb9846ae7",
+          "catalog-bbbb28dba8501cc0",
+          "catalog-6f41f709fe13ab68",
+          "catalog-1aab9485ecd2e6d4",
+          "catalog-f8e0a11e902fd2ad",
+          "catalog-b42cd512ab5ad5be",
+          "catalog-560e1c0e728c5d30",
+          "catalog-5207c584f7edb001",
+          "catalog-3a937c3713a7c6fd"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sourcing",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "采购与供应商治理",
+      "description": "采购校对资质、经营信息和风险事项，形成资质与风险记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "采购",
+            "source_refs": [
+              "source-catalog-6c079f0308aaa160"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "校对资质、经营信息和风险事项",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-6c079f0308aaa160"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "供应商档案",
+            "source_refs": [
+              "source-catalog-6c079f0308aaa160"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "资质与风险记录",
+            "source_refs": [
+              "source-catalog-6c079f0308aaa160"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-257adc738de66db0",
+            "title": "市场趋势看板 —— 几十个信息源，每周一份趋势情报",
+            "locator": "【消费零售·采购·市场】市场趋势看板 —— 几十个信息源，每周一份趋势情报/市场趋势看板 —— 几十个信息源，每周一份趋势情报.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%B8%82%E5%9C%BA%E8%B6%8B%E5%8A%BF%E7%9C%8B%E6%9D%BF%20%E2%80%94%E2%80%94%20%E5%87%A0%E5%8D%81%E4%B8%AA%E4%BF%A1%E6%81%AF%E6%BA%90%EF%BC%8C%E6%AF%8F%E5%91%A8%E4%B8%80%E4%BB%BD%E8%B6%8B%E5%8A%BF%E6%83%85%E6%8A%A5/%E5%B8%82%E5%9C%BA%E8%B6%8B%E5%8A%BF%E7%9C%8B%E6%9D%BF%20%E2%80%94%E2%80%94%20%E5%87%A0%E5%8D%81%E4%B8%AA%E4%BF%A1%E6%81%AF%E6%BA%90%EF%BC%8C%E6%AF%8F%E5%91%A8%E4%B8%80%E4%BB%BD%E8%B6%8B%E5%8A%BF%E6%83%85%E6%8A%A5.md"
+          },
+          {
+            "id": "source-catalog-ff5c17248908e44e",
+            "title": "采购需求与计划生成",
+            "locator": "【消费零售·采购】采购需求与计划生成/采购需求与计划生成.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E9%87%87%E8%B4%AD%E9%9C%80%E6%B1%82%E4%B8%8E%E8%AE%A1%E5%88%92%E7%94%9F%E6%88%90/%E9%87%87%E8%B4%AD%E9%9C%80%E6%B1%82%E4%B8%8E%E8%AE%A1%E5%88%92%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-2e0c384132563c76",
+            "title": "订货会 OTB 采买测算",
+            "locator": "【消费零售·采购】订货会 OTB 采买测算/订货会 OTB 采买测算.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E8%AE%A2%E8%B4%A7%E4%BC%9A%20OTB%20%E9%87%87%E4%B9%B0%E6%B5%8B%E7%AE%97/%E8%AE%A2%E8%B4%A7%E4%BC%9A%20OTB%20%E9%87%87%E4%B9%B0%E6%B5%8B%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-a9bc7a442ae582e6",
+            "title": "供应商寻源 —— 联网核验，拒绝编造",
+            "locator": "【消费零售·采购】供应商寻源 —— 联网核验，拒绝编造/供应商寻源 —— 联网核验，拒绝编造.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E4%BE%9B%E5%BA%94%E5%95%86%E5%AF%BB%E6%BA%90%20%E2%80%94%E2%80%94%20%E8%81%94%E7%BD%91%E6%A0%B8%E9%AA%8C%EF%BC%8C%E6%8B%92%E7%BB%9D%E7%BC%96%E9%80%A0/%E4%BE%9B%E5%BA%94%E5%95%86%E5%AF%BB%E6%BA%90%20%E2%80%94%E2%80%94%20%E8%81%94%E7%BD%91%E6%A0%B8%E9%AA%8C%EF%BC%8C%E6%8B%92%E7%BB%9D%E7%BC%96%E9%80%A0.md"
+          },
+          {
+            "id": "source-catalog-a28df04ad4ab3b97",
+            "title": "供应商询价与样品对比",
+            "locator": "【消费零售·采购】供应商询价与样品对比/供应商询价与样品对比.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E4%BE%9B%E5%BA%94%E5%95%86%E8%AF%A2%E4%BB%B7%E4%B8%8E%E6%A0%B7%E5%93%81%E5%AF%B9%E6%AF%94/%E4%BE%9B%E5%BA%94%E5%95%86%E8%AF%A2%E4%BB%B7%E4%B8%8E%E6%A0%B7%E5%93%81%E5%AF%B9%E6%AF%94.md"
+          },
+          {
+            "id": "source-catalog-6c079f0308aaa160",
+            "title": "供应商资质管理与风控",
+            "locator": "【消费零售·采购】供应商资质管理与风控/供应商资质管理与风控.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E8%B4%A8%E7%AE%A1%E7%90%86%E4%B8%8E%E9%A3%8E%E6%8E%A7/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E8%B4%A8%E7%AE%A1%E7%90%86%E4%B8%8E%E9%A3%8E%E6%8E%A7.md"
+          },
+          {
+            "id": "source-catalog-0adbbf87b3e06775",
+            "title": "面辅料比价与决策单",
+            "locator": "【消费零售·采购】面辅料比价与决策单/面辅料比价与决策单.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E9%9D%A2%E8%BE%85%E6%96%99%E6%AF%94%E4%BB%B7%E4%B8%8E%E5%86%B3%E7%AD%96%E5%8D%95/%E9%9D%A2%E8%BE%85%E6%96%99%E6%AF%94%E4%BB%B7%E4%B8%8E%E5%86%B3%E7%AD%96%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-03da7190bd363155",
+            "title": "品类结构月度复盘",
+            "locator": "【消费零售·采购】品类结构月度复盘/品类结构月度复盘.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E5%93%81%E7%B1%BB%E7%BB%93%E6%9E%84%E6%9C%88%E5%BA%A6%E5%A4%8D%E7%9B%98/%E5%93%81%E7%B1%BB%E7%BB%93%E6%9E%84%E6%9C%88%E5%BA%A6%E5%A4%8D%E7%9B%98.md"
+          },
+          {
+            "id": "source-catalog-28a4b8305f3a17b8",
+            "title": "生鲜订货参考单（解释型）",
+            "locator": "【消费零售·采购】生鲜订货参考单（解释型）/生鲜订货参考单（解释型）.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E7%94%9F%E9%B2%9C%E8%AE%A2%E8%B4%A7%E5%8F%82%E8%80%83%E5%8D%95%EF%BC%88%E8%A7%A3%E9%87%8A%E5%9E%8B%EF%BC%89/%E7%94%9F%E9%B2%9C%E8%AE%A2%E8%B4%A7%E5%8F%82%E8%80%83%E5%8D%95%EF%BC%88%E8%A7%A3%E9%87%8A%E5%9E%8B%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-fdd9105b46cba5e4",
+            "title": "生鲜损耗日报与降损动作",
+            "locator": "【消费零售·采购】生鲜损耗日报与降损动作/生鲜损耗日报与降损动作.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E7%94%9F%E9%B2%9C%E6%8D%9F%E8%80%97%E6%97%A5%E6%8A%A5%E4%B8%8E%E9%99%8D%E6%8D%9F%E5%8A%A8%E4%BD%9C/%E7%94%9F%E9%B2%9C%E6%8D%9F%E8%80%97%E6%97%A5%E6%8A%A5%E4%B8%8E%E9%99%8D%E6%8D%9F%E5%8A%A8%E4%BD%9C.md"
+          },
+          {
+            "id": "source-catalog-33ca8a884969e3f2",
+            "title": "索证索票到期预警",
+            "locator": "【消费零售·采购】索证索票到期预警/索证索票到期预警.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E7%B4%A2%E8%AF%81%E7%B4%A2%E7%A5%A8%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6/%E7%B4%A2%E8%AF%81%E7%B4%A2%E7%A5%A8%E5%88%B0%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          },
+          {
+            "id": "source-catalog-68f20b8b21454abb",
+            "title": "新菜上市前算毛利",
+            "locator": "【消费零售·采购】新菜上市前算毛利/新菜上市前算毛利.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%96%B0%E8%8F%9C%E4%B8%8A%E5%B8%82%E5%89%8D%E7%AE%97%E6%AF%9B%E5%88%A9/%E6%96%B0%E8%8F%9C%E4%B8%8A%E5%B8%82%E5%89%8D%E7%AE%97%E6%AF%9B%E5%88%A9.md"
+          },
+          {
+            "id": "source-catalog-75216357e9b7b910",
+            "title": "月度商品质量分析 —— 一份提示词，每月一份质量报告",
+            "locator": "【消费零售·运营·采购】月度商品质量分析 —— 一份提示词，每月一份质量报告/月度商品质量分析 —— 一份提示词，每月一份质量报告.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%9C%88%E5%BA%A6%E5%95%86%E5%93%81%E8%B4%A8%E9%87%8F%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BB%BD%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%8C%E6%AF%8F%E6%9C%88%E4%B8%80%E4%BB%BD%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A/%E6%9C%88%E5%BA%A6%E5%95%86%E5%93%81%E8%B4%A8%E9%87%8F%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E4%B8%80%E4%BB%BD%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%8C%E6%AF%8F%E6%9C%88%E4%B8%80%E4%BB%BD%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-257adc738de66db0",
+            "title": "市场趋势看板 —— 几十个信息源，每周一份趋势情报",
+            "roles": "采购 · 市场",
+            "description": "信息源多达几十个，人工搜集不可持续；口径靠个人经验，周报质量不稳定",
+            "source_refs": [
+              "source-catalog-257adc738de66db0"
+            ]
+          },
+          {
+            "id": "catalog-ff5c17248908e44e",
+            "title": "采购需求与计划生成",
+            "roles": "采购",
+            "description": "多门店需求手工汇总耗时易错，异常需求难识别，采购计划准确率低，汇总一次耗掉一整天",
+            "source_refs": [
+              "source-catalog-ff5c17248908e44e"
+            ]
+          },
+          {
+            "id": "catalog-2e0c384132563c76",
+            "title": "订货会 OTB 采买测算",
+            "roles": "采购",
+            "description": "订货会现场各渠道争相加单，财务事后才发现采买超出 18%",
+            "source_refs": [
+              "source-catalog-2e0c384132563c76"
+            ]
+          },
+          {
+            "id": "catalog-a9bc7a442ae582e6",
+            "title": "供应商寻源 —— 联网核验，拒绝编造",
+            "roles": "采购",
+            "description": "线索池建得起来，用不起来：能核到的工商字段太少，剩下的只能靠人一个个打电话补",
+            "source_refs": [
+              "source-catalog-a9bc7a442ae582e6"
+            ]
+          },
+          {
+            "id": "catalog-a28df04ad4ab3b97",
+            "title": "供应商询价与样品对比",
+            "roles": "采购",
+            "description": "比价只比单价，落地成本没人算，样品缺陷留在微信里，比价表上永远合格",
+            "source_refs": [
+              "source-catalog-a28df04ad4ab3b97"
+            ]
+          },
+          {
+            "id": "catalog-6c079f0308aaa160",
+            "title": "供应商资质管理与风控",
+            "roles": "采购",
+            "description": "背调信息分散多平台，在库风险无动态监控，老供应商履约数据散落，一次背调拖上两三天",
+            "source_refs": [
+              "source-catalog-6c079f0308aaa160"
+            ]
+          },
+          {
+            "id": "catalog-0adbbf87b3e06775",
+            "title": "面辅料比价与决策单",
+            "roles": "采购",
+            "description": "三家报价算法各不相同，便宜 8% 的那家，去年曾致召回 400 件",
+            "source_refs": [
+              "source-catalog-0adbbf87b3e06775"
+            ]
+          },
+          {
+            "id": "catalog-03da7190bd363155",
+            "title": "品类结构月度复盘",
+            "roles": "采购",
+            "description": "品类经理都知道该做品类复盘，但要拉商品、财务、门店三套数，关起门做两天",
+            "source_refs": [
+              "source-catalog-03da7190bd363155"
+            ]
+          },
+          {
+            "id": "catalog-28a4b8305f3a17b8",
+            "title": "生鲜订货参考单（解释型）",
+            "roles": "采购",
+            "description": "系统推荐的订货量店长从来不看，它不知道小学开学、隔壁拆迁，也不知道上周那批虾是谁发的",
+            "source_refs": [
+              "source-catalog-28a4b8305f3a17b8"
+            ]
+          },
+          {
+            "id": "catalog-fdd9105b46cba5e4",
+            "title": "生鲜损耗日报与降损动作",
+            "roles": "采购",
+            "description": "生鲜毛利率 19%、行业平均损耗 7%，损耗漏在哪一环节从来无人说得清",
+            "source_refs": [
+              "source-catalog-fdd9105b46cba5e4"
+            ]
+          },
+          {
+            "id": "catalog-33ca8a884969e3f2",
+            "title": "索证索票到期预警",
+            "roles": "采购",
+            "description": "采购凭印象认为老供应商「没问题」，真被查时，许可证已过期半年、检验合格证一张都没有",
+            "source_refs": [
+              "source-catalog-33ca8a884969e3f2"
+            ]
+          },
+          {
+            "id": "catalog-68f20b8b21454abb",
+            "title": "新菜上市前算毛利",
+            "roles": "采购",
+            "description": "新菜凭经验定价 32 块，卖一份亏一份，月底才发现原料涨价未计入成本卡",
+            "source_refs": [
+              "source-catalog-68f20b8b21454abb"
+            ]
+          },
+          {
+            "id": "catalog-75216357e9b7b910",
+            "title": "月度商品质量分析 —— 一份提示词，每月一份质量报告",
+            "roles": "运营 · 采购",
+            "description": "每月例行分析是重复的体力劳动；分析框架因人而异，结论不可比",
+            "source_refs": [
+              "source-catalog-75216357e9b7b910"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-6c079f0308aaa160"
+              ]
+            },
+            "label": "供应商档案",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "资质与风险记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-257adc738de66db0",
+          "catalog-ff5c17248908e44e",
+          "catalog-2e0c384132563c76",
+          "catalog-a9bc7a442ae582e6",
+          "catalog-a28df04ad4ab3b97",
+          "catalog-6c079f0308aaa160",
+          "catalog-0adbbf87b3e06775",
+          "catalog-03da7190bd363155",
+          "catalog-28a4b8305f3a17b8",
+          "catalog-fdd9105b46cba5e4",
+          "catalog-33ca8a884969e3f2",
+          "catalog-68f20b8b21454abb",
+          "catalog-75216357e9b7b910"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "compliance",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "商品、内容与平台合规",
+      "description": "市场校对商品宣称与现有材料，形成待复核表述。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "市场",
+            "source_refs": [
+              "source-catalog-56c5c499b08fdef2"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "校对商品宣称与现有材料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-56c5c499b08fdef2"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "商品文案与证明资料",
+            "source_refs": [
+              "source-catalog-56c5c499b08fdef2"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待复核表述",
+            "source_refs": [
+              "source-catalog-56c5c499b08fdef2"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-56c5c499b08fdef2",
+            "title": "宣称合规逐句核对 —— 每句对外的话都对上备案",
+            "locator": "【消费零售·市场】宣称合规逐句核对 —— 每句对外的话都对上备案/宣称合规逐句核对 —— 每句对外的话都对上备案.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%AE%A3%E7%A7%B0%E5%90%88%E8%A7%84%E9%80%90%E5%8F%A5%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%8F%A5%E5%AF%B9%E5%A4%96%E7%9A%84%E8%AF%9D%E9%83%BD%E5%AF%B9%E4%B8%8A%E5%A4%87%E6%A1%88/%E5%AE%A3%E7%A7%B0%E5%90%88%E8%A7%84%E9%80%90%E5%8F%A5%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%8F%A5%E5%AF%B9%E5%A4%96%E7%9A%84%E8%AF%9D%E9%83%BD%E5%AF%B9%E4%B8%8A%E5%A4%87%E6%A1%88.md"
+          },
+          {
+            "id": "source-catalog-b1b4e8ba652d407e",
+            "title": "违禁词与 AI 标注合规自查",
+            "locator": "【消费零售·运营·市场】违禁词与 AI 标注合规自查/违禁词与 AI 标注合规自查.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E8%BF%9D%E7%A6%81%E8%AF%8D%E4%B8%8E%20AI%20%E6%A0%87%E6%B3%A8%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5/%E8%BF%9D%E7%A6%81%E8%AF%8D%E4%B8%8E%20AI%20%E6%A0%87%E6%B3%A8%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-57f56bb0e447e0a5",
+            "title": "海外合规到期与下架风险体检",
+            "locator": "【消费零售·运营】海外合规到期与下架风险体检/海外合规到期与下架风险体检.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B5%B7%E5%A4%96%E5%90%88%E8%A7%84%E5%88%B0%E6%9C%9F%E4%B8%8E%E4%B8%8B%E6%9E%B6%E9%A3%8E%E9%99%A9%E4%BD%93%E6%A3%80/%E6%B5%B7%E5%A4%96%E5%90%88%E8%A7%84%E5%88%B0%E6%9C%9F%E4%B8%8E%E4%B8%8B%E6%9E%B6%E9%A3%8E%E9%99%A9%E4%BD%93%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-ad2c7af8fe6d864f",
+            "title": "平台政策变更影响扫描与整改包",
+            "locator": "【消费零售·运营】平台政策变更影响扫描与整改包/平台政策变更影响扫描与整改包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%B9%B3%E5%8F%B0%E6%94%BF%E7%AD%96%E5%8F%98%E6%9B%B4%E5%BD%B1%E5%93%8D%E6%89%AB%E6%8F%8F%E4%B8%8E%E6%95%B4%E6%94%B9%E5%8C%85/%E5%B9%B3%E5%8F%B0%E6%94%BF%E7%AD%96%E5%8F%98%E6%9B%B4%E5%BD%B1%E5%93%8D%E6%89%AB%E6%8F%8F%E4%B8%8E%E6%95%B4%E6%94%B9%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-5001a9cec40a47de",
+            "title": "商品合规材料包",
+            "locator": "【消费零售·运营】商品合规材料包/商品合规材料包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%95%86%E5%93%81%E5%90%88%E8%A7%84%E6%9D%90%E6%96%99%E5%8C%85/%E5%95%86%E5%93%81%E5%90%88%E8%A7%84%E6%9D%90%E6%96%99%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-a85ba7b716e0a31b",
+            "title": "食安合规逐项稽核",
+            "locator": "【消费零售·运营】食安合规逐项稽核/食安合规逐项稽核.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%A3%9F%E5%AE%89%E5%90%88%E8%A7%84%E9%80%90%E9%A1%B9%E7%A8%BD%E6%A0%B8/%E9%A3%9F%E5%AE%89%E5%90%88%E8%A7%84%E9%80%90%E9%A1%B9%E7%A8%BD%E6%A0%B8.md"
+          },
+          {
+            "id": "source-catalog-d8e55dcefe41af1a",
+            "title": "详情页文案包与极限词校验",
+            "locator": "【消费零售·运营】详情页文案包与极限词校验/详情页文案包与极限词校验.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%AF%A6%E6%83%85%E9%A1%B5%E6%96%87%E6%A1%88%E5%8C%85%E4%B8%8E%E6%9E%81%E9%99%90%E8%AF%8D%E6%A0%A1%E9%AA%8C/%E8%AF%A6%E6%83%85%E9%A1%B5%E6%96%87%E6%A1%88%E5%8C%85%E4%B8%8E%E6%9E%81%E9%99%90%E8%AF%8D%E6%A0%A1%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-6087b1437493a29e",
+            "title": "账号申诉证据包",
+            "locator": "【消费零售·运营】账号申诉证据包/账号申诉证据包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%B4%A6%E5%8F%B7%E7%94%B3%E8%AF%89%E8%AF%81%E6%8D%AE%E5%8C%85/%E8%B4%A6%E5%8F%B7%E7%94%B3%E8%AF%89%E8%AF%81%E6%8D%AE%E5%8C%85.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-56c5c499b08fdef2",
+            "title": "宣称合规逐句核对 —— 每句对外的话都对上备案",
+            "roles": "市场",
+            "description": "商品参数中随手填写的一句修复紧致宣称，成交四千单后成为虚假宣传立案证据",
+            "source_refs": [
+              "source-catalog-56c5c499b08fdef2"
+            ]
+          },
+          {
+            "id": "catalog-b1b4e8ba652d407e",
+            "title": "违禁词与 AI 标注合规自查",
+            "roles": "运营 · 市场",
+            "description": "详情页写着「最强去油污」，2026 年新规下这三个字值一次限流",
+            "source_refs": [
+              "source-catalog-b1b4e8ba652d407e"
+            ]
+          },
+          {
+            "id": "catalog-57f56bb0e447e0a5",
+            "title": "海外合规到期与下架风险体检",
+            "roles": "运营",
+            "description": "德国站卖得好好的，一封 EPR 失效通知，电器类目全被下架、资金冻结",
+            "source_refs": [
+              "source-catalog-57f56bb0e447e0a5"
+            ]
+          },
+          {
+            "id": "catalog-ad2c7af8fe6d864f",
+            "title": "平台政策变更影响扫描与整改包",
+            "roles": "运营",
+            "description": "政策生效才被发现，整改永远在路上，等商品被下架才发现供应商确认函一直留在共享盘",
+            "source_refs": [
+              "source-catalog-ad2c7af8fe6d864f"
+            ]
+          },
+          {
+            "id": "catalog-5001a9cec40a47de",
+            "title": "商品合规材料包",
+            "roles": "运营",
+            "description": "型号差一个字母，证书可能整本作废，证书过期仍在销售，无人跟进",
+            "source_refs": [
+              "source-catalog-5001a9cec40a47de"
+            ]
+          },
+          {
+            "id": "catalog-a85ba7b716e0a31b",
+            "title": "食安合规逐项稽核",
+            "roles": "运营",
+            "description": "自查表月月都在填，真被抽检时，进货记录、效期台账、培训记录总有一项对不上",
+            "source_refs": [
+              "source-catalog-a85ba7b716e0a31b"
+            ]
+          },
+          {
+            "id": "catalog-d8e55dcefe41af1a",
+            "title": "详情页文案包与极限词校验",
+            "roles": "运营",
+            "description": "AI 撰写详情页人人会做，写错一个「顶级」罚款 20 万起，写错一个尺码退一件亏 25",
+            "source_refs": [
+              "source-catalog-d8e55dcefe41af1a"
+            ]
+          },
+          {
+            "id": "catalog-6087b1437493a29e",
+            "title": "账号申诉证据包",
+            "roles": "运营",
+            "description": "申诉被驳回多数输在证据组织而不是事实，72 小时里最难的不是写，是找",
+            "source_refs": [
+              "source-catalog-6087b1437493a29e"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-56c5c499b08fdef2"
+              ]
+            },
+            "label": "商品文案与证明资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待复核表述",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-56c5c499b08fdef2",
+          "catalog-b1b4e8ba652d407e",
+          "catalog-57f56bb0e447e0a5",
+          "catalog-ad2c7af8fe6d864f",
+          "catalog-5001a9cec40a47de",
+          "catalog-a85ba7b716e0a31b",
+          "catalog-d8e55dcefe41af1a",
+          "catalog-6087b1437493a29e"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "channel",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "多渠道上架与商品运营",
+      "description": "运营整理各平台上架字段并核对发布状态，形成上架核对记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-021b1ed732317f8c"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理各平台上架字段并核对发布状态",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-021b1ed732317f8c"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "商品资料与渠道发布规则",
+            "source_refs": [
+              "source-catalog-021b1ed732317f8c"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "上架核对记录",
+            "source_refs": [
+              "source-catalog-021b1ed732317f8c"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-dd2a1b6e615b7451",
+            "title": "货盘可播状态联检",
+            "locator": "【消费零售·销售】货盘可播状态联检/货盘可播状态联检.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%B4%A7%E7%9B%98%E5%8F%AF%E6%92%AD%E7%8A%B6%E6%80%81%E8%81%94%E6%A3%80/%E8%B4%A7%E7%9B%98%E5%8F%AF%E6%92%AD%E7%8A%B6%E6%80%81%E8%81%94%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-39c72d8b132bea6e",
+            "title": "多语言 Listing 与 A+ 批量改写",
+            "locator": "【消费零售·运营】多语言 Listing 与 A+ 批量改写/多语言 Listing 与 A+ 批量改写.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%9A%E8%AF%AD%E8%A8%80%20Listing%20%E4%B8%8E%20A+%20%E6%89%B9%E9%87%8F%E6%94%B9%E5%86%99/%E5%A4%9A%E8%AF%AD%E8%A8%80%20Listing%20%E4%B8%8E%20A+%20%E6%89%B9%E9%87%8F%E6%94%B9%E5%86%99.md"
+          },
+          {
+            "id": "source-catalog-53e45b6c423a7373",
+            "title": "渠道运营-区域战队运营诊断与赋能",
+            "locator": "【消费零售·运营】渠道运营-区域战队运营诊断与赋能/渠道运营-区域战队运营诊断与赋能.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B8%A0%E9%81%93%E8%BF%90%E8%90%A5-%E5%8C%BA%E5%9F%9F%E6%88%98%E9%98%9F%E8%BF%90%E8%90%A5%E8%AF%8A%E6%96%AD%E4%B8%8E%E8%B5%8B%E8%83%BD/%E6%B8%A0%E9%81%93%E8%BF%90%E8%90%A5-%E5%8C%BA%E5%9F%9F%E6%88%98%E9%98%9F%E8%BF%90%E8%90%A5%E8%AF%8A%E6%96%AD%E4%B8%8E%E8%B5%8B%E8%83%BD.md"
+          },
+          {
+            "id": "source-catalog-07dbb409d7d30bf3",
+            "title": "渠道运营-全渠道商品活动价格校验",
+            "locator": "【消费零售·运营】渠道运营-全渠道商品活动价格校验/渠道运营-全渠道商品活动价格校验.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B8%A0%E9%81%93%E8%BF%90%E8%90%A5-%E5%85%A8%E6%B8%A0%E9%81%93%E5%95%86%E5%93%81%E6%B4%BB%E5%8A%A8%E4%BB%B7%E6%A0%BC%E6%A0%A1%E9%AA%8C/%E6%B8%A0%E9%81%93%E8%BF%90%E8%90%A5-%E5%85%A8%E6%B8%A0%E9%81%93%E5%95%86%E5%93%81%E6%B4%BB%E5%8A%A8%E4%BB%B7%E6%A0%BC%E6%A0%A1%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-0437ce95a43e082e",
+            "title": "商品详情图与A+内容批量生成",
+            "locator": "【消费零售·运营】商品详情图与A+内容批量生成/商品详情图与A+内容批量生成.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85%E5%9B%BE%E4%B8%8EA+%E5%86%85%E5%AE%B9%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85%E5%9B%BE%E4%B8%8EA+%E5%86%85%E5%AE%B9%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-2a429be5665e0847",
+            "title": "AI选品机会发现与多维验证",
+            "locator": "【消费零售·运营】AI选品机会发现与多维验证/AI选品机会发现与多维验证.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91AI%E9%80%89%E5%93%81%E6%9C%BA%E4%BC%9A%E5%8F%91%E7%8E%B0%E4%B8%8E%E5%A4%9A%E7%BB%B4%E9%AA%8C%E8%AF%81/AI%E9%80%89%E5%93%81%E6%9C%BA%E4%BC%9A%E5%8F%91%E7%8E%B0%E4%B8%8E%E5%A4%9A%E7%BB%B4%E9%AA%8C%E8%AF%81.md"
+          },
+          {
+            "id": "source-catalog-021b1ed732317f8c",
+            "title": "Amazon及多平台商品批量上架与发布校验",
+            "locator": "【消费零售·运营】Amazon及多平台商品批量上架与发布校验/Amazon及多平台商品批量上架与发布校验.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91Amazon%E5%8F%8A%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%95%86%E5%93%81%E6%89%B9%E9%87%8F%E4%B8%8A%E6%9E%B6%E4%B8%8E%E5%8F%91%E5%B8%83%E6%A0%A1%E9%AA%8C/Amazon%E5%8F%8A%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%95%86%E5%93%81%E6%89%B9%E9%87%8F%E4%B8%8A%E6%9E%B6%E4%B8%8E%E5%8F%91%E5%B8%83%E6%A0%A1%E9%AA%8C.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-dd2a1b6e615b7451",
+            "title": "货盘可播状态联检",
+            "roles": "销售",
+            "description": "排品表列有 18 个商品，真正同时满足价格、库存、证据和链接条件的只有 13 个",
+            "source_refs": [
+              "source-catalog-dd2a1b6e615b7451"
+            ]
+          },
+          {
+            "id": "catalog-39c72d8b132bea6e",
+            "title": "多语言 Listing 与 A+ 批量改写",
+            "roles": "运营",
+            "description": "通用工具十分钟生成六国文案，却不知道榨汁杯真正的退货原因是漏水",
+            "source_refs": [
+              "source-catalog-39c72d8b132bea6e"
+            ]
+          },
+          {
+            "id": "catalog-53e45b6c423a7373",
+            "title": "渠道运营-区域战队运营诊断与赋能",
+            "roles": "运营",
+            "description": "多店数据散在各系统缺统一健康度模型，短板归因靠主观，标杆经验无法量化复制",
+            "source_refs": [
+              "source-catalog-53e45b6c423a7373"
+            ]
+          },
+          {
+            "id": "catalog-07dbb409d7d30bf3",
+            "title": "渠道运营-全渠道商品活动价格校验",
+            "roles": "运营",
+            "description": "五个平台各配各的、同品不同价被投诉，活动漏配错配、渠道串价利润流失",
+            "source_refs": [
+              "source-catalog-07dbb409d7d30bf3"
+            ]
+          },
+          {
+            "id": "catalog-0437ce95a43e082e",
+            "title": "商品详情图与A+内容批量生成",
+            "roles": "运营",
+            "description": "AI 生图最先牺牲的是产品结构，好看但不对的图一上线，退货会替你纠错",
+            "source_refs": [
+              "source-catalog-0437ce95a43e082e"
+            ]
+          },
+          {
+            "id": "catalog-2a429be5665e0847",
+            "title": "AI选品机会发现与多维验证",
+            "roles": "运营",
+            "description": "工具各给一半答案，拼起来靠人脑，300 条差评留在导出文件里，没人真读",
+            "source_refs": [
+              "source-catalog-2a429be5665e0847"
+            ]
+          },
+          {
+            "id": "catalog-021b1ed732317f8c",
+            "title": "Amazon及多平台商品批量上架与发布校验",
+            "roles": "运营",
+            "description": "批量上架的错误不是技术错误，是主数据错误，ERP 回执逐条点开排查极其耗时",
+            "source_refs": [
+              "source-catalog-021b1ed732317f8c"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-021b1ed732317f8c"
+              ]
+            },
+            "label": "商品资料与渠道发布规则",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "上架核对记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-dd2a1b6e615b7451",
+          "catalog-39c72d8b132bea6e",
+          "catalog-53e45b6c423a7373",
+          "catalog-07dbb409d7d30bf3",
+          "catalog-0437ce95a43e082e",
+          "catalog-2a429be5665e0847",
+          "catalog-021b1ed732317f8c"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "product",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "商品开发与质量",
+      "description": "法务比对配方成分与资料库条目，形成待复核差异。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "法务",
+            "source_refs": [
+              "source-catalog-292c86665834fe3a"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "比对配方成分与资料库条目",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-292c86665834fe3a"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "成分表与合规资料",
+            "source_refs": [
+              "source-catalog-292c86665834fe3a"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待复核差异",
+            "source_refs": [
+              "source-catalog-292c86665834fe3a"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-2a3498f062f18afe",
+            "title": "餐饮菜单结构优化",
+            "locator": "【消费零售·产品】餐饮菜单结构优化/餐饮菜单结构优化.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%A4%90%E9%A5%AE%E8%8F%9C%E5%8D%95%E7%BB%93%E6%9E%84%E4%BC%98%E5%8C%96/%E9%A4%90%E9%A5%AE%E8%8F%9C%E5%8D%95%E7%BB%93%E6%9E%84%E4%BC%98%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-03ae1839b9f41ad5",
+            "title": "从需求到产品原型",
+            "locator": "【消费零售·产品】从需求到产品原型/从需求到产品原型.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E4%BB%8E%E9%9C%80%E6%B1%82%E5%88%B0%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B/%E4%BB%8E%E9%9C%80%E6%B1%82%E5%88%B0%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B.md"
+          },
+          {
+            "id": "source-catalog-817741521a7a60d9",
+            "title": "新品趋势与竞品洞察",
+            "locator": "【消费零售·产品】新品趋势与竞品洞察/新品趋势与竞品洞察.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E6%96%B0%E5%93%81%E8%B6%8B%E5%8A%BF%E4%B8%8E%E7%AB%9E%E5%93%81%E6%B4%9E%E5%AF%9F/%E6%96%B0%E5%93%81%E8%B6%8B%E5%8A%BF%E4%B8%8E%E7%AB%9E%E5%93%81%E6%B4%9E%E5%AF%9F.md"
+          },
+          {
+            "id": "source-catalog-a15115a395216bab",
+            "title": "行业热点趋势与竞品洞察",
+            "locator": "【消费零售·产品】行业热点趋势与竞品洞察/行业热点趋势与竞品洞察.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E8%A1%8C%E4%B8%9A%E7%83%AD%E7%82%B9%E8%B6%8B%E5%8A%BF%E4%B8%8E%E7%AB%9E%E5%93%81%E6%B4%9E%E5%AF%9F/%E8%A1%8C%E4%B8%9A%E7%83%AD%E7%82%B9%E8%B6%8B%E5%8A%BF%E4%B8%8E%E7%AB%9E%E5%93%81%E6%B4%9E%E5%AF%9F.md"
+          },
+          {
+            "id": "source-catalog-292c86665834fe3a",
+            "title": "成分合规三库查证 —— 三个库查完才算查完一次",
+            "locator": "【消费零售·法务】成分合规三库查证 —— 三个库查完才算查完一次/成分合规三库查证 —— 三个库查完才算查完一次.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%88%90%E5%88%86%E5%90%88%E8%A7%84%E4%B8%89%E5%BA%93%E6%9F%A5%E8%AF%81%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E5%BA%93%E6%9F%A5%E5%AE%8C%E6%89%8D%E7%AE%97%E6%9F%A5%E5%AE%8C%E4%B8%80%E6%AC%A1/%E6%88%90%E5%88%86%E5%90%88%E8%A7%84%E4%B8%89%E5%BA%93%E6%9F%A5%E8%AF%81%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E5%BA%93%E6%9F%A5%E5%AE%8C%E6%89%8D%E7%AE%97%E6%9F%A5%E5%AE%8C%E4%B8%80%E6%AC%A1.md"
+          },
+          {
+            "id": "source-catalog-4f8dddb02fede255",
+            "title": "安全事件响应处置",
+            "locator": "【消费零售·技术支持·生产】安全事件响应处置/安全事件响应处置.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%AE%89%E5%85%A8%E4%BA%8B%E4%BB%B6%E5%93%8D%E5%BA%94%E5%A4%84%E7%BD%AE/%E5%AE%89%E5%85%A8%E4%BA%8B%E4%BB%B6%E5%93%8D%E5%BA%94%E5%A4%84%E7%BD%AE.md"
+          },
+          {
+            "id": "source-catalog-cae8a2b529214753",
+            "title": "系统监控与告警分析",
+            "locator": "【消费零售·技术支持·生产】系统监控与告警分析/系统监控与告警分析.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%B3%BB%E7%BB%9F%E7%9B%91%E6%8E%A7%E4%B8%8E%E5%91%8A%E8%AD%A6%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E7%9B%91%E6%8E%A7%E4%B8%8E%E5%91%8A%E8%AD%A6%E5%88%86%E6%9E%90.md"
+          },
+          {
+            "id": "source-catalog-f59bc9639e7500d2",
+            "title": "大货异常留痕",
+            "locator": "【消费零售·生产】大货异常留痕/大货异常留痕.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%A4%A7%E8%B4%A7%E5%BC%82%E5%B8%B8%E7%95%99%E7%97%95/%E5%A4%A7%E8%B4%A7%E5%BC%82%E5%B8%B8%E7%95%99%E7%97%95.md"
+          },
+          {
+            "id": "source-catalog-f8aa23958a5d121a",
+            "title": "技术方案选型评估",
+            "locator": "【消费零售·研发】技术方案选型评估/技术方案选型评估.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E9%80%89%E5%9E%8B%E8%AF%84%E4%BC%B0/%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E9%80%89%E5%9E%8B%E8%AF%84%E4%BC%B0.md"
+          },
+          {
+            "id": "source-catalog-7bfff0f10c563a18",
+            "title": "小程序开发测试",
+            "locator": "【消费零售·研发】小程序开发测试/小程序开发测试.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%B5%8B%E8%AF%95/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%B5%8B%E8%AF%95.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-2a3498f062f18afe",
+            "title": "餐饮菜单结构优化",
+            "roles": "产品",
+            "description": "销售数据散落多源，品项评估缺乏系统方法，定删减凭直觉，一次菜单评审拖上两周",
+            "source_refs": [
+              "source-catalog-2a3498f062f18afe"
+            ]
+          },
+          {
+            "id": "catalog-03ae1839b9f41ad5",
+            "title": "从需求到产品原型",
+            "roles": "产品",
+            "description": "写 PRD 太慢，原型制作与沟通耗时，需求评审返工率高",
+            "source_refs": [
+              "source-catalog-03ae1839b9f41ad5"
+            ]
+          },
+          {
+            "id": "catalog-817741521a7a60d9",
+            "title": "新品趋势与竞品洞察",
+            "roles": "产品",
+            "description": "趋势判断凭直觉、竞品信息散在各处、消费者反馈没人系统梳理，研发立项最怕拍脑袋",
+            "source_refs": [
+              "source-catalog-817741521a7a60d9"
+            ]
+          },
+          {
+            "id": "catalog-a15115a395216bab",
+            "title": "行业热点趋势与竞品洞察",
+            "roles": "产品",
+            "description": "热点稍纵即逝周报滞后两三天，竞品动态散落 30+ 渠道，营销稿与真实动态混杂难分",
+            "source_refs": [
+              "source-catalog-a15115a395216bab"
+            ]
+          },
+          {
+            "id": "catalog-292c86665834fe3a",
+            "title": "成分合规三库查证 —— 三个库查完才算查完一次",
+            "roles": "法务",
+            "description": "一种原料须查三个库才算完成查证，多数品牌仅看供应商提供的一页资料",
+            "source_refs": [
+              "source-catalog-292c86665834fe3a"
+            ]
+          },
+          {
+            "id": "catalog-4f8dddb02fede255",
+            "title": "安全事件响应处置",
+            "roles": "技术支持 · 生产",
+            "description": "门店分散终端多告警量大，响应流程不标准，处置依赖经验复盘缺失",
+            "source_refs": [
+              "source-catalog-4f8dddb02fede255"
+            ]
+          },
+          {
+            "id": "catalog-cae8a2b529214753",
+            "title": "系统监控与告警分析",
+            "roles": "技术支持 · 生产",
+            "description": "告警风暴淹没真实问题，根因排查耗时长，用餐高峰故障直接影响订单",
+            "source_refs": [
+              "source-catalog-cae8a2b529214753"
+            ]
+          },
+          {
+            "id": "catalog-f59bc9639e7500d2",
+            "title": "大货异常留痕",
+            "roles": "生产",
+            "description": "生产异常最先出现在工厂微信群，进度表系事后补录，出了事只能回翻聊天记录定责",
+            "source_refs": [
+              "source-catalog-f59bc9639e7500d2"
+            ]
+          },
+          {
+            "id": "catalog-f8aa23958a5d121a",
+            "title": "技术方案选型评估",
+            "roles": "研发",
+            "description": "方案篇幅长评审耗时，满足度判断靠人工标准难统一，横向对比缺量化依据",
+            "source_refs": [
+              "source-catalog-f8aa23958a5d121a"
+            ]
+          },
+          {
+            "id": "catalog-7bfff0f10c563a18",
+            "title": "小程序开发测试",
+            "roles": "研发",
+            "description": "小程序页面组件手写重复，测试覆盖率低，开发环境搭建耗时长",
+            "source_refs": [
+              "source-catalog-7bfff0f10c563a18"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-292c86665834fe3a"
+              ]
+            },
+            "label": "成分表与合规资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待复核差异",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-2a3498f062f18afe",
+          "catalog-03ae1839b9f41ad5",
+          "catalog-817741521a7a60d9",
+          "catalog-a15115a395216bab",
+          "catalog-292c86665834fe3a",
+          "catalog-4f8dddb02fede255",
+          "catalog-cae8a2b529214753",
+          "catalog-f59bc9639e7500d2",
+          "catalog-f8aa23958a5d121a",
+          "catalog-7bfff0f10c563a18"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "management",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "人员与经营管理",
+      "description": "HR整理员工关系事件的记录，形成待处理事项清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "HR",
+            "source_refs": [
+              "source-catalog-cb477e3eadca2776"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理员工关系事件的记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-cb477e3eadca2776"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "员工关系资料",
+            "source_refs": [
+              "source-catalog-cb477e3eadca2776"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待处理事项清单",
+            "source_refs": [
+              "source-catalog-cb477e3eadca2776"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-d800e59c5f72addb",
+            "title": "包材开印前逐项比对 —— 孕妇禁用一条也不能漏",
+            "locator": "【消费零售·法务】包材开印前逐项比对 —— 孕妇禁用一条也不能漏/包材开印前逐项比对 —— 孕妇禁用一条也不能漏.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%8C%85%E6%9D%90%E5%BC%80%E5%8D%B0%E5%89%8D%E9%80%90%E9%A1%B9%E6%AF%94%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%AD%95%E5%A6%87%E7%A6%81%E7%94%A8%E4%B8%80%E6%9D%A1%E4%B9%9F%E4%B8%8D%E8%83%BD%E6%BC%8F/%E5%8C%85%E6%9D%90%E5%BC%80%E5%8D%B0%E5%89%8D%E9%80%90%E9%A1%B9%E6%AF%94%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%AD%95%E5%A6%87%E7%A6%81%E7%94%A8%E4%B8%80%E6%9D%A1%E4%B9%9F%E4%B8%8D%E8%83%BD%E6%BC%8F.md"
+          },
+          {
+            "id": "source-catalog-1087ea7cf6956cc0",
+            "title": "法规变更只推相关 —— 与本产品无关的不打扰",
+            "locator": "【消费零售·法务】法规变更只推相关 —— 与本产品无关的不打扰/法规变更只推相关 —— 与本产品无关的不打扰.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%B3%95%E8%A7%84%E5%8F%98%E6%9B%B4%E5%8F%AA%E6%8E%A8%E7%9B%B8%E5%85%B3%20%E2%80%94%E2%80%94%20%E4%B8%8E%E6%9C%AC%E4%BA%A7%E5%93%81%E6%97%A0%E5%85%B3%E7%9A%84%E4%B8%8D%E6%89%93%E6%89%B0/%E6%B3%95%E8%A7%84%E5%8F%98%E6%9B%B4%E5%8F%AA%E6%8E%A8%E7%9B%B8%E5%85%B3%20%E2%80%94%E2%80%94%20%E4%B8%8E%E6%9C%AC%E4%BA%A7%E5%93%81%E6%97%A0%E5%85%B3%E7%9A%84%E4%B8%8D%E6%89%93%E6%89%B0.md"
+          },
+          {
+            "id": "source-catalog-a47e475d67c2868f",
+            "title": "重大异常战情室",
+            "locator": "【消费零售·管理层·企业负责人】重大异常战情室/重大异常战情室.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%C2%B7%E4%BC%81%E4%B8%9A%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%91%E9%87%8D%E5%A4%A7%E5%BC%82%E5%B8%B8%E6%88%98%E6%83%85%E5%AE%A4/%E9%87%8D%E5%A4%A7%E5%BC%82%E5%B8%B8%E6%88%98%E6%83%85%E5%AE%A4.md"
+          },
+          {
+            "id": "source-catalog-a9107cc6ccf07ef4",
+            "title": "行业战略情报洞察",
+            "locator": "【消费零售·管理层】行业战略情报洞察/行业战略情报洞察.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%E3%80%91%E8%A1%8C%E4%B8%9A%E6%88%98%E7%95%A5%E6%83%85%E6%8A%A5%E6%B4%9E%E5%AF%9F/%E8%A1%8C%E4%B8%9A%E6%88%98%E7%95%A5%E6%83%85%E6%8A%A5%E6%B4%9E%E5%AF%9F.md"
+          },
+          {
+            "id": "source-catalog-4eac049be7b19fcd",
+            "title": "数据看板 ／ 三视图可视化",
+            "locator": "【消费零售·运营·管理层·企业负责人】数据看板 ／ 三视图可视化/数据看板 ／ 三视图可视化.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%C2%B7%E4%BC%81%E4%B8%9A%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%91%E6%95%B0%E6%8D%AE%E7%9C%8B%E6%9D%BF%20%EF%BC%8F%20%E4%B8%89%E8%A7%86%E5%9B%BE%E5%8F%AF%E8%A7%86%E5%8C%96/%E6%95%B0%E6%8D%AE%E7%9C%8B%E6%9D%BF%20%EF%BC%8F%20%E4%B8%89%E8%A7%86%E5%9B%BE%E5%8F%AF%E8%A7%86%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-26664e8a75cd50d5",
+            "title": "周报／月报自动化",
+            "locator": "【消费零售·运营·管理层·企业负责人】周报／月报自动化/周报／月报自动化.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E7%AE%A1%E7%90%86%E5%B1%82%C2%B7%E4%BC%81%E4%B8%9A%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%91%E5%91%A8%E6%8A%A5%EF%BC%8F%E6%9C%88%E6%8A%A5%E8%87%AA%E5%8A%A8%E5%8C%96/%E5%91%A8%E6%8A%A5%EF%BC%8F%E6%9C%88%E6%8A%A5%E8%87%AA%E5%8A%A8%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-615988a12f5002eb",
+            "title": "编制管理与人力规划看板",
+            "locator": "【消费零售·HR】编制管理与人力规划看板/编制管理与人力规划看板.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7HR%E3%80%91%E7%BC%96%E5%88%B6%E7%AE%A1%E7%90%86%E4%B8%8E%E4%BA%BA%E5%8A%9B%E8%A7%84%E5%88%92%E7%9C%8B%E6%9D%BF/%E7%BC%96%E5%88%B6%E7%AE%A1%E7%90%86%E4%B8%8E%E4%BA%BA%E5%8A%9B%E8%A7%84%E5%88%92%E7%9C%8B%E6%9D%BF.md"
+          },
+          {
+            "id": "source-catalog-a686b6f0eb85196f",
+            "title": "企业培训知识库与智能问答助手",
+            "locator": "【消费零售·HR】企业培训知识库与智能问答助手/企业培训知识库与智能问答助手.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7HR%E3%80%91%E4%BC%81%E4%B8%9A%E5%9F%B9%E8%AE%AD%E7%9F%A5%E8%AF%86%E5%BA%93%E4%B8%8E%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E5%8A%A9%E6%89%8B/%E4%BC%81%E4%B8%9A%E5%9F%B9%E8%AE%AD%E7%9F%A5%E8%AF%86%E5%BA%93%E4%B8%8E%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E5%8A%A9%E6%89%8B.md"
+          },
+          {
+            "id": "source-catalog-c5aa75e19629da45",
+            "title": "人才招聘与入职",
+            "locator": "【消费零售·HR】人才招聘与入职/人才招聘与入职.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7HR%E3%80%91%E4%BA%BA%E6%89%8D%E6%8B%9B%E8%81%98%E4%B8%8E%E5%85%A5%E8%81%8C/%E4%BA%BA%E6%89%8D%E6%8B%9B%E8%81%98%E4%B8%8E%E5%85%A5%E8%81%8C.md"
+          },
+          {
+            "id": "source-catalog-fcf2f79bdf3bcd03",
+            "title": "人力-组织绩效与激励方案共创",
+            "locator": "【消费零售·HR】人力-组织绩效与激励方案共创/人力-组织绩效与激励方案共创.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7HR%E3%80%91%E4%BA%BA%E5%8A%9B-%E7%BB%84%E7%BB%87%E7%BB%A9%E6%95%88%E4%B8%8E%E6%BF%80%E5%8A%B1%E6%96%B9%E6%A1%88%E5%85%B1%E5%88%9B/%E4%BA%BA%E5%8A%9B-%E7%BB%84%E7%BB%87%E7%BB%A9%E6%95%88%E4%B8%8E%E6%BF%80%E5%8A%B1%E6%96%B9%E6%A1%88%E5%85%B1%E5%88%9B.md"
+          },
+          {
+            "id": "source-catalog-3a1bc1d664475997",
+            "title": "智能招聘与入职全链路",
+            "locator": "【消费零售·HR】智能招聘与入职全链路/智能招聘与入职全链路.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7HR%E3%80%91%E6%99%BA%E8%83%BD%E6%8B%9B%E8%81%98%E4%B8%8E%E5%85%A5%E8%81%8C%E5%85%A8%E9%93%BE%E8%B7%AF/%E6%99%BA%E8%83%BD%E6%8B%9B%E8%81%98%E4%B8%8E%E5%85%A5%E8%81%8C%E5%85%A8%E9%93%BE%E8%B7%AF.md"
+          },
+          {
+            "id": "source-catalog-cb477e3eadca2776",
+            "title": "ER案件智能处理",
+            "locator": "【消费零售·HR】ER案件智能处理/ER案件智能处理.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7HR%E3%80%91ER%E6%A1%88%E4%BB%B6%E6%99%BA%E8%83%BD%E5%A4%84%E7%90%86/ER%E6%A1%88%E4%BB%B6%E6%99%BA%E8%83%BD%E5%A4%84%E7%90%86.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-d800e59c5f72addb",
+            "title": "包材开印前逐项比对 —— 孕妇禁用一条也不能漏",
+            "roles": "法务",
+            "description": "标签问题的直接罚款常仅数百元，真正高昂的是召回、跨省协查与五个月案件拖延",
+            "source_refs": [
+              "source-catalog-d800e59c5f72addb"
+            ]
+          },
+          {
+            "id": "catalog-1087ea7cf6956cc0",
+            "title": "法规变更只推相关 —— 与本产品无关的不打扰",
+            "roles": "法务",
+            "description": "法规专员最怕的不是新规本身，而是新规发布三个月后自己仍不知晓",
+            "source_refs": [
+              "source-catalog-1087ea7cf6956cc0"
+            ]
+          },
+          {
+            "id": "catalog-a47e475d67c2868f",
+            "title": "重大异常战情室",
+            "roles": "管理层 · 企业负责人",
+            "description": "异常发生时，事实比谣言跑得慢，每个人都只能看到自己那一段",
+            "source_refs": [
+              "source-catalog-a47e475d67c2868f"
+            ]
+          },
+          {
+            "id": "catalog-a9107cc6ccf07ef4",
+            "title": "行业战略情报洞察",
+            "roles": "管理层",
+            "description": "情报散落多个渠道，简报手工拼凑要一天，预警总是滞后，机会评估基本拍脑袋",
+            "source_refs": [
+              "source-catalog-a9107cc6ccf07ef4"
+            ]
+          },
+          {
+            "id": "catalog-4eac049be7b19fcd",
+            "title": "数据看板 ／ 三视图可视化",
+            "roles": "运营 · 管理层 · 企业负责人",
+            "description": "一份看板给所有人看：老板嫌多、运营嫌少、甲方嫌泄露，每周还要手动截图发群",
+            "source_refs": [
+              "source-catalog-4eac049be7b19fcd"
+            ]
+          },
+          {
+            "id": "catalog-26664e8a75cd50d5",
+            "title": "周报／月报自动化",
+            "roles": "运营 · 管理层 · 企业负责人",
+            "description": "周报数字堆砌、没有结论，拉数据拼表格算环比要花 3-5 小时",
+            "source_refs": [
+              "source-catalog-26664e8a75cd50d5"
+            ]
+          },
+          {
+            "id": "catalog-615988a12f5002eb",
+            "title": "编制管理与人力规划看板",
+            "roles": "HR",
+            "description": "多门店编制靠 Excel 手工统计版本混乱，人力成本与营收数据割裂算不清人效，新店编制靠经验拍脑袋",
+            "source_refs": [
+              "source-catalog-615988a12f5002eb"
+            ]
+          },
+          {
+            "id": "catalog-a686b6f0eb85196f",
+            "title": "企业培训知识库与智能问答助手",
+            "roles": "HR",
+            "description": "培训资料散落各处，店员遇问题找不到对应文档，新人上手靠口口相传，同样的问题培训人员反复回答",
+            "source_refs": [
+              "source-catalog-a686b6f0eb85196f"
+            ]
+          },
+          {
+            "id": "catalog-c5aa75e19629da45",
+            "title": "人才招聘与入职",
+            "roles": "HR",
+            "description": "招聘周期长反反复复招，简历筛选靠肉眼效率低，入职流程繁琐一拖五六天",
+            "source_refs": [
+              "source-catalog-c5aa75e19629da45"
+            ]
+          },
+          {
+            "id": "catalog-fcf2f79bdf3bcd03",
+            "title": "人力-组织绩效与激励方案共创",
+            "roles": "HR",
+            "description": "方案设计周期两周起，复盘结论与方案设计脱节，多轮迭代口径易乱、双层级激励难统筹",
+            "source_refs": [
+              "source-catalog-fcf2f79bdf3bcd03"
+            ]
+          },
+          {
+            "id": "catalog-3a1bc1d664475997",
+            "title": "智能招聘与入职全链路",
+            "roles": "HR",
+            "description": "餐饮流动性高、20+ 岗位常年并行，简历筛选靠人工关键词，入职手续跨部门流转 5-7 天",
+            "source_refs": [
+              "source-catalog-3a1bc1d664475997"
+            ]
+          },
+          {
+            "id": "catalog-cb477e3eadca2776",
+            "title": "ER案件智能处理",
+            "roles": "HR",
+            "description": "单案处理 3 小时起步文书返工率高，多门店案件靠个人经验，法规常变基层店长缺合规判断力",
+            "source_refs": [
+              "source-catalog-cb477e3eadca2776"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-cb477e3eadca2776"
+              ]
+            },
+            "label": "员工关系资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待处理事项清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-d800e59c5f72addb",
+          "catalog-1087ea7cf6956cc0",
+          "catalog-a47e475d67c2868f",
+          "catalog-a9107cc6ccf07ef4",
+          "catalog-4eac049be7b19fcd",
+          "catalog-26664e8a75cd50d5",
+          "catalog-615988a12f5002eb",
+          "catalog-a686b6f0eb85196f",
+          "catalog-c5aa75e19629da45",
+          "catalog-fcf2f79bdf3bcd03",
+          "catalog-3a1bc1d664475997",
+          "catalog-cb477e3eadca2776"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "promotion",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "营销活动与平台运营",
+      "description": "运营核对促销叠加规则及异常，形成促销巡检记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-00e141ded037d7a6"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对促销叠加规则及异常",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-00e141ded037d7a6"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "优惠配置和活动记录",
+            "source_refs": [
+              "source-catalog-00e141ded037d7a6"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "促销巡检记录",
+            "source_refs": [
+              "source-catalog-00e141ded037d7a6"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-c375acc5322480b3",
+            "title": "分销文案智能生成 —— 企微 × WB 双向联动的样板",
+            "locator": "【消费零售·市场·运营】分销文案智能生成 —— 企微 × WB 双向联动的样板/分销文案智能生成 —— 企微 × WB 双向联动的样板.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%88%86%E9%94%80%E6%96%87%E6%A1%88%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E4%BC%81%E5%BE%AE%20%C3%97%20WB%20%E5%8F%8C%E5%90%91%E8%81%94%E5%8A%A8%E7%9A%84%E6%A0%B7%E6%9D%BF/%E5%88%86%E9%94%80%E6%96%87%E6%A1%88%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%20%E2%80%94%E2%80%94%20%E4%BC%81%E5%BE%AE%20%C3%97%20WB%20%E5%8F%8C%E5%90%91%E8%81%94%E5%8A%A8%E7%9A%84%E6%A0%B7%E6%9D%BF.md"
+          },
+          {
+            "id": "source-catalog-6e8aa422c020dee0",
+            "title": "广告花费与 ACOS 周复盘",
+            "locator": "【消费零售·市场】广告花费与 ACOS 周复盘/广告花费与 ACOS 周复盘.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E5%B9%BF%E5%91%8A%E8%8A%B1%E8%B4%B9%E4%B8%8E%20ACOS%20%E5%91%A8%E5%A4%8D%E7%9B%98/%E5%B9%BF%E5%91%8A%E8%8A%B1%E8%B4%B9%E4%B8%8E%20ACOS%20%E5%91%A8%E5%A4%8D%E7%9B%98.md"
+          },
+          {
+            "id": "source-catalog-b996dd71943c8290",
+            "title": "评论里捞卖点 —— 几十万条里捞行得通的卖点",
+            "locator": "【消费零售·市场】评论里捞卖点 —— 几十万条里捞行得通的卖点/评论里捞卖点 —— 几十万条里捞行得通的卖点.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E8%AF%84%E8%AE%BA%E9%87%8C%E6%8D%9E%E5%8D%96%E7%82%B9%20%E2%80%94%E2%80%94%20%E5%87%A0%E5%8D%81%E4%B8%87%E6%9D%A1%E9%87%8C%E6%8D%9E%E8%A1%8C%E5%BE%97%E9%80%9A%E7%9A%84%E5%8D%96%E7%82%B9/%E8%AF%84%E8%AE%BA%E9%87%8C%E6%8D%9E%E5%8D%96%E7%82%B9%20%E2%80%94%E2%80%94%20%E5%87%A0%E5%8D%81%E4%B8%87%E6%9D%A1%E9%87%8C%E6%8D%9E%E8%A1%8C%E5%BE%97%E9%80%9A%E7%9A%84%E5%8D%96%E7%82%B9.md"
+          },
+          {
+            "id": "source-catalog-b86aa46c25316a90",
+            "title": "新品上市从方案到过会 —— 七道评审闸门项项有据",
+            "locator": "【消费零售·市场】新品上市从方案到过会 —— 七道评审闸门项项有据/新品上市从方案到过会 —— 七道评审闸门项项有据.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%96%B0%E5%93%81%E4%B8%8A%E5%B8%82%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E8%BF%87%E4%BC%9A%20%E2%80%94%E2%80%94%20%E4%B8%83%E9%81%93%E8%AF%84%E5%AE%A1%E9%97%B8%E9%97%A8%E9%A1%B9%E9%A1%B9%E6%9C%89%E6%8D%AE/%E6%96%B0%E5%93%81%E4%B8%8A%E5%B8%82%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E8%BF%87%E4%BC%9A%20%E2%80%94%E2%80%94%20%E4%B8%83%E9%81%93%E8%AF%84%E5%AE%A1%E9%97%B8%E9%97%A8%E9%A1%B9%E9%A1%B9%E6%9C%89%E6%8D%AE.md"
+          },
+          {
+            "id": "source-catalog-efec4d13da4d0afc",
+            "title": "用户增长-公域投放与增长复盘",
+            "locator": "【消费零售·市场】用户增长-公域投放与增长复盘/用户增长-公域投放与增长复盘.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF-%E5%85%AC%E5%9F%9F%E6%8A%95%E6%94%BE%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%A4%8D%E7%9B%98/%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF-%E5%85%AC%E5%9F%9F%E6%8A%95%E6%94%BE%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%A4%8D%E7%9B%98.md"
+          },
+          {
+            "id": "source-catalog-f27018e91e054a5e",
+            "title": "自己的爆文喂种草稿 —— 评论笔记手册养过的稿",
+            "locator": "【消费零售·市场】自己的爆文喂种草稿 —— 评论笔记手册养过的稿/自己的爆文喂种草稿 —— 评论笔记手册养过的稿.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E8%87%AA%E5%B7%B1%E7%9A%84%E7%88%86%E6%96%87%E5%96%82%E7%A7%8D%E8%8D%89%E7%A8%BF%20%E2%80%94%E2%80%94%20%E8%AF%84%E8%AE%BA%E7%AC%94%E8%AE%B0%E6%89%8B%E5%86%8C%E5%85%BB%E8%BF%87%E7%9A%84%E7%A8%BF/%E8%87%AA%E5%B7%B1%E7%9A%84%E7%88%86%E6%96%87%E5%96%82%E7%A7%8D%E8%8D%89%E7%A8%BF%20%E2%80%94%E2%80%94%20%E8%AF%84%E8%AE%BA%E7%AC%94%E8%AE%B0%E6%89%8B%E5%86%8C%E5%85%BB%E8%BF%87%E7%9A%84%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-dee037d2f96b5705",
+            "title": "开发信个性化与报价 PI 校验",
+            "locator": "【消费零售·销售】开发信个性化与报价 PI 校验/开发信个性化与报价 PI 校验.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%BC%80%E5%8F%91%E4%BF%A1%E4%B8%AA%E6%80%A7%E5%8C%96%E4%B8%8E%E6%8A%A5%E4%BB%B7%20PI%20%E6%A0%A1%E9%AA%8C/%E5%BC%80%E5%8F%91%E4%BF%A1%E4%B8%AA%E6%80%A7%E5%8C%96%E4%B8%8E%E6%8A%A5%E4%BB%B7%20PI%20%E6%A0%A1%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-b5d85de8d7146993",
+            "title": "询盘分级与客户背景调查",
+            "locator": "【消费零售·销售】询盘分级与客户背景调查/询盘分级与客户背景调查.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%AF%A2%E7%9B%98%E5%88%86%E7%BA%A7%E4%B8%8E%E5%AE%A2%E6%88%B7%E8%83%8C%E6%99%AF%E8%B0%83%E6%9F%A5/%E8%AF%A2%E7%9B%98%E5%88%86%E7%BA%A7%E4%B8%8E%E5%AE%A2%E6%88%B7%E8%83%8C%E6%99%AF%E8%B0%83%E6%9F%A5.md"
+          },
+          {
+            "id": "source-catalog-ae174051387668bb",
+            "title": "大促复盘报告（补断链版）",
+            "locator": "【消费零售·运营】大促复盘报告（补断链版）/大促复盘报告（补断链版）.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%A7%E4%BF%83%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A%EF%BC%88%E8%A1%A5%E6%96%AD%E9%93%BE%E7%89%88%EF%BC%89/%E5%A4%A7%E4%BF%83%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A%EF%BC%88%E8%A1%A5%E6%96%AD%E9%93%BE%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-96038841bf247563",
+            "title": "活动预算与盈亏平衡测算",
+            "locator": "【消费零售·运营】活动预算与盈亏平衡测算/活动预算与盈亏平衡测算.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B4%BB%E5%8A%A8%E9%A2%84%E7%AE%97%E4%B8%8E%E7%9B%88%E4%BA%8F%E5%B9%B3%E8%A1%A1%E6%B5%8B%E7%AE%97/%E6%B4%BB%E5%8A%A8%E9%A2%84%E7%AE%97%E4%B8%8E%E7%9B%88%E4%BA%8F%E5%B9%B3%E8%A1%A1%E6%B5%8B%E7%AE%97.md"
+          },
+          {
+            "id": "source-catalog-a98ab472b265f24d",
+            "title": "竞品价格与促销监控",
+            "locator": "【消费零售·运营】竞品价格与促销监控/竞品价格与促销监控.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%AB%9E%E5%93%81%E4%BB%B7%E6%A0%BC%E4%B8%8E%E4%BF%83%E9%94%80%E7%9B%91%E6%8E%A7/%E7%AB%9E%E5%93%81%E4%BB%B7%E6%A0%BC%E4%B8%8E%E4%BF%83%E9%94%80%E7%9B%91%E6%8E%A7.md"
+          },
+          {
+            "id": "source-catalog-abb36dd56cc635f0",
+            "title": "开播前人货场投联检",
+            "locator": "【消费零售·运营】开播前人货场投联检/开播前人货场投联检.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%BC%80%E6%92%AD%E5%89%8D%E4%BA%BA%E8%B4%A7%E5%9C%BA%E6%8A%95%E8%81%94%E6%A3%80/%E5%BC%80%E6%92%AD%E5%89%8D%E4%BA%BA%E8%B4%A7%E5%9C%BA%E6%8A%95%E8%81%94%E6%A3%80.md"
+          },
+          {
+            "id": "source-catalog-96c7966ce8dfc328",
+            "title": "流程标准化与优化",
+            "locator": "【消费零售·运营】流程标准化与优化/流程标准化与优化.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96%E4%B8%8E%E4%BC%98%E5%8C%96/%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96%E4%B8%8E%E4%BC%98%E5%8C%96.md"
+          },
+          {
+            "id": "source-catalog-7e34b1da32170a0b",
+            "title": "内容运营-营销内容管理全链路",
+            "locator": "【消费零售·运营】内容运营-营销内容管理全链路/内容运营-营销内容管理全链路.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%86%85%E5%AE%B9%E8%BF%90%E8%90%A5-%E8%90%A5%E9%94%80%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E5%85%A8%E9%93%BE%E8%B7%AF/%E5%86%85%E5%AE%B9%E8%BF%90%E8%90%A5-%E8%90%A5%E9%94%80%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E5%85%A8%E9%93%BE%E8%B7%AF.md"
+          },
+          {
+            "id": "source-catalog-62882c2ee82cb004",
+            "title": "投放周归集与应停投计划标注",
+            "locator": "【消费零售·运营】投放周归集与应停投计划标注/投放周归集与应停投计划标注.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%8A%95%E6%94%BE%E5%91%A8%E5%BD%92%E9%9B%86%E4%B8%8E%E5%BA%94%E5%81%9C%E6%8A%95%E8%AE%A1%E5%88%92%E6%A0%87%E6%B3%A8/%E6%8A%95%E6%94%BE%E5%91%A8%E5%BD%92%E9%9B%86%E4%B8%8E%E5%BA%94%E5%81%9C%E6%8A%95%E8%AE%A1%E5%88%92%E6%A0%87%E6%B3%A8.md"
+          },
+          {
+            "id": "source-catalog-c0bbbca85f79c120",
+            "title": "营业数据复盘与异常诊断",
+            "locator": "【消费零售·运营】营业数据复盘与异常诊断/营业数据复盘与异常诊断.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%90%A5%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%BC%82%E5%B8%B8%E8%AF%8A%E6%96%AD/%E8%90%A5%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%BC%82%E5%B8%B8%E8%AF%8A%E6%96%AD.md"
+          },
+          {
+            "id": "source-catalog-00e141ded037d7a6",
+            "title": "优惠叠加巡检与零点值守",
+            "locator": "【消费零售·运营】优惠叠加巡检与零点值守/优惠叠加巡检与零点值守.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BC%98%E6%83%A0%E5%8F%A0%E5%8A%A0%E5%B7%A1%E6%A3%80%E4%B8%8E%E9%9B%B6%E7%82%B9%E5%80%BC%E5%AE%88/%E4%BC%98%E6%83%A0%E5%8F%A0%E5%8A%A0%E5%B7%A1%E6%A3%80%E4%B8%8E%E9%9B%B6%E7%82%B9%E5%80%BC%E5%AE%88.md"
+          },
+          {
+            "id": "source-catalog-c902f2313f736177",
+            "title": "优惠券到手价沙盘推演",
+            "locator": "【消费零售·运营】优惠券到手价沙盘推演/优惠券到手价沙盘推演.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BC%98%E6%83%A0%E5%88%B8%E5%88%B0%E6%89%8B%E4%BB%B7%E6%B2%99%E7%9B%98%E6%8E%A8%E6%BC%94/%E4%BC%98%E6%83%A0%E5%88%B8%E5%88%B0%E6%89%8B%E4%BB%B7%E6%B2%99%E7%9B%98%E6%8E%A8%E6%BC%94.md"
+          },
+          {
+            "id": "source-catalog-b6146599a61c08d4",
+            "title": "直播口误纠错与证据包",
+            "locator": "【消费零售·运营】直播口误纠错与证据包/直播口误纠错与证据包.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%9B%B4%E6%92%AD%E5%8F%A3%E8%AF%AF%E7%BA%A0%E9%94%99%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%8C%85/%E7%9B%B4%E6%92%AD%E5%8F%A3%E8%AF%AF%E7%BA%A0%E9%94%99%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%8C%85.md"
+          },
+          {
+            "id": "source-catalog-6b66867e6e5b625a",
+            "title": "周报一页纸",
+            "locator": "【消费零售·运营】周报一页纸/周报一页纸.md:10",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%91%A8%E6%8A%A5%E4%B8%80%E9%A1%B5%E7%BA%B8/%E5%91%A8%E6%8A%A5%E4%B8%80%E9%A1%B5%E7%BA%B8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-c375acc5322480b3",
+            "title": "分销文案智能生成 —— 企微 × WB 双向联动的样板",
+            "roles": "市场 · 运营",
+            "description": "文案高频刚需，人工撰写耗时明确；群发版与导购版规则不同，易混淆",
+            "source_refs": [
+              "source-catalog-c375acc5322480b3"
+            ]
+          },
+          {
+            "id": "catalog-6e8aa422c020dee0",
+            "title": "广告花费与 ACOS 周复盘",
+            "roles": "市场",
+            "description": "广告后台每天都有点击和曝光，月底一算广告费吃穿了毛利",
+            "source_refs": [
+              "source-catalog-6e8aa422c020dee0"
+            ]
+          },
+          {
+            "id": "catalog-b996dd71943c8290",
+            "title": "评论里捞卖点 —— 几十万条里捞行得通的卖点",
+            "roles": "市场",
+            "description": "人工调研样本至多两千条，后台几十万条评论长期无人翻阅",
+            "source_refs": [
+              "source-catalog-b996dd71943c8290"
+            ]
+          },
+          {
+            "id": "catalog-b86aa46c25316a90",
+            "title": "新品上市从方案到过会 —— 七道评审闸门项项有据",
+            "roles": "市场",
+            "description": "上市检查清单人人都填过，出事复盘时才发现有的项目从未真正核查",
+            "source_refs": [
+              "source-catalog-b86aa46c25316a90"
+            ]
+          },
+          {
+            "id": "catalog-efec4d13da4d0afc",
+            "title": "用户增长-公域投放与增长复盘",
+            "roles": "市场",
+            "description": "四平台计划结构混乱、KOL 数据注水看不清性价比，CAC 算不及时、归因拍脑袋不反哺",
+            "source_refs": [
+              "source-catalog-efec4d13da4d0afc"
+            ]
+          },
+          {
+            "id": "catalog-f27018e91e054a5e",
+            "title": "自己的爆文喂种草稿 —— 评论笔记手册养过的稿",
+            "roles": "市场",
+            "description": "免费文案工具几秒生成一篇，产出十条笔记风格趋同，且暗藏违禁词",
+            "source_refs": [
+              "source-catalog-f27018e91e054a5e"
+            ]
+          },
+          {
+            "id": "catalog-dee037d2f96b5705",
+            "title": "开发信个性化与报价 PI 校验",
+            "roles": "销售",
+            "description": "开发信群发一百封没人回，报价只算出厂价，订单做下来是亏的",
+            "source_refs": [
+              "source-catalog-dee037d2f96b5705"
+            ]
+          },
+          {
+            "id": "catalog-b5d85de8d7146993",
+            "title": "询盘分级与客户背景调查",
+            "roles": "销售",
+            "description": "看到询盘就激动、连夜做报价，对方可能只是同行来套价",
+            "source_refs": [
+              "source-catalog-b5d85de8d7146993"
+            ]
+          },
+          {
+            "id": "catalog-ae174051387668bb",
+            "title": "大促复盘报告（补断链版）",
+            "roles": "运营",
+            "description": "818 大促 GMV 超目标 15%，退款潮 12 天后才至，复盘会开成了庆功会",
+            "source_refs": [
+              "source-catalog-ae174051387668bb"
+            ]
+          },
+          {
+            "id": "catalog-96038841bf247563",
+            "title": "活动预算与盈亏平衡测算",
+            "roles": "运营",
+            "description": "报名页宣称「预计引流 10 万」，无人测算要卖多少件才能不亏",
+            "source_refs": [
+              "source-catalog-96038841bf247563"
+            ]
+          },
+          {
+            "id": "catalog-a98ab472b265f24d",
+            "title": "竞品价格与促销监控",
+            "roles": "运营",
+            "description": "竞品降价两周后才发现，流量已掉一半，比价工作「真没时间」",
+            "source_refs": [
+              "source-catalog-a98ab472b265f24d"
+            ]
+          },
+          {
+            "id": "catalog-abb36dd56cc635f0",
+            "title": "开播前人货场投联检",
+            "roles": "运营",
+            "description": "设备、主播和货盘都就绪，但库存锁定、券生效与数字人标识有 3 项未确认",
+            "source_refs": [
+              "source-catalog-abb36dd56cc635f0"
+            ]
+          },
+          {
+            "id": "catalog-96c7966ce8dfc328",
+            "title": "流程标准化与优化",
+            "roles": "运营",
+            "description": "流程散落、SOP 反复返工、瓶颈难定位、优化方案落地慢",
+            "source_refs": [
+              "source-catalog-96c7966ce8dfc328"
+            ]
+          },
+          {
+            "id": "catalog-7e34b1da32170a0b",
+            "title": "内容运营-营销内容管理全链路",
+            "roles": "运营",
+            "description": "选题蹭不上热点、一篇憋半天，一稿手改五平台调性跑偏，复盘不知哪类选题有效",
+            "source_refs": [
+              "source-catalog-7e34b1da32170a0b"
+            ]
+          },
+          {
+            "id": "catalog-62882c2ee82cb004",
+            "title": "投放周归集与应停投计划标注",
+            "roles": "运营",
+            "description": "一年烧掉 582 万推广费、净利只剩 5.3 万，该停哪个计划，无人每周检查",
+            "source_refs": [
+              "source-catalog-62882c2ee82cb004"
+            ]
+          },
+          {
+            "id": "catalog-c0bbbca85f79c120",
+            "title": "营业数据复盘与异常诊断",
+            "roles": "运营",
+            "description": "多店数据散落多表，异常门店靠主观判断，改进建议缺数据闭环",
+            "source_refs": [
+              "source-catalog-c0bbbca85f79c120"
+            ]
+          },
+          {
+            "id": "catalog-00e141ded037d7a6",
+            "title": "优惠叠加巡检与零点值守",
+            "roles": "运营",
+            "description": "事故三要素中最隐蔽的是「零点生效」，所有人都在睡觉，只有羊毛党设了闹钟",
+            "source_refs": [
+              "source-catalog-00e141ded037d7a6"
+            ]
+          },
+          {
+            "id": "catalog-c902f2313f736177",
+            "title": "优惠券到手价沙盘推演",
+            "roles": "运营",
+            "description": "满减券叠平台券再叠支付立减，无人算得清到手价，直到零点羊毛党给出答案",
+            "source_refs": [
+              "source-catalog-c902f2313f736177"
+            ]
+          },
+          {
+            "id": "catalog-b6146599a61c08d4",
+            "title": "直播口误纠错与证据包",
+            "roles": "运营",
+            "description": "标准脚本审核通过，真正出风险的是主播临场加的 3 句话和一张旧贴片",
+            "source_refs": [
+              "source-catalog-b6146599a61c08d4"
+            ]
+          },
+          {
+            "id": "catalog-6b66867e6e5b625a",
+            "title": "周报一页纸",
+            "roles": "运营",
+            "description": "周报写了三年，负责人从未翻到过第二页",
+            "source_refs": [
+              "source-catalog-6b66867e6e5b625a"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-00e141ded037d7a6"
+              ]
+            },
+            "label": "优惠配置和活动记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "促销巡检记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-c375acc5322480b3",
+          "catalog-6e8aa422c020dee0",
+          "catalog-b996dd71943c8290",
+          "catalog-b86aa46c25316a90",
+          "catalog-efec4d13da4d0afc",
+          "catalog-f27018e91e054a5e",
+          "catalog-dee037d2f96b5705",
+          "catalog-b5d85de8d7146993",
+          "catalog-ae174051387668bb",
+          "catalog-96038841bf247563",
+          "catalog-a98ab472b265f24d",
+          "catalog-abb36dd56cc635f0",
+          "catalog-96c7966ce8dfc328",
+          "catalog-7e34b1da32170a0b",
+          "catalog-62882c2ee82cb004",
+          "catalog-c0bbbca85f79c120",
+          "catalog-00e141ded037d7a6",
+          "catalog-c902f2313f736177",
+          "catalog-b6146599a61c08d4",
+          "catalog-6b66867e6e5b625a"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "商品与供应",
+      "scene_ids": [
+        "product",
+        "sourcing",
+        "fulfillment"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "渠道与顾客",
+      "scene_ids": [
+        "store",
+        "channel",
+        "promotion",
+        "membership",
+        "support"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "经营治理",
+      "scene_ids": [
+        "finance",
+        "management",
+        "compliance"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 消费零售",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-c6dff14b0eed1cc1",
+      "title": "头程入仓核对与丢件索赔",
+      "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:73",
+      "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "头程入仓核对与丢件索赔",
+      "source_refs": [
+        "source-catalog-c6dff14b0eed1cc1"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "核对批次与字段",
+              "participant": "仓配运营",
+              "description": "接收装箱单、签收单与 WMS 记录，确认三份单据属于同一批次并核对字段。交付三方单据包。"
+            },
+            {
+              "label": "逐票勾对",
+              "participant": "仓配运营",
+              "description": "接收三方单据包，按 SKU 与箱号核对装箱、签收、上架数量。交付数量差异明细。"
+            },
+            {
+              "label": "区分差异原因",
+              "participant": "仓配运营",
+              "description": "接收数量差异明细，按现场记录区分少收、破损、在途等情形。交付差异分类及索赔依据。"
+            },
+            {
+              "label": "整理索赔证据",
+              "participant": "仓配运营",
+              "description": "接收差异分类及索赔依据，对照适用口径汇总可提交的差异与证据。交付索赔清单与证据包。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "store"
+  }
+}

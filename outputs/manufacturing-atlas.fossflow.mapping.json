@@ -1,0 +1,1497 @@
+{
+  "atlas_id": "manufacturing-atlas",
+  "title": "制造业场景全景图",
+  "description": "场景案例库 · 66 个制造业案例 · 归位到 6 个业务环节、3 类横向职能",
+  "target": "Abrar74774/FossFLOW@v1.0.6",
+  "view_id": "manufacturing-atlas",
+  "sprite": {
+    "size": 640,
+    "anchor": [
+      320,
+      320
+    ],
+    "scale": 2.5
+  },
+  "zones": [
+    {
+      "id": "delivery-chain",
+      "fossflow_region_id": "zone-delivery-chain",
+      "title": "制造交付主链",
+      "scene_ids": [
+        "sales-order",
+        "product-process",
+        "planning-supply",
+        "production-quality",
+        "release-delivery",
+        "service-trace"
+      ]
+    },
+    {
+      "id": "cross-functional",
+      "fossflow_region_id": "zone-cross-functional",
+      "title": "跨环节职能",
+      "scene_ids": [
+        "maintenance",
+        "quality-compliance",
+        "operations-finance"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "sales-order",
+      "fossflow_item_id": "sales-order",
+      "fossflow_icon_id": "art-sales-order",
+      "title": "商机与接单",
+      "description": "商务人员与计划员在桌边核对客户订单、物料、产能和在制工单，形成接单建议。",
+      "cases": [
+        {
+          "id": "case-63",
+          "title": "图纸询价智能报价",
+          "roles": "销售",
+          "description": "报价慢且报价不准，根因不在算得慢，而在算之前需花大量时间凑齐图纸、历史件、材料价与工时依据",
+          "source_refs": [
+            "source-case-63"
+          ]
+        },
+        {
+          "id": "case-65",
+          "title": "投标资格符合性自检",
+          "roles": "销售",
+          "description": "整本标书一千多页，被否原因往往只有一行，而这一行从来不在投标台账的列里",
+          "source_refs": [
+            "source-case-65"
+          ]
+        },
+        {
+          "id": "case-66",
+          "title": "认证与检测报告条款符合性核对",
+          "roles": "销售",
+          "description": "证书在手、报告在柜、均在有效期内，招标要求的那一条，恰好不在其覆盖范围内",
+          "source_refs": [
+            "source-case-66"
+          ]
+        },
+        {
+          "id": "case-62",
+          "title": "合同条款确认",
+          "roles": "销售 · 法务",
+          "description": "合同审查难点不在读不懂条款，而在缺少标准模板参照、条款组合易看漏、历史旧账长期无人复核",
+          "source_refs": [
+            "source-case-62"
+          ]
+        },
+        {
+          "id": "case-25",
+          "title": "客户资料完整性预检",
+          "roles": "生产",
+          "description": "资料接收人人都在做，缺文件是 CAM hold 的首因，缺项永远在客户侧",
+          "source_refs": [
+            "source-case-25"
+          ]
+        },
+        {
+          "id": "case-64",
+          "title": "客户单据转订单",
+          "roles": "销售",
+          "description": "客户 Excel/邮件/图片 口径格式不一，料号有五种混乱形态，单位按套按件算错即 4 倍差价",
+          "source_refs": [
+            "source-case-64"
+          ]
+        },
+        {
+          "id": "case-2",
+          "title": "订单接单评审",
+          "roles": "PMC · 销售",
+          "description": "急单评审难不在算一道题，而在销售、技术、采购、生产、品质多方接力确认，跨 ERP / MES / APS 等系统来回切换仍未必答得准",
+          "source_refs": [
+            "source-case-2"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-sales-order",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 商机与接单",
+          "excerpt": "询价报价 · 接单评审"
+        },
+        {
+          "id": "source-case-63",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 63"
+        },
+        {
+          "id": "source-case-65",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 65"
+        },
+        {
+          "id": "source-case-66",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 66"
+        },
+        {
+          "id": "source-case-62",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 62"
+        },
+        {
+          "id": "source-case-25",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 25"
+        },
+        {
+          "id": "source-case-64",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 64"
+        },
+        {
+          "id": "source-case-2",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 2"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.person.business-staff",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "universal.furniture.cabinet",
+        "universal.accessory.kanban",
+        "universal.building.window-wall",
+        "universal.document.order",
+        "universal.document.contract",
+        "universal.document.sheet",
+        "universal.person.office-worker"
+      ]
+    },
+    {
+      "scene_id": "product-process",
+      "fossflow_item_id": "product-process",
+      "fossflow_icon_id": "art-product-process",
+      "title": "产品与工艺",
+      "description": "工程人员在工位核对 BOM 版本、变更记录和受影响订单。",
+      "cases": [
+        {
+          "id": "case-43",
+          "title": "竞品拆解 BOM 初稿",
+          "roles": "研发",
+          "description": "竞品拆解人人都在做，照片留存于个人目录，成本差异停留在感觉层面",
+          "source_refs": [
+            "source-case-43"
+          ]
+        },
+        {
+          "id": "case-40",
+          "title": "BOM导入核对",
+          "roles": "研发",
+          "description": "BOM 导入的风险不在哪几行变了，而在异常差异与存量脏数据被一并带入新基线，牵动一批工单",
+          "source_refs": [
+            "source-case-40"
+          ]
+        },
+        {
+          "id": "case-52",
+          "title": "BOM 脏数据清洗与一物多码归并",
+          "roles": "采购",
+          "description": "同一颗气缸在系统中有两个名称，重复下单、分存两处、盘点对不上",
+          "source_refs": [
+            "source-case-52"
+          ]
+        },
+        {
+          "id": "case-41",
+          "title": "工程变更管理ECN",
+          "roles": "研发",
+          "description": "工程变更难点不在填表，而在影响面靠经验翻查、分级靠人判、会签周期长、整套文件需同步更新",
+          "source_refs": [
+            "source-case-41"
+          ]
+        },
+        {
+          "id": "case-42",
+          "title": "替代料验证计划与风险台账",
+          "roles": "研发",
+          "description": "替代料搜寻每天都在进行，历史验证记录与失败原因留存于离职同事电脑",
+          "source_refs": [
+            "source-case-42"
+          ]
+        },
+        {
+          "id": "case-39",
+          "title": "版本一致性巡检",
+          "roles": "研发 · 生产 · PMC",
+          "description": "系统里改了，现场还在用老版，人工抽查一星期跑不完上百份受控文件",
+          "source_refs": [
+            "source-case-39"
+          ]
+        },
+        {
+          "id": "case-15",
+          "title": "SOP生成与校验",
+          "roles": "生产",
+          "description": "SOP 问题表面只是文档未更新，实际同时影响品质稳定性、工艺一致性与审核合规",
+          "source_refs": [
+            "source-case-15"
+          ]
+        },
+        {
+          "id": "case-16",
+          "title": "三份文件工艺指标一致性核对",
+          "roles": "生产",
+          "description": "操作规程、工艺卡片、DCS 报警值三份文件各自写着一个上限，法律要求三者必须一致",
+          "source_refs": [
+            "source-case-16"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-product-process",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 产品与工艺",
+          "excerpt": "BOM 核对 · 工程变更"
+        },
+        {
+          "id": "source-case-43",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 43"
+        },
+        {
+          "id": "source-case-40",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 40"
+        },
+        {
+          "id": "source-case-52",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 52"
+        },
+        {
+          "id": "source-case-41",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 41"
+        },
+        {
+          "id": "source-case-42",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 42"
+        },
+        {
+          "id": "source-case-39",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 39"
+        },
+        {
+          "id": "source-case-15",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 15"
+        },
+        {
+          "id": "source-case-16",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 16"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.person.technician",
+        "universal.furniture.desk",
+        "universal.electronics.computer",
+        "universal.furniture.cabinet",
+        "universal.building.window-wall",
+        "manufacturing.material.sample",
+        "universal.document.sheet",
+        "universal.document.order",
+        "universal.furniture.rolling-drawer"
+      ]
+    },
+    {
+      "scene_id": "planning-supply",
+      "fossflow_item_id": "planning-supply",
+      "fossflow_icon_id": "art-planning-supply",
+      "title": "计划与供应",
+      "description": "PMC 与采购查看排产板和清单，协调缺料、到货与插单影响。",
+      "cases": [
+        {
+          "id": "case-3",
+          "title": "交期平衡与产销协同",
+          "roles": "PMC",
+          "description": "PMC 排产难不在排表，而在多单挤一条产线时先保谁缺乏标准，销售生产物料拉会半天口径仍不一",
+          "source_refs": [
+            "source-case-3"
+          ]
+        },
+        {
+          "id": "case-6",
+          "title": "排产与插单调整",
+          "roles": "PMC",
+          "description": "插单难不在调整优先级这一个动作，而在改完现场不知道、通知没回执、过程没留痕",
+          "source_refs": [
+            "source-case-6"
+          ]
+        },
+        {
+          "id": "case-7",
+          "title": "齐套与缺料预警",
+          "roles": "PMC",
+          "description": "齐套难不在 BOM 展开，而在可用库存口径算不准、判据散在 ERP 之外、缺料到开工时才暴露",
+          "source_refs": [
+            "source-case-7"
+          ]
+        },
+        {
+          "id": "case-59",
+          "title": "来料跟催",
+          "roles": "采购",
+          "description": "采购每天盯十几张在途单，问题不在不催，而在按逾期天数排序催错顺序，真正卡交付的那张排最后",
+          "source_refs": [
+            "source-case-59"
+          ]
+        },
+        {
+          "id": "case-61",
+          "title": "逾期订单风险日报（给老板版）",
+          "roles": "采购",
+          "description": "老板娘以为货都正常，直到产线等料停了半小时，才知道三张订单已逾期一周",
+          "source_refs": [
+            "source-case-61"
+          ]
+        },
+        {
+          "id": "case-53",
+          "title": "EOL／PCN 影响评估",
+          "roles": "采购",
+          "description": "停产通知人人都在收，从通知到确定哪些订单要停、哪些料可切，缺乏对应表",
+          "source_refs": [
+            "source-case-53"
+          ]
+        },
+        {
+          "id": "case-57",
+          "title": "单一来源风险清单",
+          "roles": "采购",
+          "description": "库存只够 7 天，更换供应商要 15 天，两个数字从未放在同一张表上",
+          "source_refs": [
+            "source-case-57"
+          ]
+        },
+        {
+          "id": "case-60",
+          "title": "物料风险周快报",
+          "roles": "采购",
+          "description": "风险消息人人都在传，涨价具体影响自家哪颗料，无人逐条比对",
+          "source_refs": [
+            "source-case-60"
+          ]
+        },
+        {
+          "id": "case-55",
+          "title": "供应商资质证书台账与到期监控",
+          "roles": "采购",
+          "description": "客户审厂前一天才发现核心供应商 ISO 证书上月已过期，补办要 20 天",
+          "source_refs": [
+            "source-case-55"
+          ]
+        },
+        {
+          "id": "case-50",
+          "title": "供应商 COA 与进厂复检偏差台账",
+          "roles": "采购 · 生产",
+          "description": "供应商送样检测合格，到货批次的杂质含量却是送样的八百倍",
+          "source_refs": [
+            "source-case-50"
+          ]
+        },
+        {
+          "id": "case-51",
+          "title": "来料检验与批次一致性异常识别",
+          "roles": "采购 · 生产",
+          "description": "供应商 COC 上每一项都合格，问题不在那张纸上，而在无人将它与外包装标签核对一遍",
+          "source_refs": [
+            "source-case-51"
+          ]
+        },
+        {
+          "id": "case-56",
+          "title": "到货异常处理单与特采决策留痕",
+          "roles": "采购",
+          "description": "让步接收多为口头决定，三个月后批量质量问题追责时，说不清当时谁同意的",
+          "source_refs": [
+            "source-case-56"
+          ]
+        },
+        {
+          "id": "case-58",
+          "title": "来料异常与假料风险比对",
+          "roles": "采购",
+          "description": "每颗来料均经过检验，假料与串料问题恰恰出在已验过的批次",
+          "source_refs": [
+            "source-case-58"
+          ]
+        },
+        {
+          "id": "case-1",
+          "title": "呆滞料预警清单（库龄分档）",
+          "roles": "PMC · 采购",
+          "description": "860 万库存中有 96 万呆滞料无人动用，在财务月报中仅为一个周转率数字",
+          "source_refs": [
+            "source-case-1"
+          ]
+        },
+        {
+          "id": "case-4",
+          "title": "库存结构与呆滞料复盘",
+          "roles": "PMC",
+          "description": "呆滞料复盘难不在拉库龄表，而在能否转用的判据不在 ERP、处置只剩报废、判据随人离职失传",
+          "source_refs": [
+            "source-case-4"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-planning-supply",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 计划与供应",
+          "excerpt": "排产 · 齐套 · 来料"
+        },
+        {
+          "id": "source-case-3",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 3"
+        },
+        {
+          "id": "source-case-6",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 6"
+        },
+        {
+          "id": "source-case-7",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 7"
+        },
+        {
+          "id": "source-case-59",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 59"
+        },
+        {
+          "id": "source-case-61",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 61"
+        },
+        {
+          "id": "source-case-53",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 53"
+        },
+        {
+          "id": "source-case-57",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 57"
+        },
+        {
+          "id": "source-case-60",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 60"
+        },
+        {
+          "id": "source-case-55",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 55"
+        },
+        {
+          "id": "source-case-50",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 50"
+        },
+        {
+          "id": "source-case-51",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 51"
+        },
+        {
+          "id": "source-case-56",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 56"
+        },
+        {
+          "id": "source-case-58",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 58"
+        },
+        {
+          "id": "source-case-1",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 1"
+        },
+        {
+          "id": "source-case-4",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 4"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.person.office-worker",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "universal.furniture.cabinet",
+        "universal.accessory.kanban",
+        "universal.vehicle.hand-cart",
+        "universal.document.order",
+        "universal.document.sheet"
+      ]
+    },
+    {
+      "scene_id": "production-quality",
+      "fossflow_item_id": "production-quality",
+      "fossflow_icon_id": "art-production-quality",
+      "title": "生产与质检",
+      "description": "加工区核查开工条件并处理工件，检验区查看样品和良率记录。设备与工位是便于理解的示意，具体案例来自原图。",
+      "cases": [
+        {
+          "id": "case-13",
+          "title": "开工条件核查",
+          "roles": "生产 · PMC · 采购",
+          "description": "开工确认易带病开工，需跨五个部门逐一确认，几小时才能凑齐答案",
+          "source_refs": [
+            "source-case-13"
+          ]
+        },
+        {
+          "id": "case-5",
+          "title": "执行偏差追踪与补产",
+          "roles": "PMC",
+          "description": "跟单难不在算完成率，而在报工数据不可信、进度显示失真、根因证据散在其他部门",
+          "source_refs": [
+            "source-case-5"
+          ]
+        },
+        {
+          "id": "case-18",
+          "title": "交接班「十交清」日志草稿",
+          "roles": "生产",
+          "description": "记录本上每一栏均已填写，唯独最该写的第三项「异常指标详细工况」长期空白",
+          "source_refs": [
+            "source-case-18"
+          ]
+        },
+        {
+          "id": "case-14",
+          "title": "CP／FT 良率日报",
+          "roles": "生产",
+          "description": "日报天天都在出，只报当天数据，无人与三周前的基线对比",
+          "source_refs": [
+            "source-case-14"
+          ]
+        },
+        {
+          "id": "case-19",
+          "title": "低良批次初判快报",
+          "roles": "生产",
+          "description": "低良批次人人都在救，初判全靠资深工程师看 map 猜，离职即经验清零",
+          "source_refs": [
+            "source-case-19"
+          ]
+        },
+        {
+          "id": "case-23",
+          "title": "品质异常分析",
+          "roles": "生产",
+          "description": "品质分析难不在把报告写满，而在有限时间内把根因追到可整改那一层，答清为何没检出来",
+          "source_refs": [
+            "source-case-23"
+          ]
+        },
+        {
+          "id": "case-29",
+          "title": "报废归因帕累托周报",
+          "roles": "生产",
+          "description": "报废记录人人都在做，客户资料问题混入制程问题，损失无法归因到客户",
+          "source_refs": [
+            "source-case-29"
+          ]
+        },
+        {
+          "id": "case-30",
+          "title": "收率连续同向偏移的趋势体检",
+          "roles": "生产",
+          "description": "每一批收率都在内控限以内，六批连起来看却是一条直线持续下滑",
+          "source_refs": [
+            "source-case-30"
+          ]
+        },
+        {
+          "id": "case-35",
+          "title": "电芯批次测试报告成稿",
+          "roles": "生产",
+          "description": "分容柜一晚跑完两千多只电芯，报告却要一人对 Excel 拉到天亮，决定能否发货的那一行从不在报表模板里",
+          "source_refs": [
+            "source-case-35"
+          ]
+        },
+        {
+          "id": "case-36",
+          "title": "良率周报与措施闭环",
+          "roles": "生产",
+          "description": "周报中改善措施罗列整齐，从未验证过往措施是否真正有效",
+          "source_refs": [
+            "source-case-36"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-production-quality",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 生产与质检",
+          "excerpt": "开工核查 · 良率监控"
+        },
+        {
+          "id": "source-case-13",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 13"
+        },
+        {
+          "id": "source-case-5",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 5"
+        },
+        {
+          "id": "source-case-18",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 18"
+        },
+        {
+          "id": "source-case-14",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 14"
+        },
+        {
+          "id": "source-case-19",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 19"
+        },
+        {
+          "id": "source-case-23",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 23"
+        },
+        {
+          "id": "source-case-29",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 29"
+        },
+        {
+          "id": "source-case-30",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 30"
+        },
+        {
+          "id": "source-case-35",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 35"
+        },
+        {
+          "id": "source-case-36",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 36"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.industrial",
+        "universal.building.window-wall",
+        "manufacturing.equipment.safety-fence",
+        "manufacturing.equipment.cnc",
+        "universal.accessory.status-light",
+        "manufacturing.equipment.conveyor",
+        "manufacturing.material.sample",
+        "manufacturing.equipment.inspection-bench",
+        "universal.document.sheet",
+        "universal.accessory.kanban",
+        "manufacturing.material.raw-material",
+        "manufacturing.material.finished-goods",
+        "universal.person.worker",
+        "manufacturing.person.inspector"
+      ]
+    },
+    {
+      "scene_id": "release-delivery",
+      "fossflow_item_id": "release-delivery",
+      "fossflow_icon_id": "art-release-delivery",
+      "title": "放行与交付",
+      "description": "检验人员核对待交付批次和放行证据，出货工位展示通过评估后的货物准备。",
+      "cases": [
+        {
+          "id": "case-17",
+          "title": "交付风险评估",
+          "roles": "生产",
+          "description": "出货前查出异常，难不在判定合格与否，而在能不能放、不能放有无别的路，拍板信息不在品质工程师手上",
+          "source_refs": [
+            "source-case-17"
+          ]
+        },
+        {
+          "id": "case-31",
+          "title": "放行前法定十项齐套性与缺口清单",
+          "roles": "生产",
+          "description": "法规要求放行前逐项确认十项，这十项的证据散在 47 页手写批记录和四个部门手中",
+          "source_refs": [
+            "source-case-31"
+          ]
+        },
+        {
+          "id": "case-32",
+          "title": "放行前追溯码专项核对清单",
+          "roles": "生产",
+          "description": "法规要求 QP 确认「各级销售单元均已赋码并做好信息关联」，而他手中没有任何文件能证明此事",
+          "source_refs": [
+            "source-case-32"
+          ]
+        },
+        {
+          "id": "case-20",
+          "title": "作废码与物料平衡逐条对账",
+          "roles": "生产",
+          "description": "物料平衡 100.00% 闭合，纸面无懈可击，但有 3 个应作废的码此刻仍为「已关联」状态",
+          "source_refs": [
+            "source-case-20"
+          ]
+        },
+        {
+          "id": "case-38",
+          "title": "追溯码上传成功确认台账",
+          "roles": "生产",
+          "description": "导出成功不等于上传成功，而上传是否成功，厂里没有任何人被指定负责",
+          "source_refs": [
+            "source-case-38"
+          ]
+        },
+        {
+          "id": "case-48",
+          "title": "并网收资清单缺项核查",
+          "roles": "运营 · 法务",
+          "description": "十一份资料交了十份，电网答复缺一份、回去等通知，等待的每一天，违约金按合同总价累进",
+          "source_refs": [
+            "source-case-48"
+          ]
+        },
+        {
+          "id": "case-49",
+          "title": "竣工资料归档缺口核查",
+          "roles": "运营",
+          "description": "竣工验收那天资料箱是满的，两年后索赔要用时，才发现关键几页从未进过箱子",
+          "source_refs": [
+            "source-case-49"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-release-delivery",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 放行与交付",
+          "excerpt": "出货评估 · 放行证据"
+        },
+        {
+          "id": "source-case-17",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 17"
+        },
+        {
+          "id": "source-case-31",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 31"
+        },
+        {
+          "id": "source-case-32",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 32"
+        },
+        {
+          "id": "source-case-20",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 20"
+        },
+        {
+          "id": "source-case-38",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 38"
+        },
+        {
+          "id": "source-case-48",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 48"
+        },
+        {
+          "id": "source-case-49",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 49"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.outdoor",
+        "manufacturing.equipment.packing-station",
+        "universal.vehicle.truck",
+        "manufacturing.person.inspector",
+        "manufacturing.material.finished-goods",
+        "universal.document.sheet",
+        "manufacturing.equipment.rack",
+        "universal.accessory.kanban"
+      ]
+    },
+    {
+      "scene_id": "service-trace",
+      "fossflow_item_id": "service-trace",
+      "fossflow_icon_id": "art-service-trace",
+      "title": "售后与追溯",
+      "description": "售后和质量人员并排核对客诉记录、成品批号和原料批次，定位追溯线索。",
+      "cases": [
+        {
+          "id": "case-26",
+          "title": "客诉 8D 回复初稿",
+          "roles": "生产",
+          "description": "8D 报告人人都在写，缺乏历史案例支撑的回复最易被客户退回",
+          "source_refs": [
+            "source-case-26"
+          ]
+        },
+        {
+          "id": "case-28",
+          "title": "批次质量追溯与异常归因",
+          "roles": "生产",
+          "description": "客户投诉一个批号，线索分散留存于 DCS、化验记录本、采购邮箱、报修流水本",
+          "source_refs": [
+            "source-case-28"
+          ]
+        },
+        {
+          "id": "case-21",
+          "title": "原辅料批号使用去向反查",
+          "roles": "生产",
+          "description": "出问题后第一个要回答的是这批原料还用在哪，而答案只存在于几十份手写批记录的某一页",
+          "source_refs": [
+            "source-case-21"
+          ]
+        },
+        {
+          "id": "case-34",
+          "title": "模拟召回演练陪练与缺口清单",
+          "roles": "生产",
+          "description": "演练报告年年都有，结论年年都是「有效」，行业内部称之为「闭门造车」",
+          "source_refs": [
+            "source-case-34"
+          ]
+        },
+        {
+          "id": "case-54",
+          "title": "供应商质量损失索赔台账",
+          "roles": "采购",
+          "description": "记得某供应商去年造成三万七损失，口头总账拿不出任何单据依据",
+          "source_refs": [
+            "source-case-54"
+          ]
+        },
+        {
+          "id": "case-8",
+          "title": "质保索赔证据包",
+          "roles": "技术支持 · 客服 · 法务",
+          "description": "索赔谈判桌上最贵的不是那 450 万，而是对方发现你数据缺了四个月时，解释不清的那三分钟",
+          "source_refs": [
+            "source-case-8"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-service-trace",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 售后与追溯",
+          "excerpt": "客诉 8D · 批次溯源"
+        },
+        {
+          "id": "source-case-26",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 26"
+        },
+        {
+          "id": "source-case-28",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 28"
+        },
+        {
+          "id": "source-case-21",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 21"
+        },
+        {
+          "id": "source-case-34",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 34"
+        },
+        {
+          "id": "source-case-54",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 54"
+        },
+        {
+          "id": "source-case-8",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 8"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.person.business-staff",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "manufacturing.equipment.rack",
+        "manufacturing.material.finished-goods",
+        "universal.document.sheet",
+        "universal.document.order",
+        "universal.person.office-worker"
+      ]
+    },
+    {
+      "scene_id": "maintenance",
+      "fossflow_item_id": "maintenance",
+      "fossflow_icon_id": "art-maintenance",
+      "title": "设备与运维",
+      "description": "维修人员在设备旁检查报警状态并核对报修记录，工具车展示现场检修环境。",
+      "cases": [
+        {
+          "id": "case-33",
+          "title": "检测报警器失效未报修清单",
+          "roles": "生产",
+          "description": "报警器读数二十三天未变动，台账上却写着「正常」",
+          "source_refs": [
+            "source-case-33"
+          ]
+        },
+        {
+          "id": "case-37",
+          "title": "被消音报警未闭环清单",
+          "roles": "生产",
+          "description": "每条报警都被规范地确认消音，二十一天内没有一条留下原因分析",
+          "source_refs": [
+            "source-case-37"
+          ]
+        },
+        {
+          "id": "case-22",
+          "title": "同一位号重复报修归集",
+          "roles": "生产",
+          "description": "同一台设备十四个月内维修七次，每次均为几百元的小修，无人将七次累计起来看",
+          "source_refs": [
+            "source-case-22"
+          ]
+        },
+        {
+          "id": "case-9",
+          "title": "历史工单知识库检索",
+          "roles": "技术支持 · 生产",
+          "description": "613 张工单上只写着「已处理」三个字，这三个字是这家公司三年来最贵的三个字",
+          "source_refs": [
+            "source-case-9"
+          ]
+        },
+        {
+          "id": "case-10",
+          "title": "运维月报与故障工单成稿",
+          "roles": "技术支持 · 生产",
+          "description": "月报里的 99.2% 无人核对，直到业主按合同口径重算一遍，才发现两个数差了 1.8 个百分点",
+          "source_refs": [
+            "source-case-10"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-maintenance",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 设备与运维",
+          "excerpt": "报警闭环 · 重复报修"
+        },
+        {
+          "id": "source-case-33",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 33"
+        },
+        {
+          "id": "source-case-37",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 37"
+        },
+        {
+          "id": "source-case-22",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 22"
+        },
+        {
+          "id": "source-case-9",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 9"
+        },
+        {
+          "id": "source-case-10",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 10"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.industrial",
+        "universal.building.window-wall",
+        "manufacturing.equipment.cnc",
+        "manufacturing.tool.tool-cart",
+        "universal.accessory.kanban",
+        "manufacturing.equipment.control-panel",
+        "universal.document.order",
+        "manufacturing.person.maintenance"
+      ]
+    },
+    {
+      "scene_id": "quality-compliance",
+      "fossflow_item_id": "quality-compliance",
+      "fossflow_icon_id": "art-quality-compliance",
+      "title": "质量体系与合规",
+      "description": "质量人员对照内部质量记录、证书与检测报告，准备审核所需的证据。",
+      "cases": [
+        {
+          "id": "case-24",
+          "title": "客户审核数据包预演",
+          "roles": "生产",
+          "description": "审核准备持续开展，多数不符合项并非未执行，而是找不到证据",
+          "source_refs": [
+            "source-case-24"
+          ]
+        },
+        {
+          "id": "case-11",
+          "title": "内部质量记录法定栏位完整性核查",
+          "roles": "法务",
+          "description": "五套标准五年内全部换版，每套都带来新的必备栏位，车间里那张记录表，还是 2020 年印的",
+          "source_refs": [
+            "source-case-11"
+          ]
+        },
+        {
+          "id": "case-12",
+          "title": "认证证书与检测报告台账有效性核查",
+          "roles": "法务",
+          "description": "证书未过期、报告在柜、CDF 填得齐全，但采购更换的那批接触器，从未有人通知认证",
+          "source_refs": [
+            "source-case-12"
+          ]
+        },
+        {
+          "id": "case-27",
+          "title": "年度产品质量回顾取数与趋势草案",
+          "roles": "生产",
+          "description": "两百小时的年度回顾中，一百六十二小时耗在数据搬运，真正用于分析判断的只有二十小时",
+          "source_refs": [
+            "source-case-27"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-quality-compliance",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 质量体系与合规",
+          "excerpt": "客户审核 · 证书有效性"
+        },
+        {
+          "id": "source-case-24",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 24"
+        },
+        {
+          "id": "source-case-11",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 11"
+        },
+        {
+          "id": "source-case-12",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 12"
+        },
+        {
+          "id": "source-case-27",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 27"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.person.technician",
+        "universal.furniture.desk",
+        "universal.electronics.computer",
+        "universal.furniture.cabinet",
+        "universal.building.window-wall",
+        "universal.document.sheet",
+        "universal.document.contract",
+        "universal.furniture.rolling-drawer"
+      ]
+    },
+    {
+      "scene_id": "operations-finance",
+      "fossflow_item_id": "operations-finance",
+      "fossflow_icon_id": "art-operations-finance",
+      "title": "经营与财务",
+      "description": "经营与财务人员对照业务单据和利润数据，核实异常或对账差异。",
+      "cases": [
+        {
+          "id": "case-44",
+          "title": "异常分级与升级归口",
+          "roles": "管理层 · 企业负责人 · 生产",
+          "description": "中小企业没有升级机制，只有老板的微信，异常全汇到一人，难以判出哪几件今天必须管",
+          "source_refs": [
+            "source-case-44"
+          ]
+        },
+        {
+          "id": "case-45",
+          "title": "经营复盘",
+          "roles": "管理层 · 财务",
+          "description": "五个部门各交一份表、每份都对，难在无人把它们拼成一句整体经营结论",
+          "source_refs": [
+            "source-case-45"
+          ]
+        },
+        {
+          "id": "case-46",
+          "title": "利润风险提示",
+          "roles": "财务 · 管理层 · 企业负责人",
+          "description": "中小企业没人承担事中盯单毛利这个 KPI，等财务月底结账，钱已经花完了",
+          "source_refs": [
+            "source-case-46"
+          ]
+        },
+        {
+          "id": "case-47",
+          "title": "对账差异核对",
+          "roles": "财务",
+          "description": "对账难不在公式，而在客户与我方口径不同、单号不统一，还要写一份客户能接受的回函",
+          "source_refs": [
+            "source-case-47"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "manufacturing-overview",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-overview",
+          "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+        },
+        {
+          "id": "manufacturing-roles",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-roles",
+          "excerpt": "一张急单如何跨岗推进"
+        },
+        {
+          "id": "manufacturing-logic",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-logic",
+          "excerpt": "订单接单评审怎么得出结论"
+        },
+        {
+          "id": "manufacturing-objects",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-objects",
+          "excerpt": "用业务对象串起案例"
+        },
+        {
+          "id": "manufacturing-operations-finance",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / groups / 经营与财务",
+          "excerpt": "异常升级 · 毛利风险"
+        },
+        {
+          "id": "source-case-44",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 44"
+        },
+        {
+          "id": "source-case-45",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 45"
+        },
+        {
+          "id": "source-case-46",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 46"
+        },
+        {
+          "id": "source-case-47",
+          "title": "制造业场景全景图.html",
+          "locator": "#mfg-data / entries / 47"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.person.manager",
+        "universal.furniture.meeting-table",
+        "universal.electronics.display",
+        "universal.furniture.cabinet",
+        "universal.building.window-wall",
+        "universal.document.contract",
+        "universal.document.invoice",
+        "universal.person.office-worker"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "order-1",
+      "fossflow_connector_id": "order-1",
+      "source": "sales-order",
+      "target": "product-process",
+      "kind": "reading_order",
+      "label": "原图阅读顺序",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-2",
+      "fossflow_connector_id": "order-2",
+      "source": "product-process",
+      "target": "planning-supply",
+      "kind": "reading_order",
+      "label": "原图阅读顺序",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-3",
+      "fossflow_connector_id": "order-3",
+      "source": "planning-supply",
+      "target": "production-quality",
+      "kind": "reading_order",
+      "label": "原图阅读顺序",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-4",
+      "fossflow_connector_id": "order-4",
+      "source": "production-quality",
+      "target": "release-delivery",
+      "kind": "reading_order",
+      "label": "原图阅读顺序",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-5",
+      "fossflow_connector_id": "order-5",
+      "source": "release-delivery",
+      "target": "service-trace",
+      "kind": "reading_order",
+      "label": "原图阅读顺序",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    }
+  ]
+}

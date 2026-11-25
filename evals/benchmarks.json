@@ -1,0 +1,128 @@
+[
+  {
+    "id": "manufacturing-atlas",
+    "input": "examples/manufacturing-atlas/atlas.json",
+    "status": "active",
+    "checks": [
+      "9 原始分组",
+      "66 原始案例",
+      "3 个原始知识视图"
+    ]
+  },
+  {
+    "id": "information-technology-atlas",
+    "input": "examples/information-technology/atlas.json",
+    "status": "active",
+    "checks": [
+      "真实案例库目录与索引一致",
+      "50 原始标题、岗位、痛点和来源",
+      "行业包复用通用资产",
+      "无核心代码改动"
+    ]
+  },
+  {
+    "id": "production-quality",
+    "input": "examples/manufacturing-atlas/production-quality.json",
+    "status": "active",
+    "checks": [
+      "10 原始案例",
+      "生产与质检",
+      "SVG、透明 PNG 和 HTML"
+    ]
+  },
+  {
+    "id": "pmc-role",
+    "input": "examples/pmc-role/atlas.json",
+    "status": "active",
+    "checks": [
+      "原始案例 ID",
+      "岗位与采购协作",
+      "通用素材复用"
+    ]
+  },
+  {
+    "id": "order-review",
+    "scene_id": "sales-order",
+    "status": "active",
+    "checks": [
+      "原始接单评审逻辑",
+      "客户订单",
+      "物料、产能、在制"
+    ]
+  },
+  {
+    "id": "maintenance",
+    "scene_id": "maintenance",
+    "status": "active",
+    "checks": [
+      "维修人员",
+      "设备",
+      "报修记录",
+      "工具车"
+    ]
+  },
+  {
+    "id": "finance-review",
+    "input": "examples/finance-review/scene.json",
+    "status": "active",
+    "checks": [
+      "模拟资料标注",
+      "发票和报销单",
+      "跨行业通用素材"
+    ]
+  },
+  {
+    "id": "missing-assets",
+    "status": "active",
+    "checks": [
+      "退出码 2",
+      "素材需求与提示词",
+      "无静默替换"
+    ]
+  },
+  {
+    "id": "determinism",
+    "status": "active",
+    "checks": [
+      "同输入两次输出字节一致"
+    ]
+  },
+  {
+    "id": "legacy-html",
+    "status": "active",
+    "checks": [
+      "解析原始导出数据",
+      "保留岗位协作、逻辑、业务对象链"
+    ]
+  },
+  {
+    "id": "customer-service",
+    "status": "active",
+    "input": "examples/p1/service.json"
+  },
+  {
+    "id": "medical-consultation",
+    "status": "active",
+    "input": "examples/p1/medical.json",
+    "checks": [
+      "自编工作行为示意",
+      "医护角色资产",
+      "问询与记录"
+    ]
+  },
+  {
+    "id": "warehouse-dispatch",
+    "status": "active",
+    "input": "examples/p1/warehouse.json",
+    "checks": [
+      "新文字输入经独立技能调用生成",
+      "原文和来源定位",
+      "纸箱与单据"
+    ]
+  },
+  {
+    "id": "ai-assisted-procurement",
+    "status": "active",
+    "input": "examples/p1/procurement.json"
+  }
+]

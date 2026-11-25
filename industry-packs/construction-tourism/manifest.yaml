@@ -1,0 +1,51 @@
+id: construction-tourism
+name: 建筑文旅
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 变更单和签证材料
+  - 签证证据包
+  - 现场记录与材料资料
+  - 验收记录
+  - 证照与申报进度
+  - 报建进度台账
+  - 招标文件与已有方案
+  - 技术标草稿
+  - 现场语音与纸质记录
+  - 农事台账
+  - 投诉与现场资料
+  - 服务留证材料
+  - 活动数据与交付记录
+  - 结案报告
+roles:
+  - 财务
+  - 法务
+  - 客服
+  - 生产
+  - 市场
+  - 销售
+  - 运营
+actions:
+  - 核对工程变更、签证与价格依据
+  - 核对现场验收记录及材料资料
+  - 跟踪报建材料与审批节点
+  - 梳理招标要求和项目资料
+  - 归集地块和农事活动记录
+  - 归集游客反馈与处理记录
+  - 归集活动数据并核对结案资料
+asset_mappings:
+  测量全站仪:
+    - construction-tourism.equipment.survey-tripod
+  工地测量位:
+    - construction-tourism.equipment.survey-tripod
+  核对工程变更、签证与价格依据:
+    - construction-tourism.equipment.survey-tripod
+  核对现场验收记录及材料资料:
+    - construction-tourism.equipment.survey-tripod
+templates:
+  - equipment-operation
+  - single-workstation
+  - meeting-review
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

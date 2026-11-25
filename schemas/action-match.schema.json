@@ -1,0 +1,20 @@
+{
+  "$id":"action-match.schema.json",
+  "type":"object",
+  "required":["role","action","tool","target"],
+  "additionalProperties":false,
+  "properties":{
+    "industry":{"type":"string","minLength":1},
+    "role":{"type":"string","minLength":1},
+    "action":{"type":"string","minLength":1},
+    "tool":{"type":"string","minLength":1},
+    "target":{"type":"string","minLength":1},
+    "placement":{
+      "type":"object","required":["actor","focus"],"additionalProperties":false,
+      "properties":{
+        "actor":{"$ref":"scene.schema.json#/definitions/position"},
+        "focus":{"$ref":"scene.schema.json#/definitions/position"}
+      }
+    }
+  }
+}

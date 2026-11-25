@@ -1,0 +1,756 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "universal",
+  "id": "universal-journey",
+  "type": "process_journey",
+  "title": "通用 · 应收账款账龄分析与逾期预警",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "对齐业务口径",
+      "description": "财务与销售核对销售台账中的订单与财务确认记录，形成口径差异记录。画面包含单据处理台的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务与销售",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对销售台账中的订单与财务确认记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "销售台账与发票",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "口径差异记录",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:73",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "roles": "财务",
+            "description": "账上 300 万应收，老板以为都是钱，逾期超过 1 年的，核销概率高达 80%",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            },
+            "label": "销售台账与发票",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "口径差异记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "universal.tool.document-scanner",
+            "position": [
+              5.18,
+              2.6399999999999997,
+              0
+            ],
+            "rotation": 0,
+            "support": "workstation",
+            "label": "文档扫描仪",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-bc37b9a24caa79d8"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "匹配银行回款",
+      "description": "财务对照回款流水与发票，找出未完全回收的项目，形成未收金额清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照回款流水与发票，找出未完全回收的项目",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "口径差异记录",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "未收金额清单",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:73",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "roles": "财务",
+            "description": "账上 300 万应收，老板以为都是钱，逾期超过 1 年的，核销概率高达 80%",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            },
+            "label": "口径差异记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "未收金额清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-bc37b9a24caa79d8"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "整理账龄分组",
+      "description": "财务依据业务约定对未收款项按账龄分类，形成应收账龄表。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "依据业务约定对未收款项按账龄分类",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "未收金额清单",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "应收账龄表",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:73",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "roles": "财务",
+            "description": "账上 300 万应收，老板以为都是钱，逾期超过 1 年的，核销概率高达 80%",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            },
+            "label": "未收金额清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "应收账龄表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-bc37b9a24caa79d8"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "universal",
+      "type": "scenario_diorama",
+      "title": "整理催收优先级",
+      "description": "财务与销售汇总逾期金额与天数，形成跟进清单，形成催收跟进清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务与销售",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总逾期金额与天数，形成跟进清单",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "应收账龄表",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "催收跟进清单",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:73",
+            "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-bc37b9a24caa79d8",
+            "title": "应收账款账龄分析与逾期预警",
+            "roles": "财务",
+            "description": "账上 300 万应收，老板以为都是钱，逾期超过 1 年的，核销概率高达 80%",
+            "source_refs": [
+              "source-catalog-bc37b9a24caa79d8"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-bc37b9a24caa79d8"
+              ]
+            },
+            "label": "应收账龄表",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "催收跟进清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-bc37b9a24caa79d8"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "口径差异记录",
+      "source_refs": [
+        "source-catalog-bc37b9a24caa79d8"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "未收金额清单",
+      "source_refs": [
+        "source-catalog-bc37b9a24caa79d8"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "应收账龄表",
+      "source_refs": [
+        "source-catalog-bc37b9a24caa79d8"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-bc37b9a24caa79d8"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-bc37b9a24caa79d8",
+      "title": "应收账款账龄分析与逾期预警",
+      "locator": "【通用·财务】应收账款账龄分析与逾期预警/应收账款账龄分析与逾期预警.md:73",
+      "uri": "%E3%80%90%E9%80%9A%E7%94%A8%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6/%E5%BA%94%E6%94%B6%E8%B4%A6%E6%AC%BE%E8%B4%A6%E9%BE%84%E5%88%86%E6%9E%90%E4%B8%8E%E9%80%BE%E6%9C%9F%E9%A2%84%E8%AD%A6.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "应收账款账龄分析与逾期预警",
+      "source_refs": [
+        "source-catalog-bc37b9a24caa79d8"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "对齐业务口径",
+              "participant": "财务与销售",
+              "description": "接收销售台账与发票，核对销售台账中的订单与财务确认记录。交付口径差异记录。"
+            },
+            {
+              "label": "匹配银行回款",
+              "participant": "财务",
+              "description": "接收口径差异记录，对照回款流水与发票，找出未完全回收的项目。交付未收金额清单。"
+            },
+            {
+              "label": "整理账龄分组",
+              "participant": "财务",
+              "description": "接收未收金额清单，依据业务约定对未收款项按账龄分类。交付应收账龄表。"
+            },
+            {
+              "label": "整理催收优先级",
+              "participant": "财务与销售",
+              "description": "接收应收账龄表，汇总逾期金额与天数，形成跟进清单。交付催收跟进清单。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

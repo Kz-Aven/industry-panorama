@@ -1,0 +1,727 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pmc-role",
+  "type": "role_atlas",
+  "industry": "manufacturing",
+  "title": "PMC 岗位工作图",
+  "description": "沿原图急单协作视角，看计划员协调排产、物料齐套与采购跟催。",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "pmc-scheduling",
+      "type": "role_atlas",
+      "industry": "manufacturing",
+      "title": "排产与插单协调",
+      "description": "PMC 与采购查看排产板和清单，协调缺料、到货与插单影响。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "PMC",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "partner",
+            "label": "采购",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "核对工单齐套与调整优先级",
+            "actor": "operator",
+            "target": "work-order",
+            "output": "schedule",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "review",
+            "label": "对照断料时间跟催到货",
+            "actor": "partner",
+            "target": "work-order",
+            "output": "schedule",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "work-order",
+            "label": "工单",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "schedule",
+            "label": "更新后的排程",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "shortage",
+            "label": "缺料清单",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-planning-supply",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 计划与供应",
+            "excerpt": "排产 · 齐套 · 来料"
+          },
+          {
+            "id": "source-case-3",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 3"
+          },
+          {
+            "id": "source-case-6",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 6"
+          },
+          {
+            "id": "source-case-7",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 7"
+          },
+          {
+            "id": "source-case-59",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 59"
+          },
+          {
+            "id": "source-case-61",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 61"
+          },
+          {
+            "id": "source-case-53",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 53"
+          },
+          {
+            "id": "source-case-57",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 57"
+          },
+          {
+            "id": "source-case-60",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 60"
+          },
+          {
+            "id": "source-case-55",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 55"
+          },
+          {
+            "id": "source-case-50",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 50"
+          },
+          {
+            "id": "source-case-51",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 51"
+          },
+          {
+            "id": "source-case-56",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 56"
+          },
+          {
+            "id": "source-case-58",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 58"
+          },
+          {
+            "id": "source-case-1",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 1"
+          },
+          {
+            "id": "source-case-4",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 4"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-3",
+            "title": "交期平衡与产销协同",
+            "roles": "PMC",
+            "description": "PMC 排产难不在排表，而在多单挤一条产线时先保谁缺乏标准，销售生产物料拉会半天口径仍不一",
+            "source_refs": [
+              "source-case-3"
+            ]
+          },
+          {
+            "id": "case-6",
+            "title": "排产与插单调整",
+            "roles": "PMC",
+            "description": "插单难不在调整优先级这一个动作，而在改完现场不知道、通知没回执、过程没留痕",
+            "source_refs": [
+              "source-case-6"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "team-collaboration",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            10,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.77,
+              2.87,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board",
+            "rotation": 0
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              8.6,
+              5.55,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "risk",
+            "asset_id": "universal.document.order",
+            "position": [
+              8.65,
+              5.55,
+              0
+            ],
+            "rotation": 0,
+            "support": "cart",
+            "semantic_ref": "shortage"
+          },
+          {
+            "id": "work-order",
+            "asset_id": "universal.document.order",
+            "position": [
+              4.55,
+              3.25,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "work-order"
+          },
+          {
+            "id": "schedule",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.27,
+              3.64,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "schedule"
+          },
+          {
+            "id": "shortage",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.8,
+              3.68,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "shortage"
+          },
+          {
+            "id": "partner",
+            "asset_id": "universal.person.office-worker",
+            "slot": "partner",
+            "rotation": 180,
+            "semantic_ref": "partner",
+            "action": "review",
+            "target": "workstation"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-3",
+          "case-6"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "pmc-material",
+      "type": "role_atlas",
+      "industry": "manufacturing",
+      "title": "齐套核查与来料跟催",
+      "description": "核对可用库存、缺料项和停线风险，将优先待催的物料交给采购跟进。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "PMC",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "partner",
+            "label": "采购",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "核查物料齐套与断料时间",
+            "actor": "operator",
+            "target": "work-order",
+            "output": "shortage",
+            "source_refs": [
+              "source-case-7"
+            ]
+          },
+          {
+            "id": "review",
+            "label": "按断料和交付风险跟催来料",
+            "actor": "partner",
+            "target": "shortage",
+            "output": "schedule",
+            "source_refs": [
+              "source-case-59"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "work-order",
+            "label": "工单",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "schedule",
+            "label": "更新后的排程",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "shortage",
+            "label": "缺料清单",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-planning-supply",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 计划与供应",
+            "excerpt": "排产 · 齐套 · 来料"
+          },
+          {
+            "id": "source-case-3",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 3"
+          },
+          {
+            "id": "source-case-6",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 6"
+          },
+          {
+            "id": "source-case-7",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 7"
+          },
+          {
+            "id": "source-case-59",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 59"
+          },
+          {
+            "id": "source-case-61",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 61"
+          },
+          {
+            "id": "source-case-53",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 53"
+          },
+          {
+            "id": "source-case-57",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 57"
+          },
+          {
+            "id": "source-case-60",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 60"
+          },
+          {
+            "id": "source-case-55",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 55"
+          },
+          {
+            "id": "source-case-50",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 50"
+          },
+          {
+            "id": "source-case-51",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 51"
+          },
+          {
+            "id": "source-case-56",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 56"
+          },
+          {
+            "id": "source-case-58",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 58"
+          },
+          {
+            "id": "source-case-1",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 1"
+          },
+          {
+            "id": "source-case-4",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 4"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-7",
+            "title": "齐套与缺料预警",
+            "roles": "PMC",
+            "description": "齐套难不在 BOM 展开，而在可用库存口径算不准、判据散在 ERP 之外、缺料到开工时才暴露",
+            "source_refs": [
+              "source-case-7"
+            ]
+          },
+          {
+            "id": "case-59",
+            "title": "来料跟催",
+            "roles": "采购",
+            "description": "采购每天盯十几张在途单，问题不在不催，而在按逾期天数排序催错顺序，真正卡交付的那张排最后",
+            "source_refs": [
+              "source-case-59"
+            ]
+          },
+          {
+            "id": "case-1",
+            "title": "呆滞料预警清单（库龄分档）",
+            "roles": "PMC · 采购",
+            "description": "860 万库存中有 96 万呆滞料无人动用，在财务月报中仅为一个周转率数字",
+            "source_refs": [
+              "source-case-1"
+            ]
+          },
+          {
+            "id": "case-4",
+            "title": "库存结构与呆滞料复盘",
+            "roles": "PMC",
+            "description": "呆滞料复盘难不在拉库龄表，而在能否转用的判据不在 ERP、处置只剩报废、判据随人离职失传",
+            "source_refs": [
+              "source-case-4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "team-collaboration",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            10,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.77,
+              2.87,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board",
+            "rotation": 0
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              8.6,
+              5.55,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "risk",
+            "asset_id": "universal.document.order",
+            "position": [
+              8.65,
+              5.55,
+              0
+            ],
+            "rotation": 0,
+            "support": "cart",
+            "semantic_ref": "shortage"
+          },
+          {
+            "id": "work-order",
+            "asset_id": "universal.document.order",
+            "position": [
+              4.55,
+              3.25,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "work-order"
+          },
+          {
+            "id": "schedule",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.27,
+              3.64,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "schedule"
+          },
+          {
+            "id": "shortage",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.8,
+              3.68,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "shortage"
+          },
+          {
+            "id": "partner",
+            "asset_id": "universal.person.office-worker",
+            "slot": "partner",
+            "rotation": 180,
+            "semantic_ref": "partner",
+            "action": "review",
+            "target": "workstation"
+          },
+          {
+            "id": "staged-material",
+            "asset_id": "manufacturing.material.raw-material",
+            "position": [
+              1.65,
+              4.75,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "shortage"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-7",
+          "case-59",
+          "case-1",
+          "case-4"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "pmc-work",
+      "title": "计划与物料协同",
+      "scene_ids": [
+        "pmc-scheduling",
+        "pmc-material"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "pmc-handoff",
+      "source": "pmc-scheduling",
+      "target": "pmc-material",
+      "label": "急单协作示例",
+      "kind": "reading_order",
+      "source_refs": [
+        "manufacturing-roles"
+      ]
+    }
+  ],
+  "annotations": [],
+  "source_refs": [
+    {
+      "id": "manufacturing-roles",
+      "title": "制造业场景全景图.html",
+      "locator": "#mfg-roles",
+      "excerpt": "一张急单如何跨岗推进"
+    }
+  ],
+  "layers": [
+    {
+      "id": "roles",
+      "title": "岗位协作图",
+      "heading": "一张急单如何跨岗推进",
+      "sections": [
+        {
+          "title": "按交接顺序",
+          "entries": [
+            {
+              "label": "整理客户需求",
+              "participant": "销售",
+              "description": "客户单据 → 订单行、数量、期望交期"
+            },
+            {
+              "label": "订单接单评审",
+              "participant": "销售 · PMC",
+              "description": "订单、齐套、产能、在制 → 接单建议与协调事项"
+            },
+            {
+              "label": "排产与插单调整",
+              "participant": "PMC",
+              "description": "确认优先级、受影响工单与调整方案 → 更新后的排程"
+            },
+            {
+              "label": "齐套预警与来料跟催",
+              "participant": "PMC ⇄ 采购",
+              "description": "缺料项与断料时间 → 到货预测、优先跟催清单"
+            },
+            {
+              "label": "开工条件核查",
+              "participant": "生产 · PMC · 采购",
+              "description": "物料与现场准备状态 → 开工判断依据、待处理项"
+            },
+            {
+              "label": "执行偏差追踪与补产",
+              "participant": "生产 ⇄ PMC",
+              "description": "工单与报工 → 偏差、补产建议、预计完成时间"
+            },
+            {
+              "label": "交付风险评估与沟通",
+              "participant": "生产 · PMC · 销售",
+              "description": "异常批次、交期影响、备选方案 → 对客交期口径"
+            }
+          ]
+        }
+      ],
+      "note": "↶ 到货延期或产能冲突时，回到排产与交期平衡\n岗位和交接关系为示意，实际分工随工厂而异。",
+      "source_refs": [
+        "manufacturing-roles"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0.0",
+  "id": "finance-review",
+  "type": "scenario_diorama",
+  "industry": "cross-industry",
+  "title": "财务报销审核",
+  "description": "演示场景。申请人提交费用凭证，财务人员将发票与报销单逐项核对并记录审核结果。",
+  "semantic": {
+    "roles": [
+      {
+        "id": "operator",
+        "label": "财务审核人员",
+        "source_refs": [
+          "example-finance"
+        ]
+      },
+      {
+        "id": "partner",
+        "label": "报销申请人",
+        "source_refs": [
+          "example-finance"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "perform",
+        "label": "核对金额和必要附件",
+        "actor": "operator",
+        "target": "invoice",
+        "output": "result",
+        "source_refs": [
+          "example-finance"
+        ]
+      },
+      {
+        "id": "review",
+        "label": "说明业务用途并补充凭证",
+        "actor": "partner",
+        "target": "claim",
+        "output": "invoice",
+        "source_refs": [
+          "example-finance"
+        ]
+      }
+    ],
+    "business_objects": [
+      {
+        "id": "invoice",
+        "label": "发票",
+        "source_refs": [
+          "example-finance"
+        ]
+      },
+      {
+        "id": "claim",
+        "label": "报销单",
+        "source_refs": [
+          "example-finance"
+        ]
+      },
+      {
+        "id": "result",
+        "label": "审核记录",
+        "source_refs": [
+          "example-finance"
+        ]
+      }
+    ],
+    "systems": [],
+    "relations": [],
+    "source_refs": [
+      {
+        "id": "example-finance",
+        "title": "财务审核演示资料",
+        "locator": "examples/finance-review/scene.json",
+        "excerpt": "虚构演示：提交人提供报销单和发票，财务核对金额及附件，记录通过或补件事项。"
+      }
+    ],
+    "cases": [
+      {
+        "id": "finance-sample-case",
+        "title": "补核一笔差旅报销",
+        "roles": "财务审核人员 · 报销申请人",
+        "description": "虚构演示：提交人提供报销单和发票，财务核对金额及附件，记录通过或补件事项。",
+        "source_refs": [
+          "example-finance"
+        ]
+      }
+    ]
+  },
+  "scene": {
+    "template": "team-collaboration",
+    "platform": {
+      "asset_id": "universal.platform.office",
+      "size": [
+        9.6,
+        5.15
+      ],
+      "height": 0.3
+    },
+    "objects": [
+      {
+        "id": "operator",
+        "asset_id": "universal.person.office-worker",
+        "slot": "operator",
+        "rotation": 0,
+        "semantic_ref": "operator",
+        "action": "perform",
+        "target": "workstation"
+      },
+      {
+        "id": "workstation",
+        "asset_id": "universal.furniture.meeting-table",
+        "slot": "workstation",
+        "rotation": 0
+      },
+      {
+        "id": "terminal",
+        "asset_id": "universal.electronics.computer",
+        "position": [
+          5.77,
+          2.87,
+          0
+        ],
+        "rotation": 90,
+        "support": "workstation"
+      },
+      {
+        "id": "storage",
+        "asset_id": "universal.furniture.cabinet",
+        "slot": "storage",
+        "rotation": 0
+      },
+      {
+        "id": "wall",
+        "asset_id": "universal.building.window-wall",
+        "slot": "wall",
+        "rotation": 0
+      },
+      {
+        "id": "invoice",
+        "asset_id": "universal.document.invoice",
+        "position": [
+          4.55,
+          3.1500000000000004,
+          0
+        ],
+        "rotation": 90,
+        "support": "workstation",
+        "semantic_ref": "invoice"
+      },
+      {
+        "id": "claim",
+        "asset_id": "universal.document.order",
+        "position": [
+          4.89,
+          3.5500000000000003,
+          0
+        ],
+        "rotation": 90,
+        "support": "workstation",
+        "semantic_ref": "claim"
+      },
+      {
+        "id": "result",
+        "asset_id": "universal.document.sheet",
+        "position": [
+          5.55,
+          3.52,
+          0
+        ],
+        "rotation": 90,
+        "support": "workstation",
+        "semantic_ref": "result"
+      },
+      {
+        "id": "partner",
+        "asset_id": "universal.person.business-staff",
+        "slot": "partner",
+        "rotation": 180,
+        "semantic_ref": "partner",
+        "action": "review",
+        "target": "workstation"
+      }
+    ]
+  },
+  "interaction": {
+    "case_ids": [
+      "finance-sample-case"
+    ]
+  },
+  "render": {}
+}

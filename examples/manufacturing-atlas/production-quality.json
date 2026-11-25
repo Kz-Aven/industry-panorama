@@ -1,0 +1,457 @@
+{
+  "schema_version": "1.0.0",
+  "id": "production-quality",
+  "type": "scenario_diorama",
+  "industry": "manufacturing",
+  "title": "生产与质检",
+  "description": "加工区核查开工条件并处理工件，检验区查看样品和良率记录。设备与工位是便于理解的示意，具体案例来自原图。",
+  "semantic": {
+    "roles": [
+      {
+        "id": "operator",
+        "label": "生产人员",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      },
+      {
+        "id": "inspector",
+        "label": "检验人员",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      },
+      {
+        "id": "pmc",
+        "label": "PMC",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      },
+      {
+        "id": "purchasing",
+        "label": "采购",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "operate",
+        "label": "核查开工条件并加工工件",
+        "actor": "operator",
+        "target": "work-order",
+        "output": "part",
+        "source_refs": [
+          "source-case-13"
+        ]
+      },
+      {
+        "id": "inspect",
+        "label": "核对样品与良率记录",
+        "actor": "inspector",
+        "target": "sample",
+        "output": "yield",
+        "source_refs": [
+          "source-case-14"
+        ]
+      }
+    ],
+    "business_objects": [
+      {
+        "id": "work-order",
+        "label": "工单与开工条件",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      },
+      {
+        "id": "sample",
+        "label": "待检样品",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      },
+      {
+        "id": "yield",
+        "label": "良率与异常记录",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      },
+      {
+        "id": "part",
+        "label": "加工工件",
+        "source_refs": [
+          "manufacturing-production-quality"
+        ]
+      }
+    ],
+    "systems": [],
+    "relations": [
+      {
+        "id": "opening-check",
+        "source": "pmc",
+        "target": "operator",
+        "label": "共同参与开工条件核查",
+        "source_refs": [
+          "source-case-13"
+        ]
+      },
+      {
+        "id": "material-check",
+        "source": "purchasing",
+        "target": "operator",
+        "label": "共同参与开工条件核查",
+        "source_refs": [
+          "source-case-13"
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "id": "manufacturing-production-quality",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / groups / 生产与质检",
+        "excerpt": "开工核查 · 良率监控"
+      },
+      {
+        "id": "source-case-13",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 13"
+      },
+      {
+        "id": "source-case-5",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 5"
+      },
+      {
+        "id": "source-case-18",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 18"
+      },
+      {
+        "id": "source-case-14",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 14"
+      },
+      {
+        "id": "source-case-19",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 19"
+      },
+      {
+        "id": "source-case-23",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 23"
+      },
+      {
+        "id": "source-case-29",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 29"
+      },
+      {
+        "id": "source-case-30",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 30"
+      },
+      {
+        "id": "source-case-35",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 35"
+      },
+      {
+        "id": "source-case-36",
+        "title": "制造业场景全景图.html",
+        "locator": "#mfg-data / entries / 36"
+      }
+    ],
+    "cases": [
+      {
+        "id": "case-13",
+        "title": "开工条件核查",
+        "roles": "生产 · PMC · 采购",
+        "description": "开工确认易带病开工，需跨五个部门逐一确认，几小时才能凑齐答案",
+        "source_refs": [
+          "source-case-13"
+        ]
+      },
+      {
+        "id": "case-5",
+        "title": "执行偏差追踪与补产",
+        "roles": "PMC",
+        "description": "跟单难不在算完成率，而在报工数据不可信、进度显示失真、根因证据散在其他部门",
+        "source_refs": [
+          "source-case-5"
+        ]
+      },
+      {
+        "id": "case-18",
+        "title": "交接班「十交清」日志草稿",
+        "roles": "生产",
+        "description": "记录本上每一栏均已填写，唯独最该写的第三项「异常指标详细工况」长期空白",
+        "source_refs": [
+          "source-case-18"
+        ]
+      },
+      {
+        "id": "case-14",
+        "title": "CP／FT 良率日报",
+        "roles": "生产",
+        "description": "日报天天都在出，只报当天数据，无人与三周前的基线对比",
+        "source_refs": [
+          "source-case-14"
+        ]
+      },
+      {
+        "id": "case-19",
+        "title": "低良批次初判快报",
+        "roles": "生产",
+        "description": "低良批次人人都在救，初判全靠资深工程师看 map 猜，离职即经验清零",
+        "source_refs": [
+          "source-case-19"
+        ]
+      },
+      {
+        "id": "case-23",
+        "title": "品质异常分析",
+        "roles": "生产",
+        "description": "品质分析难不在把报告写满，而在有限时间内把根因追到可整改那一层，答清为何没检出来",
+        "source_refs": [
+          "source-case-23"
+        ]
+      },
+      {
+        "id": "case-29",
+        "title": "报废归因帕累托周报",
+        "roles": "生产",
+        "description": "报废记录人人都在做，客户资料问题混入制程问题，损失无法归因到客户",
+        "source_refs": [
+          "source-case-29"
+        ]
+      },
+      {
+        "id": "case-30",
+        "title": "收率连续同向偏移的趋势体检",
+        "roles": "生产",
+        "description": "每一批收率都在内控限以内，六批连起来看却是一条直线持续下滑",
+        "source_refs": [
+          "source-case-30"
+        ]
+      },
+      {
+        "id": "case-35",
+        "title": "电芯批次测试报告成稿",
+        "roles": "生产",
+        "description": "分容柜一晚跑完两千多只电芯，报告却要一人对 Excel 拉到天亮，决定能否发货的那一行从不在报表模板里",
+        "source_refs": [
+          "source-case-35"
+        ]
+      },
+      {
+        "id": "case-36",
+        "title": "良率周报与措施闭环",
+        "roles": "生产",
+        "description": "周报中改善措施罗列整齐，从未验证过往措施是否真正有效",
+        "source_refs": [
+          "source-case-36"
+        ]
+      }
+    ]
+  },
+  "scene": {
+    "template": "production-line",
+    "platform": {
+      "asset_id": "universal.platform.industrial",
+      "size": [
+        12.75,
+        6.55
+      ],
+      "height": 0.3
+    },
+    "objects": [
+      {
+        "id": "wall",
+        "asset_id": "universal.building.window-wall",
+        "slot": "wall",
+        "rotation": 0
+      },
+      {
+        "id": "fence",
+        "asset_id": "manufacturing.equipment.safety-fence",
+        "position": [
+          1.16,
+          2.88,
+          0
+        ],
+        "rotation": 90
+      },
+      {
+        "id": "machine",
+        "asset_id": "manufacturing.equipment.cnc",
+        "slot": "machine",
+        "rotation": 0,
+        "label": "加工与开工核查",
+        "interaction": {
+          "case_ids": [
+            "case-13",
+            "case-5",
+            "case-18"
+          ]
+        }
+      },
+      {
+        "id": "signal",
+        "asset_id": "universal.accessory.status-light",
+        "position": [
+          5.3,
+          1.7,
+          0
+        ],
+        "rotation": 0
+      },
+      {
+        "id": "conveyor",
+        "asset_id": "manufacturing.equipment.conveyor",
+        "slot": "conveyor",
+        "rotation": 0
+      },
+      {
+        "id": "line-part-a",
+        "asset_id": "manufacturing.material.sample",
+        "position": [
+          6.05,
+          3.04,
+          0
+        ],
+        "rotation": 0,
+        "support": "conveyor",
+        "semantic_ref": "part"
+      },
+      {
+        "id": "line-part-b",
+        "asset_id": "manufacturing.material.sample",
+        "position": [
+          6.65,
+          3.04,
+          0
+        ],
+        "rotation": 0,
+        "support": "conveyor",
+        "semantic_ref": "part"
+      },
+      {
+        "id": "line-part-c",
+        "asset_id": "manufacturing.material.sample",
+        "position": [
+          7.25,
+          3.04,
+          0
+        ],
+        "rotation": 0,
+        "support": "conveyor",
+        "semantic_ref": "part"
+      },
+      {
+        "id": "inspection",
+        "asset_id": "manufacturing.equipment.inspection-bench",
+        "slot": "inspection",
+        "rotation": 0,
+        "label": "检测与良率",
+        "interaction": {
+          "case_ids": [
+            "case-14",
+            "case-19",
+            "case-23",
+            "case-35",
+            "case-36"
+          ]
+        }
+      },
+      {
+        "id": "sample",
+        "asset_id": "manufacturing.material.sample",
+        "position": [
+          9.54,
+          3.85,
+          0
+        ],
+        "rotation": 0,
+        "support": "inspection",
+        "semantic_ref": "sample"
+      },
+      {
+        "id": "yield",
+        "asset_id": "universal.document.sheet",
+        "position": [
+          10.31,
+          3.69,
+          0
+        ],
+        "rotation": 0,
+        "support": "inspection",
+        "semantic_ref": "yield"
+      },
+      {
+        "id": "board",
+        "asset_id": "universal.accessory.kanban",
+        "slot": "board",
+        "rotation": 0
+      },
+      {
+        "id": "materials",
+        "asset_id": "manufacturing.material.raw-material",
+        "slot": "materials",
+        "rotation": 0
+      },
+      {
+        "id": "finished",
+        "asset_id": "manufacturing.material.finished-goods",
+        "slot": "finished",
+        "rotation": 0
+      },
+      {
+        "id": "operator",
+        "asset_id": "universal.person.worker",
+        "position": [
+          4.64,
+          4.36,
+          0
+        ],
+        "rotation": 270,
+        "semantic_ref": "operator",
+        "action": "operate",
+        "target": "machine"
+      },
+      {
+        "id": "inspector",
+        "asset_id": "manufacturing.person.inspector",
+        "position": [
+          9.78,
+          4.68,
+          0
+        ],
+        "rotation": 270,
+        "semantic_ref": "inspector",
+        "action": "inspect",
+        "target": "inspection"
+      }
+    ]
+  },
+  "interaction": {
+    "case_ids": [
+      "case-13",
+      "case-5",
+      "case-18",
+      "case-14",
+      "case-19",
+      "case-23",
+      "case-29",
+      "case-30",
+      "case-35",
+      "case-36"
+    ]
+  },
+  "render": {}
+}

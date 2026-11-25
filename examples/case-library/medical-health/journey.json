@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "medical-health",
+  "id": "medical-health-journey",
+  "type": "process_journey",
+  "title": "医疗健康 · 出院随访分层排期表",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "整理随访对象",
+      "description": "随访服务人员依据出院记录整理随访对象及分层计划，形成分层随访计划。画面包含诊疗区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "随访服务人员",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "依据出院记录整理随访对象及分层计划",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "出院记录",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "分层随访计划",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:76",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "roles": "客服",
+            "description": "随访并非无人执行，按术式与风险分层的计划从未真正制定",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            },
+            "label": "出院记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "分层随访计划",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "medical-health.person.clinician",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "medical-health.equipment.exam-bed",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "诊查床",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-ffa0dda3d312183c"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "编制当周排期",
+      "description": "随访服务人员汇总随访时段、方式与历史联系情况，形成本周随访名单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "随访服务人员",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总随访时段、方式与历史联系情况",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "分层随访计划",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "本周随访名单",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:76",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "roles": "客服",
+            "description": "随访并非无人执行，按术式与风险分层的计划从未真正制定",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            },
+            "label": "分层随访计划",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "本周随访名单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-ffa0dda3d312183c"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "回访并记录异常",
+      "description": "随访服务人员登记回访及失联情况，标出需要人工跟进的事项，形成回访及异常记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "随访服务人员",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "登记回访及失联情况，标出需要人工跟进的事项",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "本周随访名单",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "回访及异常记录",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:76",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "roles": "客服",
+            "description": "随访并非无人执行，按术式与风险分层的计划从未真正制定",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            },
+            "label": "本周随访名单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "回访及异常记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-ffa0dda3d312183c"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "转介与归档",
+      "description": "随访服务人员整理需转介事项和联系记录，更新随访台账，形成随访台账。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "随访服务人员",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理需转介事项和联系记录，更新随访台账",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "回访及异常记录",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "随访台账",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:76",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "roles": "客服",
+            "description": "随访并非无人执行，按术式与风险分层的计划从未真正制定",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            },
+            "label": "回访及异常记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "随访台账",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-ffa0dda3d312183c"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "分层随访计划",
+      "source_refs": [
+        "source-catalog-ffa0dda3d312183c"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "本周随访名单",
+      "source_refs": [
+        "source-catalog-ffa0dda3d312183c"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "回访及异常记录",
+      "source_refs": [
+        "source-catalog-ffa0dda3d312183c"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-ffa0dda3d312183c"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-ffa0dda3d312183c",
+      "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+      "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:76",
+      "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "出院随访分层排期表",
+      "source_refs": [
+        "source-catalog-ffa0dda3d312183c"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "整理随访对象",
+              "participant": "随访服务人员",
+              "description": "接收出院记录，依据出院记录整理随访对象及分层计划。交付分层随访计划。"
+            },
+            {
+              "label": "编制当周排期",
+              "participant": "随访服务人员",
+              "description": "接收分层随访计划，汇总随访时段、方式与历史联系情况。交付本周随访名单。"
+            },
+            {
+              "label": "回访并记录异常",
+              "participant": "随访服务人员",
+              "description": "接收本周随访名单，登记回访及失联情况，标出需要人工跟进的事项。交付回访及异常记录。"
+            },
+            {
+              "label": "转介与归档",
+              "participant": "随访服务人员",
+              "description": "接收回访及异常记录，整理需转介事项和联系记录，更新随访台账。交付随访台账。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

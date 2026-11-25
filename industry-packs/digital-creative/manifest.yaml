@@ -1,0 +1,54 @@
+id: digital-creative
+name: 数字创意
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 术语表与译制文本
+  - 本地化审校清单
+  - 字幕和定稿剧本
+  - 修订字幕与术语表
+  - 授权协议及权益记录
+  - 授权复核清单
+  - 原作与多源资料
+  - 改编评估底稿
+  - 场次与转化记录
+  - 场次复盘报告
+  - 主视觉和渠道规格
+  - 渠道视觉素材
+  - 达人档案与表现数据
+  - 达人对比表
+  - 商品卖点与投放要求
+  - 文案草稿
+roles:
+  - 产品
+  - 法务
+  - 生产
+  - 市场
+  - 管理层
+  - 销售
+  - 行政
+  - 运营
+actions:
+  - 核对出海版本的术语和需复审表述
+  - 对照自动字幕、剧本定稿与时间码
+  - 比对许可范围与权益冲突
+  - 汇总原作与市场材料
+  - 对齐场次数据与转化环节
+  - 核对主视觉及各渠道尺寸需求
+  - 核对达人档案与传播表现
+  - 提炼卖点并准备投放文案
+asset_mappings:
+  影视摄影机组:
+    - digital-creative.equipment.camera-rig
+  拍摄工作区:
+    - digital-creative.equipment.camera-rig
+  对照自动字幕、剧本定稿与时间码:
+    - digital-creative.equipment.camera-rig
+templates:
+  - single-workstation
+  - equipment-operation
+  - meeting-review
+  - monitoring-center
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

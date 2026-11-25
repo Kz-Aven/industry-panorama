@@ -1,0 +1,2889 @@
+{
+  "schema_version": "1.0.0",
+  "id": "manufacturing-atlas",
+  "type": "industry_atlas",
+  "industry": "manufacturing",
+  "title": "制造业场景全景图",
+  "description": "场景案例库 · 66 个制造业案例 · 归位到 6 个业务环节、3 类横向职能",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "sales-order",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "商机与接单",
+      "description": "商务人员与计划员在桌边核对客户订单、物料、产能和在制工单，形成接单建议。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "销售",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          },
+          {
+            "id": "partner",
+            "label": "PMC",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "整理客户需求并核对接单条件",
+            "actor": "operator",
+            "target": "order",
+            "output": "decision",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          },
+          {
+            "id": "review",
+            "label": "核对物料齐套、瓶颈产能和在制冲突",
+            "actor": "partner",
+            "target": "order",
+            "output": "decision",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "order",
+            "label": "客户订单",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          },
+          {
+            "id": "decision",
+            "label": "接单建议",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          },
+          {
+            "id": "capacity",
+            "label": "产能负荷表",
+            "source_refs": [
+              "manufacturing-sales-order"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-sales-order",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 商机与接单",
+            "excerpt": "询价报价 · 接单评审"
+          },
+          {
+            "id": "source-case-63",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 63"
+          },
+          {
+            "id": "source-case-65",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 65"
+          },
+          {
+            "id": "source-case-66",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 66"
+          },
+          {
+            "id": "source-case-62",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 62"
+          },
+          {
+            "id": "source-case-25",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 25"
+          },
+          {
+            "id": "source-case-64",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 64"
+          },
+          {
+            "id": "source-case-2",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 2"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-63",
+            "title": "图纸询价智能报价",
+            "roles": "销售",
+            "description": "报价慢且报价不准，根因不在算得慢，而在算之前需花大量时间凑齐图纸、历史件、材料价与工时依据",
+            "source_refs": [
+              "source-case-63"
+            ]
+          },
+          {
+            "id": "case-65",
+            "title": "投标资格符合性自检",
+            "roles": "销售",
+            "description": "整本标书一千多页，被否原因往往只有一行，而这一行从来不在投标台账的列里",
+            "source_refs": [
+              "source-case-65"
+            ]
+          },
+          {
+            "id": "case-66",
+            "title": "认证与检测报告条款符合性核对",
+            "roles": "销售",
+            "description": "证书在手、报告在柜、均在有效期内，招标要求的那一条，恰好不在其覆盖范围内",
+            "source_refs": [
+              "source-case-66"
+            ]
+          },
+          {
+            "id": "case-62",
+            "title": "合同条款确认",
+            "roles": "销售 · 法务",
+            "description": "合同审查难点不在读不懂条款，而在缺少标准模板参照、条款组合易看漏、历史旧账长期无人复核",
+            "source_refs": [
+              "source-case-62"
+            ]
+          },
+          {
+            "id": "case-25",
+            "title": "客户资料完整性预检",
+            "roles": "生产",
+            "description": "资料接收人人都在做，缺文件是 CAM hold 的首因，缺项永远在客户侧",
+            "source_refs": [
+              "source-case-25"
+            ]
+          },
+          {
+            "id": "case-64",
+            "title": "客户单据转订单",
+            "roles": "销售",
+            "description": "客户 Excel/邮件/图片 口径格式不一，料号有五种混乱形态，单位按套按件算错即 4 倍差价",
+            "source_refs": [
+              "source-case-64"
+            ]
+          },
+          {
+            "id": "case-2",
+            "title": "订单接单评审",
+            "roles": "PMC · 销售",
+            "description": "急单评审难不在算一道题，而在销售、技术、采购、生产、品质多方接力确认，跨 ERP / MES / APS 等系统来回切换仍未必答得准",
+            "source_refs": [
+              "source-case-2"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "team-collaboration",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            10,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.77,
+              2.87,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board",
+            "rotation": 0
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall",
+            "rotation": 0
+          },
+          {
+            "id": "order",
+            "asset_id": "universal.document.order",
+            "position": [
+              4.52,
+              3.24,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "order"
+          },
+          {
+            "id": "decision",
+            "asset_id": "universal.document.contract",
+            "position": [
+              5.27,
+              3.6500000000000004,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "decision"
+          },
+          {
+            "id": "capacity",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.88,
+              3.68,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "capacity"
+          },
+          {
+            "id": "partner",
+            "asset_id": "universal.person.office-worker",
+            "slot": "partner",
+            "rotation": 180,
+            "semantic_ref": "partner",
+            "action": "review",
+            "target": "workstation"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-63",
+          "case-65",
+          "case-66",
+          "case-62",
+          "case-25",
+          "case-64",
+          "case-2"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "product-process",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "产品与工艺",
+      "description": "工程人员在工位核对 BOM 版本、变更记录和受影响订单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "工程人员",
+            "source_refs": [
+              "manufacturing-product-process"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "核对 BOM 和工程变更",
+            "actor": "operator",
+            "target": "bom",
+            "output": "change",
+            "source_refs": [
+              "manufacturing-product-process"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "bom",
+            "label": "BOM 清单",
+            "source_refs": [
+              "manufacturing-product-process"
+            ]
+          },
+          {
+            "id": "change",
+            "label": "变更记录",
+            "source_refs": [
+              "manufacturing-product-process"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-product-process",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 产品与工艺",
+            "excerpt": "BOM 核对 · 工程变更"
+          },
+          {
+            "id": "source-case-43",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 43"
+          },
+          {
+            "id": "source-case-40",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 40"
+          },
+          {
+            "id": "source-case-52",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 52"
+          },
+          {
+            "id": "source-case-41",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 41"
+          },
+          {
+            "id": "source-case-42",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 42"
+          },
+          {
+            "id": "source-case-39",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 39"
+          },
+          {
+            "id": "source-case-15",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 15"
+          },
+          {
+            "id": "source-case-16",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 16"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-43",
+            "title": "竞品拆解 BOM 初稿",
+            "roles": "研发",
+            "description": "竞品拆解人人都在做，照片留存于个人目录，成本差异停留在感觉层面",
+            "source_refs": [
+              "source-case-43"
+            ]
+          },
+          {
+            "id": "case-40",
+            "title": "BOM导入核对",
+            "roles": "研发",
+            "description": "BOM 导入的风险不在哪几行变了，而在异常差异与存量脏数据被一并带入新基线，牵动一批工单",
+            "source_refs": [
+              "source-case-40"
+            ]
+          },
+          {
+            "id": "case-52",
+            "title": "BOM 脏数据清洗与一物多码归并",
+            "roles": "采购",
+            "description": "同一颗气缸在系统中有两个名称，重复下单、分存两处、盘点对不上",
+            "source_refs": [
+              "source-case-52"
+            ]
+          },
+          {
+            "id": "case-41",
+            "title": "工程变更管理ECN",
+            "roles": "研发",
+            "description": "工程变更难点不在填表，而在影响面靠经验翻查、分级靠人判、会签周期长、整套文件需同步更新",
+            "source_refs": [
+              "source-case-41"
+            ]
+          },
+          {
+            "id": "case-42",
+            "title": "替代料验证计划与风险台账",
+            "roles": "研发",
+            "description": "替代料搜寻每天都在进行，历史验证记录与失败原因留存于离职同事电脑",
+            "source_refs": [
+              "source-case-42"
+            ]
+          },
+          {
+            "id": "case-39",
+            "title": "版本一致性巡检",
+            "roles": "研发 · 生产 · PMC",
+            "description": "系统里改了，现场还在用老版，人工抽查一星期跑不完上百份受控文件",
+            "source_refs": [
+              "source-case-39"
+            ]
+          },
+          {
+            "id": "case-15",
+            "title": "SOP生成与校验",
+            "roles": "生产",
+            "description": "SOP 问题表面只是文档未更新，实际同时影响品质稳定性、工艺一致性与审核合规",
+            "source_refs": [
+              "source-case-15"
+            ]
+          },
+          {
+            "id": "case-16",
+            "title": "三份文件工艺指标一致性核对",
+            "roles": "生产",
+            "description": "操作规程、工艺卡片、DCS 报警值三份文件各自写着一个上限，法律要求三者必须一致",
+            "source_refs": [
+              "source-case-16"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            6
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.technician",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.119999999999999,
+              2.64,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall",
+            "rotation": 0
+          },
+          {
+            "id": "prototype",
+            "asset_id": "manufacturing.material.sample",
+            "position": [
+              7.3,
+              4.3,
+              0
+            ],
+            "rotation": 0,
+            "support": "drawer",
+            "semantic_ref": "bom"
+          },
+          {
+            "id": "bom",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.039999999999999,
+              2.75,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "bom"
+          },
+          {
+            "id": "change",
+            "asset_id": "universal.document.order",
+            "position": [
+              4.52,
+              2.95,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "change"
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "slot": "cart",
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-43",
+          "case-40",
+          "case-52",
+          "case-41",
+          "case-42",
+          "case-39",
+          "case-15",
+          "case-16"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "planning-supply",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "计划与供应",
+      "description": "PMC 与采购查看排产板和清单，协调缺料、到货与插单影响。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "PMC",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "partner",
+            "label": "采购",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "核对工单齐套与调整优先级",
+            "actor": "operator",
+            "target": "work-order",
+            "output": "schedule",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "review",
+            "label": "对照断料时间跟催到货",
+            "actor": "partner",
+            "target": "work-order",
+            "output": "schedule",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "work-order",
+            "label": "工单",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "schedule",
+            "label": "更新后的排程",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          },
+          {
+            "id": "shortage",
+            "label": "缺料清单",
+            "source_refs": [
+              "manufacturing-planning-supply"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-planning-supply",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 计划与供应",
+            "excerpt": "排产 · 齐套 · 来料"
+          },
+          {
+            "id": "source-case-3",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 3"
+          },
+          {
+            "id": "source-case-6",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 6"
+          },
+          {
+            "id": "source-case-7",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 7"
+          },
+          {
+            "id": "source-case-59",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 59"
+          },
+          {
+            "id": "source-case-61",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 61"
+          },
+          {
+            "id": "source-case-53",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 53"
+          },
+          {
+            "id": "source-case-57",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 57"
+          },
+          {
+            "id": "source-case-60",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 60"
+          },
+          {
+            "id": "source-case-55",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 55"
+          },
+          {
+            "id": "source-case-50",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 50"
+          },
+          {
+            "id": "source-case-51",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 51"
+          },
+          {
+            "id": "source-case-56",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 56"
+          },
+          {
+            "id": "source-case-58",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 58"
+          },
+          {
+            "id": "source-case-1",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 1"
+          },
+          {
+            "id": "source-case-4",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 4"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-3",
+            "title": "交期平衡与产销协同",
+            "roles": "PMC",
+            "description": "PMC 排产难不在排表，而在多单挤一条产线时先保谁缺乏标准，销售生产物料拉会半天口径仍不一",
+            "source_refs": [
+              "source-case-3"
+            ]
+          },
+          {
+            "id": "case-6",
+            "title": "排产与插单调整",
+            "roles": "PMC",
+            "description": "插单难不在调整优先级这一个动作，而在改完现场不知道、通知没回执、过程没留痕",
+            "source_refs": [
+              "source-case-6"
+            ]
+          },
+          {
+            "id": "case-7",
+            "title": "齐套与缺料预警",
+            "roles": "PMC",
+            "description": "齐套难不在 BOM 展开，而在可用库存口径算不准、判据散在 ERP 之外、缺料到开工时才暴露",
+            "source_refs": [
+              "source-case-7"
+            ]
+          },
+          {
+            "id": "case-59",
+            "title": "来料跟催",
+            "roles": "采购",
+            "description": "采购每天盯十几张在途单，问题不在不催，而在按逾期天数排序催错顺序，真正卡交付的那张排最后",
+            "source_refs": [
+              "source-case-59"
+            ]
+          },
+          {
+            "id": "case-61",
+            "title": "逾期订单风险日报（给老板版）",
+            "roles": "采购",
+            "description": "老板娘以为货都正常，直到产线等料停了半小时，才知道三张订单已逾期一周",
+            "source_refs": [
+              "source-case-61"
+            ]
+          },
+          {
+            "id": "case-53",
+            "title": "EOL／PCN 影响评估",
+            "roles": "采购",
+            "description": "停产通知人人都在收，从通知到确定哪些订单要停、哪些料可切，缺乏对应表",
+            "source_refs": [
+              "source-case-53"
+            ]
+          },
+          {
+            "id": "case-57",
+            "title": "单一来源风险清单",
+            "roles": "采购",
+            "description": "库存只够 7 天，更换供应商要 15 天，两个数字从未放在同一张表上",
+            "source_refs": [
+              "source-case-57"
+            ]
+          },
+          {
+            "id": "case-60",
+            "title": "物料风险周快报",
+            "roles": "采购",
+            "description": "风险消息人人都在传，涨价具体影响自家哪颗料，无人逐条比对",
+            "source_refs": [
+              "source-case-60"
+            ]
+          },
+          {
+            "id": "case-55",
+            "title": "供应商资质证书台账与到期监控",
+            "roles": "采购",
+            "description": "客户审厂前一天才发现核心供应商 ISO 证书上月已过期，补办要 20 天",
+            "source_refs": [
+              "source-case-55"
+            ]
+          },
+          {
+            "id": "case-50",
+            "title": "供应商 COA 与进厂复检偏差台账",
+            "roles": "采购 · 生产",
+            "description": "供应商送样检测合格，到货批次的杂质含量却是送样的八百倍",
+            "source_refs": [
+              "source-case-50"
+            ]
+          },
+          {
+            "id": "case-51",
+            "title": "来料检验与批次一致性异常识别",
+            "roles": "采购 · 生产",
+            "description": "供应商 COC 上每一项都合格，问题不在那张纸上，而在无人将它与外包装标签核对一遍",
+            "source_refs": [
+              "source-case-51"
+            ]
+          },
+          {
+            "id": "case-56",
+            "title": "到货异常处理单与特采决策留痕",
+            "roles": "采购",
+            "description": "让步接收多为口头决定，三个月后批量质量问题追责时，说不清当时谁同意的",
+            "source_refs": [
+              "source-case-56"
+            ]
+          },
+          {
+            "id": "case-58",
+            "title": "来料异常与假料风险比对",
+            "roles": "采购",
+            "description": "每颗来料均经过检验，假料与串料问题恰恰出在已验过的批次",
+            "source_refs": [
+              "source-case-58"
+            ]
+          },
+          {
+            "id": "case-1",
+            "title": "呆滞料预警清单（库龄分档）",
+            "roles": "PMC · 采购",
+            "description": "860 万库存中有 96 万呆滞料无人动用，在财务月报中仅为一个周转率数字",
+            "source_refs": [
+              "source-case-1"
+            ]
+          },
+          {
+            "id": "case-4",
+            "title": "库存结构与呆滞料复盘",
+            "roles": "PMC",
+            "description": "呆滞料复盘难不在拉库龄表，而在能否转用的判据不在 ERP、处置只剩报废、判据随人离职失传",
+            "source_refs": [
+              "source-case-4"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "team-collaboration",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            10,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.77,
+              2.87,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board",
+            "rotation": 0
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              8.6,
+              5.55,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "risk",
+            "asset_id": "universal.document.order",
+            "position": [
+              8.65,
+              5.55,
+              0
+            ],
+            "rotation": 0,
+            "support": "cart",
+            "semantic_ref": "shortage"
+          },
+          {
+            "id": "work-order",
+            "asset_id": "universal.document.order",
+            "position": [
+              4.55,
+              3.25,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "work-order"
+          },
+          {
+            "id": "schedule",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.27,
+              3.64,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "schedule"
+          },
+          {
+            "id": "shortage",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.8,
+              3.68,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "shortage"
+          },
+          {
+            "id": "partner",
+            "asset_id": "universal.person.office-worker",
+            "slot": "partner",
+            "rotation": 180,
+            "semantic_ref": "partner",
+            "action": "review",
+            "target": "workstation"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-3",
+          "case-6",
+          "case-7",
+          "case-59",
+          "case-61",
+          "case-53",
+          "case-57",
+          "case-60",
+          "case-55",
+          "case-50",
+          "case-51",
+          "case-56",
+          "case-58",
+          "case-1",
+          "case-4"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "production-quality",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "生产与质检",
+      "description": "加工区核查开工条件并处理工件，检验区查看样品和良率记录。设备与工位是便于理解的示意，具体案例来自原图。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "生产人员",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          },
+          {
+            "id": "inspector",
+            "label": "检验人员",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          },
+          {
+            "id": "pmc",
+            "label": "PMC",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          },
+          {
+            "id": "purchasing",
+            "label": "采购",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "operate",
+            "label": "核查开工条件并加工工件",
+            "actor": "operator",
+            "target": "work-order",
+            "output": "part",
+            "source_refs": [
+              "source-case-13"
+            ]
+          },
+          {
+            "id": "inspect",
+            "label": "核对样品与良率记录",
+            "actor": "inspector",
+            "target": "sample",
+            "output": "yield",
+            "source_refs": [
+              "source-case-14"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "work-order",
+            "label": "工单与开工条件",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          },
+          {
+            "id": "sample",
+            "label": "待检样品",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          },
+          {
+            "id": "yield",
+            "label": "良率与异常记录",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          },
+          {
+            "id": "part",
+            "label": "加工工件",
+            "source_refs": [
+              "manufacturing-production-quality"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [
+          {
+            "id": "opening-check",
+            "source": "pmc",
+            "target": "operator",
+            "label": "共同参与开工条件核查",
+            "source_refs": [
+              "source-case-13"
+            ]
+          },
+          {
+            "id": "material-check",
+            "source": "purchasing",
+            "target": "operator",
+            "label": "共同参与开工条件核查",
+            "source_refs": [
+              "source-case-13"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "manufacturing-production-quality",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 生产与质检",
+            "excerpt": "开工核查 · 良率监控"
+          },
+          {
+            "id": "source-case-13",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 13"
+          },
+          {
+            "id": "source-case-5",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 5"
+          },
+          {
+            "id": "source-case-18",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 18"
+          },
+          {
+            "id": "source-case-14",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 14"
+          },
+          {
+            "id": "source-case-19",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 19"
+          },
+          {
+            "id": "source-case-23",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 23"
+          },
+          {
+            "id": "source-case-29",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 29"
+          },
+          {
+            "id": "source-case-30",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 30"
+          },
+          {
+            "id": "source-case-35",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 35"
+          },
+          {
+            "id": "source-case-36",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 36"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-13",
+            "title": "开工条件核查",
+            "roles": "生产 · PMC · 采购",
+            "description": "开工确认易带病开工，需跨五个部门逐一确认，几小时才能凑齐答案",
+            "source_refs": [
+              "source-case-13"
+            ]
+          },
+          {
+            "id": "case-5",
+            "title": "执行偏差追踪与补产",
+            "roles": "PMC",
+            "description": "跟单难不在算完成率，而在报工数据不可信、进度显示失真、根因证据散在其他部门",
+            "source_refs": [
+              "source-case-5"
+            ]
+          },
+          {
+            "id": "case-18",
+            "title": "交接班「十交清」日志草稿",
+            "roles": "生产",
+            "description": "记录本上每一栏均已填写，唯独最该写的第三项「异常指标详细工况」长期空白",
+            "source_refs": [
+              "source-case-18"
+            ]
+          },
+          {
+            "id": "case-14",
+            "title": "CP／FT 良率日报",
+            "roles": "生产",
+            "description": "日报天天都在出，只报当天数据，无人与三周前的基线对比",
+            "source_refs": [
+              "source-case-14"
+            ]
+          },
+          {
+            "id": "case-19",
+            "title": "低良批次初判快报",
+            "roles": "生产",
+            "description": "低良批次人人都在救，初判全靠资深工程师看 map 猜，离职即经验清零",
+            "source_refs": [
+              "source-case-19"
+            ]
+          },
+          {
+            "id": "case-23",
+            "title": "品质异常分析",
+            "roles": "生产",
+            "description": "品质分析难不在把报告写满，而在有限时间内把根因追到可整改那一层，答清为何没检出来",
+            "source_refs": [
+              "source-case-23"
+            ]
+          },
+          {
+            "id": "case-29",
+            "title": "报废归因帕累托周报",
+            "roles": "生产",
+            "description": "报废记录人人都在做，客户资料问题混入制程问题，损失无法归因到客户",
+            "source_refs": [
+              "source-case-29"
+            ]
+          },
+          {
+            "id": "case-30",
+            "title": "收率连续同向偏移的趋势体检",
+            "roles": "生产",
+            "description": "每一批收率都在内控限以内，六批连起来看却是一条直线持续下滑",
+            "source_refs": [
+              "source-case-30"
+            ]
+          },
+          {
+            "id": "case-35",
+            "title": "电芯批次测试报告成稿",
+            "roles": "生产",
+            "description": "分容柜一晚跑完两千多只电芯，报告却要一人对 Excel 拉到天亮，决定能否发货的那一行从不在报表模板里",
+            "source_refs": [
+              "source-case-35"
+            ]
+          },
+          {
+            "id": "case-36",
+            "title": "良率周报与措施闭环",
+            "roles": "生产",
+            "description": "周报中改善措施罗列整齐，从未验证过往措施是否真正有效",
+            "source_refs": [
+              "source-case-36"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "production-line",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            12.75,
+            6.55
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall",
+            "rotation": 0
+          },
+          {
+            "id": "fence",
+            "asset_id": "manufacturing.equipment.safety-fence",
+            "position": [
+              1.16,
+              2.88,
+              0
+            ],
+            "rotation": 90
+          },
+          {
+            "id": "machine",
+            "asset_id": "manufacturing.equipment.cnc",
+            "slot": "machine",
+            "rotation": 0,
+            "label": "加工与开工核查",
+            "interaction": {
+              "case_ids": [
+                "case-13",
+                "case-5",
+                "case-18"
+              ]
+            }
+          },
+          {
+            "id": "signal",
+            "asset_id": "universal.accessory.status-light",
+            "position": [
+              5.3,
+              1.7,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "conveyor",
+            "asset_id": "manufacturing.equipment.conveyor",
+            "slot": "conveyor",
+            "rotation": 0
+          },
+          {
+            "id": "line-part-a",
+            "asset_id": "manufacturing.material.sample",
+            "position": [
+              6.05,
+              3.04,
+              0
+            ],
+            "rotation": 0,
+            "support": "conveyor",
+            "semantic_ref": "part"
+          },
+          {
+            "id": "line-part-b",
+            "asset_id": "manufacturing.material.sample",
+            "position": [
+              6.65,
+              3.04,
+              0
+            ],
+            "rotation": 0,
+            "support": "conveyor",
+            "semantic_ref": "part"
+          },
+          {
+            "id": "line-part-c",
+            "asset_id": "manufacturing.material.sample",
+            "position": [
+              7.25,
+              3.04,
+              0
+            ],
+            "rotation": 0,
+            "support": "conveyor",
+            "semantic_ref": "part"
+          },
+          {
+            "id": "inspection",
+            "asset_id": "manufacturing.equipment.inspection-bench",
+            "slot": "inspection",
+            "rotation": 0,
+            "label": "检测与良率",
+            "interaction": {
+              "case_ids": [
+                "case-14",
+                "case-19",
+                "case-23",
+                "case-35",
+                "case-36"
+              ]
+            }
+          },
+          {
+            "id": "sample",
+            "asset_id": "manufacturing.material.sample",
+            "position": [
+              9.54,
+              3.85,
+              0
+            ],
+            "rotation": 0,
+            "support": "inspection",
+            "semantic_ref": "sample"
+          },
+          {
+            "id": "yield",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              10.31,
+              3.69,
+              0
+            ],
+            "rotation": 0,
+            "support": "inspection",
+            "semantic_ref": "yield"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board",
+            "rotation": 0
+          },
+          {
+            "id": "materials",
+            "asset_id": "manufacturing.material.raw-material",
+            "slot": "materials",
+            "rotation": 0
+          },
+          {
+            "id": "finished",
+            "asset_id": "manufacturing.material.finished-goods",
+            "slot": "finished",
+            "rotation": 0
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.64,
+              4.36,
+              0
+            ],
+            "rotation": 270,
+            "semantic_ref": "operator",
+            "action": "operate",
+            "target": "machine"
+          },
+          {
+            "id": "inspector",
+            "asset_id": "manufacturing.person.inspector",
+            "position": [
+              9.78,
+              4.68,
+              0
+            ],
+            "rotation": 270,
+            "semantic_ref": "inspector",
+            "action": "inspect",
+            "target": "inspection"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-13",
+          "case-5",
+          "case-18",
+          "case-14",
+          "case-19",
+          "case-23",
+          "case-29",
+          "case-30",
+          "case-35",
+          "case-36"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "release-delivery",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "放行与交付",
+      "description": "检验人员核对待交付批次和放行证据，出货工位展示通过评估后的货物准备。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "放行审核人员",
+            "source_refs": [
+              "manufacturing-release-delivery"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "approve",
+            "label": "核对批次放行证据",
+            "actor": "operator",
+            "target": "batch",
+            "output": "evidence",
+            "source_refs": [
+              "source-case-31"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "batch",
+            "label": "交付批次",
+            "source_refs": [
+              "manufacturing-release-delivery"
+            ]
+          },
+          {
+            "id": "evidence",
+            "label": "放行证据",
+            "source_refs": [
+              "manufacturing-release-delivery"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-release-delivery",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 放行与交付",
+            "excerpt": "出货评估 · 放行证据"
+          },
+          {
+            "id": "source-case-17",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 17"
+          },
+          {
+            "id": "source-case-31",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 31"
+          },
+          {
+            "id": "source-case-32",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 32"
+          },
+          {
+            "id": "source-case-20",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 20"
+          },
+          {
+            "id": "source-case-38",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 38"
+          },
+          {
+            "id": "source-case-48",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 48"
+          },
+          {
+            "id": "source-case-49",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 49"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-17",
+            "title": "交付风险评估",
+            "roles": "生产",
+            "description": "出货前查出异常，难不在判定合格与否，而在能不能放、不能放有无别的路，拍板信息不在品质工程师手上",
+            "source_refs": [
+              "source-case-17"
+            ]
+          },
+          {
+            "id": "case-31",
+            "title": "放行前法定十项齐套性与缺口清单",
+            "roles": "生产",
+            "description": "法规要求放行前逐项确认十项，这十项的证据散在 47 页手写批记录和四个部门手中",
+            "source_refs": [
+              "source-case-31"
+            ]
+          },
+          {
+            "id": "case-32",
+            "title": "放行前追溯码专项核对清单",
+            "roles": "生产",
+            "description": "法规要求 QP 确认「各级销售单元均已赋码并做好信息关联」，而他手中没有任何文件能证明此事",
+            "source_refs": [
+              "source-case-32"
+            ]
+          },
+          {
+            "id": "case-20",
+            "title": "作废码与物料平衡逐条对账",
+            "roles": "生产",
+            "description": "物料平衡 100.00% 闭合，纸面无懈可击，但有 3 个应作废的码此刻仍为「已关联」状态",
+            "source_refs": [
+              "source-case-20"
+            ]
+          },
+          {
+            "id": "case-38",
+            "title": "追溯码上传成功确认台账",
+            "roles": "生产",
+            "description": "导出成功不等于上传成功，而上传是否成功，厂里没有任何人被指定负责",
+            "source_refs": [
+              "source-case-38"
+            ]
+          },
+          {
+            "id": "case-48",
+            "title": "并网收资清单缺项核查",
+            "roles": "运营 · 法务",
+            "description": "十一份资料交了十份，电网答复缺一份、回去等通知，等待的每一天，违约金按合同总价累进",
+            "source_refs": [
+              "source-case-48"
+            ]
+          },
+          {
+            "id": "case-49",
+            "title": "竣工资料归档缺口核查",
+            "roles": "运营",
+            "description": "竣工验收那天资料箱是满的，两年后索赔要用时，才发现关键几页从未进过箱子",
+            "source_refs": [
+              "source-case-49"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.outdoor",
+          "size": [
+            11.5,
+            7.5
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "machine",
+            "asset_id": "manufacturing.equipment.packing-station",
+            "position": [
+              3.55,
+              2.6,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "delivery",
+            "asset_id": "universal.vehicle.truck",
+            "position": [
+              8.85,
+              4.45,
+              0
+            ],
+            "rotation": 90
+          },
+          {
+            "id": "operator",
+            "asset_id": "manufacturing.person.inspector",
+            "position": [
+              3.52,
+              3.85,
+              0
+            ],
+            "rotation": 270,
+            "semantic_ref": "operator",
+            "action": "approve",
+            "target": "machine"
+          },
+          {
+            "id": "batch",
+            "asset_id": "manufacturing.material.finished-goods",
+            "position": [
+              6.33,
+              3.42,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "batch"
+          },
+          {
+            "id": "evidence",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              3.95,
+              2.86,
+              0
+            ],
+            "rotation": 0,
+            "support": "machine",
+            "semantic_ref": "evidence"
+          },
+          {
+            "id": "storage",
+            "asset_id": "manufacturing.equipment.rack",
+            "position": [
+              8.42,
+              1.23,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.25,
+              0.91,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-17",
+          "case-31",
+          "case-32",
+          "case-20",
+          "case-38",
+          "case-48",
+          "case-49"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "service-trace",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "售后与追溯",
+      "description": "售后和质量人员并排核对客诉记录、成品批号和原料批次，定位追溯线索。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "售后",
+            "source_refs": [
+              "manufacturing-service-trace"
+            ]
+          },
+          {
+            "id": "partner",
+            "label": "质量",
+            "source_refs": [
+              "manufacturing-service-trace"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "按客诉逆查成品与原料批次",
+            "actor": "operator",
+            "target": "complaint",
+            "output": "batch",
+            "source_refs": [
+              "manufacturing-service-trace"
+            ]
+          },
+          {
+            "id": "review",
+            "label": "核对投料记录与供应商批号",
+            "actor": "partner",
+            "target": "complaint",
+            "output": "batch",
+            "source_refs": [
+              "manufacturing-service-trace"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "complaint",
+            "label": "客诉记录",
+            "source_refs": [
+              "manufacturing-service-trace"
+            ]
+          },
+          {
+            "id": "batch",
+            "label": "批次追溯记录",
+            "source_refs": [
+              "manufacturing-service-trace"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-service-trace",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 售后与追溯",
+            "excerpt": "客诉 8D · 批次溯源"
+          },
+          {
+            "id": "source-case-26",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 26"
+          },
+          {
+            "id": "source-case-28",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 28"
+          },
+          {
+            "id": "source-case-21",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 21"
+          },
+          {
+            "id": "source-case-34",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 34"
+          },
+          {
+            "id": "source-case-54",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 54"
+          },
+          {
+            "id": "source-case-8",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 8"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-26",
+            "title": "客诉 8D 回复初稿",
+            "roles": "生产",
+            "description": "8D 报告人人都在写，缺乏历史案例支撑的回复最易被客户退回",
+            "source_refs": [
+              "source-case-26"
+            ]
+          },
+          {
+            "id": "case-28",
+            "title": "批次质量追溯与异常归因",
+            "roles": "生产",
+            "description": "客户投诉一个批号，线索分散留存于 DCS、化验记录本、采购邮箱、报修流水本",
+            "source_refs": [
+              "source-case-28"
+            ]
+          },
+          {
+            "id": "case-21",
+            "title": "原辅料批号使用去向反查",
+            "roles": "生产",
+            "description": "出问题后第一个要回答的是这批原料还用在哪，而答案只存在于几十份手写批记录的某一页",
+            "source_refs": [
+              "source-case-21"
+            ]
+          },
+          {
+            "id": "case-34",
+            "title": "模拟召回演练陪练与缺口清单",
+            "roles": "生产",
+            "description": "演练报告年年都有，结论年年都是「有效」，行业内部称之为「闭门造车」",
+            "source_refs": [
+              "source-case-34"
+            ]
+          },
+          {
+            "id": "case-54",
+            "title": "供应商质量损失索赔台账",
+            "roles": "采购",
+            "description": "记得某供应商去年造成三万七损失，口头总账拿不出任何单据依据",
+            "source_refs": [
+              "source-case-54"
+            ]
+          },
+          {
+            "id": "case-8",
+            "title": "质保索赔证据包",
+            "roles": "技术支持 · 客服 · 法务",
+            "description": "索赔谈判桌上最贵的不是那 450 万，而是对方发现你数据缺了四个月时，解释不清的那三分钟",
+            "source_refs": [
+              "source-case-8"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "team-collaboration",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            10,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.77,
+              2.87,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "manufacturing.equipment.rack",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "retained-sample",
+            "asset_id": "manufacturing.material.finished-goods",
+            "position": [
+              8.3,
+              4.9,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "batch"
+          },
+          {
+            "id": "complaint",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.6,
+              3.24,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "complaint"
+          },
+          {
+            "id": "batch",
+            "asset_id": "universal.document.order",
+            "position": [
+              5.27,
+              3.5900000000000003,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "batch"
+          },
+          {
+            "id": "partner",
+            "asset_id": "universal.person.office-worker",
+            "slot": "partner",
+            "rotation": 180,
+            "semantic_ref": "partner",
+            "action": "review",
+            "target": "workstation"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-26",
+          "case-28",
+          "case-21",
+          "case-34",
+          "case-54",
+          "case-8"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "maintenance",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "设备与运维",
+      "description": "维修人员在设备旁检查报警状态并核对报修记录，工具车展示现场检修环境。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "设备维护人员",
+            "source_refs": [
+              "manufacturing-maintenance"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "check",
+            "label": "检查异常报警并核对报修闭环",
+            "actor": "operator",
+            "target": "alarm",
+            "output": "ticket",
+            "source_refs": [
+              "source-case-33"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "alarm",
+            "label": "报警记录",
+            "source_refs": [
+              "manufacturing-maintenance"
+            ]
+          },
+          {
+            "id": "ticket",
+            "label": "维修工单",
+            "source_refs": [
+              "manufacturing-maintenance"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-maintenance",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 设备与运维",
+            "excerpt": "报警闭环 · 重复报修"
+          },
+          {
+            "id": "source-case-33",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 33"
+          },
+          {
+            "id": "source-case-37",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 37"
+          },
+          {
+            "id": "source-case-22",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 22"
+          },
+          {
+            "id": "source-case-9",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 9"
+          },
+          {
+            "id": "source-case-10",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 10"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-33",
+            "title": "检测报警器失效未报修清单",
+            "roles": "生产",
+            "description": "报警器读数二十三天未变动，台账上却写着「正常」",
+            "source_refs": [
+              "source-case-33"
+            ]
+          },
+          {
+            "id": "case-37",
+            "title": "被消音报警未闭环清单",
+            "roles": "生产",
+            "description": "每条报警都被规范地确认消音，二十一天内没有一条留下原因分析",
+            "source_refs": [
+              "source-case-37"
+            ]
+          },
+          {
+            "id": "case-22",
+            "title": "同一位号重复报修归集",
+            "roles": "生产",
+            "description": "同一台设备十四个月内维修七次，每次均为几百元的小修，无人将七次累计起来看",
+            "source_refs": [
+              "source-case-22"
+            ]
+          },
+          {
+            "id": "case-9",
+            "title": "历史工单知识库检索",
+            "roles": "技术支持 · 生产",
+            "description": "613 张工单上只写着「已处理」三个字，这三个字是这家公司三年来最贵的三个字",
+            "source_refs": [
+              "source-case-9"
+            ]
+          },
+          {
+            "id": "case-10",
+            "title": "运维月报与故障工单成稿",
+            "roles": "技术支持 · 生产",
+            "description": "月报里的 99.2% 无人核对，直到业主按合同口径重算一遍，才发现两个数差了 1.8 个百分点",
+            "source_refs": [
+              "source-case-10"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall",
+            "rotation": 0
+          },
+          {
+            "id": "machine",
+            "asset_id": "manufacturing.equipment.cnc",
+            "slot": "machine",
+            "rotation": 0
+          },
+          {
+            "id": "workstation",
+            "asset_id": "manufacturing.tool.tool-cart",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board",
+            "rotation": 0
+          },
+          {
+            "id": "storage",
+            "asset_id": "manufacturing.equipment.control-panel",
+            "slot": "storage",
+            "rotation": 0,
+            "semantic_ref": "alarm"
+          },
+          {
+            "id": "ticket",
+            "asset_id": "universal.document.order",
+            "position": [
+              6.99,
+              4.88,
+              0
+            ],
+            "rotation": 0,
+            "support": "workstation",
+            "semantic_ref": "ticket"
+          },
+          {
+            "id": "operator",
+            "asset_id": "manufacturing.person.maintenance",
+            "slot": "operator",
+            "rotation": 270,
+            "semantic_ref": "operator",
+            "action": "check",
+            "target": "machine"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-33",
+          "case-37",
+          "case-22",
+          "case-9",
+          "case-10"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "quality-compliance",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "质量体系与合规",
+      "description": "质量人员对照内部质量记录、证书与检测报告，准备审核所需的证据。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "质量人员",
+            "source_refs": [
+              "manufacturing-quality-compliance"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "检查记录栏位与证书有效性",
+            "actor": "operator",
+            "target": "records",
+            "output": "report",
+            "source_refs": [
+              "manufacturing-quality-compliance"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "records",
+            "label": "质量记录",
+            "source_refs": [
+              "manufacturing-quality-compliance"
+            ]
+          },
+          {
+            "id": "report",
+            "label": "审核证据",
+            "source_refs": [
+              "manufacturing-quality-compliance"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-quality-compliance",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 质量体系与合规",
+            "excerpt": "客户审核 · 证书有效性"
+          },
+          {
+            "id": "source-case-24",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 24"
+          },
+          {
+            "id": "source-case-11",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 11"
+          },
+          {
+            "id": "source-case-12",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 12"
+          },
+          {
+            "id": "source-case-27",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 27"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-24",
+            "title": "客户审核数据包预演",
+            "roles": "生产",
+            "description": "审核准备持续开展，多数不符合项并非未执行，而是找不到证据",
+            "source_refs": [
+              "source-case-24"
+            ]
+          },
+          {
+            "id": "case-11",
+            "title": "内部质量记录法定栏位完整性核查",
+            "roles": "法务",
+            "description": "五套标准五年内全部换版，每套都带来新的必备栏位，车间里那张记录表，还是 2020 年印的",
+            "source_refs": [
+              "source-case-11"
+            ]
+          },
+          {
+            "id": "case-12",
+            "title": "认证证书与检测报告台账有效性核查",
+            "roles": "法务",
+            "description": "证书未过期、报告在柜、CDF 填得齐全，但采购更换的那批接触器，从未有人通知认证",
+            "source_refs": [
+              "source-case-12"
+            ]
+          },
+          {
+            "id": "case-27",
+            "title": "年度产品质量回顾取数与趋势草案",
+            "roles": "生产",
+            "description": "两百小时的年度回顾中，一百六十二小时耗在数据搬运，真正用于分析判断的只有二十小时",
+            "source_refs": [
+              "source-case-27"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            6
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.technician",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.119999999999999,
+              2.64,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall",
+            "rotation": 0
+          },
+          {
+            "id": "records",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.039999999999999,
+              2.7600000000000002,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "records"
+          },
+          {
+            "id": "report",
+            "asset_id": "universal.document.contract",
+            "position": [
+              4.52,
+              2.9200000000000004,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "report"
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "slot": "cart",
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-24",
+          "case-11",
+          "case-12",
+          "case-27"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "operations-finance",
+      "type": "scenario_diorama",
+      "industry": "manufacturing",
+      "title": "经营与财务",
+      "description": "经营与财务人员对照业务单据和利润数据，核实异常或对账差异。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "operator",
+            "label": "经营负责人",
+            "source_refs": [
+              "manufacturing-operations-finance"
+            ]
+          },
+          {
+            "id": "partner",
+            "label": "财务",
+            "source_refs": [
+              "manufacturing-operations-finance"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "对照单据核实利润风险与差异",
+            "actor": "operator",
+            "target": "ledger",
+            "output": "exception",
+            "source_refs": [
+              "manufacturing-operations-finance"
+            ]
+          },
+          {
+            "id": "review",
+            "label": "核查对账差异和归属",
+            "actor": "partner",
+            "target": "ledger",
+            "output": "exception",
+            "source_refs": [
+              "manufacturing-operations-finance"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "ledger",
+            "label": "对账资料",
+            "source_refs": [
+              "manufacturing-operations-finance"
+            ]
+          },
+          {
+            "id": "exception",
+            "label": "差异记录",
+            "source_refs": [
+              "manufacturing-operations-finance"
+            ]
+          }
+        ],
+        "systems": [],
+        "relations": [],
+        "source_refs": [
+          {
+            "id": "manufacturing-operations-finance",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / groups / 经营与财务",
+            "excerpt": "异常升级 · 毛利风险"
+          },
+          {
+            "id": "source-case-44",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 44"
+          },
+          {
+            "id": "source-case-45",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 45"
+          },
+          {
+            "id": "source-case-46",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 46"
+          },
+          {
+            "id": "source-case-47",
+            "title": "制造业场景全景图.html",
+            "locator": "#mfg-data / entries / 47"
+          }
+        ],
+        "cases": [
+          {
+            "id": "case-44",
+            "title": "异常分级与升级归口",
+            "roles": "管理层 · 企业负责人 · 生产",
+            "description": "中小企业没有升级机制，只有老板的微信，异常全汇到一人，难以判出哪几件今天必须管",
+            "source_refs": [
+              "source-case-44"
+            ]
+          },
+          {
+            "id": "case-45",
+            "title": "经营复盘",
+            "roles": "管理层 · 财务",
+            "description": "五个部门各交一份表、每份都对，难在无人把它们拼成一句整体经营结论",
+            "source_refs": [
+              "source-case-45"
+            ]
+          },
+          {
+            "id": "case-46",
+            "title": "利润风险提示",
+            "roles": "财务 · 管理层 · 企业负责人",
+            "description": "中小企业没人承担事中盯单毛利这个 KPI，等财务月底结账，钱已经花完了",
+            "source_refs": [
+              "source-case-46"
+            ]
+          },
+          {
+            "id": "case-47",
+            "title": "对账差异核对",
+            "roles": "财务",
+            "description": "对账难不在公式，而在客户与我方口径不同、单号不统一，还要写一份客户能接受的回函",
+            "source_refs": [
+              "source-case-47"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "team-collaboration",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            10,
+            7
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "operator",
+            "asset_id": "universal.person.manager",
+            "slot": "operator",
+            "rotation": 0,
+            "semantic_ref": "operator",
+            "action": "perform",
+            "target": "workstation"
+          },
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation",
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.77,
+              2.87,
+              0
+            ],
+            "rotation": 0,
+            "support": "workstation"
+          },
+          {
+            "id": "storage",
+            "asset_id": "universal.furniture.cabinet",
+            "slot": "storage",
+            "rotation": 0
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall",
+            "rotation": 0
+          },
+          {
+            "id": "ledger",
+            "asset_id": "universal.document.contract",
+            "position": [
+              4.49,
+              3.2600000000000002,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "ledger"
+          },
+          {
+            "id": "exception",
+            "asset_id": "universal.document.invoice",
+            "position": [
+              5.28,
+              3.64,
+              0
+            ],
+            "rotation": 90,
+            "support": "workstation",
+            "semantic_ref": "exception"
+          },
+          {
+            "id": "partner",
+            "asset_id": "universal.person.office-worker",
+            "slot": "partner",
+            "rotation": 180,
+            "semantic_ref": "partner",
+            "action": "review",
+            "target": "workstation"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "case-44",
+          "case-45",
+          "case-46",
+          "case-47"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "delivery-chain",
+      "title": "制造交付主链",
+      "scene_ids": [
+        "sales-order",
+        "product-process",
+        "planning-supply",
+        "production-quality",
+        "release-delivery",
+        "service-trace"
+      ]
+    },
+    {
+      "id": "cross-functional",
+      "title": "跨环节职能",
+      "scene_ids": [
+        "maintenance",
+        "quality-compliance",
+        "operations-finance"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "order-1",
+      "source": "sales-order",
+      "target": "product-process",
+      "label": "原图阅读顺序",
+      "kind": "reading_order",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-2",
+      "source": "product-process",
+      "target": "planning-supply",
+      "label": "原图阅读顺序",
+      "kind": "reading_order",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-3",
+      "source": "planning-supply",
+      "target": "production-quality",
+      "label": "原图阅读顺序",
+      "kind": "reading_order",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-4",
+      "source": "production-quality",
+      "target": "release-delivery",
+      "label": "原图阅读顺序",
+      "kind": "reading_order",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    },
+    {
+      "id": "order-5",
+      "source": "release-delivery",
+      "target": "service-trace",
+      "label": "原图阅读顺序",
+      "kind": "reading_order",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "scope",
+      "text": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。",
+      "source_refs": [
+        "manufacturing-overview"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "manufacturing-overview",
+      "title": "制造业场景全景图.html",
+      "locator": "#mfg-overview",
+      "excerpt": "按本地案例库「制造业」标签统计。每个案例计入一个主位置。案例数表示库内覆盖，流程为跨案例编排。"
+    },
+    {
+      "id": "manufacturing-roles",
+      "title": "制造业场景全景图.html",
+      "locator": "#mfg-roles",
+      "excerpt": "一张急单如何跨岗推进"
+    },
+    {
+      "id": "manufacturing-logic",
+      "title": "制造业场景全景图.html",
+      "locator": "#mfg-logic",
+      "excerpt": "订单接单评审怎么得出结论"
+    },
+    {
+      "id": "manufacturing-objects",
+      "title": "制造业场景全景图.html",
+      "locator": "#mfg-objects",
+      "excerpt": "用业务对象串起案例"
+    }
+  ],
+  "layers": [
+    {
+      "id": "roles",
+      "title": "岗位协作图",
+      "heading": "一张急单如何跨岗推进",
+      "sections": [
+        {
+          "title": "按交接顺序",
+          "entries": [
+            {
+              "label": "整理客户需求",
+              "participant": "销售",
+              "description": "客户单据 → 订单行、数量、期望交期"
+            },
+            {
+              "label": "订单接单评审",
+              "participant": "销售 · PMC",
+              "description": "订单、齐套、产能、在制 → 接单建议与协调事项"
+            },
+            {
+              "label": "排产与插单调整",
+              "participant": "PMC",
+              "description": "确认优先级、受影响工单与调整方案 → 更新后的排程"
+            },
+            {
+              "label": "齐套预警与来料跟催",
+              "participant": "PMC ⇄ 采购",
+              "description": "缺料项与断料时间 → 到货预测、优先跟催清单"
+            },
+            {
+              "label": "开工条件核查",
+              "participant": "生产 · PMC · 采购",
+              "description": "物料与现场准备状态 → 开工判断依据、待处理项"
+            },
+            {
+              "label": "执行偏差追踪与补产",
+              "participant": "生产 ⇄ PMC",
+              "description": "工单与报工 → 偏差、补产建议、预计完成时间"
+            },
+            {
+              "label": "交付风险评估与沟通",
+              "participant": "生产 · PMC · 销售",
+              "description": "异常批次、交期影响、备选方案 → 对客交期口径"
+            }
+          ]
+        }
+      ],
+      "note": "↶ 到货延期或产能冲突时，回到排产与交期平衡\n岗位和交接关系为示意，实际分工随工厂而异。",
+      "source_refs": [
+        "manufacturing-roles"
+      ]
+    },
+    {
+      "id": "logic",
+      "title": "场景逻辑链",
+      "heading": "订单接单评审怎么得出结论",
+      "sections": [
+        {
+          "title": "从触发到交付",
+          "entries": [
+            {
+              "label": "触发",
+              "description": "客户提出急单与期望交期"
+            },
+            {
+              "label": "汇集数据",
+              "description": "订单清单、工单清单、齐套报表、产能负荷表"
+            },
+            {
+              "label": "核查三项",
+              "description": "物料齐套、瓶颈工序产能、在制工单冲突"
+            },
+            {
+              "label": "给出建议",
+              "description": "可接单、谨慎接单、不建议接单；附证据与卡点"
+            },
+            {
+              "label": "交给岗位确认",
+              "description": "协调清单、责任岗位、时限与销售回复口径"
+            }
+          ]
+        }
+      ],
+      "note": "↶ 条件有变时，更新物料与产能数据，重新评审",
+      "source_refs": [
+        "manufacturing-logic"
+      ]
+    },
+    {
+      "id": "objects",
+      "title": "业务对象关系图",
+      "heading": "用业务对象串起案例",
+      "sections": [
+        {
+          "title": "追订单交付",
+          "entries": [
+            {
+              "label": "客户订单",
+              "description": "订单号"
+            },
+            {
+              "label": "生产工单",
+              "description": "关联订单行"
+            },
+            {
+              "label": "交付批次",
+              "description": "关联工单与批号"
+            }
+          ],
+          "note": "接单评审 · 执行偏差与补产 · 交付风险"
+        },
+        {
+          "title": "追变更影响",
+          "entries": [
+            {
+              "label": "变更通知",
+              "description": "EOL／PCN、ECN"
+            },
+            {
+              "label": "物料与 BOM",
+              "description": "料号、BOM 版本"
+            },
+            {
+              "label": "受影响订单",
+              "description": "产品、需求与在制"
+            }
+          ],
+          "note": "停产／变更影响评估 · 工程变更 · 版本一致性巡检"
+        },
+        {
+          "title": "逆查质量问题",
+          "entries": [
+            {
+              "label": "客诉记录",
+              "description": "关联成品批号"
+            },
+            {
+              "label": "成品批次",
+              "description": "关联投料记录"
+            },
+            {
+              "label": "原料批次",
+              "description": "来料批号、供应商"
+            }
+          ],
+          "note": "批次质量追溯 · 原辅料批号反查 · 供应商质量损失索赔"
+        }
+      ],
+      "note": "箭头表示查询方向。字段为示意，实际关联键以工厂台账为准。",
+      "source_refs": [
+        "manufacturing-objects"
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "planning-supply"
+  }
+}

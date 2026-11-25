@@ -1,0 +1,86 @@
+{
+  "catalog_total": 706,
+  "index_sha256": "727b86404f543c2076fc25876104170f02894c7a71f2c391a05f3a722196b258",
+  "industries": [
+    {
+      "id": "logistics",
+      "industry": "交通物流",
+      "cases": 24,
+      "scenes": 6,
+      "flow": "库存账实差异归因",
+      "handoffs": 3
+    },
+    {
+      "id": "medical-health",
+      "industry": "医疗健康",
+      "cases": 37,
+      "scenes": 8,
+      "flow": "出院随访分层排期表",
+      "handoffs": 3
+    },
+    {
+      "id": "construction-tourism",
+      "industry": "建筑文旅",
+      "cases": 24,
+      "scenes": 7,
+      "flow": "工程变更与签证留证",
+      "handoffs": 3
+    },
+    {
+      "id": "public-services",
+      "industry": "政务公共",
+      "cases": 38,
+      "scenes": 6,
+      "flow": "12345 工单智能分拨",
+      "handoffs": 3
+    },
+    {
+      "id": "education-research",
+      "industry": "教育科研",
+      "cases": 22,
+      "scenes": 6,
+      "flow": "教案课件初稿",
+      "handoffs": 3
+    },
+    {
+      "id": "digital-creative",
+      "industry": "数字创意",
+      "cases": 51,
+      "scenes": 8,
+      "flow": "字幕与剧本定稿对照校对",
+      "handoffs": 3
+    },
+    {
+      "id": "consumer-retail",
+      "industry": "消费零售",
+      "cases": 146,
+      "scenes": 11,
+      "flow": "头程入仓核对与丢件索赔",
+      "handoffs": 3
+    },
+    {
+      "id": "energy-utilities",
+      "industry": "能源公用",
+      "cases": 56,
+      "scenes": 7,
+      "flow": "水质化验日报与末梢余氯异常归因",
+      "handoffs": 3
+    },
+    {
+      "id": "universal",
+      "industry": "通用",
+      "cases": 156,
+      "scenes": 8,
+      "flow": "应收账款账龄分析与逾期预警",
+      "handoffs": 3
+    },
+    {
+      "id": "finance",
+      "industry": "金融",
+      "cases": 36,
+      "scenes": 6,
+      "flow": "理赔材料一次性告知清单",
+      "handoffs": 3
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "id": "medical-intake",
+  "type": "scenario_diorama",
+  "industry": "medical-health",
+  "title": "医疗问诊 · 主诉与资料记录",
+  "description": "医护接待人员问询来访者的主要诉求并核对其提供的既往资料，形成问询记录与交接事项。",
+  "semantic": {
+    "roles": [
+      {
+        "id": "actor",
+        "label": "医护接待人员",
+        "source_refs": [
+          "source-clinic-intake"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "perform",
+        "label": "问询来访者的主要诉求并核对其提供的既往资料",
+        "actor": "actor",
+        "target": "input",
+        "output": "result",
+        "source_refs": [
+          "source-clinic-intake"
+        ]
+      }
+    ],
+    "business_objects": [
+      {
+        "id": "input",
+        "label": "来访主诉与既往资料",
+        "source_refs": [
+          "source-clinic-intake"
+        ]
+      },
+      {
+        "id": "result",
+        "label": "问询记录与交接事项",
+        "source_refs": [
+          "source-clinic-intake"
+        ]
+      }
+    ],
+    "systems": [],
+    "source_refs": [
+      {
+        "id": "source-clinic-intake",
+        "title": "P1 医疗问诊工作行为示意",
+        "locator": "P1 自编验收用例",
+        "excerpt": "医护人员核对预约与基础信息，问询来访者的主要诉求，记录其提供的既往资料以供交接。"
+      }
+    ],
+    "cases": [
+      {
+        "id": "clinic-intake",
+        "title": "记录来访者主诉与既往资料",
+        "roles": "接待人员 · 医护人员",
+        "description": "医护人员询问来访者的主要诉求及其携带的相关资料，记录以供交接。此例为自编布局验收场景。",
+        "source_refs": [
+          "source-clinic-intake"
+        ]
+      }
+    ]
+  },
+  "scene": {
+    "template": "customer-reception",
+    "platform": {
+      "asset_id": "universal.platform.office",
+      "size": [
+        7.6,
+        4.9
+      ],
+      "height": 0.3
+    },
+    "objects": [
+      {
+        "id": "counter",
+        "asset_id": "universal.furniture.desk",
+        "slot": "counter"
+      },
+      {
+        "id": "staff",
+        "slot": "staff",
+        "asset_id": "medical-health.person.clinician",
+        "rotation": 0,
+        "semantic_ref": "actor",
+        "action": "perform"
+      },
+      {
+        "id": "visitor",
+        "asset_id": "universal.person.customer",
+        "slot": "visitor",
+        "rotation": 180
+      },
+      {
+        "id": "wall",
+        "asset_id": "universal.building.window-wall",
+        "slot": "wall"
+      },
+      {
+        "id": "chair",
+        "asset_id": "universal.furniture.chair",
+        "slot": "chair",
+        "rotation": 180
+      },
+      {
+        "id": "terminal",
+        "slot": "terminal",
+        "asset_id": "universal.electronics.computer",
+        "support": "counter",
+        "rotation": 90
+      },
+      {
+        "id": "form",
+        "slot": "form",
+        "asset_id": "universal.document.sheet",
+        "support": "counter",
+        "semantic_ref": "input",
+        "rotation": 0
+      }
+    ]
+  },
+  "interaction": {
+    "case_ids": [
+      "clinic-intake"
+    ]
+  },
+  "render": {}
+}

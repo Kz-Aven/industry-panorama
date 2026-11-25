@@ -1,0 +1,28 @@
+id: manufacturing
+name: 制造业
+version: 1.0.0
+vocabulary:
+  PMC: 生产计划与物料控制
+  BOM: 物料清单
+  ECN: 工程变更通知
+  COA: 分析证书
+  齐套: 按工单核对开工所需物料的可用情况
+  良率: 按制程和统计口径计算的合格比例
+entities: [客户订单, 生产工单, 物料, BOM版本, 批次, 检验记录, 设备, 放行记录, 报修单]
+roles: [销售, PMC, 采购, 生产, 质量, 设备维护]
+actions: [接单评审, 插单排程, 齐套检查, 机台加工, 抽样检验, 批次放行, 异常追溯, 设备检查]
+asset_mappings:
+  数控机床: [manufacturing.equipment.cnc]
+  生产线: [manufacturing.equipment.conveyor]
+  检测台: [manufacturing.equipment.inspection-bench]
+  批次样品: [manufacturing.material.sample]
+  原材料: [manufacturing.material.raw-material]
+  成品仓位: [manufacturing.equipment.rack, manufacturing.material.finished-goods]
+  排产: [universal.accessory.kanban, universal.document.order, universal.person.office-worker]
+  报修: [manufacturing.person.maintenance, manufacturing.tool.tool-cart]
+  放行: [manufacturing.person.inspector, universal.document.sheet, universal.vehicle.truck]
+templates: [single-workstation, team-collaboration, production-line, equipment-operation, warehouse, meeting-review]
+visual_constraints:
+  - 共用同一人物、设备与地面尺度。
+  - 用实际工作动作表达环节，设备型号只是视觉示意，按来源标注具体业务机制。
+  - 未提供交接证据时，连接类型使用 reading_order。

@@ -1,0 +1,496 @@
+{
+  "schema_version": "1.0.0",
+  "id": "procurement-ai-opportunity",
+  "type": "ai_opportunity_map",
+  "industry": "manufacturing",
+  "title": "AI 辅助采购 · 来料跟催机会图",
+  "description": "根据原案例展示 AI 可辅助的步骤、人工确认与场景交接。",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "procurement-input",
+      "type": "ai_opportunity_map",
+      "industry": "manufacturing",
+      "title": "汇集采购与库存资料",
+      "description": "采购整理在途单、履约记录、工单需求与库存，形成可核对的输入资料。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "actor",
+            "label": "采购",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "整理在途单、履约记录、工单需求与库存",
+            "actor": "actor",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "四份业务资料",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "可核对的输入资料",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "system",
+            "label": "采购与库存资料",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "source-procurement-followup",
+            "title": "来料跟催",
+            "locator": "【制造业·采购】来料跟催/来料跟催.md:69",
+            "uri": "%E3%80%90%E5%88%B6%E9%80%A0%E4%B8%9A%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC/%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "procurement-followup",
+            "title": "来料跟催",
+            "roles": "采购",
+            "description": "采购每天盯十几张在途单，问题不在不催，而在按逾期天数排序催错顺序，真正卡交付的那张排最后",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            8.4,
+            4.95
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation"
+          },
+          {
+            "id": "lead",
+            "slot": "lead",
+            "asset_id": "universal.person.business-staff",
+            "rotation": 0,
+            "semantic_ref": "actor",
+            "action": "perform"
+          },
+          {
+            "id": "reviewer",
+            "asset_id": "universal.person.manager",
+            "slot": "reviewer",
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall"
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "slot": "terminal",
+            "support": "workstation",
+            "rotation": 90
+          },
+          {
+            "id": "document",
+            "slot": "document",
+            "asset_id": "universal.document.sheet",
+            "support": "workstation",
+            "semantic_ref": "result",
+            "rotation": 0
+          },
+          {
+            "id": "packet",
+            "slot": "packet",
+            "asset_id": "universal.document.order",
+            "support": "workstation",
+            "semantic_ref": "input",
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "procurement-followup"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "procurement-assist",
+      "type": "ai_opportunity_map",
+      "industry": "manufacturing",
+      "title": "AI 辅助做风险初筛",
+      "description": "AI 助手汇总履约信息、估算到货缺口并草拟跟催建议，形成风险清单与话术草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "actor",
+            "label": "AI 助手",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "汇总履约信息、估算到货缺口并草拟跟催建议",
+            "actor": "actor",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "四份输入资料",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "风险清单与话术草稿",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "system",
+            "label": "AI 助手与业务数据",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "source-procurement-followup",
+            "title": "来料跟催",
+            "locator": "【制造业·采购】来料跟催/来料跟催.md:69",
+            "uri": "%E3%80%90%E5%88%B6%E9%80%A0%E4%B8%9A%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC/%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "procurement-followup",
+            "title": "来料跟催",
+            "roles": "采购",
+            "description": "采购每天盯十几张在途单，问题不在不催，而在按逾期天数排序催错顺序，真正卡交付的那张排最后",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            8.5,
+            5.3
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "console",
+            "asset_id": "universal.furniture.desk",
+            "slot": "console"
+          },
+          {
+            "id": "display",
+            "slot": "display",
+            "asset_id": "universal.electronics.display",
+            "support": "console",
+            "semantic_ref": "system"
+          },
+          {
+            "id": "form",
+            "slot": "form",
+            "asset_id": "universal.document.sheet",
+            "support": "console",
+            "semantic_ref": "input",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board"
+          },
+          {
+            "id": "lamp",
+            "asset_id": "universal.accessory.status-light",
+            "slot": "lamp"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "procurement-followup"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "procurement-review",
+      "type": "ai_opportunity_map",
+      "industry": "manufacturing",
+      "title": "采购审核跟催安排",
+      "description": "采购核对高影响事项并确认跟催口径，形成经采购确认的跟催安排。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "actor",
+            "label": "采购",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "核对高影响事项并确认跟催口径",
+            "actor": "actor",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "风险清单与话术草稿",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "经采购确认的跟催安排",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "system",
+            "label": "采购业务台账",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "source-procurement-followup",
+            "title": "来料跟催",
+            "locator": "【制造业·采购】来料跟催/来料跟催.md:69",
+            "uri": "%E3%80%90%E5%88%B6%E9%80%A0%E4%B8%9A%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC/%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "procurement-followup",
+            "title": "来料跟催",
+            "roles": "采购",
+            "description": "采购每天盯十几张在途单，问题不在不催，而在按逾期天数排序催错顺序，真正卡交付的那张排最后",
+            "source_refs": [
+              "source-procurement-followup"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            8.4,
+            4.95
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "slot": "workstation"
+          },
+          {
+            "id": "lead",
+            "slot": "lead",
+            "asset_id": "universal.person.business-staff",
+            "rotation": 0,
+            "semantic_ref": "actor",
+            "action": "perform"
+          },
+          {
+            "id": "reviewer",
+            "asset_id": "universal.person.manager",
+            "slot": "reviewer",
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall"
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "slot": "terminal",
+            "support": "workstation",
+            "rotation": 90
+          },
+          {
+            "id": "document",
+            "slot": "document",
+            "asset_id": "universal.document.sheet",
+            "support": "workstation",
+            "semantic_ref": "result",
+            "rotation": 0
+          },
+          {
+            "id": "packet",
+            "slot": "packet",
+            "asset_id": "universal.document.order",
+            "support": "workstation",
+            "semantic_ref": "input",
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "procurement-followup"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "workflow",
+      "title": "来料风险处理",
+      "scene_ids": [
+        "procurement-input",
+        "procurement-assist",
+        "procurement-review"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "flow-1",
+      "source": "procurement-input",
+      "target": "procurement-assist",
+      "label": "采购与库存资料",
+      "kind": "flow",
+      "source_refs": [
+        "source-procurement-followup"
+      ]
+    },
+    {
+      "id": "flow-2",
+      "source": "procurement-assist",
+      "target": "procurement-review",
+      "label": "风险清单与草稿",
+      "kind": "flow",
+      "source_refs": [
+        "source-procurement-followup"
+      ]
+    }
+  ],
+  "annotations": [],
+  "source_refs": [
+    {
+      "id": "source-procurement-followup",
+      "title": "来料跟催",
+      "locator": "【制造业·采购】来料跟催/来料跟催.md:69",
+      "uri": "%E3%80%90%E5%88%B6%E9%80%A0%E4%B8%9A%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC/%E6%9D%A5%E6%96%99%E8%B7%9F%E5%82%AC.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "steps",
+      "title": "步骤与交接",
+      "source_refs": [
+        "source-procurement-followup"
+      ],
+      "sections": [
+        {
+          "title": "原案例步骤",
+          "entries": [
+            {
+              "label": "输入资料",
+              "description": "以在途采购单、供应商履约台账、工单需求计划和库存快照为依据。"
+            },
+            {
+              "label": "AI 辅助整理",
+              "description": "归纳履约情况，估算到货日和断料缺口，形成分级及跟催草稿。"
+            },
+            {
+              "label": "人工核对",
+              "description": "采购核对高影响事项、缺项和沟通口径，再确认处理安排。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

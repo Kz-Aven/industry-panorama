@@ -1,0 +1,1085 @@
+{
+  "atlas_id": "information-technology-atlas",
+  "title": "信息技术场景全景图",
+  "description": "场景案例库 · 50 个信息技术案例 · 按实际工作场景归入 9 个节点",
+  "target": "Abrar74774/FossFLOW@v1.0.6",
+  "view_id": "information-technology-atlas",
+  "sprite": {
+    "size": 640,
+    "anchor": [
+      320,
+      320
+    ],
+    "scale": 2.5
+  },
+  "zones": [
+    {
+      "id": "product-delivery",
+      "fossflow_region_id": "zone-product-delivery",
+      "title": "售前、产品与研发",
+      "scene_ids": [
+        "sales",
+        "product",
+        "development"
+      ]
+    },
+    {
+      "id": "run-service",
+      "fossflow_region_id": "zone-run-service",
+      "title": "交付、运行与技术支持",
+      "scene_ids": [
+        "delivery",
+        "datacenter",
+        "incident"
+      ]
+    },
+    {
+      "id": "operations-compliance",
+      "fossflow_region_id": "zone-operations-compliance",
+      "title": "客服、经营与合规",
+      "scene_ids": [
+        "service",
+        "operations",
+        "compliance"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "sales",
+      "fossflow_item_id": "sales",
+      "fossflow_icon_id": "art-sales",
+      "title": "售前与商机",
+      "description": "销售与技术支持核对历史应答和承诺依据，形成RFP 应答初稿。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-c1d43a59386fe384",
+          "title": "客户 POC 测试报告 —— 测试跑完那天出报告，而不是跑完两周后",
+          "roles": "技术支持 · 销售",
+          "description": "POC 测试数据散在微信截图和个人电脑里，拼报告的时间比跑测试还长",
+          "source_refs": [
+            "source-it-c1d43a59386fe384"
+          ]
+        },
+        {
+          "id": "it-eda6a53ecf0e9aea",
+          "title": "RFP 应答初稿与错承诺拦截 —— 八成题答过，要命的是没答过还敢承诺",
+          "roles": "销售",
+          "description": "单份 RFP 平均投入 32 小时、7 人参与，其中八成问题在上一份标书里已答过",
+          "source_refs": [
+            "source-it-eda6a53ecf0e9aea"
+          ]
+        },
+        {
+          "id": "it-7b649e5bd44cf797",
+          "title": "政企解决方案初稿 —— 上次给中医院怎么报价的，这次还要再问一遍吗",
+          "roles": "销售",
+          "description": "方案模板网上一搜一大把，本省案例库却只存在老师傅的脑子里",
+          "source_refs": [
+            "source-it-7b649e5bd44cf797"
+          ]
+        },
+        {
+          "id": "it-a18d97c11abc92dd",
+          "title": "竞品对比矩阵与讲标弹药 —— 客户拿着竞品报价单逐条对问的那一刻",
+          "roles": "销售",
+          "description": "加急竞品专项需 3-5 人 × 3 天约 1.4 万元，而讲标答辩仅有 30 秒反应时间",
+          "source_refs": [
+            "source-it-a18d97c11abc92dd"
+          ]
+        },
+        {
+          "id": "it-defab01d01d79661",
+          "title": "集采标书合规检查 —— 37% 的废标出在签章，不出在文笔",
+          "roles": "销售",
+          "description": "评审席上已经坐上了 AI，投标席上还在靠人眼盯小签",
+          "source_refs": [
+            "source-it-defab01d01d79661"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-c1d43a59386fe384",
+          "title": "客户 POC 测试报告 —— 测试跑完那天出报告，而不是跑完两周后",
+          "locator": "【信息技术·技术支持·销售】客户 POC 测试报告 —— 测试跑完那天出报告，而不是跑完两周后/客户 POC 测试报告 —— 测试跑完那天出报告，而不是跑完两周后.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%AE%A2%E6%88%B7%20POC%20%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%B5%8B%E8%AF%95%E8%B7%91%E5%AE%8C%E9%82%A3%E5%A4%A9%E5%87%BA%E6%8A%A5%E5%91%8A%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E8%B7%91%E5%AE%8C%E4%B8%A4%E5%91%A8%E5%90%8E/%E5%AE%A2%E6%88%B7%20POC%20%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%B5%8B%E8%AF%95%E8%B7%91%E5%AE%8C%E9%82%A3%E5%A4%A9%E5%87%BA%E6%8A%A5%E5%91%8A%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E8%B7%91%E5%AE%8C%E4%B8%A4%E5%91%A8%E5%90%8E.md"
+        },
+        {
+          "id": "source-it-eda6a53ecf0e9aea",
+          "title": "RFP 应答初稿与错承诺拦截 —— 八成题答过，要命的是没答过还敢承诺",
+          "locator": "【信息技术·销售】RFP 应答初稿与错承诺拦截 —— 八成题答过，要命的是没答过还敢承诺/RFP 应答初稿与错承诺拦截 —— 八成题答过，要命的是没答过还敢承诺.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E9%94%80%E5%94%AE%E3%80%91RFP%20%E5%BA%94%E7%AD%94%E5%88%9D%E7%A8%BF%E4%B8%8E%E9%94%99%E6%89%BF%E8%AF%BA%E6%8B%A6%E6%88%AA%20%E2%80%94%E2%80%94%20%E5%85%AB%E6%88%90%E9%A2%98%E7%AD%94%E8%BF%87%EF%BC%8C%E8%A6%81%E5%91%BD%E7%9A%84%E6%98%AF%E6%B2%A1%E7%AD%94%E8%BF%87%E8%BF%98%E6%95%A2%E6%89%BF%E8%AF%BA/RFP%20%E5%BA%94%E7%AD%94%E5%88%9D%E7%A8%BF%E4%B8%8E%E9%94%99%E6%89%BF%E8%AF%BA%E6%8B%A6%E6%88%AA%20%E2%80%94%E2%80%94%20%E5%85%AB%E6%88%90%E9%A2%98%E7%AD%94%E8%BF%87%EF%BC%8C%E8%A6%81%E5%91%BD%E7%9A%84%E6%98%AF%E6%B2%A1%E7%AD%94%E8%BF%87%E8%BF%98%E6%95%A2%E6%89%BF%E8%AF%BA.md"
+        },
+        {
+          "id": "source-it-7b649e5bd44cf797",
+          "title": "政企解决方案初稿 —— 上次给中医院怎么报价的，这次还要再问一遍吗",
+          "locator": "【信息技术·销售】政企解决方案初稿 —— 上次给中医院怎么报价的，这次还要再问一遍吗/政企解决方案初稿 —— 上次给中医院怎么报价的，这次还要再问一遍吗.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%94%BF%E4%BC%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%B8%8A%E6%AC%A1%E7%BB%99%E4%B8%AD%E5%8C%BB%E9%99%A2%E6%80%8E%E4%B9%88%E6%8A%A5%E4%BB%B7%E7%9A%84%EF%BC%8C%E8%BF%99%E6%AC%A1%E8%BF%98%E8%A6%81%E5%86%8D%E9%97%AE%E4%B8%80%E9%81%8D%E5%90%97/%E6%94%BF%E4%BC%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%B8%8A%E6%AC%A1%E7%BB%99%E4%B8%AD%E5%8C%BB%E9%99%A2%E6%80%8E%E4%B9%88%E6%8A%A5%E4%BB%B7%E7%9A%84%EF%BC%8C%E8%BF%99%E6%AC%A1%E8%BF%98%E8%A6%81%E5%86%8D%E9%97%AE%E4%B8%80%E9%81%8D%E5%90%97.md"
+        },
+        {
+          "id": "source-it-a18d97c11abc92dd",
+          "title": "竞品对比矩阵与讲标弹药 —— 客户拿着竞品报价单逐条对问的那一刻",
+          "locator": "【信息技术·销售】竞品对比矩阵与讲标弹药 —— 客户拿着竞品报价单逐条对问的那一刻/竞品对比矩阵与讲标弹药 —— 客户拿着竞品报价单逐条对问的那一刻.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%AB%9E%E5%93%81%E5%AF%B9%E6%AF%94%E7%9F%A9%E9%98%B5%E4%B8%8E%E8%AE%B2%E6%A0%87%E5%BC%B9%E8%8D%AF%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E6%8B%BF%E7%9D%80%E7%AB%9E%E5%93%81%E6%8A%A5%E4%BB%B7%E5%8D%95%E9%80%90%E6%9D%A1%E5%AF%B9%E9%97%AE%E7%9A%84%E9%82%A3%E4%B8%80%E5%88%BB/%E7%AB%9E%E5%93%81%E5%AF%B9%E6%AF%94%E7%9F%A9%E9%98%B5%E4%B8%8E%E8%AE%B2%E6%A0%87%E5%BC%B9%E8%8D%AF%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E6%8B%BF%E7%9D%80%E7%AB%9E%E5%93%81%E6%8A%A5%E4%BB%B7%E5%8D%95%E9%80%90%E6%9D%A1%E5%AF%B9%E9%97%AE%E7%9A%84%E9%82%A3%E4%B8%80%E5%88%BB.md"
+        },
+        {
+          "id": "source-it-defab01d01d79661",
+          "title": "集采标书合规检查 —— 37% 的废标出在签章，不出在文笔",
+          "locator": "【信息技术·销售】集采标书合规检查 —— 37% 的废标出在签章，不出在文笔/集采标书合规检查 —— 37% 的废标出在签章，不出在文笔.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E9%9B%86%E9%87%87%E6%A0%87%E4%B9%A6%E5%90%88%E8%A7%84%E6%A3%80%E6%9F%A5%20%E2%80%94%E2%80%94%2037%25%20%E7%9A%84%E5%BA%9F%E6%A0%87%E5%87%BA%E5%9C%A8%E7%AD%BE%E7%AB%A0%EF%BC%8C%E4%B8%8D%E5%87%BA%E5%9C%A8%E6%96%87%E7%AC%94/%E9%9B%86%E9%87%87%E6%A0%87%E4%B9%A6%E5%90%88%E8%A7%84%E6%A3%80%E6%9F%A5%20%E2%80%94%E2%80%94%2037%25%20%E7%9A%84%E5%BA%9F%E6%A0%87%E5%87%BA%E5%9C%A8%E7%AD%BE%E7%AB%A0%EF%BC%8C%E4%B8%8D%E5%87%BA%E5%9C%A8%E6%96%87%E7%AC%94.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "universal.document.sheet",
+        "universal.person.business-staff",
+        "universal.person.technician",
+        "universal.accessory.kanban",
+        "universal.building.window-wall"
+      ]
+    },
+    {
+      "scene_id": "product",
+      "fossflow_item_id": "product",
+      "fossflow_icon_id": "art-product",
+      "title": "需求与产品",
+      "description": "产品收口多源反馈并识别同一需求，形成需求池去重结果。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-ad5df787b3001288",
+          "title": "基于自有需求库的 PRD 初稿 —— 评审会 3 小时，八成时间耗在信息对齐",
+          "roles": "产品",
+          "description": "每场需求评审会 3 小时以上，八成时间耗在补背景、对数据、讲竞品，留给决策的时间反而所剩无几",
+          "source_refs": [
+            "source-it-ad5df787b3001288"
+          ]
+        },
+        {
+          "id": "it-a11c30b0fd9a9af5",
+          "title": "数值改动影响面清单 —— 砍一个系数之前，把六个系统、三类玩家和上一次事故都摆上桌",
+          "roles": "产品",
+          "description": "改一个系数只需一分钟，搞清这个系数关联哪六张表，从未有一次能在一小时内完成",
+          "source_refs": [
+            "source-it-a11c30b0fd9a9af5"
+          ]
+        },
+        {
+          "id": "it-09c8e99fd1cde8a3",
+          "title": "版本文案五处一致性核对 —— 公告 3,847 字不短，漏的那两条最要命",
+          "roles": "产品",
+          "description": "公告写了 3,847 字无人嫌短，洛克王国写了 3 万字照样评分崩盘——问题从不是字数，而是漏了必须写的条目",
+          "source_refs": [
+            "source-it-09c8e99fd1cde8a3"
+          ]
+        },
+        {
+          "id": "it-487338bbf4b4a493",
+          "title": "需求池多源收口与语义去重 —— 「深色主题」从三个渠道进来就是三条记录",
+          "roles": "产品",
+          "description": "PM 每周花 12+ 小时收集管理反馈，同一个需求换个说法就成了三条记录",
+          "source_refs": [
+            "source-it-487338bbf4b4a493"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-ad5df787b3001288",
+          "title": "基于自有需求库的 PRD 初稿 —— 评审会 3 小时，八成时间耗在信息对齐",
+          "locator": "【信息技术·产品】基于自有需求库的 PRD 初稿 —— 评审会 3 小时，八成时间耗在信息对齐/基于自有需求库的 PRD 初稿 —— 评审会 3 小时，八成时间耗在信息对齐.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E5%9F%BA%E4%BA%8E%E8%87%AA%E6%9C%89%E9%9C%80%E6%B1%82%E5%BA%93%E7%9A%84%20PRD%20%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E8%AF%84%E5%AE%A1%E4%BC%9A%203%20%E5%B0%8F%E6%97%B6%EF%BC%8C%E5%85%AB%E6%88%90%E6%97%B6%E9%97%B4%E8%80%97%E5%9C%A8%E4%BF%A1%E6%81%AF%E5%AF%B9%E9%BD%90/%E5%9F%BA%E4%BA%8E%E8%87%AA%E6%9C%89%E9%9C%80%E6%B1%82%E5%BA%93%E7%9A%84%20PRD%20%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E8%AF%84%E5%AE%A1%E4%BC%9A%203%20%E5%B0%8F%E6%97%B6%EF%BC%8C%E5%85%AB%E6%88%90%E6%97%B6%E9%97%B4%E8%80%97%E5%9C%A8%E4%BF%A1%E6%81%AF%E5%AF%B9%E9%BD%90.md"
+        },
+        {
+          "id": "source-it-a11c30b0fd9a9af5",
+          "title": "数值改动影响面清单 —— 砍一个系数之前，把六个系统、三类玩家和上一次事故都摆上桌",
+          "locator": "【信息技术·产品】数值改动影响面清单 —— 砍一个系数之前，把六个系统、三类玩家和上一次事故都摆上桌/数值改动影响面清单 —— 砍一个系数之前，把六个系统、三类玩家和上一次事故都摆上桌.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E6%95%B0%E5%80%BC%E6%94%B9%E5%8A%A8%E5%BD%B1%E5%93%8D%E9%9D%A2%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E7%A0%8D%E4%B8%80%E4%B8%AA%E7%B3%BB%E6%95%B0%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E5%85%AD%E4%B8%AA%E7%B3%BB%E7%BB%9F%E3%80%81%E4%B8%89%E7%B1%BB%E7%8E%A9%E5%AE%B6%E5%92%8C%E4%B8%8A%E4%B8%80%E6%AC%A1%E4%BA%8B%E6%95%85%E9%83%BD%E6%91%86%E4%B8%8A%E6%A1%8C/%E6%95%B0%E5%80%BC%E6%94%B9%E5%8A%A8%E5%BD%B1%E5%93%8D%E9%9D%A2%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E7%A0%8D%E4%B8%80%E4%B8%AA%E7%B3%BB%E6%95%B0%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E5%85%AD%E4%B8%AA%E7%B3%BB%E7%BB%9F%E3%80%81%E4%B8%89%E7%B1%BB%E7%8E%A9%E5%AE%B6%E5%92%8C%E4%B8%8A%E4%B8%80%E6%AC%A1%E4%BA%8B%E6%95%85%E9%83%BD%E6%91%86%E4%B8%8A%E6%A1%8C.md"
+        },
+        {
+          "id": "source-it-09c8e99fd1cde8a3",
+          "title": "版本文案五处一致性核对 —— 公告 3,847 字不短，漏的那两条最要命",
+          "locator": "【信息技术·产品】版本文案五处一致性核对 —— 公告 3,847 字不短，漏的那两条最要命/版本文案五处一致性核对 —— 公告 3,847 字不短，漏的那两条最要命.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E7%89%88%E6%9C%AC%E6%96%87%E6%A1%88%E4%BA%94%E5%A4%84%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%85%AC%E5%91%8A%203,847%20%E5%AD%97%E4%B8%8D%E7%9F%AD%EF%BC%8C%E6%BC%8F%E7%9A%84%E9%82%A3%E4%B8%A4%E6%9D%A1%E6%9C%80%E8%A6%81%E5%91%BD/%E7%89%88%E6%9C%AC%E6%96%87%E6%A1%88%E4%BA%94%E5%A4%84%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%85%AC%E5%91%8A%203,847%20%E5%AD%97%E4%B8%8D%E7%9F%AD%EF%BC%8C%E6%BC%8F%E7%9A%84%E9%82%A3%E4%B8%A4%E6%9D%A1%E6%9C%80%E8%A6%81%E5%91%BD.md"
+        },
+        {
+          "id": "source-it-487338bbf4b4a493",
+          "title": "需求池多源收口与语义去重 —— 「深色主题」从三个渠道进来就是三条记录",
+          "locator": "【信息技术·产品】需求池多源收口与语义去重 —— 「深色主题」从三个渠道进来就是三条记录/需求池多源收口与语义去重 —— 「深色主题」从三个渠道进来就是三条记录.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E4%BA%A7%E5%93%81%E3%80%91%E9%9C%80%E6%B1%82%E6%B1%A0%E5%A4%9A%E6%BA%90%E6%94%B6%E5%8F%A3%E4%B8%8E%E8%AF%AD%E4%B9%89%E5%8E%BB%E9%87%8D%20%E2%80%94%E2%80%94%20%E3%80%8C%E6%B7%B1%E8%89%B2%E4%B8%BB%E9%A2%98%E3%80%8D%E4%BB%8E%E4%B8%89%E4%B8%AA%E6%B8%A0%E9%81%93%E8%BF%9B%E6%9D%A5%E5%B0%B1%E6%98%AF%E4%B8%89%E6%9D%A1%E8%AE%B0%E5%BD%95/%E9%9C%80%E6%B1%82%E6%B1%A0%E5%A4%9A%E6%BA%90%E6%94%B6%E5%8F%A3%E4%B8%8E%E8%AF%AD%E4%B9%89%E5%8E%BB%E9%87%8D%20%E2%80%94%E2%80%94%20%E3%80%8C%E6%B7%B1%E8%89%B2%E4%B8%BB%E9%A2%98%E3%80%8D%E4%BB%8E%E4%B8%89%E4%B8%AA%E6%B8%A0%E9%81%93%E8%BF%9B%E6%9D%A5%E5%B0%B1%E6%98%AF%E4%B8%89%E6%9D%A1%E8%AE%B0%E5%BD%95.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "universal.document.sheet",
+        "universal.person.office-worker",
+        "universal.accessory.kanban",
+        "universal.building.window-wall"
+      ]
+    },
+    {
+      "scene_id": "development",
+      "fossflow_item_id": "development",
+      "fossflow_icon_id": "art-development",
+      "title": "研发与发布",
+      "description": "研发核对接口实现与文档差异，形成文档差异清单。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-802e65925bdbc1a2",
+          "title": "API 文档与代码同步巡检 —— 75% 的生产 API 和它们的规范对不上",
+          "roles": "研发",
+          "description": "44% 的开发者只能直接翻源码理解 API 行为，过时文档的欠账，在客户联调受阻那一刻集中到期",
+          "source_refs": [
+            "source-it-802e65925bdbc1a2"
+          ]
+        },
+        {
+          "id": "it-3406841593191c19",
+          "title": "发布说明与迁移指南起草 —— 发了 changelog 不等于更新了文档，这是两件事",
+          "roles": "研发",
+          "description": "Stripe 给 12 个月迁移期，「发了条 changelog 就当文档更新完了」却是全行业的默认操作",
+          "source_refs": [
+            "source-it-3406841593191c19"
+          ]
+        },
+        {
+          "id": "it-94f07b36b5452def",
+          "title": "术语表驱动的本地化复核 —— 同一个技能，两个英文名，玩家只会在差评里告诉你",
+          "roles": "运营",
+          "description": "DeepL 人人会用，自家术语表只有自己掌握——但术语表自身版本混乱时，无人察觉",
+          "source_refs": [
+            "source-it-94f07b36b5452def"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-802e65925bdbc1a2",
+          "title": "API 文档与代码同步巡检 —— 75% 的生产 API 和它们的规范对不上",
+          "locator": "【信息技术·研发】API 文档与代码同步巡检 —— 75% 的生产 API 和它们的规范对不上/API 文档与代码同步巡检 —— 75% 的生产 API 和它们的规范对不上.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%A0%94%E5%8F%91%E3%80%91API%20%E6%96%87%E6%A1%A3%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%90%8C%E6%AD%A5%E5%B7%A1%E6%A3%80%20%E2%80%94%E2%80%94%2075%25%20%E7%9A%84%E7%94%9F%E4%BA%A7%20API%20%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E8%A7%84%E8%8C%83%E5%AF%B9%E4%B8%8D%E4%B8%8A/API%20%E6%96%87%E6%A1%A3%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%90%8C%E6%AD%A5%E5%B7%A1%E6%A3%80%20%E2%80%94%E2%80%94%2075%25%20%E7%9A%84%E7%94%9F%E4%BA%A7%20API%20%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E8%A7%84%E8%8C%83%E5%AF%B9%E4%B8%8D%E4%B8%8A.md"
+        },
+        {
+          "id": "source-it-3406841593191c19",
+          "title": "发布说明与迁移指南起草 —— 发了 changelog 不等于更新了文档，这是两件事",
+          "locator": "【信息技术·研发】发布说明与迁移指南起草 —— 发了 changelog 不等于更新了文档，这是两件事/发布说明与迁移指南起草 —— 发了 changelog 不等于更新了文档，这是两件事.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E%E4%B8%8E%E8%BF%81%E7%A7%BB%E6%8C%87%E5%8D%97%E8%B5%B7%E8%8D%89%20%E2%80%94%E2%80%94%20%E5%8F%91%E4%BA%86%20changelog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%E6%9B%B4%E6%96%B0%E4%BA%86%E6%96%87%E6%A1%A3%EF%BC%8C%E8%BF%99%E6%98%AF%E4%B8%A4%E4%BB%B6%E4%BA%8B/%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E%E4%B8%8E%E8%BF%81%E7%A7%BB%E6%8C%87%E5%8D%97%E8%B5%B7%E8%8D%89%20%E2%80%94%E2%80%94%20%E5%8F%91%E4%BA%86%20changelog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%E6%9B%B4%E6%96%B0%E4%BA%86%E6%96%87%E6%A1%A3%EF%BC%8C%E8%BF%99%E6%98%AF%E4%B8%A4%E4%BB%B6%E4%BA%8B.md"
+        },
+        {
+          "id": "source-it-94f07b36b5452def",
+          "title": "术语表驱动的本地化复核 —— 同一个技能，两个英文名，玩家只会在差评里告诉你",
+          "locator": "【信息技术·运营】术语表驱动的本地化复核 —— 同一个技能，两个英文名，玩家只会在差评里告诉你/术语表驱动的本地化复核 —— 同一个技能，两个英文名，玩家只会在差评里告诉你.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%9C%AF%E8%AF%AD%E8%A1%A8%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%A4%8D%E6%A0%B8%20%E2%80%94%E2%80%94%20%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8A%80%E8%83%BD%EF%BC%8C%E4%B8%A4%E4%B8%AA%E8%8B%B1%E6%96%87%E5%90%8D%EF%BC%8C%E7%8E%A9%E5%AE%B6%E5%8F%AA%E4%BC%9A%E5%9C%A8%E5%B7%AE%E8%AF%84%E9%87%8C%E5%91%8A%E8%AF%89%E4%BD%A0/%E6%9C%AF%E8%AF%AD%E8%A1%A8%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%A4%8D%E6%A0%B8%20%E2%80%94%E2%80%94%20%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8A%80%E8%83%BD%EF%BC%8C%E4%B8%A4%E4%B8%AA%E8%8B%B1%E6%96%87%E5%90%8D%EF%BC%8C%E7%8E%A9%E5%AE%B6%E5%8F%AA%E4%BC%9A%E5%9C%A8%E5%B7%AE%E8%AF%84%E9%87%8C%E5%91%8A%E8%AF%89%E4%BD%A0.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.desk",
+        "universal.electronics.computer",
+        "universal.document.sheet",
+        "universal.person.technician",
+        "universal.building.window-wall",
+        "universal.furniture.cabinet"
+      ]
+    },
+    {
+      "scene_id": "delivery",
+      "fossflow_item_id": "delivery",
+      "fossflow_icon_id": "art-delivery",
+      "title": "实施与验收",
+      "description": "运营逐项核对需求书功能及交付证据，形成验收核对清单。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-77b3b3bd2edddb83",
+          "title": "割接方案初稿与审批链校验 —— 历史方案是私有资产，别再从空白文档写起",
+          "roles": "生产 · 技术支持",
+          "description": "割接文档模板全网都在流传，每个机房的坑只有自己知道",
+          "source_refs": [
+            "source-it-77b3b3bd2edddb83"
+          ]
+        },
+        {
+          "id": "it-213a834a4220a37a",
+          "title": "代维服务月报 —— 被甲方点名「月报质量不高」之后",
+          "roles": "运营",
+          "description": "工单都留存于系统里，月报却要月底熬夜手写",
+          "source_refs": [
+            "source-it-213a834a4220a37a"
+          ]
+        },
+        {
+          "id": "it-361e802dee4ad343",
+          "title": "实施日志归档与延期归因 —— 37 天延期，21 天是客户的、11 天是变更的、5 天认回来",
+          "roles": "运营",
+          "description": "延期罚金每周 0.5%-1%、上限合同额 10%，归因每错一天，都是真金白银",
+          "source_refs": [
+            "source-it-361e802dee4ad343"
+          ]
+        },
+        {
+          "id": "it-a93e07fe77b85c9e",
+          "title": "考核扣分对账 —— 被扣的每一分都要能对上工单号",
+          "roles": "运营",
+          "description": "扣分单上只有条款和分数，证据散在割接方案、故障报告和两套工单系统里",
+          "source_refs": [
+            "source-it-a93e07fe77b85c9e"
+          ]
+        },
+        {
+          "id": "it-71d8e92160551303",
+          "title": "验收报告初稿与功能点核对 —— 72 个功能点逐项对，5 项不达标各有各的处置",
+          "roles": "运营",
+          "description": "法院的验收判定框架只有一句话：需求书功能点逐项是否实现，多数团队的核对表却在验收前夜才拼出来",
+          "source_refs": [
+            "source-it-71d8e92160551303"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-77b3b3bd2edddb83",
+          "title": "割接方案初稿与审批链校验 —— 历史方案是私有资产，别再从空白文档写起",
+          "locator": "【信息技术·生产·技术支持】割接方案初稿与审批链校验 —— 历史方案是私有资产，别再从空白文档写起/割接方案初稿与审批链校验 —— 历史方案是私有资产，别再从空白文档写起.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E3%80%91%E5%89%B2%E6%8E%A5%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%E4%B8%8E%E5%AE%A1%E6%89%B9%E9%93%BE%E6%A0%A1%E9%AA%8C%20%E2%80%94%E2%80%94%20%E5%8E%86%E5%8F%B2%E6%96%B9%E6%A1%88%E6%98%AF%E7%A7%81%E6%9C%89%E8%B5%84%E4%BA%A7%EF%BC%8C%E5%88%AB%E5%86%8D%E4%BB%8E%E7%A9%BA%E7%99%BD%E6%96%87%E6%A1%A3%E5%86%99%E8%B5%B7/%E5%89%B2%E6%8E%A5%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF%E4%B8%8E%E5%AE%A1%E6%89%B9%E9%93%BE%E6%A0%A1%E9%AA%8C%20%E2%80%94%E2%80%94%20%E5%8E%86%E5%8F%B2%E6%96%B9%E6%A1%88%E6%98%AF%E7%A7%81%E6%9C%89%E8%B5%84%E4%BA%A7%EF%BC%8C%E5%88%AB%E5%86%8D%E4%BB%8E%E7%A9%BA%E7%99%BD%E6%96%87%E6%A1%A3%E5%86%99%E8%B5%B7.md"
+        },
+        {
+          "id": "source-it-213a834a4220a37a",
+          "title": "代维服务月报 —— 被甲方点名「月报质量不高」之后",
+          "locator": "【信息技术·运营】代维服务月报 —— 被甲方点名「月报质量不高」之后/代维服务月报 —— 被甲方点名「月报质量不高」之后.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BB%A3%E7%BB%B4%E6%9C%8D%E5%8A%A1%E6%9C%88%E6%8A%A5%20%E2%80%94%E2%80%94%20%E8%A2%AB%E7%94%B2%E6%96%B9%E7%82%B9%E5%90%8D%E3%80%8C%E6%9C%88%E6%8A%A5%E8%B4%A8%E9%87%8F%E4%B8%8D%E9%AB%98%E3%80%8D%E4%B9%8B%E5%90%8E/%E4%BB%A3%E7%BB%B4%E6%9C%8D%E5%8A%A1%E6%9C%88%E6%8A%A5%20%E2%80%94%E2%80%94%20%E8%A2%AB%E7%94%B2%E6%96%B9%E7%82%B9%E5%90%8D%E3%80%8C%E6%9C%88%E6%8A%A5%E8%B4%A8%E9%87%8F%E4%B8%8D%E9%AB%98%E3%80%8D%E4%B9%8B%E5%90%8E.md"
+        },
+        {
+          "id": "source-it-361e802dee4ad343",
+          "title": "实施日志归档与延期归因 —— 37 天延期，21 天是客户的、11 天是变更的、5 天认回来",
+          "locator": "【信息技术·运营】实施日志归档与延期归因 —— 37 天延期，21 天是客户的、11 天是变更的、5 天认回来/实施日志归档与延期归因 —— 37 天延期，21 天是客户的、11 天是变更的、5 天认回来.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%AE%9E%E6%96%BD%E6%97%A5%E5%BF%97%E5%BD%92%E6%A1%A3%E4%B8%8E%E5%BB%B6%E6%9C%9F%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%2037%20%E5%A4%A9%E5%BB%B6%E6%9C%9F%EF%BC%8C21%20%E5%A4%A9%E6%98%AF%E5%AE%A2%E6%88%B7%E7%9A%84%E3%80%8111%20%E5%A4%A9%E6%98%AF%E5%8F%98%E6%9B%B4%E7%9A%84%E3%80%815%20%E5%A4%A9%E8%AE%A4%E5%9B%9E%E6%9D%A5/%E5%AE%9E%E6%96%BD%E6%97%A5%E5%BF%97%E5%BD%92%E6%A1%A3%E4%B8%8E%E5%BB%B6%E6%9C%9F%E5%BD%92%E5%9B%A0%20%E2%80%94%E2%80%94%2037%20%E5%A4%A9%E5%BB%B6%E6%9C%9F%EF%BC%8C21%20%E5%A4%A9%E6%98%AF%E5%AE%A2%E6%88%B7%E7%9A%84%E3%80%8111%20%E5%A4%A9%E6%98%AF%E5%8F%98%E6%9B%B4%E7%9A%84%E3%80%815%20%E5%A4%A9%E8%AE%A4%E5%9B%9E%E6%9D%A5.md"
+        },
+        {
+          "id": "source-it-a93e07fe77b85c9e",
+          "title": "考核扣分对账 —— 被扣的每一分都要能对上工单号",
+          "locator": "【信息技术·运营】考核扣分对账 —— 被扣的每一分都要能对上工单号/考核扣分对账 —— 被扣的每一分都要能对上工单号.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E8%80%83%E6%A0%B8%E6%89%A3%E5%88%86%E5%AF%B9%E8%B4%A6%20%E2%80%94%E2%80%94%20%E8%A2%AB%E6%89%A3%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%86%E9%83%BD%E8%A6%81%E8%83%BD%E5%AF%B9%E4%B8%8A%E5%B7%A5%E5%8D%95%E5%8F%B7/%E8%80%83%E6%A0%B8%E6%89%A3%E5%88%86%E5%AF%B9%E8%B4%A6%20%E2%80%94%E2%80%94%20%E8%A2%AB%E6%89%A3%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%86%E9%83%BD%E8%A6%81%E8%83%BD%E5%AF%B9%E4%B8%8A%E5%B7%A5%E5%8D%95%E5%8F%B7.md"
+        },
+        {
+          "id": "source-it-71d8e92160551303",
+          "title": "验收报告初稿与功能点核对 —— 72 个功能点逐项对，5 项不达标各有各的处置",
+          "locator": "【信息技术·运营】验收报告初稿与功能点核对 —— 72 个功能点逐项对，5 项不达标各有各的处置/验收报告初稿与功能点核对 —— 72 个功能点逐项对，5 项不达标各有各的处置.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%AA%8C%E6%94%B6%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%E4%B8%8E%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%2072%20%E4%B8%AA%E5%8A%9F%E8%83%BD%E7%82%B9%E9%80%90%E9%A1%B9%E5%AF%B9%EF%BC%8C5%20%E9%A1%B9%E4%B8%8D%E8%BE%BE%E6%A0%87%E5%90%84%E6%9C%89%E5%90%84%E7%9A%84%E5%A4%84%E7%BD%AE/%E9%AA%8C%E6%94%B6%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%E4%B8%8E%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%2072%20%E4%B8%AA%E5%8A%9F%E8%83%BD%E7%82%B9%E9%80%90%E9%A1%B9%E5%AF%B9%EF%BC%8C5%20%E9%A1%B9%E4%B8%8D%E8%BE%BE%E6%A0%87%E5%90%84%E6%9C%89%E5%90%84%E7%9A%84%E5%A4%84%E7%BD%AE.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "universal.document.sheet",
+        "universal.person.manager",
+        "universal.accessory.kanban",
+        "universal.building.window-wall"
+      ]
+    },
+    {
+      "scene_id": "incident",
+      "fossflow_item_id": "incident",
+      "fossflow_icon_id": "art-incident",
+      "title": "值班与故障复盘",
+      "description": "技术支持对齐告警记录与故障处置流水，形成故障处置报告初稿。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-1c368c6361132ff0",
+          "title": "值班交接班日志 —— 夜班 3 点处理的事，不该在交接本上只剩一行字",
+          "roles": "技术支持 · 生产",
+          "description": "交接班记录本平时无人翻阅，出了事故追责时所有人都想翻它",
+          "source_refs": [
+            "source-it-1c368c6361132ff0"
+          ]
+        },
+        {
+          "id": "it-112390760aeb9580",
+          "title": "故障 RCA 复盘报告初稿 —— 合同给你的 24 小时，不该用来翻聊天记录",
+          "roles": "技术支持 · 生产",
+          "description": "规范要求 24 小时内出 RCA，现实是故障一处理完就投入下一起处置",
+          "source_refs": [
+            "source-it-112390760aeb9580"
+          ]
+        },
+        {
+          "id": "it-4fb9c1e4c26d0d74",
+          "title": "故障处置报告初稿 —— 从工单流水与告警记录里攒证据，不从空白文档里写起",
+          "roles": "技术支持 · 生产",
+          "description": "处置事件只花一小时，攒证据写报告却要熬三天",
+          "source_refs": [
+            "source-it-4fb9c1e4c26d0d74"
+          ]
+        },
+        {
+          "id": "it-9cf03bcaf13ca498",
+          "title": "售后日志与抓包分析",
+          "roles": "技术支持 · 研发",
+          "description": "一份 tcpdump 几千个包，人工逐条翻找异常、比对时间戳，结论还高度依赖个人经验",
+          "source_refs": [
+            "source-it-9cf03bcaf13ca498"
+          ]
+        },
+        {
+          "id": "it-0aa0049199ba82f5",
+          "title": "信号投诉根因关联 —— 用户说没信号，数要说清是哪一段的锅",
+          "roles": "生产 · 客服",
+          "description": "投诉单上写着「信号差」，真正要回答的是责任归属在哪一环",
+          "source_refs": [
+            "source-it-0aa0049199ba82f5"
+          ]
+        },
+        {
+          "id": "it-3671b1f071402ff5",
+          "title": "网优质量周报 —— 数据全在网管里，报告不该再手写一遍",
+          "roles": "生产 · 技术支持",
+          "description": "白天开车测 DT，晚上通宵写报告",
+          "source_refs": [
+            "source-it-3671b1f071402ff5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-1c368c6361132ff0",
+          "title": "值班交接班日志 —— 夜班 3 点处理的事，不该在交接本上只剩一行字",
+          "locator": "【信息技术·技术支持·生产】值班交接班日志 —— 夜班 3 点处理的事，不该在交接本上只剩一行字/值班交接班日志 —— 夜班 3 点处理的事，不该在交接本上只剩一行字.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%80%BC%E7%8F%AD%E4%BA%A4%E6%8E%A5%E7%8F%AD%E6%97%A5%E5%BF%97%20%E2%80%94%E2%80%94%20%E5%A4%9C%E7%8F%AD%203%20%E7%82%B9%E5%A4%84%E7%90%86%E7%9A%84%E4%BA%8B%EF%BC%8C%E4%B8%8D%E8%AF%A5%E5%9C%A8%E4%BA%A4%E6%8E%A5%E6%9C%AC%E4%B8%8A%E5%8F%AA%E5%89%A9%E4%B8%80%E8%A1%8C%E5%AD%97/%E5%80%BC%E7%8F%AD%E4%BA%A4%E6%8E%A5%E7%8F%AD%E6%97%A5%E5%BF%97%20%E2%80%94%E2%80%94%20%E5%A4%9C%E7%8F%AD%203%20%E7%82%B9%E5%A4%84%E7%90%86%E7%9A%84%E4%BA%8B%EF%BC%8C%E4%B8%8D%E8%AF%A5%E5%9C%A8%E4%BA%A4%E6%8E%A5%E6%9C%AC%E4%B8%8A%E5%8F%AA%E5%89%A9%E4%B8%80%E8%A1%8C%E5%AD%97.md"
+        },
+        {
+          "id": "source-it-112390760aeb9580",
+          "title": "故障 RCA 复盘报告初稿 —— 合同给你的 24 小时，不该用来翻聊天记录",
+          "locator": "【信息技术·技术支持·生产】故障 RCA 复盘报告初稿 —— 合同给你的 24 小时，不该用来翻聊天记录/故障 RCA 复盘报告初稿 —— 合同给你的 24 小时，不该用来翻聊天记录.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%95%85%E9%9A%9C%20RCA%20%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E5%90%88%E5%90%8C%E7%BB%99%E4%BD%A0%E7%9A%84%2024%20%E5%B0%8F%E6%97%B6%EF%BC%8C%E4%B8%8D%E8%AF%A5%E7%94%A8%E6%9D%A5%E7%BF%BB%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/%E6%95%85%E9%9A%9C%20RCA%20%E5%A4%8D%E7%9B%98%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E5%90%88%E5%90%8C%E7%BB%99%E4%BD%A0%E7%9A%84%2024%20%E5%B0%8F%E6%97%B6%EF%BC%8C%E4%B8%8D%E8%AF%A5%E7%94%A8%E6%9D%A5%E7%BF%BB%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.md"
+        },
+        {
+          "id": "source-it-4fb9c1e4c26d0d74",
+          "title": "故障处置报告初稿 —— 从工单流水与告警记录里攒证据，不从空白文档里写起",
+          "locator": "【信息技术·技术支持·生产】故障处置报告初稿 —— 从工单流水与告警记录里攒证据，不从空白文档里写起/故障处置报告初稿 —— 从工单流水与告警记录里攒证据，不从空白文档里写起.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%95%85%E9%9A%9C%E5%A4%84%E7%BD%AE%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%BB%8E%E5%B7%A5%E5%8D%95%E6%B5%81%E6%B0%B4%E4%B8%8E%E5%91%8A%E8%AD%A6%E8%AE%B0%E5%BD%95%E9%87%8C%E6%94%92%E8%AF%81%E6%8D%AE%EF%BC%8C%E4%B8%8D%E4%BB%8E%E7%A9%BA%E7%99%BD%E6%96%87%E6%A1%A3%E9%87%8C%E5%86%99%E8%B5%B7/%E6%95%85%E9%9A%9C%E5%A4%84%E7%BD%AE%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E4%BB%8E%E5%B7%A5%E5%8D%95%E6%B5%81%E6%B0%B4%E4%B8%8E%E5%91%8A%E8%AD%A6%E8%AE%B0%E5%BD%95%E9%87%8C%E6%94%92%E8%AF%81%E6%8D%AE%EF%BC%8C%E4%B8%8D%E4%BB%8E%E7%A9%BA%E7%99%BD%E6%96%87%E6%A1%A3%E9%87%8C%E5%86%99%E8%B5%B7.md"
+        },
+        {
+          "id": "source-it-9cf03bcaf13ca498",
+          "title": "售后日志与抓包分析",
+          "locator": "【信息技术·技术支持·研发】售后日志与抓包分析/售后日志与抓包分析.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E5%94%AE%E5%90%8E%E6%97%A5%E5%BF%97%E4%B8%8E%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/%E5%94%AE%E5%90%8E%E6%97%A5%E5%BF%97%E4%B8%8E%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90.md"
+        },
+        {
+          "id": "source-it-0aa0049199ba82f5",
+          "title": "信号投诉根因关联 —— 用户说没信号，数要说清是哪一段的锅",
+          "locator": "【信息技术·生产·客服】信号投诉根因关联 —— 用户说没信号，数要说清是哪一段的锅/信号投诉根因关联 —— 用户说没信号，数要说清是哪一段的锅.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E4%BF%A1%E5%8F%B7%E6%8A%95%E8%AF%89%E6%A0%B9%E5%9B%A0%E5%85%B3%E8%81%94%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%88%B7%E8%AF%B4%E6%B2%A1%E4%BF%A1%E5%8F%B7%EF%BC%8C%E6%95%B0%E8%A6%81%E8%AF%B4%E6%B8%85%E6%98%AF%E5%93%AA%E4%B8%80%E6%AE%B5%E7%9A%84%E9%94%85/%E4%BF%A1%E5%8F%B7%E6%8A%95%E8%AF%89%E6%A0%B9%E5%9B%A0%E5%85%B3%E8%81%94%20%E2%80%94%E2%80%94%20%E7%94%A8%E6%88%B7%E8%AF%B4%E6%B2%A1%E4%BF%A1%E5%8F%B7%EF%BC%8C%E6%95%B0%E8%A6%81%E8%AF%B4%E6%B8%85%E6%98%AF%E5%93%AA%E4%B8%80%E6%AE%B5%E7%9A%84%E9%94%85.md"
+        },
+        {
+          "id": "source-it-3671b1f071402ff5",
+          "title": "网优质量周报 —— 数据全在网管里，报告不该再手写一遍",
+          "locator": "【信息技术·生产·技术支持】网优质量周报 —— 数据全在网管里，报告不该再手写一遍/网优质量周报 —— 数据全在网管里，报告不该再手写一遍.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E3%80%91%E7%BD%91%E4%BC%98%E8%B4%A8%E9%87%8F%E5%91%A8%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%95%B0%E6%8D%AE%E5%85%A8%E5%9C%A8%E7%BD%91%E7%AE%A1%E9%87%8C%EF%BC%8C%E6%8A%A5%E5%91%8A%E4%B8%8D%E8%AF%A5%E5%86%8D%E6%89%8B%E5%86%99%E4%B8%80%E9%81%8D/%E7%BD%91%E4%BC%98%E8%B4%A8%E9%87%8F%E5%91%A8%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%95%B0%E6%8D%AE%E5%85%A8%E5%9C%A8%E7%BD%91%E7%AE%A1%E9%87%8C%EF%BC%8C%E6%8A%A5%E5%91%8A%E4%B8%8D%E8%AF%A5%E5%86%8D%E6%89%8B%E5%86%99%E4%B8%80%E9%81%8D.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.industrial",
+        "universal.furniture.desk",
+        "universal.electronics.display",
+        "universal.document.sheet",
+        "universal.person.technician",
+        "universal.accessory.kanban",
+        "universal.furniture.rolling-drawer"
+      ]
+    },
+    {
+      "scene_id": "datacenter",
+      "fossflow_item_id": "datacenter",
+      "fossflow_icon_id": "art-datacenter",
+      "title": "机房与算力运营",
+      "description": "生产（机房运维）按设备编号交叉核对巡检记录与动环告警，形成巡检日报。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-acecf78631cc4566",
+          "title": "GPU 利用率日报 —— 利用率 93% 的集群正在变慢，这种病监控看不出来",
+          "roles": "生产 · 技术支持",
+          "description": "监控里利用率一片绿，客户训练任务正以 1.6 倍的时间空耗成本",
+          "source_refs": [
+            "source-it-acecf78631cc4566"
+          ]
+        },
+        {
+          "id": "it-cf0393bca873e546",
+          "title": "GPU 故障换卡台账 —— 换了 14 张卡，哪些真坏哪些误换，不该没有人说得清",
+          "roles": "生产 · 技术支持",
+          "description": "GPU 故障率是 CPU 的 120 倍，换卡记录却散在工程师个人电脑的 Excel 里",
+          "source_refs": [
+            "source-it-cf0393bca873e546"
+          ]
+        },
+        {
+          "id": "it-45ebca59a88fc000",
+          "title": "PUE 能耗月报 —— 报送监管的数字要经得起算，分项缺口要摊开说清",
+          "roles": "生产",
+          "description": "PUE 月报是报送监管的合规品，分项计量不全时只能倒推凑数",
+          "source_refs": [
+            "source-it-45ebca59a88fc000"
+          ]
+        },
+        {
+          "id": "it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "roles": "生产",
+          "description": "巡检表抄完就锁进铁皮柜，真正值钱的隐患记录从此没人再看第二次",
+          "source_refs": [
+            "source-it-cdf061a1f00bdf49"
+          ]
+        },
+        {
+          "id": "it-ee4b183d85af5dc2",
+          "title": "电费账单核对与需量异常检测 —— 占成本六成的电费，多数中心从没逐月核过账",
+          "roles": "生产",
+          "description": "电费占运营成本近六成，财务只核总额、运维只抄总表，分项差异没人核对",
+          "source_refs": [
+            "source-it-ee4b183d85af5dc2"
+          ]
+        },
+        {
+          "id": "it-27ee5f5cf80345f6",
+          "title": "闲置算力盘点与资金占用报告 —— 每天一睁眼，两百台机器在替你烧钱",
+          "roles": "运营",
+          "description": "利用率 30% 的行业里闲置不是新闻，把闲置折算成每天多少钱给老板看才是",
+          "source_refs": [
+            "source-it-27ee5f5cf80345f6"
+          ]
+        },
+        {
+          "id": "it-78e16a484d35a3ee",
+          "title": "机柜上架率报表与扩容测算 —— 老板拍脑袋扩容的年代，该有个测算底稿了",
+          "roles": "销售",
+          "description": "扩容决策是销售在催、老板凭经验拍板，唯独没有人出过一页测算底稿",
+          "source_refs": [
+            "source-it-78e16a484d35a3ee"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-acecf78631cc4566",
+          "title": "GPU 利用率日报 —— 利用率 93% 的集群正在变慢，这种病监控看不出来",
+          "locator": "【信息技术·生产·技术支持】GPU 利用率日报 —— 利用率 93% 的集群正在变慢，这种病监控看不出来/GPU 利用率日报 —— 利用率 93% 的集群正在变慢，这种病监控看不出来.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E3%80%91GPU%20%E5%88%A9%E7%94%A8%E7%8E%87%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E5%88%A9%E7%94%A8%E7%8E%87%2093%25%20%E7%9A%84%E9%9B%86%E7%BE%A4%E6%AD%A3%E5%9C%A8%E5%8F%98%E6%85%A2%EF%BC%8C%E8%BF%99%E7%A7%8D%E7%97%85%E7%9B%91%E6%8E%A7%E7%9C%8B%E4%B8%8D%E5%87%BA%E6%9D%A5/GPU%20%E5%88%A9%E7%94%A8%E7%8E%87%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E5%88%A9%E7%94%A8%E7%8E%87%2093%25%20%E7%9A%84%E9%9B%86%E7%BE%A4%E6%AD%A3%E5%9C%A8%E5%8F%98%E6%85%A2%EF%BC%8C%E8%BF%99%E7%A7%8D%E7%97%85%E7%9B%91%E6%8E%A7%E7%9C%8B%E4%B8%8D%E5%87%BA%E6%9D%A5.md"
+        },
+        {
+          "id": "source-it-cf0393bca873e546",
+          "title": "GPU 故障换卡台账 —— 换了 14 张卡，哪些真坏哪些误换，不该没有人说得清",
+          "locator": "【信息技术·生产·技术支持】GPU 故障换卡台账 —— 换了 14 张卡，哪些真坏哪些误换，不该没有人说得清/GPU 故障换卡台账 —— 换了 14 张卡，哪些真坏哪些误换，不该没有人说得清.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E3%80%91GPU%20%E6%95%85%E9%9A%9C%E6%8D%A2%E5%8D%A1%E5%8F%B0%E8%B4%A6%20%E2%80%94%E2%80%94%20%E6%8D%A2%E4%BA%86%2014%20%E5%BC%A0%E5%8D%A1%EF%BC%8C%E5%93%AA%E4%BA%9B%E7%9C%9F%E5%9D%8F%E5%93%AA%E4%BA%9B%E8%AF%AF%E6%8D%A2%EF%BC%8C%E4%B8%8D%E8%AF%A5%E6%B2%A1%E6%9C%89%E4%BA%BA%E8%AF%B4%E5%BE%97%E6%B8%85/GPU%20%E6%95%85%E9%9A%9C%E6%8D%A2%E5%8D%A1%E5%8F%B0%E8%B4%A6%20%E2%80%94%E2%80%94%20%E6%8D%A2%E4%BA%86%2014%20%E5%BC%A0%E5%8D%A1%EF%BC%8C%E5%93%AA%E4%BA%9B%E7%9C%9F%E5%9D%8F%E5%93%AA%E4%BA%9B%E8%AF%AF%E6%8D%A2%EF%BC%8C%E4%B8%8D%E8%AF%A5%E6%B2%A1%E6%9C%89%E4%BA%BA%E8%AF%B4%E5%BE%97%E6%B8%85.md"
+        },
+        {
+          "id": "source-it-45ebca59a88fc000",
+          "title": "PUE 能耗月报 —— 报送监管的数字要经得起算，分项缺口要摊开说清",
+          "locator": "【信息技术·生产】PUE 能耗月报 —— 报送监管的数字要经得起算，分项缺口要摊开说清/PUE 能耗月报 —— 报送监管的数字要经得起算，分项缺口要摊开说清.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91PUE%20%E8%83%BD%E8%80%97%E6%9C%88%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%8A%A5%E9%80%81%E7%9B%91%E7%AE%A1%E7%9A%84%E6%95%B0%E5%AD%97%E8%A6%81%E7%BB%8F%E5%BE%97%E8%B5%B7%E7%AE%97%EF%BC%8C%E5%88%86%E9%A1%B9%E7%BC%BA%E5%8F%A3%E8%A6%81%E6%91%8A%E5%BC%80%E8%AF%B4%E6%B8%85/PUE%20%E8%83%BD%E8%80%97%E6%9C%88%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%8A%A5%E9%80%81%E7%9B%91%E7%AE%A1%E7%9A%84%E6%95%B0%E5%AD%97%E8%A6%81%E7%BB%8F%E5%BE%97%E8%B5%B7%E7%AE%97%EF%BC%8C%E5%88%86%E9%A1%B9%E7%BC%BA%E5%8F%A3%E8%A6%81%E6%91%8A%E5%BC%80%E8%AF%B4%E6%B8%85.md"
+        },
+        {
+          "id": "source-it-ee4b183d85af5dc2",
+          "title": "电费账单核对与需量异常检测 —— 占成本六成的电费，多数中心从没逐月核过账",
+          "locator": "【信息技术·生产】电费账单核对与需量异常检测 —— 占成本六成的电费，多数中心从没逐月核过账/电费账单核对与需量异常检测 —— 占成本六成的电费，多数中心从没逐月核过账.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E7%94%B5%E8%B4%B9%E8%B4%A6%E5%8D%95%E6%A0%B8%E5%AF%B9%E4%B8%8E%E9%9C%80%E9%87%8F%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%20%E2%80%94%E2%80%94%20%E5%8D%A0%E6%88%90%E6%9C%AC%E5%85%AD%E6%88%90%E7%9A%84%E7%94%B5%E8%B4%B9%EF%BC%8C%E5%A4%9A%E6%95%B0%E4%B8%AD%E5%BF%83%E4%BB%8E%E6%B2%A1%E9%80%90%E6%9C%88%E6%A0%B8%E8%BF%87%E8%B4%A6/%E7%94%B5%E8%B4%B9%E8%B4%A6%E5%8D%95%E6%A0%B8%E5%AF%B9%E4%B8%8E%E9%9C%80%E9%87%8F%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%20%E2%80%94%E2%80%94%20%E5%8D%A0%E6%88%90%E6%9C%AC%E5%85%AD%E6%88%90%E7%9A%84%E7%94%B5%E8%B4%B9%EF%BC%8C%E5%A4%9A%E6%95%B0%E4%B8%AD%E5%BF%83%E4%BB%8E%E6%B2%A1%E9%80%90%E6%9C%88%E6%A0%B8%E8%BF%87%E8%B4%A6.md"
+        },
+        {
+          "id": "source-it-27ee5f5cf80345f6",
+          "title": "闲置算力盘点与资金占用报告 —— 每天一睁眼，两百台机器在替你烧钱",
+          "locator": "【信息技术·运营】闲置算力盘点与资金占用报告 —— 每天一睁眼，两百台机器在替你烧钱/闲置算力盘点与资金占用报告 —— 每天一睁眼，两百台机器在替你烧钱.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E9%97%B2%E7%BD%AE%E7%AE%97%E5%8A%9B%E7%9B%98%E7%82%B9%E4%B8%8E%E8%B5%84%E9%87%91%E5%8D%A0%E7%94%A8%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%9D%81%E7%9C%BC%EF%BC%8C%E4%B8%A4%E7%99%BE%E5%8F%B0%E6%9C%BA%E5%99%A8%E5%9C%A8%E6%9B%BF%E4%BD%A0%E7%83%A7%E9%92%B1/%E9%97%B2%E7%BD%AE%E7%AE%97%E5%8A%9B%E7%9B%98%E7%82%B9%E4%B8%8E%E8%B5%84%E9%87%91%E5%8D%A0%E7%94%A8%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%9D%81%E7%9C%BC%EF%BC%8C%E4%B8%A4%E7%99%BE%E5%8F%B0%E6%9C%BA%E5%99%A8%E5%9C%A8%E6%9B%BF%E4%BD%A0%E7%83%A7%E9%92%B1.md"
+        },
+        {
+          "id": "source-it-78e16a484d35a3ee",
+          "title": "机柜上架率报表与扩容测算 —— 老板拍脑袋扩容的年代，该有个测算底稿了",
+          "locator": "【信息技术·销售】机柜上架率报表与扩容测算 —— 老板拍脑袋扩容的年代，该有个测算底稿了/机柜上架率报表与扩容测算 —— 老板拍脑袋扩容的年代，该有个测算底稿了.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%9C%BA%E6%9F%9C%E4%B8%8A%E6%9E%B6%E7%8E%87%E6%8A%A5%E8%A1%A8%E4%B8%8E%E6%89%A9%E5%AE%B9%E6%B5%8B%E7%AE%97%20%E2%80%94%E2%80%94%20%E8%80%81%E6%9D%BF%E6%8B%8D%E8%84%91%E8%A2%8B%E6%89%A9%E5%AE%B9%E7%9A%84%E5%B9%B4%E4%BB%A3%EF%BC%8C%E8%AF%A5%E6%9C%89%E4%B8%AA%E6%B5%8B%E7%AE%97%E5%BA%95%E7%A8%BF%E4%BA%86/%E6%9C%BA%E6%9F%9C%E4%B8%8A%E6%9E%B6%E7%8E%87%E6%8A%A5%E8%A1%A8%E4%B8%8E%E6%89%A9%E5%AE%B9%E6%B5%8B%E7%AE%97%20%E2%80%94%E2%80%94%20%E8%80%81%E6%9D%BF%E6%8B%8D%E8%84%91%E8%A2%8B%E6%89%A9%E5%AE%B9%E7%9A%84%E5%B9%B4%E4%BB%A3%EF%BC%8C%E8%AF%A5%E6%9C%89%E4%B8%AA%E6%B5%8B%E7%AE%97%E5%BA%95%E7%A8%BF%E4%BA%86.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.industrial",
+        "universal.furniture.desk",
+        "universal.electronics.computer",
+        "universal.document.sheet",
+        "universal.person.technician",
+        "information-technology.equipment.server-rack",
+        "universal.accessory.kanban",
+        "universal.accessory.status-light"
+      ]
+    },
+    {
+      "scene_id": "service",
+      "fossflow_item_id": "service",
+      "fossflow_icon_id": "art-service",
+      "title": "客服与申诉",
+      "description": "客服归集工单信息，准备回复与进度通知，形成客户回复与进度通知。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-1251839b2aee1ff8",
+          "title": "客户 SLA 月报与赔付预警 —— 月报是续约与赔付的依据，不是形象工程",
+          "roles": "客服",
+          "description": "月报要凑四套系统的数，凑完还要跟客户谈这段算不算免责",
+          "source_refs": [
+            "source-it-1251839b2aee1ff8"
+          ]
+        },
+        {
+          "id": "it-4ea207d67ab8b803",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "roles": "客服",
+          "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+          "source_refs": [
+            "source-it-4ea207d67ab8b803"
+          ]
+        },
+        {
+          "id": "it-426ad70bbfed11e1",
+          "title": "客诉工单分诊与优先级 —— 群里 1,200 条消息，食安的那条不能沉底",
+          "roles": "客服",
+          "description": "督导实录：326 个群、每天 1,200 条消息，群聊爬楼成为必修课，食安投诉会直接触发监管介入",
+          "source_refs": [
+            "source-it-426ad70bbfed11e1"
+          ]
+        },
+        {
+          "id": "it-1e97914576ddfc6d",
+          "title": "工信部申诉答复报告 —— 每一件都计考核分，每一句都要有出处",
+          "roles": "客服",
+          "description": "申诉件直接计入分公司考核，答复却要连夜手写",
+          "source_refs": [
+            "source-it-1e97914576ddfc6d"
+          ]
+        },
+        {
+          "id": "it-3bfeebb0c98941d0",
+          "title": "恶意差评识别与申诉证据包 —— 一次申诉机会，证据链要一次凑齐",
+          "roles": "客服",
+          "description": "黑产删一条差评收费 300-800 元，美团规则同一评价仅可申诉一次、48 小时出结果",
+          "source_refs": [
+            "source-it-3bfeebb0c98941d0"
+          ]
+        },
+        {
+          "id": "it-5533151900461275",
+          "title": "投诉升级件时间线还原 —— 全班组翻录音的那个晚上，本可以不用熬",
+          "roles": "客服",
+          "description": "升级投诉 24 小时内要出方案，事实却分散在四套系统里",
+          "source_refs": [
+            "source-it-5533151900461275"
+          ]
+        },
+        {
+          "id": "it-05679f07ba92c841",
+          "title": "版本客服预警联动 —— 海外服先踩的坑，国服上线前就该知道",
+          "roles": "客服",
+          "description": "大版本更新当天全公司连夜帮客服回邮件，并非客服不努力，而是上线前无人告知客服本版改了什么",
+          "source_refs": [
+            "source-it-05679f07ba92c841"
+          ]
+        },
+        {
+          "id": "it-8e139a0f170d97b0",
+          "title": "判责辅助决策 —— 细则几十条没人背得下，终审永远是人",
+          "roles": "运营 · 客服",
+          "description": "美团赔付规范细则数十条（接单 10 分钟内取消赔 50%、以上赔 100%），Meta 教训：AI 终审加复审即死循环",
+          "source_refs": [
+            "source-it-8e139a0f170d97b0"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-1251839b2aee1ff8",
+          "title": "客户 SLA 月报与赔付预警 —— 月报是续约与赔付的依据，不是形象工程",
+          "locator": "【信息技术·客服】客户 SLA 月报与赔付预警 —— 月报是续约与赔付的依据，不是形象工程/客户 SLA 月报与赔付预警 —— 月报是续约与赔付的依据，不是形象工程.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%20SLA%20%E6%9C%88%E6%8A%A5%E4%B8%8E%E8%B5%94%E4%BB%98%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E6%9C%88%E6%8A%A5%E6%98%AF%E7%BB%AD%E7%BA%A6%E4%B8%8E%E8%B5%94%E4%BB%98%E7%9A%84%E4%BE%9D%E6%8D%AE%EF%BC%8C%E4%B8%8D%E6%98%AF%E5%BD%A2%E8%B1%A1%E5%B7%A5%E7%A8%8B/%E5%AE%A2%E6%88%B7%20SLA%20%E6%9C%88%E6%8A%A5%E4%B8%8E%E8%B5%94%E4%BB%98%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E6%9C%88%E6%8A%A5%E6%98%AF%E7%BB%AD%E7%BA%A6%E4%B8%8E%E8%B5%94%E4%BB%98%E7%9A%84%E4%BE%9D%E6%8D%AE%EF%BC%8C%E4%B8%8D%E6%98%AF%E5%BD%A2%E8%B1%A1%E5%B7%A5%E7%A8%8B.md"
+        },
+        {
+          "id": "source-it-4ea207d67ab8b803",
+          "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+          "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+        },
+        {
+          "id": "source-it-426ad70bbfed11e1",
+          "title": "客诉工单分诊与优先级 —— 群里 1,200 条消息，食安的那条不能沉底",
+          "locator": "【信息技术·客服】客诉工单分诊与优先级 —— 群里 1,200 条消息，食安的那条不能沉底/客诉工单分诊与优先级 —— 群里 1,200 条消息，食安的那条不能沉底.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E8%AF%89%E5%B7%A5%E5%8D%95%E5%88%86%E8%AF%8A%E4%B8%8E%E4%BC%98%E5%85%88%E7%BA%A7%20%E2%80%94%E2%80%94%20%E7%BE%A4%E9%87%8C%201,200%20%E6%9D%A1%E6%B6%88%E6%81%AF%EF%BC%8C%E9%A3%9F%E5%AE%89%E7%9A%84%E9%82%A3%E6%9D%A1%E4%B8%8D%E8%83%BD%E6%B2%89%E5%BA%95/%E5%AE%A2%E8%AF%89%E5%B7%A5%E5%8D%95%E5%88%86%E8%AF%8A%E4%B8%8E%E4%BC%98%E5%85%88%E7%BA%A7%20%E2%80%94%E2%80%94%20%E7%BE%A4%E9%87%8C%201,200%20%E6%9D%A1%E6%B6%88%E6%81%AF%EF%BC%8C%E9%A3%9F%E5%AE%89%E7%9A%84%E9%82%A3%E6%9D%A1%E4%B8%8D%E8%83%BD%E6%B2%89%E5%BA%95.md"
+        },
+        {
+          "id": "source-it-1e97914576ddfc6d",
+          "title": "工信部申诉答复报告 —— 每一件都计考核分，每一句都要有出处",
+          "locator": "【信息技术·客服】工信部申诉答复报告 —— 每一件都计考核分，每一句都要有出处/工信部申诉答复报告 —— 每一件都计考核分，每一句都要有出处.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%B7%A5%E4%BF%A1%E9%83%A8%E7%94%B3%E8%AF%89%E7%AD%94%E5%A4%8D%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%AF%8F%E4%B8%80%E4%BB%B6%E9%83%BD%E8%AE%A1%E8%80%83%E6%A0%B8%E5%88%86%EF%BC%8C%E6%AF%8F%E4%B8%80%E5%8F%A5%E9%83%BD%E8%A6%81%E6%9C%89%E5%87%BA%E5%A4%84/%E5%B7%A5%E4%BF%A1%E9%83%A8%E7%94%B3%E8%AF%89%E7%AD%94%E5%A4%8D%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%20%E6%AF%8F%E4%B8%80%E4%BB%B6%E9%83%BD%E8%AE%A1%E8%80%83%E6%A0%B8%E5%88%86%EF%BC%8C%E6%AF%8F%E4%B8%80%E5%8F%A5%E9%83%BD%E8%A6%81%E6%9C%89%E5%87%BA%E5%A4%84.md"
+        },
+        {
+          "id": "source-it-3bfeebb0c98941d0",
+          "title": "恶意差评识别与申诉证据包 —— 一次申诉机会，证据链要一次凑齐",
+          "locator": "【信息技术·客服】恶意差评识别与申诉证据包 —— 一次申诉机会，证据链要一次凑齐/恶意差评识别与申诉证据包 —— 一次申诉机会，证据链要一次凑齐.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%81%B6%E6%84%8F%E5%B7%AE%E8%AF%84%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%B3%E8%AF%89%E8%AF%81%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E4%B8%80%E6%AC%A1%E7%94%B3%E8%AF%89%E6%9C%BA%E4%BC%9A%EF%BC%8C%E8%AF%81%E6%8D%AE%E9%93%BE%E8%A6%81%E4%B8%80%E6%AC%A1%E5%87%91%E9%BD%90/%E6%81%B6%E6%84%8F%E5%B7%AE%E8%AF%84%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%B3%E8%AF%89%E8%AF%81%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E4%B8%80%E6%AC%A1%E7%94%B3%E8%AF%89%E6%9C%BA%E4%BC%9A%EF%BC%8C%E8%AF%81%E6%8D%AE%E9%93%BE%E8%A6%81%E4%B8%80%E6%AC%A1%E5%87%91%E9%BD%90.md"
+        },
+        {
+          "id": "source-it-5533151900461275",
+          "title": "投诉升级件时间线还原 —— 全班组翻录音的那个晚上，本可以不用熬",
+          "locator": "【信息技术·客服】投诉升级件时间线还原 —— 全班组翻录音的那个晚上，本可以不用熬/投诉升级件时间线还原 —— 全班组翻录音的那个晚上，本可以不用熬.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8A%95%E8%AF%89%E5%8D%87%E7%BA%A7%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E8%BF%98%E5%8E%9F%20%E2%80%94%E2%80%94%20%E5%85%A8%E7%8F%AD%E7%BB%84%E7%BF%BB%E5%BD%95%E9%9F%B3%E7%9A%84%E9%82%A3%E4%B8%AA%E6%99%9A%E4%B8%8A%EF%BC%8C%E6%9C%AC%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8%E7%86%AC/%E6%8A%95%E8%AF%89%E5%8D%87%E7%BA%A7%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E8%BF%98%E5%8E%9F%20%E2%80%94%E2%80%94%20%E5%85%A8%E7%8F%AD%E7%BB%84%E7%BF%BB%E5%BD%95%E9%9F%B3%E7%9A%84%E9%82%A3%E4%B8%AA%E6%99%9A%E4%B8%8A%EF%BC%8C%E6%9C%AC%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8%E7%86%AC.md"
+        },
+        {
+          "id": "source-it-05679f07ba92c841",
+          "title": "版本客服预警联动 —— 海外服先踩的坑，国服上线前就该知道",
+          "locator": "【信息技术·客服】版本客服预警联动 —— 海外服先踩的坑，国服上线前就该知道/版本客服预警联动 —— 海外服先踩的坑，国服上线前就该知道.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E7%89%88%E6%9C%AC%E5%AE%A2%E6%9C%8D%E9%A2%84%E8%AD%A6%E8%81%94%E5%8A%A8%20%E2%80%94%E2%80%94%20%E6%B5%B7%E5%A4%96%E6%9C%8D%E5%85%88%E8%B8%A9%E7%9A%84%E5%9D%91%EF%BC%8C%E5%9B%BD%E6%9C%8D%E4%B8%8A%E7%BA%BF%E5%89%8D%E5%B0%B1%E8%AF%A5%E7%9F%A5%E9%81%93/%E7%89%88%E6%9C%AC%E5%AE%A2%E6%9C%8D%E9%A2%84%E8%AD%A6%E8%81%94%E5%8A%A8%20%E2%80%94%E2%80%94%20%E6%B5%B7%E5%A4%96%E6%9C%8D%E5%85%88%E8%B8%A9%E7%9A%84%E5%9D%91%EF%BC%8C%E5%9B%BD%E6%9C%8D%E4%B8%8A%E7%BA%BF%E5%89%8D%E5%B0%B1%E8%AF%A5%E7%9F%A5%E9%81%93.md"
+        },
+        {
+          "id": "source-it-8e139a0f170d97b0",
+          "title": "判责辅助决策 —— 细则几十条没人背得下，终审永远是人",
+          "locator": "【信息技术·运营·客服】判责辅助决策 —— 细则几十条没人背得下，终审永远是人/判责辅助决策 —— 细则几十条没人背得下，终审永远是人.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%88%A4%E8%B4%A3%E8%BE%85%E5%8A%A9%E5%86%B3%E7%AD%96%20%E2%80%94%E2%80%94%20%E7%BB%86%E5%88%99%E5%87%A0%E5%8D%81%E6%9D%A1%E6%B2%A1%E4%BA%BA%E8%83%8C%E5%BE%97%E4%B8%8B%EF%BC%8C%E7%BB%88%E5%AE%A1%E6%B0%B8%E8%BF%9C%E6%98%AF%E4%BA%BA/%E5%88%A4%E8%B4%A3%E8%BE%85%E5%8A%A9%E5%86%B3%E7%AD%96%20%E2%80%94%E2%80%94%20%E7%BB%86%E5%88%99%E5%87%A0%E5%8D%81%E6%9D%A1%E6%B2%A1%E4%BA%BA%E8%83%8C%E5%BE%97%E4%B8%8B%EF%BC%8C%E7%BB%88%E5%AE%A1%E6%B0%B8%E8%BF%9C%E6%98%AF%E4%BA%BA.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.desk",
+        "universal.electronics.computer",
+        "universal.document.sheet",
+        "universal.person.office-worker",
+        "universal.building.window-wall",
+        "universal.furniture.cabinet"
+      ]
+    },
+    {
+      "scene_id": "operations",
+      "fossflow_item_id": "operations",
+      "fossflow_icon_id": "art-operations",
+      "title": "经营与用户反馈",
+      "description": "运营核对活动数据和关键指标口径，形成活动复盘简报。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-23b2d92dd5bc662d",
+          "title": "网格经营日报 —— 蜗牛榜天天发，数不该天天手凑",
+          "roles": "市场",
+          "description": "通报天天发，数据却是天天手工凑出来的",
+          "source_refs": [
+            "source-it-23b2d92dd5bc662d"
+          ]
+        },
+        {
+          "id": "it-f4ee1534898881ec",
+          "title": "资费政策问答与口径核对 —— 政策月月变，答案不能靠群里问",
+          "roles": "市场",
+          "description": "每个套餐都能改，每个营业员给出的说法都不一样",
+          "source_refs": [
+            "source-it-f4ee1534898881ec"
+          ]
+        },
+        {
+          "id": "it-19e4a2c3f9513acd",
+          "title": "低动销商家诊断与套餐结构建议 —— 卖爆不等于卖赚，核销率才是钱",
+          "roles": "运营",
+          "description": "抖音推送式团购核销率仅 50-60%、美团搜索模式 90%+，牛杂店备货 150 份一天卖出 1000 份，被迫闭店",
+          "source_refs": [
+            "source-it-19e4a2c3f9513acd"
+          ]
+        },
+        {
+          "id": "it-54b60228aa52f044",
+          "title": "商家拜访资料包 —— 城市经理裸拜了三年，数据其实都在",
+          "roles": "运营",
+          "description": "城市经理 JD 涵盖招商、装修指导、活动落地、工单处理、竞品调研、数据复盘，六件事压在一个人身上",
+          "source_refs": [
+            "source-it-54b60228aa52f044"
+          ]
+        },
+        {
+          "id": "it-3c60da422b2be745",
+          "title": "活动复盘一页纸 —— 六个后台的数，老板要的是同一套",
+          "roles": "运营",
+          "description": "复盘会实态：运营、产品、技术谁都说不出具体原因，有赞、WPS 等工具接不进企业后台",
+          "source_refs": [
+            "source-it-3c60da422b2be745"
+          ]
+        },
+        {
+          "id": "it-39a11795d57bbf84",
+          "title": "玩家之声聚类简报 —— 差评不是在骂产品，是在按游戏系统排队提需求",
+          "roles": "运营",
+          "description": "通用舆情工具将「策划总算当人了」标为负面，而这条实为全周最正面的反馈",
+          "source_refs": [
+            "source-it-39a11795d57bbf84"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-23b2d92dd5bc662d",
+          "title": "网格经营日报 —— 蜗牛榜天天发，数不该天天手凑",
+          "locator": "【信息技术·市场】网格经营日报 —— 蜗牛榜天天发，数不该天天手凑/网格经营日报 —— 蜗牛榜天天发，数不该天天手凑.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%BD%91%E6%A0%BC%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E8%9C%97%E7%89%9B%E6%A6%9C%E5%A4%A9%E5%A4%A9%E5%8F%91%EF%BC%8C%E6%95%B0%E4%B8%8D%E8%AF%A5%E5%A4%A9%E5%A4%A9%E6%89%8B%E5%87%91/%E7%BD%91%E6%A0%BC%E7%BB%8F%E8%90%A5%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E8%9C%97%E7%89%9B%E6%A6%9C%E5%A4%A9%E5%A4%A9%E5%8F%91%EF%BC%8C%E6%95%B0%E4%B8%8D%E8%AF%A5%E5%A4%A9%E5%A4%A9%E6%89%8B%E5%87%91.md"
+        },
+        {
+          "id": "source-it-f4ee1534898881ec",
+          "title": "资费政策问答与口径核对 —— 政策月月变，答案不能靠群里问",
+          "locator": "【信息技术·市场】资费政策问答与口径核对 —— 政策月月变，答案不能靠群里问/资费政策问答与口径核对 —— 政策月月变，答案不能靠群里问.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E8%B5%84%E8%B4%B9%E6%94%BF%E7%AD%96%E9%97%AE%E7%AD%94%E4%B8%8E%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E6%94%BF%E7%AD%96%E6%9C%88%E6%9C%88%E5%8F%98%EF%BC%8C%E7%AD%94%E6%A1%88%E4%B8%8D%E8%83%BD%E9%9D%A0%E7%BE%A4%E9%87%8C%E9%97%AE/%E8%B5%84%E8%B4%B9%E6%94%BF%E7%AD%96%E9%97%AE%E7%AD%94%E4%B8%8E%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E6%94%BF%E7%AD%96%E6%9C%88%E6%9C%88%E5%8F%98%EF%BC%8C%E7%AD%94%E6%A1%88%E4%B8%8D%E8%83%BD%E9%9D%A0%E7%BE%A4%E9%87%8C%E9%97%AE.md"
+        },
+        {
+          "id": "source-it-19e4a2c3f9513acd",
+          "title": "低动销商家诊断与套餐结构建议 —— 卖爆不等于卖赚，核销率才是钱",
+          "locator": "【信息技术·运营】低动销商家诊断与套餐结构建议 —— 卖爆不等于卖赚，核销率才是钱/低动销商家诊断与套餐结构建议 —— 卖爆不等于卖赚，核销率才是钱.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E4%BD%8E%E5%8A%A8%E9%94%80%E5%95%86%E5%AE%B6%E8%AF%8A%E6%96%AD%E4%B8%8E%E5%A5%97%E9%A4%90%E7%BB%93%E6%9E%84%E5%BB%BA%E8%AE%AE%20%E2%80%94%E2%80%94%20%E5%8D%96%E7%88%86%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%8D%96%E8%B5%9A%EF%BC%8C%E6%A0%B8%E9%94%80%E7%8E%87%E6%89%8D%E6%98%AF%E9%92%B1/%E4%BD%8E%E5%8A%A8%E9%94%80%E5%95%86%E5%AE%B6%E8%AF%8A%E6%96%AD%E4%B8%8E%E5%A5%97%E9%A4%90%E7%BB%93%E6%9E%84%E5%BB%BA%E8%AE%AE%20%E2%80%94%E2%80%94%20%E5%8D%96%E7%88%86%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%8D%96%E8%B5%9A%EF%BC%8C%E6%A0%B8%E9%94%80%E7%8E%87%E6%89%8D%E6%98%AF%E9%92%B1.md"
+        },
+        {
+          "id": "source-it-54b60228aa52f044",
+          "title": "商家拜访资料包 —— 城市经理裸拜了三年，数据其实都在",
+          "locator": "【信息技术·运营】商家拜访资料包 —— 城市经理裸拜了三年，数据其实都在/商家拜访资料包 —— 城市经理裸拜了三年，数据其实都在.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%95%86%E5%AE%B6%E6%8B%9C%E8%AE%BF%E8%B5%84%E6%96%99%E5%8C%85%20%E2%80%94%E2%80%94%20%E5%9F%8E%E5%B8%82%E7%BB%8F%E7%90%86%E8%A3%B8%E6%8B%9C%E4%BA%86%E4%B8%89%E5%B9%B4%EF%BC%8C%E6%95%B0%E6%8D%AE%E5%85%B6%E5%AE%9E%E9%83%BD%E5%9C%A8/%E5%95%86%E5%AE%B6%E6%8B%9C%E8%AE%BF%E8%B5%84%E6%96%99%E5%8C%85%20%E2%80%94%E2%80%94%20%E5%9F%8E%E5%B8%82%E7%BB%8F%E7%90%86%E8%A3%B8%E6%8B%9C%E4%BA%86%E4%B8%89%E5%B9%B4%EF%BC%8C%E6%95%B0%E6%8D%AE%E5%85%B6%E5%AE%9E%E9%83%BD%E5%9C%A8.md"
+        },
+        {
+          "id": "source-it-3c60da422b2be745",
+          "title": "活动复盘一页纸 —— 六个后台的数，老板要的是同一套",
+          "locator": "【信息技术·运营】活动复盘一页纸 —— 六个后台的数，老板要的是同一套/活动复盘一页纸 —— 六个后台的数，老板要的是同一套.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B4%BB%E5%8A%A8%E5%A4%8D%E7%9B%98%E4%B8%80%E9%A1%B5%E7%BA%B8%20%E2%80%94%E2%80%94%20%E5%85%AD%E4%B8%AA%E5%90%8E%E5%8F%B0%E7%9A%84%E6%95%B0%EF%BC%8C%E8%80%81%E6%9D%BF%E8%A6%81%E7%9A%84%E6%98%AF%E5%90%8C%E4%B8%80%E5%A5%97/%E6%B4%BB%E5%8A%A8%E5%A4%8D%E7%9B%98%E4%B8%80%E9%A1%B5%E7%BA%B8%20%E2%80%94%E2%80%94%20%E5%85%AD%E4%B8%AA%E5%90%8E%E5%8F%B0%E7%9A%84%E6%95%B0%EF%BC%8C%E8%80%81%E6%9D%BF%E8%A6%81%E7%9A%84%E6%98%AF%E5%90%8C%E4%B8%80%E5%A5%97.md"
+        },
+        {
+          "id": "source-it-39a11795d57bbf84",
+          "title": "玩家之声聚类简报 —— 差评不是在骂产品，是在按游戏系统排队提需求",
+          "locator": "【信息技术·运营】玩家之声聚类简报 —— 差评不是在骂产品，是在按游戏系统排队提需求/玩家之声聚类简报 —— 差评不是在骂产品，是在按游戏系统排队提需求.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%8E%A9%E5%AE%B6%E4%B9%8B%E5%A3%B0%E8%81%9A%E7%B1%BB%E7%AE%80%E6%8A%A5%20%E2%80%94%E2%80%94%20%E5%B7%AE%E8%AF%84%E4%B8%8D%E6%98%AF%E5%9C%A8%E9%AA%82%E4%BA%A7%E5%93%81%EF%BC%8C%E6%98%AF%E5%9C%A8%E6%8C%89%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F%E6%8E%92%E9%98%9F%E6%8F%90%E9%9C%80%E6%B1%82/%E7%8E%A9%E5%AE%B6%E4%B9%8B%E5%A3%B0%E8%81%9A%E7%B1%BB%E7%AE%80%E6%8A%A5%20%E2%80%94%E2%80%94%20%E5%B7%AE%E8%AF%84%E4%B8%8D%E6%98%AF%E5%9C%A8%E9%AA%82%E4%BA%A7%E5%93%81%EF%BC%8C%E6%98%AF%E5%9C%A8%E6%8C%89%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F%E6%8E%92%E9%98%9F%E6%8F%90%E9%9C%80%E6%B1%82.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.industrial",
+        "universal.furniture.desk",
+        "universal.electronics.display",
+        "universal.document.sheet",
+        "universal.person.manager",
+        "universal.accessory.kanban",
+        "universal.furniture.rolling-drawer"
+      ]
+    },
+    {
+      "scene_id": "compliance",
+      "fossflow_item_id": "compliance",
+      "fossflow_icon_id": "art-compliance",
+      "title": "合规与资质审核",
+      "description": "运营与法务预审材料、列出缺项并留存证据，形成资质预审记录。画面以代表案例为依据，其他同类案例可在右侧查看。",
+      "cases": [
+        {
+          "id": "it-987f523239431a6c",
+          "title": "版号申报材料一致性自查 —— 名称差三个字，受理窗口直接关门",
+          "roles": "法务",
+          "description": "终审阶段无法主动补充材料，递交那一刻即是自查的最后期限——35% 的驳回源于材料疏漏",
+          "source_refs": [
+            "source-it-987f523239431a6c"
+          ]
+        },
+        {
+          "id": "it-3f535d8f54621a18",
+          "title": "防沉迷与概率公示逐条核对 —— 限充档位、公示精度，抽查来了先问的就是这两页",
+          "roles": "法务",
+          "description": "防沉迷系统「接入了」与「配置对了」是两回事，监管查的从来是后者，而后者没有任何系统替你核查",
+          "source_refs": [
+            "source-it-3f535d8f54621a18"
+          ]
+        },
+        {
+          "id": "it-b9fb2fff3521264f",
+          "title": "入驻资质核验预审 —— 罚单砸的不是审错，是拿不出审过的证据",
+          "roles": "运营 · 法务",
+          "description": "洪江市运营商因「无法提供审查记录」被推定未履行义务，罚 3 万，「忙、烦、忘了」占监管查处六成",
+          "source_refs": [
+            "source-it-b9fb2fff3521264f"
+          ]
+        },
+        {
+          "id": "it-94f30c037051e31e",
+          "title": "证照临期三级复审工单 —— 「忙、烦、忘了」占监管查处的六成",
+          "roles": "运营 · 法务",
+          "description": "新疆某平台两家店「许可证均已过期仍在公示营业」被查，证照过期当天限售、次日流量降 60%",
+          "source_refs": [
+            "source-it-94f30c037051e31e"
+          ]
+        },
+        {
+          "id": "it-9094a48e7d7e44e1",
+          "title": "入驻驳回意见书 —— 驳回不知原因，商家改三遍就走了",
+          "roles": "运营 · 销售 · 法务",
+          "description": "「驳回后不知原因、反复修改资料耗时」是商家入驻流失主因，审核员无人撰写详细说明",
+          "source_refs": [
+            "source-it-9094a48e7d7e44e1"
+          ]
+        },
+        {
+          "id": "it-5397ecfa62b0bb90",
+          "title": "海外分级问卷预审 —— 问卷答案说「无」，新版本特效说「有」，比对没人做过",
+          "roles": "运营",
+          "description": "IARC 问卷几分钟即可生成六大分级，但问卷答案与游戏实际内容不符时，被追责的不会是问卷公司",
+          "source_refs": [
+            "source-it-5397ecfa62b0bb90"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "it-index",
+          "title": "场景案例库索引",
+          "locator": "案例库索引.md / 信息技术",
+          "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+        },
+        {
+          "id": "source-it-cdf061a1f00bdf49",
+          "title": "机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次",
+          "locator": "【信息技术·生产】机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次/机房巡检记录结构化与巡检日报 —— 三个月的纸质表翻出同一台空调报了三次.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1/%E6%9C%BA%E6%88%BF%E5%B7%A1%E6%A3%80%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%E5%8C%96%E4%B8%8E%E5%B7%A1%E6%A3%80%E6%97%A5%E6%8A%A5%20%E2%80%94%E2%80%94%20%E4%B8%89%E4%B8%AA%E6%9C%88%E7%9A%84%E7%BA%B8%E8%B4%A8%E8%A1%A8%E7%BF%BB%E5%87%BA%E5%90%8C%E4%B8%80%E5%8F%B0%E7%A9%BA%E8%B0%83%E6%8A%A5%E4%BA%86%E4%B8%89%E6%AC%A1.md"
+        },
+        {
+          "id": "source-it-987f523239431a6c",
+          "title": "版号申报材料一致性自查 —— 名称差三个字，受理窗口直接关门",
+          "locator": "【信息技术·法务】版号申报材料一致性自查 —— 名称差三个字，受理窗口直接关门/版号申报材料一致性自查 —— 名称差三个字，受理窗口直接关门.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%89%88%E5%8F%B7%E7%94%B3%E6%8A%A5%E6%9D%90%E6%96%99%E4%B8%80%E8%87%B4%E6%80%A7%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E5%90%8D%E7%A7%B0%E5%B7%AE%E4%B8%89%E4%B8%AA%E5%AD%97%EF%BC%8C%E5%8F%97%E7%90%86%E7%AA%97%E5%8F%A3%E7%9B%B4%E6%8E%A5%E5%85%B3%E9%97%A8/%E7%89%88%E5%8F%B7%E7%94%B3%E6%8A%A5%E6%9D%90%E6%96%99%E4%B8%80%E8%87%B4%E6%80%A7%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20%E5%90%8D%E7%A7%B0%E5%B7%AE%E4%B8%89%E4%B8%AA%E5%AD%97%EF%BC%8C%E5%8F%97%E7%90%86%E7%AA%97%E5%8F%A3%E7%9B%B4%E6%8E%A5%E5%85%B3%E9%97%A8.md"
+        },
+        {
+          "id": "source-it-3f535d8f54621a18",
+          "title": "防沉迷与概率公示逐条核对 —— 限充档位、公示精度，抽查来了先问的就是这两页",
+          "locator": "【信息技术·法务】防沉迷与概率公示逐条核对 —— 限充档位、公示精度，抽查来了先问的就是这两页/防沉迷与概率公示逐条核对 —— 限充档位、公示精度，抽查来了先问的就是这两页.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E9%98%B2%E6%B2%89%E8%BF%B7%E4%B8%8E%E6%A6%82%E7%8E%87%E5%85%AC%E7%A4%BA%E9%80%90%E6%9D%A1%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E9%99%90%E5%85%85%E6%A1%A3%E4%BD%8D%E3%80%81%E5%85%AC%E7%A4%BA%E7%B2%BE%E5%BA%A6%EF%BC%8C%E6%8A%BD%E6%9F%A5%E6%9D%A5%E4%BA%86%E5%85%88%E9%97%AE%E7%9A%84%E5%B0%B1%E6%98%AF%E8%BF%99%E4%B8%A4%E9%A1%B5/%E9%98%B2%E6%B2%89%E8%BF%B7%E4%B8%8E%E6%A6%82%E7%8E%87%E5%85%AC%E7%A4%BA%E9%80%90%E6%9D%A1%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E9%99%90%E5%85%85%E6%A1%A3%E4%BD%8D%E3%80%81%E5%85%AC%E7%A4%BA%E7%B2%BE%E5%BA%A6%EF%BC%8C%E6%8A%BD%E6%9F%A5%E6%9D%A5%E4%BA%86%E5%85%88%E9%97%AE%E7%9A%84%E5%B0%B1%E6%98%AF%E8%BF%99%E4%B8%A4%E9%A1%B5.md"
+        },
+        {
+          "id": "source-it-b9fb2fff3521264f",
+          "title": "入驻资质核验预审 —— 罚单砸的不是审错，是拿不出审过的证据",
+          "locator": "【信息技术·运营·法务】入驻资质核验预审 —— 罚单砸的不是审错，是拿不出审过的证据/入驻资质核验预审 —— 罚单砸的不是审错，是拿不出审过的证据.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%85%A5%E9%A9%BB%E8%B5%84%E8%B4%A8%E6%A0%B8%E9%AA%8C%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E7%BD%9A%E5%8D%95%E7%A0%B8%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%A1%E9%94%99%EF%BC%8C%E6%98%AF%E6%8B%BF%E4%B8%8D%E5%87%BA%E5%AE%A1%E8%BF%87%E7%9A%84%E8%AF%81%E6%8D%AE/%E5%85%A5%E9%A9%BB%E8%B5%84%E8%B4%A8%E6%A0%B8%E9%AA%8C%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E7%BD%9A%E5%8D%95%E7%A0%B8%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%A1%E9%94%99%EF%BC%8C%E6%98%AF%E6%8B%BF%E4%B8%8D%E5%87%BA%E5%AE%A1%E8%BF%87%E7%9A%84%E8%AF%81%E6%8D%AE.md"
+        },
+        {
+          "id": "source-it-94f30c037051e31e",
+          "title": "证照临期三级复审工单 —— 「忙、烦、忘了」占监管查处的六成",
+          "locator": "【信息技术·运营·法务】证照临期三级复审工单 —— 「忙、烦、忘了」占监管查处的六成/证照临期三级复审工单 —— 「忙、烦、忘了」占监管查处的六成.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%AF%81%E7%85%A7%E4%B8%B4%E6%9C%9F%E4%B8%89%E7%BA%A7%E5%A4%8D%E5%AE%A1%E5%B7%A5%E5%8D%95%20%E2%80%94%E2%80%94%20%E3%80%8C%E5%BF%99%E3%80%81%E7%83%A6%E3%80%81%E5%BF%98%E4%BA%86%E3%80%8D%E5%8D%A0%E7%9B%91%E7%AE%A1%E6%9F%A5%E5%A4%84%E7%9A%84%E5%85%AD%E6%88%90/%E8%AF%81%E7%85%A7%E4%B8%B4%E6%9C%9F%E4%B8%89%E7%BA%A7%E5%A4%8D%E5%AE%A1%E5%B7%A5%E5%8D%95%20%E2%80%94%E2%80%94%20%E3%80%8C%E5%BF%99%E3%80%81%E7%83%A6%E3%80%81%E5%BF%98%E4%BA%86%E3%80%8D%E5%8D%A0%E7%9B%91%E7%AE%A1%E6%9F%A5%E5%A4%84%E7%9A%84%E5%85%AD%E6%88%90.md"
+        },
+        {
+          "id": "source-it-9094a48e7d7e44e1",
+          "title": "入驻驳回意见书 —— 驳回不知原因，商家改三遍就走了",
+          "locator": "【信息技术·运营·销售·法务】入驻驳回意见书 —— 驳回不知原因，商家改三遍就走了/入驻驳回意见书 —— 驳回不知原因，商家改三遍就走了.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E9%94%80%E5%94%AE%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%85%A5%E9%A9%BB%E9%A9%B3%E5%9B%9E%E6%84%8F%E8%A7%81%E4%B9%A6%20%E2%80%94%E2%80%94%20%E9%A9%B3%E5%9B%9E%E4%B8%8D%E7%9F%A5%E5%8E%9F%E5%9B%A0%EF%BC%8C%E5%95%86%E5%AE%B6%E6%94%B9%E4%B8%89%E9%81%8D%E5%B0%B1%E8%B5%B0%E4%BA%86/%E5%85%A5%E9%A9%BB%E9%A9%B3%E5%9B%9E%E6%84%8F%E8%A7%81%E4%B9%A6%20%E2%80%94%E2%80%94%20%E9%A9%B3%E5%9B%9E%E4%B8%8D%E7%9F%A5%E5%8E%9F%E5%9B%A0%EF%BC%8C%E5%95%86%E5%AE%B6%E6%94%B9%E4%B8%89%E9%81%8D%E5%B0%B1%E8%B5%B0%E4%BA%86.md"
+        },
+        {
+          "id": "source-it-5397ecfa62b0bb90",
+          "title": "海外分级问卷预审 —— 问卷答案说「无」，新版本特效说「有」，比对没人做过",
+          "locator": "【信息技术·运营】海外分级问卷预审 —— 问卷答案说「无」，新版本特效说「有」，比对没人做过/海外分级问卷预审 —— 问卷答案说「无」，新版本特效说「有」，比对没人做过.md:10",
+          "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B5%B7%E5%A4%96%E5%88%86%E7%BA%A7%E9%97%AE%E5%8D%B7%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E9%97%AE%E5%8D%B7%E7%AD%94%E6%A1%88%E8%AF%B4%E3%80%8C%E6%97%A0%E3%80%8D%EF%BC%8C%E6%96%B0%E7%89%88%E6%9C%AC%E7%89%B9%E6%95%88%E8%AF%B4%E3%80%8C%E6%9C%89%E3%80%8D%EF%BC%8C%E6%AF%94%E5%AF%B9%E6%B2%A1%E4%BA%BA%E5%81%9A%E8%BF%87/%E6%B5%B7%E5%A4%96%E5%88%86%E7%BA%A7%E9%97%AE%E5%8D%B7%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E9%97%AE%E5%8D%B7%E7%AD%94%E6%A1%88%E8%AF%B4%E3%80%8C%E6%97%A0%E3%80%8D%EF%BC%8C%E6%96%B0%E7%89%88%E6%9C%AC%E7%89%B9%E6%95%88%E8%AF%B4%E3%80%8C%E6%9C%89%E3%80%8D%EF%BC%8C%E6%AF%94%E5%AF%B9%E6%B2%A1%E4%BA%BA%E5%81%9A%E8%BF%87.md"
+        }
+      ],
+      "asset_ids": [
+        "universal.platform.office",
+        "universal.furniture.meeting-table",
+        "universal.electronics.computer",
+        "universal.document.contract",
+        "universal.person.office-worker",
+        "universal.person.manager",
+        "universal.accessory.kanban",
+        "universal.building.window-wall"
+      ]
+    }
+  ],
+  "connections": []
+}

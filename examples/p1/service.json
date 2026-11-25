@@ -1,0 +1,492 @@
+{
+  "schema_version": "1.0.0",
+  "id": "customer-service-journey",
+  "type": "process_journey",
+  "industry": "information-technology",
+  "title": "客户服务 · 工单回复与进度通知",
+  "description": "从工单建立到回复通知和归档的工作流。",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "ticket-intake",
+      "type": "process_journey",
+      "industry": "information-technology",
+      "title": "受理与建单",
+      "description": "客服收集来访或渠道反馈并建立工单，形成结构化工单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "actor",
+            "label": "客服",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "收集来访或渠道反馈并建立工单",
+            "actor": "actor",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "客户反馈",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "结构化工单",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "system",
+            "label": "工单系统",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "source-customer-ticket",
+            "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+            "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+            "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "customer-ticket",
+            "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+            "roles": "客服",
+            "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "customer-reception",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            7.6,
+            4.9
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "counter",
+            "asset_id": "universal.furniture.desk",
+            "slot": "counter"
+          },
+          {
+            "id": "staff",
+            "slot": "staff",
+            "asset_id": "universal.person.office-worker",
+            "rotation": 0,
+            "semantic_ref": "actor",
+            "action": "perform"
+          },
+          {
+            "id": "visitor",
+            "asset_id": "universal.person.customer",
+            "slot": "visitor",
+            "rotation": 180
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall"
+          },
+          {
+            "id": "chair",
+            "asset_id": "universal.furniture.chair",
+            "slot": "chair",
+            "rotation": 180
+          },
+          {
+            "id": "terminal",
+            "slot": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "support": "counter",
+            "rotation": 90
+          },
+          {
+            "id": "form",
+            "slot": "form",
+            "asset_id": "universal.document.sheet",
+            "support": "counter",
+            "semantic_ref": "input",
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "customer-ticket"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "ticket-verify",
+      "type": "process_journey",
+      "industry": "information-technology",
+      "title": "事实核对与回复草拟",
+      "description": "技术支持汇集工单和状态信息，核对已知事实，形成回复草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "actor",
+            "label": "技术支持",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "汇集工单和状态信息，核对已知事实",
+            "actor": "actor",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "工单与客户服务口径",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "回复草稿",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "system",
+            "label": "工单与监控系统",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "source-customer-ticket",
+            "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+            "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+            "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "customer-ticket",
+            "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+            "roles": "客服",
+            "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            8.5,
+            5.3
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "console",
+            "asset_id": "universal.furniture.desk",
+            "slot": "console"
+          },
+          {
+            "id": "operator",
+            "slot": "operator",
+            "asset_id": "universal.person.technician",
+            "rotation": 270,
+            "semantic_ref": "actor",
+            "action": "perform"
+          },
+          {
+            "id": "display",
+            "slot": "display",
+            "asset_id": "universal.electronics.display",
+            "support": "console",
+            "semantic_ref": "system"
+          },
+          {
+            "id": "form",
+            "slot": "form",
+            "asset_id": "universal.document.sheet",
+            "support": "console",
+            "semantic_ref": "input",
+            "rotation": 0
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "slot": "board"
+          },
+          {
+            "id": "lamp",
+            "asset_id": "universal.accessory.status-light",
+            "slot": "lamp"
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "customer-ticket"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "ticket-notify",
+      "type": "process_journey",
+      "industry": "information-technology",
+      "title": "进度通知与归档",
+      "description": "客服确认进度、更新通知并保存沟通记录，形成工单沟通档案。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "actor",
+            "label": "客服",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "perform",
+            "label": "确认进度、更新通知并保存沟通记录",
+            "actor": "actor",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "回复草稿与处理进度",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "工单沟通档案",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "systems": [
+          {
+            "id": "system",
+            "label": "工单系统",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "id": "source-customer-ticket",
+            "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+            "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+            "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "customer-ticket",
+            "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+            "roles": "客服",
+            "description": "客户问的是自己的任务怎么了，值班工程师手上是一堆口径不一的监控截图",
+            "source_refs": [
+              "source-customer-ticket"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "customer-reception",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            7.6,
+            4.9
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "counter",
+            "asset_id": "universal.furniture.desk",
+            "slot": "counter"
+          },
+          {
+            "id": "staff",
+            "slot": "staff",
+            "asset_id": "universal.person.office-worker",
+            "rotation": 0,
+            "semantic_ref": "actor",
+            "action": "perform"
+          },
+          {
+            "id": "visitor",
+            "asset_id": "universal.person.customer",
+            "slot": "visitor",
+            "rotation": 180
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "slot": "wall"
+          },
+          {
+            "id": "terminal",
+            "slot": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "support": "counter",
+            "rotation": 90
+          },
+          {
+            "id": "form",
+            "slot": "form",
+            "asset_id": "universal.document.sheet",
+            "support": "counter",
+            "semantic_ref": "input",
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "customer-ticket"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "workflow",
+      "title": "工单流转",
+      "scene_ids": [
+        "ticket-intake",
+        "ticket-verify",
+        "ticket-notify"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "flow-1",
+      "source": "ticket-intake",
+      "target": "ticket-verify",
+      "label": "结构化工单",
+      "kind": "flow",
+      "source_refs": [
+        "source-customer-ticket"
+      ]
+    },
+    {
+      "id": "flow-2",
+      "source": "ticket-verify",
+      "target": "ticket-notify",
+      "label": "回复草稿与更新口径",
+      "kind": "flow",
+      "source_refs": [
+        "source-customer-ticket"
+      ]
+    }
+  ],
+  "annotations": [],
+  "source_refs": [
+    {
+      "id": "source-customer-ticket",
+      "title": "客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛",
+      "locator": "【信息技术·客服】客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛/客户工单回复与进度通知 —— 客户半夜问「机器怎么了」，值班的人不该一个人扛.md:75",
+      "uri": "%E3%80%90%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B/%E5%AE%A2%E6%88%B7%E5%B7%A5%E5%8D%95%E5%9B%9E%E5%A4%8D%E4%B8%8E%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5%20%E2%80%94%E2%80%94%20%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%A4%9C%E9%97%AE%E3%80%8C%E6%9C%BA%E5%99%A8%E6%80%8E%E4%B9%88%E4%BA%86%E3%80%8D%EF%BC%8C%E5%80%BC%E7%8F%AD%E7%9A%84%E4%BA%BA%E4%B8%8D%E8%AF%A5%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%89%9B.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "steps",
+      "title": "步骤与交接",
+      "source_refs": [
+        "source-customer-ticket"
+      ],
+      "sections": [
+        {
+          "title": "原案例步骤",
+          "entries": [
+            {
+              "label": "工单结构化",
+              "description": "记录反馈来源、影响和紧急程度。"
+            },
+            {
+              "label": "客户档案对齐",
+              "description": "对齐服务承诺、配额和历史问题。"
+            },
+            {
+              "label": "回复草拟",
+              "description": "整理时间线、处理进展、待确认事项与后续安排。"
+            },
+            {
+              "label": "进度通知",
+              "description": "按约定时点准备进度更新。"
+            },
+            {
+              "label": "留痕归档",
+              "description": "将已确认的记录关联至事件编号。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

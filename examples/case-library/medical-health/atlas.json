@@ -1,0 +1,1853 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "medical-health",
+  "id": "medical-health-atlas",
+  "type": "industry_atlas",
+  "title": "医疗健康场景全景图",
+  "description": "案例库 · 37 个案例，按工作场景归入 8 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "followup",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "出院随访与结果追踪",
+      "description": "客服整理出院记录和既往随访，形成随访排期表。画面包含诊疗区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理出院记录和既往随访",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "出院名单与随访记录",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "随访排期表",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e64dac698dfa6102",
+            "title": "按病种生成随访话术 —— 通用模板发不出去，本院病案才是输入",
+            "locator": "【医疗健康·客服】按病种生成随访话术 —— 通用模板发不出去，本院病案才是输入/按病种生成随访话术 —— 通用模板发不出去，本院病案才是输入.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8C%89%E7%97%85%E7%A7%8D%E7%94%9F%E6%88%90%E9%9A%8F%E8%AE%BF%E8%AF%9D%E6%9C%AF%20%E2%80%94%E2%80%94%20%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%8F%91%E4%B8%8D%E5%87%BA%E5%8E%BB%EF%BC%8C%E6%9C%AC%E9%99%A2%E7%97%85%E6%A1%88%E6%89%8D%E6%98%AF%E8%BE%93%E5%85%A5/%E6%8C%89%E7%97%85%E7%A7%8D%E7%94%9F%E6%88%90%E9%9A%8F%E8%AE%BF%E8%AF%9D%E6%9C%AF%20%E2%80%94%E2%80%94%20%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%8F%91%E4%B8%8D%E5%87%BA%E5%8E%BB%EF%BC%8C%E6%9C%AC%E9%99%A2%E7%97%85%E6%A1%88%E6%89%8D%E6%98%AF%E8%BE%93%E5%85%A5.md"
+          },
+          {
+            "id": "source-catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+          },
+          {
+            "id": "source-catalog-b18e02da7d8fcb5a",
+            "title": "重要异常结果追踪清单 —— 报告发出去，不等于管起来了",
+            "locator": "【医疗健康·客服】重要异常结果追踪清单 —— 报告发出去，不等于管起来了/重要异常结果追踪清单 —— 报告发出去，不等于管起来了.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E9%87%8D%E8%A6%81%E5%BC%82%E5%B8%B8%E7%BB%93%E6%9E%9C%E8%BF%BD%E8%B8%AA%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E6%8A%A5%E5%91%8A%E5%8F%91%E5%87%BA%E5%8E%BB%EF%BC%8C%E4%B8%8D%E7%AD%89%E4%BA%8E%E7%AE%A1%E8%B5%B7%E6%9D%A5%E4%BA%86/%E9%87%8D%E8%A6%81%E5%BC%82%E5%B8%B8%E7%BB%93%E6%9E%9C%E8%BF%BD%E8%B8%AA%E6%B8%85%E5%8D%95%20%E2%80%94%E2%80%94%20%E6%8A%A5%E5%91%8A%E5%8F%91%E5%87%BA%E5%8E%BB%EF%BC%8C%E4%B8%8D%E7%AD%89%E4%BA%8E%E7%AE%A1%E8%B5%B7%E6%9D%A5%E4%BA%86.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e64dac698dfa6102",
+            "title": "按病种生成随访话术 —— 通用模板发不出去，本院病案才是输入",
+            "roles": "客服",
+            "description": "随访话术通用模板易得，但能依据本院上月 87 个髋关节置换患者病案撰写的仅有一份",
+            "source_refs": [
+              "source-catalog-e64dac698dfa6102"
+            ]
+          },
+          {
+            "id": "catalog-ffa0dda3d312183c",
+            "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+            "roles": "客服",
+            "description": "随访并非无人执行，按术式与风险分层的计划从未真正制定",
+            "source_refs": [
+              "source-catalog-ffa0dda3d312183c"
+            ]
+          },
+          {
+            "id": "catalog-b18e02da7d8fcb5a",
+            "title": "重要异常结果追踪清单 —— 报告发出去，不等于管起来了",
+            "roles": "客服",
+            "description": "报告解读人人都在做，异常结果的全程追踪无人落实",
+            "source_refs": [
+              "source-catalog-b18e02da7d8fcb5a"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            },
+            "label": "出院名单与随访记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "随访排期表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "medical-health.person.clinician",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "medical-health.equipment.exam-bed",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "诊查床",
+            "interaction": {
+              "case_ids": [
+                "catalog-ffa0dda3d312183c"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e64dac698dfa6102",
+          "catalog-ffa0dda3d312183c",
+          "catalog-b18e02da7d8fcb5a"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "billing",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "医保结算与检验对账",
+      "description": "财务核对上报清单中的口径差异，形成待复核差异。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-a01ed4d8c61601f3"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对上报清单中的口径差异",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a01ed4d8c61601f3"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "结算清单与对账记录",
+            "source_refs": [
+              "source-catalog-a01ed4d8c61601f3"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待复核差异",
+            "source_refs": [
+              "source-catalog-a01ed4d8c61601f3"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a01ed4d8c61601f3",
+            "title": "结算清单上传前的双口径核对 —— 首页和清单的主诊断，本来就不是一回事",
+            "locator": "【医疗健康·财务】结算清单上传前的双口径核对 —— 首页和清单的主诊断，本来就不是一回事/结算清单上传前的双口径核对 —— 首页和清单的主诊断，本来就不是一回事.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%BB%93%E7%AE%97%E6%B8%85%E5%8D%95%E4%B8%8A%E4%BC%A0%E5%89%8D%E7%9A%84%E5%8F%8C%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E9%A6%96%E9%A1%B5%E5%92%8C%E6%B8%85%E5%8D%95%E7%9A%84%E4%B8%BB%E8%AF%8A%E6%96%AD%EF%BC%8C%E6%9C%AC%E6%9D%A5%E5%B0%B1%E4%B8%8D%E6%98%AF%E4%B8%80%E5%9B%9E%E4%BA%8B/%E7%BB%93%E7%AE%97%E6%B8%85%E5%8D%95%E4%B8%8A%E4%BC%A0%E5%89%8D%E7%9A%84%E5%8F%8C%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E9%A6%96%E9%A1%B5%E5%92%8C%E6%B8%85%E5%8D%95%E7%9A%84%E4%B8%BB%E8%AF%8A%E6%96%AD%EF%BC%8C%E6%9C%AC%E6%9D%A5%E5%B0%B1%E4%B8%8D%E6%98%AF%E4%B8%80%E5%9B%9E%E4%BA%8B.md"
+          },
+          {
+            "id": "source-catalog-07b1f366d1deb4f5",
+            "title": "外送检验月度对账 —— 两边系统各拉一份明细，差异自己浮出来",
+            "locator": "【医疗健康·财务】外送检验月度对账 —— 两边系统各拉一份明细，差异自己浮出来/外送检验月度对账 —— 两边系统各拉一份明细，差异自己浮出来.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%A4%96%E9%80%81%E6%A3%80%E9%AA%8C%E6%9C%88%E5%BA%A6%E5%AF%B9%E8%B4%A6%20%E2%80%94%E2%80%94%20%E4%B8%A4%E8%BE%B9%E7%B3%BB%E7%BB%9F%E5%90%84%E6%8B%89%E4%B8%80%E4%BB%BD%E6%98%8E%E7%BB%86%EF%BC%8C%E5%B7%AE%E5%BC%82%E8%87%AA%E5%B7%B1%E6%B5%AE%E5%87%BA%E6%9D%A5/%E5%A4%96%E9%80%81%E6%A3%80%E9%AA%8C%E6%9C%88%E5%BA%A6%E5%AF%B9%E8%B4%A6%20%E2%80%94%E2%80%94%20%E4%B8%A4%E8%BE%B9%E7%B3%BB%E7%BB%9F%E5%90%84%E6%8B%89%E4%B8%80%E4%BB%BD%E6%98%8E%E7%BB%86%EF%BC%8C%E5%B7%AE%E5%BC%82%E8%87%AA%E5%B7%B1%E6%B5%AE%E5%87%BA%E6%9D%A5.md"
+          },
+          {
+            "id": "source-catalog-92c1f54834fbfd2d",
+            "title": "医保拒付申诉证据包 —— 现凑三天的佐证材料，变成半天交得上的初稿",
+            "locator": "【医疗健康·财务】医保拒付申诉证据包 —— 现凑三天的佐证材料，变成半天交得上的初稿/医保拒付申诉证据包 —— 现凑三天的佐证材料，变成半天交得上的初稿.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%8C%BB%E4%BF%9D%E6%8B%92%E4%BB%98%E7%94%B3%E8%AF%89%E8%AF%81%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E7%8E%B0%E5%87%91%E4%B8%89%E5%A4%A9%E7%9A%84%E4%BD%90%E8%AF%81%E6%9D%90%E6%96%99%EF%BC%8C%E5%8F%98%E6%88%90%E5%8D%8A%E5%A4%A9%E4%BA%A4%E5%BE%97%E4%B8%8A%E7%9A%84%E5%88%9D%E7%A8%BF/%E5%8C%BB%E4%BF%9D%E6%8B%92%E4%BB%98%E7%94%B3%E8%AF%89%E8%AF%81%E6%8D%AE%E5%8C%85%20%E2%80%94%E2%80%94%20%E7%8E%B0%E5%87%91%E4%B8%89%E5%A4%A9%E7%9A%84%E4%BD%90%E8%AF%81%E6%9D%90%E6%96%99%EF%BC%8C%E5%8F%98%E6%88%90%E5%8D%8A%E5%A4%A9%E4%BA%A4%E5%BE%97%E4%B8%8A%E7%9A%84%E5%88%9D%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-40a2af82ee22a8f7",
+            "title": "医保进销存疑点自查 —— POS、医保平台、追溯码三方对不上就是雷",
+            "locator": "【医疗健康·运营·财务】医保进销存疑点自查 —— POS、医保平台、追溯码三方对不上就是雷/医保进销存疑点自查 —— POS、医保平台、追溯码三方对不上就是雷.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%8C%BB%E4%BF%9D%E8%BF%9B%E9%94%80%E5%AD%98%E7%96%91%E7%82%B9%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20POS%E3%80%81%E5%8C%BB%E4%BF%9D%E5%B9%B3%E5%8F%B0%E3%80%81%E8%BF%BD%E6%BA%AF%E7%A0%81%E4%B8%89%E6%96%B9%E5%AF%B9%E4%B8%8D%E4%B8%8A%E5%B0%B1%E6%98%AF%E9%9B%B7/%E5%8C%BB%E4%BF%9D%E8%BF%9B%E9%94%80%E5%AD%98%E7%96%91%E7%82%B9%E8%87%AA%E6%9F%A5%20%E2%80%94%E2%80%94%20POS%E3%80%81%E5%8C%BB%E4%BF%9D%E5%B9%B3%E5%8F%B0%E3%80%81%E8%BF%BD%E6%BA%AF%E7%A0%81%E4%B8%89%E6%96%B9%E5%AF%B9%E4%B8%8D%E4%B8%8A%E5%B0%B1%E6%98%AF%E9%9B%B7.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a01ed4d8c61601f3",
+            "title": "结算清单上传前的双口径核对 —— 首页和清单的主诊断，本来就不是一回事",
+            "roles": "财务",
+            "description": "结算清单 193 项有则必填，直接复制首页生成的错误难以察觉",
+            "source_refs": [
+              "source-catalog-a01ed4d8c61601f3"
+            ]
+          },
+          {
+            "id": "catalog-07b1f366d1deb4f5",
+            "title": "外送检验月度对账 —— 两边系统各拉一份明细，差异自己浮出来",
+            "roles": "财务",
+            "description": "监管要求系统留痕、自动对账，实际仍靠双方各导一份 Excel 人工比对",
+            "source_refs": [
+              "source-catalog-07b1f366d1deb4f5"
+            ]
+          },
+          {
+            "id": "catalog-92c1f54834fbfd2d",
+            "title": "医保拒付申诉证据包 —— 现凑三天的佐证材料，变成半天交得上的初稿",
+            "roles": "财务",
+            "description": "拒付发生在上个月，能否追回取决于本月 11-21 日的申诉窗口",
+            "source_refs": [
+              "source-catalog-92c1f54834fbfd2d"
+            ]
+          },
+          {
+            "id": "catalog-40a2af82ee22a8f7",
+            "title": "医保进销存疑点自查 —— POS、医保平台、追溯码三方对不上就是雷",
+            "roles": "运营 · 财务",
+            "description": "违规基金 96 元照样解除医保协议，处罚不看金额看性质",
+            "source_refs": [
+              "source-catalog-40a2af82ee22a8f7"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a01ed4d8c61601f3"
+              ]
+            },
+            "label": "结算清单与对账记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待复核差异",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a01ed4d8c61601f3",
+          "catalog-07b1f366d1deb4f5",
+          "catalog-92c1f54834fbfd2d",
+          "catalog-40a2af82ee22a8f7"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "safety",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "投诉监测与风险留痕",
+      "description": "客服整理投诉并标记需人工复核的记录，形成初筛留痕记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-5ea5f066c1ed553e"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理投诉并标记需人工复核的记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-5ea5f066c1ed553e"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "投诉与产品信息",
+            "source_refs": [
+              "source-catalog-5ea5f066c1ed553e"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "初筛留痕记录",
+            "source_refs": [
+              "source-catalog-5ea5f066c1ed553e"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-5ea5f066c1ed553e",
+            "title": "投诉与疑似不良事件初筛 —— 微信里的原话变成台账里批号齐全的记录",
+            "locator": "【医疗健康·客服】投诉与疑似不良事件初筛 —— 微信里的原话变成台账里批号齐全的记录/投诉与疑似不良事件初筛 —— 微信里的原话变成台账里批号齐全的记录.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8A%95%E8%AF%89%E4%B8%8E%E7%96%91%E4%BC%BC%E4%B8%8D%E8%89%AF%E4%BA%8B%E4%BB%B6%E5%88%9D%E7%AD%9B%20%E2%80%94%E2%80%94%20%E5%BE%AE%E4%BF%A1%E9%87%8C%E7%9A%84%E5%8E%9F%E8%AF%9D%E5%8F%98%E6%88%90%E5%8F%B0%E8%B4%A6%E9%87%8C%E6%89%B9%E5%8F%B7%E9%BD%90%E5%85%A8%E7%9A%84%E8%AE%B0%E5%BD%95/%E6%8A%95%E8%AF%89%E4%B8%8E%E7%96%91%E4%BC%BC%E4%B8%8D%E8%89%AF%E4%BA%8B%E4%BB%B6%E5%88%9D%E7%AD%9B%20%E2%80%94%E2%80%94%20%E5%BE%AE%E4%BF%A1%E9%87%8C%E7%9A%84%E5%8E%9F%E8%AF%9D%E5%8F%98%E6%88%90%E5%8F%B0%E8%B4%A6%E9%87%8C%E6%89%B9%E5%8F%B7%E9%BD%90%E5%85%A8%E7%9A%84%E8%AE%B0%E5%BD%95.md"
+          },
+          {
+            "id": "source-catalog-0e5741294dde4178",
+            "title": "定期风险评价报告初稿 —— 数据部分自动汇总，结论留给人写",
+            "locator": "【医疗健康·研发·法务】定期风险评价报告初稿 —— 数据部分自动汇总，结论留给人写/定期风险评价报告初稿 —— 数据部分自动汇总，结论留给人写.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%AE%9A%E6%9C%9F%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BB%B7%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%EF%BC%8C%E7%BB%93%E8%AE%BA%E7%95%99%E7%BB%99%E4%BA%BA%E5%86%99/%E5%AE%9A%E6%9C%9F%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BB%B7%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%EF%BC%8C%E7%BB%93%E8%AE%BA%E7%95%99%E7%BB%99%E4%BA%BA%E5%86%99.md"
+          },
+          {
+            "id": "source-catalog-ef20a1d26403f4e0",
+            "title": "个例报告接收分诊与 Day 0 判定",
+            "locator": "【医疗健康·研发】个例报告接收分诊与 Day 0 判定/个例报告接收分诊与 Day 0 判定.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E4%B8%AA%E4%BE%8B%E6%8A%A5%E5%91%8A%E6%8E%A5%E6%94%B6%E5%88%86%E8%AF%8A%E4%B8%8E%20Day%200%20%E5%88%A4%E5%AE%9A/%E4%B8%AA%E4%BE%8B%E6%8A%A5%E5%91%8A%E6%8E%A5%E6%94%B6%E5%88%86%E8%AF%8A%E4%B8%8E%20Day%200%20%E5%88%A4%E5%AE%9A.md"
+          },
+          {
+            "id": "source-catalog-9c2f482d79fed6eb",
+            "title": "文献个例挖掘与分诊底稿",
+            "locator": "【医疗健康·研发】文献个例挖掘与分诊底稿/文献个例挖掘与分诊底稿.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E6%96%87%E7%8C%AE%E4%B8%AA%E4%BE%8B%E6%8C%96%E6%8E%98%E4%B8%8E%E5%88%86%E8%AF%8A%E5%BA%95%E7%A8%BF/%E6%96%87%E7%8C%AE%E4%B8%AA%E4%BE%8B%E6%8C%96%E6%8E%98%E4%B8%8E%E5%88%86%E8%AF%8A%E5%BA%95%E7%A8%BF.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-5ea5f066c1ed553e",
+            "title": "投诉与疑似不良事件初筛 —— 微信里的原话变成台账里批号齐全的记录",
+            "roles": "客服",
+            "description": "投诉中已明确记载患者受到伤害，台账仍记为售后服务问题",
+            "source_refs": [
+              "source-catalog-5ea5f066c1ed553e"
+            ]
+          },
+          {
+            "id": "catalog-0e5741294dde4178",
+            "title": "定期风险评价报告初稿 —— 数据部分自动汇总，结论留给人写",
+            "roles": "研发 · 法务",
+            "description": "每证每年均须提交的法定报告，83 家持有人普遍流于形式",
+            "source_refs": [
+              "source-catalog-0e5741294dde4178"
+            ]
+          },
+          {
+            "id": "catalog-ef20a1d26403f4e0",
+            "title": "个例报告接收分诊与 Day 0 判定",
+            "roles": "研发",
+            "description": "记录与时限规定俱在，无人能确认每一例的时限从哪天起算",
+            "source_refs": [
+              "source-catalog-ef20a1d26403f4e0"
+            ]
+          },
+          {
+            "id": "catalog-9c2f482d79fed6eb",
+            "title": "文献个例挖掘与分诊底稿",
+            "roles": "研发",
+            "description": "每周文献检索照常开展，从命中结果识别本持有人产品个例始终不易",
+            "source_refs": [
+              "source-catalog-9c2f482d79fed6eb"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-5ea5f066c1ed553e"
+              ]
+            },
+            "label": "投诉与产品信息",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "初筛留痕记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-5ea5f066c1ed553e",
+          "catalog-0e5741294dde4178",
+          "catalog-ef20a1d26403f4e0",
+          "catalog-9c2f482d79fed6eb"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "registration",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "注册材料与合规维护",
+      "description": "研发整理更新后的注册材料，形成申报资料草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "研发",
+            "source_refs": [
+              "source-catalog-0d219ee43a4f8380"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理更新后的注册材料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-0d219ee43a4f8380"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "既有材料与本次变更",
+            "source_refs": [
+              "source-catalog-0d219ee43a4f8380"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "申报资料草稿",
+            "source_refs": [
+              "source-catalog-0d219ee43a4f8380"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-02450e0d486793a3",
+            "title": "竞品注册证监测月报 —— 每月批准公告里筛出本品类与参数重叠",
+            "locator": "【医疗健康·法务】竞品注册证监测月报 —— 每月批准公告里筛出本品类与参数重叠/竞品注册证监测月报 —— 每月批准公告里筛出本品类与参数重叠.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%AB%9E%E5%93%81%E6%B3%A8%E5%86%8C%E8%AF%81%E7%9B%91%E6%B5%8B%E6%9C%88%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E6%9C%88%E6%89%B9%E5%87%86%E5%85%AC%E5%91%8A%E9%87%8C%E7%AD%9B%E5%87%BA%E6%9C%AC%E5%93%81%E7%B1%BB%E4%B8%8E%E5%8F%82%E6%95%B0%E9%87%8D%E5%8F%A0/%E7%AB%9E%E5%93%81%E6%B3%A8%E5%86%8C%E8%AF%81%E7%9B%91%E6%B5%8B%E6%9C%88%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E6%9C%88%E6%89%B9%E5%87%86%E5%85%AC%E5%91%8A%E9%87%8C%E7%AD%9B%E5%87%BA%E6%9C%AC%E5%93%81%E7%B1%BB%E4%B8%8E%E5%8F%82%E6%95%B0%E9%87%8D%E5%8F%A0.md"
+          },
+          {
+            "id": "source-catalog-e1a2cf55f2db4125",
+            "title": "证照到期与影响链预警 —— 不是日历提醒，是「这张证到期会拖垮什么」",
+            "locator": "【医疗健康·法务】证照到期与影响链预警 —— 不是日历提醒，是「这张证到期会拖垮什么」/证照到期与影响链预警 —— 不是日历提醒，是「这张证到期会拖垮什么」.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%AF%81%E7%85%A7%E5%88%B0%E6%9C%9F%E4%B8%8E%E5%BD%B1%E5%93%8D%E9%93%BE%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E4%B8%8D%E6%98%AF%E6%97%A5%E5%8E%86%E6%8F%90%E9%86%92%EF%BC%8C%E6%98%AF%E3%80%8C%E8%BF%99%E5%BC%A0%E8%AF%81%E5%88%B0%E6%9C%9F%E4%BC%9A%E6%8B%96%E5%9E%AE%E4%BB%80%E4%B9%88%E3%80%8D/%E8%AF%81%E7%85%A7%E5%88%B0%E6%9C%9F%E4%B8%8E%E5%BD%B1%E5%93%8D%E9%93%BE%E9%A2%84%E8%AD%A6%20%E2%80%94%E2%80%94%20%E4%B8%8D%E6%98%AF%E6%97%A5%E5%8E%86%E6%8F%90%E9%86%92%EF%BC%8C%E6%98%AF%E3%80%8C%E8%BF%99%E5%BC%A0%E8%AF%81%E5%88%B0%E6%9C%9F%E4%BC%9A%E6%8B%96%E5%9E%AE%E4%BB%80%E4%B9%88%E3%80%8D.md"
+          },
+          {
+            "id": "source-catalog-1fc7443a17597a45",
+            "title": "法规与标准更新影响分析 —— 新规逐条比对自家注册证与技术要求",
+            "locator": "【医疗健康·研发·法务】法规与标准更新影响分析 —— 新规逐条比对自家注册证与技术要求/法规与标准更新影响分析 —— 新规逐条比对自家注册证与技术要求.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%B3%95%E8%A7%84%E4%B8%8E%E6%A0%87%E5%87%86%E6%9B%B4%E6%96%B0%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E6%96%B0%E8%A7%84%E9%80%90%E6%9D%A1%E6%AF%94%E5%AF%B9%E8%87%AA%E5%AE%B6%E6%B3%A8%E5%86%8C%E8%AF%81%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82/%E6%B3%95%E8%A7%84%E4%B8%8E%E6%A0%87%E5%87%86%E6%9B%B4%E6%96%B0%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20%E6%96%B0%E8%A7%84%E9%80%90%E6%9D%A1%E6%AF%94%E5%AF%B9%E8%87%AA%E5%AE%B6%E6%B3%A8%E5%86%8C%E8%AF%81%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82.md"
+          },
+          {
+            "id": "source-catalog-3d38df4d0db181a8",
+            "title": "发补缺口清单与证据定位",
+            "locator": "【医疗健康·研发】发补缺口清单与证据定位/发补缺口清单与证据定位.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E5%8F%91%E8%A1%A5%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%AE%9A%E4%BD%8D/%E5%8F%91%E8%A1%A5%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%AE%9A%E4%BD%8D.md"
+          },
+          {
+            "id": "source-catalog-85493b2a583ebe0f",
+            "title": "方案修正案与登记平台核对",
+            "locator": "【医疗健康·研发】方案修正案与登记平台核对/方案修正案与登记平台核对.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E6%96%B9%E6%A1%88%E4%BF%AE%E6%AD%A3%E6%A1%88%E4%B8%8E%E7%99%BB%E8%AE%B0%E5%B9%B3%E5%8F%B0%E6%A0%B8%E5%AF%B9/%E6%96%B9%E6%A1%88%E4%BF%AE%E6%AD%A3%E6%A1%88%E4%B8%8E%E7%99%BB%E8%AE%B0%E5%B9%B3%E5%8F%B0%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-fbc03b99b0f97c91",
+            "title": "说明书·标签·注册证一致性核对 —— 变更一处，漏改三处的地方先拦住",
+            "locator": "【医疗健康·研发】说明书·标签·注册证一致性核对 —— 变更一处，漏改三处的地方先拦住/说明书·标签·注册证一致性核对 —— 变更一处，漏改三处的地方先拦住.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E8%AF%B4%E6%98%8E%E4%B9%A6%C2%B7%E6%A0%87%E7%AD%BE%C2%B7%E6%B3%A8%E5%86%8C%E8%AF%81%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%8F%98%E6%9B%B4%E4%B8%80%E5%A4%84%EF%BC%8C%E6%BC%8F%E6%94%B9%E4%B8%89%E5%A4%84%E7%9A%84%E5%9C%B0%E6%96%B9%E5%85%88%E6%8B%A6%E4%BD%8F/%E8%AF%B4%E6%98%8E%E4%B9%A6%C2%B7%E6%A0%87%E7%AD%BE%C2%B7%E6%B3%A8%E5%86%8C%E8%AF%81%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%8F%98%E6%9B%B4%E4%B8%80%E5%A4%84%EF%BC%8C%E6%BC%8F%E6%94%B9%E4%B8%89%E5%A4%84%E7%9A%84%E5%9C%B0%E6%96%B9%E5%85%88%E6%8B%A6%E4%BD%8F.md"
+          },
+          {
+            "id": "source-catalog-0d219ee43a4f8380",
+            "title": "注册申报资料增量式初稿 —— 基于上一代产品档案，不凭空生成",
+            "locator": "【医疗健康·研发】注册申报资料增量式初稿 —— 基于上一代产品档案，不凭空生成/注册申报资料增量式初稿 —— 基于上一代产品档案，不凭空生成.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E6%B3%A8%E5%86%8C%E7%94%B3%E6%8A%A5%E8%B5%84%E6%96%99%E5%A2%9E%E9%87%8F%E5%BC%8F%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E5%9F%BA%E4%BA%8E%E4%B8%8A%E4%B8%80%E4%BB%A3%E4%BA%A7%E5%93%81%E6%A1%A3%E6%A1%88%EF%BC%8C%E4%B8%8D%E5%87%AD%E7%A9%BA%E7%94%9F%E6%88%90/%E6%B3%A8%E5%86%8C%E7%94%B3%E6%8A%A5%E8%B5%84%E6%96%99%E5%A2%9E%E9%87%8F%E5%BC%8F%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E5%9F%BA%E4%BA%8E%E4%B8%8A%E4%B8%80%E4%BB%A3%E4%BA%A7%E5%93%81%E6%A1%A3%E6%A1%88%EF%BC%8C%E4%B8%8D%E5%87%AD%E7%A9%BA%E7%94%9F%E6%88%90.md"
+          },
+          {
+            "id": "source-catalog-9ffd93efa48e8740",
+            "title": "BLA 卷宗模块间一致性核对",
+            "locator": "【医疗健康·研发】BLA 卷宗模块间一致性核对/BLA 卷宗模块间一致性核对.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91BLA%20%E5%8D%B7%E5%AE%97%E6%A8%A1%E5%9D%97%E9%97%B4%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9/BLA%20%E5%8D%B7%E5%AE%97%E6%A8%A1%E5%9D%97%E9%97%B4%E4%B8%80%E8%87%B4%E6%80%A7%E6%A0%B8%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-02450e0d486793a3",
+            "title": "竞品注册证监测月报 —— 每月批准公告里筛出本品类与参数重叠",
+            "roles": "法务",
+            "description": "NMPA 每月批准公告虽公开可查，极少有企业坚持逐月整理对比",
+            "source_refs": [
+              "source-catalog-02450e0d486793a3"
+            ]
+          },
+          {
+            "id": "catalog-e1a2cf55f2db4125",
+            "title": "证照到期与影响链预警 —— 不是日历提醒，是「这张证到期会拖垮什么」",
+            "roles": "法务",
+            "description": "仅有到期提醒价值有限，关键在于该证关联哪些投标与生产批次",
+            "source_refs": [
+              "source-catalog-e1a2cf55f2db4125"
+            ]
+          },
+          {
+            "id": "catalog-1fc7443a17597a45",
+            "title": "法规与标准更新影响分析 —— 新规逐条比对自家注册证与技术要求",
+            "roles": "研发 · 法务",
+            "description": "一年发布行业标准 80 项、废止 14 项，企业普遍未逐条比对自身受影响情况",
+            "source_refs": [
+              "source-catalog-1fc7443a17597a45"
+            ]
+          },
+          {
+            "id": "catalog-3d38df4d0db181a8",
+            "title": "发补缺口清单与证据定位",
+            "roles": "研发",
+            "description": "发补通知仅有五条，答复需跨三个部门并协调两千公里外的 CRO",
+            "source_refs": [
+              "source-catalog-3d38df4d0db181a8"
+            ]
+          },
+          {
+            "id": "catalog-85493b2a583ebe0f",
+            "title": "方案修正案与登记平台核对",
+            "roles": "研发",
+            "description": "伦理已批准第 3 版方案，登记平台公示的仍是第 1 版信息",
+            "source_refs": [
+              "source-catalog-85493b2a583ebe0f"
+            ]
+          },
+          {
+            "id": "catalog-fbc03b99b0f97c91",
+            "title": "说明书·标签·注册证一致性核对 —— 变更一处，漏改三处的地方先拦住",
+            "roles": "研发",
+            "description": "设计变更仅改一处，说明书、标签、英文版三处同步漏改",
+            "source_refs": [
+              "source-catalog-fbc03b99b0f97c91"
+            ]
+          },
+          {
+            "id": "catalog-0d219ee43a4f8380",
+            "title": "注册申报资料增量式初稿 —— 基于上一代产品档案，不凭空生成",
+            "roles": "研发",
+            "description": "通用大模型生成的注册资料看似成体系，提交后逐条查无出处",
+            "source_refs": [
+              "source-catalog-0d219ee43a4f8380"
+            ]
+          },
+          {
+            "id": "catalog-9ffd93efa48e8740",
+            "title": "BLA 卷宗模块间一致性核对",
+            "roles": "研发",
+            "description": "各模块单独核对均无问题，合并后同一数据存在三个不一致口径",
+            "source_refs": [
+              "source-catalog-9ffd93efa48e8740"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-0d219ee43a4f8380"
+              ]
+            },
+            "label": "既有材料与本次变更",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "申报资料草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-02450e0d486793a3",
+          "catalog-e1a2cf55f2db4125",
+          "catalog-1fc7443a17597a45",
+          "catalog-3d38df4d0db181a8",
+          "catalog-85493b2a583ebe0f",
+          "catalog-fbc03b99b0f97c91",
+          "catalog-0d219ee43a4f8380",
+          "catalog-9ffd93efa48e8740"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "research",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "研究与文献证据",
+      "description": "研发归集文献并对齐出处，形成证据表。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "研发",
+            "source_refs": [
+              "source-catalog-8ba33da43a6cef4f"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "归集文献并对齐出处",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-8ba33da43a6cef4f"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "文献资料",
+            "source_refs": [
+              "source-catalog-8ba33da43a6cef4f"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "证据表",
+            "source_refs": [
+              "source-catalog-8ba33da43a6cef4f"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-8d052d507b807715",
+            "title": "竞品管线周监测与影响判定",
+            "locator": "【医疗健康·市场】竞品管线周监测与影响判定/竞品管线周监测与影响判定.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E7%AB%9E%E5%93%81%E7%AE%A1%E7%BA%BF%E5%91%A8%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%BD%B1%E5%93%8D%E5%88%A4%E5%AE%9A/%E7%AB%9E%E5%93%81%E7%AE%A1%E7%BA%BF%E5%91%A8%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%BD%B1%E5%93%8D%E5%88%A4%E5%AE%9A.md"
+          },
+          {
+            "id": "source-catalog-4117eeb80c0725c0",
+            "title": "靶点竞争格局四源盘点",
+            "locator": "【医疗健康·研发】靶点竞争格局四源盘点/靶点竞争格局四源盘点.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E9%9D%B6%E7%82%B9%E7%AB%9E%E4%BA%89%E6%A0%BC%E5%B1%80%E5%9B%9B%E6%BA%90%E7%9B%98%E7%82%B9/%E9%9D%B6%E7%82%B9%E7%AB%9E%E4%BA%89%E6%A0%BC%E5%B1%80%E5%9B%9B%E6%BA%90%E7%9B%98%E7%82%B9.md"
+          },
+          {
+            "id": "source-catalog-517a008e9724c9ee",
+            "title": "同品种临床评价文献底稿 —— 检索留痕、逐篇分级、关联性核验",
+            "locator": "【医疗健康·研发】同品种临床评价文献底稿 —— 检索留痕、逐篇分级、关联性核验/同品种临床评价文献底稿 —— 检索留痕、逐篇分级、关联性核验.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E5%90%8C%E5%93%81%E7%A7%8D%E4%B8%B4%E5%BA%8A%E8%AF%84%E4%BB%B7%E6%96%87%E7%8C%AE%E5%BA%95%E7%A8%BF%20%E2%80%94%E2%80%94%20%E6%A3%80%E7%B4%A2%E7%95%99%E7%97%95%E3%80%81%E9%80%90%E7%AF%87%E5%88%86%E7%BA%A7%E3%80%81%E5%85%B3%E8%81%94%E6%80%A7%E6%A0%B8%E9%AA%8C/%E5%90%8C%E5%93%81%E7%A7%8D%E4%B8%B4%E5%BA%8A%E8%AF%84%E4%BB%B7%E6%96%87%E7%8C%AE%E5%BA%95%E7%A8%BF%20%E2%80%94%E2%80%94%20%E6%A3%80%E7%B4%A2%E7%95%99%E7%97%95%E3%80%81%E9%80%90%E7%AF%87%E5%88%86%E7%BA%A7%E3%80%81%E5%85%B3%E8%81%94%E6%80%A7%E6%A0%B8%E9%AA%8C.md"
+          },
+          {
+            "id": "source-catalog-8ba33da43a6cef4f",
+            "title": "文献综述初稿与证据表",
+            "locator": "【医疗健康·研发】文献综述初稿与证据表/文献综述初稿与证据表.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E7%A0%94%E5%8F%91%E3%80%91%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0%E5%88%9D%E7%A8%BF%E4%B8%8E%E8%AF%81%E6%8D%AE%E8%A1%A8/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0%E5%88%9D%E7%A8%BF%E4%B8%8E%E8%AF%81%E6%8D%AE%E8%A1%A8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-8d052d507b807715",
+            "title": "竞品管线周监测与影响判定",
+            "roles": "市场",
+            "description": "各信源均已逐一查询，合并后同一试验在三处名称不一",
+            "source_refs": [
+              "source-catalog-8d052d507b807715"
+            ]
+          },
+          {
+            "id": "catalog-4117eeb80c0725c0",
+            "title": "靶点竞争格局四源盘点",
+            "roles": "研发",
+            "description": "商业库收录 60 项，自行统计为 87 条，真正在研的可能只有 41",
+            "source_refs": [
+              "source-catalog-4117eeb80c0725c0"
+            ]
+          },
+          {
+            "id": "catalog-517a008e9724c9ee",
+            "title": "同品种临床评价文献底稿 —— 检索留痕、逐篇分级、关联性核验",
+            "roles": "研发",
+            "description": "文献检索报告虽引用数十篇，半数与对比产品缺乏关联",
+            "source_refs": [
+              "source-catalog-517a008e9724c9ee"
+            ]
+          },
+          {
+            "id": "catalog-8ba33da43a6cef4f",
+            "title": "文献综述初稿与证据表",
+            "roles": "研发",
+            "description": "综述初稿看似成型，被追问检索式时无人能答",
+            "source_refs": [
+              "source-catalog-8ba33da43a6cef4f"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-8ba33da43a6cef4f"
+              ]
+            },
+            "label": "文献资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "证据表",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-8d052d507b807715",
+          "catalog-4117eeb80c0725c0",
+          "catalog-517a008e9724c9ee",
+          "catalog-8ba33da43a6cef4f"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "service",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "客户答复与报修",
+      "description": "客服按设备信息检索历史报修，形成应答说明。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-4001408103169625"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按设备信息检索历史报修",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-4001408103169625"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "问询与历史工单",
+            "source_refs": [
+              "source-catalog-4001408103169625"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "应答说明",
+            "source_refs": [
+              "source-catalog-4001408103169625"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-370cb7a6ff267723",
+            "title": "客诉台账月度归因报告 —— 42 件投诉，答得出哪个月哪个科室高发吗",
+            "locator": "【医疗健康·客服】客诉台账月度归因报告 —— 42 件投诉，答得出哪个月哪个科室高发吗/客诉台账月度归因报告 —— 42 件投诉，答得出哪个月哪个科室高发吗.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%AE%A2%E8%AF%89%E5%8F%B0%E8%B4%A6%E6%9C%88%E5%BA%A6%E5%BD%92%E5%9B%A0%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%2042%20%E4%BB%B6%E6%8A%95%E8%AF%89%EF%BC%8C%E7%AD%94%E5%BE%97%E5%87%BA%E5%93%AA%E4%B8%AA%E6%9C%88%E5%93%AA%E4%B8%AA%E7%A7%91%E5%AE%A4%E9%AB%98%E5%8F%91%E5%90%97/%E5%AE%A2%E8%AF%89%E5%8F%B0%E8%B4%A6%E6%9C%88%E5%BA%A6%E5%BD%92%E5%9B%A0%E6%8A%A5%E5%91%8A%20%E2%80%94%E2%80%94%2042%20%E4%BB%B6%E6%8A%95%E8%AF%89%EF%BC%8C%E7%AD%94%E5%BE%97%E5%87%BA%E5%93%AA%E4%B8%AA%E6%9C%88%E5%93%AA%E4%B8%AA%E7%A7%91%E5%AE%A4%E9%AB%98%E5%8F%91%E5%90%97.md"
+          },
+          {
+            "id": "source-catalog-9df80b8754bcc1de",
+            "title": "投诉答复函初稿 —— 5 个工作日的时限，改比写快",
+            "locator": "【医疗健康·客服】投诉答复函初稿 —— 5 个工作日的时限，改比写快/投诉答复函初稿 —— 5 个工作日的时限，改比写快.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%8A%95%E8%AF%89%E7%AD%94%E5%A4%8D%E5%87%BD%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%205%20%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E7%9A%84%E6%97%B6%E9%99%90%EF%BC%8C%E6%94%B9%E6%AF%94%E5%86%99%E5%BF%AB/%E6%8A%95%E8%AF%89%E7%AD%94%E5%A4%8D%E5%87%BD%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%205%20%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E7%9A%84%E6%97%B6%E9%99%90%EF%BC%8C%E6%94%B9%E6%AF%94%E5%86%99%E5%BF%AB.md"
+          },
+          {
+            "id": "source-catalog-4001408103169625",
+            "title": "医院问询与报修应答 —— 按序列号调档案，排查建议带历史工单引用",
+            "locator": "【医疗健康·客服】医院问询与报修应答 —— 按序列号调档案，排查建议带历史工单引用/医院问询与报修应答 —— 按序列号调档案，排查建议带历史工单引用.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%8C%BB%E9%99%A2%E9%97%AE%E8%AF%A2%E4%B8%8E%E6%8A%A5%E4%BF%AE%E5%BA%94%E7%AD%94%20%E2%80%94%E2%80%94%20%E6%8C%89%E5%BA%8F%E5%88%97%E5%8F%B7%E8%B0%83%E6%A1%A3%E6%A1%88%EF%BC%8C%E6%8E%92%E6%9F%A5%E5%BB%BA%E8%AE%AE%E5%B8%A6%E5%8E%86%E5%8F%B2%E5%B7%A5%E5%8D%95%E5%BC%95%E7%94%A8/%E5%8C%BB%E9%99%A2%E9%97%AE%E8%AF%A2%E4%B8%8E%E6%8A%A5%E4%BF%AE%E5%BA%94%E7%AD%94%20%E2%80%94%E2%80%94%20%E6%8C%89%E5%BA%8F%E5%88%97%E5%8F%B7%E8%B0%83%E6%A1%A3%E6%A1%88%EF%BC%8C%E6%8E%92%E6%9F%A5%E5%BB%BA%E8%AE%AE%E5%B8%A6%E5%8E%86%E5%8F%B2%E5%B7%A5%E5%8D%95%E5%BC%95%E7%94%A8.md"
+          },
+          {
+            "id": "source-catalog-ce09023b023e2bda",
+            "title": "店员用药咨询辅助 —— 推荐只限本店有货的 OTC，说不清的一律转药师",
+            "locator": "【医疗健康·运营·客服】店员用药咨询辅助 —— 推荐只限本店有货的 OTC，说不清的一律转药师/店员用药咨询辅助 —— 推荐只限本店有货的 OTC，说不清的一律转药师.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%BA%97%E5%91%98%E7%94%A8%E8%8D%AF%E5%92%A8%E8%AF%A2%E8%BE%85%E5%8A%A9%20%E2%80%94%E2%80%94%20%E6%8E%A8%E8%8D%90%E5%8F%AA%E9%99%90%E6%9C%AC%E5%BA%97%E6%9C%89%E8%B4%A7%E7%9A%84%20OTC%EF%BC%8C%E8%AF%B4%E4%B8%8D%E6%B8%85%E7%9A%84%E4%B8%80%E5%BE%8B%E8%BD%AC%E8%8D%AF%E5%B8%88/%E5%BA%97%E5%91%98%E7%94%A8%E8%8D%AF%E5%92%A8%E8%AF%A2%E8%BE%85%E5%8A%A9%20%E2%80%94%E2%80%94%20%E6%8E%A8%E8%8D%90%E5%8F%AA%E9%99%90%E6%9C%AC%E5%BA%97%E6%9C%89%E8%B4%A7%E7%9A%84%20OTC%EF%BC%8C%E8%AF%B4%E4%B8%8D%E6%B8%85%E7%9A%84%E4%B8%80%E5%BE%8B%E8%BD%AC%E8%8D%AF%E5%B8%88.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-370cb7a6ff267723",
+            "title": "客诉台账月度归因报告 —— 42 件投诉，答得出哪个月哪个科室高发吗",
+            "roles": "客服",
+            "description": "客诉台账每日记录，高发科室、环节与月份归因无人作答",
+            "source_refs": [
+              "source-catalog-370cb7a6ff267723"
+            ]
+          },
+          {
+            "id": "catalog-9df80b8754bcc1de",
+            "title": "投诉答复函初稿 —— 5 个工作日的时限，改比写快",
+            "roles": "客服",
+            "description": "答复函难点不在措辞，事实经过需从五个科室的记录中拼合还原",
+            "source_refs": [
+              "source-catalog-9df80b8754bcc1de"
+            ]
+          },
+          {
+            "id": "catalog-4001408103169625",
+            "title": "医院问询与报修应答 —— 按序列号调档案，排查建议带历史工单引用",
+            "roles": "客服",
+            "description": "设备故障史沉淀于资深工程师个人，人员离职即经验归零",
+            "source_refs": [
+              "source-catalog-4001408103169625"
+            ]
+          },
+          {
+            "id": "catalog-ce09023b023e2bda",
+            "title": "店员用药咨询辅助 —— 推荐只限本店有货的 OTC，说不清的一律转药师",
+            "roles": "运营 · 客服",
+            "description": "顾客问店员「这个感冒药能和降压药一起吃吗」，店员的答案全凭生活经验",
+            "source_refs": [
+              "source-catalog-ce09023b023e2bda"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-4001408103169625"
+              ]
+            },
+            "label": "问询与历史工单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "应答说明",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-370cb7a6ff267723",
+          "catalog-9df80b8754bcc1de",
+          "catalog-4001408103169625",
+          "catalog-ce09023b023e2bda"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "distribution",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "采购、资质与投标",
+      "description": "销售汇集经销商资质并核对完整性，形成应答材料包。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "销售",
+            "source_refs": [
+              "source-catalog-4cde50051455c666"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇集经销商资质并核对完整性",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-4cde50051455c666"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "资质与应答要求",
+            "source_refs": [
+              "source-catalog-4cde50051455c666"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "应答材料包",
+            "source_refs": [
+              "source-catalog-4cde50051455c666"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-f7e7eba3bcc00632",
+            "title": "供应商资质到期台账与催办 —— 过期了还在下单的供货方，要有人追",
+            "locator": "【医疗健康·采购】供应商资质到期台账与催办 —— 过期了还在下单的供货方，要有人追/供应商资质到期台账与催办 —— 过期了还在下单的供货方，要有人追.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E8%B4%A8%E5%88%B0%E6%9C%9F%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%82%AC%E5%8A%9E%20%E2%80%94%E2%80%94%20%E8%BF%87%E6%9C%9F%E4%BA%86%E8%BF%98%E5%9C%A8%E4%B8%8B%E5%8D%95%E7%9A%84%E4%BE%9B%E8%B4%A7%E6%96%B9%EF%BC%8C%E8%A6%81%E6%9C%89%E4%BA%BA%E8%BF%BD/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B5%84%E8%B4%A8%E5%88%B0%E6%9C%9F%E5%8F%B0%E8%B4%A6%E4%B8%8E%E5%82%AC%E5%8A%9E%20%E2%80%94%E2%80%94%20%E8%BF%87%E6%9C%9F%E4%BA%86%E8%BF%98%E5%9C%A8%E4%B8%8B%E5%8D%95%E7%9A%84%E4%BE%9B%E8%B4%A7%E6%96%B9%EF%BC%8C%E8%A6%81%E6%9C%89%E4%BA%BA%E8%BF%BD.md"
+          },
+          {
+            "id": "source-catalog-49a15b9cc7d6cd68",
+            "title": "首营品种资料预审 —— 每上一个新品先过八道资料关，缺件一次性列清",
+            "locator": "【医疗健康·采购】首营品种资料预审 —— 每上一个新品先过八道资料关，缺件一次性列清/首营品种资料预审 —— 每上一个新品先过八道资料关，缺件一次性列清.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E9%87%87%E8%B4%AD%E3%80%91%E9%A6%96%E8%90%A5%E5%93%81%E7%A7%8D%E8%B5%84%E6%96%99%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E6%AF%8F%E4%B8%8A%E4%B8%80%E4%B8%AA%E6%96%B0%E5%93%81%E5%85%88%E8%BF%87%E5%85%AB%E9%81%93%E8%B5%84%E6%96%99%E5%85%B3%EF%BC%8C%E7%BC%BA%E4%BB%B6%E4%B8%80%E6%AC%A1%E6%80%A7%E5%88%97%E6%B8%85/%E9%A6%96%E8%90%A5%E5%93%81%E7%A7%8D%E8%B5%84%E6%96%99%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E6%AF%8F%E4%B8%8A%E4%B8%80%E4%B8%AA%E6%96%B0%E5%93%81%E5%85%88%E8%BF%87%E5%85%AB%E9%81%93%E8%B5%84%E6%96%99%E5%85%B3%EF%BC%8C%E7%BC%BA%E4%BB%B6%E4%B8%80%E6%AC%A1%E6%80%A7%E5%88%97%E6%B8%85.md"
+          },
+          {
+            "id": "source-catalog-72ffbb83c3f4d34c",
+            "title": "集采与投标资质自检 —— 跨四部门的证照交叉核验出缺口清单",
+            "locator": "【医疗健康·销售】集采与投标资质自检 —— 跨四部门的证照交叉核验出缺口清单/集采与投标资质自检 —— 跨四部门的证照交叉核验出缺口清单.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E9%9B%86%E9%87%87%E4%B8%8E%E6%8A%95%E6%A0%87%E8%B5%84%E8%B4%A8%E8%87%AA%E6%A3%80%20%E2%80%94%E2%80%94%20%E8%B7%A8%E5%9B%9B%E9%83%A8%E9%97%A8%E7%9A%84%E8%AF%81%E7%85%A7%E4%BA%A4%E5%8F%89%E6%A0%B8%E9%AA%8C%E5%87%BA%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95/%E9%9B%86%E9%87%87%E4%B8%8E%E6%8A%95%E6%A0%87%E8%B5%84%E8%B4%A8%E8%87%AA%E6%A3%80%20%E2%80%94%E2%80%94%20%E8%B7%A8%E5%9B%9B%E9%83%A8%E9%97%A8%E7%9A%84%E8%AF%81%E7%85%A7%E4%BA%A4%E5%8F%89%E6%A0%B8%E9%AA%8C%E5%87%BA%E7%BC%BA%E5%8F%A3%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-4cde50051455c666",
+            "title": "经销商资质组包应答 —— 对方要什么就当天组什么，顺手校验有效期",
+            "locator": "【医疗健康·销售】经销商资质组包应答 —— 对方要什么就当天组什么，顺手校验有效期/经销商资质组包应答 —— 对方要什么就当天组什么，顺手校验有效期.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E7%BB%8F%E9%94%80%E5%95%86%E8%B5%84%E8%B4%A8%E7%BB%84%E5%8C%85%E5%BA%94%E7%AD%94%20%E2%80%94%E2%80%94%20%E5%AF%B9%E6%96%B9%E8%A6%81%E4%BB%80%E4%B9%88%E5%B0%B1%E5%BD%93%E5%A4%A9%E7%BB%84%E4%BB%80%E4%B9%88%EF%BC%8C%E9%A1%BA%E6%89%8B%E6%A0%A1%E9%AA%8C%E6%9C%89%E6%95%88%E6%9C%9F/%E7%BB%8F%E9%94%80%E5%95%86%E8%B5%84%E8%B4%A8%E7%BB%84%E5%8C%85%E5%BA%94%E7%AD%94%20%E2%80%94%E2%80%94%20%E5%AF%B9%E6%96%B9%E8%A6%81%E4%BB%80%E4%B9%88%E5%B0%B1%E5%BD%93%E5%A4%A9%E7%BB%84%E4%BB%80%E4%B9%88%EF%BC%8C%E9%A1%BA%E6%89%8B%E6%A0%A1%E9%AA%8C%E6%9C%89%E6%95%88%E6%9C%9F.md"
+          },
+          {
+            "id": "source-catalog-889ed48213080882",
+            "title": "投标技术应答初稿与参数核对 —— 应答有据，参数与注册证一字不差",
+            "locator": "【医疗健康·销售】投标技术应答初稿与参数核对 —— 应答有据，参数与注册证一字不差/投标技术应答初稿与参数核对 —— 应答有据，参数与注册证一字不差.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%95%E6%A0%87%E6%8A%80%E6%9C%AF%E5%BA%94%E7%AD%94%E5%88%9D%E7%A8%BF%E4%B8%8E%E5%8F%82%E6%95%B0%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%BA%94%E7%AD%94%E6%9C%89%E6%8D%AE%EF%BC%8C%E5%8F%82%E6%95%B0%E4%B8%8E%E6%B3%A8%E5%86%8C%E8%AF%81%E4%B8%80%E5%AD%97%E4%B8%8D%E5%B7%AE/%E6%8A%95%E6%A0%87%E6%8A%80%E6%9C%AF%E5%BA%94%E7%AD%94%E5%88%9D%E7%A8%BF%E4%B8%8E%E5%8F%82%E6%95%B0%E6%A0%B8%E5%AF%B9%20%E2%80%94%E2%80%94%20%E5%BA%94%E7%AD%94%E6%9C%89%E6%8D%AE%EF%BC%8C%E5%8F%82%E6%95%B0%E4%B8%8E%E6%B3%A8%E5%86%8C%E8%AF%81%E4%B8%80%E5%AD%97%E4%B8%8D%E5%B7%AE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-f7e7eba3bcc00632",
+            "title": "供应商资质到期台账与催办 —— 过期了还在下单的供货方，要有人追",
+            "roles": "采购",
+            "description": "台账上写的是「已审核」，网盘里的证照上月已过期",
+            "source_refs": [
+              "source-catalog-f7e7eba3bcc00632"
+            ]
+          },
+          {
+            "id": "catalog-49a15b9cc7d6cd68",
+            "title": "首营品种资料预审 —— 每上一个新品先过八道资料关，缺件一次性列清",
+            "roles": "采购",
+            "description": "业务说「这个品下周就要上」，审批表上一次签「资料齐全」是在货到之后",
+            "source_refs": [
+              "source-catalog-49a15b9cc7d6cd68"
+            ]
+          },
+          {
+            "id": "catalog-72ffbb83c3f4d34c",
+            "title": "集采与投标资质自检 —— 跨四部门的证照交叉核验出缺口清单",
+            "roles": "销售",
+            "description": "资质类错误占医疗标书废标的 32%，证照横跨四部门，难以逐一核验",
+            "source_refs": [
+              "source-catalog-72ffbb83c3f4d34c"
+            ]
+          },
+          {
+            "id": "catalog-4cde50051455c666",
+            "title": "经销商资质组包应答 —— 对方要什么就当天组什么，顺手校验有效期",
+            "roles": "销售",
+            "description": "经销商每周重复索要同一包资质文件，每次均依赖人工翻找拼凑",
+            "source_refs": [
+              "source-catalog-4cde50051455c666"
+            ]
+          },
+          {
+            "id": "catalog-889ed48213080882",
+            "title": "投标技术应答初稿与参数核对 —— 应答有据，参数与注册证一字不差",
+            "roles": "销售",
+            "description": "标书制作 80% 时间耗费于翻页核对，漏一处签章即致废标",
+            "source_refs": [
+              "source-catalog-889ed48213080882"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-4cde50051455c666"
+              ]
+            },
+            "label": "资质与应答要求",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "应答材料包",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-f7e7eba3bcc00632",
+          "catalog-49a15b9cc7d6cd68",
+          "catalog-72ffbb83c3f4d34c",
+          "catalog-4cde50051455c666",
+          "catalog-889ed48213080882"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "store",
+      "industry": "medical-health",
+      "type": "scenario_diorama",
+      "title": "药店与会员运营",
+      "description": "运营整理平台反馈并形成周报，形成归因周报。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "运营",
+            "source_refs": [
+              "source-catalog-3ec3b417914e6c9d"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理平台反馈并形成周报",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-3ec3b417914e6c9d"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "平台差评记录",
+            "source_refs": [
+              "source-catalog-3ec3b417914e6c9d"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "归因周报",
+            "source_refs": [
+              "source-catalog-3ec3b417914e6c9d"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-9456792b788f7970",
+            "title": "养护信息月度汇总分析 —— GSP 明文要求、飞检常点名的欠交作业",
+            "locator": "【医疗健康·运营·法务】养护信息月度汇总分析 —— GSP 明文要求、飞检常点名的欠交作业/养护信息月度汇总分析 —— GSP 明文要求、飞检常点名的欠交作业.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E5%85%BB%E6%8A%A4%E4%BF%A1%E6%81%AF%E6%9C%88%E5%BA%A6%E6%B1%87%E6%80%BB%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20GSP%20%E6%98%8E%E6%96%87%E8%A6%81%E6%B1%82%E3%80%81%E9%A3%9E%E6%A3%80%E5%B8%B8%E7%82%B9%E5%90%8D%E7%9A%84%E6%AC%A0%E4%BA%A4%E4%BD%9C%E4%B8%9A/%E5%85%BB%E6%8A%A4%E4%BF%A1%E6%81%AF%E6%9C%88%E5%BA%A6%E6%B1%87%E6%80%BB%E5%88%86%E6%9E%90%20%E2%80%94%E2%80%94%20GSP%20%E6%98%8E%E6%96%87%E8%A6%81%E6%B1%82%E3%80%81%E9%A3%9E%E6%A3%80%E5%B8%B8%E7%82%B9%E5%90%8D%E7%9A%84%E6%AC%A0%E4%BA%A4%E4%BD%9C%E4%B8%9A.md"
+          },
+          {
+            "id": "source-catalog-666b3d8808b1e33f",
+            "title": "O2O 商品详情批量生成与合规预审 —— 上新 32 个 SKU，先把词审一遍再上架",
+            "locator": "【医疗健康·运营·法务】O2O 商品详情批量生成与合规预审 —— 上新 32 个 SKU，先把词审一遍再上架/O2O 商品详情批量生成与合规预审 —— 上新 32 个 SKU，先把词审一遍再上架.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91O2O%20%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90%E4%B8%8E%E5%90%88%E8%A7%84%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E4%B8%8A%E6%96%B0%2032%20%E4%B8%AA%20SKU%EF%BC%8C%E5%85%88%E6%8A%8A%E8%AF%8D%E5%AE%A1%E4%B8%80%E9%81%8D%E5%86%8D%E4%B8%8A%E6%9E%B6/O2O%20%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90%E4%B8%8E%E5%90%88%E8%A7%84%E9%A2%84%E5%AE%A1%20%E2%80%94%E2%80%94%20%E4%B8%8A%E6%96%B0%2032%20%E4%B8%AA%20SKU%EF%BC%8C%E5%85%88%E6%8A%8A%E8%AF%8D%E5%AE%A1%E4%B8%80%E9%81%8D%E5%86%8D%E4%B8%8A%E6%9E%B6.md"
+          },
+          {
+            "id": "source-catalog-05312c536c1209eb",
+            "title": "沉默会员唤醒名单 —— 六成客户半年不说话，唤醒理由藏在消费记录里",
+            "locator": "【医疗健康·运营】沉默会员唤醒名单 —— 六成客户半年不说话，唤醒理由藏在消费记录里/沉默会员唤醒名单 —— 六成客户半年不说话，唤醒理由藏在消费记录里.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%B2%89%E9%BB%98%E4%BC%9A%E5%91%98%E5%94%A4%E9%86%92%E5%90%8D%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%85%AD%E6%88%90%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%B9%B4%E4%B8%8D%E8%AF%B4%E8%AF%9D%EF%BC%8C%E5%94%A4%E9%86%92%E7%90%86%E7%94%B1%E8%97%8F%E5%9C%A8%E6%B6%88%E8%B4%B9%E8%AE%B0%E5%BD%95%E9%87%8C/%E6%B2%89%E9%BB%98%E4%BC%9A%E5%91%98%E5%94%A4%E9%86%92%E5%90%8D%E5%8D%95%20%E2%80%94%E2%80%94%20%E5%85%AD%E6%88%90%E5%AE%A2%E6%88%B7%E5%8D%8A%E5%B9%B4%E4%B8%8D%E8%AF%B4%E8%AF%9D%EF%BC%8C%E5%94%A4%E9%86%92%E7%90%86%E7%94%B1%E8%97%8F%E5%9C%A8%E6%B6%88%E8%B4%B9%E8%AE%B0%E5%BD%95%E9%87%8C.md"
+          },
+          {
+            "id": "source-catalog-a96c85b84f6b7528",
+            "title": "慢病会员复购提醒 —— 降压药 28 天一盒，第 25 天该有人记得",
+            "locator": "【医疗健康·运营】慢病会员复购提醒 —— 降压药 28 天一盒，第 25 天该有人记得/慢病会员复购提醒 —— 降压药 28 天一盒，第 25 天该有人记得.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E6%85%A2%E7%97%85%E4%BC%9A%E5%91%98%E5%A4%8D%E8%B4%AD%E6%8F%90%E9%86%92%20%E2%80%94%E2%80%94%20%E9%99%8D%E5%8E%8B%E8%8D%AF%2028%20%E5%A4%A9%E4%B8%80%E7%9B%92%EF%BC%8C%E7%AC%AC%2025%20%E5%A4%A9%E8%AF%A5%E6%9C%89%E4%BA%BA%E8%AE%B0%E5%BE%97/%E6%85%A2%E7%97%85%E4%BC%9A%E5%91%98%E5%A4%8D%E8%B4%AD%E6%8F%90%E9%86%92%20%E2%80%94%E2%80%94%20%E9%99%8D%E5%8E%8B%E8%8D%AF%2028%20%E5%A4%A9%E4%B8%80%E7%9B%92%EF%BC%8C%E7%AC%AC%2025%20%E5%A4%A9%E8%AF%A5%E6%9C%89%E4%BA%BA%E8%AE%B0%E5%BE%97.md"
+          },
+          {
+            "id": "source-catalog-3ec3b417914e6c9d",
+            "title": "平台差评回复与归因周报 —— 每周 47 条差评，回复之外更要归因",
+            "locator": "【医疗健康·运营】平台差评回复与归因周报 —— 每周 47 条差评，回复之外更要归因/平台差评回复与归因周报 —— 每周 47 条差评，回复之外更要归因.md:10",
+            "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%B9%B3%E5%8F%B0%E5%B7%AE%E8%AF%84%E5%9B%9E%E5%A4%8D%E4%B8%8E%E5%BD%92%E5%9B%A0%E5%91%A8%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%91%A8%2047%20%E6%9D%A1%E5%B7%AE%E8%AF%84%EF%BC%8C%E5%9B%9E%E5%A4%8D%E4%B9%8B%E5%A4%96%E6%9B%B4%E8%A6%81%E5%BD%92%E5%9B%A0/%E5%B9%B3%E5%8F%B0%E5%B7%AE%E8%AF%84%E5%9B%9E%E5%A4%8D%E4%B8%8E%E5%BD%92%E5%9B%A0%E5%91%A8%E6%8A%A5%20%E2%80%94%E2%80%94%20%E6%AF%8F%E5%91%A8%2047%20%E6%9D%A1%E5%B7%AE%E8%AF%84%EF%BC%8C%E5%9B%9E%E5%A4%8D%E4%B9%8B%E5%A4%96%E6%9B%B4%E8%A6%81%E5%BD%92%E5%9B%A0.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-9456792b788f7970",
+            "title": "养护信息月度汇总分析 —— GSP 明文要求、飞检常点名的欠交作业",
+            "roles": "运营 · 法务",
+            "description": "温湿度记录每天都在记，全年没有一人将它们放在一起看过一次",
+            "source_refs": [
+              "source-catalog-9456792b788f7970"
+            ]
+          },
+          {
+            "id": "catalog-666b3d8808b1e33f",
+            "title": "O2O 商品详情批量生成与合规预审 —— 上新 32 个 SKU，先把词审一遍再上架",
+            "roles": "运营 · 法务",
+            "description": "文案写得越漂亮罚得越重，「降血脂」三个字值一万五",
+            "source_refs": [
+              "source-catalog-666b3d8808b1e33f"
+            ]
+          },
+          {
+            "id": "catalog-05312c536c1209eb",
+            "title": "沉默会员唤醒名单 —— 六成客户半年不说话，唤醒理由藏在消费记录里",
+            "roles": "运营",
+            "description": "获客成本涨至 4000 元/人，沉默名单长期留存于会员系统无人跟进",
+            "source_refs": [
+              "source-catalog-05312c536c1209eb"
+            ]
+          },
+          {
+            "id": "catalog-a96c85b84f6b7528",
+            "title": "慢病会员复购提醒 —— 降压药 28 天一盒，第 25 天该有人记得",
+            "roles": "运营",
+            "description": "会员系统里留存四万个会员，其中七成从不复购、长期沉睡",
+            "source_refs": [
+              "source-catalog-a96c85b84f6b7528"
+            ]
+          },
+          {
+            "id": "catalog-3ec3b417914e6c9d",
+            "title": "平台差评回复与归因周报 —— 每周 47 条差评，回复之外更要归因",
+            "roles": "运营",
+            "description": "差评回复止步于道歉模板，缺乏归因分析，同类差评反复出现",
+            "source_refs": [
+              "source-catalog-3ec3b417914e6c9d"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-3ec3b417914e6c9d"
+              ]
+            },
+            "label": "平台差评记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "归因周报",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-9456792b788f7970",
+          "catalog-666b3d8808b1e33f",
+          "catalog-05312c536c1209eb",
+          "catalog-a96c85b84f6b7528",
+          "catalog-3ec3b417914e6c9d"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "患者服务与机构运营",
+      "scene_ids": [
+        "followup",
+        "billing",
+        "service"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "研发与产品治理",
+      "scene_ids": [
+        "research",
+        "registration",
+        "safety"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "零售与商业",
+      "scene_ids": [
+        "store",
+        "distribution"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 医疗健康",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-ffa0dda3d312183c",
+      "title": "出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%",
+      "locator": "【医疗健康·客服】出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%/出院随访分层排期表 —— 墙上挂着 95%，台账里只有 8%.md:76",
+      "uri": "%E3%80%90%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25/%E5%87%BA%E9%99%A2%E9%9A%8F%E8%AE%BF%E5%88%86%E5%B1%82%E6%8E%92%E6%9C%9F%E8%A1%A8%20%E2%80%94%E2%80%94%20%E5%A2%99%E4%B8%8A%E6%8C%82%E7%9D%80%2095%25%EF%BC%8C%E5%8F%B0%E8%B4%A6%E9%87%8C%E5%8F%AA%E6%9C%89%208%25.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "出院随访分层排期表",
+      "source_refs": [
+        "source-catalog-ffa0dda3d312183c"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "整理随访对象",
+              "participant": "随访服务人员",
+              "description": "接收出院记录，依据出院记录整理随访对象及分层计划。交付分层随访计划。"
+            },
+            {
+              "label": "编制当周排期",
+              "participant": "随访服务人员",
+              "description": "接收分层随访计划，汇总随访时段、方式与历史联系情况。交付本周随访名单。"
+            },
+            {
+              "label": "回访并记录异常",
+              "participant": "随访服务人员",
+              "description": "接收本周随访名单，登记回访及失联情况，标出需要人工跟进的事项。交付回访及异常记录。"
+            },
+            {
+              "label": "转介与归档",
+              "participant": "随访服务人员",
+              "description": "接收回访及异常记录，整理需转介事项和联系记录，更新随访台账。交付随访台账。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "followup"
+  }
+}

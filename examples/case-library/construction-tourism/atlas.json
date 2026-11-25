@@ -1,0 +1,1486 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "construction-tourism",
+  "id": "construction-tourism-atlas",
+  "type": "industry_atlas",
+  "title": "建筑文旅场景全景图",
+  "description": "案例库 · 24 个案例，按工作场景归入 7 个节点",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "settlement",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "现场变更与结算",
+      "description": "财务核对工程变更、签证与价格依据，形成签证证据包。画面包含工地测量位的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "财务",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对工程变更、签证与价格依据",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "变更单和签证材料",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "签证证据包",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+          },
+          {
+            "id": "source-catalog-b7deee67c5ce39c5",
+            "title": "竣工结算争议预判与造价复核",
+            "locator": "【建筑文旅·财务】竣工结算争议预判与造价复核/竣工结算争议预判与造价复核.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E7%AB%A3%E5%B7%A5%E7%BB%93%E7%AE%97%E4%BA%89%E8%AE%AE%E9%A2%84%E5%88%A4%E4%B8%8E%E9%80%A0%E4%BB%B7%E5%A4%8D%E6%A0%B8/%E7%AB%A3%E5%B7%A5%E7%BB%93%E7%AE%97%E4%BA%89%E8%AE%AE%E9%A2%84%E5%88%A4%E4%B8%8E%E9%80%A0%E4%BB%B7%E5%A4%8D%E6%A0%B8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "roles": "财务",
+            "description": "现场几乎每天都有变更，签证单却常到结算前才补签",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          },
+          {
+            "id": "catalog-b7deee67c5ce39c5",
+            "title": "竣工结算争议预判与造价复核",
+            "roles": "财务",
+            "description": "结算书送审如同开盲盒，争议点其实早已写在合同与清单里",
+            "source_refs": [
+              "source-catalog-b7deee67c5ce39c5"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            },
+            "label": "变更单和签证材料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "签证证据包",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "construction-tourism.equipment.survey-tripod",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "测量全站仪",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-14404b99919821fc",
+          "catalog-b7deee67c5ce39c5"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "construction",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "现场施工与验收",
+      "description": "生产核对现场验收记录及材料资料，形成验收记录。画面包含工地测量位的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "生产",
+            "source_refs": [
+              "source-catalog-5ebb3429d59a7f11"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对现场验收记录及材料资料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-5ebb3429d59a7f11"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "现场记录与材料资料",
+            "source_refs": [
+              "source-catalog-5ebb3429d59a7f11"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "验收记录",
+            "source_refs": [
+              "source-catalog-5ebb3429d59a7f11"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-d2b17840cc392ab8",
+            "title": "施工组织设计与危大工程专项方案编制",
+            "locator": "【建筑文旅·生产】施工组织设计与危大工程专项方案编制/施工组织设计与危大工程专项方案编制.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%96%BD%E5%B7%A5%E7%BB%84%E7%BB%87%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%8D%B1%E5%A4%A7%E5%B7%A5%E7%A8%8B%E4%B8%93%E9%A1%B9%E6%96%B9%E6%A1%88%E7%BC%96%E5%88%B6/%E6%96%BD%E5%B7%A5%E7%BB%84%E7%BB%87%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%8D%B1%E5%A4%A7%E5%B7%A5%E7%A8%8B%E4%B8%93%E9%A1%B9%E6%96%B9%E6%A1%88%E7%BC%96%E5%88%B6.md"
+          },
+          {
+            "id": "source-catalog-5ebb3429d59a7f11",
+            "title": "隐蔽工程验收记录与材料进场验收",
+            "locator": "【建筑文旅·生产】隐蔽工程验收记录与材料进场验收/隐蔽工程验收记录与材料进场验收.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E9%9A%90%E8%94%BD%E5%B7%A5%E7%A8%8B%E9%AA%8C%E6%94%B6%E8%AE%B0%E5%BD%95%E4%B8%8E%E6%9D%90%E6%96%99%E8%BF%9B%E5%9C%BA%E9%AA%8C%E6%94%B6/%E9%9A%90%E8%94%BD%E5%B7%A5%E7%A8%8B%E9%AA%8C%E6%94%B6%E8%AE%B0%E5%BD%95%E4%B8%8E%E6%9D%90%E6%96%99%E8%BF%9B%E5%9C%BA%E9%AA%8C%E6%94%B6.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-d2b17840cc392ab8",
+            "title": "施工组织设计与危大工程专项方案编制",
+            "roles": "生产",
+            "description": "施工组织设计年年照抄旧稿，危大专项方案却常拖到开工前才赶制",
+            "source_refs": [
+              "source-catalog-d2b17840cc392ab8"
+            ]
+          },
+          {
+            "id": "catalog-5ebb3429d59a7f11",
+            "title": "隐蔽工程验收记录与材料进场验收",
+            "roles": "生产",
+            "description": "隐蔽验收表每一栏都填了，图像资料编号一栏却常常空缺",
+            "source_refs": [
+              "source-catalog-5ebb3429d59a7f11"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-5ebb3429d59a7f11"
+              ]
+            },
+            "label": "现场记录与材料资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "验收记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "construction-tourism.equipment.survey-tripod",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "测量全站仪",
+            "interaction": {
+              "case_ids": [
+                "catalog-5ebb3429d59a7f11"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-d2b17840cc392ab8",
+          "catalog-5ebb3429d59a7f11"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "approval",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "报建、备案与产权",
+      "description": "法务跟踪报建材料与审批节点，形成报建进度台账。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "法务",
+            "source_refs": [
+              "source-catalog-2e67822b97413c1e"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "跟踪报建材料与审批节点",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-2e67822b97413c1e"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "证照与申报进度",
+            "source_refs": [
+              "source-catalog-2e67822b97413c1e"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "报建进度台账",
+            "source_refs": [
+              "source-catalog-2e67822b97413c1e"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a2d33834ebdefa31",
+            "title": "竣工验收备案与产权登记资料清单",
+            "locator": "【建筑文旅·法务】竣工验收备案与产权登记资料清单/竣工验收备案与产权登记资料清单.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%AB%A3%E5%B7%A5%E9%AA%8C%E6%94%B6%E5%A4%87%E6%A1%88%E4%B8%8E%E4%BA%A7%E6%9D%83%E7%99%BB%E8%AE%B0%E8%B5%84%E6%96%99%E6%B8%85%E5%8D%95/%E7%AB%A3%E5%B7%A5%E9%AA%8C%E6%94%B6%E5%A4%87%E6%A1%88%E4%B8%8E%E4%BA%A7%E6%9D%83%E7%99%BB%E8%AE%B0%E8%B5%84%E6%96%99%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-2e67822b97413c1e",
+            "title": "五证办理与报建审批进度追踪",
+            "locator": "【建筑文旅·法务】五证办理与报建审批进度追踪/五证办理与报建审批进度追踪.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E4%BA%94%E8%AF%81%E5%8A%9E%E7%90%86%E4%B8%8E%E6%8A%A5%E5%BB%BA%E5%AE%A1%E6%89%B9%E8%BF%9B%E5%BA%A6%E8%BF%BD%E8%B8%AA/%E4%BA%94%E8%AF%81%E5%8A%9E%E7%90%86%E4%B8%8E%E6%8A%A5%E5%BB%BA%E5%AE%A1%E6%89%B9%E8%BF%9B%E5%BA%A6%E8%BF%BD%E8%B8%AA.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a2d33834ebdefa31",
+            "title": "竣工验收备案与产权登记资料清单",
+            "roles": "法务",
+            "description": "竣工验收备案表积了一抽屉，产权登记却卡在首次登记环节",
+            "source_refs": [
+              "source-catalog-a2d33834ebdefa31"
+            ]
+          },
+          {
+            "id": "catalog-2e67822b97413c1e",
+            "title": "五证办理与报建审批进度追踪",
+            "roles": "法务",
+            "description": "报建进度表每周更新，五证的办理顺序与前置条件却无人核对",
+            "source_refs": [
+              "source-catalog-2e67822b97413c1e"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-2e67822b97413c1e"
+              ]
+            },
+            "label": "证照与申报进度",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "报建进度台账",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a2d33834ebdefa31",
+          "catalog-2e67822b97413c1e"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "tender",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "工程投标",
+      "description": "销售梳理招标要求和项目资料，形成技术标草稿。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "销售",
+            "source_refs": [
+              "source-catalog-e318d0832b933d15"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "梳理招标要求和项目资料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-e318d0832b933d15"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "招标文件与已有方案",
+            "source_refs": [
+              "source-catalog-e318d0832b933d15"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "技术标草稿",
+            "source_refs": [
+              "source-catalog-e318d0832b933d15"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e318d0832b933d15",
+            "title": "投标标书与技术标初稿生成（数据驱动差异化版）",
+            "locator": "【建筑文旅·销售】投标标书与技术标初稿生成（数据驱动差异化版）/投标标书与技术标初稿生成（数据驱动差异化版）.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%95%E6%A0%87%E6%A0%87%E4%B9%A6%E4%B8%8E%E6%8A%80%E6%9C%AF%E6%A0%87%E5%88%9D%E7%A8%BF%E7%94%9F%E6%88%90%EF%BC%88%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E5%B7%AE%E5%BC%82%E5%8C%96%E7%89%88%EF%BC%89/%E6%8A%95%E6%A0%87%E6%A0%87%E4%B9%A6%E4%B8%8E%E6%8A%80%E6%9C%AF%E6%A0%87%E5%88%9D%E7%A8%BF%E7%94%9F%E6%88%90%EF%BC%88%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E5%B7%AE%E5%BC%82%E5%8C%96%E7%89%88%EF%BC%89.md"
+          },
+          {
+            "id": "source-catalog-e2a94d6ee8e59f72",
+            "title": "投标合规自查：否决投标与串标风险扫描",
+            "locator": "【建筑文旅·销售】投标合规自查：否决投标与串标风险扫描/投标合规自查：否决投标与串标风险扫描.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8A%95%E6%A0%87%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5%EF%BC%9A%E5%90%A6%E5%86%B3%E6%8A%95%E6%A0%87%E4%B8%8E%E4%B8%B2%E6%A0%87%E9%A3%8E%E9%99%A9%E6%89%AB%E6%8F%8F/%E6%8A%95%E6%A0%87%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5%EF%BC%9A%E5%90%A6%E5%86%B3%E6%8A%95%E6%A0%87%E4%B8%8E%E4%B8%B2%E6%A0%87%E9%A3%8E%E9%99%A9%E6%89%AB%E6%8F%8F.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e318d0832b933d15",
+            "title": "投标标书与技术标初稿生成（数据驱动差异化版）",
+            "roles": "销售",
+            "description": "标书常熬夜赶至开标前夜，技术标评分要点却从未逐条对齐招标文件",
+            "source_refs": [
+              "source-catalog-e318d0832b933d15"
+            ]
+          },
+          {
+            "id": "catalog-e2a94d6ee8e59f72",
+            "title": "投标合规自查：否决投标与串标风险扫描",
+            "roles": "销售",
+            "description": "每份投标文件都盖了章，交标前却无人逐条核查串标认定情形",
+            "source_refs": [
+              "source-catalog-e2a94d6ee8e59f72"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-e318d0832b933d15"
+              ]
+            },
+            "label": "招标文件与已有方案",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "技术标草稿",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e318d0832b933d15",
+          "catalog-e2a94d6ee8e59f72"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "agriculture",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "种植、检测与出货",
+      "description": "生产归集地块和农事活动记录，形成农事台账。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "生产",
+            "source_refs": [
+              "source-catalog-b844d7012d5f49ee"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "归集地块和农事活动记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-b844d7012d5f49ee"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "现场语音与纸质记录",
+            "source_refs": [
+              "source-catalog-b844d7012d5f49ee"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "农事台账",
+            "source_refs": [
+              "source-catalog-b844d7012d5f49ee"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-e3bbd3dda42bfd1c",
+            "title": "耕地地力保护补贴申报：面积核对与合规留证",
+            "locator": "【建筑文旅·法务】耕地地力保护补贴申报：面积核对与合规留证/耕地地力保护补贴申报：面积核对与合规留证.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E8%80%95%E5%9C%B0%E5%9C%B0%E5%8A%9B%E4%BF%9D%E6%8A%A4%E8%A1%A5%E8%B4%B4%E7%94%B3%E6%8A%A5%EF%BC%9A%E9%9D%A2%E7%A7%AF%E6%A0%B8%E5%AF%B9%E4%B8%8E%E5%90%88%E8%A7%84%E7%95%99%E8%AF%81/%E8%80%95%E5%9C%B0%E5%9C%B0%E5%8A%9B%E4%BF%9D%E6%8A%A4%E8%A1%A5%E8%B4%B4%E7%94%B3%E6%8A%A5%EF%BC%9A%E9%9D%A2%E7%A7%AF%E6%A0%B8%E5%AF%B9%E4%B8%8E%E5%90%88%E8%A7%84%E7%95%99%E8%AF%81.md"
+          },
+          {
+            "id": "source-catalog-8213dda4e89972f6",
+            "title": "生产记录合规自查：应对检查与处罚风险",
+            "locator": "【建筑文旅·生产·法务】生产记录合规自查：应对检查与处罚风险/生产记录合规自查：应对检查与处罚风险.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E7%94%9F%E4%BA%A7%E8%AE%B0%E5%BD%95%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5%EF%BC%9A%E5%BA%94%E5%AF%B9%E6%A3%80%E6%9F%A5%E4%B8%8E%E5%A4%84%E7%BD%9A%E9%A3%8E%E9%99%A9/%E7%94%9F%E4%BA%A7%E8%AE%B0%E5%BD%95%E5%90%88%E8%A7%84%E8%87%AA%E6%9F%A5%EF%BC%9A%E5%BA%94%E5%AF%B9%E6%A3%80%E6%9F%A5%E4%B8%8E%E5%A4%84%E7%BD%9A%E9%A3%8E%E9%99%A9.md"
+          },
+          {
+            "id": "source-catalog-5b8d73fcc2fdfeda",
+            "title": "承诺达标合格证开具：出货前自查三件事",
+            "locator": "【建筑文旅·生产】承诺达标合格证开具：出货前自查三件事/承诺达标合格证开具：出货前自查三件事.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E6%89%BF%E8%AF%BA%E8%BE%BE%E6%A0%87%E5%90%88%E6%A0%BC%E8%AF%81%E5%BC%80%E5%85%B7%EF%BC%9A%E5%87%BA%E8%B4%A7%E5%89%8D%E8%87%AA%E6%9F%A5%E4%B8%89%E4%BB%B6%E4%BA%8B/%E6%89%BF%E8%AF%BA%E8%BE%BE%E6%A0%87%E5%90%88%E6%A0%BC%E8%AF%81%E5%BC%80%E5%85%B7%EF%BC%9A%E5%87%BA%E8%B4%A7%E5%89%8D%E8%87%AA%E6%9F%A5%E4%B8%89%E4%BB%B6%E4%BA%8B.md"
+          },
+          {
+            "id": "source-catalog-1b3e6389b2c1b78e",
+            "title": "农残检测报告比对：抽检不合格倒查到地块",
+            "locator": "【建筑文旅·生产】农残检测报告比对：抽检不合格倒查到地块/农残检测报告比对：抽检不合格倒查到地块.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%86%9C%E6%AE%8B%E6%A3%80%E6%B5%8B%E6%8A%A5%E5%91%8A%E6%AF%94%E5%AF%B9%EF%BC%9A%E6%8A%BD%E6%A3%80%E4%B8%8D%E5%90%88%E6%A0%BC%E5%80%92%E6%9F%A5%E5%88%B0%E5%9C%B0%E5%9D%97/%E5%86%9C%E6%AE%8B%E6%A3%80%E6%B5%8B%E6%8A%A5%E5%91%8A%E6%AF%94%E5%AF%B9%EF%BC%9A%E6%8A%BD%E6%A3%80%E4%B8%8D%E5%90%88%E6%A0%BC%E5%80%92%E6%9F%A5%E5%88%B0%E5%9C%B0%E5%9D%97.md"
+          },
+          {
+            "id": "source-catalog-b844d7012d5f49ee",
+            "title": "农事记录当日台账：从微信语音和纸本子生成合规台账",
+            "locator": "【建筑文旅·生产】农事记录当日台账：从微信语音和纸本子生成合规台账/农事记录当日台账：从微信语音和纸本子生成合规台账.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%86%9C%E4%BA%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E6%97%A5%E5%8F%B0%E8%B4%A6%EF%BC%9A%E4%BB%8E%E5%BE%AE%E4%BF%A1%E8%AF%AD%E9%9F%B3%E5%92%8C%E7%BA%B8%E6%9C%AC%E5%AD%90%E7%94%9F%E6%88%90%E5%90%88%E8%A7%84%E5%8F%B0%E8%B4%A6/%E5%86%9C%E4%BA%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E6%97%A5%E5%8F%B0%E8%B4%A6%EF%BC%9A%E4%BB%8E%E5%BE%AE%E4%BF%A1%E8%AF%AD%E9%9F%B3%E5%92%8C%E7%BA%B8%E6%9C%AC%E5%AD%90%E7%94%9F%E6%88%90%E5%90%88%E8%A7%84%E5%8F%B0%E8%B4%A6.md"
+          },
+          {
+            "id": "source-catalog-335a9a646ceef90b",
+            "title": "写种植方案：从自家地块档案和历史农事台账起稿",
+            "locator": "【建筑文旅·生产】写种植方案：从自家地块档案和历史农事台账起稿/写种植方案：从自家地块档案和历史农事台账起稿.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E7%94%9F%E4%BA%A7%E3%80%91%E5%86%99%E7%A7%8D%E6%A4%8D%E6%96%B9%E6%A1%88%EF%BC%9A%E4%BB%8E%E8%87%AA%E5%AE%B6%E5%9C%B0%E5%9D%97%E6%A1%A3%E6%A1%88%E5%92%8C%E5%8E%86%E5%8F%B2%E5%86%9C%E4%BA%8B%E5%8F%B0%E8%B4%A6%E8%B5%B7%E7%A8%BF/%E5%86%99%E7%A7%8D%E6%A4%8D%E6%96%B9%E6%A1%88%EF%BC%9A%E4%BB%8E%E8%87%AA%E5%AE%B6%E5%9C%B0%E5%9D%97%E6%A1%A3%E6%A1%88%E5%92%8C%E5%8E%86%E5%8F%B2%E5%86%9C%E4%BA%8B%E5%8F%B0%E8%B4%A6%E8%B5%B7%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-d2c4ea58fd4000c1",
+            "title": "带货脚本与农产品文案：用自家地块和检测数据写",
+            "locator": "【建筑文旅·市场·销售】带货脚本与农产品文案：用自家地块和检测数据写/带货脚本与农产品文案：用自家地块和检测数据写.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E5%B8%82%E5%9C%BA%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E5%B8%A6%E8%B4%A7%E8%84%9A%E6%9C%AC%E4%B8%8E%E5%86%9C%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%88%EF%BC%9A%E7%94%A8%E8%87%AA%E5%AE%B6%E5%9C%B0%E5%9D%97%E5%92%8C%E6%A3%80%E6%B5%8B%E6%95%B0%E6%8D%AE%E5%86%99/%E5%B8%A6%E8%B4%A7%E8%84%9A%E6%9C%AC%E4%B8%8E%E5%86%9C%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%88%EF%BC%9A%E7%94%A8%E8%87%AA%E5%AE%B6%E5%9C%B0%E5%9D%97%E5%92%8C%E6%A3%80%E6%B5%8B%E6%95%B0%E6%8D%AE%E5%86%99.md"
+          },
+          {
+            "id": "source-catalog-be6e5f9419c2de99",
+            "title": "订单履约：发货清单与损耗核对",
+            "locator": "【建筑文旅·运营·销售】订单履约：发货清单与损耗核对/订单履约：发货清单与损耗核对.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%BF%90%E8%90%A5%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%AE%A2%E5%8D%95%E5%B1%A5%E7%BA%A6%EF%BC%9A%E5%8F%91%E8%B4%A7%E6%B8%85%E5%8D%95%E4%B8%8E%E6%8D%9F%E8%80%97%E6%A0%B8%E5%AF%B9/%E8%AE%A2%E5%8D%95%E5%B1%A5%E7%BA%A6%EF%BC%9A%E5%8F%91%E8%B4%A7%E6%B8%85%E5%8D%95%E4%B8%8E%E6%8D%9F%E8%80%97%E6%A0%B8%E5%AF%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-e3bbd3dda42bfd1c",
+            "title": "耕地地力保护补贴申报：面积核对与合规留证",
+            "roles": "法务",
+            "description": "补贴申报看似只是填面积，面积虚报将被追回补贴，责任人还要被处分",
+            "source_refs": [
+              "source-catalog-e3bbd3dda42bfd1c"
+            ]
+          },
+          {
+            "id": "catalog-8213dda4e89972f6",
+            "title": "生产记录合规自查：应对检查与处罚风险",
+            "roles": "生产 · 法务",
+            "description": "检查来了才翻本子，法定三件事从未按条理补全",
+            "source_refs": [
+              "source-catalog-8213dda4e89972f6"
+            ]
+          },
+          {
+            "id": "catalog-5b8d73fcc2fdfeda",
+            "title": "承诺达标合格证开具：出货前自查三件事",
+            "roles": "生产",
+            "description": "合格证看似只是一张纸，实为产地准出的法定凭证，开错要担责",
+            "source_refs": [
+              "source-catalog-5b8d73fcc2fdfeda"
+            ]
+          },
+          {
+            "id": "catalog-1b3e6389b2c1b78e",
+            "title": "农残检测报告比对：抽检不合格倒查到地块",
+            "roles": "生产",
+            "description": "检测报告拿到手即归档，从未与自家用药记录并排比对过",
+            "source_refs": [
+              "source-catalog-1b3e6389b2c1b78e"
+            ]
+          },
+          {
+            "id": "catalog-b844d7012d5f49ee",
+            "title": "农事记录当日台账：从微信语音和纸本子生成合规台账",
+            "roles": "生产",
+            "description": "本子上每个字都写了，换个人看根本不知道是哪块地、用了什么药",
+            "source_refs": [
+              "source-catalog-b844d7012d5f49ee"
+            ]
+          },
+          {
+            "id": "catalog-335a9a646ceef90b",
+            "title": "写种植方案：从自家地块档案和历史农事台账起稿",
+            "roles": "生产",
+            "description": "方案看似写得满满当当，实为照抄去年版本，品种和播期对不上自家地块",
+            "source_refs": [
+              "source-catalog-335a9a646ceef90b"
+            ]
+          },
+          {
+            "id": "catalog-d2c4ea58fd4000c1",
+            "title": "带货脚本与农产品文案：用自家地块和检测数据写",
+            "roles": "市场 · 销售",
+            "description": "文案只写甜、好吃等空泛卖点，消费者问一句凭什么就答不上来",
+            "source_refs": [
+              "source-catalog-d2c4ea58fd4000c1"
+            ]
+          },
+          {
+            "id": "catalog-be6e5f9419c2de99",
+            "title": "订单履约：发货清单与损耗核对",
+            "roles": "运营 · 销售",
+            "description": "货发出即算履约，损耗发生在哪一段从来没人算清",
+            "source_refs": [
+              "source-catalog-be6e5f9419c2de99"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-b844d7012d5f49ee"
+              ]
+            },
+            "label": "现场语音与纸质记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "农事台账",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-e3bbd3dda42bfd1c",
+          "catalog-8213dda4e89972f6",
+          "catalog-5b8d73fcc2fdfeda",
+          "catalog-1b3e6389b2c1b78e",
+          "catalog-b844d7012d5f49ee",
+          "catalog-335a9a646ceef90b",
+          "catalog-d2c4ea58fd4000c1",
+          "catalog-be6e5f9419c2de99"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "tourism",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "票务与游客服务",
+      "description": "客服归集游客反馈与处理记录，形成服务留证材料。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "客服",
+            "source_refs": [
+              "source-catalog-02da5a070de6a1cd"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "归集游客反馈与处理记录",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-02da5a070de6a1cd"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "投诉与现场资料",
+            "source_refs": [
+              "source-catalog-02da5a070de6a1cd"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "服务留证材料",
+            "source_refs": [
+              "source-catalog-02da5a070de6a1cd"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-02da5a070de6a1cd",
+            "title": "游客投诉与现场服务 · 登记认定赔付留证",
+            "locator": "【建筑文旅·客服】游客投诉与现场服务 · 登记认定赔付留证/游客投诉与现场服务 · 登记认定赔付留证.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%91%E6%B8%B8%E5%AE%A2%E6%8A%95%E8%AF%89%E4%B8%8E%E7%8E%B0%E5%9C%BA%E6%9C%8D%E5%8A%A1%20%C2%B7%20%E7%99%BB%E8%AE%B0%E8%AE%A4%E5%AE%9A%E8%B5%94%E4%BB%98%E7%95%99%E8%AF%81/%E6%B8%B8%E5%AE%A2%E6%8A%95%E8%AF%89%E4%B8%8E%E7%8E%B0%E5%9C%BA%E6%9C%8D%E5%8A%A1%20%C2%B7%20%E7%99%BB%E8%AE%B0%E8%AE%A4%E5%AE%9A%E8%B5%94%E4%BB%98%E7%95%99%E8%AF%81.md"
+          },
+          {
+            "id": "source-catalog-4aef309f1e7649c5",
+            "title": "票务预约与实名制 · 退票梯次与黄牛识别",
+            "locator": "【建筑文旅·运营】票务预约与实名制 · 退票梯次与黄牛识别/票务预约与实名制 · 退票梯次与黄牛识别.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E7%A5%A8%E5%8A%A1%E9%A2%84%E7%BA%A6%E4%B8%8E%E5%AE%9E%E5%90%8D%E5%88%B6%20%C2%B7%20%E9%80%80%E7%A5%A8%E6%A2%AF%E6%AC%A1%E4%B8%8E%E9%BB%84%E7%89%9B%E8%AF%86%E5%88%AB/%E7%A5%A8%E5%8A%A1%E9%A2%84%E7%BA%A6%E4%B8%8E%E5%AE%9E%E5%90%8D%E5%88%B6%20%C2%B7%20%E9%80%80%E7%A5%A8%E6%A2%AF%E6%AC%A1%E4%B8%8E%E9%BB%84%E7%89%9B%E8%AF%86%E5%88%AB.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-02da5a070de6a1cd",
+            "title": "游客投诉与现场服务 · 登记认定赔付留证",
+            "roles": "客服",
+            "description": "表面看是安抚游客，实际是九十天时效、六十天办结、责任认定留证，处理不当即入评级黑历史",
+            "source_refs": [
+              "source-catalog-02da5a070de6a1cd"
+            ]
+          },
+          {
+            "id": "catalog-4aef309f1e7649c5",
+            "title": "票务预约与实名制 · 退票梯次与黄牛识别",
+            "roles": "运营",
+            "description": "表面看是卖票收钱，实际是实名绑定、退票梯次、85%公开销售三套口径对不齐，现场必然混乱",
+            "source_refs": [
+              "source-catalog-4aef309f1e7649c5"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-02da5a070de6a1cd"
+              ]
+            },
+            "label": "投诉与现场资料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "服务留证材料",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-02da5a070de6a1cd",
+          "catalog-4aef309f1e7649c5"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "event",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "活动组织与商业合作",
+      "description": "市场归集活动数据并核对结案资料，形成结案报告。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "市场",
+            "source_refs": [
+              "source-catalog-555d049f93e6e590"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "归集活动数据并核对结案资料",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-555d049f93e6e590"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "活动数据与交付记录",
+            "source_refs": [
+              "source-catalog-555d049f93e6e590"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "结案报告",
+            "source_refs": [
+              "source-catalog-555d049f93e6e590"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-de12b0d45b7811d5",
+            "title": "文旅申报评级与版权合规 · 申报索引与授权清单",
+            "locator": "【建筑文旅·法务】文旅申报评级与版权合规 · 申报索引与授权清单/文旅申报评级与版权合规 · 申报索引与授权清单.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%96%87%E6%97%85%E7%94%B3%E6%8A%A5%E8%AF%84%E7%BA%A7%E4%B8%8E%E7%89%88%E6%9D%83%E5%90%88%E8%A7%84%20%C2%B7%20%E7%94%B3%E6%8A%A5%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%8E%88%E6%9D%83%E6%B8%85%E5%8D%95/%E6%96%87%E6%97%85%E7%94%B3%E6%8A%A5%E8%AF%84%E7%BA%A7%E4%B8%8E%E7%89%88%E6%9D%83%E5%90%88%E8%A7%84%20%C2%B7%20%E7%94%B3%E6%8A%A5%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%8E%88%E6%9D%83%E6%B8%85%E5%8D%95.md"
+          },
+          {
+            "id": "source-catalog-c12b3178095cc206",
+            "title": "演出赛事报批与安全许可 · 材料齐备与时间倒排",
+            "locator": "【建筑文旅·法务】演出赛事报批与安全许可 · 材料齐备与时间倒排/演出赛事报批与安全许可 · 材料齐备与时间倒排.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E6%B3%95%E5%8A%A1%E3%80%91%E6%BC%94%E5%87%BA%E8%B5%9B%E4%BA%8B%E6%8A%A5%E6%89%B9%E4%B8%8E%E5%AE%89%E5%85%A8%E8%AE%B8%E5%8F%AF%20%C2%B7%20%E6%9D%90%E6%96%99%E9%BD%90%E5%A4%87%E4%B8%8E%E6%97%B6%E9%97%B4%E5%80%92%E6%8E%92/%E6%BC%94%E5%87%BA%E8%B5%9B%E4%BA%8B%E6%8A%A5%E6%89%B9%E4%B8%8E%E5%AE%89%E5%85%A8%E8%AE%B8%E5%8F%AF%20%C2%B7%20%E6%9D%90%E6%96%99%E9%BD%90%E5%A4%87%E4%B8%8E%E6%97%B6%E9%97%B4%E5%80%92%E6%8E%92.md"
+          },
+          {
+            "id": "source-catalog-7dca173d75be67dc",
+            "title": "活动策划方案与宣传推文 · 数据驱动差异化初稿",
+            "locator": "【建筑文旅·市场】活动策划方案与宣传推文 · 数据驱动差异化初稿/活动策划方案与宣传推文 · 数据驱动差异化初稿.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92%E6%96%B9%E6%A1%88%E4%B8%8E%E5%AE%A3%E4%BC%A0%E6%8E%A8%E6%96%87%20%C2%B7%20%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E5%B7%AE%E5%BC%82%E5%8C%96%E5%88%9D%E7%A8%BF/%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92%E6%96%B9%E6%A1%88%E4%B8%8E%E5%AE%A3%E4%BC%A0%E6%8E%A8%E6%96%87%20%C2%B7%20%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E5%B7%AE%E5%BC%82%E5%8C%96%E5%88%9D%E7%A8%BF.md"
+          },
+          {
+            "id": "source-catalog-555d049f93e6e590",
+            "title": "活动复盘与结案报告 · 从散装数据出可归档件",
+            "locator": "【建筑文旅·市场】活动复盘与结案报告 · 从散装数据出可归档件/活动复盘与结案报告 · 从散装数据出可归档件.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E5%B8%82%E5%9C%BA%E3%80%91%E6%B4%BB%E5%8A%A8%E5%A4%8D%E7%9B%98%E4%B8%8E%E7%BB%93%E6%A1%88%E6%8A%A5%E5%91%8A%20%C2%B7%20%E4%BB%8E%E6%95%A3%E8%A3%85%E6%95%B0%E6%8D%AE%E5%87%BA%E5%8F%AF%E5%BD%92%E6%A1%A3%E4%BB%B6/%E6%B4%BB%E5%8A%A8%E5%A4%8D%E7%9B%98%E4%B8%8E%E7%BB%93%E6%A1%88%E6%8A%A5%E5%91%8A%20%C2%B7%20%E4%BB%8E%E6%95%A3%E8%A3%85%E6%95%B0%E6%8D%AE%E5%87%BA%E5%8F%AF%E5%BD%92%E6%A1%A3%E4%BB%B6.md"
+          },
+          {
+            "id": "source-catalog-a98ff8ba9a2fcac9",
+            "title": "赞助合同履约与尾款催收 · 权益落地核对",
+            "locator": "【建筑文旅·销售】赞助合同履约与尾款催收 · 权益落地核对/赞助合同履约与尾款催收 · 权益落地核对.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E8%B5%9E%E5%8A%A9%E5%90%88%E5%90%8C%E5%B1%A5%E7%BA%A6%E4%B8%8E%E5%B0%BE%E6%AC%BE%E5%82%AC%E6%94%B6%20%C2%B7%20%E6%9D%83%E7%9B%8A%E8%90%BD%E5%9C%B0%E6%A0%B8%E5%AF%B9/%E8%B5%9E%E5%8A%A9%E5%90%88%E5%90%8C%E5%B1%A5%E7%BA%A6%E4%B8%8E%E5%B0%BE%E6%AC%BE%E5%82%AC%E6%94%B6%20%C2%B7%20%E6%9D%83%E7%9B%8A%E8%90%BD%E5%9C%B0%E6%A0%B8%E5%AF%B9.md"
+          },
+          {
+            "id": "source-catalog-f32073f4a29cf8e1",
+            "title": "招商手册与赞助权益包 · 权益量化与排他条款",
+            "locator": "【建筑文旅·销售】招商手册与赞助权益包 · 权益量化与排他条款/招商手册与赞助权益包 · 权益量化与排他条款.md:10",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E9%94%80%E5%94%AE%E3%80%91%E6%8B%9B%E5%95%86%E6%89%8B%E5%86%8C%E4%B8%8E%E8%B5%9E%E5%8A%A9%E6%9D%83%E7%9B%8A%E5%8C%85%20%C2%B7%20%E6%9D%83%E7%9B%8A%E9%87%8F%E5%8C%96%E4%B8%8E%E6%8E%92%E4%BB%96%E6%9D%A1%E6%AC%BE/%E6%8B%9B%E5%95%86%E6%89%8B%E5%86%8C%E4%B8%8E%E8%B5%9E%E5%8A%A9%E6%9D%83%E7%9B%8A%E5%8C%85%20%C2%B7%20%E6%9D%83%E7%9B%8A%E9%87%8F%E5%8C%96%E4%B8%8E%E6%8E%92%E4%BB%96%E6%9D%A1%E6%AC%BE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-de12b0d45b7811d5",
+            "title": "文旅申报评级与版权合规 · 申报索引与授权清单",
+            "roles": "法务",
+            "description": "表面看是填申报表，实际是印证材料缺一份便少几百万补贴，曲目授权漏一首即涉侵权诉讼",
+            "source_refs": [
+              "source-catalog-de12b0d45b7811d5"
+            ]
+          },
+          {
+            "id": "catalog-c12b3178095cc206",
+            "title": "演出赛事报批与安全许可 · 材料齐备与时间倒排",
+            "roles": "法务",
+            "description": "表面看是交材料，实际是缺一份即停演罚款，材料清单与时间倒排无人盯办",
+            "source_refs": [
+              "source-catalog-c12b3178095cc206"
+            ]
+          },
+          {
+            "id": "catalog-7dca173d75be67dc",
+            "title": "活动策划方案与宣传推文 · 数据驱动差异化初稿",
+            "roles": "市场",
+            "description": "表面看是缺创意、要憋方案，实际是往年方案散落各处，新方案永远从零重写",
+            "source_refs": [
+              "source-catalog-7dca173d75be67dc"
+            ]
+          },
+          {
+            "id": "catalog-555d049f93e6e590",
+            "title": "活动复盘与结案报告 · 从散装数据出可归档件",
+            "roles": "市场",
+            "description": "表面看是活动结束写个总结，实际是票房、赞助、投诉、事故散在四处，结案报告永远凑不齐",
+            "source_refs": [
+              "source-catalog-555d049f93e6e590"
+            ]
+          },
+          {
+            "id": "catalog-a98ff8ba9a2fcac9",
+            "title": "赞助合同履约与尾款催收 · 权益落地核对",
+            "roles": "销售",
+            "description": "表面看是催收尾款，实际是权益未给足遭拒付，催收又无留痕",
+            "source_refs": [
+              "source-catalog-a98ff8ba9a2fcac9"
+            ]
+          },
+          {
+            "id": "catalog-f32073f4a29cf8e1",
+            "title": "招商手册与赞助权益包 · 权益量化与排他条款",
+            "roles": "销售",
+            "description": "表面看是招商手册要做得好看，实际是权益档位凭经验拍定、排他条款模糊，签约后反复争议",
+            "source_refs": [
+              "source-catalog-f32073f4a29cf8e1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-555d049f93e6e590"
+              ]
+            },
+            "label": "活动数据与交付记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "结案报告",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-de12b0d45b7811d5",
+          "catalog-c12b3178095cc206",
+          "catalog-7dca173d75be67dc",
+          "catalog-555d049f93e6e590",
+          "catalog-a98ff8ba9a2fcac9",
+          "catalog-f32073f4a29cf8e1"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-1",
+      "title": "建设项目",
+      "scene_ids": [
+        "tender",
+        "approval",
+        "construction",
+        "settlement"
+      ]
+    },
+    {
+      "id": "zone-2",
+      "title": "文旅活动",
+      "scene_ids": [
+        "tourism",
+        "event"
+      ]
+    },
+    {
+      "id": "zone-3",
+      "title": "农业案例",
+      "scene_ids": [
+        "agriculture"
+      ]
+    }
+  ],
+  "connections": [],
+  "annotations": [
+    {
+      "id": "catalog-scope",
+      "text": "按原案例库口径分区，每条案例归入一个主要场景。画面呈现各组代表性工作。",
+      "source_refs": [
+        "catalog-index"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "catalog-index",
+      "title": "场景案例库索引",
+      "locator": "案例库索引.md / 建筑文旅",
+      "uri": "%E6%A1%88%E4%BE%8B%E5%BA%93%E7%B4%A2%E5%BC%95.md"
+    },
+    {
+      "id": "source-catalog-14404b99919821fc",
+      "title": "工程变更与签证留证：从洽商到签批",
+      "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:75",
+      "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "工程变更与签证留证",
+      "source_refs": [
+        "source-catalog-14404b99919821fc"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "核对现场变更资料",
+              "participant": "项目经办人",
+              "description": "接收变更单、洽商与签证材料，核验变更、洽商和签证材料是否齐备。交付待核对材料清单。"
+            },
+            {
+              "label": "检查签认链条",
+              "participant": "工程与结算人员",
+              "description": "接收待核对材料清单，逐项核对洽商记录、签证和签认状态。交付签认缺项。"
+            },
+            {
+              "label": "核对价格依据",
+              "participant": "结算人员",
+              "description": "接收签认缺项，核对工程量变更及清单单价，记录结算影响。交付价格依据与影响清单。"
+            },
+            {
+              "label": "形成签证草稿",
+              "participant": "结算人员",
+              "description": "接收价格依据与影响清单，归集缺项和价格依据，提交人工签批。交付待签批签证单。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "default_scene_id": "settlement"
+  }
+}

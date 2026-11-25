@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "public-services",
+  "id": "public-services-journey",
+  "type": "process_journey",
+  "title": "政务公共 · 12345 工单智能分拨",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "检查工单要素",
+      "description": "热线话务员补记诉求地点与事项等必要信息，形成完整诉求工单。画面包含办事窗口的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "热线话务员",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "补记诉求地点与事项等必要信息",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "来电诉求",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "完整诉求工单",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:73",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "roles": "客服",
+            "description": "工单分拨有误即被退回，退回 3 次即启动区级兜底",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-56cd093e82d505cf"
+              ]
+            },
+            "label": "来电诉求",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "完整诉求工单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "public-services.furniture.service-counter",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "政务服务柜台",
+            "interaction": {
+              "case_ids": [
+                "catalog-56cd093e82d505cf"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-56cd093e82d505cf"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "匹配事项和责任单位",
+      "description": "分拨研判员结合事项清单及街镇映射生成候选责任单位，形成候选分拨建议。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "分拨研判员",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "结合事项清单及街镇映射生成候选责任单位",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "完整诉求工单",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "候选分拨建议",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:73",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "roles": "客服",
+            "description": "工单分拨有误即被退回，退回 3 次即启动区级兜底",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "monitoring-center",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.display",
+            "position": [
+              5.13,
+              2.66,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-56cd093e82d505cf"
+              ]
+            },
+            "label": "完整诉求工单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.09,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "候选分拨建议",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.7,
+              1.06,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "drawer",
+            "asset_id": "universal.furniture.rolling-drawer",
+            "position": [
+              7.24,
+              3.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-56cd093e82d505cf"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "复核历史退单",
+      "description": "分拨研判员核查同类历史退单，标明权属不清的工单，形成分拨待核清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "分拨研判员",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核查同类历史退单，标明权属不清的工单",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "候选分拨建议",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "分拨待核清单",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:73",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "roles": "客服",
+            "description": "工单分拨有误即被退回，退回 3 次即启动区级兜底",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-56cd093e82d505cf"
+              ]
+            },
+            "label": "候选分拨建议",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "分拨待核清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-56cd093e82d505cf"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "public-services",
+      "type": "scenario_diorama",
+      "title": "留存分派依据",
+      "description": "分拨研判员汇总分派建议和特殊事项的处理依据，形成分派建议与留痕记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "分拨研判员",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "汇总分派建议和特殊事项的处理依据",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "分拨待核清单",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "分派建议与留痕记录",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:73",
+            "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-56cd093e82d505cf",
+            "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+            "roles": "客服",
+            "description": "工单分拨有误即被退回，退回 3 次即启动区级兜底",
+            "source_refs": [
+              "source-catalog-56cd093e82d505cf"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-56cd093e82d505cf"
+              ]
+            },
+            "label": "分拨待核清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "分派建议与留痕记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-56cd093e82d505cf"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "完整诉求工单",
+      "source_refs": [
+        "source-catalog-56cd093e82d505cf"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "候选分拨建议",
+      "source_refs": [
+        "source-catalog-56cd093e82d505cf"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "分拨待核清单",
+      "source_refs": [
+        "source-catalog-56cd093e82d505cf"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-56cd093e82d505cf"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-56cd093e82d505cf",
+      "title": "12345 工单智能分拨 —— 退单记录训练的分派器",
+      "locator": "【政务公共·客服】12345 工单智能分拨 —— 退单记录训练的分派器/12345 工单智能分拨 —— 退单记录训练的分派器.md:73",
+      "uri": "%E3%80%90%E6%94%BF%E5%8A%A1%E5%85%AC%E5%85%B1%C2%B7%E5%AE%A2%E6%9C%8D%E3%80%9112345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8/12345%20%E5%B7%A5%E5%8D%95%E6%99%BA%E8%83%BD%E5%88%86%E6%8B%A8%20%E2%80%94%E2%80%94%20%E9%80%80%E5%8D%95%E8%AE%B0%E5%BD%95%E8%AE%AD%E7%BB%83%E7%9A%84%E5%88%86%E6%B4%BE%E5%99%A8.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "12345 工单智能分拨",
+      "source_refs": [
+        "source-catalog-56cd093e82d505cf"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "检查工单要素",
+              "participant": "热线话务员",
+              "description": "接收来电诉求，补记诉求地点与事项等必要信息。交付完整诉求工单。"
+            },
+            {
+              "label": "匹配事项和责任单位",
+              "participant": "分拨研判员",
+              "description": "接收完整诉求工单，结合事项清单及街镇映射生成候选责任单位。交付候选分拨建议。"
+            },
+            {
+              "label": "复核历史退单",
+              "participant": "分拨研判员",
+              "description": "接收候选分拨建议，核查同类历史退单，标明权属不清的工单。交付分拨待核清单。"
+            },
+            {
+              "label": "留存分派依据",
+              "participant": "分拨研判员",
+              "description": "接收分拨待核清单，汇总分派建议和特殊事项的处理依据。交付分派建议与留痕记录。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

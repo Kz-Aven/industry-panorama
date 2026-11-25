@@ -1,0 +1,87 @@
+{
+  "warehouse": {
+    "status": "matched",
+    "rule": "warehouse-check",
+    "evidence": {
+      "role": "仓管",
+      "action": "核对",
+      "tool": "发货单",
+      "target": "纸箱"
+    },
+    "assets": {
+      "role": "universal.person.worker",
+      "tool": "universal.document.order",
+      "target": "universal.material.carton"
+    },
+    "pose": "站姿，前伸手臂，朝向核对台",
+    "rotation": 0
+  },
+  "reception": {
+    "status": "matched",
+    "rule": "support-ticket",
+    "evidence": {
+      "role": "客服",
+      "action": "归集",
+      "tool": "工单系统",
+      "target": "工单"
+    },
+    "assets": {
+      "role": "universal.person.office-worker",
+      "tool": "universal.electronics.computer",
+      "target": "universal.document.sheet"
+    },
+    "pose": "站姿，双手在身前，朝向终端",
+    "rotation": 0
+  },
+  "monitoring": {
+    "status": "matched",
+    "rule": "incident-screen",
+    "evidence": {
+      "role": "技术支持",
+      "action": "核对",
+      "tool": "监控屏",
+      "target": "告警"
+    },
+    "assets": {
+      "role": "universal.person.technician",
+      "tool": "universal.electronics.display",
+      "target": "universal.document.sheet"
+    },
+    "pose": "站姿，双手在身前，朝向监控屏",
+    "rotation": 270
+  },
+  "review": {
+    "status": "matched",
+    "rule": "meeting-review",
+    "evidence": {
+      "role": "采购",
+      "action": "确认",
+      "tool": "跟催清单",
+      "target": "到货"
+    },
+    "assets": {
+      "role": "universal.person.business-staff",
+      "tool": "universal.document.sheet",
+      "target": "universal.document.order"
+    },
+    "pose": "站姿，手掌略展开，朝向评审对象",
+    "rotation": 0
+  },
+  "intake": {
+    "status": "matched",
+    "rule": "patient-reception",
+    "evidence": {
+      "role": "接待",
+      "action": "接待",
+      "tool": "登记表",
+      "target": "预约"
+    },
+    "assets": {
+      "role": "medical-health.person.clinician",
+      "tool": "universal.document.sheet",
+      "target": "universal.document.order"
+    },
+    "pose": "站姿，单手略展开，朝向来访者",
+    "rotation": 0
+  }
+}

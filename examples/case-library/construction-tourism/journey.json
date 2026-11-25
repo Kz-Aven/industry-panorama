@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "construction-tourism",
+  "id": "construction-tourism-journey",
+  "type": "process_journey",
+  "title": "建筑文旅 · 工程变更与签证留证",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "核对现场变更资料",
+      "description": "项目经办人核验变更、洽商和签证材料是否齐备，形成待核对材料清单。画面包含工地测量位的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "项目经办人",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核验变更、洽商和签证材料是否齐备",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "变更单、洽商与签证材料",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待核对材料清单",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:75",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "roles": "财务",
+            "description": "现场几乎每天都有变更，签证单却常到结算前才补签",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            },
+            "label": "变更单、洽商与签证材料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待核对材料清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "construction-tourism.equipment.survey-tripod",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "测量全站仪",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            }
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-14404b99919821fc"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "检查签认链条",
+      "description": "工程与结算人员逐项核对洽商记录、签证和签认状态，形成签认缺项。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "工程与结算人员",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "逐项核对洽商记录、签证和签认状态",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "待核对材料清单",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "签认缺项",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:75",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "roles": "财务",
+            "description": "现场几乎每天都有变更，签证单却常到结算前才补签",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            },
+            "label": "待核对材料清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "签认缺项",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-14404b99919821fc"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "核对价格依据",
+      "description": "结算人员核对工程量变更及清单单价，记录结算影响，形成价格依据与影响清单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "结算人员",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核对工程量变更及清单单价，记录结算影响",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "签认缺项",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "价格依据与影响清单",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:75",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "roles": "财务",
+            "description": "现场几乎每天都有变更，签证单却常到结算前才补签",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            },
+            "label": "签认缺项",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "价格依据与影响清单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-14404b99919821fc"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "construction-tourism",
+      "type": "scenario_diorama",
+      "title": "形成签证草稿",
+      "description": "结算人员归集缺项和价格依据，提交人工签批，形成待签批签证单。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "结算人员",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "归集缺项和价格依据，提交人工签批",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "价格依据与影响清单",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待签批签证单",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:75",
+            "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-14404b99919821fc",
+            "title": "工程变更与签证留证：从洽商到签批",
+            "roles": "财务",
+            "description": "现场几乎每天都有变更，签证单却常到结算前才补签",
+            "source_refs": [
+              "source-catalog-14404b99919821fc"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-14404b99919821fc"
+              ]
+            },
+            "label": "价格依据与影响清单",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待签批签证单",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-14404b99919821fc"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "待核对材料清单",
+      "source_refs": [
+        "source-catalog-14404b99919821fc"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "签认缺项",
+      "source_refs": [
+        "source-catalog-14404b99919821fc"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "价格依据与影响清单",
+      "source_refs": [
+        "source-catalog-14404b99919821fc"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-14404b99919821fc"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-14404b99919821fc",
+      "title": "工程变更与签证留证：从洽商到签批",
+      "locator": "【建筑文旅·财务】工程变更与签证留证：从洽商到签批/工程变更与签证留证：从洽商到签批.md:75",
+      "uri": "%E3%80%90%E5%BB%BA%E7%AD%91%E6%96%87%E6%97%85%C2%B7%E8%B4%A2%E5%8A%A1%E3%80%91%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9/%E5%B7%A5%E7%A8%8B%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%AD%BE%E8%AF%81%E7%95%99%E8%AF%81%EF%BC%9A%E4%BB%8E%E6%B4%BD%E5%95%86%E5%88%B0%E7%AD%BE%E6%89%B9.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "工程变更与签证留证",
+      "source_refs": [
+        "source-catalog-14404b99919821fc"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "核对现场变更资料",
+              "participant": "项目经办人",
+              "description": "接收变更单、洽商与签证材料，核验变更、洽商和签证材料是否齐备。交付待核对材料清单。"
+            },
+            {
+              "label": "检查签认链条",
+              "participant": "工程与结算人员",
+              "description": "接收待核对材料清单，逐项核对洽商记录、签证和签认状态。交付签认缺项。"
+            },
+            {
+              "label": "核对价格依据",
+              "participant": "结算人员",
+              "description": "接收签认缺项，核对工程量变更及清单单价，记录结算影响。交付价格依据与影响清单。"
+            },
+            {
+              "label": "形成签证草稿",
+              "participant": "结算人员",
+              "description": "接收价格依据与影响清单，归集缺项和价格依据，提交人工签批。交付待签批签证单。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

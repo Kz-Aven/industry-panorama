@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isometric Scene Composer"
+  short_description: "Build interactive isometric dioramas"
+  default_prompt: "用 $isometric-scene-composer 将资料转换为可交互的等距微缩场景。"

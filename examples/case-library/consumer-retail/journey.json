@@ -1,0 +1,791 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "consumer-retail",
+  "id": "consumer-retail-journey",
+  "type": "process_journey",
+  "title": "消费零售 · 头程入仓核对与丢件索赔",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "核对批次与字段",
+      "description": "仓配运营确认三份单据属于同一批次并核对字段，形成三方单据包。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓配运营",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "确认三份单据属于同一批次并核对字段",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "装箱单、签收单与 WMS 记录",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "三方单据包",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:73",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "roles": "运营",
+            "description": "装箱单写着 500 件，海外仓系统只上架 480 件，差的 20 件去向无人核对",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "warehouse",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-c6dff14b0eed1cc1"
+              ]
+            },
+            "label": "装箱单、签收单与 WMS 记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "三方单据包",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "rack",
+            "asset_id": "manufacturing.equipment.rack",
+            "position": [
+              7.28,
+              1.28,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "pallet",
+            "asset_id": "universal.material.pallet",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cargo",
+            "asset_id": "universal.material.carton",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0,
+            "support": "pallet"
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              7.33,
+              4.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-c6dff14b0eed1cc1"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "逐票勾对",
+      "description": "仓配运营按 SKU 与箱号核对装箱、签收、上架数量，形成数量差异明细。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓配运营",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按 SKU 与箱号核对装箱、签收、上架数量",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "三方单据包",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "数量差异明细",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:73",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "roles": "运营",
+            "description": "装箱单写着 500 件，海外仓系统只上架 480 件，差的 20 件去向无人核对",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-c6dff14b0eed1cc1"
+              ]
+            },
+            "label": "三方单据包",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "数量差异明细",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-c6dff14b0eed1cc1"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "区分差异原因",
+      "description": "仓配运营按现场记录区分少收、破损、在途等情形，形成差异分类及索赔依据。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓配运营",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按现场记录区分少收、破损、在途等情形",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "数量差异明细",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "差异分类及索赔依据",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:73",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "roles": "运营",
+            "description": "装箱单写着 500 件，海外仓系统只上架 480 件，差的 20 件去向无人核对",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "warehouse",
+        "platform": {
+          "asset_id": "universal.platform.industrial",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-c6dff14b0eed1cc1"
+              ]
+            },
+            "label": "数量差异明细",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "差异分类及索赔依据",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "rack",
+            "asset_id": "manufacturing.equipment.rack",
+            "position": [
+              7.28,
+              1.28,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "pallet",
+            "asset_id": "universal.material.pallet",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cargo",
+            "asset_id": "universal.material.carton",
+            "position": [
+              2.35,
+              4.58,
+              0
+            ],
+            "rotation": 0,
+            "support": "pallet"
+          },
+          {
+            "id": "cart",
+            "asset_id": "universal.vehicle.hand-cart",
+            "position": [
+              7.33,
+              4.67,
+              0
+            ],
+            "rotation": 90
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-c6dff14b0eed1cc1"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "consumer-retail",
+      "type": "scenario_diorama",
+      "title": "整理索赔证据",
+      "description": "仓配运营对照适用口径汇总可提交的差异与证据，形成索赔清单与证据包。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "仓配运营",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "对照适用口径汇总可提交的差异与证据",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "差异分类及索赔依据",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "索赔清单与证据包",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:73",
+            "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-c6dff14b0eed1cc1",
+            "title": "头程入仓核对与丢件索赔",
+            "roles": "运营",
+            "description": "装箱单写着 500 件，海外仓系统只上架 480 件，差的 20 件去向无人核对",
+            "source_refs": [
+              "source-catalog-c6dff14b0eed1cc1"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-c6dff14b0eed1cc1"
+              ]
+            },
+            "label": "差异分类及索赔依据",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "索赔清单与证据包",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-c6dff14b0eed1cc1"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "三方单据包",
+      "source_refs": [
+        "source-catalog-c6dff14b0eed1cc1"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "数量差异明细",
+      "source_refs": [
+        "source-catalog-c6dff14b0eed1cc1"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "差异分类及索赔依据",
+      "source_refs": [
+        "source-catalog-c6dff14b0eed1cc1"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-c6dff14b0eed1cc1"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-c6dff14b0eed1cc1",
+      "title": "头程入仓核对与丢件索赔",
+      "locator": "【消费零售·运营】头程入仓核对与丢件索赔/头程入仓核对与丢件索赔.md:73",
+      "uri": "%E3%80%90%E6%B6%88%E8%B4%B9%E9%9B%B6%E5%94%AE%C2%B7%E8%BF%90%E8%90%A5%E3%80%91%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94/%E5%A4%B4%E7%A8%8B%E5%85%A5%E4%BB%93%E6%A0%B8%E5%AF%B9%E4%B8%8E%E4%B8%A2%E4%BB%B6%E7%B4%A2%E8%B5%94.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "头程入仓核对与丢件索赔",
+      "source_refs": [
+        "source-catalog-c6dff14b0eed1cc1"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "核对批次与字段",
+              "participant": "仓配运营",
+              "description": "接收装箱单、签收单与 WMS 记录，确认三份单据属于同一批次并核对字段。交付三方单据包。"
+            },
+            {
+              "label": "逐票勾对",
+              "participant": "仓配运营",
+              "description": "接收三方单据包，按 SKU 与箱号核对装箱、签收、上架数量。交付数量差异明细。"
+            },
+            {
+              "label": "区分差异原因",
+              "participant": "仓配运营",
+              "description": "接收数量差异明细，按现场记录区分少收、破损、在途等情形。交付差异分类及索赔依据。"
+            },
+            {
+              "label": "整理索赔证据",
+              "participant": "仓配运营",
+              "description": "接收差异分类及索赔依据，对照适用口径汇总可提交的差异与证据。交付索赔清单与证据包。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

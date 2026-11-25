@@ -1,0 +1,70 @@
+id: consumer-retail
+name: 消费零售
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 装箱单与上架记录
+  - 差异与索赔清单
+  - 客诉记录与订单
+  - 订单追踪记录
+  - 会员与消费记录
+  - 触达名单与话术
+  - 门店周报数据
+  - 门店异常清单
+  - 平台回款与成本记录
+  - 利润核对底稿
+  - 供应商档案
+  - 资质与风险记录
+  - 商品文案与证明资料
+  - 待复核表述
+  - 商品资料与渠道发布规则
+  - 上架核对记录
+  - 成分表与合规资料
+  - 待复核差异
+  - 员工关系资料
+  - 待处理事项清单
+  - 优惠配置和活动记录
+  - 促销巡检记录
+roles:
+  - 财务
+  - 管理层
+  - 采购
+  - 市场
+  - 运营
+  - 产品
+  - 法务
+  - 企业负责人
+  - 技术支持
+  - 生产
+  - 客服
+  - 销售
+  - 研发
+  - HR
+actions:
+  - 逐票核对装箱、签收和上架
+  - 按订单核对客户问题与处理进度
+  - 按历史记录选出待触达会员
+  - 汇总门店周记录并突出异常
+  - 比对多平台收款及计算口径
+  - 校对资质、经营信息和风险事项
+  - 校对商品宣称与现有材料
+  - 整理各平台上架字段并核对发布状态
+  - 比对配方成分与资料库条目
+  - 整理员工关系事件的记录
+  - 核对促销叠加规则及异常
+asset_mappings:
+  零售陈列货架:
+    - consumer-retail.equipment.store-shelf
+  门店陈列区:
+    - consumer-retail.equipment.store-shelf
+  汇总门店周记录并突出异常:
+    - consumer-retail.equipment.store-shelf
+templates:
+  - warehouse
+  - single-workstation
+  - equipment-operation
+  - monitoring-center
+  - meeting-review
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。

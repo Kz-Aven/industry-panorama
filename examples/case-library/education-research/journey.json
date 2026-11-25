@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0.0",
+  "industry": "education-research",
+  "id": "education-research-journey",
+  "type": "process_journey",
+  "title": "教育科研 · 教案课件初稿",
+  "description": "典型业务流程 · 来自同一篇案例的工作步骤",
+  "scenes": [
+    {
+      "schema_version": "1.0.0",
+      "id": "step-1",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "核对教研资料",
+      "description": "教师查看课程骨架与历次教研备注，形成可用教研材料。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "教师",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "查看课程骨架与历次教研备注",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "教研库记录",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "可用教研材料",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:81",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "roles": "教师",
+            "description": "老师问 AI 能否帮忙写教案，答案是能，前提是它基于本机构自己的教研数据",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            },
+            "label": "教研库记录",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "可用教研材料",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a08398380b6f6d45"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-2",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "补充班级学情",
+      "description": "教师整理课堂记录中与本节课相关的困难，形成本班备课要点。画面包含教学区的环境示意。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "教师",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "整理课堂记录中与本节课相关的困难",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "可用教研材料",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "本班备课要点",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:81",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "roles": "教师",
+            "description": "老师问 AI 能否帮忙写教案，答案是能，前提是它基于本机构自己的教研数据",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "equipment-operation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5.75,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              6.03,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            },
+            "label": "可用教研材料",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              5.17,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "本班备课要点",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              4.29,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "industry-asset",
+            "asset_id": "education-research.furniture.teaching-board",
+            "position": [
+              2.28,
+              1.85,
+              0
+            ],
+            "rotation": 0,
+            "label": "移动教学白板",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            }
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a08398380b6f6d45"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-3",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "生成分层初稿",
+      "description": "教师按学校或机构的教案骨架安排教学活动，形成待审教案与分层预案。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "教师",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "按学校或机构的教案骨架安排教学活动",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "本班备课要点",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "待审教案与分层预案",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:81",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "roles": "教师",
+            "description": "老师问 AI 能否帮忙写教案，答案是能，前提是它基于本机构自己的教研数据",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "single-workstation",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.desk",
+            "position": [
+              5,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.28,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            },
+            "label": "本班备课要点",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.42,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "待审教案与分层预案",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.office-worker",
+            "position": [
+              3.54,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "wall",
+            "asset_id": "universal.building.window-wall",
+            "position": [
+              4.49,
+              0.38,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "cabinet",
+            "asset_id": "universal.furniture.cabinet",
+            "position": [
+              7.25,
+              1.15,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a08398380b6f6d45"
+        ]
+      },
+      "render": {}
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "step-4",
+      "industry": "education-research",
+      "type": "scenario_diorama",
+      "title": "教师审定与回流",
+      "description": "教师核定教案，登记修改并把经验回流到教研库，形成审定教案与教研修订记录。",
+      "semantic": {
+        "roles": [
+          {
+            "id": "role",
+            "label": "教师",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "work",
+            "label": "核定教案，登记修改并把经验回流到教研库",
+            "actor": "role",
+            "target": "input",
+            "output": "result",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "business_objects": [
+          {
+            "id": "input",
+            "label": "待审教案与分层预案",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          },
+          {
+            "id": "result",
+            "label": "审定教案与教研修订记录",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ],
+        "systems": [],
+        "source_refs": [
+          {
+            "id": "source-catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:81",
+            "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+          }
+        ],
+        "cases": [
+          {
+            "id": "catalog-a08398380b6f6d45",
+            "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+            "roles": "教师",
+            "description": "老师问 AI 能否帮忙写教案，答案是能，前提是它基于本机构自己的教研数据",
+            "source_refs": [
+              "source-catalog-a08398380b6f6d45"
+            ]
+          }
+        ]
+      },
+      "scene": {
+        "template": "meeting-review",
+        "platform": {
+          "asset_id": "universal.platform.office",
+          "size": [
+            9,
+            5.75
+          ],
+          "height": 0.3
+        },
+        "objects": [
+          {
+            "id": "workstation",
+            "asset_id": "universal.furniture.meeting-table",
+            "position": [
+              4.8,
+              2.9,
+              0
+            ],
+            "rotation": 0
+          },
+          {
+            "id": "terminal",
+            "asset_id": "universal.electronics.computer",
+            "position": [
+              5.08,
+              2.86,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "input",
+            "interaction": {
+              "case_ids": [
+                "catalog-a08398380b6f6d45"
+              ]
+            },
+            "label": "待审教案与分层预案",
+            "support": "workstation"
+          },
+          {
+            "id": "record",
+            "asset_id": "universal.document.sheet",
+            "position": [
+              4.22,
+              3.03,
+              0
+            ],
+            "rotation": 90,
+            "semantic_ref": "result",
+            "label": "审定教案与教研修订记录",
+            "support": "workstation"
+          },
+          {
+            "id": "operator",
+            "asset_id": "universal.person.business-staff",
+            "position": [
+              2.77,
+              2.98,
+              0
+            ],
+            "rotation": 0,
+            "semantic_ref": "role",
+            "action": "work",
+            "target": "terminal"
+          },
+          {
+            "id": "colleague",
+            "asset_id": "universal.person.manager",
+            "position": [
+              6.87,
+              3.33,
+              0
+            ],
+            "rotation": 180
+          },
+          {
+            "id": "board",
+            "asset_id": "universal.accessory.kanban",
+            "position": [
+              4.55,
+              1.12,
+              0
+            ],
+            "rotation": 0
+          }
+        ]
+      },
+      "interaction": {
+        "case_ids": [
+          "catalog-a08398380b6f6d45"
+        ]
+      },
+      "render": {}
+    }
+  ],
+  "zones": [
+    {
+      "id": "process",
+      "title": "工作步骤",
+      "scene_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "handoff-1",
+      "source": "step-1",
+      "target": "step-2",
+      "kind": "flow",
+      "label": "可用教研材料",
+      "source_refs": [
+        "source-catalog-a08398380b6f6d45"
+      ]
+    },
+    {
+      "id": "handoff-2",
+      "source": "step-2",
+      "target": "step-3",
+      "kind": "flow",
+      "label": "本班备课要点",
+      "source_refs": [
+        "source-catalog-a08398380b6f6d45"
+      ]
+    },
+    {
+      "id": "handoff-3",
+      "source": "step-3",
+      "target": "step-4",
+      "kind": "flow",
+      "label": "待审教案与分层预案",
+      "source_refs": [
+        "source-catalog-a08398380b6f6d45"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "example",
+      "text": "箭头展示该案例内的记录流和环节交接。",
+      "source_refs": [
+        "source-catalog-a08398380b6f6d45"
+      ]
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "source-catalog-a08398380b6f6d45",
+      "title": "教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课",
+      "locator": "【教育科研·教师】教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课/教案课件初稿 —— 用自己的教研库备课，不是用通用模板凑课.md:81",
+      "uri": "%E3%80%90%E6%95%99%E8%82%B2%E7%A7%91%E7%A0%94%C2%B7%E6%95%99%E5%B8%88%E3%80%91%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE/%E6%95%99%E6%A1%88%E8%AF%BE%E4%BB%B6%E5%88%9D%E7%A8%BF%20%E2%80%94%E2%80%94%20%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%99%E7%A0%94%E5%BA%93%E5%A4%87%E8%AF%BE%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%94%A8%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%87%91%E8%AF%BE.md"
+    }
+  ],
+  "layers": [
+    {
+      "id": "example-process",
+      "title": "典型业务流程",
+      "heading": "教案课件初稿",
+      "source_refs": [
+        "source-catalog-a08398380b6f6d45"
+      ],
+      "note": "流程依据为该案例「场景闭环」一节，展示该案例的工作路径。",
+      "sections": [
+        {
+          "title": "输入、动作与交接",
+          "entries": [
+            {
+              "label": "核对教研资料",
+              "participant": "教师",
+              "description": "接收教研库记录，查看课程骨架与历次教研备注。交付可用教研材料。"
+            },
+            {
+              "label": "补充班级学情",
+              "participant": "教师",
+              "description": "接收可用教研材料，整理课堂记录中与本节课相关的困难。交付本班备课要点。"
+            },
+            {
+              "label": "生成分层初稿",
+              "participant": "教师",
+              "description": "接收本班备课要点，按学校或机构的教案骨架安排教学活动。交付待审教案与分层预案。"
+            },
+            {
+              "label": "教师审定与回流",
+              "participant": "教师",
+              "description": "接收待审教案与分层预案，核定教案，登记修改并把经验回流到教研库。交付审定教案与教研修订记录。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

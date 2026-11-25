@@ -1,0 +1,92 @@
+{
+  "warehouse": {
+    "role": "仓管员",
+    "action": "核对发货单",
+    "tool": "发货单",
+    "target": "待发纸箱",
+    "placement": {
+      "actor": [
+        2.39,
+        2.66,
+        0
+      ],
+      "focus": [
+        4.5,
+        2.95,
+        0
+      ]
+    }
+  },
+  "reception": {
+    "role": "客服",
+    "action": "归集和回复",
+    "tool": "工单系统",
+    "target": "客户工单",
+    "placement": {
+      "actor": [
+        2.12,
+        2.2,
+        0
+      ],
+      "focus": [
+        3.98,
+        2.26,
+        0
+      ]
+    }
+  },
+  "monitoring": {
+    "role": "技术支持",
+    "action": "核对",
+    "tool": "监控屏",
+    "target": "告警",
+    "placement": {
+      "actor": [
+        4.42,
+        3.81,
+        0
+      ],
+      "focus": [
+        4.56,
+        2.22,
+        0
+      ]
+    }
+  },
+  "review": {
+    "role": "采购员",
+    "action": "确认跟催",
+    "tool": "跟催清单",
+    "target": "供应商到货",
+    "placement": {
+      "actor": [
+        2.72,
+        2.75,
+        0
+      ],
+      "focus": [
+        4.75,
+        2.9,
+        0
+      ]
+    }
+  },
+  "intake": {
+    "role": "医护接待",
+    "action": "接待核对",
+    "tool": "登记表",
+    "target": "预约来访",
+    "placement": {
+      "actor": [
+        2.12,
+        2.2,
+        0
+      ],
+      "focus": [
+        5.37,
+        2.56,
+        0
+      ]
+    }
+  }
+}

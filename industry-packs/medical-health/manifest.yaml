@@ -1,0 +1,54 @@
+id: medical-health
+name: 医疗健康
+version: 1.0.0
+vocabulary: {}
+entities:
+  - 出院名单与随访记录
+  - 随访排期表
+  - 结算清单与对账记录
+  - 待复核差异
+  - 投诉与产品信息
+  - 初筛留痕记录
+  - 既有材料与本次变更
+  - 申报资料草稿
+  - 文献资料
+  - 证据表
+  - 问询与历史工单
+  - 应答说明
+  - 资质与应答要求
+  - 应答材料包
+  - 平台差评记录
+  - 归因周报
+roles:
+  - 财务
+  - 采购
+  - 法务
+  - 客服
+  - 市场
+  - 销售
+  - 研发
+  - 运营
+actions:
+  - 整理出院记录和既往随访
+  - 核对上报清单中的口径差异
+  - 整理投诉并标记需人工复核的记录
+  - 整理更新后的注册材料
+  - 归集文献并对齐出处
+  - 按设备信息检索历史报修
+  - 汇集经销商资质并核对完整性
+  - 整理平台反馈并形成周报
+asset_mappings:
+  诊查床:
+    - medical-health.equipment.exam-bed
+  诊疗区:
+    - medical-health.equipment.exam-bed
+  整理出院记录和既往随访:
+    - medical-health.equipment.exam-bed
+templates:
+  - equipment-operation
+  - single-workstation
+  - monitoring-center
+  - meeting-review
+visual_constraints:
+  - 使用相同的写实等距相机、光照及人物尺度。
+  - 按案例原始行业归类。流程以单一案例的场景闭环为依据。
